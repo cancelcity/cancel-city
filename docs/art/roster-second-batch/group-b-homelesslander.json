@@ -1,0 +1,35 @@
+[
+  {
+    "id": "CC010",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2ab99fd8-b7f1-4614-a30f-7263bbc32903.png",
+    "prompt": "Transparent 3x2 six whole-body pose atlas, exact equalcells, complete feet props inside generousgutters.\nMatch adult Homelesslander from portrait: blond adult blue armored superhero, gold shoulders, red gloves tattered red cape. Six poses row-major:0 proud neutral standing holding small folded cardboard box;1 anticipation imperious pointing stance;2 full body dramatic superhero lunge planted feet cape flowing;3 recoiling aghast holding torn box;4 proud victory arms folded atop intact feet with box beside;5 miserable seated inside collapsed cardboard shelter, complete connected head limbs cape and feet. No floating detached props.",
+    "fixPrompt": "Edit existing six-pose transparent sprite atlas. Preserve the same six intact adult superhero drawings, face costume expressions props and gritty ink style. Change ONLY layout/scale: shrink EVERY drawing uniformly to 72% of current size and center in correct equal cell of a strict 3x2 grid. Generous transparent gutters at least55px from outer edges and each cell boundary. ALL entire hair/head, cape, hands, feet, complete cardboard shelter inside its cell, no cropping or overlap. Remove panel separator lines. Real alpha transparency background, no shadows or scenery. Landscape1536x1024. Same scale across poses, seated pose naturally shorter. Cell order unchanged.",
+    "baseHeight": 410,
+    "feet": [
+      [
+        266,
+        470
+      ],
+      [
+        746,
+        473
+      ],
+      [
+        1272,
+        461
+      ],
+      [
+        286,
+        952
+      ],
+      [
+        749,
+        948
+      ],
+      [
+        1272,
+        936
+      ]
+    ]
+  }
+]

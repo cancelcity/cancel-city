@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "group": "exchange",
+  "generator": "built-in image_gen exclusively",
+  "assets": [
+    {
+      "id": "CC021",
+      "name": "Crypto Bro",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: crypto bro straddling a comic rocket-shaped green candlestick in a launch pose.",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC021.png",
+      "reference_viewed": true,
+      "source_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-acced881-176e-469a-8c4b-9aeda4abdbc5.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC021.png",
+      "transparent_background": true,
+      "edit_chain": [
+        {
+          "mode": "built-in image_gen",
+          "prompt": "Edit this transparent sprite only to correct its framing. Preserve the exact Crypto Bro character identity, grotesque punk ink and painted style, costume, rocket, champagne glass, whole body and dynamic launch pose. Zoom the entire sprite out so ALL artwork including champagne splash, rocket tip, feet and exhaust fits fully inside the central 78 percent of the image with at least 10 percent completely empty transparent padding on all four sides. Do not crop any part. Genuine transparent RGBA background, no background color, no text, no frame, no added objects. Keep complete sprite appearance unchanged except for smaller framing and repair any previously clipped edge.",
+          "reference": "/workspace/scratch/80a8c8c1affe/generated_images/exec-f8cb9561-9cdd-4034-aac7-b8309136ab7f.png",
+          "output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-acced881-176e-469a-8c4b-9aeda4abdbc5.png",
+          "reason": "Initial champagne splash and exhaust clipped; repaired framing.",
+          "transparent_background": true
+        }
+      ],
+      "qa": {
+        "visual_inspected": true,
+        "identity_and_style": "Preserved reference identity and grotesque ink/paint style.",
+        "full_body_and_props": "Complete body, limbs, held items and effect silhouette visible.",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          27,
+          19,
+          1232,
+          1232
+        ],
+        "visible_alpha_gt_8_bbox": [
+          136,
+          104,
+          1158,
+          1165
+        ],
+        "margin_note": "Complete silhouette accepted per root clarification; common transparent canvas/baseline handled by root.",
+        "selected_png_copied_unchanged": true,
+        "sha256": "cca35d7d50e229a0df1dcdac85952c1f38b3c573ed66525d9c93d31f45bbce55"
+      },
+      "initial_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-f8cb9561-9cdd-4034-aac7-b8309136ab7f.png",
+      "reference_sha256": "a0cc93add9c924086ecab0516b523fc837dcc8f94950ae26166faad3a5ae5f2e"
+    },
+    {
+      "id": "CC022",
+      "name": "Diamond Hands Corpse",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: diamond-hands skeleton lunging with one huge faceted diamond fist.",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC022.png",
+      "reference_viewed": true,
+      "source_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-1f2ea7ad-e654-42fa-b1f5-f8a7de569f1f.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC022.png",
+      "transparent_background": true,
+      "edit_chain": [],
+      "qa": {
+        "visual_inspected": true,
+        "identity_and_style": "Preserved reference identity and grotesque ink/paint style.",
+        "full_body_and_props": "Complete body, limbs, held items and effect silhouette visible.",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          1244,
+          1254
+        ],
+        "visible_alpha_gt_8_bbox": [
+          27,
+          10,
+          1216,
+          1238
+        ],
+        "margin_note": "Complete silhouette accepted per root clarification; common transparent canvas/baseline handled by root.",
+        "selected_png_copied_unchanged": true,
+        "sha256": "07e61aa3d9528d1d3c23606707d23626448cf89fda5e4f53946cdc722ca35547"
+      },
+      "reference_sha256": "01be65a607c5e7018d24811fcf51c07e71a8de136628deb209731e3019363298"
+    },
+    {
+      "id": "CC023",
+      "name": "Rug Pull Magician",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: rug pull magician yanking a flying carpet with a theatrical flourish.",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC023.png",
+      "reference_viewed": true,
+      "source_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-9d110bc3-0bbd-4bec-ba06-dbb8dfb98460.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC023.png",
+      "transparent_background": true,
+      "edit_chain": [],
+      "qa": {
+        "visual_inspected": true,
+        "identity_and_style": "Preserved reference identity and grotesque ink/paint style.",
+        "full_body_and_props": "Complete body silhouette, carpet and rabbit visible.",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          8,
+          1240,
+          1254
+        ],
+        "visible_alpha_gt_8_bbox": [
+          26,
+          10,
+          1237,
+          1243
+        ],
+        "margin_note": "Complete silhouette accepted per root clarification; common transparent canvas/baseline handled by root.",
+        "selected_png_copied_unchanged": true,
+        "sha256": "d8ab7ae899ce2d206f970d003bd831d26a37712513a1389984e7c971ce76eb30"
+      },
+      "reference_sha256": "740c839b30ed17eac60ebb1ff38e6806ea9eab8487e8b4dc0b296eccc9f18695"
+    },
+    {
+      "id": "CC024",
+      "name": "Smooth Rug Pull",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: smooth rug pull hustler gracefully pulling a velvet carpet with a gold glove.",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC024.png",
+      "reference_viewed": true,
+      "source_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-dcacd639-0f37-4260-96ba-f358ab662619.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC024.png",
+      "transparent_background": true,
+      "edit_chain": [
+        {
+          "mode": "built-in image_gen",
+          "prompt": "Edit only the framing of this transparent Cancel City sprite. Preserve the same blonde sunglasses hustler, navy pinstripe suit, red tie, gold glove, facial identity, grotesque punk ink and painted style, whole dynamic pose, velvet carpet and coins. Zoom the entire artwork out into the central 76 percent of the canvas to add at least 10 percent clear transparent space on all four edges. Restore the clipped topmost hair and bottom carpet tassel so both are completely visible. Keep the subject full body and all carpet edges and feet fully inside frame. Genuine transparent RGBA background. No added objects, no text, no environment or frame.",
+          "reference": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2058c2fe-ac9a-4e52-a4f7-79d2d184e401.png",
+          "output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-dcacd639-0f37-4260-96ba-f358ab662619.png",
+          "reason": "Initial topmost hair and bottom tassel clipped; repaired framing.",
+          "transparent_background": true
+        }
+      ],
+      "qa": {
+        "visual_inspected": true,
+        "identity_and_style": "Preserved reference identity and grotesque ink/paint style.",
+        "full_body_and_props": "Complete body silhouette and props visible; CC024 second leg is behind carpet.",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          15,
+          1234,
+          1254
+        ],
+        "visible_alpha_gt_8_bbox": [
+          55,
+          75,
+          1185,
+          1220
+        ],
+        "margin_note": "Complete silhouette accepted per root clarification; common transparent canvas/baseline handled by root.",
+        "selected_png_copied_unchanged": true,
+        "sha256": "d30dc49a9f47c3fd5139bca6d3f65887acf42c2d197e1226fd6aa3388c460b61"
+      },
+      "initial_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2058c2fe-ac9a-4e52-a4f7-79d2d184e401.png",
+      "reference_sha256": "a7f8f9437545dd7ecca6578a5b77e86427659997871eadd59d74fe57d6a94ef6"
+    },
+    {
+      "id": "CC025",
+      "name": "Forgotten Seed Phrase",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: forgotten seed phrase figure raising an enormous key and glowing vault lock.",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC025.png",
+      "reference_viewed": true,
+      "source_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-4e30e56b-dec8-4b20-82eb-dc9bb44f4e99.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC025.png",
+      "transparent_background": true,
+      "edit_chain": [
+        {
+          "mode": "built-in image_gen",
+          "prompt": "Edit only the framing of this transparent Forgotten Seed Phrase action sprite. Preserve the exact terrified face, messy brown hair, navy hoodie, ripped dark trousers, sneakers, enormous gold key and gold glowing lock, dynamic pose, ink and painted textures and colors. Reduce the entire sprite within the canvas so the key's topmost pink glow and both shoe soles have complete silhouettes and at least 8 percent truly empty transparent padding on all four sides. Restore the small clipped glow at the top and any clipped shoe edge. Full body, key and lock fully in frame. Genuine transparent RGBA background. No background scene, text, extra objects or frame.",
+          "reference": "/workspace/scratch/80a8c8c1affe/generated_images/exec-31beab4b-c83d-4671-b158-0f5081463218.png",
+          "output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-4e30e56b-dec8-4b20-82eb-dc9bb44f4e99.png",
+          "reason": "Small key glow clipped at top; repaired complete glow and framing.",
+          "transparent_background": true
+        }
+      ],
+      "qa": {
+        "visual_inspected": true,
+        "identity_and_style": "Preserved reference identity and grotesque ink/paint style.",
+        "full_body_and_props": "Complete body silhouette, held props, and effect endpoints visible.",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          19,
+          1240,
+          1254
+        ],
+        "visible_alpha_gt_8_bbox": [
+          104,
+          33,
+          1156,
+          1218
+        ],
+        "margin_note": "Complete silhouette accepted per root clarification; common transparent canvas/baseline handled by root.",
+        "selected_png_copied_unchanged": true,
+        "sha256": "fe5b6f2569c2415a631188e50a6f55d90fe1f0a4134317cdf1269e230e85307b"
+      },
+      "initial_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-31beab4b-c83d-4671-b158-0f5081463218.png",
+      "reference_sha256": "744328a9542bd926bec972695fc5bdfba980eb2ca1e8a58e3ec5ea065fcdc09b"
+    },
+    {
+      "id": "CC039",
+      "name": "Elongated Ego",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional rocket baron riding a small absurd rocket while brandishing a renaming sign.",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC039.png",
+      "reference_viewed": true,
+      "source_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-361f05b1-4a25-430a-9944-5f0ac5fcb26a.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC039.png",
+      "transparent_background": true,
+      "edit_chain": [],
+      "qa": {
+        "visual_inspected": true,
+        "identity_and_style": "Preserved reference identity and grotesque ink/paint style.",
+        "full_body_and_props": "Complete body silhouette, held props, and effect endpoints visible.",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          1253,
+          1254
+        ],
+        "visible_alpha_gt_8_bbox": [
+          93,
+          6,
+          1214,
+          1245
+        ],
+        "margin_note": "Complete silhouette accepted per root clarification; common transparent canvas/baseline handled by root.",
+        "selected_png_copied_unchanged": true,
+        "sha256": "ce72e533f2df8f2dd974fdf8616bc11440113f6fa11e84947783efe0492b252a"
+      },
+      "reference_sha256": "2d89277d37065e2c36a413e7d18b415beced7956612aed89cd9d29da5e140f16"
+    },
+    {
+      "id": "CC040",
+      "name": "Laser-Eye Prophet",
+      "mode": "built-in image_gen",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: laser eye prophet leaning forward and firing two narrow neon eye beams.",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC040.png",
+      "reference_viewed": true,
+      "source_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2efc39a3-eda6-4be1-bf14-cecd673e53b6.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC040.png",
+      "transparent_background": true,
+      "edit_chain": [
+        {
+          "mode": "built-in image_gen",
+          "prompt": "Repair this transparent Laser-Eye Prophet sprite. Preserve his exact gray hair and beard, grotesque face, black pinstripe suit, purple tie, gold coin, gold watch, fully visible body and lunging pose, and the irregular punk comic ink/paint rendering. Change only the framing and eye beam endpoints: zoom entire sprite out to fit inside central 78 percent of the canvas, and make the two narrow neon red eye beams short tapered rays ending visibly inside the canvas to the upper right. Both beam tips and rightmost fingertips must be fully visible with at least 8 percent completely transparent padding around all artwork. Never let a beam touch or go beyond image edges. No text, no frame, no environment, no added objects. Genuine transparent RGBA background.",
+          "reference": "/workspace/scratch/80a8c8c1affe/generated_images/exec-b0c40ee1-a3ea-4658-b268-8e26ef79d4c5.png",
+          "output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2efc39a3-eda6-4be1-bf14-cecd673e53b6.png",
+          "reason": "Eye beam ends clipped beyond image edge; repaired two beam endpoints within frame.",
+          "transparent_background": true
+        }
+      ],
+      "qa": {
+        "visual_inspected": true,
+        "identity_and_style": "Preserved reference identity and grotesque ink/paint style.",
+        "full_body_and_props": "Complete body silhouette, held props, and effect endpoints visible.",
+        "mode": "RGBA",
+        "size": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          44,
+          1240,
+          1254
+        ],
+        "visible_alpha_gt_8_bbox": [
+          137,
+          101,
+          1194,
+          1175
+        ],
+        "margin_note": "Complete silhouette accepted per root clarification; common transparent canvas/baseline handled by root.",
+        "selected_png_copied_unchanged": true,
+        "sha256": "73450b22afeedc03afc3cf8d29daa4d7b5caba36d972476f3ed02560a5ebd721"
+      },
+      "initial_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-b0c40ee1-a3ea-4658-b268-8e26ef79d4c5.png",
+      "reference_sha256": "beafa6152eaa1faa3fb3d2c49a2ba7d747a2eb9d3e34f797125ff9cb63d43493"
+    }
+  ],
+  "completed_ids": [
+    "CC021",
+    "CC022",
+    "CC023",
+    "CC024",
+    "CC025",
+    "CC039",
+    "CC040"
+  ]
+}

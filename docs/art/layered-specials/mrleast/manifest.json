@@ -1,0 +1,62 @@
+{
+  "character": "CC017",
+  "name": "MrLeast",
+  "generator": "built-in image_gen",
+  "styleReference": "public/assets/roster-b2/CC017.webp",
+  "costumeReference": "public/assets/actors/CC017-b2-0.webp",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/mrleast/wholebody-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action",
+      "usableCount": 8,
+      "cropBoxes": [[15,83,360,430],[415,78,360,439],[795,9,325,503],[1138,118,387,401],[19,643,507,332],[439,572,351,417],[813,583,352,423],[1163,495,355,517]],
+      "prompt": "docs/art/layered-specials/mrleast/wholebody-prompt.txt",
+      "notes": "Visual inspection: all eight intact full-body actors and blank cheque boards present. Irregular packing slightly crosses nominal cell boundaries; isolate connected alpha components instead of rigid grid cropping.",
+      "poses": [
+        "Horizontal cheque ready",
+        "Diagonal cheque lift",
+        "Overhead wind-up",
+        "Forward downswing",
+        "Low follow-through",
+        "Backward recoil stumble",
+        "Windblown recovery",
+        "Triumphant overhead cheque"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/reaction-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "usableCount": 8,
+      "cropBoxes": [[9,8,343,490],[381,11,357,487],[756,12,385,486],[1158,11,370,487],[9,514,347,498],[367,517,379,495],[770,521,401,491],[1159,514,366,498]],
+      "prompt": "docs/art/layered-specials/mrleast/reaction-prompt.txt",
+      "notes": "Visual inspection: all eight head-to-hip actors keep both hands and tiny plain gold coin visible. Mid-close frames have a flat lower clothing crop by design; whole actor limbs remain attached.",
+      "poses": [
+        "Excited tiny coin pinch",
+        "Coin near eye huge grin",
+        "Coin thrust forward",
+        "Smug palm offer",
+        "Proud tiny palm coin",
+        "Thumbs-up hype",
+        "Confused no applause",
+        "Awkward forced grin offer"
+      ]
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/mrleast/soundstage-original.png",
+    "prompt": "docs/art/layered-specials/mrleast/soundstage-prompt.txt",
+    "notes": "Visually inspected empty fixed soundstage plate: magenta/acid-yellow scratched ink, empty folding seats at sides, spotlight truss, clear central scratched floor. No people, cheques, money or text."
+  },
+  "inspection": {
+    "allOutputsViewed": true,
+    "requestedPoses": 16,
+    "visuallyUsablePoses": 16,
+    "alphaPreserved": true,
+    "componentCheck": "8 independent connected alpha components over 1500 pixels in each sheet at alpha >=36. cropBoxes are [left,top,width,height], reading order, threshold bounds without added padding."
+  }
+}
+

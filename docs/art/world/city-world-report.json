@@ -1,0 +1,116 @@
+{
+  "asset": "city-world.png",
+  "dimensions": [
+    1586,
+    992
+  ],
+  "generatedWith": "built-in image_gen",
+  "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/city-backdrop.webp",
+  "hotspots": {
+    "court": {
+      "center": [
+        0.51,
+        0.3
+      ],
+      "bounds": [
+        0.34,
+        0.08,
+        0.29,
+        0.34
+      ]
+    },
+    "airfryer": {
+      "center": [
+        0.19,
+        0.38
+      ],
+      "bounds": [
+        0.095,
+        0.16,
+        0.205,
+        0.325
+      ]
+    },
+    "factory": {
+      "center": [
+        0.785,
+        0.225
+      ],
+      "bounds": [
+        0.7,
+        0.07,
+        0.17,
+        0.26
+      ]
+    },
+    "market": {
+      "center": [
+        0.128,
+        0.66
+      ],
+      "bounds": [
+        0.035,
+        0.54,
+        0.18,
+        0.235
+      ]
+    },
+    "packs": {
+      "center": [
+        0.413,
+        0.66
+      ],
+      "bounds": [
+        0.294,
+        0.53,
+        0.215,
+        0.245
+      ]
+    },
+    "props": {
+      "center": [
+        0.873,
+        0.78
+      ],
+      "bounds": [
+        0.775,
+        0.65,
+        0.17,
+        0.235
+      ]
+    },
+    "collection": {
+      "center": [
+        0.867,
+        0.49
+      ],
+      "bounds": [
+        0.766,
+        0.305,
+        0.188,
+        0.31
+      ]
+    },
+    "jobs": {
+      "center": [
+        0.655,
+        0.525
+      ],
+      "bounds": [
+        0.606,
+        0.42,
+        0.092,
+        0.19
+      ]
+    }
+  },
+  "notes": [
+    "All eight integrated destination signs are spelled correctly and visually separated.",
+    "Connected roads, no HUD, markers, foreground people or characters.",
+    "Camera is elevated three-quarter with front-facing facades; lower angle than a true isometric overhead.",
+    "Bottom foreground includes riverside railing and canal; street is broad and usable above this.",
+    "Generated resolution is 1586x992 rather than requested approximately 2560x1600; do not artificially upscale unless desired.",
+    "Actual destinations shift notably: market leftward, props rightward/downward, collection rightward, factory lower."
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: production environment background for the browser game CANCEL CITY. One 2560x1600 landscape scene, not a screenshot.\nInput image 1 is the existing CANCEL CITY world backdrop. It is a STYLE AND WORLD REFERENCE only: preserve its dirty etched pen art, graphic black contour work and ruined satirical-city personality. Change its camera angle and layout completely to the elevated three-quarter neighborhood specified below; use a yellow sunset rather than its pink sky. Do not copy the statue, center arch, heap of junk or text slogans. The new functional city map needs readable separated destinations.\nPrimary request: Create ONE connected three-quarter overhead view of a crooked, satirical adult-cartoon city neighborhood. The art must closely match the approved dirty scratchy etched black ink look: dense irregular pen contours, crosshatching, gritty halftone, dirty cream concrete, acid-yellow sunset, restrained hot-magenta signs and paint. The scene is detailed but readable, with substantially less clutter than the concept. The roads form one physically connected district, with continuous buildings beyond the edges. No floating island.\nComposition: building facades and doors must face the camera and be visibly separated, suitable for HTML hotspots placed above the image. Use these normalized centers as a compositional guide, relative to full image width/height:\n1. SCREENSHOT COURT at x .53, y .35: largest crooked civic courthouse, readable columns, damaged steps, surveillance cameras.\n2. AIRFRYER PALACE at .18,.40: regal kitchen appliance shop with a little decorative dragon chimney and fryer shapes.\n3. APOLOGY FACTORY at .78,.24: industrial factory facade, pipes, dirty cream-brick walls, magenta smoke details.\n4. RUG ALLEY at .17,.66: shady street market storefront, awning, tiny crates and rugs, acid-yellow lit door.\n5. OPEN PACKS at .44,.70: physical packet kiosk, small canopy, colorful illustrated card packets behind the glass, bright cream illuminated service window.\n6. PROP STASH at .80,.73: basement shop entrance under a crooked brick building, basement steps, visible harmless prop silhouettes and old storage crates.\n7. COLLECTION at .77,.48: dossier/archive office with walls of paper files visible through its front window, old rotary vent and a solid identifiable doorway.\n8. JOBS at .66,.56: a large freestanding battered physical notice board, tacked sheets, nearby lamp.\nA clear open paved square at .54,.57 connects the courthouse, kiosk, market and archive via streets and sidewalks. Include narrow alleys, overhead cables, fire escapes, trash bags and torn posters, but keep all eight destination silhouettes easy to find. Keep the bottom 10 percent as a relatively quiet continuous street, no huge foreground obstruction. Scene fills canvas.\nIntegrated English facade signage only, with exact readable words: \"SCREENSHOT COURT\", \"AIRFRYER PALACE\", \"APOLOGY FACTORY\", \"RUG ALLEY\", \"OPEN PACKS\", \"PROP STASH\", \"COLLECTION\", \"JOBS\". Signs must belong physically to buildings and the notice board. Do not add other words.\nLighting/mood: filthy surreal yellow late afternoon, hard black ink shadows, dark humor, adult parody trading-card world. Human-scale architecture, eye for gameplay readability, subtle caricature in crooked civic buildings.\nConstraints: background environment only. No HUD, UI panels, buttons, markers, cursor, overlay text, logo, border, device frame, screenshot split, arrows, map icons, huge foreground people or character portraits. No foreground people at all. No generic smooth 3D, toy-town, polished anime, glossy mobile game or floating diamond grid. No translucent overlays, fog concealing destinations or baked-in selected-state effects."
+}

@@ -1,0 +1,18 @@
+{
+  "characterId": "CC144",
+  "status": "portrait-only",
+  "missing": [
+    "poses.png",
+    "actor-0.webp",
+    "actor-1.webp",
+    "actor-2.webp",
+    "actor-3.webp",
+    "actor-4.webp",
+    "actor-5.webp",
+    "special.webp",
+    "metadata.json",
+    "review.jpg"
+  ],
+  "blockedBy": "built-in imagegen daily usage limit 429",
+  "resetAtEpoch": 1791954365
+}

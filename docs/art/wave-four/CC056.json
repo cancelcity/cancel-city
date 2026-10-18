@@ -1,0 +1,197 @@
+{
+  "characterId": "CC056",
+  "characterName": "Jeffrey Gobstein",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC056-poses.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Measured row-specific empty gutters isolate all six complete subjects: top row split at x404/798 and y605; lower row at x445/833. Original RGBA retained inside the genuine-alpha silhouette plus two-pixel antialiased edge allowance, with no repainting or color changes. Uniform 0.68 scale onto transparent 512-square runtime frames, ground alignment at 462. Bounds measured on decoded runtime webp alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC056-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 147,
+        "top": 60,
+        "right": 364,
+        "bottom": 460
+      },
+      "transparentPixels": 214924,
+      "sourceColumn": {
+        "left": 0,
+        "top": 0,
+        "width": 404,
+        "height": 605
+      },
+      "sourceBodyCrop": {
+        "left": 64,
+        "top": 11,
+        "width": 326,
+        "height": 594
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC056-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 131,
+        "top": 77,
+        "right": 380,
+        "bottom": 459
+      },
+      "transparentPixels": 211906,
+      "sourceColumn": {
+        "left": 404,
+        "top": 0,
+        "width": 394,
+        "height": 605
+      },
+      "sourceBodyCrop": {
+        "left": 10,
+        "top": 28,
+        "width": 373,
+        "height": 569
+      }
+    },
+    {
+      "index": 2,
+      "name": "cast",
+      "path": "/assets/actors/CC056-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 109,
+        "top": 138,
+        "right": 402,
+        "bottom": 459
+      },
+      "transparentPixels": 217686,
+      "sourceColumn": {
+        "left": 798,
+        "top": 0,
+        "width": 456,
+        "height": 605
+      },
+      "sourceBodyCrop": {
+        "left": 2,
+        "top": 103,
+        "width": 438,
+        "height": 479
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC056-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 118,
+        "top": 35,
+        "right": 392,
+        "bottom": 459
+      },
+      "transparentPixels": 211487,
+      "sourceColumn": {
+        "left": 0,
+        "top": 605,
+        "width": 445,
+        "height": 649
+      },
+      "sourceBodyCrop": {
+        "left": 28,
+        "top": 0,
+        "width": 411,
+        "height": 631
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC056-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 140,
+        "top": 91,
+        "right": 370,
+        "bottom": 459
+      },
+      "transparentPixels": 214825,
+      "sourceColumn": {
+        "left": 445,
+        "top": 605,
+        "width": 388,
+        "height": 649
+      },
+      "sourceBodyCrop": {
+        "left": 5,
+        "top": 73,
+        "width": 345,
+        "height": 549
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC056-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 150,
+        "top": 75,
+        "right": 361,
+        "bottom": 459
+      },
+      "transparentPixels": 214304,
+      "sourceColumn": {
+        "left": 833,
+        "top": 605,
+        "width": 421,
+        "height": 649
+      },
+      "sourceBodyCrop": {
+        "left": 50,
+        "top": 58,
+        "width": 317,
+        "height": 572
+      }
+    }
+  ]
+}

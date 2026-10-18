@@ -1,0 +1,161 @@
+{
+  "characterId": "CC051",
+  "characterName": "Oscar Goblin",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC051-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Six disconnected alpha silhouettes isolated using connected contours at alpha>=8. Small disconnected details assigned to nearest main silhouette bounds; one-pixel allowance retains original antialiasing RGBA. No repainting. Uniform0.78 resize and 512-square transparent ground alignment at462. Final pixel bounds measured alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC051-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 111,
+        "top": 78,
+        "right": 402,
+        "bottom": 459
+      },
+      "transparentPixels": 190655,
+      "sourceBodyCrop": {
+        "left": 78,
+        "top": 8,
+        "width": 378,
+        "height": 494
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC051-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 91,
+        "top": 90,
+        "right": 420,
+        "bottom": 459
+      },
+      "transparentPixels": 194413,
+      "sourceBodyCrop": {
+        "left": 544,
+        "top": 15,
+        "width": 425,
+        "height": 478
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "path": "/assets/actors/CC051-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 65,
+        "top": 120,
+        "right": 447,
+        "bottom": 460
+      },
+      "transparentPixels": 186796,
+      "sourceBodyCrop": {
+        "left": 1034,
+        "top": 45,
+        "width": 495,
+        "height": 441
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC051-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 69,
+        "top": 64,
+        "right": 443,
+        "bottom": 459
+      },
+      "transparentPixels": 189295,
+      "sourceBodyCrop": {
+        "left": 78,
+        "top": 500,
+        "width": 486,
+        "height": 512
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC051-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 67,
+        "top": 92,
+        "right": 444,
+        "bottom": 459
+      },
+      "transparentPixels": 182175,
+      "sourceBodyCrop": {
+        "left": 566,
+        "top": 530,
+        "width": 489,
+        "height": 477
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC051-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 133,
+        "top": 89,
+        "right": 379,
+        "bottom": 459
+      },
+      "transparentPixels": 195239,
+      "sourceBodyCrop": {
+        "left": 1105,
+        "top": 530,
+        "width": 319,
+        "height": 479
+      }
+    }
+  ]
+}

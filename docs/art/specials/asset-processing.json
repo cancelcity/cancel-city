@@ -1,0 +1,929 @@
+{
+  "mode": "Alpha-bound alignment, proportional resize, common transparent canvas/baseline and WebP encoding. Generated masters unchanged.",
+  "records": [
+    {
+      "id": "CC001",
+      "source": "docs/art/specials/CC001.png",
+      "sourceSha256": "0e3b90b5141cc0429e17e98d8fbad33b7257cbfe93eec7c4bc33d8870867afb8",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 160,
+        "top": 143,
+        "width": 989,
+        "height": 993
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC001.webp",
+      "bytes": 195196
+    },
+    {
+      "id": "CC002",
+      "source": "docs/art/specials/CC002.png",
+      "sourceSha256": "5a7addccac9af4f9139321be653abdfbebb71ba0c7ed8022da6392e67ec04b4c",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 145,
+        "top": 11,
+        "width": 993,
+        "height": 1221
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC002.webp",
+      "bytes": 173420
+    },
+    {
+      "id": "CC003",
+      "source": "docs/art/specials/CC003.png",
+      "sourceSha256": "273af54df64edbe698e8b1cb6b18822b5daca5b61d739ecb0f3274cc92fbbc1c",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 34,
+        "top": 13,
+        "width": 1194,
+        "height": 1231
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC003.webp",
+      "bytes": 219368
+    },
+    {
+      "id": "CC004",
+      "source": "docs/art/specials/CC004.png",
+      "sourceSha256": "dd2b1ef5b82fc7d2f1e25affc07d1009752ed971ec81db8ddbda66649d3328a7",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 18,
+        "top": 0,
+        "width": 1222,
+        "height": 1254
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC004.webp",
+      "bytes": 299804
+    },
+    {
+      "id": "CC005",
+      "source": "docs/art/specials/CC005.png",
+      "sourceSha256": "15c91685b54d529b7400546b48a1ccf3c95443568eac9e55dd8d18ca1b316fb7",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 136,
+        "top": 92,
+        "width": 1033,
+        "height": 1090
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC005.webp",
+      "bytes": 195510
+    },
+    {
+      "id": "CC006",
+      "source": "docs/art/specials/CC006.png",
+      "sourceSha256": "1e64f04a03371a8b702d2e28639f0a5d4c8fe03c65e1a8421f36cb94e24849ec",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 154,
+        "top": 142,
+        "width": 954,
+        "height": 998
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC006.webp",
+      "bytes": 185710
+    },
+    {
+      "id": "CC007",
+      "source": "docs/art/specials/CC007.png",
+      "sourceSha256": "6137c5fa1c736c569f33913b5c2751bcbcf499989da6f06b18dac25907587759",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 55,
+        "top": 17,
+        "width": 1180,
+        "height": 1225
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC007.webp",
+      "bytes": 190476
+    },
+    {
+      "id": "CC008",
+      "source": "docs/art/specials/CC008.png",
+      "sourceSha256": "f5fab5b5cbdfb87d9e7c82b15a6bbeff81fe106865291079aa0da9d7d9583f0e",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 104,
+        "top": 9,
+        "width": 1118,
+        "height": 1231
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC008.webp",
+      "bytes": 247176
+    },
+    {
+      "id": "CC009",
+      "source": "docs/art/specials/CC009.png",
+      "sourceSha256": "4bb0b437ec438b0964eab3aa7ff3bea65c198240caccc40af393ec16923f501e",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 262,
+        "top": 0,
+        "width": 827,
+        "height": 1247
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC009.webp",
+      "bytes": 203294
+    },
+    {
+      "id": "CC010",
+      "source": "docs/art/specials/CC010.png",
+      "sourceSha256": "4f4290c962ba1706e38766d140307c1ef9a919f439def814b3a881229e9385e4",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 55,
+        "top": 15,
+        "width": 1172,
+        "height": 1216
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC010.webp",
+      "bytes": 223296
+    },
+    {
+      "id": "CC011",
+      "source": "docs/art/specials/CC011.png",
+      "sourceSha256": "9805a2b21ca7495370e2a9167d10651cf1856c4bfdbfcb27a87237cbf5f00c49",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 148,
+        "top": 104,
+        "width": 1031,
+        "height": 1089
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC011.webp",
+      "bytes": 159864
+    },
+    {
+      "id": "CC012",
+      "source": "docs/art/specials/CC012.png",
+      "sourceSha256": "d7c1841f28b3cb38f11ac32304d4fb81577d209c02a75e720dcd0f63e6cc4685",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 26,
+        "top": 5,
+        "width": 1207,
+        "height": 1241
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC012.webp",
+      "bytes": 217158
+    },
+    {
+      "id": "CC013",
+      "source": "docs/art/specials/CC013.png",
+      "sourceSha256": "1dba10efdfe499a25de77fcc768a40bc64935a904dacb981b22dbe63b4bc13db",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 72,
+        "top": 2,
+        "width": 1159,
+        "height": 1252
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC013.webp",
+      "bytes": 243854
+    },
+    {
+      "id": "CC014",
+      "source": "docs/art/specials/CC014.png",
+      "sourceSha256": "e22f09fdfffb6ec67f804b009553e396d3913b0a1925b186c2e1081afaa1c28b",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 132,
+        "top": 24,
+        "width": 1101,
+        "height": 1197
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC014.webp",
+      "bytes": 241694
+    },
+    {
+      "id": "CC015",
+      "source": "docs/art/specials/CC015.png",
+      "sourceSha256": "dca9c012d76d177e49e963609bd90055e8b37fdb2f6aa8d130b460825ebc73b6",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 67,
+        "top": 10,
+        "width": 1187,
+        "height": 1242
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC015.webp",
+      "bytes": 237236
+    },
+    {
+      "id": "CC016",
+      "source": "docs/art/specials/CC016.png",
+      "sourceSha256": "b4c0b76e8c482f0e2855d9786bf9f78344fb5e72a6c793a641985abc837133b8",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 186,
+        "top": 164,
+        "width": 941,
+        "height": 942
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC016.webp",
+      "bytes": 181804
+    },
+    {
+      "id": "CC017",
+      "source": "docs/art/specials/CC017.png",
+      "sourceSha256": "60e0e741710dfa420403554ef419d4a6a877cc96c7ec772ca047db8d0ba8cae5",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 194,
+        "top": 128,
+        "width": 952,
+        "height": 1059
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC017.webp",
+      "bytes": 225120
+    },
+    {
+      "id": "CC018",
+      "source": "docs/art/specials/CC018.png",
+      "sourceSha256": "eae6f967a4da195b68e02fe735fb06d2d4fbc2dd10685f37156696629cff7ea5",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 34,
+        "top": 0,
+        "width": 1217,
+        "height": 1253
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC018.webp",
+      "bytes": 331898
+    },
+    {
+      "id": "CC019",
+      "source": "docs/art/specials/CC019.png",
+      "sourceSha256": "2fc3d5c13190dca614a2b752a17cbc80f17673bbce71d4a41fd915566ad55820",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 64,
+        "top": 1,
+        "width": 1163,
+        "height": 1248
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC019.webp",
+      "bytes": 195858
+    },
+    {
+      "id": "CC020",
+      "source": "docs/art/specials/CC020.png",
+      "sourceSha256": "28cdea4b4959ed0d87baee0e6c7ddb31a81b44b263bda84f4a3cd9448a51f5fc",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 91,
+        "top": 0,
+        "width": 1141,
+        "height": 1246
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC020.webp",
+      "bytes": 232410
+    },
+    {
+      "id": "CC021",
+      "source": "docs/art/specials/CC021.png",
+      "sourceSha256": "cca35d7d50e229a0df1dcdac85952c1f38b3c573ed66525d9c93d31f45bbce55",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 130,
+        "top": 98,
+        "width": 1034,
+        "height": 1073
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC021.webp",
+      "bytes": 172810
+    },
+    {
+      "id": "CC022",
+      "source": "docs/art/specials/CC022.png",
+      "sourceSha256": "07e61aa3d9528d1d3c23606707d23626448cf89fda5e4f53946cdc722ca35547",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 21,
+        "top": 4,
+        "width": 1201,
+        "height": 1240
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC022.webp",
+      "bytes": 309474
+    },
+    {
+      "id": "CC023",
+      "source": "docs/art/specials/CC023.png",
+      "sourceSha256": "d8ab7ae899ce2d206f970d003bd831d26a37712513a1389984e7c971ce76eb30",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 20,
+        "top": 4,
+        "width": 1223,
+        "height": 1245
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC023.webp",
+      "bytes": 222786
+    },
+    {
+      "id": "CC024",
+      "source": "docs/art/specials/CC024.png",
+      "sourceSha256": "d30dc49a9f47c3fd5139bca6d3f65887acf42c2d197e1226fd6aa3388c460b61",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 49,
+        "top": 69,
+        "width": 1140,
+        "height": 1157
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC024.webp",
+      "bytes": 176284
+    },
+    {
+      "id": "CC025",
+      "source": "docs/art/specials/CC025.png",
+      "sourceSha256": "fe5b6f2569c2415a631188e50a6f55d90fe1f0a4134317cdf1269e230e85307b",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 98,
+        "top": 28,
+        "width": 1064,
+        "height": 1196
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC025.webp",
+      "bytes": 208076
+    },
+    {
+      "id": "CC026",
+      "source": "docs/art/specials/CC026.png",
+      "sourceSha256": "887ec36b01895ab7e000d1d9668645ea984bab2ddccd1415e729c5b86cb537f4",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 266,
+        "top": 115,
+        "width": 776,
+        "height": 1037
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC026.webp",
+      "bytes": 182606
+    },
+    {
+      "id": "CC027",
+      "source": "docs/art/specials/CC027.png",
+      "sourceSha256": "f86f51164e408201fcd1f1a6115d231403e27dfe81265edcd2a6519f4bb2114c",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 32,
+        "top": 9,
+        "width": 1199,
+        "height": 1235
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC027.webp",
+      "bytes": 242086
+    },
+    {
+      "id": "CC028",
+      "source": "docs/art/specials/CC028.png",
+      "sourceSha256": "199a619312e4ac1d573572ffc9938638019d8678613ac38c36645fb8e022a7ff",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 29,
+        "top": 0,
+        "width": 1207,
+        "height": 1241
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC028.webp",
+      "bytes": 239660
+    },
+    {
+      "id": "CC029",
+      "source": "docs/art/specials/CC029.png",
+      "sourceSha256": "f0d37f215777a8e47e9c2bd07affd079940b96473e23ae72be713d5b59eb1736",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 94,
+        "top": 13,
+        "width": 1131,
+        "height": 1229
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC029.webp",
+      "bytes": 255784
+    },
+    {
+      "id": "CC030",
+      "source": "docs/art/specials/CC030.png",
+      "sourceSha256": "772911207ebf64e702da76731af94994c73e0a0a4cad6fdbb13a83aa90c3f420",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 158,
+        "top": 0,
+        "width": 988,
+        "height": 1254
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC030.webp",
+      "bytes": 230216
+    },
+    {
+      "id": "CC031",
+      "source": "docs/art/specials/CC031.png",
+      "sourceSha256": "6a784559ee4471965aa3133759f8e05457d0ff5b1635d6369117d349161dcea6",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 35,
+        "top": 8,
+        "width": 1203,
+        "height": 1238
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC031.webp",
+      "bytes": 218488
+    },
+    {
+      "id": "CC032",
+      "source": "docs/art/specials/CC032.png",
+      "sourceSha256": "27dad56837adaa344f540f537d2135276f174797e9d4267a1b8495f87873e9eb",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 159,
+        "top": 55,
+        "width": 992,
+        "height": 1132
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC032.webp",
+      "bytes": 180622
+    },
+    {
+      "id": "CC033",
+      "source": "docs/art/specials/CC033.png",
+      "sourceSha256": "c3cc50b513c7a579282a7d3e2de08a47d7120d62a9faabcdfae37fde3552f635",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 20,
+        "top": 8,
+        "width": 1222,
+        "height": 1219
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC033.webp",
+      "bytes": 253776
+    },
+    {
+      "id": "CC034",
+      "source": "docs/art/specials/CC034.png",
+      "sourceSha256": "ddd4a6d4c94f7908ffbf8a5b77154be9c19a68e40ae5f0ac33ed2f58a95f19b4",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 40,
+        "top": 13,
+        "width": 1209,
+        "height": 1231
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC034.webp",
+      "bytes": 247558
+    },
+    {
+      "id": "CC035",
+      "source": "docs/art/specials/CC035.png",
+      "sourceSha256": "85267d54c4c93042983c1900dacef3fe7bc2d5b2c3cbdf1dd177e775e7e397a5",
+      "sourceDimensions": [
+        1164,
+        1351
+      ],
+      "visibleAlphaBounds": {
+        "left": 5,
+        "top": 0,
+        "width": 1155,
+        "height": 1351
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC035.webp",
+      "bytes": 163898
+    },
+    {
+      "id": "CC036",
+      "source": "docs/art/specials/CC036.png",
+      "sourceSha256": "f7669043c64793b4737aeaa18fdec17398163fc54d63f5d025ffaa89ff83d6c8",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 46,
+        "top": 10,
+        "width": 1170,
+        "height": 1237
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC036.webp",
+      "bytes": 178482
+    },
+    {
+      "id": "CC037",
+      "source": "docs/art/specials/CC037.png",
+      "sourceSha256": "cee093059d14aef2cf621fe604ade0f58c010157fc18a6a472a9a8dc08387965",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 50,
+        "top": 7,
+        "width": 1163,
+        "height": 1244
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC037.webp",
+      "bytes": 208874
+    },
+    {
+      "id": "CC038",
+      "source": "docs/art/specials/CC038.png",
+      "sourceSha256": "822513cf65a937046d07d3156ff871f320eaf27b5a1880f5faa0ccbdf97ff64b",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 91,
+        "top": 1,
+        "width": 1151,
+        "height": 1251
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC038.webp",
+      "bytes": 202976
+    },
+    {
+      "id": "CC039",
+      "source": "docs/art/specials/CC039.png",
+      "sourceSha256": "ce72e533f2df8f2dd974fdf8616bc11440113f6fa11e84947783efe0492b252a",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 87,
+        "top": 0,
+        "width": 1133,
+        "height": 1250
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC039.webp",
+      "bytes": 209642
+    },
+    {
+      "id": "CC040",
+      "source": "docs/art/specials/CC040.png",
+      "sourceSha256": "73450b22afeedc03afc3cf8d29daa4d7b5caba36d972476f3ed02560a5ebd721",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 131,
+        "top": 95,
+        "width": 1069,
+        "height": 1086
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC040.webp",
+      "bytes": 205250
+    },
+    {
+      "id": "CC041",
+      "source": "docs/art/specials/CC041.png",
+      "sourceSha256": "9226ffa7412d700327b3dcbf967e85a4713ab3c9dfcbfd2efda9f693626c53ca",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 240,
+        "top": 46,
+        "width": 776,
+        "height": 1171
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC041.webp",
+      "bytes": 166138
+    },
+    {
+      "id": "CC042",
+      "source": "docs/art/specials/CC042.png",
+      "sourceSha256": "c04d68e9adf389e7c64107058c987662da624881b86e81d21c98ed33ecbdf3a5",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 52,
+        "top": 6,
+        "width": 1184,
+        "height": 1232
+      },
+      "runtimeCanvas": [
+        896,
+        896
+      ],
+      "runtimeBottomMargin": 64,
+      "output": "public/assets/specials/CC042.webp",
+      "bytes": 257584
+    }
+  ]
+}

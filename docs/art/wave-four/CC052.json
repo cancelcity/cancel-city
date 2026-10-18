@@ -1,0 +1,161 @@
+{
+  "characterId": "CC052",
+  "characterName": "Sentence Is Just a Number",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC052-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Six disconnected alpha silhouettes isolated using connected contours at alpha>=8. Small disconnected details assigned to nearest main silhouette bounds; one-pixel allowance retains original antialiasing RGBA. No repainting. Uniform0.78 resize and 512-square transparent ground alignment at462. Final pixel bounds measured alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC052-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 115,
+        "top": 86,
+        "right": 395,
+        "bottom": 460
+      },
+      "transparentPixels": 212071,
+      "sourceBodyCrop": {
+        "left": 89,
+        "top": 3,
+        "width": 364,
+        "height": 485
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC052-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 61,
+        "top": 86,
+        "right": 450,
+        "bottom": 459
+      },
+      "transparentPixels": 198776,
+      "sourceBodyCrop": {
+        "left": 513,
+        "top": 10,
+        "width": 503,
+        "height": 484
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "path": "/assets/actors/CC052-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 69,
+        "top": 86,
+        "right": 443,
+        "bottom": 460
+      },
+      "transparentPixels": 199708,
+      "sourceBodyCrop": {
+        "left": 1036,
+        "top": 9,
+        "width": 483,
+        "height": 484
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC052-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 89,
+        "top": 63,
+        "right": 424,
+        "bottom": 459
+      },
+      "transparentPixels": 209509,
+      "sourceBodyCrop": {
+        "left": 68,
+        "top": 488,
+        "width": 434,
+        "height": 513
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC052-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 83,
+        "top": 63,
+        "right": 427,
+        "bottom": 459
+      },
+      "transparentPixels": 203409,
+      "sourceBodyCrop": {
+        "left": 603,
+        "top": 493,
+        "width": 446,
+        "height": 514
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC052-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 107,
+        "top": 57,
+        "right": 405,
+        "bottom": 459
+      },
+      "transparentPixels": 205091,
+      "sourceBodyCrop": {
+        "left": 1096,
+        "top": 485,
+        "width": 388,
+        "height": 521
+      }
+    }
+  ]
+}

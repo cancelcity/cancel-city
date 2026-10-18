@@ -1,0 +1,4 @@
+# Apology Influencer acting artwork
+Built-in image_gen. Identity reference: public/assets/residents/CC042.webp. Preserve adult fair freckled face, thick blond curls, bright blue eyes, glossy magenta lips, teal hoodie/white drawstrings, black trousers and pink sneakers. Signature white tissue and beige sponsored tag, handheld phone/ringlight where appropriate. Punk comic screenprint, thick rough ink, scratchy hatching and halftone, matching portrait.
+
+True transparent1536x1024 six pose3x2 sheet in row-major order: idle awkward apology smile with tissue/tag; windup dramatic tearful handoverheart; support/cast forward right; victory filmed with sponsored tag raised; shocked flinch; embarrassed crouched uglycry with tissue cheek/tag drooping. Fully isolated full bodies, no backdrop, floor shadows, text or extra people. Crop at actual empty gutters, preserve original alpha, uniform0.78scale and ground align. Inspected runtime review and measured metadata alongside.

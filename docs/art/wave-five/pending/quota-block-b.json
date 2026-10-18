@@ -1,0 +1,16 @@
+{
+  "blockedIds": [
+    "CC089",
+    "CC090",
+    "CC091",
+    "CC092",
+    "CC093",
+    "CC094"
+  ],
+  "tool": "built-in image_gen",
+  "error": "HTTP429 usage_limit_reached",
+  "resetsAtUnix": 1791954365,
+  "resetsInSecondsAtFailure": 18744,
+  "attemptedId": "CC089",
+  "noFallbackUsed": true
+}

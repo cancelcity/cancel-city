@@ -1,0 +1,41 @@
+{
+  "characterId": "CC010",
+  "character": "Homelesslander",
+  "generator": "built-in image_gen",
+  "created": "2026-10-15",
+  "referencePaths": [
+    "public/assets/roster-b2/CC010.webp",
+    "public/assets/actors/CC010-b2-0.webp",
+    "public/assets/actors/CC010-b2-3.webp"
+  ],
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/homelesslander/action-sheet.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action",
+      "originalGeneratedPath": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2ecedf0f-c698-44c1-925b-15bc2a2b5311.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent 2D game cinematic sprite sheet, 8 poses.\nInput image 1 is the exact rough etched trading-card style and face reference; images 2 and 3 show the SAME intact character's costume and full-body proportions.\nCreate eight NEW full-body poses of this SAME fictional parody character Homelesslander: tall gaunt furious blond male superhero with angular unshaven face, huge tired bright blue eyes, messy swept blond hair, shredded dark navy blue suit, ornate battered golden eagle shoulder armor, gold belt, red long gloves, red boots, ragged red cape. He clutches or wears a battered plain brown cardboard box; no letters.\nLayout: precise 4 columns by 2 rows, transparent background, each pose wholly contained inside its own equal cell, substantial empty transparent gutters between cells, consistent character proportions and scale. Exactly ONE complete intact actor per cell. All head, feet, fingers and cape tips inside each cell. No labels, no gridlines, no background, no ground shadow, no smoke or energy or detached fragments.\nReading order:\n1 standing, shoulders hunched, both hands gripping intact cardboard box at waist, furious narrowed eyes;\n2 low crouch over box, cape tucked behind, glaring forward;\n3 charging power stance, knees bent, grips box to torso, straining face;\n4 takes flight toward right with body diagonal and box gripped to chest, intact cape trails left;\n5 fully extended superhero flying toward right, box clamped under one arm, worried angry face;\n6 lands upright after a gust, windswept hair and cape to left, smug smile, box held proudly;\n7 suddenly panicked as box crushes inward in his hands, knees knocked, mouth open;\n8 stunned slack-jawed hold, bent cardboard box at waist, same feet planted.\nStyle must be a close match to references: deliberately ugly grotesque caricature, dense scratchy black pen crosshatching, etched ink shadows, halftone stipple, distressed print grain, off-white skin highlights, acid yellow highlights and subtle magenta reflected edge color. Avoid polished clean anime, smooth vector, glossy 3D, soft digital gradients. White checks or checkerboard must NOT be painted; actual transparent alpha.",
+      "inspection": "8 complete intact actors, approximate 4x2 arrangement. Flight actors are wide and exceed nominal equal cells, use connected component extraction; do not rigid-cell crop. Alpha confirmed min0 max254.",
+      "frameCount": 8
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/ending-sheet.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "originalGeneratedPath": "/workspace/scratch/80a8c8c1affe/generated_images/exec-5da011bd-6165-4197-a7db-f192577f0467.png",
+      "prompt": "Use case: identity-preserve. Asset type: transparent 2D game cinematic sprite sheet, 8 successive acting poses.\nUse the first image for the exact same scratchy ugly grotesque card art and character face; image 2 for costume identity; image 3 for the exact intact actor and level of ink detail you must match.\nDraw Homelesslander, this SAME tall gaunt furious blond superhero with angular unshaven face, huge pale blue eyes, messy swept hair, shredded dark navy suit, battered gold eagle shoulder armor, gold belt, long red gloves, red boots, long ragged red cape. Battered plain brown cardboard box is his beloved home.\nExactly 8 whole-body poses in strictly separated 4-column 2-row grid on real transparent alpha. Each actor entirely inside its own equal cell, with a generous empty gutter; keep cape folded narrow enough to fit; keep all hair, hands, feet and cape tips inside canvas. Consistent same body scale and identity, one complete intact body per cell, no cut body parts, no duplicates, no labels.\nReading order:\n1 standing proud smiling smugly, both hands lifting a now battered cardboard box at chest;\n2 one box flap peels sideways, his left hand catches it, smile becoming awkward;\n3 both hands clamping box, wide eyes, cape rising behind him;\n4 cardboard box bends nearly flat while he desperately squeezes it back into shape, outraged teeth;\n5 he holds crumpled box chest high with resigned horror, knees sagging;\n6 kneels down slowly clutching flat box, cape draped on shoulders, dismayed;\n7 sits slumped on his own crushed cardboard box with boots forward, head bowed, cape puddled tightly around him;\n8 same seated defeated posture, head lifted to stare blankly forward, last tiny proud thumbs-up with one hand.\nNo floating cardboard fragments, particles, scenery, shadows or effects; only the intact actor and the box he directly holds or sits on.\nDense scratchy black crosshatching, stipple, distressed comic print, acidic yellow highlights and subtle magenta bounce on shredded navy/red/gold costume, ugly expressive caricature. NO clean anime, glossy rendering, soft airbrushed backgrounds, gradients, painted checkerboard or text. Actual transparent background.",
+      "inspection": "8 distinct intact actors, 4x2 arrangement, slight row boundary overlap from actor heights; use connected component extraction. Last actor thumbs-up. No rejected output.",
+      "frameCount": 8
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/homelesslander/underbridge-plate.png",
+    "originalGeneratedPath": "/workspace/scratch/80a8c8c1affe/generated_images/exec-8f624d4a-a5d3-45e5-82cf-2db9a0ccd06e.png",
+    "prompt": "Use case: illustration-story. Asset type: single fixed scenery plate for a 2D parody game cinematic; landscape 16:9.\nThe reference is ONLY the rough scratchy comic card art style and acidic palette. Remove the character entirely and draw an EMPTY urban underbridge street in the same world. One huge concrete highway bridge spans the upper half of the wide scene, heavy dark supports left and right framing an open central pavement acting area. Deep grungy perspective down the street, distant crooked apartment blocks, a few thin palm silhouettes, distant neon acidic yellow and magenta windows, cracked concrete, small wall stains and grit. A level continuous foreground pavement band across bottom third suitable for a composited superhero actor. Camera at low chest height, medium-wide, slight perspective toward right.\nDense etched black pen crosshatching, scratchy halftone stipple and distressed risograph print texture, dirty grey-brown concrete, near-black bridge underside, poisonous chartreuse yellow distant night sky, hot magenta reflected neon accents. Hand-drawn grotesque punk comic environment, not clean anime and not realistic photography. Keep middle acting space legible with subdued lower detail and light grey brown pavement. Dramatic but deliberately grubby art.\nNO people, no characters, no animals, no vehicles, no cardboard boxes, no loose foreground props, no smoke, no particles, no motion lines, no beams, no text, no letters, no frame, no card UI, no watermark. This is one reusable static background plate. Fill whole landscape canvas, opaque image.",
+    "inspection": "Empty grungy underbridge street, landscape 1672x941 close to16:9, opaque, no actor or cardboard; bright acid sky under bridge. No text."
+  },
+  "notes": "Generated actors are whole figures, not rigged parts. Use fixed scenery only. Actor alpha interiors are intentionally opaque; original PNGs preserve tool alpha.",
+  "componentMetadata": "docs/art/layered-specials/homelesslander/alpha-components.json"
+}

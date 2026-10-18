@@ -1,0 +1,9 @@
+'use client';
+import Link from 'next/link';
+import {ArrowRight,Film} from 'lucide-react';
+import {EXPANSION_RESIDENTS} from '../data/expansion';
+import {MEGA_RESIDENTS} from '../data/mega';
+import {CARD_BY_ID} from '../data/cards';
+import {Portrait} from './card';
+
+export function ExpansionBulletin(){const mega=MEGA_RESIDENTS.length>0,faces=mega?['CC067','CC082','CC135','CC123'].filter(id=>CARD_BY_ID[id]).concat(MEGA_RESIDENTS.map(c=>c.id)).filter((id,i,a)=>a.indexOf(id)===i).slice(0,4):['CC059','CC056','CC063','CC066'];return <section className="expansion-bulletin" aria-label="New playable residents"><div><span className="tape pink">{mega?MEGA_RESIDENTS.length:16} NEW PROBLEMS / SAME CITY</span><h2>{mega?'THE INTERNET':'INFAMY MEETS'}<br/><em>{mega?'HAS MOVED IN.':'ANIME BRAINROT.'}</em></h2><p>{mega?'A rainbow overdraft. Unsolicited assistance. A very expensive paperclip. Every entrance ends in consequences.':'Goblin immunity. Panhandle hands. Seventeen flashbacks. One very impatient punch.'}</p><div className="expansion-actions"><Link className="button acid small" href="/battle/?specials=1"><Film size={17}/>PREVIEW THE NEW SPECIALS</Link><Link className="text-link" href={mega?'/collection/?set=set-06':'/collection/?set=set-04'}>{mega?'INTERNET FOSSILS':'INTERNET INFAMY'} <ArrowRight size={17}/></Link><Link className="text-link" href={mega?'/collection/?set=set-09':'/collection/?set=set-05'}>{mega?'FEED RESIDENTS':'ANIME BRAINROT'} <ArrowRight size={17}/></Link></div><small>All {mega?MEGA_RESIDENTS.length:EXPANSION_RESIDENTS.length} are in packs and the Scrap Exchange.</small></div><div className="expansion-faces">{faces.map(id=><Link key={id} href={`/collection/?q=${encodeURIComponent(CARD_BY_ID[id].name)}`} aria-label={`Inspect ${CARD_BY_ID[id].name}`}><Portrait card={CARD_BY_ID[id]}/><span>{CARD_BY_ID[id].name}</span></Link>)}</div></section>;}

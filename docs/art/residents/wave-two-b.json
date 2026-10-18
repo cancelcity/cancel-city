@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-10-11",
+  "mode": "builtin image_gen",
+  "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "reference_role": "style guidance only; new illustrations, no edits",
+  "portraits": [
+    {
+      "id": "CC033",
+      "name": "Prime Overlord",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; reference image is style guidance only, not an edit target and do not reuse its subject. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: Prime Overlord, a fictional satirical alter ego recognizably Jeff Bezos-inspired: exaggerated bald billionaire with broad polished skull, beady ambitious eyes, huge toothy laugh, metallic-blue space captain jacket with gold trim. Leaning atop a mountain of generic cardboard delivery boxes like a throne; tiny golden rocket in one fist, stopwatch in the other. Purple-orange orbital warehouse backdrop, no recognizable logos or readable text.",
+      "selected_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-1a71608c-f605-4f22-a46c-579054c8aebe.png",
+      "selected_master_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC033.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "inspection_notes": [
+        "Recognizable bald billionaire satirical alter ego; broad skull, ambitious expression and huge toothy laugh.",
+        "Metallic blue and gold captain jacket, generic delivery-box throne, golden rocket and stopwatch all present.",
+        "Full-bleed square image with dense scratchy ink, vivid distressed screen-print colours and dominant face matching reference style.",
+        "No card frame, title, branding or watermark. Stopwatch includes small conventional dial numerals; no other readable text."
+      ]
+    },
+    {
+      "id": "CC034",
+      "name": "Subscription Goblin",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; reference image is style guidance only, not an edit target and do not reuse its subject. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: Subscription Goblin, a tiny grotesque green corporate subscription goblin with giant greedy ears and a towering expensive suit, a smug orange tie, clutching a stack of blank invoices and a comically tiny scissors that cannot cut a huge looping chain of payment tags. Acid green and purple boardroom backdrop, no readable text, no logos.",
+      "selected_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6b9ce28c-f6bc-4197-ae95-4d0ef267fe07.png",
+      "selected_master_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC034.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "mode": "RGB",
+      "inspection_notes": [
+        "Grotesque green corporate goblin with oversized ears, smug expression, purple suit and orange tie.",
+        "Blank invoices, tiny scissors and much larger looping golden chain with blank payment tags all present.",
+        "Acid-green and purple boardroom backdrop; full-bleed square portrait with expressive large head, dense crosshatching and distressed print texture.",
+        "No readable lettering, card frame, title, branding or watermark."
+      ]
+    }
+  ]
+}

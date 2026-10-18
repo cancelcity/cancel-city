@@ -1,0 +1,161 @@
+{
+  "characterId": "CC057",
+  "characterName": "Baby Oil Supplier",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC057-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Connected alpha contours at alpha>=8 isolate complete bodies across nominal grid boundaries. Small detached props/ink details assigned to nearest body; one-pixel alpha edge allowance. Original generated color and alpha preserved, no repainting. Uniform 0.78 scale and transparent 512-square ground alignment at 462. Runtime bounds measured alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC057-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 142,
+        "top": 88,
+        "right": 368,
+        "bottom": 460
+      },
+      "transparentPixels": 212216,
+      "sourceBodyCrop": {
+        "left": 113,
+        "top": 4,
+        "width": 296,
+        "height": 482
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC057-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 91,
+        "top": 105,
+        "right": 419,
+        "bottom": 459
+      },
+      "transparentPixels": 211417,
+      "sourceBodyCrop": {
+        "left": 541,
+        "top": 14,
+        "width": 424,
+        "height": 459
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "path": "/assets/actors/CC057-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 64,
+        "top": 144,
+        "right": 448,
+        "bottom": 460
+      },
+      "transparentPixels": 208395,
+      "sourceBodyCrop": {
+        "left": 1009,
+        "top": 56,
+        "width": 498,
+        "height": 410
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC057-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 126,
+        "top": 72,
+        "right": 385,
+        "bottom": 459
+      },
+      "transparentPixels": 205565,
+      "sourceBodyCrop": {
+        "left": 75,
+        "top": 499,
+        "width": 339,
+        "height": 503
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC057-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 93,
+        "top": 98,
+        "right": 418,
+        "bottom": 459
+      },
+      "transparentPixels": 208198,
+      "sourceBodyCrop": {
+        "left": 557,
+        "top": 526,
+        "width": 420,
+        "height": 468
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC057-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 89,
+        "top": 146,
+        "right": 422,
+        "bottom": 459
+      },
+      "transparentPixels": 209134,
+      "sourceBodyCrop": {
+        "left": 1040,
+        "top": 570,
+        "width": 433,
+        "height": 408
+      }
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/gordon-ramen/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/action-00.webp",
+        "width": 229,
+        "height": 382,
+        "sourceBounds": {
+          "x": 173,
+          "y": 3,
+          "w": 229,
+          "h": 382
+        },
+        "area": 47719
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/action-01.webp",
+        "width": 249,
+        "height": 381,
+        "sourceBounds": {
+          "x": 632,
+          "y": 6,
+          "w": 249,
+          "h": 381
+        },
+        "area": 49052
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/action-02.webp",
+        "width": 281,
+        "height": 386,
+        "sourceBounds": {
+          "x": 166,
+          "y": 384,
+          "w": 281,
+          "h": 386
+        },
+        "area": 50522
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/action-03.webp",
+        "width": 288,
+        "height": 382,
+        "sourceBounds": {
+          "x": 635,
+          "y": 390,
+          "w": 288,
+          "h": 382
+        },
+        "area": 56595
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/action-04.webp",
+        "width": 379,
+        "height": 349,
+        "sourceBounds": {
+          "x": 97,
+          "y": 770,
+          "w": 379,
+          "h": 349
+        },
+        "area": 56459
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/action-05.webp",
+        "width": 403,
+        "height": 359,
+        "sourceBounds": {
+          "x": 584,
+          "y": 773,
+          "w": 403,
+          "h": 359
+        },
+        "area": 60862
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/action-06.webp",
+        "width": 465,
+        "height": 404,
+        "sourceBounds": {
+          "x": 48,
+          "y": 1124,
+          "w": 465,
+          "h": 404
+        },
+        "area": 81803
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/action-07.webp",
+        "width": 374,
+        "height": 402,
+        "sourceBounds": {
+          "x": 609,
+          "y": 1125,
+          "w": 374,
+          "h": 402
+        },
+        "area": 64385
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/ending-00.webp",
+        "width": 249,
+        "height": 344,
+        "sourceBounds": {
+          "x": 164,
+          "y": 45,
+          "w": 249,
+          "h": 344
+        },
+        "area": 40156
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/ending-01.webp",
+        "width": 259,
+        "height": 341,
+        "sourceBounds": {
+          "x": 618,
+          "y": 49,
+          "w": 259,
+          "h": 341
+        },
+        "area": 47725
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/ending-02.webp",
+        "width": 297,
+        "height": 364,
+        "sourceBounds": {
+          "x": 151,
+          "y": 404,
+          "w": 297,
+          "h": 364
+        },
+        "area": 51721
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/ending-03.webp",
+        "width": 294,
+        "height": 349,
+        "sourceBounds": {
+          "x": 613,
+          "y": 419,
+          "w": 294,
+          "h": 349
+        },
+        "area": 51733
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/ending-04.webp",
+        "width": 387,
+        "height": 338,
+        "sourceBounds": {
+          "x": 130,
+          "y": 780,
+          "w": 387,
+          "h": 338
+        },
+        "area": 56902
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/ending-05.webp",
+        "width": 296,
+        "height": 333,
+        "sourceBounds": {
+          "x": 608,
+          "y": 785,
+          "w": 296,
+          "h": 333
+        },
+        "area": 45926
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/ending-06.webp",
+        "width": 291,
+        "height": 371,
+        "sourceBounds": {
+          "x": 138,
+          "y": 1128,
+          "w": 291,
+          "h": 371
+        },
+        "area": 52213
+      },
+      {
+        "file": "docs/art/layered-specials/gordon-ramen/actors/ending-07.webp",
+        "width": 300,
+        "height": 372,
+        "sourceBounds": {
+          "x": 624,
+          "y": 1126,
+          "w": 300,
+          "h": 372
+        },
+        "area": 53543
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

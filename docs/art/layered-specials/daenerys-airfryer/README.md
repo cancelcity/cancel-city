@@ -1,0 +1,9 @@
+# Daenerys Airfryer — Dracarys, Preheat
+
+Three eight-pose transparent sheets and one fixed throne-room kitchen were generated with the built-in image tool and inspected against the actual CC135 card and exact existing actor-cast references. The queen keeps platinum braided/wavy long hair, haughty pale face, blue-green eyes/red lips, charcoal high-collar fitted royal coat, burgundy shoulder panels and skirt lining, black trousers/heeled boots and silver dragon brooch/chest chain. The card's dragon air fryer is deliberately omitted from the actor sheets so appliances can be composited separately.
+
+Use the action, attack and ending original PNG sheets, all 2 columns × 4 rows in row-major order. Each has exactly eight large connected alpha components at threshold48. All24 whole actors are safe; none touches the canvas edge and no pose omission/retry was needed. Extract connected masks rather than equal cell cuts, because hair, fingers and boot tips cross nominal row boundaries without touching neighbors. Real alpha is present; subject alpha is usually253 and colored RGB under zero-alpha pixels is invisible matting.
+
+Action builds a regal order; attack supplies one whole-body commanding progression; ending moves through impatient preheat waiting to a tiny crisped result and royal disappointment. Ending poses5-8 hold one small brown morsel physically connected to the fingers. There are no detached limbs or projectiles. Fryers, timers, fire and projectile effects remain separate.
+
+The background is one opaque empty kitchen throne room with side counters, distant empty throne and broad clear flagstone acting space. The image tool returned1672×940, one pixel shorter than the target; preserve the source and fit it during ordinary renderer encoding. No queen, fryer, dragon, food, text or effects are baked into it. Exact prompts and alpha/component boxes are included.

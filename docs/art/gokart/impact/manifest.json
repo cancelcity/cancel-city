@@ -1,0 +1,98 @@
+{
+  "tool": "built-in imagegen",
+  "source": "original-sheet.png",
+  "grid": [
+    2,
+    4
+  ],
+  "frames": [
+    {
+      "name": "impact-00.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 0,
+        "width": 591,
+        "height": 332
+      }
+    },
+    {
+      "name": "impact-01.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 0,
+        "width": 591,
+        "height": 332
+      }
+    },
+    {
+      "name": "impact-02.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 333,
+        "width": 591,
+        "height": 332
+      }
+    },
+    {
+      "name": "impact-03.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 333,
+        "width": 591,
+        "height": 332
+      }
+    },
+    {
+      "name": "impact-04.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 665,
+        "width": 591,
+        "height": 332
+      }
+    },
+    {
+      "name": "impact-05.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 665,
+        "width": 591,
+        "height": 332
+      }
+    },
+    {
+      "name": "impact-06.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 998,
+        "width": 591,
+        "height": 332
+      }
+    },
+    {
+      "name": "impact-07.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 998,
+        "width": 591,
+        "height": 332
+      }
+    }
+  ]
+}

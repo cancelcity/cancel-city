@@ -1,0 +1,161 @@
+{
+  "characterId": "CC059",
+  "characterName": "Oprahoma",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC059-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Connected alpha contours at alpha>=8 isolate complete bodies across nominal grid boundaries. Small detached props/ink details assigned to nearest body; one-pixel alpha edge allowance. Original generated color and alpha preserved, no repainting. Uniform 0.78 scale and transparent 512-square ground alignment at 462. Runtime bounds measured alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC059-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 75,
+        "top": 98,
+        "right": 436,
+        "bottom": 460
+      },
+      "transparentPixels": 195484,
+      "sourceBodyCrop": {
+        "left": 23,
+        "top": 14,
+        "width": 467,
+        "height": 469
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC059-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 77,
+        "top": 123,
+        "right": 434,
+        "bottom": 459
+      },
+      "transparentPixels": 198821,
+      "sourceBodyCrop": {
+        "left": 526,
+        "top": 35,
+        "width": 463,
+        "height": 439
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "path": "/assets/actors/CC059-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 50,
+        "top": 110,
+        "right": 461,
+        "bottom": 459
+      },
+      "transparentPixels": 198437,
+      "sourceBodyCrop": {
+        "left": 996,
+        "top": 29,
+        "width": 533,
+        "height": 452
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC059-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 77,
+        "top": 87,
+        "right": 432,
+        "bottom": 459
+      },
+      "transparentPixels": 199094,
+      "sourceBodyCrop": {
+        "left": 25,
+        "top": 516,
+        "width": 460,
+        "height": 485
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC059-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 56,
+        "top": 112,
+        "right": 453,
+        "bottom": 459
+      },
+      "transparentPixels": 196001,
+      "sourceBodyCrop": {
+        "left": 528,
+        "top": 531,
+        "width": 517,
+        "height": 452
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC059-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 66,
+        "top": 80,
+        "right": 444,
+        "bottom": 459
+      },
+      "transparentPixels": 189680,
+      "sourceBodyCrop": {
+        "left": 1032,
+        "top": 500,
+        "width": 488,
+        "height": 493
+      }
+    }
+  ]
+}

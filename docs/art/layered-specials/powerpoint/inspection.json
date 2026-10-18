@@ -1,0 +1,150 @@
+{
+  "action-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 99.64635276794434
+    },
+    "bytes": 2844207,
+    "components": [
+      {
+        "area": 69761,
+        "left": 53,
+        "top": 7,
+        "width": 259,
+        "height": 518
+      },
+      {
+        "area": 80872,
+        "left": 390,
+        "top": 31,
+        "width": 326,
+        "height": 492
+      },
+      {
+        "area": 98168,
+        "left": 686,
+        "top": 21,
+        "width": 487,
+        "height": 505
+      },
+      {
+        "area": 68302,
+        "left": 1223,
+        "top": 8,
+        "width": 295,
+        "height": 517
+      },
+      {
+        "area": 67323,
+        "left": 31,
+        "top": 526,
+        "width": 309,
+        "height": 486
+      },
+      {
+        "area": 81300,
+        "left": 367,
+        "top": 527,
+        "width": 342,
+        "height": 489
+      },
+      {
+        "area": 100401,
+        "left": 737,
+        "top": 537,
+        "width": 459,
+        "height": 478
+      },
+      {
+        "area": 76256,
+        "left": 1207,
+        "top": 523,
+        "width": 324,
+        "height": 490
+      }
+    ]
+  },
+  "ending-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 97.29507891337077
+    },
+    "bytes": 2783840,
+    "components": [
+      {
+        "area": 89864,
+        "left": 48,
+        "top": 2,
+        "width": 369,
+        "height": 514
+      },
+      {
+        "area": 76919,
+        "left": 469,
+        "top": 5,
+        "width": 314,
+        "height": 512
+      },
+      {
+        "area": 93702,
+        "left": 806,
+        "top": 8,
+        "width": 375,
+        "height": 510
+      },
+      {
+        "area": 77246,
+        "left": 1226,
+        "top": 4,
+        "width": 294,
+        "height": 512
+      },
+      {
+        "area": 70859,
+        "left": 85,
+        "top": 507,
+        "width": 270,
+        "height": 509
+      },
+      {
+        "area": 69543,
+        "left": 491,
+        "top": 510,
+        "width": 275,
+        "height": 505
+      },
+      {
+        "area": 67581,
+        "left": 864,
+        "top": 512,
+        "width": 269,
+        "height": 506
+      },
+      {
+        "area": 80861,
+        "left": 1197,
+        "top": 509,
+        "width": 326,
+        "height": 513
+      }
+    ]
+  },
+  "training-room-original.png": {
+    "width": 1672,
+    "height": 941,
+    "channels": 3,
+    "isOpaque": true,
+    "alpha": null,
+    "bytes": 3694852
+  }
+}

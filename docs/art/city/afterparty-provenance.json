@@ -1,0 +1,206 @@
+{
+  "asset_id": "afterparty",
+  "name": "Afterparty House",
+  "generated_on": "2026-10-11",
+  "tool": "builtin image_gen.imagegen",
+  "fallback_used": false,
+  "reference_style_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "reference_use": "Inspected portrait for style; generation used explicit style description from the supplied brief.",
+  "transparent_background": true,
+  "levels": [
+    {
+      "level": 1,
+      "intent": "generate",
+      "prompt": "Use case: illustration-story. Asset type: transparent isometric building sprite for an interactive Cancel City neighbourhood. NEW illustration. Reference portrait is STYLE ONLY: match its bold grotesque punk comic black ink outlines, dense scratchy crosshatching, distressed screen-printed vivid colour, textured hand-drawn details. Show ONE complete building, detached, centered, full structure visible, three-quarter isometric view from diagonally above, orthographic game camera, vertical walls upright. Two visible front/side faces meet at center; ground base is a small diamond-like isometric square. Use the same approximately 30-degree isometric view for all assets. Frame comfortably inside a square canvas with clear transparent margin, preserve room above roof. Include ONLY the building and its own narrow ground footprint, no street, no sky, no background scenery, no large shadow extending outside footprint. TRUE alpha transparent background, not white or checkerboard painted background. NO card frame, UI, captions, readable text, watermark or real logos. High detail at least 1024 square; legible silhouette at 250px. Level 1 starting building, compact and modest but expressive. Palette: hot pink-purple. Subject: A crooked three-storey pink and purple nightlife townhouse, hot-pink striped awning, rooftop ring-light circle and a generic skull-shaped neon sign, giant outdoor speaker stacks, mismatched doors, warm pink windows, spray-painted abstract marks, little party streamers. Satirize celebrity ego and influencer apologies. No lettering, logos or identifiable people.",
+      "edit_target": null,
+      "generated_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-82ab6b1b-44ca-4ed7-87b9-c0992da1263f.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/afterparty-l1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_qa": {
+        "mode": "RGBA",
+        "range": [
+          0,
+          255
+        ],
+        "zero_percent": 52.626,
+        "corners": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox_alpha_ge_32": [
+          192,
+          44,
+          1085,
+          1214
+        ],
+        "edge_alpha_max": [
+          1,
+          1,
+          1,
+          0
+        ],
+        "genuine_transparency": true,
+        "visible_framing_pass": true
+      },
+      "notes": [
+        "Full isometric building visible; bold scratchy comic texture, pink/purple palette, striped awning, neon skull and ring light, rooftop speakers.",
+        "No readable lettering, logos, people or background scenery observed.",
+        "Negligible alpha=1 stray edge pixels; visible structure has clear transparent margins."
+      ]
+    },
+    {
+      "level": 2,
+      "intent": "edit",
+      "prompt": "Upgrade this exact building to level 2: keep its identity, camera, footprint, front-door position, palette, transparent background and canvas size. Add one small balcony or upper floor, brighter window fixtures and a few richer rooftop details. Preserve clear space around edges; no new buildings, lettering or background.\nEdit target: the supplied Afterparty House level 1 PNG. Preserve the same upright isometric camera, exact ground-base shape and its pixel position, entrance positions, striped hot-pink awning, neon skull and ring light. Keep the 1254x1254 square canvas with the full building comfortably framed, and retain genuine alpha transparency. Because the rooftop has limited headroom, choose an added small ornate balcony within the current building silhouette rather than moving the building. Add stronger warm-pink window fixtures and a few additional small speaker/light rooftop details. Match the same bold scratchy black comic ink texture. No text, logos, people, scenery or opaque background.",
+      "edit_target": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/afterparty-l1.png",
+      "generated_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-82b23660-5f6f-42bb-85fd-5bde120653e9.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/afterparty-l2.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_qa": {
+        "mode": "RGBA",
+        "range": [
+          0,
+          255
+        ],
+        "zero_percent": 51.737,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox_alpha_ge_32": [
+          191,
+          39,
+          1088,
+          1216
+        ],
+        "edge_alpha_max": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "genuine_transparency": true,
+        "visible_framing_pass": true
+      },
+      "notes": [
+        "Adds gold upper balcony, brighter warm windows and richer rooftop party fixtures.",
+        "Same building identity, awning, entrances, camera and footprint visually preserved; visible base extremum differs by approximately 2 pixels.",
+        "No readable lettering, logos, people or background scenery observed."
+      ]
+    },
+    {
+      "level": 3,
+      "intent": "edit",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent isometric game building sprite.\nRepair ONLY the framing of the supplied exact Afterparty House level 3 image. Keep the entire existing building and all of its architecture, camera, style, details, palette, pink striped awning, rooftop pavilion, skull neon, ring light, speaker stacks, balconies and entry positions in relation to each other unchanged. Uniformly scale this whole existing building smaller on the same 1254x1254 square canvas. Place its lowest ground-tip point at 90% of canvas height (around pixel y=1129) and horizontally centred. The entire building must have at least 8% clear transparent margins on the top and sides, and 10% clear margin below its ground tip. Use about 80% of the current building's height so that it fits entirely with ample margin. Preserve genuine transparent alpha outside the building. Do not crop anything, do not add or remove objects, do not invent new architecture. This is only a scale-and-reposition framing repair. No background, no opaque fill, no checkerboard drawing, no text, no logo, no UI.",
+      "edit_target": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/afterparty-l3-first.png",
+      "generated_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-b211d1a3-caf1-4163-99c0-0eac8636675b.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/afterparty-l3.png",
+      "selected": true,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_qa": {
+        "mode": "RGBA",
+        "range": [
+          0,
+          255
+        ],
+        "zero_percent": 67.287,
+        "corners": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox_alpha_ge_32": [
+          278,
+          147,
+          999,
+          1134
+        ],
+        "edge_alpha_max": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "genuine_transparency": true,
+        "visible_framing_pass": true,
+        "top_margin_percent": 11.722,
+        "bottom_margin_percent": 9.569
+      },
+      "notes": [
+        "Selected targeted framing repair after parent authorized an extra builtin edit. The original attempt is preserved in afterparty-l3-first.png.",
+        "Entire same building uniformly reduced to provide generous margin. Retains upper pavilion, ring light, skull neon, speaker stacks, striped awning, palette, scratchy comic ink and camera.",
+        "Visible ground tip is at y=1133, approximately90.4% of canvas height, following revised parent instruction. Exact original L1/L2 pixel base location was superseded by this framing instruction.",
+        "No readable lettering, logos, people or background scenery observed. Negligible alpha=1 edge pixels only."
+      ],
+      "initial_attempt": {
+        "level": 3,
+        "intent": "edit",
+        "prompt": "Upgrade this exact building to its maximum level 3: keep the same building identity, orthographic isometric camera, ground footprint, entry position, palette and transparent canvas. Create a more impressive taller structure with richer rooftop machinery/sculpture, expressive neon trim and additional architecture. Keep the entire building comfortably in frame and its base at the same location. No writing, logos, people or background scenery.\nEdit target: supplied Afterparty House level 2 PNG. Preserve the exact 1254x1254 canvas, camera angle, three main walls, doors, awning and ground footprint in their same pixel positions. Retain genuine transparent alpha. Keep its ring-light circle, neon skull, speaker stacks, striped pink awning, gold balcony and bold scratchy black comic ink. Increase architectural height by adding a compact raised roof pavilion/upper-story enclosure behind the rooftop seating and ring light, using the space within the existing rooftop silhouette; at most raise the highest silhouette slightly while keeping at least 24 pixels clear transparent top margin. Make the maximum-level building more impressive with richer pink neon edge trim, an elaborate roof speaker/light sculpture and additional ornate upper balcony details. Preserve the base at exactly the current location. Full building inside frame, no cropping, no detached new buildings, no lettering, logos, people or background.",
+        "edit_target": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/afterparty-l2.png",
+        "generated_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-fa7cff4c-6d84-4f28-9ea5-f536cd06f485.png",
+        "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/afterparty-l3-first.png",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_qa": {
+          "mode": "RGBA",
+          "range": [
+            0,
+            255
+          ],
+          "zero_percent": 48.961,
+          "corners": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_bbox_alpha_ge_32": [
+            189,
+            11,
+            1091,
+            1254
+          ],
+          "edge_alpha_max": [
+            0,
+            246,
+            1,
+            0
+          ],
+          "genuine_transparency": true,
+          "visible_framing_pass": false,
+          "base_position_preservation_pass": false
+        },
+        "notes": [
+          "Adds compact raised upper pavilion, richer lights/speakers and extensive pink neon trim.",
+          "Retains building identity, palette and isometric camera, but model shifted ground base down approximately 40 pixels relative to level 2 despite explicit pixel-position prompt.",
+          "Opaque structure touches bottom image border and visible top margin is only 11 pixels; targeted repair required for comfortable framing and invariant base position.",
+          "No readable lettering, logos, people or background scenery observed."
+        ],
+        "selected": false
+      }
+    }
+  ],
+  "qa_method": "Pillow alpha channel statistics, alpha>=32 visible bounding boxes, and visual inspection of each saved PNG using view_image.",
+  "status": "All selected levels accepted: genuine alpha and full visible framing. L3 uses parent-authorized uniform framing repair.",
+  "calls_per_level": {
+    "1": 1,
+    "2": 1,
+    "3": 2
+  }
+}

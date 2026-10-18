@@ -1,0 +1,161 @@
+{
+  "characterId": "CC062",
+  "characterName": "Anti-Anti-Meat Activist",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC062-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Six connected opaque alpha silhouettes isolated with nearest-silhouette contours including original anti-aliased edges and nearby disconnected particles within 32 source pixels. Original RGB and alpha preserved inside silhouette; no repainting. Individual transparent crops resized to at most 456x420 and centered on 512-square transparent canvases with ground anchor 462. Runtime bounds measured after WebP decoding at alpha >=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC062-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 89,
+        "top": 57,
+        "right": 423,
+        "bottom": 462
+      },
+      "transparentPixels": 162316,
+      "sourceBodyCrop": {
+        "left": 0,
+        "top": 0,
+        "width": 446,
+        "height": 514
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC062-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 89,
+        "top": 62,
+        "right": 423,
+        "bottom": 462
+      },
+      "transparentPixels": 162520,
+      "sourceBodyCrop": {
+        "left": 477,
+        "top": 0,
+        "width": 421,
+        "height": 506
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike-right",
+      "path": "/assets/actors/CC062-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 33,
+        "top": 173,
+        "right": 479,
+        "bottom": 462
+      },
+      "transparentPixels": 177874,
+      "sourceBodyCrop": {
+        "left": 877,
+        "top": 33,
+        "width": 659,
+        "height": 437
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC062-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 100,
+        "top": 52,
+        "right": 411,
+        "bottom": 462
+      },
+      "transparentPixels": 168600,
+      "sourceBodyCrop": {
+        "left": 31,
+        "top": 468,
+        "width": 447,
+        "height": 556
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC062-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 80,
+        "top": 52,
+        "right": 431,
+        "bottom": 462
+      },
+      "transparentPixels": 160368,
+      "sourceBodyCrop": {
+        "left": 539,
+        "top": 521,
+        "width": 439,
+        "height": 489
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC062-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 111,
+        "top": 68,
+        "right": 401,
+        "bottom": 462
+      },
+      "transparentPixels": 176143,
+      "sourceBodyCrop": {
+        "left": 1115,
+        "top": 503,
+        "width": 367,
+        "height": 507
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "baseHeight": 391,
+  "poses": [
+    {
+      "src": "/assets/actors/CC011-b2-0.webp",
+      "width": 260,
+      "height": 407,
+      "anchor": {
+        "x": 116,
+        "y": 398
+      }
+    },
+    {
+      "src": "/assets/actors/CC011-b2-1.webp",
+      "width": 225,
+      "height": 402,
+      "anchor": {
+        "x": 112,
+        "y": 393
+      }
+    },
+    {
+      "src": "/assets/actors/CC011-b2-2.webp",
+      "width": 431,
+      "height": 333,
+      "anchor": {
+        "x": 200,
+        "y": 321
+      }
+    },
+    {
+      "src": "/assets/actors/CC011-b2-3.webp",
+      "width": 366,
+      "height": 377,
+      "anchor": {
+        "x": 180,
+        "y": 363
+      }
+    },
+    {
+      "src": "/assets/actors/CC011-b2-4.webp",
+      "width": 244,
+      "height": 411,
+      "anchor": {
+        "x": 138,
+        "y": 397
+      }
+    },
+    {
+      "src": "/assets/actors/CC011-b2-5.webp",
+      "width": 335,
+      "height": 318,
+      "anchor": {
+        "x": 179,
+        "y": 305
+      }
+    }
+  ]
+}

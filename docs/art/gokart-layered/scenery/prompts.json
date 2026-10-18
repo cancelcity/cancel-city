@@ -1,0 +1,20 @@
+{
+  "mode": "built-in image_gen",
+  "transparent_background": false,
+  "assets": [
+    {
+      "name": "circuit",
+      "use_case": "precise-object-edit",
+      "edit_target": "cancel-city/docs/art/gokart-card-style/master.png",
+      "style_reference": "cancel-city/public/assets/roster-b2/CC010.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: fixed background plate for a 2D composited game cinematic. Input 1 is the edit target: Gokart card-style master image. Input 2 is ONLY the established card illustration style reference. Primary request: erase the complete driver, hair, body, kart, tires, engine, every golden aura, exhaust cloud, dust splash and flying fragment from Input 1. Reconstruct the empty urban racetrack where they were. Keep the existing view of the track, city silhouettes, palm trees, elevated side barriers and horizon; this is the same location emptied, not a new location. The lower two-thirds must be unobstructed continuous worn crosshatched asphalt, usable to place a separately animated kart in the foreground. Retain flat acid-yellow and hot-pink sky, black skyline, dense scratched black ink, rough silkscreen texture and the satirical card-art appearance. Use the exact existing illustrated world and diagonal track camera. One single wide 16:9 landscape background, opaque. No panels, characters, vehicles, tire wheels, golden hair shapes, aura, splashes, smoke, debris, text or labels. Do not make it photorealistic or smooth; keep the card's coarse black ink and flat neon color."
+    },
+    {
+      "name": "headon",
+      "use_case": "precise-object-edit",
+      "edit_target": "cancel-city/docs/art/gokart-card-style/action/rush-03.webp",
+      "style_reference": "cancel-city/public/assets/roster-b2/CC010.webp",
+      "prompt": "Use case: precise-object-edit. Asset type: one fixed background plate for a 2D composited game cinematic. Input 1 is the edit target: the front-facing rush racetrack image. Input 2 is the style reference from the same game, not a subject to insert. Primary request: remove the entire driver, golden hair, kart, tires, engine and every aura, golden energy ray, dust splash, smoke cloud and flying fragment. Reconstruct the EMPTY racetrack behind these removed things. Preserve the existing head-on centered, approximately symmetrical single-point perspective: worn flat asphalt runs from the wide open foreground to a distant central vanishing point; side guardrails/chevron barriers recede down both sides; black silhouettes of city towers and palm trees frame the track against acid-yellow and hot-pink sky. This is an empty stationary location, not motion artwork. Keep the same scratchy black pen crosshatching, battered screenprint texture, bold neon flat colors and satirical trading card art style. No smooth anime rendering, photorealism, glossy 3D or lighting redesign. One wide 16:9 opaque landscape only. No panels, characters, vehicles, tires, golden hair shapes, aura, splashes, smoke, debris, text or labels. Keep foreground road empty and usable for a separately animated kart."
+    }
+  ]
+}

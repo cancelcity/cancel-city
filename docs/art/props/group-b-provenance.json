@@ -1,0 +1,288 @@
+{
+  "schema_version": 1,
+  "group": "b",
+  "generated_at_utc": "2026-10-12T14:09:48.993604+00:00",
+  "generation": "One separate built-in transparent image generation per object with CC026 style reference.",
+  "assets": [
+    {
+      "id": "P005",
+      "mode": "built-in image_gen",
+      "tool": "image_gen.imagegen",
+      "exact_prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a fantasy sword made from a sharp clump of fresh green lawn grass with flowers, muddy roots forming the handle.",
+      "reference": {
+        "path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+        "relative_path": "docs/art/residents/CC026.png",
+        "role": "style reference only",
+        "sha256": "b8627d097bb2ecc7ff6ed9d446ebb894ff6fd56366de189d5cfcfa44ce559ad0"
+      },
+      "request": {
+        "referenced_image_paths": [
+          "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+        ],
+        "transparent_background": true
+      },
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-8f51770b-14e8-4a10-a00e-a7d2ab9d3d08.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/props/P005.png",
+      "relative_destination": "docs/art/props/P005.png",
+      "edit_chain": [],
+      "copy": {
+        "method": "byte-for-byte shutil.copyfile",
+        "source_sha256": "2be8a8aacbb75e134748b615ff96c34104dd5e5fdd73d86444e8a3a9930a9428",
+        "destination_sha256": "2be8a8aacbb75e134748b615ff96c34104dd5e5fdd73d86444e8a3a9930a9428",
+        "unchanged": true
+      },
+      "sha256": "2be8a8aacbb75e134748b615ff96c34104dd5e5fdd73d86444e8a3a9930a9428",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Complete grass sword with sharp lawn-grass blade, flowers and muddy root handle; saturated green and cream distressed ink treatment.",
+        "framing": "Tight but complete silhouette; no actual clipping.",
+        "alpha": "Genuine transparent RGBA; original alpha preserved unchanged.",
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox_alpha_1": [
+          0,
+          0,
+          1244,
+          1254
+        ],
+        "bbox_alpha_16": [
+          10,
+          12,
+          1241,
+          1240
+        ],
+        "bbox_alpha_128": [
+          11,
+          13,
+          1241,
+          1240
+        ],
+        "edge_max_alpha_top_bottom_left_right": [
+          2,
+          1,
+          2,
+          0
+        ],
+        "transparent_fraction": 0.7221757998010832,
+        "repairs_required": false
+      }
+    },
+    {
+      "id": "P006",
+      "mode": "built-in image_gen",
+      "tool": "image_gen.imagegen",
+      "exact_prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a grotesque violet spiked stress-ball mace on a corporate clipboard-shaped handle, a funny smiling face engraved on the mace head.",
+      "reference": {
+        "path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+        "relative_path": "docs/art/residents/CC026.png",
+        "role": "style reference only",
+        "sha256": "b8627d097bb2ecc7ff6ed9d446ebb894ff6fd56366de189d5cfcfa44ce559ad0"
+      },
+      "request": {
+        "referenced_image_paths": [
+          "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+        ],
+        "transparent_background": true
+      },
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-9c28e729-4af5-48ad-829f-0261df11d354.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/props/P006.png",
+      "relative_destination": "docs/art/props/P006.png",
+      "edit_chain": [],
+      "copy": {
+        "method": "byte-for-byte shutil.copyfile",
+        "source_sha256": "158d27d333b39a2ef35502d6dbd5cf8477b51353fe88f7aa6e58a65a8feeb9f3",
+        "destination_sha256": "158d27d333b39a2ef35502d6dbd5cf8477b51353fe88f7aa6e58a65a8feeb9f3",
+        "unchanged": true
+      },
+      "sha256": "158d27d333b39a2ef35502d6dbd5cf8477b51353fe88f7aa6e58a65a8feeb9f3",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Complete violet smiling spiked mace, gold chain, clipboard-shaped grip and wrapped handle; attached parts fully visible.",
+        "framing": "Tight but complete silhouette; no actual clipping.",
+        "alpha": "Genuine transparent RGBA; original alpha preserved unchanged.",
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox_alpha_1": [
+          0,
+          7,
+          1252,
+          1254
+        ],
+        "bbox_alpha_16": [
+          6,
+          9,
+          1248,
+          1245
+        ],
+        "bbox_alpha_128": [
+          7,
+          10,
+          1248,
+          1244
+        ],
+        "edge_max_alpha_top_bottom_left_right": [
+          0,
+          1,
+          2,
+          0
+        ],
+        "transparent_fraction": 0.6071772878622539,
+        "repairs_required": false
+      }
+    },
+    {
+      "id": "P007",
+      "mode": "built-in image_gen",
+      "tool": "image_gen.imagegen",
+      "exact_prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a battered RGB mechanical keyboard used as a melee club, thick cable looping from it, colorful neon keys without readable labels.",
+      "reference": {
+        "path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+        "relative_path": "docs/art/residents/CC026.png",
+        "role": "style reference only",
+        "sha256": "b8627d097bb2ecc7ff6ed9d446ebb894ff6fd56366de189d5cfcfa44ce559ad0"
+      },
+      "request": {
+        "referenced_image_paths": [
+          "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+        ],
+        "transparent_background": true
+      },
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-01d31ac2-328d-47a6-b859-cb5bd3cdb819.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/props/P007.png",
+      "relative_destination": "docs/art/props/P007.png",
+      "edit_chain": [],
+      "copy": {
+        "method": "byte-for-byte shutil.copyfile",
+        "source_sha256": "6f9c137865fed447690c0a2ba13c0a644badd9bb3b477682ef17f7b4b4e99b49",
+        "destination_sha256": "6f9c137865fed447690c0a2ba13c0a644badd9bb3b477682ef17f7b4b4e99b49",
+        "unchanged": true
+      },
+      "sha256": "6f9c137865fed447690c0a2ba13c0a644badd9bb3b477682ef17f7b4b4e99b49",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Complete battered RGB keyboard with unlabeled neon keys, attached looping cable and USB plug; saturated distressed ink treatment.",
+        "framing": "Tight but complete silhouette; no actual clipping.",
+        "alpha": "Genuine transparent RGBA; original alpha preserved unchanged.",
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox_alpha_1": [
+          0,
+          9,
+          1254,
+          1254
+        ],
+        "bbox_alpha_16": [
+          5,
+          83,
+          1251,
+          1184
+        ],
+        "bbox_alpha_128": [
+          6,
+          84,
+          1250,
+          1184
+        ],
+        "edge_max_alpha_top_bottom_left_right": [
+          0,
+          1,
+          1,
+          4
+        ],
+        "transparent_fraction": 0.5284671189355148,
+        "repairs_required": false
+      }
+    },
+    {
+      "id": "P008",
+      "mode": "built-in image_gen",
+      "tool": "image_gen.imagegen",
+      "exact_prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a richly detailed curled magenta and gold velvet carpet with premium tasseled fringe, presented as a rug-pull gadget.",
+      "reference": {
+        "path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+        "relative_path": "docs/art/residents/CC026.png",
+        "role": "style reference only",
+        "sha256": "b8627d097bb2ecc7ff6ed9d446ebb894ff6fd56366de189d5cfcfa44ce559ad0"
+      },
+      "request": {
+        "referenced_image_paths": [
+          "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+        ],
+        "transparent_background": true
+      },
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-08dcfca0-6ac4-4366-90aa-de13ea4a4962.png",
+      "destination": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/props/P008.png",
+      "relative_destination": "docs/art/props/P008.png",
+      "edit_chain": [],
+      "copy": {
+        "method": "byte-for-byte shutil.copyfile",
+        "source_sha256": "66326f93a59f2b708a92295a4a7dc905a6a5660b416b14f8e75e63ee4bd186e9",
+        "destination_sha256": "66326f93a59f2b708a92295a4a7dc905a6a5660b416b14f8e75e63ee4bd186e9",
+        "unchanged": true
+      },
+      "sha256": "66326f93a59f2b708a92295a4a7dc905a6a5660b416b14f8e75e63ee4bd186e9",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Complete curled magenta velvet carpet with ornate gold decoration and visible tasseled fringe; distressed painted ink treatment.",
+        "framing": "Tight but complete silhouette; no actual clipping.",
+        "alpha": "Genuine transparent RGBA; original alpha preserved unchanged.",
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "bbox_alpha_1": [
+          0,
+          0,
+          1254,
+          1254
+        ],
+        "bbox_alpha_16": [
+          7,
+          6,
+          1248,
+          1239
+        ],
+        "bbox_alpha_128": [
+          8,
+          7,
+          1248,
+          1238
+        ],
+        "edge_max_alpha_top_bottom_left_right": [
+          3,
+          1,
+          2,
+          4
+        ],
+        "transparent_fraction": 0.3614939371046145,
+        "repairs_required": false
+      }
+    }
+  ]
+}

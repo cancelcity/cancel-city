@@ -1,0 +1,191 @@
+{
+  "characterId": "CC102",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest solid alpha connected bodies; smaller prop/effect components assigned whole by proximity. Original master retained. Uniform square padded extraction."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC102-0.webp",
+      "sourceExtraction": {
+        "left": 72,
+        "top": 14,
+        "width": 374,
+        "height": 490
+      },
+      "scale": 0.8571428571428571,
+      "suggestedAnchor": {
+        "x": 244,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 95,
+        "top": 36,
+        "right": 416,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 184772,
+        "transparentFraction": 0.7048492431640625
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC102-1.webp",
+      "sourceExtraction": {
+        "left": 564,
+        "top": 12,
+        "width": 386,
+        "height": 495
+      },
+      "scale": 0.8484848484848485,
+      "suggestedAnchor": {
+        "x": 243,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 92,
+        "top": 36,
+        "right": 420,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 171959,
+        "transparentFraction": 0.6559715270996094
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC102-2.webp",
+      "sourceExtraction": {
+        "left": 1057,
+        "top": 43,
+        "width": 471,
+        "height": 441
+      },
+      "scale": 0.89171974522293,
+      "suggestedAnchor": {
+        "x": 158,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 63,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 173369,
+        "transparentFraction": 0.6613502502441406
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC102-3.webp",
+      "sourceExtraction": {
+        "left": 73,
+        "top": 510,
+        "width": 361,
+        "height": 501
+      },
+      "scale": 0.8383233532934131,
+      "suggestedAnchor": {
+        "x": 260,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 104,
+        "top": 36,
+        "right": 407,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 184132,
+        "transparentFraction": 0.7024078369140625
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC102-4.webp",
+      "sourceExtraction": {
+        "left": 567,
+        "top": 530,
+        "width": 408,
+        "height": 468
+      },
+      "scale": 0.8974358974358975,
+      "suggestedAnchor": {
+        "x": 237,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 73,
+        "top": 36,
+        "right": 439,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 165095,
+        "transparentFraction": 0.6297874450683594
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC102-5.webp",
+      "sourceExtraction": {
+        "left": 1022,
+        "top": 523,
+        "width": 496,
+        "height": 477
+      },
+      "scale": 0.8467741935483871,
+      "suggestedAnchor": {
+        "x": 270,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 52,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 180891,
+        "transparentFraction": 0.6900444030761719
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest36px; y at lowest alpha>32 art pixel.",
+  "characterName": "Taylor Shift"
+}

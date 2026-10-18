@@ -1,0 +1,50 @@
+name: Sync game assets
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .openai/github-assets.json
+      - scripts/restore-github-assets.py
+      - .github/workflows/sync-game-assets.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cancel-city-runtime-assets
+  cancel-in-progress: false
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Restore and verify the recorded game assets
+        env:
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import base64, os, pathlib, subprocess
+          token = os.environ['GH_TOKEN']
+          env = os.environ.copy()
+          env['GIT_CONFIG_COUNT'] = '1'
+          env['GIT_CONFIG_KEY_0'] = 'http.https://github.com/.extraheader'
+          env['GIT_CONFIG_VALUE_0'] = 'AUTHORIZATION: basic ' + base64.b64encode(('x-access-token:' + token).encode()).decode()
+          def git(*args, cwd=None):
+              return subprocess.run(['git', *args], cwd=cwd, env=env, check=True)
+          git('clone', '--depth=1', '--branch=main', 'https://github.com/' + os.environ['GH_REPOSITORY'] + '.git', 'game')
+          root = pathlib.Path('game').resolve()
+          subprocess.run(['python3', 'scripts/restore-github-assets.py'], cwd=root, check=True)
+          git('add', '--', 'public', 'scripts/cinema/fonts', cwd=root)
+          changes = subprocess.run(['git', 'diff', '--cached', '--quiet'], cwd=root).returncode
+          if changes == 1:
+              git('-c', 'user.name=Cancel City source sync', '-c', 'user.email=41898282+github-actions[bot]@users.noreply.github.com', 'commit', '-m', 'Include verified game runtime assets', cwd=root)
+              git('push', 'origin', 'HEAD:main', cwd=root)
+          elif changes != 0:
+              raise RuntimeError('Could not inspect asset changes')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('All runtime assets match the saved source manifest. The main-branch ZIP includes the complete playable project.\n')
+          PY

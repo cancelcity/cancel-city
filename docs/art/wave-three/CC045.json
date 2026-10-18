@@ -1,0 +1,197 @@
+{
+  "characterId": "CC045",
+  "characterName": "Live Laugh Lawsuit",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-three/CC045-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Grid crop at empty gutters, crop transparent margin, uniform scale0.78, ground align, transparent padding using Sharp; original alpha preserved without repainting. Alpha bounds measured at alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC045-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 463
+      },
+      "alphaBounds": {
+        "left": 141,
+        "top": 74,
+        "right": 370,
+        "bottom": 463
+      },
+      "transparentPixels": 204707,
+      "sourceCrop": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 112,
+        "top": 0,
+        "width": 300,
+        "height": 507
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC045-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 255,
+        "y": 465
+      },
+      "alphaBounds": {
+        "left": 84,
+        "top": 72,
+        "right": 426,
+        "bottom": 465
+      },
+      "transparentPixels": 187876,
+      "sourceCrop": {
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 517
+      },
+      "sourceBodyCrop": {
+        "left": 15,
+        "top": 9,
+        "width": 446,
+        "height": 508
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "path": "/assets/actors/CC045-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 255,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 89,
+        "top": 78,
+        "right": 421,
+        "bottom": 462
+      },
+      "transparentPixels": 182271,
+      "sourceCrop": {
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 35,
+        "top": 11,
+        "width": 433,
+        "height": 499
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC045-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 463
+      },
+      "alphaBounds": {
+        "left": 120,
+        "top": 77,
+        "right": 391,
+        "bottom": 463
+      },
+      "transparentPixels": 206924,
+      "sourceCrop": {
+        "left": 0,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 107,
+        "top": 0,
+        "width": 355,
+        "height": 501
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC045-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 108,
+        "top": 83,
+        "right": 403,
+        "bottom": 462
+      },
+      "transparentPixels": 197923,
+      "sourceCrop": {
+        "left": 512,
+        "top": 517,
+        "width": 512,
+        "height": 507
+      },
+      "sourceBodyCrop": {
+        "left": 50,
+        "top": 0,
+        "width": 385,
+        "height": 491
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC045-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 255,
+        "y": 463
+      },
+      "alphaBounds": {
+        "left": 166,
+        "top": 80,
+        "right": 343,
+        "bottom": 463
+      },
+      "transparentPixels": 213365,
+      "sourceCrop": {
+        "left": 1024,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 108,
+        "top": 0,
+        "width": 234,
+        "height": 498
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "mode": "builtin-imagegen",
+  "generation_intent": "new illustration with CC026 as style reference only",
+  "reference_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "assets": [
+    {
+      "id": "CC041",
+      "name": "Ye of Chaos",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; input image CC026 is style guidance only, NOT an edit target. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: A recognizably Kanye West-inspired fictional exaggerated satirical musician cartoon, Black man with broad face, close-cropped hair and short beard, huge intensely self-important eyes and open shouting mouth. Oversized futuristic black padded designer coat, holding a golden microphone shaped like his own crowned head, standing among bent speakers and theatrical purple-magenta light rays. Satirize ego and celebrity performance only; no references to mental illness, no hate symbols, no slogans, no text.",
+      "generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-84905761-6048-4464-a59b-a427b2b7d248.png",
+      "selected_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC041.png",
+      "inspection_notes": "Accepted. Square full-bleed close-up with dominant recognizable caricature, padded black coat, crowned-head golden microphone, speakers and magenta-purple stage rays. Thick black linework, dense crosshatching, distressed paper texture and vivid screen-print colors match CC026. Both hands are coherent; no frame, readable text, logos, hate symbols or mental-illness references visible. Satire concerns celebrity ego and performance.",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "image_mode": "RGB",
+      "sha256": "a084477de86dca6fdd75f6d13ba9eee3774212337b22cfa34490cabe4c67d740"
+    },
+    {
+      "id": "CC042",
+      "name": "Apology Influencer",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; input image CC026 is style guidance only, NOT an edit target. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: A fictional blond young male livestream influencer with extremely exaggerated fake teardrop and a conspiratorial half-smile, bright mint hoodie, giant ring light halo framing his head. One hand holds a tissue and the other secretly presents a plain merch price tag; pink-cyan bedroom recording studio cluttered with cameras and blank product boxes. Detailed grotesque comic, no real logos or text.",
+      "generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-57790b7a-2034-4af9-af3f-82fcdf53c1c5.png",
+      "selected_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC042.png",
+      "inspection_notes": "Accepted. Square full-bleed close-up of fictional blond young male influencer with exaggerated blue tears and knowing smile, mint hoodie, circular ring-light halo, tissue and blank merch tag, cameras and product boxes. Dense black ink, crosshatching, distressed paper and pink-cyan colors match CC026. Both hands and props are readable; no frame, readable text, logos or watermark visible.",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "image_mode": "RGB",
+      "sha256": "b0e7744074c4f6286f10091390eb45073c50b8abf755454220dcd403a5dcbe70"
+    }
+  ]
+}

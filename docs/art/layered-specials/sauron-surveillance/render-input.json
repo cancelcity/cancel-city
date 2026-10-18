@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/sauron-surveillance/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/action-00.webp",
+        "width": 374,
+        "height": 480,
+        "sourceBounds": {
+          "x": 9,
+          "y": 4,
+          "w": 374,
+          "h": 480
+        },
+        "area": 129275
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/action-01.webp",
+        "width": 376,
+        "height": 480,
+        "sourceBounds": {
+          "x": 390,
+          "y": 4,
+          "w": 376,
+          "h": 480
+        },
+        "area": 128241
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/action-02.webp",
+        "width": 376,
+        "height": 481,
+        "sourceBounds": {
+          "x": 774,
+          "y": 2,
+          "w": 376,
+          "h": 481
+        },
+        "area": 128152
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/action-03.webp",
+        "width": 375,
+        "height": 479,
+        "sourceBounds": {
+          "x": 1158,
+          "y": 4,
+          "w": 375,
+          "h": 479
+        },
+        "area": 127120
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/action-04.webp",
+        "width": 379,
+        "height": 493,
+        "sourceBounds": {
+          "x": 6,
+          "y": 494,
+          "w": 379,
+          "h": 493
+        },
+        "area": 133095
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/action-05.webp",
+        "width": 381,
+        "height": 498,
+        "sourceBounds": {
+          "x": 389,
+          "y": 488,
+          "w": 381,
+          "h": 498
+        },
+        "area": 133483
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/action-06.webp",
+        "width": 376,
+        "height": 484,
+        "sourceBounds": {
+          "x": 774,
+          "y": 500,
+          "w": 376,
+          "h": 484
+        },
+        "area": 128012
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/action-07.webp",
+        "width": 378,
+        "height": 492,
+        "sourceBounds": {
+          "x": 1157,
+          "y": 494,
+          "w": 378,
+          "h": 492
+        },
+        "area": 129944
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/ending-00.webp",
+        "width": 378,
+        "height": 496,
+        "sourceBounds": {
+          "x": 4,
+          "y": 8,
+          "w": 378,
+          "h": 496
+        },
+        "area": 134935
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/ending-01.webp",
+        "width": 377,
+        "height": 500,
+        "sourceBounds": {
+          "x": 387,
+          "y": 3,
+          "w": 377,
+          "h": 500
+        },
+        "area": 134221
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/ending-02.webp",
+        "width": 378,
+        "height": 500,
+        "sourceBounds": {
+          "x": 773,
+          "y": 4,
+          "w": 378,
+          "h": 500
+        },
+        "area": 134516
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/ending-03.webp",
+        "width": 375,
+        "height": 495,
+        "sourceBounds": {
+          "x": 1156,
+          "y": 8,
+          "w": 375,
+          "h": 495
+        },
+        "area": 133019
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/ending-04.webp",
+        "width": 378,
+        "height": 503,
+        "sourceBounds": {
+          "x": 4,
+          "y": 510,
+          "w": 378,
+          "h": 503
+        },
+        "area": 135650
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/ending-05.webp",
+        "width": 380,
+        "height": 503,
+        "sourceBounds": {
+          "x": 386,
+          "y": 510,
+          "w": 380,
+          "h": 503
+        },
+        "area": 136073
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/ending-06.webp",
+        "width": 379,
+        "height": 503,
+        "sourceBounds": {
+          "x": 773,
+          "y": 510,
+          "w": 379,
+          "h": 503
+        },
+        "area": 135383
+      },
+      {
+        "file": "docs/art/layered-specials/sauron-surveillance/actors/ending-07.webp",
+        "width": 376,
+        "height": 503,
+        "sourceBounds": {
+          "x": 1155,
+          "y": 510,
+          "w": 376,
+          "h": 503
+        },
+        "area": 133736
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

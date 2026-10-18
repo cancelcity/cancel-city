@@ -1,0 +1,237 @@
+{
+  "character": "CC023",
+  "name": "Fraudo Baggins",
+  "ability": "One Ring to Refer Them All",
+  "generator": "built-in image_gen",
+  "styleReference": "public/assets/roster-v3/CC023.webp",
+  "costumeReference": "public/assets/actors/CC023-roster-v2-0.webp",
+  "identityNotes": "Exact short adult hobbit conman with curly chestnut hair, pointed ears, blue-green eyes, exaggerated greedy toothy grin, stippled freckles; green leaf-clasp cloak, cream rolled sleeves, brass-button brown waistcoat, cropped brown trousers, satchel and enormous hairy bare feet. Card reference governs rough face/style over cleaner legacy actor. Carpet/giant ring/claim panels intentionally separate.",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/action-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action",
+      "usableCount": 8,
+      "excludedIndices": [],
+      "cropBoxes": [
+        [
+          12,
+          8,
+          335,
+          499
+        ],
+        [
+          416,
+          12,
+          289,
+          494
+        ],
+        [
+          758,
+          11,
+          412,
+          502
+        ],
+        [
+          1166,
+          34,
+          351,
+          454
+        ],
+        [
+          10,
+          513,
+          374,
+          492
+        ],
+        [
+          403,
+          501,
+          344,
+          511
+        ],
+        [
+          746,
+          528,
+          438,
+          474
+        ],
+        [
+          1164,
+          608,
+          360,
+          339
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/fraudo-baggins/action-prompt.txt",
+      "poses": [
+        "Smug tiny-ring pitch ready",
+        "Lifts ring near greedy face",
+        "Presents ring toward viewer",
+        "Conspiratorial hush crouch",
+        "Grand sales pitch point",
+        "Steps forward proud ring offer",
+        "Draws ring hand back preparing throw",
+        "Deep crouched ring wind-up"
+      ],
+      "notes": "Eight intact whole actors. Tiny ring connected to fingers throughout, no giant ring/carpet/environment/words/FX baked in."
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/attack-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "attack",
+      "usableCount": 8,
+      "excludedIndices": [],
+      "cropBoxes": [
+        [
+          19,
+          89,
+          373,
+          385
+        ],
+        [
+          400,
+          77,
+          365,
+          413
+        ],
+        [
+          787,
+          10,
+          329,
+          472
+        ],
+        [
+          1130,
+          90,
+          399,
+          398
+        ],
+        [
+          7,
+          507,
+          422,
+          472
+        ],
+        [
+          386,
+          563,
+          401,
+          397
+        ],
+        [
+          775,
+          521,
+          423,
+          453
+        ],
+        [
+          1187,
+          518,
+          328,
+          478
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/fraudo-baggins/attack-prompt.txt",
+      "poses": [
+        "Coiled throw stance",
+        "Dramatic backward wind-up",
+        "Forward stride ring raised",
+        "Full-body forward pitch",
+        "Grand empty-hand sales leap",
+        "Deep landing follow-through",
+        "Triumphant showman flourish",
+        "Smug hands-on-hips settle"
+      ],
+      "notes": "Meaningful whole-body action progression. Tiny ring remains attached to fingers in indices0-3, then empty hands in4-7 for separately animated launch ring. Whole hairy feet/hands/cloak intact."
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/ending-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "usableCount": 8,
+      "excludedIndices": [],
+      "cropBoxes": [
+        [
+          30,
+          16,
+          354,
+          493
+        ],
+        [
+          409,
+          18,
+          373,
+          494
+        ],
+        [
+          785,
+          45,
+          340,
+          452
+        ],
+        [
+          1138,
+          28,
+          381,
+          472
+        ],
+        [
+          15,
+          524,
+          516,
+          452
+        ],
+        [
+          411,
+          602,
+          438,
+          394
+        ],
+        [
+          843,
+          505,
+          294,
+          493
+        ],
+        [
+          1205,
+          516,
+          288,
+          486
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/fraudo-baggins/ending-prompt.txt",
+      "poses": [
+        "Confident ring pitch hand on heart",
+        "Smug forward ring offer",
+        "Notices scheme wrong below",
+        "Panicked backward stagger",
+        "Desperate one-leg slip recovery",
+        "Dazed seated aftermath",
+        "Embarrassed forced-smile recovery",
+        "Final slumped deadpan"
+      ],
+      "notes": "Tiny ring held only indices0-1; other hands empty. Strong slip/panic/seated/deadpan states support separately animated carpet unraveling. No actual carpet or floor drawn. Some wide poses exceed nominal cell bounds; extract alpha components."
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/fraudo-baggins/referral-shire-original.png",
+    "prompt": "docs/art/layered-specials/fraudo-baggins/referral-shire-prompt.txt",
+    "notes": "Fixed opaque empty1672x941 referral-Shire sales courtyard: grass-covered burrow offices with round doors and blank signboards, light cobblestone central floor, distant hills/city, acid-yellow/magenta sky and dense etched ink. No actors, ring, carpet, claims, money, text or FX."
+  },
+  "inspection": {
+    "allOutputsViewed": true,
+    "requestedPoses": 24,
+    "visuallyUsablePoses": 24,
+    "minimumRequestedPerSheet": 6,
+    "allSheetsMeetMinimum": true,
+    "alphaPreserved": true,
+    "edgeTouchingPoses": 0,
+    "componentCheck": "Exactly8 independent connected alpha components over1500 pixels in each of3 sheets at alpha>=36. All24 large components have touchesEdge=false. cropBoxes are [left,top,width,height] in reading order without padding. Original PNG alpha preserved; exact stats/bounds in inspection.json."
+  }
+}
+

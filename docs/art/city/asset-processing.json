@@ -1,0 +1,425 @@
+{
+  "mode": "Runtime alpha-bound crop, proportional resize, common transparent canvas/baseline, WebP encoding. Masters unchanged.",
+  "records": [
+    {
+      "id": "feed",
+      "level": 1,
+      "source": "docs/art/city/feed-l1.png",
+      "sourceSha256": "49a7741f2ae3447ad92c63babbdbb83811912f99c76aff30d7b015edaea2f2dd",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 170,
+        "top": 3,
+        "width": 944,
+        "height": 1248
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/feed-l1.webp",
+      "bytes": 139614
+    },
+    {
+      "id": "feed",
+      "level": 2,
+      "source": "docs/art/city/feed-l2.png",
+      "sourceSha256": "915ce3d43f7560ed0cc7bf47bdb0f85900c2ea160d90481e862c17571b859fcf",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 168,
+        "top": 3,
+        "width": 966,
+        "height": 1249
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/feed-l2.webp",
+      "bytes": 126560
+    },
+    {
+      "id": "feed",
+      "level": 3,
+      "source": "docs/art/city/feed-l3.png",
+      "sourceSha256": "4d98d01880a0444f6588456368f3e1f0f1feb39b71d7bf5d36a4de28cd1c4022",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 273,
+        "top": 135,
+        "width": 744,
+        "height": 1008
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/feed-l3.webp",
+      "bytes": 119964
+    },
+    {
+      "id": "pr",
+      "level": 1,
+      "source": "docs/art/city/pr-l1.png",
+      "sourceSha256": "687fab5e006383ab32007ad1852044b7bcbe4f0e191c827237bd56c60981da3b",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 220,
+        "top": 93,
+        "width": 814,
+        "height": 1139
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/pr-l1.webp",
+      "bytes": 97304
+    },
+    {
+      "id": "pr",
+      "level": 2,
+      "source": "docs/art/city/pr-l2.png",
+      "sourceSha256": "396d01c82b37b8ac785f4c4a5fdf2249dc634a05e44b649606317ce4133f5429",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 338,
+        "top": 224,
+        "width": 614,
+        "height": 898
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/pr-l2.webp",
+      "bytes": 91790
+    },
+    {
+      "id": "pr",
+      "level": 3,
+      "source": "docs/art/city/pr-l3.png",
+      "sourceSha256": "2f83137df5961ebe42f29831a8e833cd5de84bd0856e884fd1f7f7d7ef87ffed",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 311,
+        "top": 191,
+        "width": 645,
+        "height": 957
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/pr-l3.webp",
+      "bytes": 97302
+    },
+    {
+      "id": "summit",
+      "level": 1,
+      "source": "docs/art/city/summit-l1.png",
+      "sourceSha256": "348bacc9869c42615662a118ad32f07681e52dc0d6f83c70a814ee961212e996",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 118,
+        "top": 32,
+        "width": 1047,
+        "height": 1201
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/summit-l1.webp",
+      "bytes": 124856
+    },
+    {
+      "id": "summit",
+      "level": 2,
+      "source": "docs/art/city/summit-l2.png",
+      "sourceSha256": "07bd5c88f05db04be5d005e5ee103866d61d744ffc37988acf34258f61271b17",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 117,
+        "top": 8,
+        "width": 1050,
+        "height": 1226
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/summit-l2.webp",
+      "bytes": 116496
+    },
+    {
+      "id": "summit",
+      "level": 3,
+      "source": "docs/art/city/summit-l3.png",
+      "sourceSha256": "9dbd0df6a544023bd6d7339488f4d30e9b8966f0d6b1d1ad37c8071075021c9e",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 232,
+        "top": 110,
+        "width": 804,
+        "height": 1016
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/summit-l3.webp",
+      "bytes": 103006
+    },
+    {
+      "id": "civic",
+      "level": 1,
+      "source": "docs/art/city/civic-l1.png",
+      "sourceSha256": "777f274dfc396e4c9a87a1a19186255a3b29ea96caa6b5af0c46a25313b05568",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 87,
+        "top": 3,
+        "width": 1104,
+        "height": 1243
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/civic-l1.webp",
+      "bytes": 138598
+    },
+    {
+      "id": "civic",
+      "level": 2,
+      "source": "docs/art/city/civic-l2.png",
+      "sourceSha256": "32e2b57f90b0e2b911a40f23ce825a3c4fd2e30ed58ca1547c9317457138bd33",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 86,
+        "top": 2,
+        "width": 1108,
+        "height": 1245
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/civic-l2.webp",
+      "bytes": 122152
+    },
+    {
+      "id": "civic",
+      "level": 3,
+      "source": "docs/art/city/civic-l3.png",
+      "sourceSha256": "8fac87362b37e0bd14de8e6a9b136ea72b163d50725887f276c47254b6f695b0",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 237,
+        "top": 199,
+        "width": 812,
+        "height": 907
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/civic-l3.webp",
+      "bytes": 123148
+    },
+    {
+      "id": "rocket",
+      "level": 1,
+      "source": "docs/art/city/rocket-l1.png",
+      "sourceSha256": "96fcbbdda686989ac14dfb084aecb728b24d6bfcb191a6bc029d7ae18b5aef7b",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 113,
+        "top": 26,
+        "width": 1056,
+        "height": 1202
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/rocket-l1.webp",
+      "bytes": 127812
+    },
+    {
+      "id": "rocket",
+      "level": 2,
+      "source": "docs/art/city/rocket-l2.png",
+      "sourceSha256": "d0b67e661ab7eb4e0062b8e842652b9b361bbed43724a0bfa2a478a10fe1b859",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 110,
+        "top": 24,
+        "width": 1061,
+        "height": 1207
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/rocket-l2.webp",
+      "bytes": 120338
+    },
+    {
+      "id": "rocket",
+      "level": 3,
+      "source": "docs/art/city/rocket-l3.png",
+      "sourceSha256": "b844abcfe18c3800586cbd9a8bbfdfd54680ce32adc6a858e8e9a78b11b729b6",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 240,
+        "top": 141,
+        "width": 788,
+        "height": 945
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/rocket-l3.webp",
+      "bytes": 119826
+    },
+    {
+      "id": "afterparty",
+      "level": 1,
+      "source": "docs/art/city/afterparty-l1.png",
+      "sourceSha256": "1eee7603e344b588a8346d5010ea7fc0c68cb089c808778c4e581924337e524e",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 187,
+        "top": 39,
+        "width": 903,
+        "height": 1180
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/afterparty-l1.webp",
+      "bytes": 111796
+    },
+    {
+      "id": "afterparty",
+      "level": 2,
+      "source": "docs/art/city/afterparty-l2.png",
+      "sourceSha256": "4ee387bbd7a87638835e14f726aa1b13aa009e7abc07cd6c68b982053eaf4730",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 186,
+        "top": 34,
+        "width": 907,
+        "height": 1187
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/afterparty-l2.webp",
+      "bytes": 103352
+    },
+    {
+      "id": "afterparty",
+      "level": 3,
+      "source": "docs/art/city/afterparty-l3.png",
+      "sourceSha256": "bec97ae616417e55033dbf9acfe1025305c991c4548a6addd4280518ee6cbd3a",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 273,
+        "top": 141,
+        "width": 731,
+        "height": 999
+      },
+      "runtimeCanvas": [
+        640,
+        640
+      ],
+      "runtimeBottomMargin": 25,
+      "output": "public/assets/city/afterparty-l3.webp",
+      "bytes": 101100
+    }
+  ],
+  "backdrop": {
+    "source": "docs/art/city/neighbourhood.png",
+    "sourceSha256": "76c6ac52fe8eae979d130eba40b034269362c0faa37ba388d212de4802119012",
+    "output": "public/assets/city/neighbourhood.webp",
+    "bytes": 301686
+  }
+}

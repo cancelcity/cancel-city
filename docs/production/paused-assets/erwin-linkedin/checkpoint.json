@@ -1,0 +1,107 @@
+{
+  "status": "paused-partial-unaccepted",
+  "completed": [
+    "action original and exact prompt preserved"
+  ],
+  "pending": [
+    "valid true-alpha action sheet",
+    "ending sheet",
+    "background",
+    "final manifest"
+  ],
+  "action": {
+    "path": "originals/action.png",
+    "toolOriginal": "generated_images/exec-06236797-9a50-439e-b3e9-24a0c502f5c4.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "mode": "RGBA",
+    "alphaExtrema": [
+      0,
+      254
+    ],
+    "alphaBounds": [
+      0,
+      0,
+      1536,
+      1024
+    ],
+    "cells": [
+      {
+        "pose": 1,
+        "localAlphaBounds": [
+          17,
+          12,
+          384,
+          512
+        ]
+      },
+      {
+        "pose": 2,
+        "localAlphaBounds": [
+          0,
+          27,
+          379,
+          494
+        ]
+      },
+      {
+        "pose": 3,
+        "localAlphaBounds": [
+          1,
+          21,
+          384,
+          512
+        ]
+      },
+      {
+        "pose": 4,
+        "localAlphaBounds": [
+          0,
+          0,
+          384,
+          512
+        ]
+      },
+      {
+        "pose": 5,
+        "localAlphaBounds": [
+          0,
+          0,
+          384,
+          483
+        ]
+      },
+      {
+        "pose": 6,
+        "localAlphaBounds": [
+          0,
+          1,
+          384,
+          512
+        ]
+      },
+      {
+        "pose": 7,
+        "localAlphaBounds": [
+          0,
+          0,
+          384,
+          480
+        ]
+      },
+      {
+        "pose": 8,
+        "localAlphaBounds": [
+          0,
+          0,
+          384,
+          470
+        ]
+      }
+    ]
+  },
+  "note": "Generation finished after user pivot. No additional generation. No repo writes.",
+  "inspection": "REJECT for production: image has baked dark gradient background despite alpha channel, bodies nearly touch cell edges and row split, rendering too polished. Do not import as accepted actor sheet."
+}

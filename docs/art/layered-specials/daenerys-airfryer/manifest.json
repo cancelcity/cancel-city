@@ -1,0 +1,150 @@
+{
+  "characterId": "CC135",
+  "characterName": "Daenerys Airfryer",
+  "ability": "Dracarys, Preheat",
+  "status": "generated-and-inspected",
+  "generator": "built-in image_gen",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/action-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "action",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "usablePoseIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omittedPoseIndices": [],
+      "order": "row-major",
+      "poses": [
+        "regal-waiting",
+        "begins-order",
+        "counter-gesture",
+        "royal-palm-command",
+        "points-at-appliance",
+        "inspects-unseen-control",
+        "grand-proclamation",
+        "raises-commanding-arm"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/attack-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "attack",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "usablePoseIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omittedPoseIndices": [],
+      "order": "row-major",
+      "poses": [
+        "command-preparation",
+        "draws-palm-back",
+        "raises-palm",
+        "forward-command-sweep",
+        "furious-order",
+        "full-command-extension",
+        "downward-followthrough",
+        "final-decisive-order"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/ending-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "ending",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "usablePoseIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omittedPoseIndices": [],
+      "order": "row-major",
+      "poses": [
+        "impatient-waiting",
+        "checks-unseen-timer",
+        "demanding-question",
+        "preheat-annoyance",
+        "tiny-crisped-result",
+        "sniffs-result",
+        "defeated-queen",
+        "royal-deadpan"
+      ]
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/daenerys-airfryer/throne-kitchen-original.png",
+    "width": 1672,
+    "height": 940,
+    "hasAlpha": false,
+    "role": "fixed-empty-countertop-throne-room"
+  },
+  "references": [
+    "public/assets/roster-v3/CC135.webp",
+    "public/assets/actors/CC135-roster-v2-0.webp",
+    "public/assets/actors/CC135-roster-v2-2.webp",
+    "public/assets/actors/CC135-roster-v2-4.webp"
+  ],
+  "prompts": "docs/art/layered-specials/daenerys-airfryer/prompts.json",
+  "extractionReport": "docs/art/layered-specials/daenerys-airfryer/component-report.json",
+  "alpha": {
+    "actionFullyTransparentPixels": 990374,
+    "attackFullyTransparentPixels": 895045,
+    "endingFullyTransparentPixels": 1002956,
+    "fullyOpaquePixels": 0,
+    "modalSubjectAlpha": 253,
+    "totalPixelsPerSheet": 1572864,
+    "notes": "Actual alpha backgrounds. RGB matting under alpha0 is invisible and must not be flattened. Subject alpha usually253."
+  },
+  "inspection": {
+    "actionComponents": 8,
+    "attackComponents": 8,
+    "endingComponents": 8,
+    "alphaThreshold": 48,
+    "minComponentPixels": 500,
+    "edgeTouchingPoseCount": 0,
+    "usablePoseCount": 24,
+    "style": "Exact actual CC135 platinum braided/wavy long hair, haughty pale blue-green-eyed face/red lips, charcoal high-collar fitted coat with burgundy shoulder panels/lining, black pants and heeled boots, silver brooch/chest chain. Rough dense crosshatched/stippled etched card rendering.",
+    "warnings": [
+      "All sheets are actor-only. Foreground fryers, timers, flames and projectiles must be separately composited; none is baked into actor pixels.",
+      "Ending poses5-8 include one tiny crisped brown morsel physically connected to fingers. It is the result, not a detached projectile.",
+      "Extract connected-component masks instead of equal grid cells. Hair, fingers and boots can cross nominal row boundaries, but each sheet has8 isolated large whole actors.",
+      "No safe pose was excluded: all24 threshold48 silhouettes have clear canvas margins.",
+      "Background tool returned1672x940 rather than target1672x941; preserve original and fit it to renderer dimensions during standard encoding. No content retry is necessary.",
+      "Background includes a distant empty throne and side counters only; no queen, dragon, fryer or effects."
+    ],
+    "background": "Opaque empty stone throne-room kitchen with ample clear flagstone foreground, distant small throne, empty stainless side counters, acid yellow/magenta etched lighting. No text, food, dragon or appliance."
+  },
+  "summary": "24 usable whole connected actors across3alpha sheets and one fixed empty countertop throne room. Actual original background1672x940. All actors pass component/canvas-edge checks.",
+  "props": {
+    "airfryer": "docs/art/layered-specials/daenerys-airfryer/fryer-original.png"
+  },
+  "propInspection": "One separate complete alpha dragon-head air fryer, matching card black scales, amber controls, burgundy wings and silver drawer pull. No person/steam/fire baked in. Original gen exec-3cd75e84-2c3b-4155-a050-73bacc2e2de7.png."
+}

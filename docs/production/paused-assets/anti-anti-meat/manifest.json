@@ -1,0 +1,31 @@
+{
+  "cardId": "CC062",
+  "slug": "anti-anti-meat",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/anti-anti-meat/action.png",
+      "role": "action",
+      "cols": 4,
+      "rows": 2,
+      "excludePoseIndices": [
+        1,
+        2
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/anti-anti-meat/ending.png",
+      "role": "ending",
+      "cols": 4,
+      "rows": 2
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/anti-anti-meat/background.png"
+  },
+  "originalToolPaths": {
+    "action": "/workspace/scratch/80a8c8c1affe/generated_images/exec-bc05691e-edd7-4945-a737-546a4a3eb351.png",
+    "ending": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2dc08b6c-7fff-46ff-ac0f-028e61a1acaa.png",
+    "background": "/workspace/scratch/80a8c8c1affe/generated_images/exec-1d3fc688-29d6-4339-8a33-5bbdc29a014d.png"
+  },
+  "inspection": "Action poses 1,2 hats marginally clipped at top excluded. Remaining six action poses intact. Ending regenerated with larger margins; all eight intact. True original alpha retained. Component extraction recommended."
+}

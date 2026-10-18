@@ -1,0 +1,191 @@
+{
+  "characterId": "CC072",
+  "characterName": "Bongo Magistrate",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC072-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Full-sheet alpha>32 connected-body bounds expand nominal grid cells where needed, retaining complete silhouettes; isolated distant small fringe removed; uniform scale and transparent square padding; original alpha retained."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC072-0.webp",
+      "sourceExtraction": {
+        "left": 47,
+        "top": 52,
+        "width": 459,
+        "height": 435
+      },
+      "scale": 0.9586056644880174,
+      "suggestedAnchor": {
+        "x": 247,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 39,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 131418,
+        "transparentFraction": 0.5013198852539062
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC072-1.webp",
+      "sourceExtraction": {
+        "left": 553,
+        "top": 43,
+        "width": 437,
+        "height": 447
+      },
+      "scale": 0.9843400447427293,
+      "suggestedAnchor": {
+        "x": 271,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 41,
+        "top": 16,
+        "right": 471,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 111944,
+        "transparentFraction": 0.427032470703125
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC072-2.webp",
+      "sourceExtraction": {
+        "left": 1037,
+        "top": 48,
+        "width": 448,
+        "height": 442
+      },
+      "scale": 0.9821428571428571,
+      "suggestedAnchor": {
+        "x": 275,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 22,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 126167,
+        "transparentFraction": 0.4812889099121094
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC072-3.webp",
+      "sourceExtraction": {
+        "left": 53,
+        "top": 526,
+        "width": 456,
+        "height": 454
+      },
+      "scale": 0.9649122807017544,
+      "suggestedAnchor": {
+        "x": 260,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 18,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 98955,
+        "transparentFraction": 0.3774833679199219
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC072-4.webp",
+      "sourceExtraction": {
+        "left": 555,
+        "top": 543,
+        "width": 437,
+        "height": 436
+      },
+      "scale": 1.0068649885583525,
+      "suggestedAnchor": {
+        "x": 279,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 17,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 116569,
+        "transparentFraction": 0.4446754455566406
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC072-5.webp",
+      "sourceExtraction": {
+        "left": 1054,
+        "top": 582,
+        "width": 422,
+        "height": 400
+      },
+      "scale": 1.042654028436019,
+      "suggestedAnchor": {
+        "x": 267,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 39,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 117849,
+        "transparentFraction": 0.4495582580566406
+      }
+    }
+  ],
+  "anchorMethod": "Median x of solid lowest36px; y at lowest alpha>32 pixel."
+}

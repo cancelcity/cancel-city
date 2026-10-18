@@ -1,0 +1,27 @@
+{
+  "id": "CC058",
+  "method": "built-in image_gen",
+  "useCase": "style-transfer",
+  "references": [
+    "public/assets/roster-v2/CC058.webp",
+    "public/assets/residents/CC026.webp",
+    "public/assets/residents/CC043.webp"
+  ],
+  "original": "docs/art/roster-card-portraits-v3/CC058/original.png",
+  "prompt": "docs/art/roster-card-portraits-v3/CC058/prompt.md",
+  "derivatives": [
+    {
+      "path": "public/assets/roster-v3/CC058.webp",
+      "width": 896,
+      "height": 896,
+      "hasAlpha": false
+    },
+    {
+      "path": "public/assets/roster-v3/CC058-small.webp",
+      "width": 384,
+      "height": 384,
+      "hasAlpha": false
+    }
+  ],
+  "visualInspection": "Approved after direct image inspection: dedicated expressive bust portrait; dense scratchy black crosshatching and distressed halftone texture; saturated full-bleed punk palette; matches original deck style; character face, outfit and key prop preserved. No changes to acting sprites or animation."
+}

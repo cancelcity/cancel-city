@@ -1,0 +1,191 @@
+{
+  "characterId": "CC101",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest solid alpha connected bodies; smaller prop/effect components assigned whole by proximity. Original master retained. Uniform square padded extraction."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC101-0.webp",
+      "sourceExtraction": {
+        "left": 50,
+        "top": 13,
+        "width": 332,
+        "height": 483
+      },
+      "scale": 0.8695652173913043,
+      "suggestedAnchor": {
+        "x": 249,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 111,
+        "top": 36,
+        "right": 400,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 181494,
+        "transparentFraction": 0.6923446655273438
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC101-1.webp",
+      "sourceExtraction": {
+        "left": 506,
+        "top": 12,
+        "width": 440,
+        "height": 483
+      },
+      "scale": 0.8695652173913043,
+      "suggestedAnchor": {
+        "x": 290,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 64,
+        "top": 36,
+        "right": 447,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 163522,
+        "transparentFraction": 0.6237869262695312
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC101-2.webp",
+      "sourceExtraction": {
+        "left": 969,
+        "top": 49,
+        "width": 558,
+        "height": 433
+      },
+      "scale": 0.7526881720430108,
+      "suggestedAnchor": {
+        "x": 233,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 130,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 185594,
+        "transparentFraction": 0.7079849243164062
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC101-3.webp",
+      "sourceExtraction": {
+        "left": 51,
+        "top": 489,
+        "width": 379,
+        "height": 508
+      },
+      "scale": 0.8267716535433071,
+      "suggestedAnchor": {
+        "x": 270,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 99,
+        "top": 36,
+        "right": 412,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 179590,
+        "transparentFraction": 0.6850814819335938
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC101-4.webp",
+      "sourceExtraction": {
+        "left": 556,
+        "top": 546,
+        "width": 438,
+        "height": 445
+      },
+      "scale": 0.9438202247191011,
+      "suggestedAnchor": {
+        "x": 318,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 49,
+        "top": 36,
+        "right": 462,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 159625,
+        "transparentFraction": 0.6089210510253906
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC101-5.webp",
+      "sourceExtraction": {
+        "left": 1169,
+        "top": 516,
+        "width": 241,
+        "height": 476
+      },
+      "scale": 0.8823529411764706,
+      "suggestedAnchor": {
+        "x": 249,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 149,
+        "top": 36,
+        "right": 362,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 204531,
+        "transparentFraction": 0.7802238464355469
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest36px; y at lowest alpha>32 art pixel.",
+  "characterName": "Community Note Lamar"
+}

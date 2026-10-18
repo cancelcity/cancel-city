@@ -1,0 +1,16 @@
+Use case: illustration-story
+Asset type: drawn animation production frame sheet for a premium anime racing special, full opaque film frames.
+Input image 1: exact adult hero and tiny red number-2 kart identity reference. Preserve adult muscular driver, face, golden spiky hair, orange gi with navy undershirt, blue wristbands, black driving wheel, four small black tires and red kart white roundel black number 2. Golden hair and kart proportions consistent.
+Primary request: EXACTLY 8 sequential animation frames, EXACT 2 columns by 4 rows. Every equal-size cell is complete 16:9 landscape film frame. Read left-to-right then down. Sheet dimensions ratio 8:9, ideally 2048 x 2304. Absolutely no gutters, no panel borders, no text labels or frame numbers. Do not merge cells.
+The sequence is a single front-facing camera racing backward just above the wet track. Hero drives a tiny kart straight toward the viewer, growing in dramatic foreshortening. It begins as a small full vehicle in middle distance, is accelerated forward by an enormous golden energy shock-cone and makes a low jump; ends close enough for expressive eyes but whole kart, wheels and entire hair silhouette stay within the frame. No collision or explosion yet. The background is the same wet black asphalt and deep teal / magenta neon city at dusk as master reference, with clear directional speed streaks.
+Draw distinctly changing consecutive frames, not duplicate posters:
+1: front-on kart small/medium, hero crouches into steering wheel, concentrated shut mouth, tires touching wet track, gold aura gathering behind.
+2: larger, driver tightens grip, head lowers, eyes sharpen, kart front suspension compresses, aura brightens.
+3: front tires lift slightly; wheels turn straight; rear tires push spray; driver leans into impending acceleration.
+4: all wheels barely airborne in a very low hop, nose tilts up a little, driver's hair/cloth swept backward, giant golden cone opens behind.
+5: foreshortened kart closing on viewer, nose levels, determined grin appears, golden cone expands into dynamic angular rays.
+6: closer fully airborne low over the track, driver opens mouth in focused roar, aura sharper, bright rim light, motion streaks stretch out from camera vanishing point.
+7: near front-on kart occupies about seventy percent of frame width, driver leans forward, eyes locked ahead; front wheels angle very subtly to correct trajectory, blue-white sparks mixed into golden rushing light.
+8: final powerful attacking approach, fully visible vehicle and driver fill about eighty-five percent of safe frame, front bumper dominant, hero focused roar, huge luminous golden shockcone, track stretches towards camera. Keep safe margin top hair and bottom tires.
+Style: elite hand-drawn Japanese anime sakuga, confident black ink, crisp painted cel shadows, beautiful dynamic mechanical foreshortening, expressive face and coherently attached anatomically correct arms. Two hands attached on the steering wheel, no spare arms. This must read as a coherent animated racing shot.
+Avoid: 3D render, photo, CGI, comic speech bubbles, captions, repeated still image, different kart/body/color, camera circling, rear view, crash, gore, other people. Only readable text is kart number 2.

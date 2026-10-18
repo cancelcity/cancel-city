@@ -1,0 +1,150 @@
+{
+  "title": "Gokart: Full Throttle",
+  "duration": 5.8,
+  "video": "/assets/gokart/layered-v3/full-throttle.mp4",
+  "poster": "/assets/gokart/layered-v3/poster.webp",
+  "captions": "/assets/gokart/layered-v3/captions.vtt",
+  "shots": [
+    {
+      "id": "ignition",
+      "title": "Ignition",
+      "start": 0,
+      "end": 0.7,
+      "description": "Gokart narrows his eyes and grips the steering wheel. His engine coughs while golden energy gathers around him.",
+      "thumbnail": "/assets/gokart/layered-v3/ignition-thumb.webp",
+      "drawings": [
+        "docs/art/gokart-layered/intro/ignition-00.webp",
+        "docs/art/gokart-layered/intro/ignition-01.webp",
+        "docs/art/gokart-layered/intro/ignition-02.webp",
+        "docs/art/gokart-layered/intro/ignition-03.webp",
+        "docs/art/gokart-layered/intro/ignition-04.webp",
+        "docs/art/gokart-layered/intro/ignition-05.webp",
+        "docs/art/gokart-layered/intro/ignition-06.webp",
+        "docs/art/gokart-layered/intro/ignition-07.webp"
+      ]
+    },
+    {
+      "id": "reveal",
+      "title": "Tiny vehicle",
+      "start": 0.7,
+      "end": 1.5,
+      "description": "A low-angle view reveals the enormous hero squeezed into a tiny red number-two kart. The engine catches, the aura swells, and the kart launches.",
+      "thumbnail": "/assets/gokart/layered-v3/reveal-thumb.webp",
+      "drawings": [
+        "docs/art/gokart-layered/intro/reveal-clean-00.webp",
+        "docs/art/gokart-layered/intro/reveal-clean-01.webp"
+      ]
+    },
+    {
+      "id": "drift",
+      "title": "Full throttle",
+      "start": 1.5,
+      "end": 2.7,
+      "description": "The kart slides around the wet neon circuit. Gokart countersteers as the tires throw up water and golden sparks.",
+      "thumbnail": "/assets/gokart/layered-v3/drift-thumb.webp",
+      "drawings": [
+        "docs/art/gokart-layered/action/drift-clean-00.webp",
+        "docs/art/gokart-layered/action/drift-clean-01.webp",
+        "docs/art/gokart-layered/action/drift-clean-02.webp",
+        "docs/art/gokart-layered/action/drift-clean-03.webp",
+        "docs/art/gokart-layered/action/drift-clean-04.webp",
+        "docs/art/gokart-layered/action/drift-clean-05.webp",
+        "docs/art/gokart-layered/action/drift-clean-06.webp",
+        "docs/art/gokart-layered/action/drift-clean-07.webp",
+        "docs/art/gokart-layered/action/drift-clean-08.webp"
+      ]
+    },
+    {
+      "id": "rush",
+      "title": "No brakes",
+      "start": 2.7,
+      "end": 3.35,
+      "description": "The kart accelerates directly toward the camera, lifts off the road, and rushes forward inside a golden shockwave.",
+      "thumbnail": "/assets/gokart/layered-v3/rush-thumb.webp",
+      "drawings": [
+        "docs/art/gokart-layered/action/rush-clean-00.webp",
+        "docs/art/gokart-layered/action/rush-clean-01.webp",
+        "docs/art/gokart-layered/action/rush-clean-02.webp",
+        "docs/art/gokart-layered/action/rush-clean-03.webp",
+        "docs/art/gokart-layered/action/rush-clean-04.webp",
+        "docs/art/gokart-layered/action/rush-clean-05.webp"
+      ]
+    },
+    {
+      "id": "impact",
+      "title": "The impact",
+      "start": 3.35,
+      "end": 4.15,
+      "description": "Gokart charges through an empty tire barrier. Golden light bursts across the circuit while rubber tires tumble through the air.",
+      "thumbnail": "/assets/gokart/layered-v3/impact-thumb.webp",
+      "drawings": [
+        "docs/art/gokart-layered/impact/impact-clean-00.webp",
+        "docs/art/gokart-layered/impact/impact-clean-01.webp",
+        "docs/art/gokart-layered/impact/impact-clean-02.webp",
+        "docs/art/gokart-layered/impact/impact-clean-03.webp",
+        "docs/art/gokart-layered/impact/impact-clean-04.webp",
+        "docs/art/gokart-layered/impact/impact-clean-05.webp",
+        "docs/art/gokart-layered/impact/impact-clean-06.webp"
+      ]
+    },
+    {
+      "id": "ending",
+      "title": "One loose wheel",
+      "start": 4.15,
+      "end": 5.8,
+      "description": "Gokart celebrates in the stationary kart. One front wheel detaches and rolls away. His triumphant grin becomes a deadpan stare.",
+      "thumbnail": "/assets/gokart/layered-v3/ending-thumb.webp",
+      "drawings": [
+        "docs/art/gokart-layered/ending/ending-clean-00.webp",
+        "docs/art/gokart-layered/ending/ending-clean-01.webp",
+        "docs/art/gokart-layered/ending/ending-clean-02.webp",
+        "docs/art/gokart-layered/ending/ending-clean-03.webp",
+        "docs/art/gokart-layered/ending/ending-clean-04.webp",
+        "docs/art/gokart-layered/ending/ending-clean-05.webp",
+        "docs/art/gokart-layered/ending/ending-clean-06.webp",
+        "docs/art/gokart-layered/ending/ending-clean-07.webp"
+      ]
+    }
+  ],
+  "sourceMaster": "docs/art/gokart-card-style/master.png",
+  "renderReport": "docs/art/gokart-layered/render-report.json",
+  "layering": {
+    "circuit": "docs/art/gokart-layered/scenery/circuit.webp",
+    "headon": "docs/art/gokart-layered/scenery/headon.webp"
+  },
+  "audioSource": {
+    "video": "/assets/gokart/card-style-v2/full-throttle.mp4",
+    "shots": [
+      {
+        "id": "ignition",
+        "start": 0,
+        "end": 1.16
+      },
+      {
+        "id": "reveal",
+        "start": 1.16,
+        "end": 2.4
+      },
+      {
+        "id": "drift",
+        "start": 2.4,
+        "end": 4.2
+      },
+      {
+        "id": "rush",
+        "start": 4.2,
+        "end": 5.08
+      },
+      {
+        "id": "impact",
+        "start": 5.08,
+        "end": 6.64
+      },
+      {
+        "id": "ending",
+        "start": 6.64,
+        "end": 9.6
+      }
+    ]
+  }
+}

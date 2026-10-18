@@ -1,0 +1,645 @@
+[
+  {
+    "shot": "reveal",
+    "source": "docs/art/gokart-layered/intro/reveal-alpha-source.png",
+    "frames": [
+      {
+        "file": "docs/art/gokart-layered/intro/reveal-clean-00.webp",
+        "sourceBounds": {
+          "x": 66,
+          "y": 0,
+          "w": 435,
+          "h": 324
+        },
+        "component": {
+          "label": 1,
+          "area": 80904,
+          "x0": 68,
+          "y0": 0,
+          "x1": 498,
+          "y1": 321,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/intro/reveal-clean-01.webp",
+        "sourceBounds": {
+          "x": 659,
+          "y": 0,
+          "w": 450,
+          "h": 329
+        },
+        "component": {
+          "label": 2,
+          "area": 83856,
+          "x0": 661,
+          "y0": 0,
+          "x1": 1106,
+          "y1": 326,
+          "row": 0,
+          "col": 1
+        }
+      }
+    ],
+    "method": "Original RGBA component isolation and rectangular crop; merged/overlapping subjects excluded; no invented pixels or redraw"
+  },
+  {
+    "shot": "drift",
+    "source": "docs/art/gokart-layered/action/drift-alpha-source.png",
+    "frames": [
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-00.webp",
+        "sourceBounds": {
+          "x": 33,
+          "y": 0,
+          "w": 376,
+          "h": 278
+        },
+        "component": {
+          "label": 1,
+          "area": 58853,
+          "x0": 35,
+          "y0": 0,
+          "x1": 406,
+          "y1": 275,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-01.webp",
+        "sourceBounds": {
+          "x": 1035,
+          "y": 0,
+          "w": 385,
+          "h": 288
+        },
+        "component": {
+          "label": 3,
+          "area": 60710,
+          "x0": 1037,
+          "y0": 0,
+          "x1": 1417,
+          "y1": 285,
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-02.webp",
+        "sourceBounds": {
+          "x": 65,
+          "y": 275,
+          "w": 378,
+          "h": 271
+        },
+        "component": {
+          "label": 5,
+          "area": 57475,
+          "x0": 67,
+          "y0": 277,
+          "x1": 440,
+          "y1": 543,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-03.webp",
+        "sourceBounds": {
+          "x": 1013,
+          "y": 270,
+          "w": 401,
+          "h": 303
+        },
+        "component": {
+          "label": 4,
+          "area": 64464,
+          "x0": 1015,
+          "y0": 272,
+          "x1": 1411,
+          "y1": 570,
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-04.webp",
+        "sourceBounds": {
+          "x": 52,
+          "y": 549,
+          "w": 410,
+          "h": 270
+        },
+        "component": {
+          "label": 7,
+          "area": 59733,
+          "x0": 54,
+          "y0": 551,
+          "x1": 459,
+          "y1": 816,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-05.webp",
+        "sourceBounds": {
+          "x": 526,
+          "y": 549,
+          "w": 417,
+          "h": 296
+        },
+        "component": {
+          "label": 8,
+          "area": 67829,
+          "x0": 528,
+          "y0": 551,
+          "x1": 940,
+          "y1": 842,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-06.webp",
+        "sourceBounds": {
+          "x": 20,
+          "y": 820,
+          "w": 442,
+          "h": 266
+        },
+        "component": {
+          "label": 10,
+          "area": 61486,
+          "x0": 22,
+          "y0": 822,
+          "x1": 459,
+          "y1": 1085,
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-07.webp",
+        "sourceBounds": {
+          "x": 536,
+          "y": 825,
+          "w": 414,
+          "h": 261
+        },
+        "component": {
+          "label": 11,
+          "area": 56369,
+          "x0": 538,
+          "y0": 827,
+          "x1": 947,
+          "y1": 1084,
+          "row": 3,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/drift-clean-08.webp",
+        "sourceBounds": {
+          "x": 1012,
+          "y": 829,
+          "w": 432,
+          "h": 257
+        },
+        "component": {
+          "label": 12,
+          "area": 60094,
+          "x0": 1014,
+          "y0": 831,
+          "x1": 1441,
+          "y1": 1085,
+          "row": 3,
+          "col": 2
+        }
+      }
+    ],
+    "method": "Original RGBA component isolation and rectangular crop; merged/overlapping subjects excluded; no invented pixels or redraw"
+  },
+  {
+    "shot": "rush",
+    "source": "docs/art/gokart-layered/action/rush-alpha-source.png",
+    "frames": [
+      {
+        "file": "docs/art/gokart-layered/action/rush-clean-00.webp",
+        "sourceBounds": {
+          "x": 190,
+          "y": 95,
+          "w": 191,
+          "h": 169
+        },
+        "component": {
+          "label": 2,
+          "area": 19726,
+          "x0": 192,
+          "y0": 97,
+          "x1": 378,
+          "y1": 261,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/rush-clean-01.webp",
+        "sourceBounds": {
+          "x": 724,
+          "y": 35,
+          "w": 322,
+          "h": 281
+        },
+        "component": {
+          "label": 1,
+          "area": 53025,
+          "x0": 726,
+          "y0": 37,
+          "x1": 1043,
+          "y1": 313,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/rush-clean-02.webp",
+        "sourceBounds": {
+          "x": 105,
+          "y": 329,
+          "w": 366,
+          "h": 306
+        },
+        "component": {
+          "label": 4,
+          "area": 63985,
+          "x0": 107,
+          "y0": 331,
+          "x1": 468,
+          "y1": 632,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/rush-clean-03.webp",
+        "sourceBounds": {
+          "x": 703,
+          "y": 320,
+          "w": 369,
+          "h": 308
+        },
+        "component": {
+          "label": 3,
+          "area": 67403,
+          "x0": 705,
+          "y0": 322,
+          "x1": 1069,
+          "y1": 625,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/rush-clean-04.webp",
+        "sourceBounds": {
+          "x": 68,
+          "y": 640,
+          "w": 467,
+          "h": 346
+        },
+        "component": {
+          "label": 5,
+          "area": 95206,
+          "x0": 70,
+          "y0": 642,
+          "x1": 532,
+          "y1": 983,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/action/rush-clean-05.webp",
+        "sourceBounds": {
+          "x": 30,
+          "y": 973,
+          "w": 554,
+          "h": 348
+        },
+        "component": {
+          "label": 7,
+          "area": 124865,
+          "x0": 32,
+          "y0": 975,
+          "x1": 581,
+          "y1": 1318,
+          "row": 3,
+          "col": 0
+        }
+      }
+    ],
+    "method": "Original RGBA component isolation and rectangular crop; merged/overlapping subjects excluded; no invented pixels or redraw"
+  },
+  {
+    "shot": "impact",
+    "source": "docs/art/gokart-layered/impact/impact-alpha-source.png",
+    "frames": [
+      {
+        "file": "docs/art/gokart-layered/impact/impact-clean-00.webp",
+        "sourceBounds": {
+          "x": 610,
+          "y": 12,
+          "w": 434,
+          "h": 316
+        },
+        "component": {
+          "label": 1,
+          "area": 76818,
+          "x0": 612,
+          "y0": 14,
+          "x1": 1041,
+          "y1": 325,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/impact/impact-clean-01.webp",
+        "sourceBounds": {
+          "x": 47,
+          "y": 326,
+          "w": 493,
+          "h": 343
+        },
+        "component": {
+          "label": 3,
+          "area": 90902,
+          "x0": 49,
+          "y0": 328,
+          "x1": 537,
+          "y1": 666,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/impact/impact-clean-02.webp",
+        "sourceBounds": {
+          "x": 619,
+          "y": 326,
+          "w": 517,
+          "h": 351
+        },
+        "component": {
+          "label": 4,
+          "area": 100427,
+          "x0": 621,
+          "y0": 328,
+          "x1": 1133,
+          "y1": 674,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/impact/impact-clean-03.webp",
+        "sourceBounds": {
+          "x": 47,
+          "y": 678,
+          "w": 496,
+          "h": 335
+        },
+        "component": {
+          "label": 5,
+          "area": 91028,
+          "x0": 49,
+          "y0": 680,
+          "x1": 540,
+          "y1": 1010,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/impact/impact-clean-04.webp",
+        "sourceBounds": {
+          "x": 651,
+          "y": 682,
+          "w": 506,
+          "h": 340
+        },
+        "component": {
+          "label": 6,
+          "area": 92970,
+          "x0": 653,
+          "y0": 684,
+          "x1": 1154,
+          "y1": 1019,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/impact/impact-clean-05.webp",
+        "sourceBounds": {
+          "x": 89,
+          "y": 1001,
+          "w": 465,
+          "h": 316
+        },
+        "component": {
+          "label": 8,
+          "area": 80894,
+          "x0": 91,
+          "y0": 1003,
+          "x1": 551,
+          "y1": 1314,
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/impact/impact-clean-06.webp",
+        "sourceBounds": {
+          "x": 689,
+          "y": 998,
+          "w": 467,
+          "h": 319
+        },
+        "component": {
+          "label": 7,
+          "area": 82845,
+          "x0": 691,
+          "y0": 1000,
+          "x1": 1153,
+          "y1": 1314,
+          "row": 3,
+          "col": 1
+        }
+      }
+    ],
+    "method": "Original RGBA component isolation and rectangular crop; merged/overlapping subjects excluded; no invented pixels or redraw"
+  },
+  {
+    "shot": "ending",
+    "source": "docs/art/gokart-layered/ending/ending-alpha-source.png",
+    "frames": [
+      {
+        "file": "docs/art/gokart-layered/ending/ending-clean-00.webp",
+        "sourceBounds": {
+          "x": 146,
+          "y": 0,
+          "w": 366,
+          "h": 333
+        },
+        "component": {
+          "label": 1,
+          "area": 68058,
+          "x0": 148,
+          "y0": 0,
+          "x1": 509,
+          "y1": 330,
+          "row": 0,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/ending/ending-clean-01.webp",
+        "sourceBounds": {
+          "x": 741,
+          "y": 6,
+          "w": 358,
+          "h": 325
+        },
+        "component": {
+          "label": 2,
+          "area": 61568,
+          "x0": 743,
+          "y0": 8,
+          "x1": 1096,
+          "y1": 328,
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/ending/ending-clean-02.webp",
+        "sourceBounds": {
+          "x": 165,
+          "y": 336,
+          "w": 379,
+          "h": 327
+        },
+        "component": {
+          "label": 5,
+          "area": 66260,
+          "x0": 167,
+          "y0": 338,
+          "x1": 541,
+          "y1": 660,
+          "row": 1,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/ending/ending-clean-03.webp",
+        "sourceBounds": {
+          "x": 775,
+          "y": 335,
+          "w": 325,
+          "h": 328
+        },
+        "component": {
+          "label": 4,
+          "area": 61135,
+          "x0": 777,
+          "y0": 337,
+          "x1": 1097,
+          "y1": 660,
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/ending/ending-clean-04.webp",
+        "sourceBounds": {
+          "x": 191,
+          "y": 662,
+          "w": 356,
+          "h": 321
+        },
+        "component": {
+          "label": 7,
+          "area": 62351,
+          "x0": 193,
+          "y0": 664,
+          "x1": 544,
+          "y1": 980,
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/ending/ending-clean-05.webp",
+        "sourceBounds": {
+          "x": 796,
+          "y": 663,
+          "w": 323,
+          "h": 322
+        },
+        "component": {
+          "label": 8,
+          "area": 58329,
+          "x0": 798,
+          "y0": 665,
+          "x1": 1116,
+          "y1": 982,
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/ending/ending-clean-06.webp",
+        "sourceBounds": {
+          "x": 156,
+          "y": 990,
+          "w": 366,
+          "h": 335
+        },
+        "component": {
+          "label": 11,
+          "area": 64455,
+          "x0": 158,
+          "y0": 992,
+          "x1": 519,
+          "y1": 1322,
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "file": "docs/art/gokart-layered/ending/ending-clean-07.webp",
+        "sourceBounds": {
+          "x": 773,
+          "y": 990,
+          "w": 335,
+          "h": 334
+        },
+        "component": {
+          "label": 12,
+          "area": 61530,
+          "x0": 775,
+          "y0": 992,
+          "x1": 1105,
+          "y1": 1321,
+          "row": 3,
+          "col": 1
+        }
+      }
+    ],
+    "method": "Original RGBA component isolation and rectangular crop; merged/overlapping subjects excluded; no invented pixels or redraw"
+  }
+]

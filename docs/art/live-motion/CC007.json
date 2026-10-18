@@ -1,0 +1,195 @@
+{
+  "characterId": "CC007",
+  "character": "Unpaid Intern",
+  "source": "CC007-poses.png",
+  "generation": "built-in image_gen, transparent_background true",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "sourceWidth": 1536,
+    "sourceHeight": 1024,
+    "cropColumnBoundaries": [
+      0,
+      512,
+      1036,
+      1536
+    ],
+    "cropRowBoundaries": [
+      0,
+      501,
+      1024
+    ],
+    "note": "Crop divisions follow empty alpha gutters to preserve hardhat and flying paperwork that extend just beyond nominal equal-cell grid."
+  },
+  "anchorDefinition": "Pixel coordinates in each 540×540 runtime frame: approximate feet centroid at the ground baseline; pose 5 uses the kneeling body ground baseline. Alpha bounds use inclusive left/top and exclusive right/bottom.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "tired-clipboard",
+      "asset": "/assets/actors/CC007-0.webp",
+      "width": 540,
+      "height": 540,
+      "sourceCrop": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 501
+      },
+      "alphaBounds": {
+        "left": 156,
+        "top": 36,
+        "right": 385,
+        "bottom": 515
+      },
+      "suggestedAnchor": {
+        "x": 288,
+        "y": 514
+      },
+      "alphaCheck": {
+        "transparentPixels": 216630,
+        "visiblePixels": 66587,
+        "edgePixelsAbove16": 0
+      }
+    },
+    {
+      "index": 1,
+      "name": "paperwork-wind-up",
+      "asset": "/assets/actors/CC007-1.webp",
+      "width": 540,
+      "height": 540,
+      "sourceCrop": {
+        "left": 512,
+        "top": 0,
+        "width": 524,
+        "height": 501
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 74,
+        "right": 469,
+        "bottom": 498
+      },
+      "suggestedAnchor": {
+        "x": 252,
+        "y": 497
+      },
+      "alphaCheck": {
+        "transparentPixels": 184941,
+        "visiblePixels": 95907,
+        "edgePixelsAbove16": 0
+      }
+    },
+    {
+      "index": 2,
+      "name": "paperwork-thrust-right",
+      "asset": "/assets/actors/CC007-2.webp",
+      "width": 540,
+      "height": 540,
+      "sourceCrop": {
+        "left": 1036,
+        "top": 0,
+        "width": 500,
+        "height": 501
+      },
+      "alphaBounds": {
+        "left": 26,
+        "top": 53,
+        "right": 502,
+        "bottom": 499
+      },
+      "suggestedAnchor": {
+        "x": 238,
+        "y": 499
+      },
+      "alphaCheck": {
+        "transparentPixels": 183511,
+        "visiblePixels": 96630,
+        "edgePixelsAbove16": 0
+      }
+    },
+    {
+      "index": 3,
+      "name": "hardhat-thumbs-up",
+      "asset": "/assets/actors/CC007-3.webp",
+      "width": 540,
+      "height": 540,
+      "sourceCrop": {
+        "left": 0,
+        "top": 501,
+        "width": 512,
+        "height": 523
+      },
+      "alphaBounds": {
+        "left": 115,
+        "top": 14,
+        "right": 394,
+        "bottom": 509
+      },
+      "suggestedAnchor": {
+        "x": 271,
+        "y": 507
+      },
+      "alphaCheck": {
+        "transparentPixels": 201638,
+        "visiblePixels": 80651,
+        "edgePixelsAbove16": 0
+      }
+    },
+    {
+      "index": 4,
+      "name": "paperwork-panic",
+      "asset": "/assets/actors/CC007-4.webp",
+      "width": 540,
+      "height": 540,
+      "sourceCrop": {
+        "left": 512,
+        "top": 501,
+        "width": 524,
+        "height": 523
+      },
+      "alphaBounds": {
+        "left": 20,
+        "top": 20,
+        "right": 527,
+        "bottom": 504
+      },
+      "suggestedAnchor": {
+        "x": 237,
+        "y": 504
+      },
+      "alphaCheck": {
+        "transparentPixels": 156273,
+        "visiblePixels": 114797,
+        "edgePixelsAbove16": 0
+      }
+    },
+    {
+      "index": 5,
+      "name": "exhausted-construction",
+      "asset": "/assets/actors/CC007-5.webp",
+      "width": 540,
+      "height": 540,
+      "sourceCrop": {
+        "left": 1036,
+        "top": 501,
+        "width": 500,
+        "height": 523
+      },
+      "alphaBounds": {
+        "left": 110,
+        "top": 88,
+        "right": 484,
+        "bottom": 483
+      },
+      "suggestedAnchor": {
+        "x": 310,
+        "y": 486
+      },
+      "alphaCheck": {
+        "transparentPixels": 192028,
+        "visiblePixels": 89160,
+        "edgePixelsAbove16": 0
+      }
+    }
+  ]
+}

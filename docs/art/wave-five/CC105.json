@@ -1,0 +1,191 @@
+{
+  "characterId": "CC105",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest solid alpha connected bodies; smaller prop/effect components assigned whole by proximity. Original master retained. Uniform square padded extraction."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC105-0.webp",
+      "sourceExtraction": {
+        "left": 133,
+        "top": 6,
+        "width": 235,
+        "height": 495
+      },
+      "scale": 0.8484848484848485,
+      "suggestedAnchor": {
+        "x": 263,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 156,
+        "top": 36,
+        "right": 355,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 207795,
+        "transparentFraction": 0.7926750183105469
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC105-1.webp",
+      "sourceExtraction": {
+        "left": 551,
+        "top": 7,
+        "width": 359,
+        "height": 495
+      },
+      "scale": 0.8484848484848485,
+      "suggestedAnchor": {
+        "x": 268,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 103,
+        "top": 36,
+        "right": 408,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 193821,
+        "transparentFraction": 0.7393684387207031
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC105-2.webp",
+      "sourceExtraction": {
+        "left": 1019,
+        "top": 9,
+        "width": 503,
+        "height": 490
+      },
+      "scale": 0.8349900596421471,
+      "suggestedAnchor": {
+        "x": 192,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 47,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 177313,
+        "transparentFraction": 0.6763954162597656
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC105-3.webp",
+      "sourceExtraction": {
+        "left": 39,
+        "top": 511,
+        "width": 448,
+        "height": 493
+      },
+      "scale": 0.8519269776876268,
+      "suggestedAnchor": {
+        "x": 279,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 65,
+        "top": 36,
+        "right": 447,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 201767,
+        "transparentFraction": 0.7696800231933594
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC105-4.webp",
+      "sourceExtraction": {
+        "left": 592,
+        "top": 502,
+        "width": 373,
+        "height": 509
+      },
+      "scale": 0.825147347740668,
+      "suggestedAnchor": {
+        "x": 252,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 102,
+        "top": 36,
+        "right": 410,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 193452,
+        "transparentFraction": 0.7379608154296875
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC105-5.webp",
+      "sourceExtraction": {
+        "left": 1136,
+        "top": 513,
+        "width": 230,
+        "height": 487
+      },
+      "scale": 0.8624229979466119,
+      "suggestedAnchor": {
+        "x": 276,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 157,
+        "top": 36,
+        "right": 355,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 209147,
+        "transparentFraction": 0.7978324890136719
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest36px; y at lowest alpha>32 art pixel.",
+  "characterName": "Lady Lag-Lag"
+}

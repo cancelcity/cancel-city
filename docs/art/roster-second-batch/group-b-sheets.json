@@ -1,0 +1,68 @@
+[
+  {
+    "id": "CC009",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-4b059a00-951f-4c42-a196-d43705a7b242.png",
+    "prompt": "Use case: stylized-concept. Asset type: transparent production sprite pose atlas. Create EXACT 3 columns by 2 rows of SIX COMPLETE INTACT WHOLE-BODY drawings of same character from reference portrait, one centered inside each equal cell. Landscape canvas 1536x1024 preferred. Consistent scale across cells: standing characters approx380px high, crouched or seated physically shorter at same scale. Every pose includes entire head, outfit, limbs and both feet. Feet touch consistent lower cell baseline. Keep all held props inside its cell. At least40px transparent gutters and40px outer margins. Real alpha transparency everywhere behind drawings. NO opaque white or checkerboard, no background scene, no ground shadow, no labels, no panels. Heavy scratched black ink and halftone exactly matching portrait; consistent saturated costume. Each is independent fully connected complete body, NO detached part rigs. Read cells row-major top-left to bottom-right.\nMatch character and costume from reference exactly. Six poses: 0 cheerful neutral standing with fan; 1 alarmed stance fanning face; 2 wide planted feet with fan extended blowing forward; 3 melting squat with intact connected snowbody, shocked; 4 proud refrozen upright victory fan aloft; 5 intact low melted slump devastated, twig arms still attached.",
+    "fixPrompt": "Edit target: existing six-pose transparent sprite atlas. Preserve exactly the same six intact whole-character drawings, face costume expressions props and rough ink style. Change ONLY the layout/scale: shrink EVERY drawing uniformly to 75% of its current size and recenter it within its correct equal cell of a strict 3x2 grid. Make generous empty transparent gutters: at least55px to each edge and cell divider. ALL entire hair/head, every hand, every foot, complete fan air puff or sword must be inside its cell, no cropping or overlap. Preserve true alpha transparency, no shadows or background. Landscape1536x1024. Do not enlarge crouching poses relative to standing. Cell order unchanged.",
+    "baseHeight": 392,
+    "feet": [
+      [
+        272,
+        461
+      ],
+      [
+        787,
+        457
+      ],
+      [
+        1250,
+        457
+      ],
+      [
+        267,
+        935
+      ],
+      [
+        771,
+        949
+      ],
+      [
+        1258,
+        936
+      ]
+    ]
+  },
+  {
+    "id": "CC011",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-c01223b7-3c27-4c13-9754-1fc650cd8978.png",
+    "prompt": "Use case: stylized-concept. Asset type: transparent production sprite pose atlas. Create EXACT 3 columns by 2 rows of SIX COMPLETE INTACT WHOLE-BODY drawings of same character from reference portrait, one centered inside each equal cell. Landscape canvas 1536x1024 preferred. Consistent scale across cells: standing characters approx380px high, crouched or seated physically shorter at same scale. Every pose includes entire head, outfit, limbs and both feet. Feet touch consistent lower cell baseline. Keep all held props inside its cell. At least40px transparent gutters and40px outer margins. Real alpha transparency everywhere behind drawings. NO opaque white or checkerboard, no background scene, no ground shadow, no labels, no panels. Heavy scratched black ink and halftone exactly matching portrait; consistent saturated costume. Each is independent fully connected complete body, NO detached part rigs. Read cells row-major top-left to bottom-right.\nMatch character and costume from reference exactly. Six poses: 0 neutral standing holding briefcase and wrapped sword; 1 anticipation rolled sleeves checking wristwatch; 2 broad planted feet full-body sideways sword strike; 3 recoil stagger briefcase gripped; 4 relaxed clocking-out watch check victory; 5 exhausted intact seated slumped on briefcase.",
+    "fixPrompt": "Edit target: existing six-pose transparent sprite atlas. Preserve exactly the same six intact whole-character drawings, face costume expressions props and rough ink style. Change ONLY the layout/scale: shrink EVERY drawing uniformly to 75% of its current size and recenter it within its correct equal cell of a strict 3x2 grid. Make generous empty transparent gutters: at least55px to each edge and cell divider. ALL entire hair/head, every hand, every foot, complete fan air puff or sword must be inside its cell, no cropping or overlap. Preserve true alpha transparency, no shadows or background. Landscape1536x1024. Do not enlarge crouching poses relative to standing. Cell order unchanged.",
+    "baseHeight": 391,
+    "feet": [
+      [
+        282,
+        462
+      ],
+      [
+        750,
+        460
+      ],
+      [
+        1239,
+        451
+      ],
+      [
+        307,
+        936
+      ],
+      [
+        779,
+        940
+      ],
+      [
+        1276,
+        931
+      ]
+    ]
+  }
+]

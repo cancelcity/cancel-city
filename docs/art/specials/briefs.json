@@ -1,0 +1,341 @@
+{
+  "mode": "built-in image_gen",
+  "briefs": [
+    {
+      "id": "CC001",
+      "name": "Rage Gamer",
+      "faction": "terminally-online",
+      "reference": "docs/art/residents/CC001.png",
+      "destination": "docs/art/specials/CC001.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: furiously throwing a game controller like a weapon, frantic forward lunge."
+    },
+    {
+      "id": "CC002",
+      "name": "Discord Dictator",
+      "faction": "terminally-online",
+      "reference": "docs/art/residents/CC002.png",
+      "destination": "docs/art/specials/CC002.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: swinging a huge moderator ban hammer overhead, imperious stance."
+    },
+    {
+      "id": "CC003",
+      "name": "The Reply Guy",
+      "faction": "terminally-online",
+      "reference": "docs/art/residents/CC003.png",
+      "destination": "docs/art/specials/CC003.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: pointing accusingly with one hand and brandishing a long scroll of corrections in the other."
+    },
+    {
+      "id": "CC004",
+      "name": "AI Apocalypse Bro",
+      "faction": "terminally-online",
+      "reference": "docs/art/residents/CC004.png",
+      "destination": "docs/art/specials/CC004.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: casting a cloud of tiny robot heads from a glowing laptop."
+    },
+    {
+      "id": "CC005",
+      "name": "The Algorithm",
+      "faction": "terminally-online",
+      "reference": "docs/art/residents/CC005.png",
+      "destination": "docs/art/specials/CC005.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: an intimidating algorithm creature reaching out with screen-like hands and digital tendrils."
+    },
+    {
+      "id": "CC006",
+      "name": "LinkedIn Gladiator",
+      "faction": "corporate-hell",
+      "reference": "docs/art/residents/CC006.png",
+      "destination": "docs/art/specials/CC006.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: triumphant absurd businessman presenting a bursting briefcase of resume papers."
+    },
+    {
+      "id": "CC007",
+      "name": "Unpaid Intern",
+      "faction": "corporate-hell",
+      "reference": "docs/art/residents/CC007.png",
+      "destination": "docs/art/specials/CC007.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: determined exhausted intern raising an empty wallet and a takeaway coffee like a protective spell."
+    },
+    {
+      "id": "CC008",
+      "name": "HR Necromancer",
+      "faction": "corporate-hell",
+      "reference": "docs/art/residents/CC008.png",
+      "destination": "docs/art/specials/CC008.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: commanding HR sorceress raising a clipboard and casting a violet wellness shield."
+    },
+    {
+      "id": "CC009",
+      "name": "Eco Influencer",
+      "faction": "corporate-hell",
+      "reference": "docs/art/residents/CC009.png",
+      "destination": "docs/art/specials/CC009.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: eco influencer conjuring leaf-shaped energy from a branded phone, fashion pose."
+    },
+    {
+      "id": "CC010",
+      "name": "CEO on a Yacht",
+      "faction": "corporate-hell",
+      "reference": "docs/art/residents/CC010.png",
+      "destination": "docs/art/specials/CC010.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: arrogant CEO casting gold coins forward from a yacht-themed miniature cannon."
+    },
+    {
+      "id": "CC011",
+      "name": "French Strike Simulator",
+      "faction": "international-incidents",
+      "reference": "docs/art/residents/CC011.png",
+      "destination": "docs/art/specials/CC011.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: defiant French striker planting a flag and thrusting a picket sign."
+    },
+    {
+      "id": "CC012",
+      "name": "Swiss Neutrality Enjoyer",
+      "faction": "international-incidents",
+      "reference": "docs/art/residents/CC012.png",
+      "destination": "docs/art/specials/CC012.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: calm Swiss neutrality enjoyer holding a golden bank-vault shield."
+    },
+    {
+      "id": "CC013",
+      "name": "Culture Vulture",
+      "faction": "international-incidents",
+      "reference": "docs/art/residents/CC013.png",
+      "destination": "docs/art/specials/CC013.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: culture vulture spreading claws and flinging a torrent of colorful sticker tokens."
+    },
+    {
+      "id": "CC014",
+      "name": "Italian Pasta Inquisition",
+      "faction": "international-incidents",
+      "reference": "docs/art/residents/CC014.png",
+      "destination": "docs/art/specials/CC014.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: Italian pasta inquisitor swinging a fork wrapped with long pasta like a whip."
+    },
+    {
+      "id": "CC015",
+      "name": "Florida Man",
+      "faction": "international-incidents",
+      "reference": "docs/art/residents/CC015.png",
+      "destination": "docs/art/specials/CC015.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: Florida Man charging wildly with beer in one hand and a ridiculous improvised weapon in the other."
+    },
+    {
+      "id": "CC016",
+      "name": "Performative Ally",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC016.png",
+      "destination": "docs/art/specials/CC016.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: performative ally holding a glowing profile-avatar badge like a shield."
+    },
+    {
+      "id": "CC017",
+      "name": "Virtue Signaler",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC017.png",
+      "destination": "docs/art/specials/CC017.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: virtue signaler shouting into a phone with a fiery warning symbol aura."
+    },
+    {
+      "id": "CC018",
+      "name": "Tax Evasion Wizard",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC018.png",
+      "destination": "docs/art/specials/CC018.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: tax wizard opening a golden portal with a rolled account ledger."
+    },
+    {
+      "id": "CC019",
+      "name": "Populist Megaphone",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC019.png",
+      "destination": "docs/art/specials/CC019.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: populist wielding a colossal megaphone, dynamic shout pose."
+    },
+    {
+      "id": "CC020",
+      "name": "Democracy Paywall",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC020.png",
+      "destination": "docs/art/specials/CC020.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: democracy paywall monster raising a giant locked payment gate."
+    },
+    {
+      "id": "CC021",
+      "name": "Crypto Bro",
+      "faction": "crypto-degenerates",
+      "reference": "docs/art/residents/CC021.png",
+      "destination": "docs/art/specials/CC021.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: crypto bro straddling a comic rocket-shaped green candlestick in a launch pose."
+    },
+    {
+      "id": "CC022",
+      "name": "Diamond Hands Corpse",
+      "faction": "crypto-degenerates",
+      "reference": "docs/art/residents/CC022.png",
+      "destination": "docs/art/specials/CC022.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: diamond-hands skeleton lunging with one huge faceted diamond fist."
+    },
+    {
+      "id": "CC023",
+      "name": "Rug Pull Magician",
+      "faction": "crypto-degenerates",
+      "reference": "docs/art/residents/CC023.png",
+      "destination": "docs/art/specials/CC023.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: rug pull magician yanking a flying carpet with a theatrical flourish."
+    },
+    {
+      "id": "CC024",
+      "name": "Smooth Rug Pull",
+      "faction": "crypto-degenerates",
+      "reference": "docs/art/residents/CC024.png",
+      "destination": "docs/art/specials/CC024.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: smooth rug pull hustler gracefully pulling a velvet carpet with a gold glove."
+    },
+    {
+      "id": "CC025",
+      "name": "Forgotten Seed Phrase",
+      "faction": "crypto-degenerates",
+      "reference": "docs/art/residents/CC025.png",
+      "destination": "docs/art/specials/CC025.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: forgotten seed phrase figure raising an enormous key and glowing vault lock."
+    },
+    {
+      "id": "CC026",
+      "name": "Final Boss Karen",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC026.png",
+      "destination": "docs/art/specials/CC026.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: furious Karen with a phone in one hand, summoning a sinister spectral manager with the other."
+    },
+    {
+      "id": "CC027",
+      "name": "Doomsday Prepper",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC027.png",
+      "destination": "docs/art/specials/CC027.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: doomsday prepper bracing behind a shield made from canned beans and survival supplies."
+    },
+    {
+      "id": "CC028",
+      "name": "Conspiracy Mom",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC028.png",
+      "destination": "docs/art/specials/CC028.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: conspiracy mother pulling red strings like a puppet master while pointing dramatically."
+    },
+    {
+      "id": "CC029",
+      "name": "Doomscroll Parasite",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC029.png",
+      "destination": "docs/art/specials/CC029.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: doomscroll parasite hunched over a glowing phone, spiraling screen ghosts around it."
+    },
+    {
+      "id": "CC030",
+      "name": "Cancelled Messiah",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC030.png",
+      "destination": "docs/art/specials/CC030.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: cancelled messiah rising triumphantly under a golden spotlight with comeback energy."
+    },
+    {
+      "id": "CC031",
+      "name": "Zuck.exe",
+      "faction": "terminally-online",
+      "reference": "docs/art/residents/CC031.png",
+      "destination": "docs/art/specials/CC031.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional platform android pulling taut glowing data chains with both hands."
+    },
+    {
+      "id": "CC032",
+      "name": "Stan Empress",
+      "faction": "terminally-online",
+      "reference": "docs/art/residents/CC032.png",
+      "destination": "docs/art/specials/CC032.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional pop empress conducting a fan army with a microphone like a scepter."
+    },
+    {
+      "id": "CC033",
+      "name": "Prime Overlord",
+      "faction": "corporate-hell",
+      "reference": "docs/art/residents/CC033.png",
+      "destination": "docs/art/specials/CC033.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional delivery emperor commanding flying delivery boxes from a powerful lunging stance."
+    },
+    {
+      "id": "CC034",
+      "name": "Subscription Goblin",
+      "faction": "corporate-hell",
+      "reference": "docs/art/residents/CC034.png",
+      "destination": "docs/art/specials/CC034.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: subscription goblin gleefully unrolling a giant receipt while clutching a payment card."
+    },
+    {
+      "id": "CC035",
+      "name": "Il Monumento",
+      "faction": "international-incidents",
+      "reference": "docs/art/residents/CC035.png",
+      "destination": "docs/art/specials/CC035.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional gala statesman raising a huge bronze bust of himself like a weapon."
+    },
+    {
+      "id": "CC036",
+      "name": "World Tour Savior",
+      "faction": "international-incidents",
+      "reference": "docs/art/residents/CC036.png",
+      "destination": "docs/art/specials/CC036.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional stadium prophet playing a dramatic power chord with a guitar."
+    },
+    {
+      "id": "CC037",
+      "name": "Don Tremendous",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC037.png",
+      "destination": "docs/art/specials/CC037.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional golden podium tyrant slamming a golden podium with one hand and pointing outward with the other."
+    },
+    {
+      "id": "CC038",
+      "name": "The Eternal Candidate",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC038.png",
+      "destination": "docs/art/specials/CC038.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: eternal candidate holding an oversized clock and a campaign sign while striking a theatrical pose."
+    },
+    {
+      "id": "CC039",
+      "name": "Elongated Ego",
+      "faction": "crypto-degenerates",
+      "reference": "docs/art/residents/CC039.png",
+      "destination": "docs/art/specials/CC039.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional rocket baron riding a small absurd rocket while brandishing a renaming sign."
+    },
+    {
+      "id": "CC040",
+      "name": "Laser-Eye Prophet",
+      "faction": "crypto-degenerates",
+      "reference": "docs/art/residents/CC040.png",
+      "destination": "docs/art/specials/CC040.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: laser eye prophet leaning forward and firing two narrow neon eye beams."
+    },
+    {
+      "id": "CC041",
+      "name": "Ye of Chaos",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC041.png",
+      "destination": "docs/art/specials/CC041.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional designer-armored headline king standing powerfully atop a speaker with a microphone."
+    },
+    {
+      "id": "CC042",
+      "name": "Apology Influencer",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC042.png",
+      "destination": "docs/art/specials/CC042.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: apology influencer melodramatically crying while presenting a merch hoodie under a ring light."
+    }
+  ]
+}

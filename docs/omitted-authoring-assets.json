@@ -1,0 +1,5745 @@
+{
+  "note": "Optional original production masters, not used by the game runtime. Preserved in the original Site source repository at the recorded source commit.",
+  "files": [
+    {
+      "path": "docs/art/cinema/karen-poses.png",
+      "size": 2132336,
+      "git_blob": "a5a126c7d6af2dd5e7e94f10ddefde0609e46875"
+    },
+    {
+      "path": "docs/art/city-backdrop.png",
+      "size": 3812873,
+      "git_blob": "53a36c14019256f6e479ffe2c84c831d1230a70b"
+    },
+    {
+      "path": "docs/art/city/afterparty-l1.png",
+      "size": 2061368,
+      "git_blob": "176d5646c630f84264a13d68fe9a218644386ab5"
+    },
+    {
+      "path": "docs/art/city/afterparty-l2.png",
+      "size": 1967251,
+      "git_blob": "f9eed10386b9faa4a48f63246e2b07da0d257ffa"
+    },
+    {
+      "path": "docs/art/city/afterparty-l3-first.png",
+      "size": 2083128,
+      "git_blob": "24092e6fcf8a326deed84d93b847eaf57b708df1"
+    },
+    {
+      "path": "docs/art/city/afterparty-l3.png",
+      "size": 1344656,
+      "git_blob": "4ca3dcdad9623f2ff3b6dce92543f83b882867f5"
+    },
+    {
+      "path": "docs/art/city/civic-l1.png",
+      "size": 2526529,
+      "git_blob": "e4cbb946ba0bb6dda0fe5f0e47efa7a4025cd636"
+    },
+    {
+      "path": "docs/art/city/civic-l2.png",
+      "size": 2401078,
+      "git_blob": "48746ce20724a93ca4facbdaab22f548eacd3995"
+    },
+    {
+      "path": "docs/art/city/civic-l3-first.png",
+      "size": 2464334,
+      "git_blob": "411e21cfc21b5e656994f28a848579c0d265c5d6"
+    },
+    {
+      "path": "docs/art/city/civic-l3-repair-first.png",
+      "size": 1810275,
+      "git_blob": "bfd9d8ba6d6cfc270185f81b97994905d5dd267f"
+    },
+    {
+      "path": "docs/art/city/civic-l3.png",
+      "size": 1279268,
+      "git_blob": "fab1b0ea45d86c118e1d95f5ea89fc4c1f6afc04"
+    },
+    {
+      "path": "docs/art/city/feed-l1.png",
+      "size": 2520737,
+      "git_blob": "5b6c30198949b601950748a5602bf8f7b99c4c5e"
+    },
+    {
+      "path": "docs/art/city/feed-l2.png",
+      "size": 2445923,
+      "git_blob": "14016cf815afcc58ee32a9e798e9d6f4dc09e88b"
+    },
+    {
+      "path": "docs/art/city/feed-l3-first.png",
+      "size": 2368596,
+      "git_blob": "0d1e62b18489bc8a5b0b073614950cd734ee6a54"
+    },
+    {
+      "path": "docs/art/city/feed-l3-repair1.png",
+      "size": 1778998,
+      "git_blob": "6a4d257a8c9f00ab97dc5a0e6fe8c1f3091dbe72"
+    },
+    {
+      "path": "docs/art/city/feed-l3.png",
+      "size": 1493129,
+      "git_blob": "da0f7c6e0a121001dec52a5b3514543ddcdacaa2"
+    },
+    {
+      "path": "docs/art/city/neighbourhood.png",
+      "size": 3298374,
+      "git_blob": "eab5f894fac39d42e3a20a1e688036eef5c04ed9"
+    },
+    {
+      "path": "docs/art/city/pr-l1.png",
+      "size": 1785549,
+      "git_blob": "a6550990582002c07c6893123ec345f1bc1204ee"
+    },
+    {
+      "path": "docs/art/city/pr-l2-first.png",
+      "size": 1904276,
+      "git_blob": "5740b3581710f33bf93090fb7d6d1d207b6b5480"
+    },
+    {
+      "path": "docs/art/city/pr-l2-repair-1.png",
+      "size": 1437632,
+      "git_blob": "2db8e06b284bec5b9b51040b4f2690c7a0156989"
+    },
+    {
+      "path": "docs/art/city/pr-l2-repair-2.png",
+      "size": 1009723,
+      "git_blob": "1ecde186cc451ee39bcec14fd93ca1266addf7a4"
+    },
+    {
+      "path": "docs/art/city/pr-l2.png",
+      "size": 1009723,
+      "git_blob": "1ecde186cc451ee39bcec14fd93ca1266addf7a4"
+    },
+    {
+      "path": "docs/art/city/pr-l3-first.png",
+      "size": 1929160,
+      "git_blob": "d6a658d6acfb06df9e8a7bbfb4f0817cbdfc2976"
+    },
+    {
+      "path": "docs/art/city/pr-l3-repair-1.png",
+      "size": 1186025,
+      "git_blob": "e2fb5961765077832c01db4ee901f47cb7b4152c"
+    },
+    {
+      "path": "docs/art/city/pr-l3.png",
+      "size": 1186025,
+      "git_blob": "e2fb5961765077832c01db4ee901f47cb7b4152c"
+    },
+    {
+      "path": "docs/art/city/rocket-l1.png",
+      "size": 2252440,
+      "git_blob": "c66015e04bf005381959ff6acd950e43f445b4f4"
+    },
+    {
+      "path": "docs/art/city/rocket-l2.png",
+      "size": 2281647,
+      "git_blob": "b6f1fdcbc3e4e1e279afe230856665ced526af44"
+    },
+    {
+      "path": "docs/art/city/rocket-l3-first.png",
+      "size": 2420126,
+      "git_blob": "3af7eed5f21d9845328454dad9d333612ca6e1a1"
+    },
+    {
+      "path": "docs/art/city/rocket-l3.png",
+      "size": 1417683,
+      "git_blob": "151719078dec59eeedd26028a62ef5ad646daac0"
+    },
+    {
+      "path": "docs/art/city/summit-l1.png",
+      "size": 2212785,
+      "git_blob": "e989ce735796805f803a82320958adae925c260d"
+    },
+    {
+      "path": "docs/art/city/summit-l2.png",
+      "size": 2081191,
+      "git_blob": "f4ce9b59248aaeac6bf7f13d14a50f45928383d7"
+    },
+    {
+      "path": "docs/art/city/summit-l3-first.png",
+      "size": 1964324,
+      "git_blob": "7fef75655b22b2595fa8aacad90a7009210ad803"
+    },
+    {
+      "path": "docs/art/city/summit-l3.png",
+      "size": 1292895,
+      "git_blob": "87eeb8a9f045ef3df4e52c0376f1e57f840b9fef"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-01.webp",
+      "size": 84138,
+      "git_blob": "6b5e08730525b588af95198ae60c8aa9aa437e10"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-02.webp",
+      "size": 83800,
+      "git_blob": "4550e01f120dcea6ac8a70df5bc9e82de971405e"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-03.webp",
+      "size": 84804,
+      "git_blob": "029a8af5ce07581993d9e8357843cd8494ee6fed"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-04.webp",
+      "size": 84370,
+      "git_blob": "9e06aee3564253b4f4704c4e24d5c75cd13df604"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-05.webp",
+      "size": 84786,
+      "git_blob": "2adde7f939eb96c4b9d6bc8c899d6970dc19a9db"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-06.webp",
+      "size": 83874,
+      "git_blob": "b7cee45fed7a2ec3d0749f5400846423d7cc541d"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-07.webp",
+      "size": 85396,
+      "git_blob": "8cde421c4df323e8d7175cde92e6b5fe38f24c02"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-08.webp",
+      "size": 83736,
+      "git_blob": "2402482ba2ab3b0fd913e92f2044a11a90fce9e3"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-09.webp",
+      "size": 83794,
+      "git_blob": "6aef40090b747bbbbb5f0956439cc2075962d392"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-10.webp",
+      "size": 83416,
+      "git_blob": "ea3ae2a8df3f3b946216d7e2c0f62a14e621e9e9"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-11.webp",
+      "size": 82720,
+      "git_blob": "613a4742b865564e84ed237bc2344e7ba9a94f3a"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-12.webp",
+      "size": 83030,
+      "git_blob": "a4021325229234953f0c995bf362863541cf80cb"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/drift-original.png",
+      "size": 4427285,
+      "git_blob": "da5b763fe2ed13c1fd901aeb1676390e34e08795"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-01.webp",
+      "size": 126468,
+      "git_blob": "86932100860f65d4c33ecc7ed6219089b0fa42c9"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-02.webp",
+      "size": 128210,
+      "git_blob": "c2d217ec827d72364c6cda0cdbccbe921a46d380"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-03.webp",
+      "size": 128176,
+      "git_blob": "1059c364f350a7b8ce911cee3126ef7943f28bf1"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-04.webp",
+      "size": 126958,
+      "git_blob": "01aae861e34257c65179d8740dc9653d5dd8a35b"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-05.webp",
+      "size": 127496,
+      "git_blob": "cd55d0a7e931fb7161ec287a217ec06ef0c5143a"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-06.webp",
+      "size": 126868,
+      "git_blob": "514b103f7c55767382998ce66cce64aab5f1fbb8"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-07.webp",
+      "size": 123416,
+      "git_blob": "348fc7e273418df913b1949e22e23df4b91d1c3e"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-08.webp",
+      "size": 116442,
+      "git_blob": "1218d44e2e0c5feffabdc66ba0bf09c23843cf25"
+    },
+    {
+      "path": "docs/art/gokart-card-style/action/rush-original.png",
+      "size": 4403923,
+      "git_blob": "3af44b186a45e21b98ee4680188cbb75667297f8"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/ending-01.webp",
+      "size": 130296,
+      "git_blob": "68c7c2bd92d1022618ee40cbe1277748b93e67ad"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/ending-02.webp",
+      "size": 128448,
+      "git_blob": "5e1b2d05a606a4d819efa11e3e6dd3f1221010c8"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/ending-03.webp",
+      "size": 129470,
+      "git_blob": "56c397e0f7842778ce3d1524429643f03497f5b4"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/ending-04.webp",
+      "size": 127668,
+      "git_blob": "27d3220dc6e42d021c7c0e5d9fd8503d2a157376"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/ending-05.webp",
+      "size": 129766,
+      "git_blob": "c5b8aa65e854cbaf4a96cd3db7554e1c8476b2b6"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/ending-06.webp",
+      "size": 127924,
+      "git_blob": "3350fb295f702478c2a08ef8b149e4ca58a20527"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/ending-07.webp",
+      "size": 123894,
+      "git_blob": "7102c7a4a5e0d0f56475df7084667a20e351a9fd"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/ending-08.webp",
+      "size": 123606,
+      "git_blob": "470f4425cbf6e4ffa334b57afc0c071746b47f24"
+    },
+    {
+      "path": "docs/art/gokart-card-style/ending/original-sheet.png",
+      "size": 4346567,
+      "git_blob": "569e861d3e611817d0d72409b950f932b0a058c0"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/impact-00.webp",
+      "size": 120414,
+      "git_blob": "41d8c47155dca8392ccaa4d930d90a11c76906b3"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/impact-01.webp",
+      "size": 126122,
+      "git_blob": "b7483c0c5a862fc33ea1bea8ce08b72aa6d1b8f9"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/impact-02.webp",
+      "size": 125734,
+      "git_blob": "359866ca9c433de4d4777276932a13979882af88"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/impact-03.webp",
+      "size": 129086,
+      "git_blob": "a9a90c36df8f4f815bb4fdeb5b17720675653a3a"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/impact-04.webp",
+      "size": 124018,
+      "git_blob": "bdbd3ce3eb079e9e7f698e897853b184d44a4b4e"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/impact-05.webp",
+      "size": 122140,
+      "git_blob": "862a24e84b6e5bd63ebed2cbba561fb57067e2b8"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/impact-06.webp",
+      "size": 110822,
+      "git_blob": "b9ed581f8d87af665efbe0fc185264c959a4c291"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/impact-07.webp",
+      "size": 123426,
+      "git_blob": "602a5195b216652d7b57d2e42a044d8498d70ac4"
+    },
+    {
+      "path": "docs/art/gokart-card-style/impact/original-sheet.png",
+      "size": 4358643,
+      "git_blob": "f5c479eee038a3e405144755474b452bcc4cc170"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-00.webp",
+      "size": 108290,
+      "git_blob": "fbe7e2edacd6b43fac33bda6616319d08a3acdad"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-01.webp",
+      "size": 107708,
+      "git_blob": "f391871d693ece821a73d0226eb3ad445c43591c"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-02.webp",
+      "size": 107322,
+      "git_blob": "d5c9cf1900b1cea118244352d98f334060d3e5b1"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-03.webp",
+      "size": 107774,
+      "git_blob": "91859ab8f8be73efdb85704b309275d0d65bf2e4"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-04.webp",
+      "size": 109614,
+      "git_blob": "c189dcfb2fe1c44104c2df58c366d80fef7c8dad"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-05.webp",
+      "size": 114990,
+      "git_blob": "92a6cb95292aca9f0b0e7d43b753d5d867b1841a"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-06.webp",
+      "size": 116108,
+      "git_blob": "314ca2b673d5e876950784097b1d6c0a436d9b54"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-07.webp",
+      "size": 115574,
+      "git_blob": "c114e9e57f07a1a6ef9647c50359efaf479b6e7f"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-original.png",
+      "size": 4259922,
+      "git_blob": "6d7c67fd7128bded55d5839d386eaf02052861a3"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/ignition-preview.mp4",
+      "size": 530422,
+      "git_blob": "9f80b0d93aa6adb07d9443c0ca0ab6dad70ac465"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-00.webp",
+      "size": 113040,
+      "git_blob": "38f0a7a2f50ae6a69098eed92b7732d515560990"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-01.webp",
+      "size": 114446,
+      "git_blob": "bbb0ed8ad2b413fe10e0d31221ae160ddc34236a"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-02.webp",
+      "size": 111800,
+      "git_blob": "36496c276ed40a6a7c471ecc92de88ed15751a19"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-03.webp",
+      "size": 112276,
+      "git_blob": "f8f7e384546598a3b3cd3d082fcc5e0424fce17b"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-04.webp",
+      "size": 113986,
+      "git_blob": "5910aed8bef48addbce648a7f75209c7714b9aa2"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-05.webp",
+      "size": 112788,
+      "git_blob": "797c738e9dec1034434ec3dc444a186771a06bb0"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-06.webp",
+      "size": 110186,
+      "git_blob": "2e5a80340ee94a9ca4ec0e3fc0517ef00084593f"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-07.webp",
+      "size": 111358,
+      "git_blob": "10f495bcc5fea190c222e463375499a5192c7313"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-original.png",
+      "size": 4373336,
+      "git_blob": "3a920d41b1bd28f45506fe4a4d4c02188869b7ff"
+    },
+    {
+      "path": "docs/art/gokart-card-style/intro/reveal-preview.mp4",
+      "size": 547304,
+      "git_blob": "2cd69e05e45f6ef183cddf96d31fdc44fe150197"
+    },
+    {
+      "path": "docs/art/gokart-card-style/master.png",
+      "size": 3765975,
+      "git_blob": "e6490ced020de871432de0f90964cb47ed68398f"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-01.webp",
+      "size": 48052,
+      "git_blob": "bf64bf273fd3a971a18a96d28f9bdd2d670483fc"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-02.webp",
+      "size": 48580,
+      "git_blob": "ffc841ead3f8cc0a358edd6749a01040fc874c8b"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-03.webp",
+      "size": 48388,
+      "git_blob": "36dc019c45dad44b865e63ff1ba03a5f82d5b688"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-04.webp",
+      "size": 46428,
+      "git_blob": "1e1dee8bb10330f63a0730972e52a59790dc4be9"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-05.webp",
+      "size": 53338,
+      "git_blob": "a1b00c6c8b55ecb21ca66e3417ec6a9c8a3e077e"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-06.webp",
+      "size": 48806,
+      "git_blob": "b4ea8076044edb533976db95a0cbecc7190071b4"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-07.webp",
+      "size": 50034,
+      "git_blob": "67168ee4cb2809905986b9b96e0008e6409d27df"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-08.webp",
+      "size": 55006,
+      "git_blob": "ca11633ae0c724a01ccda9c44aba5d90f63c27ab"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-09.webp",
+      "size": 39042,
+      "git_blob": "cc1e5003e445a3362e8db8fc6442e0d65e9f9ee8"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-10.webp",
+      "size": 47054,
+      "git_blob": "213511ced3520da075f55ccbf0cdbbacf203b153"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-11.webp",
+      "size": 45912,
+      "git_blob": "08e81c0d6a543dff9e34bc2834e8042a3249c706"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-12.webp",
+      "size": 48836,
+      "git_blob": "07d1139d47e6880e844a9da7645d2c0d6900c14f"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-alpha-source.png",
+      "size": 2137444,
+      "git_blob": "d133273aab39285f7e9b1273a773431b40b92bce"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-before-repair.png",
+      "size": 2185040,
+      "git_blob": "f1bb62c3d38c1a79f7656461da4b948899e09916"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-00.webp",
+      "size": 45586,
+      "git_blob": "1fe5cc9c0196fa676d2c4d643cd02612fe12adde"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-01.webp",
+      "size": 46680,
+      "git_blob": "0cbd3149aa75e35c7e30386267328ded58b186de"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-02.webp",
+      "size": 43898,
+      "git_blob": "2576b70af5c2d92978c73aceddf9fdcb0de3d062"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-03.webp",
+      "size": 49786,
+      "git_blob": "b12a88616669712ca77aff9ed90a3f095d0ab7e5"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-04.webp",
+      "size": 45696,
+      "git_blob": "90e61526734c6728886240ad89cc415550af50ca"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-05.webp",
+      "size": 51518,
+      "git_blob": "c140bc9f534b993f066a91464a660a461a15b267"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-06.webp",
+      "size": 46288,
+      "git_blob": "25d078227dc592cc749a4223cd064443eccabca2"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-07.webp",
+      "size": 43422,
+      "git_blob": "5c08992e0fd4acdd76d8199317f0750cb0b1d4cf"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-clean-08.webp",
+      "size": 44204,
+      "git_blob": "5c76f1364e07bc720c43a68a8d45956a67ee76f8"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/drift-original.png",
+      "size": 2185040,
+      "git_blob": "f1bb62c3d38c1a79f7656461da4b948899e09916"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-01.webp",
+      "size": 21050,
+      "git_blob": "206d28acaf8315a428e17e7f750ebfc8a11eb708"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-02.webp",
+      "size": 48004,
+      "git_blob": "2e899c1305abb9850129cc3eeaf774be84c5b371"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-03.webp",
+      "size": 58534,
+      "git_blob": "596757a18a5be77cf0f320e663ee9c4850939122"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-04.webp",
+      "size": 61156,
+      "git_blob": "d3689fe11d3c810476ab13f0b9a5c7b06f767057"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-05.webp",
+      "size": 76744,
+      "git_blob": "4122a28769a2ef4ed89fbd2a29e3337a580312f2"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-06.webp",
+      "size": 85890,
+      "git_blob": "a9b06ab08563742fb8ce77ca170f893a7212c721"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-07.webp",
+      "size": 84924,
+      "git_blob": "77dfee57576ad6c513da185072951b59ad65e389"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-08.webp",
+      "size": 99436,
+      "git_blob": "8d5265c6714a3422235cd3e7cadc656439536507"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-alpha-source.png",
+      "size": 1947149,
+      "git_blob": "b1f375407f32f8b76e1fe1fcd69458cfef05f2d5"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-before-repair.png",
+      "size": 2068294,
+      "git_blob": "f5ae058139018906d1b3ec0de02737efa9b6e17f"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-clean-00.webp",
+      "size": 18840,
+      "git_blob": "c5546d9d418dd287c57faf1514e840023c533aa9"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-clean-01.webp",
+      "size": 43030,
+      "git_blob": "5fa9008bfd48630a700e98b2547ca975298ccbc0"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-clean-02.webp",
+      "size": 50564,
+      "git_blob": "f4f156f9fed04644b4fbe2df75dbfaa44adf59f6"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-clean-03.webp",
+      "size": 53064,
+      "git_blob": "883c8e8515855e8d0d3ae87885f83dcd3ceac2b1"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-clean-04.webp",
+      "size": 70740,
+      "git_blob": "ceb0dfa04260663687ee11a9891078db4cd73ada"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-clean-05.webp",
+      "size": 85598,
+      "git_blob": "021ddcfa95aa19b28119eb83105318c04c2ae23b"
+    },
+    {
+      "path": "docs/art/gokart-layered/action/rush-original.png",
+      "size": 1947149,
+      "git_blob": "b1f375407f32f8b76e1fe1fcd69458cfef05f2d5"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-alpha-source.png",
+      "size": 1555401,
+      "git_blob": "d322ad4025fedcd934570e5107b1811e1ee4bafb"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-clean-00.webp",
+      "size": 53314,
+      "git_blob": "c34ca3b1964cb9d2daabfe86bc87b2fa8ef766dd"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-clean-01.webp",
+      "size": 49096,
+      "git_blob": "978e6083a9a378e925c75eb5704b249d43d187c5"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-clean-02.webp",
+      "size": 51408,
+      "git_blob": "4dcc8fc284bc4949ae8329212f7ab60e67a19f22"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-clean-03.webp",
+      "size": 48130,
+      "git_blob": "094387f8ed689a045059829df713eda6038b686c"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-clean-04.webp",
+      "size": 48424,
+      "git_blob": "d2b17765444b72409e389c7b85fc4e209fc5245d"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-clean-05.webp",
+      "size": 45412,
+      "git_blob": "088deb3b0aad2b31d1ea0687618e172419a2444d"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-clean-06.webp",
+      "size": 49358,
+      "git_blob": "2c9900ad6a8a1f2c70913ac157bf8edff48f3895"
+    },
+    {
+      "path": "docs/art/gokart-layered/ending/ending-clean-07.webp",
+      "size": 47568,
+      "git_blob": "1a78233dd843c70773f52a1ee89752792bc3e4eb"
+    },
+    {
+      "path": "docs/art/gokart-layered/impact/impact-alpha-source.png",
+      "size": 1794786,
+      "git_blob": "819fa6abebfcb94e910f804c09147ad194b6e043"
+    },
+    {
+      "path": "docs/art/gokart-layered/impact/impact-clean-00.webp",
+      "size": 56806,
+      "git_blob": "42d712f8a8121ec8655dc4d49fc5d9eaa8e12596"
+    },
+    {
+      "path": "docs/art/gokart-layered/impact/impact-clean-01.webp",
+      "size": 65106,
+      "git_blob": "c2d56b309f971990f77d15b506c2bf3992bf9f37"
+    },
+    {
+      "path": "docs/art/gokart-layered/impact/impact-clean-02.webp",
+      "size": 70412,
+      "git_blob": "faa876da2c9ec0af4792f7134061cd2d817a3750"
+    },
+    {
+      "path": "docs/art/gokart-layered/impact/impact-clean-03.webp",
+      "size": 65110,
+      "git_blob": "76514b8216029750546215893ea041ae7dc50ff2"
+    },
+    {
+      "path": "docs/art/gokart-layered/impact/impact-clean-04.webp",
+      "size": 65420,
+      "git_blob": "df0c71b16cc7a5703ef72ead1caa2c1569db2627"
+    },
+    {
+      "path": "docs/art/gokart-layered/impact/impact-clean-05.webp",
+      "size": 59324,
+      "git_blob": "2eaf10fb9a16e95f8d6f251265d95e7e391ba822"
+    },
+    {
+      "path": "docs/art/gokart-layered/impact/impact-clean-06.webp",
+      "size": 59682,
+      "git_blob": "df0b271cb4fd0500218e914bc140d8d37b5b6976"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-00.webp",
+      "size": 82810,
+      "git_blob": "5630de309e4c886f5d2d41551e4b3e56f3fddcff"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-01.webp",
+      "size": 84590,
+      "git_blob": "1fbc97dcbb8342b20bd63c60532c45166dfdbf8b"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-02.webp",
+      "size": 84970,
+      "git_blob": "36dbc1b8a6c0079d51658fced178c7b7d1f0cea4"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-03.webp",
+      "size": 89008,
+      "git_blob": "751ef1007c333abdc3bfc5808cfef375fa6b9a8c"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-04.webp",
+      "size": 90056,
+      "git_blob": "af8bee973fa5c3098fa89c047416eb15bf439535"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-05.webp",
+      "size": 91880,
+      "git_blob": "6341fbea073c028ce959843e06d6b2b0adb0797d"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-06.webp",
+      "size": 92674,
+      "git_blob": "6fd8498f25f763187267341d92878168f5535181"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-07.webp",
+      "size": 95398,
+      "git_blob": "4eccb0efa11c9e93aee97acdd8a9911af86a086d"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-alpha-review-gray.png",
+      "size": 3298365,
+      "git_blob": "ed6f9dd75cd2a5ed29de0b84fa93624f1c3098b9"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-attempt1.png",
+      "size": 3334407,
+      "git_blob": "db3cecef2d358c93bfad7116453be7f4c0f1b176"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/ignition-original.png",
+      "size": 3334407,
+      "git_blob": "db3cecef2d358c93bfad7116453be7f4c0f1b176"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-00.webp",
+      "size": 57634,
+      "git_blob": "6e35982ffa00d07cab2784a3ebbc67a435fd345f"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-01.webp",
+      "size": 57954,
+      "git_blob": "181bbefb40b87be6e517bd6fb0a05f2a1e50ae0c"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-02.webp",
+      "size": 60870,
+      "git_blob": "f4aa77d9ca6d83b9ccfe9178cf4465cb74ee8b3e"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-03.webp",
+      "size": 64502,
+      "git_blob": "844b2fcc941944d8f16e79a62e6a491ed5f1691b"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-04.webp",
+      "size": 66286,
+      "git_blob": "18cb6daeb9e3324422b05fe5f77fc2e6455688c1"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-05.webp",
+      "size": 66168,
+      "git_blob": "65dabbd7405a46e8863dd0d1a06475b5fa7ea7b4"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-06.webp",
+      "size": 60192,
+      "git_blob": "0e4261f63c3bc9ca74b7975ac757b17c372c9be0"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-07.webp",
+      "size": 62116,
+      "git_blob": "5136adba169c8c8eda40ea6990f138be18a45026"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-alpha-review-gray.png",
+      "size": 2124571,
+      "git_blob": "93f945dc0273e1572fb3007bcccc0bb95d581c36"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-alpha-source.png",
+      "size": 2148651,
+      "git_blob": "1ab019474aec5403f47dc43e10bd86414d35b8a8"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-attempt1.png",
+      "size": 2181752,
+      "git_blob": "05101be6fc716870289c595267fa92af0edf7fac"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-attempt2.png",
+      "size": 2148651,
+      "git_blob": "1ab019474aec5403f47dc43e10bd86414d35b8a8"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-clean-00.webp",
+      "size": 60154,
+      "git_blob": "9e0e36c17c55711cc55de876ea1c50faf6a4a72e"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-clean-01.webp",
+      "size": 61012,
+      "git_blob": "0b717d48211ea2349889a76a6ff6a65a181d79fe"
+    },
+    {
+      "path": "docs/art/gokart-layered/intro/reveal-original.png",
+      "size": 2148651,
+      "git_blob": "1ab019474aec5403f47dc43e10bd86414d35b8a8"
+    },
+    {
+      "path": "docs/art/gokart-layered/scenery/circuit-original.png",
+      "size": 3369112,
+      "git_blob": "c6ea0ebbf1f47341ce57baac79de280e89f3f387"
+    },
+    {
+      "path": "docs/art/gokart-layered/scenery/circuit.webp",
+      "size": 791418,
+      "git_blob": "cd4eb1db7ce2281fe4d2d59af6a027ef8bfefb5c"
+    },
+    {
+      "path": "docs/art/gokart-layered/scenery/headon-original.png",
+      "size": 3289789,
+      "git_blob": "673cd48f66f164495a4e15ab05613e3b1f9e2368"
+    },
+    {
+      "path": "docs/art/gokart-layered/scenery/headon.webp",
+      "size": 763598,
+      "git_blob": "ca01a439e503d6d503cd1fc5da606ec2e83e5a77"
+    },
+    {
+      "path": "docs/art/gokart-legacy/card-style-v2/drift-thumb.webp",
+      "size": 50208,
+      "git_blob": "63bee75474de28feb82c8c6f97e54bfb7d115d10"
+    },
+    {
+      "path": "docs/art/gokart-legacy/card-style-v2/ending-thumb.webp",
+      "size": 50328,
+      "git_blob": "33959a7c2a2b332a4c1fa8ae09f6581f0fdeef39"
+    },
+    {
+      "path": "docs/art/gokart-legacy/card-style-v2/full-throttle.mp4",
+      "size": 10017268,
+      "git_blob": "5d2c0f64e2a3ed231960f2dc870f3d631c885b25"
+    },
+    {
+      "path": "docs/art/gokart-legacy/card-style-v2/ignition-thumb.webp",
+      "size": 50630,
+      "git_blob": "694245e834ec94a2970c468447ee4c91d0732e4e"
+    },
+    {
+      "path": "docs/art/gokart-legacy/card-style-v2/impact-thumb.webp",
+      "size": 51580,
+      "git_blob": "afbee3721dc9cef96bf5705f85c06c12369f9ad8"
+    },
+    {
+      "path": "docs/art/gokart-legacy/card-style-v2/poster.webp",
+      "size": 562968,
+      "git_blob": "c5a640568625f1a89db81b26ea3090d7189c408b"
+    },
+    {
+      "path": "docs/art/gokart-legacy/card-style-v2/reveal-thumb.webp",
+      "size": 53622,
+      "git_blob": "5eba3d4c3d33c8956df73dd6ec699070948b6ea1"
+    },
+    {
+      "path": "docs/art/gokart-legacy/card-style-v2/rush-thumb.webp",
+      "size": 55366,
+      "git_blob": "a81f0605aaa5bc5382b8b115a1b864f05404db39"
+    },
+    {
+      "path": "docs/art/gokart-legacy/drift-thumb.webp",
+      "size": 37514,
+      "git_blob": "0e12f31fb75fdd69945f1bf9395315b040b7aaf8"
+    },
+    {
+      "path": "docs/art/gokart-legacy/ending-thumb.webp",
+      "size": 37110,
+      "git_blob": "8dcec67086e1663a94a81a45b2efd1828f636b96"
+    },
+    {
+      "path": "docs/art/gokart-legacy/full-throttle-v1.mp4",
+      "size": 6719121,
+      "git_blob": "5093209aa73aa46fc09268264170023ff383ba1e"
+    },
+    {
+      "path": "docs/art/gokart-legacy/ignition-thumb.webp",
+      "size": 32624,
+      "git_blob": "112855356314beaf998d702faddd870cb8bf2bf0"
+    },
+    {
+      "path": "docs/art/gokart-legacy/impact-thumb.webp",
+      "size": 41170,
+      "git_blob": "0047e3debe3f130660346d491e8b5d759f2df7df"
+    },
+    {
+      "path": "docs/art/gokart-legacy/poster.webp",
+      "size": 353308,
+      "git_blob": "ea89532f6ca745450701f41a05839bc37e456c93"
+    },
+    {
+      "path": "docs/art/gokart-legacy/reveal-thumb.webp",
+      "size": 40036,
+      "git_blob": "4307980a740b50d305965c19076e39b23b4a000c"
+    },
+    {
+      "path": "docs/art/gokart-legacy/rush-thumb.webp",
+      "size": 40812,
+      "git_blob": "616852afe782efb91226deef3922615ee0649761"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-01.webp",
+      "size": 63458,
+      "git_blob": "57f828a2eef1d7e4ad3f961d9708497903e588a5"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-02.webp",
+      "size": 62634,
+      "git_blob": "496732c84d3d8d75e7e81e26473563d2bd7c68bc"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-03.webp",
+      "size": 62804,
+      "git_blob": "1d836631bc9ae09dc7ff48b733dce24dea2d962e"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-04.webp",
+      "size": 58734,
+      "git_blob": "8f4839853be417fa71abea8fec5d0b55d2eea0ea"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-05.webp",
+      "size": 64358,
+      "git_blob": "b79f435b370fa85822fdf7434ca9853772361e02"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-06.webp",
+      "size": 60432,
+      "git_blob": "39cc5f757c5086df06043c7a1f592ec1f9b4dae1"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-07.webp",
+      "size": 55568,
+      "git_blob": "ba97a6ab6bfc397f0d6d415b8aec04927306c708"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-08.webp",
+      "size": 57118,
+      "git_blob": "e8038f288ee59907a4984bb7e3389bfff4373c7a"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-09.webp",
+      "size": 58378,
+      "git_blob": "d0a0b218265596899d99a0f77f2596ea4f5a39ed"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-10.webp",
+      "size": 54192,
+      "git_blob": "f3ebb09bf86eb7e8620103f57a7210e11187df7b"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-11.webp",
+      "size": 53322,
+      "git_blob": "c015113c39e97f0ac1366cb5b7da853318dc0ff5"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-12.webp",
+      "size": 52264,
+      "git_blob": "2a3fb686aa95595aca047703f9fe987ce61484ca"
+    },
+    {
+      "path": "docs/art/gokart/action/drift-original.png",
+      "size": 3796887,
+      "git_blob": "ec506b3128f518d60ac72769c93193e52ff8dbbb"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-01.webp",
+      "size": 79772,
+      "git_blob": "4d7e46438424be80a0023298f98ee2bfd43c2c43"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-02.webp",
+      "size": 86392,
+      "git_blob": "3fc2e2b2eafa4b603b7e9d438dd6f345d74b0380"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-03.webp",
+      "size": 85372,
+      "git_blob": "0c3c54ccce01f8697c110e54e770a45d89c52fbf"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-04.webp",
+      "size": 81586,
+      "git_blob": "00897d3bfe0973be94856504244b1b10993cbcce"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-05.webp",
+      "size": 88150,
+      "git_blob": "84e79694232886a617395445a88065ad925a290f"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-06.webp",
+      "size": 90612,
+      "git_blob": "5cbb5950b5079905425903c3d3f172773de29332"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-07.webp",
+      "size": 91462,
+      "git_blob": "3e862393f62f96a13791d9ca62f8d51fb35a453b"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-08.webp",
+      "size": 92238,
+      "git_blob": "5823c254821c947c29b5c924aab69d049183b9a3"
+    },
+    {
+      "path": "docs/art/gokart/action/rush-original.png",
+      "size": 3654995,
+      "git_blob": "0930b471bc2b88206286c77a09a7cc3e248731cd"
+    },
+    {
+      "path": "docs/art/gokart/ending/ending-01.webp",
+      "size": 91102,
+      "git_blob": "e858e13d60879140b372e3a1b2796b3afad86476"
+    },
+    {
+      "path": "docs/art/gokart/ending/ending-02.webp",
+      "size": 90264,
+      "git_blob": "6317b0a9b1315820b2d42509e9e00a6d545fde15"
+    },
+    {
+      "path": "docs/art/gokart/ending/ending-03.webp",
+      "size": 88840,
+      "git_blob": "a513382d0ba48aca19293d17b8e4ba00a742b7d0"
+    },
+    {
+      "path": "docs/art/gokart/ending/ending-04.webp",
+      "size": 86586,
+      "git_blob": "12fcfa9a3f60807519be25982805f4fe71287c42"
+    },
+    {
+      "path": "docs/art/gokart/ending/ending-05.webp",
+      "size": 86704,
+      "git_blob": "19afad63646c4108ab46677cfab6834a89bbfd5a"
+    },
+    {
+      "path": "docs/art/gokart/ending/ending-06.webp",
+      "size": 85266,
+      "git_blob": "57ad2a65c919cc50fcae504ebf5e8d4ce86ab98b"
+    },
+    {
+      "path": "docs/art/gokart/ending/ending-07.webp",
+      "size": 86306,
+      "git_blob": "67680b81434bdd24b0c55af4d3a8644d020cded6"
+    },
+    {
+      "path": "docs/art/gokart/ending/ending-08.webp",
+      "size": 86348,
+      "git_blob": "07fec0964de8f27620d09974215227580d9963bc"
+    },
+    {
+      "path": "docs/art/gokart/ending/original-sheet.png",
+      "size": 3440288,
+      "git_blob": "c9fa1996726547c392a200a04f8799a4ca06e11e"
+    },
+    {
+      "path": "docs/art/gokart/impact/impact-00.webp",
+      "size": 80436,
+      "git_blob": "871113e4593760ae1b2686a0c8d61df870c29561"
+    },
+    {
+      "path": "docs/art/gokart/impact/impact-01.webp",
+      "size": 91012,
+      "git_blob": "72f58cb1ef557b6bfd0b347580470bd77e96024e"
+    },
+    {
+      "path": "docs/art/gokart/impact/impact-02.webp",
+      "size": 94282,
+      "git_blob": "eeba3a49bbd5026bc8966ac96c35e47d723aeadf"
+    },
+    {
+      "path": "docs/art/gokart/impact/impact-03.webp",
+      "size": 106546,
+      "git_blob": "56bdc17f9557e852305ee726f6b175327089a73f"
+    },
+    {
+      "path": "docs/art/gokart/impact/impact-04.webp",
+      "size": 98178,
+      "git_blob": "c3222f6ee87678debe429f23b58d191754a55a3c"
+    },
+    {
+      "path": "docs/art/gokart/impact/impact-05.webp",
+      "size": 89036,
+      "git_blob": "6aece72e5c8e0162f7615f2a420aca2d3c1b45ba"
+    },
+    {
+      "path": "docs/art/gokart/impact/impact-06.webp",
+      "size": 82982,
+      "git_blob": "4cfa813734a125125aa346d55277e6c5b3118098"
+    },
+    {
+      "path": "docs/art/gokart/impact/impact-07.webp",
+      "size": 89850,
+      "git_blob": "90ccf6559e76357ce4241b20760eb2a577178ebd"
+    },
+    {
+      "path": "docs/art/gokart/impact/original-sheet.png",
+      "size": 3624246,
+      "git_blob": "564639586f40ff3523480580d2929923faa72f85"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-00.webp",
+      "size": 51790,
+      "git_blob": "4fc876d6884322100d5dd806f87c23cd37368f62"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-01.webp",
+      "size": 52998,
+      "git_blob": "5516e92a2ed586e365efec5a10bf38136e650601"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-02.webp",
+      "size": 51914,
+      "git_blob": "a25e9b51cce08a36ca5c4e3ab98599ffe811b19e"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-03.webp",
+      "size": 56320,
+      "git_blob": "efaeeaca33a8e0d20c2504c4911599b08c7ff018"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-04.webp",
+      "size": 59366,
+      "git_blob": "ce11e1cf7e7e5f56dff35e75c6944a60ceff331f"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-05.webp",
+      "size": 63850,
+      "git_blob": "87581ae211cc1b2201d55d1558054a66fe050bae"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-06.webp",
+      "size": 60954,
+      "git_blob": "1c08e3ba2ee1a87487b70de0b9a65895dc90d9d6"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-07.webp",
+      "size": 62122,
+      "git_blob": "ef42f6dc6710178744735a6cdb46d6bc4315d830"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-original.png",
+      "size": 3035066,
+      "git_blob": "7244321a22f6ba669d9e294262d9c4227b837b20"
+    },
+    {
+      "path": "docs/art/gokart/intro/ignition-preview.mp4",
+      "size": 252240,
+      "git_blob": "0d2bac5ccbde65be119d75821c64af5c5a7cd5cc"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-00.webp",
+      "size": 77724,
+      "git_blob": "0de52be76041322447522e928e69b27b626f0992"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-01.webp",
+      "size": 80932,
+      "git_blob": "9b0b580f943d3772aa37af8f4d8a4f29a176b1b4"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-02.webp",
+      "size": 79436,
+      "git_blob": "53dec1970a87f1459defbb21cbbcbc1bf731af0d"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-03.webp",
+      "size": 82510,
+      "git_blob": "40e4e5d9c49737dc62e32fdeb122e7d80c0f1b8f"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-04.webp",
+      "size": 82516,
+      "git_blob": "334c8a0de834073ac489d2f985ef0c80110e4687"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-05.webp",
+      "size": 82618,
+      "git_blob": "59cdb5344e5392030eb5e12a4013ef1717904c5e"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-06.webp",
+      "size": 80118,
+      "git_blob": "d0b9eadcf8aa51a797f27b9e0c2db13e7026d72f"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-07.webp",
+      "size": 84044,
+      "git_blob": "ace1c61558396c83de2111b0eba04dd302c29eb6"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-original.png",
+      "size": 3763335,
+      "git_blob": "4603a16684be7b047169159be6689820c0d75e92"
+    },
+    {
+      "path": "docs/art/gokart/intro/reveal-preview.mp4",
+      "size": 374782,
+      "git_blob": "8f616b20f10c3781cf9ab8eb8eb665f46de977da"
+    },
+    {
+      "path": "docs/art/gokart/master.png",
+      "size": 3032090,
+      "git_blob": "c44798546beaccd54ec441a4fc7c45e1c09add9d"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/action-sheet-original.png",
+      "size": 2662628,
+      "git_blob": "0c0588ceb9aeb1f8d025b2ed05da4fc6c93e951e"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/action-00.webp",
+      "size": 57962,
+      "git_blob": "ea27a75b5d0fb4b732ab8aec5bc26f5191b98fe9"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/action-01.webp",
+      "size": 58452,
+      "git_blob": "b839bad7cfd9237a5a4b3a75cc3d1e2afccd8f13"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/action-02.webp",
+      "size": 63636,
+      "git_blob": "1ef3a0a29cfd4d0a87392f0d18efb64f851145a6"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/action-03.webp",
+      "size": 66318,
+      "git_blob": "203d8b94b2f310575cdac334b5064734cfa2eba6"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/action-04.webp",
+      "size": 64242,
+      "git_blob": "84855a3eb8d3004a3de626836fe7256b733be602"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/action-05.webp",
+      "size": 67272,
+      "git_blob": "85925a7734088acbed0df931238f14eefb91e5e5"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/action-06.webp",
+      "size": 68976,
+      "git_blob": "9c80084c1f06e9c3eb3a5c5c8457223023f3f804"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/action-07.webp",
+      "size": 71112,
+      "git_blob": "b0fe7626723aea106d712ebf532d24aef686d65e"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/attack-00.webp",
+      "size": 71800,
+      "git_blob": "c6010b93948c6e9d2ce874332de53d723eb53ac9"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/attack-01.webp",
+      "size": 69644,
+      "git_blob": "a5f2777f16657c4ce2e3932ed24abbb232962781"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/attack-02.webp",
+      "size": 78322,
+      "git_blob": "c9ab685250099ff06e3a729d4ff464b23fc7da68"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/attack-03.webp",
+      "size": 76048,
+      "git_blob": "993a7cdbc91bfb1489e9b9d3a096a6656ba67799"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/attack-04.webp",
+      "size": 74508,
+      "git_blob": "3a64c76e29c6b90aa8e1ea3463d8da10fd64bbdc"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/attack-05.webp",
+      "size": 71794,
+      "git_blob": "20a038361b4b6a42e421f8b81c1f8aa9161afbac"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/attack-06.webp",
+      "size": 73838,
+      "git_blob": "514267b1c420c1f8eb20216386395856e482bc32"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/attack-07.webp",
+      "size": 67866,
+      "git_blob": "8a47a5f5a4752151d7652f54fc574234fc9aa32a"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/ending-00.webp",
+      "size": 64416,
+      "git_blob": "bd294adfbbeb70aacf834e007269cae71d4134e2"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/ending-01.webp",
+      "size": 63382,
+      "git_blob": "0eea49201a1dcd06d60a01ddc46a0261af35e0a0"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/ending-02.webp",
+      "size": 65804,
+      "git_blob": "0a1acea8e8826dcd048e5f7b87e8bbe412211421"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/ending-03.webp",
+      "size": 66870,
+      "git_blob": "2f93172863371a3dad003ca020e5955d8e71dd1d"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/ending-04.webp",
+      "size": 63162,
+      "git_blob": "477d7f3144ffaf60d148f5b89acae0df800076db"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/ending-05.webp",
+      "size": 66012,
+      "git_blob": "a1a0a6a68b4a9535af60526ffde34f7804dda586"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/ending-06.webp",
+      "size": 68310,
+      "git_blob": "c960ce486012f2aebb0c5912bb8650f9312daffc"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/actors/ending-07.webp",
+      "size": 65304,
+      "git_blob": "06391e6cd3f18bc53843a7645c3f6baf196a5fe1"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/attack-sheet-original.png",
+      "size": 2829921,
+      "git_blob": "dc84a46956a7ae087dff1fee1b31a8167f7e902b"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/background.webp",
+      "size": 969340,
+      "git_blob": "5e8f6438d78abc2bcc55ccec0573edbb89067621"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/ending-sheet-original.png",
+      "size": 2661019,
+      "git_blob": "8a8ea9763b125c06e6655b38bba2395a0ca69704"
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/forecourt-original.png",
+      "size": 4006777,
+      "git_blob": "109cc6e9ceba66ff90d355102d386d20f675686b"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/action-sheet-original.png",
+      "size": 2351408,
+      "git_blob": "97640b815964eb7816d5de440aba75ea519810e5"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/action-00.webp",
+      "size": 50750,
+      "git_blob": "3cd5f3f9dd615bb9ab2ae8f9d4a8b41dacef3970"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/action-01.webp",
+      "size": 53038,
+      "git_blob": "eb5778473855f487ca6eeb8040d3bc46ab1bd799"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/action-02.webp",
+      "size": 48404,
+      "git_blob": "0cd1106a9575d5f9653f18597bce0e8a8a84bea8"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/action-03.webp",
+      "size": 60822,
+      "git_blob": "6adaba1c3949139bb09f0b5635d157185d396ee4"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/action-04.webp",
+      "size": 51934,
+      "git_blob": "47a238e60bae77a15ccf89c512a1194ce6a6d024"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/action-05.webp",
+      "size": 51546,
+      "git_blob": "e7f6d08ca999ccb023426b87b0e3f618f7a5c6f2"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/action-06.webp",
+      "size": 61246,
+      "git_blob": "56b695cdcdcc276b2f71ec00304246fe25997663"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/action-07.webp",
+      "size": 44578,
+      "git_blob": "8e4a89d4b0d5ea9a8e3ca2612335ad6a17092031"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-00.webp",
+      "size": 51888,
+      "git_blob": "3440d5be3d4e499ea484b1c084d179772c1e9a29"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-01.webp",
+      "size": 54572,
+      "git_blob": "d940b869340ad18a11f69f839b6fbfa1da60e6c4"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-02.webp",
+      "size": 52026,
+      "git_blob": "6160a5c1c787024a7c2ba67db1346198c0bbc99e"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-03.webp",
+      "size": 47412,
+      "git_blob": "5835cf5e5952bac4116ecf508d3a0535f096503b"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-04.webp",
+      "size": 44790,
+      "git_blob": "18ad87163876e46273a4a198407f8a925e4f9b57"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-05.webp",
+      "size": 45960,
+      "git_blob": "1e399b35da813c0aacb102267825ade0c7f865ac"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-06.webp",
+      "size": 47234,
+      "git_blob": "55c9fa14db957852ffcb3e1daf511fb7cff20351"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-07.webp",
+      "size": 47624,
+      "git_blob": "012b4cc11b1c8aa9e3c6a7fcea3854caa79a068e"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/background.webp",
+      "size": 915198,
+      "git_blob": "36a445bfe24b5728707fa24699855556d4d5c631"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/dojo-office-original.png",
+      "size": 3793545,
+      "git_blob": "64e418418c382fa22772668b90aaec0746d7ecc5"
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/ending-sheet-original.png",
+      "size": 2224382,
+      "git_blob": "3b6728ee83f13404d246bdc5a3710e71ce31a43e"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/action-sheet-original.png",
+      "size": 2498005,
+      "git_blob": "66558eda7890cbdd0328fb740727b66d8c610cf0"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/action-00.webp",
+      "size": 52480,
+      "git_blob": "560883004b82963bcd7172e1893cda6a3cc7fb38"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/action-01.webp",
+      "size": 54276,
+      "git_blob": "73f0d4b68f53a0cfa656fee32dabb221e1965883"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/action-02.webp",
+      "size": 61134,
+      "git_blob": "df6f8d0642bfcd027a6c05b8ab9c0df46c66b27c"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/action-03.webp",
+      "size": 52548,
+      "git_blob": "7b3439cc3870090a26834418d7f3d14fa044469e"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/action-04.webp",
+      "size": 61236,
+      "git_blob": "7ef489372b7021a44157c9c91bde571f74baa26a"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/action-05.webp",
+      "size": 55838,
+      "git_blob": "d2fd5a6249da7565b176aae7f10a6d15f848560f"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/action-06.webp",
+      "size": 64824,
+      "git_blob": "df32918812796f7f45dbe1b85022bb548a2d01bf"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/action-07.webp",
+      "size": 57144,
+      "git_blob": "597f9736719477ec2778df9f3f0b3a50bcec792a"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/attack-00.webp",
+      "size": 61174,
+      "git_blob": "b5f6afe27df3b5caeaa9a04f2591cd97dbd9d5f9"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/attack-01.webp",
+      "size": 60834,
+      "git_blob": "d24b64afcdea5971c5037b0d063b82cb1cd907aa"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/attack-02.webp",
+      "size": 62532,
+      "git_blob": "b89767f843eb4df6918030fa7e38726a8d91cafd"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/attack-03.webp",
+      "size": 67650,
+      "git_blob": "a5c1942142cbe492d330a42c099df70c807c2838"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/attack-04.webp",
+      "size": 67662,
+      "git_blob": "e1619a57a71016f9d7f845424a43b53c7dcd048f"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/attack-05.webp",
+      "size": 71304,
+      "git_blob": "7b7b6a4699ffb90b238f90a6f9ad6709249d9b9e"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/attack-06.webp",
+      "size": 65982,
+      "git_blob": "72727a029f0b6bf5b6c98f140d3ac7162965f073"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/attack-07.webp",
+      "size": 71262,
+      "git_blob": "2fa471c5dc23c5f596acff1804f2f94b5fa6a6ce"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/ending-00.webp",
+      "size": 51394,
+      "git_blob": "2a2a36b408b6f57301110cbd51c8021032a1836a"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/ending-01.webp",
+      "size": 51420,
+      "git_blob": "4dca3410ca498b91540dccedd3b8fad522bfbc62"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/ending-02.webp",
+      "size": 55740,
+      "git_blob": "78649d8b8a0830f5aab0f0c2cf9a650bb32d75e2"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/ending-03.webp",
+      "size": 55348,
+      "git_blob": "5c6f32753224b281457bed96df7b86e2373f9725"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/ending-04.webp",
+      "size": 57224,
+      "git_blob": "793c7a0bbfc1d5350f04ab2d2e19033126de09d4"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/ending-05.webp",
+      "size": 58558,
+      "git_blob": "bf1748d1cbc7daa7bb17cbbda25a1957cfa2374a"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/ending-06.webp",
+      "size": 57400,
+      "git_blob": "7b6fde170030438681c84269345621114be78aae"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/actors/ending-07.webp",
+      "size": 50016,
+      "git_blob": "9bfcbe1c8c0c5f459b9a8ef2e23f33991a4239ea"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/airfryer-prop.webp",
+      "size": 698714,
+      "git_blob": "637a54c21f6146e79c2d5f737b20eb62d4d287dd"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/attack-sheet-original.png",
+      "size": 2710001,
+      "git_blob": "a77ff7852b9726aa8f5f6ba2fd71ee9f35dbd9c1"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/background.webp",
+      "size": 896684,
+      "git_blob": "1eef597b2432e4882b3c6440b5b811601d36c7bc"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/ending-sheet-original.png",
+      "size": 2457605,
+      "git_blob": "7ceb818cc405de0c9f888052247529a15e242ede"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/fryer-original.png",
+      "size": 2527164,
+      "git_blob": "d7781fa7dfc6dc78f88a7bada9302d543d5795be"
+    },
+    {
+      "path": "docs/art/layered-specials/daenerys-airfryer/throne-kitchen-original.png",
+      "size": 3714286,
+      "git_blob": "6aff9ef4b455686954c49426c4019e2f08fa08d3"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/action-sheet.png",
+      "size": 2714427,
+      "git_blob": "d58af74a94d0774507e39b253764186b40c9ff83"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/action-00.webp",
+      "size": 63586,
+      "git_blob": "842f027a7235c9661f4bf9dccda97f84b8df74ae"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/action-01.webp",
+      "size": 73358,
+      "git_blob": "eeda4901f649a3821abffb40ea8d56e1e631eb80"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/action-02.webp",
+      "size": 68280,
+      "git_blob": "9a63dc0c543a966c5051dceaf25e41c97e4df19b"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/action-03.webp",
+      "size": 63844,
+      "git_blob": "d948869d1b52c22f3186c5f0f3c5a4dba3e68d73"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/action-04.webp",
+      "size": 79234,
+      "git_blob": "adbba44a9c0598183c2de43417ea1d4b2d725675"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/action-05.webp",
+      "size": 85768,
+      "git_blob": "2ae8d9023d8498236c493ef804c1256cf603a751"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/action-06.webp",
+      "size": 78292,
+      "git_blob": "4b5f9969f53b14b3c5fc611798ac7c2b0b597ed1"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/action-07.webp",
+      "size": 70534,
+      "git_blob": "60ff1be3cf25f09c892fd2ba0cda26ea93543df9"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/attack-00.webp",
+      "size": 81950,
+      "git_blob": "2992d3d3792950d2968ff67fb21ab04bb4c14b09"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/attack-01.webp",
+      "size": 72942,
+      "git_blob": "1df6eb7a8aa3ff21d9284080af34494e29c5a9d1"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/attack-02.webp",
+      "size": 75698,
+      "git_blob": "60ea10a272553dd2846a6a0a5e325215979c7e17"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/attack-03.webp",
+      "size": 74644,
+      "git_blob": "de617d5ede0fb2f2061783a5671a307af3110af2"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/attack-04.webp",
+      "size": 85808,
+      "git_blob": "56f58b9859fbe27e022c4f5f71631004767e9b09"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/attack-05.webp",
+      "size": 81136,
+      "git_blob": "09b72757bdb4181ad937d6acec7970189df93df3"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/ending-00.webp",
+      "size": 84324,
+      "git_blob": "d8984c7cae41245ec06dbe6435920bf1b1f94f3c"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/ending-01.webp",
+      "size": 79230,
+      "git_blob": "ae294ff6919a2a7499f13f05b0c8da038816e584"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/ending-02.webp",
+      "size": 84970,
+      "git_blob": "994a06ea9be6b4def5eb287024f8079b9e653849"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/ending-03.webp",
+      "size": 92304,
+      "git_blob": "e858dd460182cccaac1f9fd93e54f1c4ed6e2b58"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/ending-04.webp",
+      "size": 78662,
+      "git_blob": "45f7bcd1089b12e8a1356e685f0ec2f6eff3f882"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/actors/ending-05.webp",
+      "size": 76412,
+      "git_blob": "601644e387b9d8f1c644085bea4557f1382f79a7"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/attack-sheet.png",
+      "size": 2821231,
+      "git_blob": "e90fe50d135848fcd9980afaf932b98eb6ca3ff6"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/background.webp",
+      "size": 1005630,
+      "git_blob": "81d5918a78e8550129b21c147d6835edbf90ab7c"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/ending-sheet.png",
+      "size": 2941360,
+      "git_blob": "22df245a2f984c466b8cd3f14cc66e13351b4f03"
+    },
+    {
+      "path": "docs/art/layered-specials/eternal-second/tournament-arena-plate.png",
+      "size": 4016951,
+      "git_blob": "01f839f2baa00adadbdb3c7373809a19d720d671"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/action-original.png",
+      "size": 3165209,
+      "git_blob": "fa5eefa47473d622840a477ebd6323e339ca07ef"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/action-00.webp",
+      "size": 94856,
+      "git_blob": "a96f4a2a5620f78f19a2035d82f418fbb50664a8"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/action-01.webp",
+      "size": 91114,
+      "git_blob": "5f70469b2b2e77985b1fd103d34c6b3085ad627b"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/action-02.webp",
+      "size": 100292,
+      "git_blob": "07d9c1c7033c78791b0119c47e46cc0ee37d7533"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/action-03.webp",
+      "size": 86772,
+      "git_blob": "ac9cf84a7f10ee0671c779c591ce2b8541b71d9a"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/action-04.webp",
+      "size": 97082,
+      "git_blob": "804e1a2491b9064361f2e335bdabc86bffcd42bb"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/action-05.webp",
+      "size": 86190,
+      "git_blob": "128db3809a8cf0dd65a0d1b5fc96f1f87c86b89d"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/action-06.webp",
+      "size": 104718,
+      "git_blob": "0435df7ed871a05e054936965c42f21805fc8e50"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/action-07.webp",
+      "size": 77380,
+      "git_blob": "4332f4ce62fc073ed736f1e431db082bb01e6e1d"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/attack-00.webp",
+      "size": 76348,
+      "git_blob": "382d44a72e843052fc693602365b965148722c7f"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/attack-01.webp",
+      "size": 80568,
+      "git_blob": "bfcb898d196a3440d84db517901237fc41c06ad8"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/attack-02.webp",
+      "size": 82598,
+      "git_blob": "eb371f651d8afb9881f28ec1e49d09259e7af0be"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/attack-03.webp",
+      "size": 87290,
+      "git_blob": "0351952c1c2f6760663d29db8315fdda4595557a"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/attack-04.webp",
+      "size": 87586,
+      "git_blob": "c6dd762e1d6fb2054b2ec7bf5de476398f456a05"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/attack-05.webp",
+      "size": 81242,
+      "git_blob": "d48032154027a6e655f25f1a00280365db187108"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/attack-06.webp",
+      "size": 98016,
+      "git_blob": "94a77e6f2164b39a5c71b5666e332cd311bf5530"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/attack-07.webp",
+      "size": 76368,
+      "git_blob": "18f516e4bda6e11178de3f3d557684f06dce4656"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/ending-00.webp",
+      "size": 91576,
+      "git_blob": "79383ad8e6e70aab01c71617d09fa2fe85d51df8"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/ending-01.webp",
+      "size": 95796,
+      "git_blob": "378131a8ae664c4be557edf00b504b547d04c052"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/ending-02.webp",
+      "size": 88784,
+      "git_blob": "dcef7bcd332f18ac3a4776b1821218aad06f5645"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/ending-03.webp",
+      "size": 93728,
+      "git_blob": "43896c46fd1f6573f310238b6974fad7fca744e2"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/ending-04.webp",
+      "size": 96536,
+      "git_blob": "9e9508acbeea485f2b1f16957854639d70edb6a8"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/ending-05.webp",
+      "size": 75608,
+      "git_blob": "636e910cfeb1a1f9d2c9527f9ed8502509728fa7"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/ending-06.webp",
+      "size": 80896,
+      "git_blob": "e610bba208cacb0af58474f79ab0272b17440feb"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/actors/ending-07.webp",
+      "size": 79038,
+      "git_blob": "ad0401bddc0be93654594e87755e51f27b10f81d"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/attack-original.png",
+      "size": 2950672,
+      "git_blob": "66aa571c6d71e19edb982ea2096c0336ff2cceec"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/background.webp",
+      "size": 1095944,
+      "git_blob": "be373250d26119e2a685a9863971b40126bca649"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/ending-original.png",
+      "size": 3075171,
+      "git_blob": "e53b6ec2df24c44b5b7bf872ea316b838b845a97"
+    },
+    {
+      "path": "docs/art/layered-specials/fraudo-baggins/referral-shire-original.png",
+      "size": 4108053,
+      "git_blob": "52461c426c322bb24e18e6328e6d411459b1ab23"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/action-sheet-clean.png",
+      "size": 2664249,
+      "git_blob": "e8d5fb79cff50a156759c95380e29a20e1273f4b"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/action-sheet-original.png",
+      "size": 3187323,
+      "git_blob": "e58b2532f4a78c64588f381b1be6d6d1173933ef"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/action-00.webp",
+      "size": 60388,
+      "git_blob": "aa87553657f2af231849988ca02f36008b2b0c43"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/action-01.webp",
+      "size": 66162,
+      "git_blob": "dae3c862e450dc870d41662033ff4dc3e532cd54"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/action-02.webp",
+      "size": 65314,
+      "git_blob": "5373b2426695ee1270bfdaf8b5c4a8f2dff799d3"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/action-03.webp",
+      "size": 63430,
+      "git_blob": "9913524cfca78a736eced280c3753c720a7dd91f"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/action-04.webp",
+      "size": 66730,
+      "git_blob": "5a0e8f89077b3bd6bc05c6d21473a1307131dff5"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/action-05.webp",
+      "size": 70220,
+      "git_blob": "4bc3455f139f1ee2e11db2071f473adc017212df"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/action-06.webp",
+      "size": 64396,
+      "git_blob": "a29ef17ffa7f9a9e10a89df20a487bc2b3e8122d"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/action-07.webp",
+      "size": 59560,
+      "git_blob": "87a13815e7af3694e85dbbf1e719d5c022c19632"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/ending-00.webp",
+      "size": 95022,
+      "git_blob": "7b9d61251673703f6c864b903853d80f7e045d41"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/ending-01.webp",
+      "size": 80600,
+      "git_blob": "25980a14b33ac148d3100cd29d28816bafdd2e84"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/ending-02.webp",
+      "size": 84280,
+      "git_blob": "6797d1645bad41dd8504202108ea469c87f3a8fc"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/ending-03.webp",
+      "size": 74834,
+      "git_blob": "7ac696d8ad243ef75f8426687aafda30fbd3ece5"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/ending-04.webp",
+      "size": 95334,
+      "git_blob": "64c4e118fd5c2f75db443ab0a93e8661668b5b4c"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/ending-05.webp",
+      "size": 85078,
+      "git_blob": "90a9bbd4b9e7e509654d5928588edb969a4fda8e"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/ending-06.webp",
+      "size": 76844,
+      "git_blob": "0f21da02a3c3f4eabd57e2a52525d26415f35070"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/actors/ending-07.webp",
+      "size": 79408,
+      "git_blob": "bd3c35dad54287a53e3c484d3a2d796b66a46250"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/background.webp",
+      "size": 1055106,
+      "git_blob": "3bf846cd2b04e179385fc2c37dee1b51d8d2ae8f"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/ending-sheet-original.png",
+      "size": 3082820,
+      "git_blob": "aa68e7b7131c2470977eb2bb58d78a135e673f54"
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/frozen-aisle-original.png",
+      "size": 4166242,
+      "git_blob": "79a255d22f56b5ecfa7b44447784df35463d6bbc"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/action-sheet-original.png",
+      "size": 2434637,
+      "git_blob": "044fda3c885d1a8129688a7644538f888d913710"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/action-00.webp",
+      "size": 47346,
+      "git_blob": "6752352a5b854a2f831c8ef82bbf417beb57592a"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/action-01.webp",
+      "size": 47908,
+      "git_blob": "327d3f3cd0f0f85b3a9c58de1f5786fbd3f99f8c"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/action-02.webp",
+      "size": 50046,
+      "git_blob": "e1ceaf3afe9113eb776055283251b717b5507893"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/action-03.webp",
+      "size": 56588,
+      "git_blob": "27ea26a34860d8a220d6ea0a6c67a9cf0c9e0895"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/action-04.webp",
+      "size": 56264,
+      "git_blob": "c05effde3e282e74f8bc4401e8d40fb6605776ea"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/action-05.webp",
+      "size": 58582,
+      "git_blob": "bf044a795f101abbf09a64b93fdcb3f179b44b08"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/action-06.webp",
+      "size": 74632,
+      "git_blob": "ec1e7020d90ad1b5de95ca25a697c00a5b22c521"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/action-07.webp",
+      "size": 60404,
+      "git_blob": "ba134bdc84cde4921137a59324c66fe9d147e259"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/ending-00.webp",
+      "size": 37932,
+      "git_blob": "c936b94e8993864e86af315f711901a2e6645e9a"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/ending-01.webp",
+      "size": 44732,
+      "git_blob": "7b76f38061d5d87aa9c70c6f8bcacc30e1345d4b"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/ending-02.webp",
+      "size": 46956,
+      "git_blob": "7a86e702965e90dee03fe129ef885eefc5d5f8ab"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/ending-03.webp",
+      "size": 46476,
+      "git_blob": "44df306e4372d86c69b02b48dda42a6954bedfaf"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/ending-04.webp",
+      "size": 53228,
+      "git_blob": "f10f6f8dd11cb0f6a2c516c389ac95b0e8ff5496"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/ending-05.webp",
+      "size": 41828,
+      "git_blob": "b1844e92e619127685b1aa39081daa601a4556fc"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/ending-06.webp",
+      "size": 46302,
+      "git_blob": "8391d70104db3db9ea729d217639c921923cdc5c"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/actors/ending-07.webp",
+      "size": 49446,
+      "git_blob": "2e157d8fbf1c90939ba829a131ea3a09f0a102f2"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/background.webp",
+      "size": 1034050,
+      "git_blob": "c346aa232f71a82cf833bef2db1d422d46cb14ec"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/ending-sheet-clean.png",
+      "size": 2211194,
+      "git_blob": "92609da2bffe959a9a8d382171734ff3905c1e57"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/ending-sheet-original.png",
+      "size": 2494180,
+      "git_blob": "2e581e023ded07ccc362d2465456b5ebae3147bb"
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/kitchen-original.png",
+      "size": 3699068,
+      "git_blob": "3db541b86e187ba4046b79ed6b96e972fd6dcb1f"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/action-sheet.png",
+      "size": 2969939,
+      "git_blob": "ba43d0ea439267bdf5248adb2704c6feb6e048f3"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/action-00.webp",
+      "size": 85672,
+      "git_blob": "0102a6d5a8c8f4e62b2b027283095f4b279b0d1f"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/action-01.webp",
+      "size": 76056,
+      "git_blob": "1add21549463835b6d54bd43c6cd8695abafb91d"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/action-02.webp",
+      "size": 92832,
+      "git_blob": "7ce3cfd39a2421bd58977aa1d5527dc9d06ffc4a"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/action-03.webp",
+      "size": 77388,
+      "git_blob": "7cad5d737dd891f47da3bb4a2d1aaaeee6d4d83f"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/action-04.webp",
+      "size": 73488,
+      "git_blob": "65e6c598347b42ba444fe7362e9ce5e24136139d"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/action-05.webp",
+      "size": 104588,
+      "git_blob": "6ca4a22f82b26f72b8d265651da68f0f0588a613"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/action-06.webp",
+      "size": 96392,
+      "git_blob": "b3f611452747b81d881cba9a10eae28bbfb63ab6"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/action-07.webp",
+      "size": 86418,
+      "git_blob": "e1fd217e358bc1a8c39b83b52605aae4716f107e"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/ending-00.webp",
+      "size": 93990,
+      "git_blob": "4c7fb0b52ae1e3bff689593eb42885d5c477b02b"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/ending-01.webp",
+      "size": 95980,
+      "git_blob": "809394f89fa5cf7f4aedd69fe71508ccc5de56ab"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/ending-02.webp",
+      "size": 109464,
+      "git_blob": "26e500a295e3c292ea200fd7317cd9557c7e34d5"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/ending-03.webp",
+      "size": 92934,
+      "git_blob": "93531172109aedf8db7da6e702633f2b9d18c982"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/ending-04.webp",
+      "size": 93364,
+      "git_blob": "72ebf0babcc33d7fd02e717df887e482545ccc38"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/ending-05.webp",
+      "size": 86562,
+      "git_blob": "21f3fce8f4c302ed234e09d0fff13f4f7e47beec"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/ending-06.webp",
+      "size": 89542,
+      "git_blob": "364add421ef79175abd897e659b14c81ceb2d173"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/actors/ending-07.webp",
+      "size": 86880,
+      "git_blob": "fcda1fb86364ff994d7afc6e479ecd16e736220e"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/background.webp",
+      "size": 924782,
+      "git_blob": "9721c26fb422405a0486fe8d08fd34381347af11"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/ending-sheet.png",
+      "size": 3138851,
+      "git_blob": "36936f6d8c1ddd28056fa5eda822a89d578daa44"
+    },
+    {
+      "path": "docs/art/layered-specials/homelesslander/underbridge-plate.png",
+      "size": 3690823,
+      "git_blob": "d6db2dd66a686ea2e311d2562714be4a7ac8c5a6"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/action-original.png",
+      "size": 2764813,
+      "git_blob": "ca2e40df19474062507fbb9d91f998e75c6b5e11"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/action-00.webp",
+      "size": 74560,
+      "git_blob": "861c8b6e7264c0db3caa930003a010b19942782a"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/action-01.webp",
+      "size": 74946,
+      "git_blob": "71396cb5ab9785bce3e1db37897666b2a31582e0"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/action-02.webp",
+      "size": 76876,
+      "git_blob": "f94a3c568769abb9241d081a0b1b8cbb9eaa9ce3"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/action-03.webp",
+      "size": 78144,
+      "git_blob": "a20701b81059dc4e78633cdb7bb712f81180b71e"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/action-04.webp",
+      "size": 77044,
+      "git_blob": "dc702b463f3ae20543b0480f98d87220d1ac6cec"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/action-05.webp",
+      "size": 82028,
+      "git_blob": "a302f58305ccb1fdc21a1b35b13d2bfd1cc52983"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/action-06.webp",
+      "size": 65650,
+      "git_blob": "d57d194ec7aded93dc7ee7b9933521445d3f42d7"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/action-07.webp",
+      "size": 80956,
+      "git_blob": "561e161ab5ed1b17fea509c15eee2574d79e9603"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/attack-00.webp",
+      "size": 76292,
+      "git_blob": "f48a8c380f7ff78820145d09a3d2be66d7e28916"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/attack-01.webp",
+      "size": 76712,
+      "git_blob": "4471de8e0412db94a50ce88e264f11da3c071c4f"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/attack-02.webp",
+      "size": 85354,
+      "git_blob": "83aa663b9032506f030ea37475cbcaab271ca63e"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/attack-03.webp",
+      "size": 77994,
+      "git_blob": "b792879831a373be8fa65a517a83d878b36e38a6"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/attack-04.webp",
+      "size": 89274,
+      "git_blob": "825e77d97880efd97cf923f94874663d33f0f8a4"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/attack-05.webp",
+      "size": 84976,
+      "git_blob": "245c3bfacc6505fd13f23636abb2c8e44872f03e"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/attack-06.webp",
+      "size": 85580,
+      "git_blob": "0f5ae8577a0b2f8b2ca351dae387ca2740add88f"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/attack-07.webp",
+      "size": 63344,
+      "git_blob": "2e9a062f0e9626e98b47aea2a5385360c04d43ca"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/ending-00.webp",
+      "size": 78810,
+      "git_blob": "cabc6699071bc038a82a19d8895fd63e6fa35319"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/ending-01.webp",
+      "size": 75048,
+      "git_blob": "038a255d9b93cfd88c3cab2825a53994295a3b52"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/ending-02.webp",
+      "size": 80776,
+      "git_blob": "5753b53cb1240b758fd1e69b98b4022590a7e915"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/ending-03.webp",
+      "size": 71822,
+      "git_blob": "c935a55c8bbd79a0cc34f67427107279e14a406c"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/ending-04.webp",
+      "size": 83184,
+      "git_blob": "229a6a6a0701e49524a6218b234097908b8155e6"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/ending-05.webp",
+      "size": 78620,
+      "git_blob": "f1ed2412782f038ef85b67650afbffe3adf2ec54"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/ending-06.webp",
+      "size": 73976,
+      "git_blob": "747e58cfc29fc9e9d95007fe53bb7cd958b1b69b"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/actors/ending-07.webp",
+      "size": 76446,
+      "git_blob": "d0eefbb9df5c09c018c30e2df7766b20ba2139f4"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/attack-original.png",
+      "size": 2757955,
+      "git_blob": "ddd0f069899a19c86b6fad22e8a75a86962bc134"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/background.webp",
+      "size": 975868,
+      "git_blob": "d1f04259302c7430ddfb2e3996f0ccf1b2dbfcda"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/ending-original.png",
+      "size": 2827842,
+      "git_blob": "a5a225e98c1415ac67d25c9ed49b96cc237f8d46"
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/rooftop-original.png",
+      "size": 3864324,
+      "git_blob": "48a25f3abc2eeeb474e0efb183a754d1a8b87498"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/action-sheet.png",
+      "size": 2719159,
+      "git_blob": "f62b0781f3afe46886bc34c8e7607c914bcd560a"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/action-00.webp",
+      "size": 62606,
+      "git_blob": "cf5f522a9b57257efba1ba5a88e110bfa760f426"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/action-01.webp",
+      "size": 70806,
+      "git_blob": "d353f697f9d1789baf5a67d9b65d549fc0878be6"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/action-02.webp",
+      "size": 80006,
+      "git_blob": "6c1496e899b81a7cedb6dfe109be843b69fc9b68"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/action-03.webp",
+      "size": 73676,
+      "git_blob": "8edd969521f4fed6344cfe4f1ba1d4901fe60083"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/action-04.webp",
+      "size": 77618,
+      "git_blob": "49207c012b4957c95b784add166a681c9c231e43"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/action-05.webp",
+      "size": 74892,
+      "git_blob": "440fcce56d71eb2720f12a647abaae2dea87d20a"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/action-06.webp",
+      "size": 65302,
+      "git_blob": "f07307dac8e043e23e4cb72e984d1c3f9f98940d"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/action-07.webp",
+      "size": 63218,
+      "git_blob": "1c551d47170666478da4171ca1cd42983dd4c534"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/ending-00.webp",
+      "size": 67998,
+      "git_blob": "9caff1b6bd35aa7325c60e0cf2ac5f6eed1766b6"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/ending-01.webp",
+      "size": 74740,
+      "git_blob": "e4d64633468ef23c3e3f182c4b9effd6d84cc85b"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/ending-02.webp",
+      "size": 84630,
+      "git_blob": "99297bb5287dc82ba6d7baf16dd0f3842f860ee2"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/ending-03.webp",
+      "size": 67560,
+      "git_blob": "017bcb018a50d50586801cd7bdfe89abdc0157fc"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/ending-04.webp",
+      "size": 74412,
+      "git_blob": "e0168f2a13b9134a0a0ac1d9a07ccdb277f3f473"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/ending-05.webp",
+      "size": 68790,
+      "git_blob": "31f039ae70f47fba921bf1a58554070199ce1d11"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/ending-06.webp",
+      "size": 71476,
+      "git_blob": "bfb8e432da9036ce045cdbb19805548cbdbfd6b0"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/actors/ending-07.webp",
+      "size": 68054,
+      "git_blob": "3976481c8836d0bd0e78221f4ed00f139b1473cf"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/background.webp",
+      "size": 967308,
+      "git_blob": "95c89e141e45ec5fbcbe8946a9d2342e36e744a9"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/diner-plate.png",
+      "size": 3940957,
+      "git_blob": "40dd6361e72a5390dde3febbd5f3c560f4586434"
+    },
+    {
+      "path": "docs/art/layered-specials/kobeni/ending-sheet.png",
+      "size": 2766363,
+      "git_blob": "857791ae7c7a1477e86c968a11e9463cf614d51a"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/action-original.png",
+      "size": 2910049,
+      "git_blob": "c85e04338630fe0ca369f35e034df435dc11b559"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/action-00.webp",
+      "size": 76940,
+      "git_blob": "a4945417f116b04985c9d292abd1b2b6d7518604"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/action-01.webp",
+      "size": 89196,
+      "git_blob": "afe9d6adf8d1f613b5f0b7dfe83e5de46973bb24"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/action-02.webp",
+      "size": 84868,
+      "git_blob": "d6e77bcb451608c00380a2128eb0bf7c5dcc8b0b"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/action-03.webp",
+      "size": 75872,
+      "git_blob": "6f9866c19ca26c19f24e980a1ed55cfaeb6a7ab5"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/action-04.webp",
+      "size": 110640,
+      "git_blob": "b5c3d619cc2a4a190557a903823ca8535a58ff03"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/action-05.webp",
+      "size": 69460,
+      "git_blob": "c75740ddcd4b2d71183a15cf7ef3ffaaa22f9306"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/ending-00.webp",
+      "size": 69184,
+      "git_blob": "09d8f81da0044000001ba63b417e335d8ad7f7c1"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/ending-01.webp",
+      "size": 77736,
+      "git_blob": "b2d3cf712e5a376440fea1236cd78c04ed22335f"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/ending-02.webp",
+      "size": 81340,
+      "git_blob": "14de67d267af7b6b117512e47bfde34a95032a2d"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/ending-03.webp",
+      "size": 84124,
+      "git_blob": "7971eb65a6445d3d6a418958f1eec93ffab29c1e"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/ending-04.webp",
+      "size": 79348,
+      "git_blob": "88a49399d73ecf7a829fc2d5bb5851bf8cd7a872"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/ending-05.webp",
+      "size": 69090,
+      "git_blob": "7260ba424834b70e5287e92da459619c158ff05b"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/ending-06.webp",
+      "size": 80274,
+      "git_blob": "c4221c6bb9c60163e4821e4915f73c16c303351f"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/actors/ending-07.webp",
+      "size": 70790,
+      "git_blob": "540a5030572d1c514a3929dead063c865ff58a35"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/alley-original.png",
+      "size": 4124663,
+      "git_blob": "e587a984b9ce43d2cc59ab65b81b2e7bc499c3b3"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/background.webp",
+      "size": 1052438,
+      "git_blob": "20aab644af06f6ff0a4e4856ca160830d92c6e6e"
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/ending-original.png",
+      "size": 2789310,
+      "git_blob": "e5caeb2b200b0603a6b2f68a84274782827386ce"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/action-margin-safe.png",
+      "size": 2485279,
+      "git_blob": "f39fcd1bf1605ed1d74f3e91f9c9609364c6fd17"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/action-sheet.png",
+      "size": 2727025,
+      "git_blob": "46d6a5122a5536bf815b2d50a0e5c17eaa5eeacd"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/action-00.webp",
+      "size": 66752,
+      "git_blob": "ece64b5e4edc8d992fdf4aff7cd3163c1813cd9d"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/action-01.webp",
+      "size": 78654,
+      "git_blob": "bfa8af5e2765acaa10eadcfbff57d87a4636d8c7"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/action-02.webp",
+      "size": 70442,
+      "git_blob": "18a688fc5b75d866897c87562952cfc9b2361950"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/action-03.webp",
+      "size": 65154,
+      "git_blob": "6a513f5cb0cd1f25fa6620eb871a50e3d64b9618"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/action-04.webp",
+      "size": 74398,
+      "git_blob": "25bab74602f7112f45b157ae8128e5b84bca0f44"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/action-05.webp",
+      "size": 79438,
+      "git_blob": "c2f8f88dbf5fee940c0943b91b0f8cc06b7fe463"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/action-06.webp",
+      "size": 72304,
+      "git_blob": "37842c373495b10d808b9d9d52a56bd1747cae36"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/ending-00.webp",
+      "size": 60272,
+      "git_blob": "87662d9634970a253c9881dfbaa0f49f896e0115"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/ending-01.webp",
+      "size": 62024,
+      "git_blob": "1717f4d7866e66fa544707baef909ca17d012fdb"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/ending-02.webp",
+      "size": 57824,
+      "git_blob": "e1c682b92ae4b396c845e09ca67efea13eff5228"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/ending-03.webp",
+      "size": 64424,
+      "git_blob": "57dfaebbf806ef1875fce42163e45a79cca83014"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/ending-04.webp",
+      "size": 68186,
+      "git_blob": "19bec6b18f68bedf1dbc001aae4c815bee804c17"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/ending-05.webp",
+      "size": 67714,
+      "git_blob": "f07b17c196d6065e70593da2e053d4ccd6e6ec6f"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/ending-06.webp",
+      "size": 54990,
+      "git_blob": "cb149e0a5c5c1d1c510ec17886d5e15b8bc6e436"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/actors/ending-07.webp",
+      "size": 59280,
+      "git_blob": "c272e6d9f34b1a6048f80563601f7a11900ca747"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/background.webp",
+      "size": 888466,
+      "git_blob": "71a5b962c275f28b9452f6c549eb7fc381f516ee"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/ending-original.png",
+      "size": 2743547,
+      "git_blob": "a323870e2931b390bb782151bc65dfe51ef0a1cd"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/ending-sheet.png",
+      "size": 2579258,
+      "git_blob": "330e586d6f404c44eda2833b3c2a9abb2fa36390"
+    },
+    {
+      "path": "docs/art/layered-specials/light-yagamod/moderation-bedroom-plate.png",
+      "size": 3637816,
+      "git_blob": "b2d1c5a80c1f2201d1d6eba32e999a72fa10f97b"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/action-sheet-original.png",
+      "size": 3055775,
+      "git_blob": "43e3dc841a0a8aa822fca1eb985810f1ab8606b1"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/action-00.webp",
+      "size": 91880,
+      "git_blob": "c4269e9d4e0f01fabf83db58a843ce9a9912f284"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/action-01.webp",
+      "size": 94418,
+      "git_blob": "ca813530e059dd22b443a6dede041634ed62f0e5"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/action-02.webp",
+      "size": 97848,
+      "git_blob": "a3cf5786294b54d8206aea967054bd0c56d60f0a"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/action-03.webp",
+      "size": 96346,
+      "git_blob": "119fdd834e0aef923e919bc01ffce61f442cda65"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/action-04.webp",
+      "size": 96668,
+      "git_blob": "eef036f8a97bd9eb8d99467f7020bde2fdcaa11a"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/action-05.webp",
+      "size": 99752,
+      "git_blob": "71cc9d4138856791a5f0aa81f69767777c045819"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/action-06.webp",
+      "size": 89164,
+      "git_blob": "2aff032be287db6b39b8c3513916adcf3e7cdcc9"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/action-07.webp",
+      "size": 88976,
+      "git_blob": "167bc2b89a529fc71bc47cf8dc9b5e866e1ff698"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/ending-00.webp",
+      "size": 99088,
+      "git_blob": "e6115090331f549b9178cb2089c76282dfd240d1"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/ending-01.webp",
+      "size": 97336,
+      "git_blob": "b8ce84c9223fb2871590a247c47c4a5e38223b7c"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/ending-02.webp",
+      "size": 94194,
+      "git_blob": "24b9b287585d840b5a55d91685bdfeb2c9461317"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/ending-03.webp",
+      "size": 87208,
+      "git_blob": "267ed00bf749997244661073580b99bb3942012c"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/ending-04.webp",
+      "size": 101022,
+      "git_blob": "48ef09a9c27c06a57e6bab06d93c24d0eaadb26a"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/ending-05.webp",
+      "size": 93280,
+      "git_blob": "7415031998a6dee49512a91680babda32c29b3d2"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/ending-06.webp",
+      "size": 90480,
+      "git_blob": "b61c9686e966408b62f4827da16e8b7c8d28c1e1"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/actors/ending-07.webp",
+      "size": 85524,
+      "git_blob": "390d32266338e58b92265d5c1b448e982fc17ea8"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/background.webp",
+      "size": 935684,
+      "git_blob": "3dd9f0faecdfa0077052367bc8511adc1989c953"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/cold-storage-original.png",
+      "size": 3704457,
+      "git_blob": "0cacc5d497cda07b48a65fb5952dcea84a378c2c"
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/ending-sheet-original.png",
+      "size": 2960101,
+      "git_blob": "794aa890c622c3e8ba5dc6420e2cfdc3f0c8cce6"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/action-00.webp",
+      "size": 64442,
+      "git_blob": "5ac657a69edea629a22201c46b2262ef1fb0ed8f"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/action-01.webp",
+      "size": 71986,
+      "git_blob": "b53ec28e0ad6c0aa3edebeea7b802034d22f046c"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/action-02.webp",
+      "size": 72524,
+      "git_blob": "dcf0a51e67733fb3f06d0865d67de7d21c14defc"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/action-03.webp",
+      "size": 61912,
+      "git_blob": "118dddc43445d258e2fb1f6cd73428234d8b253b"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/action-04.webp",
+      "size": 69204,
+      "git_blob": "6b70730afa095d65ccbf4d2ccb8df8af67b58da7"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/action-05.webp",
+      "size": 63756,
+      "git_blob": "4780a7f3fd2aa80c2392865fd416eff9fd0525b9"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/action-06.webp",
+      "size": 68620,
+      "git_blob": "3d848a80fb271e0ed7e7d1f360fd9974fe4da41c"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/action-07.webp",
+      "size": 78768,
+      "git_blob": "14bef94e647c6603f84ffdb5fd2f5d4020ac1f62"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/ending-00.webp",
+      "size": 94576,
+      "git_blob": "c44dd4939ce85be18165c1f46cef48f37cb20163"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/ending-01.webp",
+      "size": 99454,
+      "git_blob": "68975db8916237f1298eec25e7695501226bf781"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/ending-02.webp",
+      "size": 98006,
+      "git_blob": "fb2a82c85d4c1ffd241cb50c62439fa9083929d7"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/ending-03.webp",
+      "size": 88608,
+      "git_blob": "f6ce5402336204c2693f3966c56dfacbb3fc9f0e"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/ending-04.webp",
+      "size": 91920,
+      "git_blob": "1562c1c2dd128cb3b7a6a80c50ae078fc791fee8"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/ending-05.webp",
+      "size": 100126,
+      "git_blob": "0f1dd18be9712a4c916f3d03ec6e7ded19c7bc78"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/ending-06.webp",
+      "size": 102420,
+      "git_blob": "dcb828c4ef773a561cd9115f3801e577c827597d"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/actors/ending-07.webp",
+      "size": 99780,
+      "git_blob": "2410649d9dbf87eaf6795592242563252acdb4a1"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/background.webp",
+      "size": 1056252,
+      "git_blob": "627d616daa278a86f538e46d0601e7ead8468c0c"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/reaction-original.png",
+      "size": 3119008,
+      "git_blob": "08682954f475b79f78132e21141bb0d12522828f"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/soundstage-original.png",
+      "size": 3965574,
+      "git_blob": "7c72e0e59047faba76650bb12b0a1f1e2ac8ff3a"
+    },
+    {
+      "path": "docs/art/layered-specials/mrleast/wholebody-original.png",
+      "size": 2650574,
+      "git_blob": "cea9f71de51d8b42c1960d4d8857adf75d56afcf"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/action-sheet.png",
+      "size": 2699561,
+      "git_blob": "68ed42a8406f2df469f1fcff62b8f422fae766f1"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/action-00.webp",
+      "size": 72164,
+      "git_blob": "3894a055fde7e82a1ad14fad3d80a798d6bad730"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/action-01.webp",
+      "size": 73990,
+      "git_blob": "aa6135c344b9d96ecf8d830b22a69e684ea7b3b4"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/action-02.webp",
+      "size": 75260,
+      "git_blob": "480a257b8ac04850cdd608681c44a5c677e3114e"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/action-03.webp",
+      "size": 68522,
+      "git_blob": "035f48bb3206a917bb258ec78747e08acf1a05b9"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/action-04.webp",
+      "size": 69980,
+      "git_blob": "bc6fe332fa7611a2436c75710dc18bc48eb7ab75"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/action-05.webp",
+      "size": 73492,
+      "git_blob": "58f6427b72b883ad3e1ff4037f614ca83b69df65"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/action-06.webp",
+      "size": 63134,
+      "git_blob": "2c1f8141eb42d853225db1ff288ce0fc86c5aa3b"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/action-07.webp",
+      "size": 68504,
+      "git_blob": "657018c27d22a22cb1eb44ab7f54c4f6972c86ce"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/ending-00.webp",
+      "size": 74682,
+      "git_blob": "2dff3a36eeb24753d0faaec4c82b52f6d6c5507c"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/ending-01.webp",
+      "size": 70688,
+      "git_blob": "c4f91925d1b08a712d3b3d57053417b5d2abe40f"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/ending-02.webp",
+      "size": 71716,
+      "git_blob": "c304ee42e3b504c7c1d13e037a9afa9cd96d19ae"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/ending-03.webp",
+      "size": 75824,
+      "git_blob": "d2e3d42d53d0a76d2dd7c99c69147db6535a7206"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/ending-04.webp",
+      "size": 68112,
+      "git_blob": "88298631972bace2ba29a8771cc7d6e36c8477a7"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/ending-05.webp",
+      "size": 63154,
+      "git_blob": "6eba0d19afbed48ca1ff51c2c530ab9c1525d41e"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/ending-06.webp",
+      "size": 61342,
+      "git_blob": "489f334ce1691774240ccc8c38af6ed94237de71"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/actors/ending-07.webp",
+      "size": 60706,
+      "git_blob": "9018ebb2381d815e62af8df27fcd65eb8824fd21"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/background.webp",
+      "size": 1064412,
+      "git_blob": "6a8656a14318dc3de274ac8d09450d75a9ba3bee"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/ending-sheet.png",
+      "size": 2688065,
+      "git_blob": "4f0d110187424de6157f0befea60c3334b9c840a"
+    },
+    {
+      "path": "docs/art/layered-specials/nanami/loading-entrance-plate.png",
+      "size": 4112772,
+      "git_blob": "9c2a601b4ee21957ea1a2979c853898a1d89c3bd"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/action-original.png",
+      "size": 2844207,
+      "git_blob": "7deebc4d026deb35fe6c0ae496431fd0cf98de29"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/action-00.webp",
+      "size": 64618,
+      "git_blob": "50c719ac05c55efb50fc1dc899ab5d8b01400787"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/action-01.webp",
+      "size": 76786,
+      "git_blob": "6e9bd09878c27ae438f129a229febef880671438"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/action-02.webp",
+      "size": 94262,
+      "git_blob": "019f7cc0bac95647b9e8edb2c180681bfc3686ca"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/action-03.webp",
+      "size": 69308,
+      "git_blob": "fe3649add44a9e3f438cf32402e669b72d4d90a1"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/action-04.webp",
+      "size": 63298,
+      "git_blob": "af846771ce2024211b7429775145e20003e9320c"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/action-05.webp",
+      "size": 78886,
+      "git_blob": "e491daa094ce5b5230d435488fdc26bb154a9bec"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/action-06.webp",
+      "size": 98550,
+      "git_blob": "94eb183d3487892d22a82d73a98efb834954fdb8"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/action-07.webp",
+      "size": 76726,
+      "git_blob": "fedf90d320b20b88950769923e8f9995842bb06c"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/ending-00.webp",
+      "size": 88044,
+      "git_blob": "4bd461166594ec1c97dc2aa897a24d13128896d9"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/ending-01.webp",
+      "size": 73344,
+      "git_blob": "5f4edd79862b9f210dba1e3b6289ddeab07facf0"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/ending-02.webp",
+      "size": 93030,
+      "git_blob": "0df2cf7f0fad14567a50f0aef0cc0d747fd47b50"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/ending-03.webp",
+      "size": 73278,
+      "git_blob": "19e625aec709ab635e6bed2489c6d285fc57f363"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/ending-04.webp",
+      "size": 66878,
+      "git_blob": "79cab7d7b8f0f140dd7174e29031fb57b549bc04"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/ending-05.webp",
+      "size": 67724,
+      "git_blob": "8d1e2e65ea630a60735a942144833f388f7676e5"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/ending-06.webp",
+      "size": 66006,
+      "git_blob": "34817277dc7567038f2022bd1ecd93dd5cc6d00b"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/actors/ending-07.webp",
+      "size": 79092,
+      "git_blob": "8700d53c0ae3d1a9ee148b67e460e4a5bf29d883"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/background.webp",
+      "size": 913464,
+      "git_blob": "7d14ca523e8a5f7548770ff1133602acf9764943"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/ending-original.png",
+      "size": 2783840,
+      "git_blob": "e731dd77a047ed2f2d2c5460a4085ba9a633a756"
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/training-room-original.png",
+      "size": 3694852,
+      "git_blob": "b207262302d36e04952734012deac2aaf21fc46f"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/action-original.png",
+      "size": 3351129,
+      "git_blob": "51e61fac546dce0ed3c51a0417022154d44ceaf5"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/action-00.webp",
+      "size": 111992,
+      "git_blob": "dd789fa73bd893eae609246230aed43be61e1aef"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/action-01.webp",
+      "size": 112134,
+      "git_blob": "b994558c20b473c84834f31aef14e4339e43b205"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/action-02.webp",
+      "size": 112382,
+      "git_blob": "47763dd36e6c4c7a73d881e87147bd9167a79ecc"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/action-03.webp",
+      "size": 110404,
+      "git_blob": "6e33366480b000b2c04e76e7ec6e9f791790aa0e"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/action-04.webp",
+      "size": 114226,
+      "git_blob": "04b76e11ac3e33a4ffd3c9bd846806cccfe85088"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/action-05.webp",
+      "size": 114244,
+      "git_blob": "a6e4afcb5a6c3ff0f6503027efcec9eb21d35d74"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/action-06.webp",
+      "size": 111378,
+      "git_blob": "4a820dd399f484955485dfdebddba982eccb72c8"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/action-07.webp",
+      "size": 112560,
+      "git_blob": "c2a79fe9fc83bdac1504e8b2d5c5a478ef628fb1"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/ending-00.webp",
+      "size": 107108,
+      "git_blob": "327b7202627628908f707ab91fc2cf638a4db1af"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/ending-01.webp",
+      "size": 108046,
+      "git_blob": "e3a782d7f41ca2c421ac42de1ec83cd1aee25505"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/ending-02.webp",
+      "size": 107722,
+      "git_blob": "41235bf2caf8bee882f6801936b5d3e24898643c"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/ending-03.webp",
+      "size": 106760,
+      "git_blob": "ad4a8f197aff1e386356b92482ce9f51f3a33ebd"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/ending-04.webp",
+      "size": 108566,
+      "git_blob": "9370cdeecda4b90d44851c4db3790b942e322b72"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/ending-05.webp",
+      "size": 107810,
+      "git_blob": "992465f36eb006c05ccea682b28d388b264e972a"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/ending-06.webp",
+      "size": 108128,
+      "git_blob": "c5249203564923166ab1cbc9c5e82740e94b79f1"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/actors/ending-07.webp",
+      "size": 106588,
+      "git_blob": "15f0c0fdc8019487d3d3671b0e6e5ee489c6dc9b"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/background.webp",
+      "size": 921752,
+      "git_blob": "03480b77456eed380ecf113e1ef8ee31f986c499"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/courtyard-original.png",
+      "size": 3570015,
+      "git_blob": "98e092318af9f7c5ce6a8abeabb74049855c2195"
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/ending-original.png",
+      "size": 3374744,
+      "git_blob": "00e22b72c5784fc0351c713f864e7f6b81bae7e1"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/action-original.png",
+      "size": 3114268,
+      "git_blob": "bbf778438744511a37acd2d31f2991f4924319b1"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/action-00.webp",
+      "size": 100992,
+      "git_blob": "e480ef0aadb1a3b3e74c2a5f86ad88a564bb1c58"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/action-01.webp",
+      "size": 91418,
+      "git_blob": "5e7dd649b1627ded3ec2762f1d853e3d15936a9e"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/action-02.webp",
+      "size": 91444,
+      "git_blob": "6a94c68fc6380009c7776795e0178c19b727ab16"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/action-03.webp",
+      "size": 95286,
+      "git_blob": "22bf0ea78013a00e4e48f04b95ebbd175d453dfa"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/action-04.webp",
+      "size": 88172,
+      "git_blob": "f077a3bd4736f343eb6923c82b31c1be6ff7c541"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/action-05.webp",
+      "size": 89244,
+      "git_blob": "c3e318677d9db88d770c1833a06e3874f81d3429"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/action-06.webp",
+      "size": 88720,
+      "git_blob": "d269cbc3d2e485086d60aaa891977fc0744f5852"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/action-07.webp",
+      "size": 92502,
+      "git_blob": "38cea57ce3ec9c8f5387b294956ac2ab56c5d2f5"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/ending-00.webp",
+      "size": 98658,
+      "git_blob": "797dacbba4069b627d1c4031ae02e2cf79513449"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/ending-01.webp",
+      "size": 85878,
+      "git_blob": "f41a5ee1cdf4e254ec41f4cc456f85d3aefe77bf"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/ending-02.webp",
+      "size": 80106,
+      "git_blob": "ee93913956d7e475ec8571f78af772bc6f0f04b9"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/ending-03.webp",
+      "size": 95684,
+      "git_blob": "f9d683398c098815d439a5c6a85546a068ded84e"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/ending-04.webp",
+      "size": 80924,
+      "git_blob": "a117bcb7fba431331730c1b3402d6a94051d6b26"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/ending-05.webp",
+      "size": 84760,
+      "git_blob": "f89ca431fb896a3925e82f363e914f0686f62ef8"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/ending-06.webp",
+      "size": 70874,
+      "git_blob": "57f25e4e5913f279b2eba28ff4f7b3d409b0c7ff"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/actors/ending-07.webp",
+      "size": 81158,
+      "git_blob": "1c46e0a91fd75dba1cc621a494ca36f5aac04bcf"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/background.webp",
+      "size": 1069546,
+      "git_blob": "e2d4a49b8db8b499aae6d1aa05e25645cb0025b3"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/ending-original.png",
+      "size": 2972966,
+      "git_blob": "b58568137a8d822c87be6b2aa96075a4b78a5b2e"
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/print-workshop-original.png",
+      "size": 4058554,
+      "git_blob": "323c56f3b0c42cf6ba959e6cf41e0b0d73eb373e"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/action-sheet.png",
+      "size": 2295164,
+      "git_blob": "289051c24596a6996870d098733d6fe8fdebdd6e"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/action-00.webp",
+      "size": 71810,
+      "git_blob": "de983f3d4ae50f8052e3cf7aaf83eabe8463e82f"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/action-01.webp",
+      "size": 75382,
+      "git_blob": "f3c1fb2d02a0acc042df51f8b1ced51a9fd3a117"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/action-02.webp",
+      "size": 83452,
+      "git_blob": "74e2e9ab9fdf8c793663ce13f75387a46d241027"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/action-03.webp",
+      "size": 90632,
+      "git_blob": "c81ef1fa982df1a21974ac13ee9db85b376153e0"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/action-04.webp",
+      "size": 89152,
+      "git_blob": "9c1feeca65cc90ac4e54b02a997902278eb87f31"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/action-05.webp",
+      "size": 87526,
+      "git_blob": "dbb04acb889214675beebb2f8003bb176f679595"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/action-06.webp",
+      "size": 71242,
+      "git_blob": "e1aeaf2687604c3cec5c1d532c4b457de2309a42"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/action-07.webp",
+      "size": 71296,
+      "git_blob": "bf8817919207a613ae7c5da9391a9310e363086c"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-00.webp",
+      "size": 94900,
+      "git_blob": "0b0efed03ec368dd9f0c1edb345e7985e910797f"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-01.webp",
+      "size": 85820,
+      "git_blob": "e7a69aeb9dc541a7a7950795be021008875c021f"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-02.webp",
+      "size": 94666,
+      "git_blob": "02901851a339611924f9cca529d33d7ad8ee908e"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-03.webp",
+      "size": 92098,
+      "git_blob": "fbde555fd6c1cccc4f1d3c6901088a57842cd99e"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-04.webp",
+      "size": 87238,
+      "git_blob": "90c09c3a177af362e8cabd99288f2237c72cd41a"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-05.webp",
+      "size": 94300,
+      "git_blob": "6e47a168568e247d853d4ab3b6f3e72da32e7eb6"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-06.webp",
+      "size": 86142,
+      "git_blob": "4ad6b6063bb5ff122ad38edb9ea3f480b7f26111"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-07.webp",
+      "size": 95924,
+      "git_blob": "fdc30b2fc180c82d4f96134a12d838171ef6fa59"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-00.webp",
+      "size": 128794,
+      "git_blob": "fd89d6c09fd51d9b6d7aa7e0d4a26224cb3a2fbf"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-01.webp",
+      "size": 123124,
+      "git_blob": "24be2ae39dc604b1f23adeac578edb666f17d414"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-02.webp",
+      "size": 127454,
+      "git_blob": "697b910cab353e4bcc7169a26bf93074e7328ec1"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-03.webp",
+      "size": 125026,
+      "git_blob": "e73b2c27e6bbef117bb637f1ec477a57adf3c037"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-04.webp",
+      "size": 123174,
+      "git_blob": "4c83a3068b530e9d15fa98997f5cd3253b10688a"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-05.webp",
+      "size": 107570,
+      "git_blob": "b4a659ab44407362aa69481464b556e238deaa54"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/attack-sheet.png",
+      "size": 2531886,
+      "git_blob": "14f27b5cd0279dfdc8b045725fac0536da0c3681"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/background.webp",
+      "size": 990378,
+      "git_blob": "5a82e5d7719a92553914564d2deb620b1315743d"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/ending-rejected.png",
+      "size": 3088501,
+      "git_blob": "1d1db1f0586e37736fe2df17541a1acf6c828238"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/ending-sheet.png",
+      "size": 3112827,
+      "git_blob": "4a2ea04a341c103de9a90bafe2cf031a2327937e"
+    },
+    {
+      "path": "docs/art/layered-specials/yasuo-zero-ten/wrong-lane-plate.png",
+      "size": 3905540,
+      "git_blob": "57ff8f28112e91ca5e40222c7da4e71d301c4441"
+    },
+    {
+      "path": "docs/art/live-motion/CC001-poses.png",
+      "size": 1169862,
+      "git_blob": "f2b76467ec4df2c009b1c99468c54c458ee62ee4"
+    },
+    {
+      "path": "docs/art/live-motion/CC001-source.png",
+      "size": 2475218,
+      "git_blob": "803cf7b72d0532e92af5a64300bb06f16ef9c55d"
+    },
+    {
+      "path": "docs/art/live-motion/CC007-poses.png",
+      "size": 2519773,
+      "git_blob": "f97caadd78f6a1c2c5ae86f7ccc8c9ea44a2e0de"
+    },
+    {
+      "path": "docs/art/live-motion/CC037-poses.png",
+      "size": 2343639,
+      "git_blob": "fac4ad9ece82bd3dceb40fcee313271558c7c598"
+    },
+    {
+      "path": "docs/art/live-motion/CC039-poses.png",
+      "size": 2115474,
+      "git_blob": "7cf06daffa4c64d887aca3c88ebe15b97d857ec9"
+    },
+    {
+      "path": "docs/art/living-city/court.png",
+      "size": 2557277,
+      "git_blob": "598d3cabdff0d020589a06e6f4b7bd55dc043c1c"
+    },
+    {
+      "path": "docs/art/living-city/ground.png",
+      "size": 3377303,
+      "git_blob": "ad81cdc47aa75bf4b8f0eb0f72ca5e31e92e55e0"
+    },
+    {
+      "path": "docs/art/living-city/packs.png",
+      "size": 2503822,
+      "git_blob": "c62619bbe49b06746d03afeb578ff31ff6760540"
+    },
+    {
+      "path": "docs/art/living-city/palace.png",
+      "size": 2651148,
+      "git_blob": "97e9f13394316e52a08effa855c7f9e0fb74210f"
+    },
+    {
+      "path": "docs/art/living-city/van.png",
+      "size": 2412262,
+      "git_blob": "0fbebba50cb8eb2ffa4047361fe713d1e2b886ba"
+    },
+    {
+      "path": "docs/art/living-city/walker.png",
+      "size": 1227296,
+      "git_blob": "f4db852c6c431590c037dc86df0e046e809c614a"
+    },
+    {
+      "path": "docs/art/meme-pass/CC012-portrait.png",
+      "size": 3546971,
+      "git_blob": "1bfe2d654db1b4d74da647bc179b0fb186ba779b"
+    },
+    {
+      "path": "docs/art/meme-pass/CC012-poses.png",
+      "size": 2667077,
+      "git_blob": "f647bb9ecb83a8590ef071c3d55973f577af1ae9"
+    },
+    {
+      "path": "docs/art/meme-pass/CC012-runtime-review.png",
+      "size": 1298025,
+      "git_blob": "27a00acb49cbd33f1ad07e2c60195afd5276634c"
+    },
+    {
+      "path": "docs/art/meme-pass/CC012-white-review.png",
+      "size": 1857903,
+      "git_blob": "407beeeb902b5e0f3e94e3ac44fdf467d71e417d"
+    },
+    {
+      "path": "docs/art/meme-pass/CC027-portrait.png",
+      "size": 3420040,
+      "git_blob": "0d3a0261e126160564072a79413d53dec7db84d2"
+    },
+    {
+      "path": "docs/art/meme-pass/CC027-poses.png",
+      "size": 2396016,
+      "git_blob": "2e8603729c412a8cfdda9c8065f6e4f45fb0b654"
+    },
+    {
+      "path": "docs/art/meme-pass/CC027-runtime-review.png",
+      "size": 1028797,
+      "git_blob": "748bf27291b32e44594c0d7fccab7fc0d2d88d9e"
+    },
+    {
+      "path": "docs/art/meme-pass/CC027-white-review.png",
+      "size": 1447552,
+      "git_blob": "2c4fd7ddbc321648ffb015d5c17e1db259d275a5"
+    },
+    {
+      "path": "docs/art/portraits-atlas.png",
+      "size": 4134958,
+      "git_blob": "fe2056ba50bcf46fd4ee089d6433b944c1e02f0e"
+    },
+    {
+      "path": "docs/art/props/P001.png",
+      "size": 1149082,
+      "git_blob": "a0b66c973964f9d5c98e7f20449a07e8640aff78"
+    },
+    {
+      "path": "docs/art/props/P002.png",
+      "size": 1962183,
+      "git_blob": "12bb6e8e59571caa89d2303609e0ea7f0b929095"
+    },
+    {
+      "path": "docs/art/props/P003.png",
+      "size": 2209995,
+      "git_blob": "e14449ce8dd63477890007f3b5a7084b56c88829"
+    },
+    {
+      "path": "docs/art/props/P004.png",
+      "size": 2076156,
+      "git_blob": "3093f975491e6b44bfece02c48662e78cf54297c"
+    },
+    {
+      "path": "docs/art/props/P005.png",
+      "size": 1289360,
+      "git_blob": "06243f2fad935f379440072b0089b34ad33c9467"
+    },
+    {
+      "path": "docs/art/props/P006.png",
+      "size": 1754404,
+      "git_blob": "9604ef3421849e1a0a97a9d82a49aa2988fef298"
+    },
+    {
+      "path": "docs/art/props/P007.png",
+      "size": 2127960,
+      "git_blob": "d7c42a38616e7845fe826e220ce3a3abc8cbb1ec"
+    },
+    {
+      "path": "docs/art/props/P008.png",
+      "size": 2835012,
+      "git_blob": "8563b3957449e0a674874f168d30e60442ed4ea0"
+    },
+    {
+      "path": "docs/art/props/P009.png",
+      "size": 1618931,
+      "git_blob": "b04cbb3d16f1062a420cf1d65dc4a3b230140b88"
+    },
+    {
+      "path": "docs/art/props/P010.png",
+      "size": 2192256,
+      "git_blob": "26a3af42347f286e706f09501cc693c5cecd65ed"
+    },
+    {
+      "path": "docs/art/props/P011.png",
+      "size": 1314217,
+      "git_blob": "503ecc3cbaee168b2272ef12b956e0efdd8094fc"
+    },
+    {
+      "path": "docs/art/props/P012.png",
+      "size": 1769281,
+      "git_blob": "35a84b86e3b83753c2ad44b781d8ad4f88f280a9"
+    },
+    {
+      "path": "docs/art/residents/CC001.png",
+      "size": 3460589,
+      "git_blob": "dc4aa3d5b4c6d52c8ab375b384c1df7addbe4d31"
+    },
+    {
+      "path": "docs/art/residents/CC002.png",
+      "size": 3358197,
+      "git_blob": "e69a812805af62d1950f81eb660cda91b6e2a02a"
+    },
+    {
+      "path": "docs/art/residents/CC003.png",
+      "size": 3947015,
+      "git_blob": "180d1586274f60803022b3964259f31870cd3383"
+    },
+    {
+      "path": "docs/art/residents/CC004.png",
+      "size": 3814508,
+      "git_blob": "a88786f282c6bf14dce688b83a3c259820ccf930"
+    },
+    {
+      "path": "docs/art/residents/CC005.png",
+      "size": 3217141,
+      "git_blob": "93cc3949a4bbc2e4fac5d3e0b107995d64f8fe17"
+    },
+    {
+      "path": "docs/art/residents/CC006.png",
+      "size": 3509543,
+      "git_blob": "3cc72ac997b4e9e3a35121367355d8ba52fc0e25"
+    },
+    {
+      "path": "docs/art/residents/CC007.png",
+      "size": 3580868,
+      "git_blob": "d3922739e1625310577bc53af44a4a07d8b70312"
+    },
+    {
+      "path": "docs/art/residents/CC008.png",
+      "size": 3964160,
+      "git_blob": "8a29619967dc19155ecd26ca91db6694619ec2bf"
+    },
+    {
+      "path": "docs/art/residents/CC009.png",
+      "size": 3711242,
+      "git_blob": "640116eaa59671ea165e47a0ef1b5c1637b38aeb"
+    },
+    {
+      "path": "docs/art/residents/CC010.png",
+      "size": 3589589,
+      "git_blob": "8a85cb30f97b0ab39c2be5766bb329d9157af670"
+    },
+    {
+      "path": "docs/art/residents/CC011.png",
+      "size": 3584315,
+      "git_blob": "e87d6b2cb203460b2a2bcd01ca6efa589fefdc97"
+    },
+    {
+      "path": "docs/art/residents/CC012.png",
+      "size": 3937908,
+      "git_blob": "a22ad80cfbee4abdd1815bb1a84533feeb398ac2"
+    },
+    {
+      "path": "docs/art/residents/CC013.png",
+      "size": 3568188,
+      "git_blob": "8c6030a8e077a6d0fd3ce4baf11a1bfaf5502b87"
+    },
+    {
+      "path": "docs/art/residents/CC014.png",
+      "size": 3764747,
+      "git_blob": "18ede39d96b50ffbef45d55ff228b876e597e30f"
+    },
+    {
+      "path": "docs/art/residents/CC015.png",
+      "size": 3935276,
+      "git_blob": "f7526b6b7cf2c6368ca5123ca60a96cfd0d6e8d2"
+    },
+    {
+      "path": "docs/art/residents/CC016.png",
+      "size": 3240306,
+      "git_blob": "b51b52bfa9728b2b044cf21adcbf125d1be99ec6"
+    },
+    {
+      "path": "docs/art/residents/CC017.png",
+      "size": 4043920,
+      "git_blob": "005b2c95fc422d768e578212176156d26b788db9"
+    },
+    {
+      "path": "docs/art/residents/CC018.png",
+      "size": 4087460,
+      "git_blob": "9d83eb6936a81253a5f5417c647cfbe44c6f5110"
+    },
+    {
+      "path": "docs/art/residents/CC019.png",
+      "size": 3409110,
+      "git_blob": "fd1f56c1191b32e6845acef20a1a7f5e84fc4224"
+    },
+    {
+      "path": "docs/art/residents/CC020.png",
+      "size": 3461272,
+      "git_blob": "e9439b7976b6c86b72dd3db3620f5e6fcde3e018"
+    },
+    {
+      "path": "docs/art/residents/CC021.png",
+      "size": 3699716,
+      "git_blob": "be5021caad785ba0c33178a2019d969dc0e40363"
+    },
+    {
+      "path": "docs/art/residents/CC022.png",
+      "size": 3964405,
+      "git_blob": "a335c8aadf64d34950d5bfe39de6e74bd1f08297"
+    },
+    {
+      "path": "docs/art/residents/CC023.png",
+      "size": 3834100,
+      "git_blob": "c18b12ec52faf28e30f0a4772456371a4d18bb08"
+    },
+    {
+      "path": "docs/art/residents/CC024.png",
+      "size": 3572512,
+      "git_blob": "7ef69ab3ec2a542567fcbdf5a852e42d8a135e67"
+    },
+    {
+      "path": "docs/art/residents/CC025.png",
+      "size": 3867919,
+      "git_blob": "a46216bf52d7f03814a02ffc0c9fc11bfab8520d"
+    },
+    {
+      "path": "docs/art/residents/CC026.png",
+      "size": 3677240,
+      "git_blob": "a351400643fa04776bc0aa409401fa644d91d22d"
+    },
+    {
+      "path": "docs/art/residents/CC027.png",
+      "size": 3873240,
+      "git_blob": "5c7387c9396dfe1629faabbd2b65b356718af6e9"
+    },
+    {
+      "path": "docs/art/residents/CC028.png",
+      "size": 4029221,
+      "git_blob": "55d9211c649fd4c9b58c8d7ff2d38dc63d5a4217"
+    },
+    {
+      "path": "docs/art/residents/CC029.png",
+      "size": 3698315,
+      "git_blob": "7f8e4cbc87d4045383fa601e60de2e5459161526"
+    },
+    {
+      "path": "docs/art/residents/CC030.png",
+      "size": 4116699,
+      "git_blob": "5ce13c31779b4cdc2a183badbf56480da0849efa"
+    },
+    {
+      "path": "docs/art/residents/CC031.png",
+      "size": 3756463,
+      "git_blob": "e8c534e76b10a759f7c0753a6e64e35c1af41689"
+    },
+    {
+      "path": "docs/art/residents/CC032.png",
+      "size": 4095314,
+      "git_blob": "568ed131790f2f6ead095bc98f6ef47d90902389"
+    },
+    {
+      "path": "docs/art/residents/CC033.png",
+      "size": 3913691,
+      "git_blob": "678f8291c6261d314ae80770519cb727419b5b51"
+    },
+    {
+      "path": "docs/art/residents/CC034.png",
+      "size": 3933058,
+      "git_blob": "b6c9da7fa48c4f16334c5f2457d200c6a01963a0"
+    },
+    {
+      "path": "docs/art/residents/CC035.png",
+      "size": 4011162,
+      "git_blob": "90fe6109476d6d96cca6f33ec6b8ae004134cc95"
+    },
+    {
+      "path": "docs/art/residents/CC036.png",
+      "size": 3648057,
+      "git_blob": "22b5001e1795f7fe2034dd1c9e88dd4b85a64833"
+    },
+    {
+      "path": "docs/art/residents/CC037.png",
+      "size": 3773187,
+      "git_blob": "405b617d3d4e80a726f874c00ac927514a06757b"
+    },
+    {
+      "path": "docs/art/residents/CC038.png",
+      "size": 3806348,
+      "git_blob": "193e933179612aa3efe802b79263af6437a4d13b"
+    },
+    {
+      "path": "docs/art/residents/CC039.png",
+      "size": 4203423,
+      "git_blob": "b48f61ed2948150913eb09dc8aa053eedea9f14b"
+    },
+    {
+      "path": "docs/art/residents/CC040.png",
+      "size": 3835336,
+      "git_blob": "429e84c1b23c23778392622885e9228db062843f"
+    },
+    {
+      "path": "docs/art/residents/CC041.png",
+      "size": 3853090,
+      "git_blob": "ab2af60cceb4db0bb7bad0969fb186a883c9f494"
+    },
+    {
+      "path": "docs/art/residents/CC042.png",
+      "size": 3582421,
+      "git_blob": "e4dcbe6cc192699d625f4779cb3ef14d1116b7ba"
+    },
+    {
+      "path": "docs/art/residents/CC043.png",
+      "size": 3561554,
+      "git_blob": "d3dae027647236f895854f1eb9d8a3b4a4ee27c4"
+    },
+    {
+      "path": "docs/art/residents/CC044.png",
+      "size": 3783220,
+      "git_blob": "b35e650e9ccf4e67b0f7b3dad6a274f19a0406c6"
+    },
+    {
+      "path": "docs/art/residents/CC045.png",
+      "size": 3655387,
+      "git_blob": "368f81d02d1cb1b5416f95afa72a4fb78258f01d"
+    },
+    {
+      "path": "docs/art/residents/CC046.png",
+      "size": 2820015,
+      "git_blob": "7e4f2f23d190a0d0ebf54bbaa7825e47c4be7b2d"
+    },
+    {
+      "path": "docs/art/residents/CC047.png",
+      "size": 2628766,
+      "git_blob": "0df86bfe405aa11b71ee045797b981818b907b2c"
+    },
+    {
+      "path": "docs/art/residents/CC048.png",
+      "size": 2641598,
+      "git_blob": "5574030c1553489bc1bf0bbc3b375a402d1d2c11"
+    },
+    {
+      "path": "docs/art/residents/CC049.png",
+      "size": 2794028,
+      "git_blob": "a34e54dca8eb147a8f3fac5541cb7364fc527759"
+    },
+    {
+      "path": "docs/art/residents/CC050.png",
+      "size": 2811532,
+      "git_blob": "13d94a06e951fdfb5b9ff45636ec18b090da2297"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC001/original.png",
+      "size": 3783216,
+      "git_blob": "9433283e48c71357f98f73ca8029d8cbc5ffb7d5"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC002/original.png",
+      "size": 3562852,
+      "git_blob": "5bc3ce8723c1d89155d9ef56d5983408a2f8280c"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC006/original.png",
+      "size": 3608886,
+      "git_blob": "8595f1072e30e52c47a42b6b530949f49e4a0773"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC007/original.png",
+      "size": 3773367,
+      "git_blob": "3aa7e7deb76bd5a34a334e305a3ca1a95e857223"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC012/original.png",
+      "size": 4037052,
+      "git_blob": "47ac55b6efd97c2b8c0e15e956b022bc8fa9f78e"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC013/original.png",
+      "size": 3836508,
+      "git_blob": "d25796303119803a89d2def851c11f47508a206d"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC014/original.png",
+      "size": 3803106,
+      "git_blob": "9c443376a5a620d55c42e2a2ba9c3308ffd000c9"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC016/original.png",
+      "size": 3697523,
+      "git_blob": "5e407c3866905953e22654a0b05de8f5119cbe0a"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC018/original.png",
+      "size": 4255676,
+      "git_blob": "746b287b58aa871346b819c4aba011fe38d688c3"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC023/original.png",
+      "size": 3961788,
+      "git_blob": "b70724803fcb176505e04c6075d61601c1c958c1"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC058/original.png",
+      "size": 3858543,
+      "git_blob": "a648f617e025875a0a90a37b4a590bc41ccaea7e"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/CC135/original.png",
+      "size": 3827869,
+      "git_blob": "99dc502f6529c94ee2772e4173d7d23f6885c039"
+    },
+    {
+      "path": "docs/art/roster-card-portraits-v3/portrait-b-card-scale.png",
+      "size": 829490,
+      "git_blob": "7a521ac6b08c3f266c3302f7b81b0f43cbcc8e72"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC001/original-sheet.png",
+      "size": 2105044,
+      "git_blob": "d131aa7779ede08aa92c002fb24c2f38ff1e6e2f"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC002/original-sheet.png",
+      "size": 1797691,
+      "git_blob": "cd685fb11ac094162495f0ec72ece9a796d2a875"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC006/original-sheet.png",
+      "size": 2638332,
+      "git_blob": "51703bba8fd74f4a37df6f628b8054b82aabbcbd"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC007/original-sheet.png",
+      "size": 1892065,
+      "git_blob": "c854afcda1a19268ffcf440143589d3357c18a0c"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC012/original-sheet.png",
+      "size": 2539091,
+      "git_blob": "fd8c7e69934a924825efc378299a5a3958e0519a"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC013/original-sheet.png",
+      "size": 2532850,
+      "git_blob": "18d2c724922d974239956bd15c3847823f24bd1e"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC014/original-sheet.png",
+      "size": 2360748,
+      "git_blob": "7cbd8c9647b690cc282d32a854eb1052f8903b4f"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC016/original-sheet.png",
+      "size": 2066843,
+      "git_blob": "42c1b13e756bbaa4b374d17a7758384c8ded634a"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC018/original-sheet.png",
+      "size": 2933268,
+      "git_blob": "9dc6be550c910de8b9f6ab8105abeeee3f44c377"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC023/original-sheet.png",
+      "size": 2551866,
+      "git_blob": "a071983ee2168460d04a28ba500228ab9c6310d0"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC058/original-sheet.png",
+      "size": 2027013,
+      "git_blob": "a3103b910c2b5b54944af7abcd881893cab8e310"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC058/release-qa.png",
+      "size": 294361,
+      "git_blob": "12c81ea34830172c81f67b9cfded5e035527a5e8"
+    },
+    {
+      "path": "docs/art/roster-first-batch/CC135/original-sheet.png",
+      "size": 2517911,
+      "git_blob": "98201bf4bd592101bdf4e10fd86ea2c16b626267"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC003/original-portrait.png",
+      "size": 4032782,
+      "git_blob": "e6406885ed917c52699a9d58d46122da1961700b"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC003/original-sheet.png",
+      "size": 2767358,
+      "git_blob": "e035c1fcc6a2921af96716b6940933e9472c0d16"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC004/original-portrait.png",
+      "size": 3809362,
+      "git_blob": "7e79236cacf0c38a7d6dc3663b9b5cb981985e61"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC004/original-sheet.png",
+      "size": 2781704,
+      "git_blob": "4ca013cbd3e36c8215ddcf1699bda5d6ba77fdfb"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC005/original-portrait.png",
+      "size": 3377102,
+      "git_blob": "42fa99801ec6648dc5f8663cc63fe232cfecb4bf"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC005/original-sheet.png",
+      "size": 3002560,
+      "git_blob": "aa466b880bed1cd4b34e47e65122667f110745d5"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC008/original-portrait.png",
+      "size": 4021124,
+      "git_blob": "71fce6a940035170db7f54a7c0f5fae519ef3831"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC008/original-sheet.png",
+      "size": 3353593,
+      "git_blob": "28ae19a2783f18f245e666aeef47e1e8f9de23b5"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC009/portrait-original.png",
+      "size": 3954217,
+      "git_blob": "04263f1fa0231022f66ff6feb4fd37173dcda359"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC009/pose-proof.png",
+      "size": 1136853,
+      "git_blob": "a82ae366891ceda751c3d3331474cab502852208"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC009/poses-original.png",
+      "size": 2339353,
+      "git_blob": "deae022e127face0b54337fe2d8fa090edb7f265"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC010/portrait-original.png",
+      "size": 4085506,
+      "git_blob": "a9740f988f6c198ec2c535d194fc2638a8e4db8a"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC010/pose-proof.png",
+      "size": 1061206,
+      "git_blob": "bd6abf1bfa9a6d95ff65226df85d18ca2c613fad"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC010/poses-original.png",
+      "size": 2378783,
+      "git_blob": "80b1bfd4111a6d1c32507d5a5595ec26c90b40ad"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC011/portrait-original.png",
+      "size": 3991381,
+      "git_blob": "acbb115b91dbdbabebe8492aa4ba6ce9caea8e5d"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC011/pose-proof.png",
+      "size": 795397,
+      "git_blob": "3f4706dc779cb982d13e2d92c5fee6fb5fe62570"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC011/poses-original.png",
+      "size": 2000842,
+      "git_blob": "cc48f182a8c88c3c35f4fbe5a10eeb8a9dc33997"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC017/portrait-original.png",
+      "size": 3710181,
+      "git_blob": "3988fe90614c1a9dff2e0b325f78b9cf97e840e2"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC017/pose-proof.png",
+      "size": 897830,
+      "git_blob": "ebcd414833a3f2dd00ea3345c3142ab22cfbdf80"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC017/poses-original.png",
+      "size": 2051174,
+      "git_blob": "8a72c7f6d1f48c0a4386467d791dda1f79e4d514"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC019/original-portrait.png",
+      "size": 3609341,
+      "git_blob": "94aff2e8c838c33b9e6f7944924f9b62444b1f97"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC019/original-sheet.png",
+      "size": 2733038,
+      "git_blob": "6b03b33fbf75cc5438d4948e59f9d1e92c218ad5"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC019/pose-review.png",
+      "size": 647644,
+      "git_blob": "95dc80f550a1bb5e969a3310531e7349af290ac7"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC020/original-portrait.png",
+      "size": 4089295,
+      "git_blob": "b4f839ed7db9aa7ed4a15e6181ddc9c6b20272f1"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC020/originals-before-substitution.png",
+      "size": 4089295,
+      "git_blob": "b4f839ed7db9aa7ed4a15e6181ddc9c6b20272f1"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC021/original-portrait.png",
+      "size": 3788888,
+      "git_blob": "7c032ea0ee7df504ce5be6b4c637550a74329aa0"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC021/original-sheet.png",
+      "size": 2602944,
+      "git_blob": "b31bc3b54b7b5a6eddf2adfc311f7eafe0ede662"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC021/pose-review.png",
+      "size": 525508,
+      "git_blob": "87842827a0c1113afe634586ea55727e4994704a"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC022/original-portrait-walle-street.png",
+      "size": 3636584,
+      "git_blob": "2c7992d6463f21e79c7a28e99c3ab1410a122b52"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC022/original-portrait.png",
+      "size": 3623146,
+      "git_blob": "7ce8e45dbae4f24786a7d566ff0dc34871e136ea"
+    },
+    {
+      "path": "docs/art/roster-second-batch/CC022/originals-before-substitution.png",
+      "size": 3623146,
+      "git_blob": "7ce8e45dbae4f24786a7d566ff0dc34871e136ea"
+    },
+    {
+      "path": "docs/art/specials/CC001.png",
+      "size": 1453160,
+      "git_blob": "d17dd1a78ba5d6de6ecf44d59214eee02f1463f8"
+    },
+    {
+      "path": "docs/art/specials/CC002.png",
+      "size": 1832435,
+      "git_blob": "1b6cb6a25d02eaa35cfd054c293f8ffc225c40a6"
+    },
+    {
+      "path": "docs/art/specials/CC003.png",
+      "size": 2278773,
+      "git_blob": "39dc4efaf6ff42e86f70ccd62d1e8b0a31b6ac09"
+    },
+    {
+      "path": "docs/art/specials/CC004.png",
+      "size": 2721120,
+      "git_blob": "446b8eae03e43b629e467b37bedc297194cab281"
+    },
+    {
+      "path": "docs/art/specials/CC005.png",
+      "size": 1689120,
+      "git_blob": "e4795b20a0aeb1ad43ea7991eb8bd2408855fc7e"
+    },
+    {
+      "path": "docs/art/specials/CC006.png",
+      "size": 1445975,
+      "git_blob": "cd9c22cdd1920c46d18238d7a3c1e6d3a98f9bb0"
+    },
+    {
+      "path": "docs/art/specials/CC007.png",
+      "size": 1827115,
+      "git_blob": "defcc20275712a2a052fe9267aa9fdf0de5c9904"
+    },
+    {
+      "path": "docs/art/specials/CC008.png",
+      "size": 2290516,
+      "git_blob": "00cf6e2510a07198a71eea19e327c17fd5bb6b30"
+    },
+    {
+      "path": "docs/art/specials/CC009.png",
+      "size": 1781249,
+      "git_blob": "33a7b68b45072d6a7d2952eaf5c49d163d808aee"
+    },
+    {
+      "path": "docs/art/specials/CC010.png",
+      "size": 2089587,
+      "git_blob": "1c0e707d8751e1aabed351f4db50e6e4e8dbc1b4"
+    },
+    {
+      "path": "docs/art/specials/CC011.png",
+      "size": 1396777,
+      "git_blob": "1a7954082ae37faedf61d9523ab129a412a2c66e"
+    },
+    {
+      "path": "docs/art/specials/CC012.png",
+      "size": 2465061,
+      "git_blob": "bcc04e99e77f14fc3ad42c284667e252175bebb9"
+    },
+    {
+      "path": "docs/art/specials/CC013.png",
+      "size": 2533369,
+      "git_blob": "ea59019c6bb32db0174f1ed81bd0a75711e61d20"
+    },
+    {
+      "path": "docs/art/specials/CC014.png",
+      "size": 2155965,
+      "git_blob": "41865c5bd3e905eb863d299c7bd38e5eaf2c10d0"
+    },
+    {
+      "path": "docs/art/specials/CC015.png",
+      "size": 2272750,
+      "git_blob": "e1161c318125a87a0aa9846583b6f19596159635"
+    },
+    {
+      "path": "docs/art/specials/CC016.png",
+      "size": 1222565,
+      "git_blob": "7659f3c3631fb904b7aadc6fb03ee91ef87c41d8"
+    },
+    {
+      "path": "docs/art/specials/CC017.png",
+      "size": 1712569,
+      "git_blob": "957fffe0a7c337cb8ae62d2b98604493a21d4982"
+    },
+    {
+      "path": "docs/art/specials/CC018.png",
+      "size": 3161323,
+      "git_blob": "03c3b5bd8a125871842425b2a3222d8de1771bc8"
+    },
+    {
+      "path": "docs/art/specials/CC019.png",
+      "size": 2121594,
+      "git_blob": "fe78b2b09b3246de9f7c7783ebf80552286dabfb"
+    },
+    {
+      "path": "docs/art/specials/CC020.png",
+      "size": 2266830,
+      "git_blob": "735da896f986259f50c59af474567a80df93f0d4"
+    },
+    {
+      "path": "docs/art/specials/CC021.png",
+      "size": 1307104,
+      "git_blob": "b9edb8feaddf8e9e995c1855746a8dc5fa5063c1"
+    },
+    {
+      "path": "docs/art/specials/CC022.png",
+      "size": 2810287,
+      "git_blob": "ae482695c2c3a389a914037e5f5de5dc3b4a9907"
+    },
+    {
+      "path": "docs/art/specials/CC023.png",
+      "size": 2171753,
+      "git_blob": "cb10358aa6072aa0549d0d30ad157a5da21340ca"
+    },
+    {
+      "path": "docs/art/specials/CC024.png",
+      "size": 1722953,
+      "git_blob": "87a4c4b3dbff10ed4fe7622efb79a9b719818c79"
+    },
+    {
+      "path": "docs/art/specials/CC025.png",
+      "size": 1930354,
+      "git_blob": "9070985092760bc580e1ae60c6c03f9b98aa2b73"
+    },
+    {
+      "path": "docs/art/specials/CC026.png",
+      "size": 1448482,
+      "git_blob": "79ccf17de860b53e579e000bd167e586ad695af4"
+    },
+    {
+      "path": "docs/art/specials/CC027.png",
+      "size": 2710950,
+      "git_blob": "8c91ed95429c993b0bddb9a64d08b90fd0e087fa"
+    },
+    {
+      "path": "docs/art/specials/CC028.png",
+      "size": 2505423,
+      "git_blob": "b853ede60346503f1cb95c75fba4a4cf8527542d"
+    },
+    {
+      "path": "docs/art/specials/CC029.png",
+      "size": 2423713,
+      "git_blob": "5edc2907979a1b82e86601902a3993192ec3f245"
+    },
+    {
+      "path": "docs/art/specials/CC030.png",
+      "size": 2351371,
+      "git_blob": "bad86d798ae4385b665da6dabb7d4aed84fb7da4"
+    },
+    {
+      "path": "docs/art/specials/CC031.png",
+      "size": 2212678,
+      "git_blob": "82c6d00316953b780037cb193244d4d694b4e44d"
+    },
+    {
+      "path": "docs/art/specials/CC032.png",
+      "size": 1563273,
+      "git_blob": "c4d425a5ddf78865c3cc22c8054f959adbf7111c"
+    },
+    {
+      "path": "docs/art/specials/CC033.png",
+      "size": 2472295,
+      "git_blob": "675efdc3641e7a29f1418a18f9e0d5d395690693"
+    },
+    {
+      "path": "docs/art/specials/CC034.png",
+      "size": 2638054,
+      "git_blob": "c4ab361f6dc4e50dfafd85c25b0c3196f9094ca8"
+    },
+    {
+      "path": "docs/art/specials/CC035.png",
+      "size": 2181363,
+      "git_blob": "be38e4aadb21cc2f1fb015812e13bcd08d0ee676"
+    },
+    {
+      "path": "docs/art/specials/CC036.png",
+      "size": 1748275,
+      "git_blob": "89a8a7b9a27dd8b6868d3c09484874c78d70acb5"
+    },
+    {
+      "path": "docs/art/specials/CC037.png",
+      "size": 2216255,
+      "git_blob": "7e00e95f626954b028a828b73e9141a49956ce90"
+    },
+    {
+      "path": "docs/art/specials/CC038.png",
+      "size": 2040148,
+      "git_blob": "24fcb4ef39135712824f9698f560eb181fceb243"
+    },
+    {
+      "path": "docs/art/specials/CC039.png",
+      "size": 2122458,
+      "git_blob": "2e405c772e49b16cf9e78064364fa76b62cec96b"
+    },
+    {
+      "path": "docs/art/specials/CC040.png",
+      "size": 1670222,
+      "git_blob": "1a7d3c9d22d9b85de7408e41ad1068f71fa9b576"
+    },
+    {
+      "path": "docs/art/specials/CC041.png",
+      "size": 1773637,
+      "git_blob": "cbb2f99805553f1e8c6057dd5a9efd4afbc8f02c"
+    },
+    {
+      "path": "docs/art/specials/CC042.png",
+      "size": 2632491,
+      "git_blob": "b9a00154398b2e72c999d314eadbfc83f0e0d5f2"
+    },
+    {
+      "path": "docs/art/title-logo.png",
+      "size": 2243635,
+      "git_blob": "d88e5ff20e431742ece5b49570dc90f6ebc95cb5"
+    },
+    {
+      "path": "docs/art/wave-five/CC067-portrait.png",
+      "size": 4319324,
+      "git_blob": "01e4bbc6f2afb36933d48121922670b1b6e46298"
+    },
+    {
+      "path": "docs/art/wave-five/CC067-poses.png",
+      "size": 3287871,
+      "git_blob": "3332250c0b10a41a1cb2a6a19db4b4be3b9876da"
+    },
+    {
+      "path": "docs/art/wave-five/CC067-review.jpg",
+      "size": 162582,
+      "git_blob": "63f4920248e5c3976976f8bfedc52964f647dd90"
+    },
+    {
+      "path": "docs/art/wave-five/CC068-portrait.png",
+      "size": 3777651,
+      "git_blob": "26dcad93b6decfabce146706ba50bc0d31ec45d9"
+    },
+    {
+      "path": "docs/art/wave-five/CC068-poses.png",
+      "size": 3065955,
+      "git_blob": "f5a01595a5a56c92b6b3cb631e106207bb25d7e1"
+    },
+    {
+      "path": "docs/art/wave-five/CC068-review.jpg",
+      "size": 141484,
+      "git_blob": "346f5828dcf242b753b00e172311f90ea5c2584b"
+    },
+    {
+      "path": "docs/art/wave-five/CC069-portrait.png",
+      "size": 4146104,
+      "git_blob": "5b55830ae7f6223d6533600279d2d6d2ad02f785"
+    },
+    {
+      "path": "docs/art/wave-five/CC069-poses.png",
+      "size": 2622261,
+      "git_blob": "89024cc0fb2fbdc1caaa6ba4a87fe2984813c085"
+    },
+    {
+      "path": "docs/art/wave-five/CC069-review.jpg",
+      "size": 115265,
+      "git_blob": "149b60897f047cab48de333d03244f9057c5c554"
+    },
+    {
+      "path": "docs/art/wave-five/CC070-portrait.png",
+      "size": 3849186,
+      "git_blob": "5add1e58c5cf97ede6b75b930d0b28b05a8d8033"
+    },
+    {
+      "path": "docs/art/wave-five/CC070-poses.png",
+      "size": 3193012,
+      "git_blob": "c39d954a1e35f6768a972afc0e73cb12d10b1228"
+    },
+    {
+      "path": "docs/art/wave-five/CC070-review.jpg",
+      "size": 151636,
+      "git_blob": "f6f46b607cba11e2d2e99274c1670f2540d7e63f"
+    },
+    {
+      "path": "docs/art/wave-five/CC071-portrait.png",
+      "size": 4017873,
+      "git_blob": "4c9c19bac6181e4a38cdbd9392e48b01515f55a7"
+    },
+    {
+      "path": "docs/art/wave-five/CC071-poses.png",
+      "size": 3240263,
+      "git_blob": "29de08eea236a8d2d030267e5e8928d660a55619"
+    },
+    {
+      "path": "docs/art/wave-five/CC071-review.jpg",
+      "size": 155489,
+      "git_blob": "59d37f49a9c206d7a40fd2c924bf2b516f874007"
+    },
+    {
+      "path": "docs/art/wave-five/CC072-portrait.png",
+      "size": 3750216,
+      "git_blob": "82e3d8ad57cc67bccbc1eb50a2e30bf7aeb4dc5d"
+    },
+    {
+      "path": "docs/art/wave-five/CC072-poses.png",
+      "size": 3044721,
+      "git_blob": "5dcba5226bb9c0999b7ae6f0e8b275b57b93d15b"
+    },
+    {
+      "path": "docs/art/wave-five/CC072-review.jpg",
+      "size": 163629,
+      "git_blob": "90bd2a25ebf7f65dee89357c1516eee18bf0277d"
+    },
+    {
+      "path": "docs/art/wave-five/CC073-portrait.png",
+      "size": 4141709,
+      "git_blob": "86284707cdd4e9a021e6126341f38ecd04bd44fd"
+    },
+    {
+      "path": "docs/art/wave-five/CC073-poses.png",
+      "size": 3060886,
+      "git_blob": "35f02feba1770e95513053e87bb3c8bcc10518dc"
+    },
+    {
+      "path": "docs/art/wave-five/CC073-review.jpg",
+      "size": 152557,
+      "git_blob": "a5b20c5b94406e795d7042b2b8f51f27931609ff"
+    },
+    {
+      "path": "docs/art/wave-five/CC074-portrait.png",
+      "size": 4109685,
+      "git_blob": "27288d4a9a15dac6f31e368478ce793bf2460f0a"
+    },
+    {
+      "path": "docs/art/wave-five/CC074-poses.png",
+      "size": 2833855,
+      "git_blob": "84f1ca7331d7bb30e12d2116e5d619e34bb05f06"
+    },
+    {
+      "path": "docs/art/wave-five/CC074-review.jpg",
+      "size": 138258,
+      "git_blob": "f7be035acfbec0a7770ab2739f205159aac597b5"
+    },
+    {
+      "path": "docs/art/wave-five/CC081-portrait.png",
+      "size": 4342219,
+      "git_blob": "5b07980843e766294a5cbac8203c580758cb6e6f"
+    },
+    {
+      "path": "docs/art/wave-five/CC081-poses.png",
+      "size": 3166197,
+      "git_blob": "a1a9223c57fd1e6a2cd877b48fff65ffdf949331"
+    },
+    {
+      "path": "docs/art/wave-five/CC081-review.jpg",
+      "size": 107405,
+      "git_blob": "0638c7d079f7650be0826f618679b2097cfc23b6"
+    },
+    {
+      "path": "docs/art/wave-five/CC082-portrait.png",
+      "size": 3912461,
+      "git_blob": "1fcdd1673719e5c262250fbd0c650c0a01efafe0"
+    },
+    {
+      "path": "docs/art/wave-five/CC082-poses.png",
+      "size": 2899763,
+      "git_blob": "597dae71fdb3cf41c0661abdee9667ae7b3ce7c7"
+    },
+    {
+      "path": "docs/art/wave-five/CC082-review.jpg",
+      "size": 95225,
+      "git_blob": "e57810c16b5300a1f3a108a1e7a7db7ceb3e5963"
+    },
+    {
+      "path": "docs/art/wave-five/CC083-portrait.png",
+      "size": 4157395,
+      "git_blob": "8f550630fefe0a4f0c917d9f00605c1e4704571a"
+    },
+    {
+      "path": "docs/art/wave-five/CC083-poses.png",
+      "size": 3523228,
+      "git_blob": "a993984f21882b51723f29ba0f58f9fc992be7ba"
+    },
+    {
+      "path": "docs/art/wave-five/CC083-review.jpg",
+      "size": 124920,
+      "git_blob": "66766843d9d2bacf9ea2646041ab05b3d2d9c3ff"
+    },
+    {
+      "path": "docs/art/wave-five/CC084-portrait.png",
+      "size": 4188133,
+      "git_blob": "6dc5b90bf34856510de119123496cf8d5ce4aef7"
+    },
+    {
+      "path": "docs/art/wave-five/CC084-poses.png",
+      "size": 2760522,
+      "git_blob": "68036af8ccf71c6a79425710c6c41361c0c2556b"
+    },
+    {
+      "path": "docs/art/wave-five/CC084-review.jpg",
+      "size": 86483,
+      "git_blob": "9745bc1111029e4aeaf54101ff1cb3d7882726dc"
+    },
+    {
+      "path": "docs/art/wave-five/CC085-portrait.png",
+      "size": 3745239,
+      "git_blob": "44975831e04be4c957970e8a485650f6cd481ec6"
+    },
+    {
+      "path": "docs/art/wave-five/CC085-poses.png",
+      "size": 2700143,
+      "git_blob": "3fc114fd4198d495e5e4c36faf56faf27bbc79f4"
+    },
+    {
+      "path": "docs/art/wave-five/CC085-review.jpg",
+      "size": 98454,
+      "git_blob": "f31f47190eb7eb62ca2e3c623a7f77f3daa99838"
+    },
+    {
+      "path": "docs/art/wave-five/CC086-portrait.png",
+      "size": 4014770,
+      "git_blob": "0936662282c150645b96f4eb184d9a9a7fd42768"
+    },
+    {
+      "path": "docs/art/wave-five/CC086-poses.png",
+      "size": 2432751,
+      "git_blob": "5131b7d12583b265cff8ad18949275f27f2eb4be"
+    },
+    {
+      "path": "docs/art/wave-five/CC086-review.jpg",
+      "size": 74091,
+      "git_blob": "ac47cad311f72f217f626460be22fcf3f138f0b6"
+    },
+    {
+      "path": "docs/art/wave-five/CC087-portrait.png",
+      "size": 3919759,
+      "git_blob": "65dc008c298ac95e8fa7173c64b0bb8c1925f4f6"
+    },
+    {
+      "path": "docs/art/wave-five/CC087-poses.png",
+      "size": 2604232,
+      "git_blob": "2d0f051e4e3bd4feeba16219f5d39c6124ca256f"
+    },
+    {
+      "path": "docs/art/wave-five/CC087-review.jpg",
+      "size": 74603,
+      "git_blob": "4407e9aee0f9eedcac70ba284988c83cdd73d2da"
+    },
+    {
+      "path": "docs/art/wave-five/CC088-portrait.png",
+      "size": 3852775,
+      "git_blob": "e0d3a55ca7821763d3dca73895823004f07d9c02"
+    },
+    {
+      "path": "docs/art/wave-five/CC088-poses.png",
+      "size": 3055360,
+      "git_blob": "4c7bf86b2e7cad7f9b562f5a4289222a4e0fcfdd"
+    },
+    {
+      "path": "docs/art/wave-five/CC088-review.jpg",
+      "size": 90029,
+      "git_blob": "c3064673c26c03dbe9db438e631f83ae63f0f863"
+    },
+    {
+      "path": "docs/art/wave-five/CC095-portrait.png",
+      "size": 3613671,
+      "git_blob": "14c8ec9f4a4823276d72ec5650d6243de3958f2d"
+    },
+    {
+      "path": "docs/art/wave-five/CC095-poses.png",
+      "size": 2536378,
+      "git_blob": "5da382360dcf62b2f33d3bf7c756dc4760e5d321"
+    },
+    {
+      "path": "docs/art/wave-five/CC095-review.jpg",
+      "size": 140510,
+      "git_blob": "338064e24085fae6ebfd71871e3a137d260c7040"
+    },
+    {
+      "path": "docs/art/wave-five/CC096-portrait.png",
+      "size": 3818564,
+      "git_blob": "23c847d18dc98476eaf0e76f2c23e624a01fe924"
+    },
+    {
+      "path": "docs/art/wave-five/CC096-poses.png",
+      "size": 2681411,
+      "git_blob": "a2034f79c5b27fc04f8b97678113fa062794594b"
+    },
+    {
+      "path": "docs/art/wave-five/CC096-review.jpg",
+      "size": 138998,
+      "git_blob": "1b41afcf76c9ddde74b1271af8e82677c128f261"
+    },
+    {
+      "path": "docs/art/wave-five/CC097-portrait.png",
+      "size": 3514339,
+      "git_blob": "80a904705f4f7dd48b12e099652a660084bbd0b1"
+    },
+    {
+      "path": "docs/art/wave-five/CC097-poses.png",
+      "size": 2625891,
+      "git_blob": "c8bcb103631743df7ff0f47527a26f64cec67c9f"
+    },
+    {
+      "path": "docs/art/wave-five/CC097-review.jpg",
+      "size": 135682,
+      "git_blob": "f6ecfbcdbe17470b105c8444e0ee5cf0184e45f1"
+    },
+    {
+      "path": "docs/art/wave-five/CC098-portrait.png",
+      "size": 3968599,
+      "git_blob": "2744f5833837e4b899ea49d4ffec21c6677376fd"
+    },
+    {
+      "path": "docs/art/wave-five/CC098-poses.png",
+      "size": 2510484,
+      "git_blob": "221bb16f823b5ea1eb47aafb8a5f3d76eea39824"
+    },
+    {
+      "path": "docs/art/wave-five/CC098-review.jpg",
+      "size": 153327,
+      "git_blob": "3d578d1275f9cacfc853c56d5f8a020739f62ffb"
+    },
+    {
+      "path": "docs/art/wave-five/CC099-portrait.png",
+      "size": 3693737,
+      "git_blob": "c63135d4189a2425baab4037244b21140e745276"
+    },
+    {
+      "path": "docs/art/wave-five/CC099-poses.png",
+      "size": 3012498,
+      "git_blob": "7cd37ffacc9d0bdeb47832ccd56af5a1e1daab70"
+    },
+    {
+      "path": "docs/art/wave-five/CC099-review.jpg",
+      "size": 163277,
+      "git_blob": "1c314f3c59b32ed1661b66fe2627c8945fc6306e"
+    },
+    {
+      "path": "docs/art/wave-five/CC100-portrait.png",
+      "size": 4141716,
+      "git_blob": "f5c32b03546f2b8142b7e09d7f3cadc33737a973"
+    },
+    {
+      "path": "docs/art/wave-five/CC100-poses.png",
+      "size": 3014392,
+      "git_blob": "e3c991c508ac3dc3406e818c796cc62687507a3e"
+    },
+    {
+      "path": "docs/art/wave-five/CC100-review.jpg",
+      "size": 159726,
+      "git_blob": "9b0209f4bb5f0be3a3dfedb0aeeffe12a95041b9"
+    },
+    {
+      "path": "docs/art/wave-five/CC101-portrait.png",
+      "size": 3527316,
+      "git_blob": "692684801b05c1b721dd0bcc6880dac8e15f15ab"
+    },
+    {
+      "path": "docs/art/wave-five/CC101-poses.png",
+      "size": 2768219,
+      "git_blob": "a33ecccc7163fe70498fb46c89203ee9b13522ac"
+    },
+    {
+      "path": "docs/art/wave-five/CC101-review.jpg",
+      "size": 143397,
+      "git_blob": "f34a6358c23d33486ffd36021bc1dcc92172bae9"
+    },
+    {
+      "path": "docs/art/wave-five/CC102-portrait.png",
+      "size": 4113667,
+      "git_blob": "e949a00723c242583fee4ca29af7524236433174"
+    },
+    {
+      "path": "docs/art/wave-five/CC102-poses.png",
+      "size": 2982094,
+      "git_blob": "ddb113a9543130a487da91d09e2641c807d97653"
+    },
+    {
+      "path": "docs/art/wave-five/CC102-review.jpg",
+      "size": 165382,
+      "git_blob": "f5dc1aa246bdc925086b166547c7dbc680e90c1a"
+    },
+    {
+      "path": "docs/art/wave-five/CC103-portrait.png",
+      "size": 3929266,
+      "git_blob": "55437daeb674ba82dd456cf31261b1ab55aa5bb7"
+    },
+    {
+      "path": "docs/art/wave-five/CC103-poses.png",
+      "size": 2787587,
+      "git_blob": "2cb683013afc581e0e12f9604ce64f88b05441b5"
+    },
+    {
+      "path": "docs/art/wave-five/CC103-review.jpg",
+      "size": 151100,
+      "git_blob": "8b5d2ad5a10850bf581be00a63090f72ef3b6b9e"
+    },
+    {
+      "path": "docs/art/wave-five/CC104-portrait.png",
+      "size": 3948415,
+      "git_blob": "07b0accbce491697da1acf7cbce9439c454be656"
+    },
+    {
+      "path": "docs/art/wave-five/CC104-poses.png",
+      "size": 2530443,
+      "git_blob": "d3144c9d80ec23f5c873a57efa1eb17e2a103700"
+    },
+    {
+      "path": "docs/art/wave-five/CC104-review.jpg",
+      "size": 130071,
+      "git_blob": "4b2a02d659b8ac045ecf9ce3fc89a2cd951ce704"
+    },
+    {
+      "path": "docs/art/wave-five/CC105-portrait.png",
+      "size": 4105286,
+      "git_blob": "a543a5446d4e3836f425f65db1b5b8319738c9e9"
+    },
+    {
+      "path": "docs/art/wave-five/CC105-poses.png",
+      "size": 2631892,
+      "git_blob": "928ef7cd82ded8fb4e9dadd930f0bc70ba8cdce7"
+    },
+    {
+      "path": "docs/art/wave-five/CC105-review.jpg",
+      "size": 139862,
+      "git_blob": "d48211aad035c20f89128a52ab7957dae7212baa"
+    },
+    {
+      "path": "docs/art/wave-five/CC106-portrait.png",
+      "size": 4140488,
+      "git_blob": "98be77f6fa30211c46e6934ecca62fa6befa82ee"
+    },
+    {
+      "path": "docs/art/wave-five/CC106-poses.png",
+      "size": 3106595,
+      "git_blob": "56c8530b0a04ea10074b530b8e643c5b78c1a13a"
+    },
+    {
+      "path": "docs/art/wave-five/CC106-review.jpg",
+      "size": 165399,
+      "git_blob": "86bc605bcdaeec2b116edb5c58cf8843488c8c9b"
+    },
+    {
+      "path": "docs/art/wave-five/CC109-portrait.png",
+      "size": 4243350,
+      "git_blob": "dd32e93c6336300228e057ec9d13aac06b3e763e"
+    },
+    {
+      "path": "docs/art/wave-five/CC109-poses.png",
+      "size": 3182253,
+      "git_blob": "83acc90877cb564bda9691b2cc2f36d858785a0e"
+    },
+    {
+      "path": "docs/art/wave-five/CC109-review.jpg",
+      "size": 117461,
+      "git_blob": "620830d33c9ef19ee69139b85d95f2691f69ee9d"
+    },
+    {
+      "path": "docs/art/wave-five/CC110-portrait.png",
+      "size": 3974238,
+      "git_blob": "b0703096b391062bc31806aa151fdd01892481bf"
+    },
+    {
+      "path": "docs/art/wave-five/CC110-poses.png",
+      "size": 3241185,
+      "git_blob": "f3ae70173a965168b7b01bbbbab583615f4c22d2"
+    },
+    {
+      "path": "docs/art/wave-five/CC110-review.jpg",
+      "size": 109355,
+      "git_blob": "1da078ccbb008704dec30ae7ab35880ce07fd39c"
+    },
+    {
+      "path": "docs/art/wave-five/CC111-portrait.png",
+      "size": 3825389,
+      "git_blob": "aea8f565004064fa809051ef439d14139845bbf8"
+    },
+    {
+      "path": "docs/art/wave-five/CC111-poses.png",
+      "size": 2704361,
+      "git_blob": "c31d38419d6e33a0fe13b925bd611b66b5acf4d0"
+    },
+    {
+      "path": "docs/art/wave-five/CC111-review.jpg",
+      "size": 103011,
+      "git_blob": "2d01b1de0d6a176776a8b9c286a8fda1cac38359"
+    },
+    {
+      "path": "docs/art/wave-five/CC112-portrait.png",
+      "size": 3806930,
+      "git_blob": "1c04a8a9a390a3c269a0b7855fefe7d0fd40d2a1"
+    },
+    {
+      "path": "docs/art/wave-five/CC112-poses.png",
+      "size": 2649753,
+      "git_blob": "e4a3b41288972e67b80f7214afa0eda66cf8d1d3"
+    },
+    {
+      "path": "docs/art/wave-five/CC112-review.jpg",
+      "size": 102582,
+      "git_blob": "48596010198a9c52a057ed88320ddbc1c1f4c21d"
+    },
+    {
+      "path": "docs/art/wave-five/CC113-portrait.png",
+      "size": 4172944,
+      "git_blob": "29bf6ec1afb33598e334cbd3260a6b7a5558a74f"
+    },
+    {
+      "path": "docs/art/wave-five/CC113-poses.png",
+      "size": 3164510,
+      "git_blob": "4970f7e65706164888a44e7b33e13166b5f47161"
+    },
+    {
+      "path": "docs/art/wave-five/CC113-review.jpg",
+      "size": 113292,
+      "git_blob": "a06934d6dae7a4a22bd075e316d478a04b0eaed6"
+    },
+    {
+      "path": "docs/art/wave-five/CC123-portrait.png",
+      "size": 3906431,
+      "git_blob": "4e0e38459373495e4706a5599db998306295ed50"
+    },
+    {
+      "path": "docs/art/wave-five/CC123-poses.png",
+      "size": 2872761,
+      "git_blob": "99d984ca6db66e6073742a4b8674304f9c9ae65d"
+    },
+    {
+      "path": "docs/art/wave-five/CC123-review.jpg",
+      "size": 89480,
+      "git_blob": "255b975f91d57859d058ae4069d449acd3aa9724"
+    },
+    {
+      "path": "docs/art/wave-five/CC124-portrait.png",
+      "size": 4015510,
+      "git_blob": "1f1a4d29da28ea75f589a2d4e0b01918b7094263"
+    },
+    {
+      "path": "docs/art/wave-five/CC124-poses.png",
+      "size": 2852102,
+      "git_blob": "4be39c983ddd8bcaccb852f984d86c287fe13faa"
+    },
+    {
+      "path": "docs/art/wave-five/CC124-review.jpg",
+      "size": 95046,
+      "git_blob": "79ca4e92fbcaac1f8dc66f41585fc7af3f606a7b"
+    },
+    {
+      "path": "docs/art/wave-five/CC125-portrait.png",
+      "size": 3931318,
+      "git_blob": "a7c7c7b5f46028294a197dd59219d929b81e10da"
+    },
+    {
+      "path": "docs/art/wave-five/CC125-poses.png",
+      "size": 2711935,
+      "git_blob": "7da41760dc717df6c9b6e4567da3c93981ff672d"
+    },
+    {
+      "path": "docs/art/wave-five/CC125-review.jpg",
+      "size": 91009,
+      "git_blob": "e7996e9c4776183d2feddc198d395cc7432bab69"
+    },
+    {
+      "path": "docs/art/wave-five/CC126-portrait.png",
+      "size": 4407207,
+      "git_blob": "dc5af51f0203cfdae055544436951ad124e0ed2b"
+    },
+    {
+      "path": "docs/art/wave-five/CC126-poses.png",
+      "size": 3505709,
+      "git_blob": "f50048ddf716b9e9c247b069aaec4992edc7e3e4"
+    },
+    {
+      "path": "docs/art/wave-five/CC126-review.jpg",
+      "size": 121893,
+      "git_blob": "fe328cd6eee02dcc6f10a0468a61b07b0e5e85c0"
+    },
+    {
+      "path": "docs/art/wave-five/CC127-portrait.png",
+      "size": 4591909,
+      "git_blob": "87bfc8c27b32b2ec9befd344106a1ef38260b8fc"
+    },
+    {
+      "path": "docs/art/wave-five/CC127-poses.png",
+      "size": 2945166,
+      "git_blob": "6652661dc2d59bfc850ecc6868268afc0094ad9c"
+    },
+    {
+      "path": "docs/art/wave-five/CC127-review.jpg",
+      "size": 94097,
+      "git_blob": "777c3d67da4eaaab7dbed6e4c9b06e69f10a3d12"
+    },
+    {
+      "path": "docs/art/wave-five/CC128-portrait.png",
+      "size": 3866296,
+      "git_blob": "7d7aaef2e7bd92202e248515d206b6b02189dc55"
+    },
+    {
+      "path": "docs/art/wave-five/CC128-poses.png",
+      "size": 2932082,
+      "git_blob": "34a00afa53b46714668c33891fb43d3129e880c0"
+    },
+    {
+      "path": "docs/art/wave-five/CC128-review.jpg",
+      "size": 96467,
+      "git_blob": "de934f3e8657db4d970cbebe367aa07becc3653d"
+    },
+    {
+      "path": "docs/art/wave-five/CC135-portrait.png",
+      "size": 3913659,
+      "git_blob": "dd6e4dad1420bfe19f00b09a48e0c8013ac582a1"
+    },
+    {
+      "path": "docs/art/wave-five/CC135-poses.png",
+      "size": 3216580,
+      "git_blob": "be80c41f2802487894abb9ed1092a5c5bed4d478"
+    },
+    {
+      "path": "docs/art/wave-five/CC135-review.jpg",
+      "size": 115353,
+      "git_blob": "7572f20e52773e3dd9ab15cc682d6ca46c1f91f1"
+    },
+    {
+      "path": "docs/art/wave-five/CC136-portrait.png",
+      "size": 3916103,
+      "git_blob": "d97c9ff1a9ce9473454f30acbc2429af52034c45"
+    },
+    {
+      "path": "docs/art/wave-five/CC136-poses.png",
+      "size": 3481691,
+      "git_blob": "21b7bfaff22966b5b3de48f6ec27978ddfd5452a"
+    },
+    {
+      "path": "docs/art/wave-five/CC136-review.jpg",
+      "size": 122592,
+      "git_blob": "386d1d9ec5b5c25fdf37b7caccb2be54d37a2f2e"
+    },
+    {
+      "path": "docs/art/wave-five/CC137-portrait.png",
+      "size": 4035730,
+      "git_blob": "e04c52649b39e410a27ebabbf8b5f37d4bc6bacd"
+    },
+    {
+      "path": "docs/art/wave-five/CC137-poses.png",
+      "size": 3002907,
+      "git_blob": "67825a18346eee021478b4953171d80b9f65ec71"
+    },
+    {
+      "path": "docs/art/wave-five/CC137-review.jpg",
+      "size": 105125,
+      "git_blob": "d787f6eb46928e82ac3a6b95fd240a614eb10af0"
+    },
+    {
+      "path": "docs/art/wave-five/CC138-portrait.png",
+      "size": 4000827,
+      "git_blob": "efe935983421891bfec5e110a494086b3f6acba5"
+    },
+    {
+      "path": "docs/art/wave-five/CC138-poses.png",
+      "size": 3509388,
+      "git_blob": "c4e2fd8942bff39bf7de752d9f988529643a1397"
+    },
+    {
+      "path": "docs/art/wave-five/CC138-review.jpg",
+      "size": 112146,
+      "git_blob": "9b343b77496b335529bb6d72aba164934585ccfc"
+    },
+    {
+      "path": "docs/art/wave-five/CC139-portrait.png",
+      "size": 3467996,
+      "git_blob": "d1de80a525555e2420ffda56c42a2d352580339b"
+    },
+    {
+      "path": "docs/art/wave-five/CC139-poses.png",
+      "size": 2965933,
+      "git_blob": "720538d6ed3169575be1931bea6066a122b297c9"
+    },
+    {
+      "path": "docs/art/wave-five/CC139-review.jpg",
+      "size": 91838,
+      "git_blob": "3847362cc18c903420cf20d969843a08e9e00773"
+    },
+    {
+      "path": "docs/art/wave-five/CC140-portrait.png",
+      "size": 3817551,
+      "git_blob": "106f760f52d9d34af2826a7698e63ff737ea487f"
+    },
+    {
+      "path": "docs/art/wave-five/CC140-poses.png",
+      "size": 3228662,
+      "git_blob": "c380b36b252c01b64995da136f7f81e9d57e3e08"
+    },
+    {
+      "path": "docs/art/wave-five/CC140-review.jpg",
+      "size": 119096,
+      "git_blob": "53def7def65f72d9784cbb450ad83bbc40ea99cb"
+    },
+    {
+      "path": "docs/art/wave-five/CC141-portrait.png",
+      "size": 3829356,
+      "git_blob": "647a37a8c471941efe5a1ade3e004d7fca5dcde4"
+    },
+    {
+      "path": "docs/art/wave-five/CC141-poses.png",
+      "size": 3097161,
+      "git_blob": "322e904c71d2ec2322d395b2f41ff7210e944ba1"
+    },
+    {
+      "path": "docs/art/wave-five/CC141-review.jpg",
+      "size": 100680,
+      "git_blob": "8826444872474a2454730db02988265b8241912e"
+    },
+    {
+      "path": "docs/art/wave-five/CC142-portrait.png",
+      "size": 3904125,
+      "git_blob": "c21487602fbc2bfababccf0cd11f92dd8d75a396"
+    },
+    {
+      "path": "docs/art/wave-five/CC142-poses.png",
+      "size": 3286086,
+      "git_blob": "f7f6a4992a737192d420c29b71f1a7a2a4e76dc3"
+    },
+    {
+      "path": "docs/art/wave-five/CC142-review.jpg",
+      "size": 113942,
+      "git_blob": "0dcbf4605a9700f5c9c6917bb54cbdf30fc3fba1"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC075/portrait.png",
+      "size": 4131577,
+      "git_blob": "d042a7947542186ce6ec9ebd869fde529393cca5"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC075/portrait.webp",
+      "size": 381898,
+      "git_blob": "4b5af0149131681061539bc6afcf83e713dc8779"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC075/ref.jpg",
+      "size": 192435,
+      "git_blob": "a07d22655b95544c70df4f470cc40a22e60b6009"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC075/small.webp",
+      "size": 58086,
+      "git_blob": "d34be28f882ffd308f000481bd436e741e509171"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/actor-0.webp",
+      "size": 65488,
+      "git_blob": "f1118040c635f6d225ffeb22db020f7c763be723"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/actor-1.webp",
+      "size": 64942,
+      "git_blob": "986d703086121494c41557ad09533d3625c5c74c"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/actor-2.webp",
+      "size": 87132,
+      "git_blob": "6364f84f74e0fbaff7be51da6153503413cb4f25"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/actor-3.webp",
+      "size": 57618,
+      "git_blob": "a2561075b36d97ed876a8a6b578aa5dfc0c5738e"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/actor-4.webp",
+      "size": 62326,
+      "git_blob": "a15fd1f69230ef20815134a39ac76617cd8a28ef"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/actor-5.webp",
+      "size": 59300,
+      "git_blob": "32adf823df37af1692f4fd5e4449dfa13a67e7db"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/portrait.png",
+      "size": 4022820,
+      "git_blob": "5ab3f064d3db18e4e8cd4225dc63f92822bdc5d3"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/portrait.webp",
+      "size": 333638,
+      "git_blob": "88b7f440fc6a0ca5d98ed43c58a0ffaa784d5b78"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/poses.png",
+      "size": 2387893,
+      "git_blob": "32a3a939bf4ebed309797b33ea954d4f7cd104ac"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/review.jpg",
+      "size": 132099,
+      "git_blob": "b4293adb620045efc4919a2225a7ae3d173feb6f"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/small.webp",
+      "size": 46076,
+      "git_blob": "e9a95360ef5fe9c97829bfbd190bfe86e08ee6c6"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC107/special.webp",
+      "size": 87132,
+      "git_blob": "6364f84f74e0fbaff7be51da6153503413cb4f25"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC108/portrait.png",
+      "size": 3801627,
+      "git_blob": "ce87b812f7643b8afcd39febbf4001a43970bd9f"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC108/portrait.webp",
+      "size": 347512,
+      "git_blob": "3ac7f9b125bbb8c4d35d050fe4ccef8abf5e814a"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC108/small.webp",
+      "size": 50466,
+      "git_blob": "5aa7c4402fb8a720f2cba1f3456bf810b176cda1"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC115/portrait.png",
+      "size": 3949124,
+      "git_blob": "b9e3e81d6595666d8d752e88ab4ab04550dc717b"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC115/portrait.webp",
+      "size": 337534,
+      "git_blob": "9d54e4c4a30cd59ce68b4dd8b000998435c631e5"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC115/ref.png",
+      "size": 671391,
+      "git_blob": "b53d97d474848dced3ce99a42e93efb09d8785a3"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC115/small.webp",
+      "size": 51734,
+      "git_blob": "2778f4cc96983614d2edbf9fb83c701b8f8fae5d"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC117/portrait.png",
+      "size": 4072247,
+      "git_blob": "b0d10bffdfe11a203d3123eb1781b71985f495f3"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC117/portrait.webp",
+      "size": 303424,
+      "git_blob": "9263ce24ee057e746ba0066efd9dcf427c0adf7e"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC117/ref.png",
+      "size": 642923,
+      "git_blob": "929e4450c7f0d6444ae8561e7c1e874af09d14b5"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC117/small.webp",
+      "size": 43866,
+      "git_blob": "61c3bd6f0bd98bbe479dd3b41ed5d451f279dbff"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC129/portrait-ref.png",
+      "size": 664575,
+      "git_blob": "6a96c82eb6a932ec131114d8bccbbedee676d84b"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC129/portrait.png",
+      "size": 4238850,
+      "git_blob": "68ef19f7e82c41e3259027a7e2d0198bda2521d2"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC143/portrait-qa.jpg",
+      "size": 176825,
+      "git_blob": "5199b161d64961241802da782783249a2b35f52e"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC143/portrait.png",
+      "size": 3967437,
+      "git_blob": "0aed32fde104d7942ffed159cea5b09080c6c5c5"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC143/portrait.webp",
+      "size": 349104,
+      "git_blob": "e00388547d43b92170a55dd6e77bcc8c4c120887"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC143/small.webp",
+      "size": 53794,
+      "git_blob": "12d03c5e91f53a24352a1a01bcdc8e86ed6a61ad"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC144/portrait-qa.jpg",
+      "size": 190494,
+      "git_blob": "3e3bf6589928da3f33de053c553614e2baf0beb1"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC144/portrait.png",
+      "size": 4233395,
+      "git_blob": "f04ac60851674ed87c5d87d566fe1c05b70df3cf"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC144/portrait.webp",
+      "size": 379972,
+      "git_blob": "49290b07cc9971682b466916ad79047c8d4b0503"
+    },
+    {
+      "path": "docs/art/wave-five/pending/CC144/small.webp",
+      "size": 55730,
+      "git_blob": "a93a600d91e1b8e3f74a3225c450c838f3c67c04"
+    },
+    {
+      "path": "docs/art/wave-four/CC051-CC053-review.png",
+      "size": 837917,
+      "git_blob": "028c3b089a146a2ad3cf0d877d0f17b70673904f"
+    },
+    {
+      "path": "docs/art/wave-four/CC051-portrait.png",
+      "size": 4064486,
+      "git_blob": "c989c576003db102c2b9dd91f2cbf1e7679defc1"
+    },
+    {
+      "path": "docs/art/wave-four/CC051-poses.png",
+      "size": 2782958,
+      "git_blob": "56f7045b812273b78d90b9bd3b3900f2bbdb834c"
+    },
+    {
+      "path": "docs/art/wave-four/CC051-white-review.png",
+      "size": 1118730,
+      "git_blob": "5ebc26830f5ad5e81f652eb1b84f11897d820435"
+    },
+    {
+      "path": "docs/art/wave-four/CC052-portrait.png",
+      "size": 4045680,
+      "git_blob": "7487f86188dbde83b2ce51aeeb922610c5b4d257"
+    },
+    {
+      "path": "docs/art/wave-four/CC052-poses.png",
+      "size": 2565594,
+      "git_blob": "9a47bd157f26191ddc799f48b9738e6aaee6edad"
+    },
+    {
+      "path": "docs/art/wave-four/CC053-margin-review.png",
+      "size": 1231999,
+      "git_blob": "eed3958c27fa4a5bdd0486ad1d7d3390e7e12d72"
+    },
+    {
+      "path": "docs/art/wave-four/CC053-portrait.png",
+      "size": 3976518,
+      "git_blob": "4cb3bd14d9f8692117e2c00ea84d151c2bf94211"
+    },
+    {
+      "path": "docs/art/wave-four/CC053-poses-first.png",
+      "size": 2190791,
+      "git_blob": "765c61d4608acee0ce0a5b7ff97fa8e02848a217"
+    },
+    {
+      "path": "docs/art/wave-four/CC053-poses.png",
+      "size": 2126092,
+      "git_blob": "b37a7466c70672602c86fcfa15c980d435f342b1"
+    },
+    {
+      "path": "docs/art/wave-four/CC054-portrait.png",
+      "size": 4165327,
+      "git_blob": "5150753c6ec4c8205f9cc63a91b3af9fc45ae5d2"
+    },
+    {
+      "path": "docs/art/wave-four/CC054-poses.png",
+      "size": 3066261,
+      "git_blob": "8b60d4eae705bac288006fb9da9e96d9971d70d9"
+    },
+    {
+      "path": "docs/art/wave-four/CC054-review.png",
+      "size": 667840,
+      "git_blob": "86e6a5b968b8a7535ad7a69d2681c139787c714e"
+    },
+    {
+      "path": "docs/art/wave-four/CC055-gutter-review.png",
+      "size": 58610,
+      "git_blob": "5980ff33ee05dab9649006dbff05d8a10e087dc0"
+    },
+    {
+      "path": "docs/art/wave-four/CC055-portrait.png",
+      "size": 3981958,
+      "git_blob": "e3c4b089ec215c351e099fc211d7bf32d26db9a9"
+    },
+    {
+      "path": "docs/art/wave-four/CC055-poses.png",
+      "size": 2730365,
+      "git_blob": "34fbf74d3bd72e54f0c241fb4e6be62c702c5229"
+    },
+    {
+      "path": "docs/art/wave-four/CC055-review.png",
+      "size": 519566,
+      "git_blob": "3598248a8ee36607c6c115651cbc6a956a0fbec5"
+    },
+    {
+      "path": "docs/art/wave-four/CC056-portrait.png",
+      "size": 4002240,
+      "git_blob": "1c3faafdfd09be77f9e4b48112d4da1bf3837bd3"
+    },
+    {
+      "path": "docs/art/wave-four/CC056-poses-first.png",
+      "size": 2388623,
+      "git_blob": "f641852519cc21044326b28fcc063b6c310ae155"
+    },
+    {
+      "path": "docs/art/wave-four/CC056-poses.png",
+      "size": 2019006,
+      "git_blob": "8dee6ef522647b0d4a6d7c48039696b33ccbd594"
+    },
+    {
+      "path": "docs/art/wave-four/CC056-review.png",
+      "size": 403888,
+      "git_blob": "56655de7dfc85ca13366ad04e1b47411287b1a0d"
+    },
+    {
+      "path": "docs/art/wave-four/CC057-CC059-review.png",
+      "size": 783140,
+      "git_blob": "4496b69e2316ee06fa3823e68ced44438d10b5c3"
+    },
+    {
+      "path": "docs/art/wave-four/CC057-portrait.png",
+      "size": 3833515,
+      "git_blob": "43819227fc72fac47d712e2a0acc7218b588eccc"
+    },
+    {
+      "path": "docs/art/wave-four/CC057-poses.png",
+      "size": 2412204,
+      "git_blob": "535c9d1e33f43c8723d1fb31b135812b6c1e954a"
+    },
+    {
+      "path": "docs/art/wave-four/CC058-portrait.png",
+      "size": 3996686,
+      "git_blob": "f8fc61701d55f57ee2d1aa6f2ed0a9b42c9415fc"
+    },
+    {
+      "path": "docs/art/wave-four/CC058-poses-first.png",
+      "size": 2686248,
+      "git_blob": "39e8d56194167d11d1ac4c978528fcfb1089f94d"
+    },
+    {
+      "path": "docs/art/wave-four/CC058-poses.png",
+      "size": 2613442,
+      "git_blob": "ee8a36b4bff55c5f0d83ae646eeb023157a39858"
+    },
+    {
+      "path": "docs/art/wave-four/CC059-portrait.png",
+      "size": 3952711,
+      "git_blob": "bde6189c4fc0b1154d1987106b0ea07251ddf585"
+    },
+    {
+      "path": "docs/art/wave-four/CC059-poses.png",
+      "size": 2699294,
+      "git_blob": "4b63df18149a8a44276b0b79ae1dd45615f9d02f"
+    },
+    {
+      "path": "docs/art/wave-four/CC060-portrait.png",
+      "size": 3879546,
+      "git_blob": "51822458a34ae770591e8390537d7213a565c1ca"
+    },
+    {
+      "path": "docs/art/wave-four/CC060-poses.png",
+      "size": 2660149,
+      "git_blob": "5d8f11c53db6aba6c9a88e53490eab31e8891aef"
+    },
+    {
+      "path": "docs/art/wave-four/CC060-runtime-review.png",
+      "size": 1081364,
+      "git_blob": "080d4da29836ca6915ec74a727df01cfc6dd345f"
+    },
+    {
+      "path": "docs/art/wave-four/CC061-portrait.png",
+      "size": 4169214,
+      "git_blob": "458d78a84cf196559762baabf3bdb1dd2ec68bed"
+    },
+    {
+      "path": "docs/art/wave-four/CC061-poses.png",
+      "size": 2758967,
+      "git_blob": "d44fc1b8464bb675c25864b66b7e8968d89c6e34"
+    },
+    {
+      "path": "docs/art/wave-four/CC061-runtime-review.png",
+      "size": 1134429,
+      "git_blob": "61e59eeea15d1bff3285b343a3357e5329bb31b2"
+    },
+    {
+      "path": "docs/art/wave-four/CC062-portrait.png",
+      "size": 3927439,
+      "git_blob": "817ee34e9e55954c0da819e59d52160a8e06ba26"
+    },
+    {
+      "path": "docs/art/wave-four/CC062-poses.png",
+      "size": 3041283,
+      "git_blob": "309f7a3947a07ffd87c9ab0eace878e87fda6423"
+    },
+    {
+      "path": "docs/art/wave-four/CC062-runtime-review.png",
+      "size": 1278392,
+      "git_blob": "5e06c84ac713f9b989c161420b7376b21c8a3ef0"
+    },
+    {
+      "path": "docs/art/wave-four/CC063-CC064-review.png",
+      "size": 632354,
+      "git_blob": "fdd9f4cd0e991fd57d691839710a5675847ffe5a"
+    },
+    {
+      "path": "docs/art/wave-four/CC063-gutter-review.png",
+      "size": 118193,
+      "git_blob": "5f8f2cbb081cf3f9ae4d2913f633e97f11dcaddd"
+    },
+    {
+      "path": "docs/art/wave-four/CC063-portrait.png",
+      "size": 3987188,
+      "git_blob": "ca2378d3c28933075a762ab3958f38a6a7778246"
+    },
+    {
+      "path": "docs/art/wave-four/CC063-poses.png",
+      "size": 2661643,
+      "git_blob": "05ea55f2cdc801d3ab528130e23fcb6d8af964ee"
+    },
+    {
+      "path": "docs/art/wave-four/CC064-portrait.png",
+      "size": 4023047,
+      "git_blob": "edb6619c329b8fe782c56bbb26c8ea7a5320b5cf"
+    },
+    {
+      "path": "docs/art/wave-four/CC064-poses.png",
+      "size": 2718002,
+      "git_blob": "b0fdb7031bb7416b154a2994344fcd50e9e33efc"
+    },
+    {
+      "path": "docs/art/wave-four/CC065-portrait.png",
+      "size": 3774225,
+      "git_blob": "d751d7c0f2866e2c67651feaf0ad04d67abc3c16"
+    },
+    {
+      "path": "docs/art/wave-four/CC065-poses.png",
+      "size": 2587024,
+      "git_blob": "d8ab320aa7b00219caaba3c6dd3cf0540c4bb5e6"
+    },
+    {
+      "path": "docs/art/wave-four/CC065-review.png",
+      "size": 1435530,
+      "git_blob": "be743f3d6f2433fc71a9695d28a0092e11f32f53"
+    },
+    {
+      "path": "docs/art/wave-four/CC066-portrait.png",
+      "size": 3895474,
+      "git_blob": "a7645f5f38e0621d8878d43d6a49e72da121d6fc"
+    },
+    {
+      "path": "docs/art/wave-four/CC066-poses.png",
+      "size": 2486283,
+      "git_blob": "bce8d45ad6f5e76b3f0ad7ebfc53b50a27959de2"
+    },
+    {
+      "path": "docs/art/wave-four/CC066-review.png",
+      "size": 1283180,
+      "git_blob": "6a3b0fff70aead5b73f38b379ff8a3db72d1868e"
+    },
+    {
+      "path": "docs/art/wave-three/CC042-poses.png",
+      "size": 2443847,
+      "git_blob": "71f70be1825dc0fa06ce7951423c1e3607ec17af"
+    },
+    {
+      "path": "docs/art/wave-three/CC042-review.png",
+      "size": 1022927,
+      "git_blob": "6e2e6839c710ef05e811c85ac6669c381375891c"
+    },
+    {
+      "path": "docs/art/wave-three/CC043-poses.png",
+      "size": 2876927,
+      "git_blob": "e15dab27b2572f0e228d64d5c85b410a66b51999"
+    },
+    {
+      "path": "docs/art/wave-three/CC044-poses-v1.png",
+      "size": 2406017,
+      "git_blob": "0c09eac11d0f54ccff436685976dce59feb578fd"
+    },
+    {
+      "path": "docs/art/wave-three/CC044-poses.png",
+      "size": 2406017,
+      "git_blob": "0c09eac11d0f54ccff436685976dce59feb578fd"
+    },
+    {
+      "path": "docs/art/wave-three/CC044-review.png",
+      "size": 1024416,
+      "git_blob": "53631a00084475e0a630eeb41551dc34c4910424"
+    },
+    {
+      "path": "docs/art/wave-three/CC045-poses.png",
+      "size": 2495037,
+      "git_blob": "bc92352111a64ca03ac540c066184fe4b05311b4"
+    },
+    {
+      "path": "docs/art/wave-three/CC045-review.png",
+      "size": 1117365,
+      "git_blob": "fa9890ea5a0751d2850375330e47d976ce8c834b"
+    },
+    {
+      "path": "docs/art/wave-three/CC046-poses.png",
+      "size": 2370077,
+      "git_blob": "657af9d9cab8be095bdf530eaea39469d8d0729d"
+    },
+    {
+      "path": "docs/art/wave-three/CC047-poses.png",
+      "size": 2575798,
+      "git_blob": "9a01d6112e40df70bb71c6640fbd94ece439a1a7"
+    },
+    {
+      "path": "docs/art/wave-three/CC048-poses.png",
+      "size": 2795937,
+      "git_blob": "4481f18e2ecc16723a7266bab1ec92d6db968186"
+    },
+    {
+      "path": "docs/art/wave-three/CC049-poses.png",
+      "size": 2688454,
+      "git_blob": "86a53bb33bf7bcc9caaad66e486528e20f59c5c2"
+    },
+    {
+      "path": "docs/art/wave-three/CC050-poses.png",
+      "size": 2757182,
+      "git_blob": "5507564f2990a04f2f0a4f5d99f6fe6e948fdbd8"
+    },
+    {
+      "path": "docs/art/world/cancel-city.png",
+      "size": 4027677,
+      "git_blob": "374ee015352276ab6c6a74311c60ea5d43a4f825"
+    },
+    {
+      "path": "docs/art/world/pack-counter.png",
+      "size": 3794401,
+      "git_blob": "59c7e5343bf80d415ae25d68cd208928ebd1fdc0"
+    },
+    {
+      "path": "docs/art/world/prop-locker-room.png",
+      "size": 3234671,
+      "git_blob": "8320e6ba3e11ef7bd946b57bd592970d154d33b3"
+    },
+    {
+      "path": "docs/art/world/rug-alley.png",
+      "size": 3402771,
+      "git_blob": "6e73b207b9e11b648e0551e2f979e7bc84eb5ef3"
+    },
+    {
+      "path": "docs/art/world/screenshot-court.png",
+      "size": 4158397,
+      "git_blob": "4de825186bf84bf641d46aade79877de12b3f28b"
+    },
+    {
+      "path": "docs/design-references/approved-expanded/expanded-v1.png",
+      "size": 4423739,
+      "git_blob": "98e21e763238be80381b26f6a916c2e7fc486c16"
+    },
+    {
+      "path": "docs/design-references/approved-expanded/expanded-v2.png",
+      "size": 4225678,
+      "git_blob": "fb2009ba03f859f122128b70cb98cf7e9ad35c41"
+    },
+    {
+      "path": "docs/design-references/mockup-1.png",
+      "size": 3982694,
+      "git_blob": "e658b04512fe5b53ac0223d26f2fa98b0f1ae23f"
+    },
+    {
+      "path": "docs/design-references/mockup-2.png",
+      "size": 4275547,
+      "git_blob": "1cebd782bbae756beae12a9a48d34d14d43a3daf"
+    },
+    {
+      "path": "docs/design-references/mockup-3.png",
+      "size": 4247628,
+      "git_blob": "141149770151de191711c938c9135c82c030b791"
+    },
+    {
+      "path": "docs/design-references/mockup-4.png",
+      "size": 4190697,
+      "git_blob": "dd47623b7004a6cb2d6225c3b33f2609b0307bc9"
+    },
+    {
+      "path": "docs/production/paused-assets/absent-father/action.png",
+      "size": 2796763,
+      "git_blob": "95c1a97dd74fc2aaa2ffea8165bba856b8baf7fa"
+    },
+    {
+      "path": "docs/production/paused-assets/absent-father/background.png",
+      "size": 4287789,
+      "git_blob": "be2bbf58a92ff3649d5d24c1a05a1b5a791cb059"
+    },
+    {
+      "path": "docs/production/paused-assets/absent-father/ending.png",
+      "size": 2728915,
+      "git_blob": "e7ba91e6ed7387140ec8a42d64797f63fe970a69"
+    },
+    {
+      "path": "docs/production/paused-assets/absent-father/originals/action.png",
+      "size": 2796763,
+      "git_blob": "95c1a97dd74fc2aaa2ffea8165bba856b8baf7fa"
+    },
+    {
+      "path": "docs/production/paused-assets/absent-father/originals/background.png",
+      "size": 4287789,
+      "git_blob": "be2bbf58a92ff3649d5d24c1a05a1b5a791cb059"
+    },
+    {
+      "path": "docs/production/paused-assets/absent-father/originals/ending.png",
+      "size": 2728915,
+      "git_blob": "e7ba91e6ed7387140ec8a42d64797f63fe970a69"
+    },
+    {
+      "path": "docs/production/paused-assets/anti-anti-meat/action.png",
+      "size": 2122765,
+      "git_blob": "419af3223bf8216d2143cd2591b9aa6ce30717f5"
+    },
+    {
+      "path": "docs/production/paused-assets/anti-anti-meat/background.png",
+      "size": 4321486,
+      "git_blob": "4a1a79069dcd5562fb031c86fb801fbfaf2979ae"
+    },
+    {
+      "path": "docs/production/paused-assets/anti-anti-meat/ending.png",
+      "size": 1352023,
+      "git_blob": "21f762a002ac1d53ffc319d49c44135656ed5fdc"
+    },
+    {
+      "path": "docs/production/paused-assets/anti-anti-meat/originals/action.png",
+      "size": 2122765,
+      "git_blob": "419af3223bf8216d2143cd2591b9aa6ce30717f5"
+    },
+    {
+      "path": "docs/production/paused-assets/anti-anti-meat/originals/background.png",
+      "size": 4321486,
+      "git_blob": "4a1a79069dcd5562fb031c86fb801fbfaf2979ae"
+    },
+    {
+      "path": "docs/production/paused-assets/anti-anti-meat/originals/ending.png",
+      "size": 1352023,
+      "git_blob": "21f762a002ac1d53ffc319d49c44135656ed5fdc"
+    },
+    {
+      "path": "docs/production/paused-assets/erwin-linkedin/originals/action.png",
+      "size": 2828214,
+      "git_blob": "c22476394a6c963db0b596177ca7686839d9cd33"
+    },
+    {
+      "path": "docs/production/paused-assets/power-of-friendship/action.png",
+      "size": 1791417,
+      "git_blob": "2103d192788a549e5af975f0c3b08eaa99511bc9"
+    },
+    {
+      "path": "docs/production/paused-assets/power-of-friendship/background.png",
+      "size": 4458548,
+      "git_blob": "c515b398a24c88e60a074e11713d04b88d37a1e5"
+    },
+    {
+      "path": "docs/production/paused-assets/power-of-friendship/ending.png",
+      "size": 2732778,
+      "git_blob": "60b4b9a629debb8186fe83b0ac2f67ffec4d1af5"
+    },
+    {
+      "path": "docs/production/paused-assets/power-of-friendship/originals/action.png",
+      "size": 1791417,
+      "git_blob": "2103d192788a549e5af975f0c3b08eaa99511bc9"
+    },
+    {
+      "path": "docs/production/paused-assets/power-of-friendship/originals/background.png",
+      "size": 4458548,
+      "git_blob": "c515b398a24c88e60a074e11713d04b88d37a1e5"
+    },
+    {
+      "path": "docs/production/paused-assets/power-of-friendship/originals/ending.png",
+      "size": 2732778,
+      "git_blob": "60b4b9a629debb8186fe83b0ac2f67ffec4d1af5"
+    },
+    {
+      "path": "docs/production/paused-assets/touch-grass-final-boss/action.png",
+      "size": 2683449,
+      "git_blob": "12aa89d0ee34cf5f4c5071280263958cc1e4289d"
+    },
+    {
+      "path": "docs/production/paused-assets/touch-grass-final-boss/ending.png",
+      "size": 2649969,
+      "git_blob": "789690602773861a84baff611a091ef9d8a49b22"
+    },
+    {
+      "path": "docs/production/paused-assets/touch-grass-final-boss/originals/action.png",
+      "size": 2683449,
+      "git_blob": "12aa89d0ee34cf5f4c5071280263958cc1e4289d"
+    },
+    {
+      "path": "docs/production/paused-assets/touch-grass-final-boss/originals/ending.png",
+      "size": 2649969,
+      "git_blob": "789690602773861a84baff611a091ef9d8a49b22"
+    }
+  ]
+}

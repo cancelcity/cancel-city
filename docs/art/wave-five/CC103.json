@@ -1,0 +1,191 @@
+{
+  "characterId": "CC103",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest solid alpha connected bodies; smaller prop/effect components assigned whole by proximity. Original master retained. Uniform square padded extraction."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC103-0.webp",
+      "sourceExtraction": {
+        "left": 37,
+        "top": 0,
+        "width": 411,
+        "height": 482
+      },
+      "scale": 0.8713692946058091,
+      "suggestedAnchor": {
+        "x": 259,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 77,
+        "top": 36,
+        "right": 435,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 185999,
+        "transparentFraction": 0.7095298767089844
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC103-1.webp",
+      "sourceExtraction": {
+        "left": 581,
+        "top": 6,
+        "width": 373,
+        "height": 467
+      },
+      "scale": 0.8993576017130621,
+      "suggestedAnchor": {
+        "x": 302,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 88,
+        "top": 36,
+        "right": 423,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 184333,
+        "transparentFraction": 0.7031745910644531
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC103-2.webp",
+      "sourceExtraction": {
+        "left": 1044,
+        "top": 4,
+        "width": 486,
+        "height": 464
+      },
+      "scale": 0.8641975308641975,
+      "suggestedAnchor": {
+        "x": 229,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 55,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 172493,
+        "transparentFraction": 0.6580085754394531
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC103-3.webp",
+      "sourceExtraction": {
+        "left": 22,
+        "top": 486,
+        "width": 453,
+        "height": 515
+      },
+      "scale": 0.8155339805825242,
+      "suggestedAnchor": {
+        "x": 268,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 71,
+        "top": 36,
+        "right": 440,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 187828,
+        "transparentFraction": 0.7165069580078125
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC103-4.webp",
+      "sourceExtraction": {
+        "left": 575,
+        "top": 500,
+        "width": 393,
+        "height": 502
+      },
+      "scale": 0.8366533864541833,
+      "suggestedAnchor": {
+        "x": 252,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 91,
+        "top": 36,
+        "right": 420,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 180295,
+        "transparentFraction": 0.6877708435058594
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC103-5.webp",
+      "sourceExtraction": {
+        "left": 1089,
+        "top": 535,
+        "width": 377,
+        "height": 463
+      },
+      "scale": 0.9071274298056156,
+      "suggestedAnchor": {
+        "x": 249,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 85,
+        "top": 36,
+        "right": 427,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 180524,
+        "transparentFraction": 0.6886444091796875
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest36px; y at lowest alpha>32 art pixel.",
+  "characterName": "BeyonQueue"
+}

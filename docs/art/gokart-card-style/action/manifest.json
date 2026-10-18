@@ -1,0 +1,315 @@
+{
+  "title": "Gokart action: CANCEL CITY card-style redraw",
+  "method": "Built-in imagegen style-transfer edit for each original sheet. Sharp used only for regular grid extraction and WebP encoding.",
+  "references": {
+    "characterAndStyle": "../../generated_images/exec-7530eca5-c52b-49ce-b42c-b09c2e1f8d82.png",
+    "actualCard": "../../cancel-city/public/assets/roster-b2/CC010.webp",
+    "originalSheets": "../../cancel-city/docs/art/gokart/action/"
+  },
+  "sheets": [
+    {
+      "name": "drift",
+      "source": "drift-original.png",
+      "prompt": "drift-prompt.txt",
+      "width": 1448,
+      "height": 1086,
+      "columns": 3,
+      "rows": 4,
+      "hasAlpha": false,
+      "frames": [
+        {
+          "index": 1,
+          "file": "drift-01.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 84138
+        },
+        {
+          "index": 2,
+          "file": "drift-02.webp",
+          "width": 482,
+          "height": 272,
+          "sourceRect": {
+            "left": 483,
+            "top": 0,
+            "width": 482,
+            "height": 272
+          },
+          "bytes": 83800
+        },
+        {
+          "index": 3,
+          "file": "drift-03.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 965,
+            "top": 0,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 84804
+        },
+        {
+          "index": 4,
+          "file": "drift-04.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 0,
+            "top": 272,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 84370
+        },
+        {
+          "index": 5,
+          "file": "drift-05.webp",
+          "width": 482,
+          "height": 271,
+          "sourceRect": {
+            "left": 483,
+            "top": 272,
+            "width": 482,
+            "height": 271
+          },
+          "bytes": 84786
+        },
+        {
+          "index": 6,
+          "file": "drift-06.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 965,
+            "top": 272,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 83874
+        },
+        {
+          "index": 7,
+          "file": "drift-07.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 0,
+            "top": 543,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 85396
+        },
+        {
+          "index": 8,
+          "file": "drift-08.webp",
+          "width": 482,
+          "height": 272,
+          "sourceRect": {
+            "left": 483,
+            "top": 543,
+            "width": 482,
+            "height": 272
+          },
+          "bytes": 83736
+        },
+        {
+          "index": 9,
+          "file": "drift-09.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 965,
+            "top": 543,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 83794
+        },
+        {
+          "index": 10,
+          "file": "drift-10.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 0,
+            "top": 815,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 83416
+        },
+        {
+          "index": 11,
+          "file": "drift-11.webp",
+          "width": 482,
+          "height": 271,
+          "sourceRect": {
+            "left": 483,
+            "top": 815,
+            "width": 482,
+            "height": 271
+          },
+          "bytes": 82720
+        },
+        {
+          "index": 12,
+          "file": "drift-12.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 965,
+            "top": 815,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 83030
+        }
+      ]
+    },
+    {
+      "name": "rush",
+      "source": "rush-original.png",
+      "prompt": "rush-prompt.txt",
+      "width": 1182,
+      "height": 1330,
+      "columns": 2,
+      "rows": 4,
+      "hasAlpha": false,
+      "frames": [
+        {
+          "index": 1,
+          "file": "rush-01.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 126468
+        },
+        {
+          "index": 2,
+          "file": "rush-02.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 591,
+            "top": 0,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 128210
+        },
+        {
+          "index": 3,
+          "file": "rush-03.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 128176
+        },
+        {
+          "index": 4,
+          "file": "rush-04.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 126958
+        },
+        {
+          "index": 5,
+          "file": "rush-05.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 0,
+            "top": 665,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 127496
+        },
+        {
+          "index": 6,
+          "file": "rush-06.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 591,
+            "top": 665,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 126868
+        },
+        {
+          "index": 7,
+          "file": "rush-07.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 123416
+        },
+        {
+          "index": 8,
+          "file": "rush-08.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 116442
+        }
+      ]
+    }
+  ],
+  "review": {
+    "style": "Compared to actual CC010 and corrected master: rough scratchy black hatching/stipple, dirty newsprint, flat acid yellow and hot pink, black palm/city silhouettes, grotesque expressive faces, battered red kart. Not an overlaid color filter.",
+    "motion": "Same frame order and pose/camera progression preserved. Rush advances through angry gritted concentration to huge yelling mouth. Driver hands and arms stay attached. Kart remains red with cream number-2 roundel.",
+    "driftSuggestedOrder": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "drift09": "Known rear-view insert is intentionally retained in grid and can be omitted by editor.",
+    "framing": "Frame originals preserve close framing. Some tall hair tips approach or cross upper cell edge, and final rush bumper/right wheel reach lower/right edge. Do not zoom further.",
+    "limitations": "Generated redrawn keys retain some frame-to-frame linework and perspective variation. No invented intermediate animation or creative pixel edits were used."
+  }
+}

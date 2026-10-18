@@ -1,0 +1,260 @@
+{
+  "building": "rocket",
+  "name": "Rocket Garage",
+  "tool": "builtin image_gen.imagegen",
+  "cli_fallback_used": false,
+  "style_reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "brief_source": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/building-briefs.json",
+  "generation_chain": "L1 generated from style reference; L2 edited selected L1; L3 edited selected L2. Initial L3 retained as rocket-l3-first.png. Two authorized built-in framing edits; second selected as rocket-l3.png.",
+  "levels": [
+    {
+      "level": 1,
+      "prompt": "Use case: illustration-story. Asset type: transparent isometric building sprite for an interactive Cancel City neighbourhood. NEW illustration. Reference portrait is STYLE ONLY: match its bold grotesque punk comic black ink outlines, dense scratchy crosshatching, distressed screen-printed vivid colour, textured hand-drawn details. Show ONE complete building, detached, centered, full structure visible, three-quarter isometric view from diagonally above, orthographic game camera, vertical walls upright. Two visible front/side faces meet at center; ground base is a small diamond-like isometric square. Use the same approximately 30-degree isometric view for all assets. Frame comfortably inside a square canvas with clear transparent margin, preserve room above roof. Include ONLY the building and its own narrow ground footprint, no street, no sky, no background scenery, no large shadow extending outside footprint. TRUE alpha transparent background, not white or checkerboard painted background. NO card frame, UI, captions, readable text, watermark or real logos. High detail at least 1024 square; legible silhouette at 250px. Level 1 starting building, compact and modest but expressive. Palette: acid lime-silver. Subject: An acid-lime industrial rocket garage with patched grey corrugated steel, one silver retro rocket with red nose poking through its open roof, scaffolding, green exposed pipes, a little neon zigzag chart icon over a plain shutter door, welding sparks, tiny tool boxes and cracked lime pavement. Satirize overpromising tech/crypto launches. No brands or readable lettering.",
+      "edit_target": null,
+      "referenced_image_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+      ],
+      "transparent_background": true,
+      "generated_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2b42fecb-62e3-4b5c-a69d-e7adf1069285.png",
+      "saved_output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_qa": {
+        "genuinely_transparent": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 802439,
+        "visible_alpha_ge128_pixels": 753433,
+        "alpha_bbox": [
+          0,
+          12,
+          1251,
+          1254
+        ],
+        "visible_alpha_ge128_bbox": [
+          119,
+          32,
+          1163,
+          1223
+        ]
+      },
+      "visual_qa": {
+        "fully_framed": true,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_background_scenery": true,
+        "no_people": true
+      },
+      "notes": "Complete visible garage, rocket, and pavement diamond with clear margin. Very faint generator alpha noise extends beyond visible subject; preserved without alteration."
+    },
+    {
+      "level": 2,
+      "prompt": "Upgrade this exact building to level 2: keep its identity, camera, footprint, front-door position, palette, transparent background and canvas size. Add one small balcony or upper floor, brighter window fixtures and a few richer rooftop details. Preserve clear space around edges; no new buildings, lettering or background.\nEdit target: rocket-l1.png. Preserve its bold black ink, scratchy comic crosshatching and acid-lime/silver/red materials. The entire diamond ground base must remain at the same location and the same size. Preserve the rocket garage door, rocket identity and isometric camera exactly. Add a modest upper-level gantry/balcony around the existing roof, richer rooftop mechanics and brighter windows, while maintaining the existing complete framed silhouette. Genuine alpha transparency, no painted backdrop. Same 1254 by 1254 square canvas, generous clear margin, all details inside frame. No readable text, logos, people, new buildings or background.",
+      "edit_target": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l1.png",
+      "referenced_image_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l1.png"
+      ],
+      "transparent_background": true,
+      "generated_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-8ca4f1bd-ca42-45f6-abad-a25b6d08e082.png",
+      "saved_output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l2.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_qa": {
+        "genuinely_transparent": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 742321,
+        "visible_alpha_ge128_pixels": 816555,
+        "alpha_bbox": [
+          0,
+          26,
+          1182,
+          1254
+        ],
+        "visible_alpha_ge128_bbox": [
+          116,
+          30,
+          1165,
+          1225
+        ]
+      },
+      "visual_qa": {
+        "fully_framed": true,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_background_scenery": true,
+        "no_people": true
+      },
+      "notes": "Perimeter gantry, brighter fixtures, richer roof mechanics. Camera, garage identity, door, and pavement base preserved closely (roughly 2-3px raster drift). Complete visible subject comfortably framed. Very faint generator alpha noise preserved."
+    },
+    {
+      "level": 3,
+      "prompt": "Upgrade this exact building to its maximum level 3: keep the same building identity, orthographic isometric camera, ground footprint, entry position, palette and transparent canvas. Create a more impressive taller structure with richer rooftop machinery/sculpture, expressive neon trim and additional architecture. Keep the entire building comfortably in frame and its base at the same location. No writing, logos, people or background scenery.\nEdit target: rocket-l2.png. Preserve its bold black ink and scratchy punk comic crosshatching, acid-lime/silver/red materials, retro rocket, front shutter and glowing zigzag icon. Preserve the entire diamond pavement base exactly in size and position, same door position and 30-degree isometric camera. Add a more substantial second-tier industrial gantry/upper workshop within the existing footprint, richer exposed rooftop machinery and expressive acid-lime neon rails, making the garage architecture taller without raising the rocket tip or moving/scaling the existing base. Keep every part fully inside the same 1254 by 1254 square canvas and retain clear transparent margins above the rocket and around the base. Genuine alpha transparency only. No readable text, logos, people, extra buildings or background.",
+      "edit_target": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l2.png",
+      "referenced_image_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l2.png"
+      ],
+      "transparent_background": true,
+      "generated_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-303123df-2c7e-4d03-ab1f-cd2ab0fb0542.png",
+      "saved_output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l3-first.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_qa": {
+        "genuinely_transparent": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 673286,
+        "visible_alpha_ge128_pixels": 883497,
+        "alpha_bbox": [
+          0,
+          3,
+          1253,
+          1254
+        ],
+        "visible_alpha_ge128_bbox": [
+          127,
+          23,
+          1153,
+          1254
+        ]
+      },
+      "visual_qa": {
+        "fully_framed": false,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_background_scenery": true,
+        "no_people": true
+      },
+      "notes": "Initial L3 preserved here for provenance; lower pavement tip touches/crops bottom canvas. Replaced by second targeted framing repair below.",
+      "selected_final": false
+    }
+  ],
+  "overall_qa": "Selected L1, L2 and repaired L3 are fully visible and genuinely alpha transparent, with no readable text, real logos, people or background. L3 retains complete upper-level machinery and neon architecture; to repair framing its final complete sprite is uniformly smaller and moved upward within the same canvas. Original L3 is preserved separately. No manual creative pixel or canvas modification was performed.",
+  "repairs": [
+    {
+      "level": 3,
+      "attempt": 1,
+      "prompt": "Use case: precise-object-edit. Edit target: rocket-l3-first.png. Repair ONLY its framing: show this complete existing rocket garage building scaled smaller inside the SAME square 1254 by 1254 genuinely alpha-transparent canvas. Retain every existing architectural detail, the same retro rocket identity, acid-lime/silver/red palette, corrugated garage, raised rooftop workshop and machinery, neon rails, pipes, shutter, toolboxes and bold punk comic ink/crosshatching. Keep the same orthographic 30-degree isometric camera and proportions. The entire pavement diamond must be fully visible; restore the very lowest corner currently clipped. Position the lowest ground tip at 90 percent of canvas height (around y=1129), with at least 8 percent clear transparent margins on BOTH left and right sides and above the tallest roof detail. Scale the ENTIRE sprite down uniformly; do not enlarge, crop or add architecture. Complete silhouette detached and comfortably framed. Do not add writing, logos, people, shadows outside the footprint, backgrounds, white fill or painted checkerboard. Preserve actual alpha transparency.",
+      "edit_target": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l3-first.png",
+      "transparent_background": true,
+      "generated_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-537a2d38-e7a6-41b1-a856-952b48317159.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "selected_final": false,
+      "alpha_qa": {
+        "genuinely_transparent": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 877285,
+        "visible_alpha_ge128_pixels": 681238,
+        "alpha_bbox": [
+          0,
+          19,
+          1238,
+          1254
+        ],
+        "visible_alpha_ge128_bbox": [
+          188,
+          131,
+          1086,
+          1217
+        ]
+      },
+      "notes": "Complete frame restored and details retained, but bottom margin narrower than requested. Superseded by second framing repair."
+    },
+    {
+      "level": 3,
+      "attempt": 2,
+      "prompt": "Use case: precise-object-edit. Edit target is the supplied complete rocket garage image. This is a framing correction ONLY. Keep all drawn architectural details and materials exactly as they are: same acid-lime/silver/red retro rocket garage, upper workshop, neon gantry rails, machinery, pipes, shutter, toolbox, pavement diamond and punk comic black ink. Same orthographic isometric camera. On the SAME 1254 by 1254 transparent canvas, reduce the ENTIRE sprite uniformly by about 10 percent and reposition it upward so the LOWEST pavement tip is at y=1129 pixels, exactly 90 percent canvas height. Leave the whole bottom 10 percent of the canvas empty and genuinely alpha-transparent. Target complete visible silhouette within x=220 to x=1034 and y=145 to y=1129, centered horizontally. Every part must be fully visible with at least 8 percent transparent margin at all sides. No design changes, added elements, removal of architecture, readable text, logos, people, white fill or background. Preserve genuine alpha transparency. The requested change is SMALLER sprite and MORE empty transparent space below its complete base.",
+      "edit_target": "/workspace/scratch/80a8c8c1affe/generated_images/exec-537a2d38-e7a6-41b1-a856-952b48317159.png",
+      "transparent_background": true,
+      "generated_output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-dd6fe464-884b-45e6-99be-9f3713db9670.png",
+      "saved_output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/rocket-l3.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "selected_final": true,
+      "alpha_qa": {
+        "genuinely_transparent": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "fully_transparent_pixels": 1051570,
+        "visible_alpha_ge128_pixels": 506774,
+        "alpha_bbox": [
+          0,
+          17,
+          1238,
+          1254
+        ],
+        "visible_alpha_ge128_bbox": [
+          246,
+          147,
+          1023,
+          1080
+        ]
+      },
+      "visual_qa": {
+        "fully_framed": true,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_background_scenery": true,
+        "no_people": true
+      },
+      "notes": "Complete existing L3 structure uniformly reduced and comfortably framed. Visible ground tip at86.1% canvas height, exceeding requested10% clear bottom margin; left19.6%, right18.4%, top11.7% visible margins. All major architectural details, camera, identity and palette preserved. Very faint generator alpha noise preserved."
+    }
+  ]
+}

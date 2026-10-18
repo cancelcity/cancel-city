@@ -1,0 +1,37 @@
+{
+  "creativeChanges": false,
+  "encoding": "WebP",
+  "quality": 90,
+  "records": [
+    {
+      "asset": "cancel-city",
+      "width": 1586,
+      "height": 992,
+      "bytes": 795274
+    },
+    {
+      "asset": "screenshot-court",
+      "width": 1672,
+      "height": 941,
+      "bytes": 817536
+    },
+    {
+      "asset": "rug-alley",
+      "width": 1672,
+      "height": 941,
+      "bytes": 677348
+    },
+    {
+      "asset": "pack-counter",
+      "width": 1546,
+      "height": 1017,
+      "bytes": 750340
+    },
+    {
+      "asset": "prop-locker-room",
+      "width": 1546,
+      "height": 1017,
+      "bytes": 599782
+    }
+  ]
+}

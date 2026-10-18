@@ -1,0 +1,59 @@
+{
+  "rulesVersion": 2,
+  "scenario": "Each resident leads a squad completed with starter loaners. Player calls out, uses charged damage abilities, and uses healing below thresholds. Deterministic AI opponent. No human input, adaptation, account progression or randomized builds.",
+  "rows": [
+    {
+      "district": "street",
+      "squads": 30,
+      "wins": 30,
+      "winRate": 1,
+      "verdicts": 2,
+      "meanActions": 31.466666666666665
+    },
+    {
+      "district": "media",
+      "squads": 30,
+      "wins": 28,
+      "winRate": 0.9333333333333333,
+      "verdicts": 0,
+      "meanActions": 25.666666666666668
+    },
+    {
+      "district": "corporate",
+      "squads": 30,
+      "wins": 26,
+      "winRate": 0.8666666666666667,
+      "verdicts": 1,
+      "meanActions": 28.7
+    },
+    {
+      "district": "crypto",
+      "squads": 30,
+      "wins": 21,
+      "winRate": 0.7,
+      "verdicts": 0,
+      "meanActions": 24.366666666666667
+    },
+    {
+      "district": "city-hall",
+      "squads": 30,
+      "wins": 0,
+      "winRate": 0,
+      "verdicts": 0,
+      "meanActions": 25.866666666666667
+    },
+    {
+      "district": "algorithm",
+      "squads": 30,
+      "wins": 0,
+      "winRate": 0,
+      "verdicts": 0,
+      "meanActions": 23.733333333333334
+    }
+  ],
+  "limitations": [
+    "A narrow heuristic policy; this is not measured player difficulty.",
+    "No fun, retention, accessibility or animation conclusions can be drawn.",
+    "Human tests must approve pacing and individual kit balance."
+  ]
+}

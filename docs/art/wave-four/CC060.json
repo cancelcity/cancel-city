@@ -1,0 +1,161 @@
+{
+  "characterId": "CC060",
+  "characterName": "Matrixed",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC060-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Six connected opaque alpha silhouettes isolated with nearest-silhouette contours including original anti-aliased edges and nearby disconnected particles within 32 source pixels. Original RGB and alpha preserved inside silhouette; no repainting. Individual transparent crops resized to at most 456x420 and centered on 512-square transparent canvases with ground anchor 462. Runtime bounds measured after WebP decoding at alpha >=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC060-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 132,
+        "top": 64,
+        "right": 379,
+        "bottom": 462
+      },
+      "transparentPixels": 192913,
+      "sourceBodyCrop": {
+        "left": 78,
+        "top": 8,
+        "width": 334,
+        "height": 512
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC060-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 47,
+        "top": 58,
+        "right": 465,
+        "bottom": 462
+      },
+      "transparentPixels": 165797,
+      "sourceBodyCrop": {
+        "left": 476,
+        "top": 33,
+        "width": 506,
+        "height": 467
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike-right",
+      "path": "/assets/actors/CC060-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 32,
+        "top": 139,
+        "right": 480,
+        "bottom": 462
+      },
+      "transparentPixels": 169226,
+      "sourceBodyCrop": {
+        "left": 975,
+        "top": 44,
+        "width": 561,
+        "height": 462
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC060-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 114,
+        "top": 63,
+        "right": 398,
+        "bottom": 462
+      },
+      "transparentPixels": 188580,
+      "sourceBodyCrop": {
+        "left": 67,
+        "top": 491,
+        "width": 387,
+        "height": 533
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC060-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 105,
+        "top": 46,
+        "right": 407,
+        "bottom": 462
+      },
+      "transparentPixels": 184918,
+      "sourceBodyCrop": {
+        "left": 573,
+        "top": 506,
+        "width": 389,
+        "height": 502
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC060-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 119,
+        "top": 63,
+        "right": 392,
+        "bottom": 462
+      },
+      "transparentPixels": 196646,
+      "sourceBodyCrop": {
+        "left": 1105,
+        "top": 494,
+        "width": 353,
+        "height": 530
+      }
+    }
+  ]
+}

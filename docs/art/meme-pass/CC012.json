@@ -1,0 +1,197 @@
+{
+  "characterId": "CC012",
+  "characterName": "Neutrality NPC",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/meme-pass/CC012-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Measured empty gutters split source rows at 490. Sharp trims alpha margin and uniformly scales 0.78; centers full isolated subjects on 512-square transparent canvas, ground anchor 462. Original generated alpha retained, no repainting. Bounds measured alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC012-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 122,
+        "top": 86,
+        "right": 388,
+        "bottom": 460
+      },
+      "transparentPixels": 194049,
+      "sourceCrop": {
+        "left": 0,
+        "top": 0,
+        "width": 500,
+        "height": 490
+      },
+      "sourceBodyCrop": {
+        "left": 74,
+        "top": 1,
+        "width": 349,
+        "height": 486
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC012-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 105,
+        "top": 88,
+        "right": 405,
+        "bottom": 460
+      },
+      "transparentPixels": 188513,
+      "sourceCrop": {
+        "left": 500,
+        "top": 0,
+        "width": 500,
+        "height": 490
+      },
+      "sourceBodyCrop": {
+        "left": 62,
+        "top": 4,
+        "width": 391,
+        "height": 483
+      }
+    },
+    {
+      "index": 2,
+      "name": "support",
+      "path": "/assets/actors/CC012-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 74,
+        "top": 104,
+        "right": 435,
+        "bottom": 459
+      },
+      "transparentPixels": 167205,
+      "sourceCrop": {
+        "left": 1000,
+        "top": 0,
+        "width": 536,
+        "height": 490
+      },
+      "sourceBodyCrop": {
+        "left": 41,
+        "top": 21,
+        "width": 470,
+        "height": 463
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC012-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 104,
+        "top": 67,
+        "right": 406,
+        "bottom": 460
+      },
+      "transparentPixels": 180744,
+      "sourceCrop": {
+        "left": 0,
+        "top": 490,
+        "width": 512,
+        "height": 534
+      },
+      "sourceBodyCrop": {
+        "left": 59,
+        "top": 5,
+        "width": 393,
+        "height": 509
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC012-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 100,
+        "top": 70,
+        "right": 409,
+        "bottom": 460
+      },
+      "transparentPixels": 185952,
+      "sourceCrop": {
+        "left": 512,
+        "top": 490,
+        "width": 512,
+        "height": 534
+      },
+      "sourceBodyCrop": {
+        "left": 67,
+        "top": 3,
+        "width": 404,
+        "height": 507
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC012-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 144,
+        "top": 79,
+        "right": 366,
+        "bottom": 460
+      },
+      "transparentPixels": 197766,
+      "sourceCrop": {
+        "left": 1024,
+        "top": 490,
+        "width": 512,
+        "height": 534
+      },
+      "sourceBodyCrop": {
+        "left": 112,
+        "top": 15,
+        "width": 291,
+        "height": 495
+      }
+    }
+  ]
+}

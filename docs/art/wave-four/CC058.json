@@ -1,0 +1,161 @@
+{
+  "characterId": "CC058",
+  "characterName": "Vaccine Update",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC058-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Connected alpha contours at alpha>=8 isolate complete bodies across nominal grid boundaries. Small detached props/ink details assigned to nearest body; one-pixel alpha edge allowance. Original generated color and alpha preserved, no repainting. Uniform 0.78 scale and transparent 512-square ground alignment at 462. Runtime bounds measured alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC058-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 153,
+        "top": 89,
+        "right": 358,
+        "bottom": 459
+      },
+      "transparentPixels": 211787,
+      "sourceBodyCrop": {
+        "left": 123,
+        "top": 9,
+        "width": 267,
+        "height": 481
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC058-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 85,
+        "top": 107,
+        "right": 424,
+        "bottom": 460
+      },
+      "transparentPixels": 199655,
+      "sourceBodyCrop": {
+        "left": 548,
+        "top": 29,
+        "width": 440,
+        "height": 456
+      }
+    },
+    {
+      "index": 2,
+      "name": "support",
+      "path": "/assets/actors/CC058-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 65,
+        "top": 115,
+        "right": 446,
+        "bottom": 460
+      },
+      "transparentPixels": 186934,
+      "sourceBodyCrop": {
+        "left": 1026,
+        "top": 37,
+        "width": 495,
+        "height": 448
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC058-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 103,
+        "top": 68,
+        "right": 407,
+        "bottom": 459
+      },
+      "transparentPixels": 203956,
+      "sourceBodyCrop": {
+        "left": 89,
+        "top": 501,
+        "width": 394,
+        "height": 507
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC058-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 144,
+        "top": 115,
+        "right": 366,
+        "bottom": 459
+      },
+      "transparentPixels": 211381,
+      "sourceBodyCrop": {
+        "left": 633,
+        "top": 536,
+        "width": 292,
+        "height": 448
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC058-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 132,
+        "top": 94,
+        "right": 377,
+        "bottom": 459
+      },
+      "transparentPixels": 204108,
+      "sourceBodyCrop": {
+        "left": 1101,
+        "top": 525,
+        "width": 322,
+        "height": 473
+      }
+    }
+  ]
+}

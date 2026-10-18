@@ -1,0 +1,13 @@
+{
+  "id": "CC075",
+  "status": "portrait-only",
+  "reason": "image_gen HTTP429 usage_limit_reached",
+  "missing": [
+    "poses.png",
+    "actor-0..5.webp",
+    "special.webp",
+    "metadata.json",
+    "review.jpg"
+  ],
+  "resetsInSecondsAtFailure": 18738
+}

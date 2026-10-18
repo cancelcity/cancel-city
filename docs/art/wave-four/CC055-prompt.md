@@ -1,0 +1,7 @@
+# Rain of Subscribers — preserved master artwork
+
+The existing CC055-portrait.png and CC055-poses.png masters were preserved and technically extracted in this completion pass. Both were produced with the built-in image_gen tool by the previous art pass. Its exact invocation text was unavailable here; the following is an artwork reconstruction brief, not a claimed verbatim generation prompt.
+
+Clearly adult female subscription-weather influencer caricature with voluminous brown hair, expressive face, fully clothed in a hot-pink and cyan raincoat, purple trousers and pink boots. Carries a pink cartoon-faced umbrella; coin rain and an irritated small cloud make the joke about subscriptions. Match Cancel City's thick black ink, dense halftone, crosshatching, acid yellow/hot pink/cyan punk print palette. Square close portrait with brightly splattered backdrop. Six full-body genuine-alpha acting poses in 3×2 order: idle with closed umbrella, wind-up, attacking toward the right with open umbrella and coins, victory, flinch, embarrassed under the rain cloud. Keep identical face, clothing and props; complete silhouettes with clear transparent gutters. No nudity, sexual imagery, text or labels.
+
+Preparation: threshold 32 separates the top cast contour from the lower cloud where low-alpha haze touched; nearest-contour assignment within two pixels retains original RGBA antialiasing and excludes neighboring subjects. Uniform 0.78 scale onto transparent 512-square runtime sprites; ground at 462. No repainting.

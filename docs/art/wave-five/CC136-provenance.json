@@ -1,0 +1,6 @@
+{
+  "tool": "built-in image_gen",
+  "sourceUnchanged": true,
+  "technicalProcessing": "Full connected-contour extraction including all generated limbs and props across nominal grid boundaries, nearest substantial effect components, alpha fringe removal, scale and pad. No code painting.",
+  "inspected": true
+}

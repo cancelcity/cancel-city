@@ -1,0 +1,227 @@
+{
+  "action": {
+    "width": 1024,
+    "height": 1536,
+    "rows": 4,
+    "alphaThreshold": 48,
+    "fullyTransparentPixels": 892877,
+    "fullyOpaquePixels": 0,
+    "modalAlpha": 253,
+    "components": [
+      {
+        "left": 129,
+        "top": 10,
+        "width": 311,
+        "height": 372,
+        "pixels": 66184,
+        "touchesCanvas": false
+      },
+      {
+        "left": 568,
+        "top": 10,
+        "width": 328,
+        "height": 370,
+        "pixels": 67126,
+        "touchesCanvas": false
+      },
+      {
+        "left": 116,
+        "top": 389,
+        "width": 334,
+        "height": 381,
+        "pixels": 73938,
+        "touchesCanvas": false
+      },
+      {
+        "left": 552,
+        "top": 390,
+        "width": 353,
+        "height": 380,
+        "pixels": 79040,
+        "touchesCanvas": false
+      },
+      {
+        "left": 107,
+        "top": 777,
+        "width": 358,
+        "height": 370,
+        "pixels": 75507,
+        "touchesCanvas": false
+      },
+      {
+        "left": 545,
+        "top": 780,
+        "width": 377,
+        "height": 367,
+        "pixels": 80529,
+        "touchesCanvas": false
+      },
+      {
+        "left": 100,
+        "top": 1153,
+        "width": 360,
+        "height": 361,
+        "pixels": 82745,
+        "touchesCanvas": false
+      },
+      {
+        "left": 566,
+        "top": 1153,
+        "width": 363,
+        "height": 362,
+        "pixels": 81807,
+        "touchesCanvas": false
+      }
+    ]
+  },
+  "attack": {
+    "width": 1024,
+    "height": 1536,
+    "rows": 4,
+    "alphaThreshold": 48,
+    "fullyTransparentPixels": 800908,
+    "fullyOpaquePixels": 0,
+    "modalAlpha": 253,
+    "components": [
+      {
+        "left": 58,
+        "top": 7,
+        "width": 417,
+        "height": 373,
+        "pixels": 87203,
+        "touchesCanvas": false
+      },
+      {
+        "left": 569,
+        "top": 11,
+        "width": 385,
+        "height": 368,
+        "pixels": 83788,
+        "touchesCanvas": false
+      },
+      {
+        "left": 48,
+        "top": 384,
+        "width": 436,
+        "height": 372,
+        "pixels": 95124,
+        "touchesCanvas": false
+      },
+      {
+        "left": 553,
+        "top": 388,
+        "width": 423,
+        "height": 372,
+        "pixels": 93924,
+        "touchesCanvas": false
+      },
+      {
+        "left": 50,
+        "top": 759,
+        "width": 425,
+        "height": 360,
+        "pixels": 90470,
+        "touchesCanvas": false
+      },
+      {
+        "left": 529,
+        "top": 764,
+        "width": 474,
+        "height": 354,
+        "pixels": 86075,
+        "touchesCanvas": false
+      },
+      {
+        "left": 65,
+        "top": 1117,
+        "width": 389,
+        "height": 397,
+        "pixels": 90671,
+        "touchesCanvas": false
+      },
+      {
+        "left": 570,
+        "top": 1119,
+        "width": 363,
+        "height": 399,
+        "pixels": 83068,
+        "touchesCanvas": false
+      }
+    ]
+  },
+  "ending": {
+    "width": 1024,
+    "height": 1536,
+    "rows": 4,
+    "alphaThreshold": 48,
+    "fullyTransparentPixels": 878233,
+    "fullyOpaquePixels": 0,
+    "modalAlpha": 253,
+    "components": [
+      {
+        "left": 88,
+        "top": 6,
+        "width": 360,
+        "height": 378,
+        "pixels": 77586,
+        "touchesCanvas": false
+      },
+      {
+        "left": 576,
+        "top": 11,
+        "width": 352,
+        "height": 372,
+        "pixels": 76072,
+        "touchesCanvas": false
+      },
+      {
+        "left": 76,
+        "top": 387,
+        "width": 367,
+        "height": 374,
+        "pixels": 80329,
+        "touchesCanvas": false
+      },
+      {
+        "left": 559,
+        "top": 392,
+        "width": 379,
+        "height": 368,
+        "pixels": 81769,
+        "touchesCanvas": false
+      },
+      {
+        "left": 95,
+        "top": 771,
+        "width": 347,
+        "height": 359,
+        "pixels": 76983,
+        "touchesCanvas": false
+      },
+      {
+        "left": 579,
+        "top": 765,
+        "width": 362,
+        "height": 367,
+        "pixels": 78748,
+        "touchesCanvas": false
+      },
+      {
+        "left": 107,
+        "top": 1131,
+        "width": 364,
+        "height": 390,
+        "pixels": 82392,
+        "touchesCanvas": false
+      },
+      {
+        "left": 581,
+        "top": 1132,
+        "width": 371,
+        "height": 390,
+        "pixels": 79684,
+        "touchesCanvas": false
+      }
+    ]
+  }
+}

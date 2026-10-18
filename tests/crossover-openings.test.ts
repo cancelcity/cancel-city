@@ -1,0 +1,18 @@
+import {describe,it,expect} from 'vitest';
+import {DUOS} from '../src/data/duos';
+import {OPENINGS,openingFor} from '../src/data/openings';
+import {CROSSOVER_IDS,crossoverBeat} from '../src/components/crossover-painter';
+import {openingBeat} from '../src/components/opening-painter';
+import {createMatch,availableDuos,takeTurn,matchSchema} from '../src/domain/battle';
+import {specialPlayback} from '../src/domain/cinematic';
+import {CARDS} from '../src/data/cards';
+import {applyCommand,initialSave,decodeSave} from '../src/domain/game';
+describe('selectable cooperative specials',()=>{
+ it('commits every new joint strike once with two paid participants and the selected identity',()=>{expect(CROSSOVER_IDS).toHaveLength(10);for(const id of CROSSOVER_IDS){const duo=DUOS.find(d=>d.id===id)!,third=CARDS.find(c=>!duo.pair.includes(c.id as never))!.id,m=createMatch(id,'street',[...duo.pair,third],{version:3});m.player[0].charge=3;m.player[1].charge=1;const before=JSON.stringify(m),next=takeTurn(m,'player',{type:'duo',duoId:id}),event=next.events.at(-1)!;expect(JSON.stringify(m)).toBe(before);expect(next.player[0].charge).toBe(0);expect(next.player[1].charge).toBe(0);expect(event.duoId).toBe(id);expect(event.damage).toBeGreaterThan(0);expect(event.partnerId).toBe(duo.pair[1]);expect(next.duoUsed).toEqual(['player']);expect(specialPlayback(next,event).support).toBe(false);expect(matchSchema.safeParse(next).success).toBe(true);}});
+ it('lets the player choose between two available partners and rejects unrelated choices without mutation',()=>{const m=createMatch('options','street',['CC054','CC043','CC060'],{version:3});m.player[0].charge=3;m.player[1].charge=m.player[2].charge=1;const ids=availableDuos(m,'player').map(d=>d.id);expect(ids).toEqual(['exit-strategy','psychic-snacks']);const next=takeTurn(m,'player',{type:'duo',duoId:'psychic-snacks'});expect(next.events.at(-1)!.partnerId).toBe('CC043');expect(next.player[2].charge).toBe(1);expect(availableDuos(next,'player')).toEqual([]);const before=JSON.stringify(m);expect(()=>takeTurn(m,'player',{type:'duo',duoId:'for-your-consideration'})).toThrow();expect(JSON.stringify(m)).toBe(before);});
+ it('preserves the established contact fraction and stable reduced-motion verdict',()=>{expect(crossoverBeat(.6874)).toBe('launch');expect(crossoverBeat(.6875)).toBe('contact');expect(crossoverBeat(0,true)).toBe('gag');});
+});
+describe('twenty deterministic committed-pull presentations',()=>{
+ it('offers twenty different scenes and can reach every scene without drawing another card',()=>{expect(OPENINGS).toHaveLength(20);expect(new Set(OPENINGS.map(o=>o.id)).size).toBe(20);const found=new Set<string>();for(const card of CARDS)for(let copies=1;copies<=30;copies++){const scene=openingFor(card.id,copies,copies===1);found.add(scene.id);expect(openingFor(card.id,copies,copies===1)).toBe(scene);}expect(found.size).toBe(20);for(const scene of OPENINGS)expect(openingFor('CC001',1,true,scene.id)).toBe(scene);});
+ it('keeps preview selection and reloaded film playback outside the reward transaction',()=>{const now=new Date('2026-10-14T00:00:00Z');let s=initialSave(now,'pull-view');s=applyCommand(s,{type:'open',sessionId:'movie'},now,()=>0,'opening',s.revision);s=decodeSave(s);const before=JSON.stringify(s),pull=s.pendingOpening!.pulls[0];for(const scene of OPENINGS){openingFor(pull.cardId,pull.regularQuantityAfter,pull.isNewDiscovery,scene.id);expect(JSON.stringify(s)).toBe(before);}s=applyCommand(s,{type:'reveal',count:5},now,()=>{throw Error('A presentation must never reroll');},'reveal',s.revision);expect(s.inventory.CC001.regular).toBe(5);expect(s.packBalance).toBe(2);expect(openingBeat(0,true)).toBe('result');});
+});

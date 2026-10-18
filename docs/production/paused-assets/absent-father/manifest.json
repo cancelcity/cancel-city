@@ -1,0 +1,25 @@
+{
+  "slug": "absent-father",
+  "cardId": "CC065",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/absent-father/action.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action"
+    },
+    {
+      "path": "docs/art/layered-specials/absent-father/ending.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending"
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/absent-father/background.png"
+  },
+  "inspection": "Visual inspection: 8 intact fullbody poses in each; dense etched style and costume match. Transparent original alpha retained. Wide attack poses cross nominal cell boundaries; component-based extraction recommended. Ending vanish is composited by root; poses 5-8 provide forehead gesture, crouch, escape.",
+  "actionOriginalToolPath": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6714c7df-21ba-4d6d-943c-a31cc0c3e8af.png",
+  "endingOriginalToolPath": "/workspace/scratch/80a8c8c1affe/generated_images/exec-1d7c4160-bd24-40e0-8a44-b527d47d0de9.png",
+  "backgroundOriginalToolPath": "/workspace/scratch/80a8c8c1affe/generated_images/exec-c94c970c-b869-4191-89a8-e7edd8e1df07.png"
+}

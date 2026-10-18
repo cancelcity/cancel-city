@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/powerpoint/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/action-00.webp",
+        "width": 263,
+        "height": 521,
+        "sourceBounds": {
+          "x": 51,
+          "y": 6,
+          "w": 263,
+          "h": 521
+        },
+        "area": 69404
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/action-01.webp",
+        "width": 330,
+        "height": 496,
+        "sourceBounds": {
+          "x": 388,
+          "y": 29,
+          "w": 330,
+          "h": 496
+        },
+        "area": 80423
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/action-02.webp",
+        "width": 491,
+        "height": 509,
+        "sourceBounds": {
+          "x": 684,
+          "y": 19,
+          "w": 491,
+          "h": 509
+        },
+        "area": 97645
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/action-03.webp",
+        "width": 299,
+        "height": 521,
+        "sourceBounds": {
+          "x": 1221,
+          "y": 6,
+          "w": 299,
+          "h": 521
+        },
+        "area": 67937
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/action-04.webp",
+        "width": 313,
+        "height": 490,
+        "sourceBounds": {
+          "x": 29,
+          "y": 524,
+          "w": 313,
+          "h": 490
+        },
+        "area": 66959
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/action-05.webp",
+        "width": 345,
+        "height": 493,
+        "sourceBounds": {
+          "x": 366,
+          "y": 525,
+          "w": 345,
+          "h": 493
+        },
+        "area": 80912
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/action-06.webp",
+        "width": 463,
+        "height": 482,
+        "sourceBounds": {
+          "x": 735,
+          "y": 535,
+          "w": 463,
+          "h": 482
+        },
+        "area": 99836
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/action-07.webp",
+        "width": 328,
+        "height": 493,
+        "sourceBounds": {
+          "x": 1205,
+          "y": 522,
+          "w": 328,
+          "h": 493
+        },
+        "area": 75824
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/ending-00.webp",
+        "width": 373,
+        "height": 518,
+        "sourceBounds": {
+          "x": 46,
+          "y": 0,
+          "w": 373,
+          "h": 518
+        },
+        "area": 89419
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/ending-01.webp",
+        "width": 318,
+        "height": 516,
+        "sourceBounds": {
+          "x": 467,
+          "y": 3,
+          "w": 318,
+          "h": 516
+        },
+        "area": 76523
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/ending-02.webp",
+        "width": 379,
+        "height": 514,
+        "sourceBounds": {
+          "x": 804,
+          "y": 6,
+          "w": 379,
+          "h": 514
+        },
+        "area": 93179
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/ending-03.webp",
+        "width": 298,
+        "height": 515,
+        "sourceBounds": {
+          "x": 1224,
+          "y": 2,
+          "w": 298,
+          "h": 515
+        },
+        "area": 76864
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/ending-04.webp",
+        "width": 274,
+        "height": 513,
+        "sourceBounds": {
+          "x": 83,
+          "y": 505,
+          "w": 274,
+          "h": 513
+        },
+        "area": 70494
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/ending-05.webp",
+        "width": 279,
+        "height": 509,
+        "sourceBounds": {
+          "x": 489,
+          "y": 508,
+          "w": 279,
+          "h": 509
+        },
+        "area": 69215
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/ending-06.webp",
+        "width": 272,
+        "height": 510,
+        "sourceBounds": {
+          "x": 863,
+          "y": 510,
+          "w": 272,
+          "h": 510
+        },
+        "area": 67196
+      },
+      {
+        "file": "docs/art/layered-specials/powerpoint/actors/ending-07.webp",
+        "width": 330,
+        "height": 517,
+        "sourceBounds": {
+          "x": 1195,
+          "y": 507,
+          "w": 330,
+          "h": 517
+        },
+        "area": 80449
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

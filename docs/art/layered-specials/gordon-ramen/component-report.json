@@ -1,0 +1,206 @@
+{
+  "action": {
+    "file": "action-sheet-original.png",
+    "width": 1024,
+    "height": 1536,
+    "rows": 4,
+    "alphaThreshold": 48,
+    "fullyTransparentPixels": 1023482,
+    "fullyOpaquePixels": 0,
+    "modalAlpha": 253,
+    "components": [
+      {
+        "left": 175,
+        "top": 5,
+        "width": 225,
+        "height": 378,
+        "pixels": 47716
+      },
+      {
+        "left": 634,
+        "top": 8,
+        "width": 245,
+        "height": 377,
+        "pixels": 49052
+      },
+      {
+        "left": 168,
+        "top": 386,
+        "width": 277,
+        "height": 382,
+        "pixels": 50520
+      },
+      {
+        "left": 637,
+        "top": 392,
+        "width": 284,
+        "height": 378,
+        "pixels": 56595
+      },
+      {
+        "left": 99,
+        "top": 772,
+        "width": 375,
+        "height": 345,
+        "pixels": 56458
+      },
+      {
+        "left": 586,
+        "top": 775,
+        "width": 399,
+        "height": 355,
+        "pixels": 60862
+      },
+      {
+        "left": 50,
+        "top": 1126,
+        "width": 461,
+        "height": 400,
+        "pixels": 81803
+      },
+      {
+        "left": 611,
+        "top": 1127,
+        "width": 370,
+        "height": 398,
+        "pixels": 64384
+      }
+    ]
+  },
+  "ending": {
+    "file": "ending-sheet-clean.png",
+    "width": 1024,
+    "height": 1536,
+    "rows": 4,
+    "alphaThreshold": 48,
+    "fullyTransparentPixels": 1107085,
+    "fullyOpaquePixels": 0,
+    "modalAlpha": 253,
+    "components": [
+      {
+        "left": 166,
+        "top": 47,
+        "width": 245,
+        "height": 340,
+        "pixels": 40156
+      },
+      {
+        "left": 620,
+        "top": 51,
+        "width": 255,
+        "height": 337,
+        "pixels": 47724
+      },
+      {
+        "left": 153,
+        "top": 406,
+        "width": 293,
+        "height": 360,
+        "pixels": 51721
+      },
+      {
+        "left": 615,
+        "top": 421,
+        "width": 290,
+        "height": 345,
+        "pixels": 51730
+      },
+      {
+        "left": 132,
+        "top": 782,
+        "width": 383,
+        "height": 334,
+        "pixels": 56902
+      },
+      {
+        "left": 610,
+        "top": 787,
+        "width": 292,
+        "height": 329,
+        "pixels": 45925
+      },
+      {
+        "left": 140,
+        "top": 1130,
+        "width": 287,
+        "height": 367,
+        "pixels": 52211
+      },
+      {
+        "left": 626,
+        "top": 1128,
+        "width": 296,
+        "height": 368,
+        "pixels": 53543
+      }
+    ]
+  },
+  "rejectedEnding": {
+    "file": "ending-sheet-original.png",
+    "width": 1024,
+    "height": 1536,
+    "rows": 4,
+    "alphaThreshold": 48,
+    "fullyTransparentPixels": 995664,
+    "fullyOpaquePixels": 0,
+    "modalAlpha": 253,
+    "components": [
+      {
+        "left": 135,
+        "top": 0,
+        "width": 279,
+        "height": 404,
+        "pixels": 53539
+      },
+      {
+        "left": 608,
+        "top": 10,
+        "width": 284,
+        "height": 393,
+        "pixels": 62460
+      },
+      {
+        "left": 130,
+        "top": 389,
+        "width": 328,
+        "height": 390,
+        "pixels": 63764
+      },
+      {
+        "left": 615,
+        "top": 397,
+        "width": 317,
+        "height": 390,
+        "pixels": 64496
+      },
+      {
+        "left": 97,
+        "top": 761,
+        "width": 436,
+        "height": 390,
+        "pixels": 74082
+      },
+      {
+        "left": 597,
+        "top": 763,
+        "width": 319,
+        "height": 386,
+        "pixels": 60400
+      },
+      {
+        "left": 120,
+        "top": 1120,
+        "width": 323,
+        "height": 409,
+        "pixels": 62994
+      },
+      {
+        "left": 623,
+        "top": 1118,
+        "width": 320,
+        "height": 418,
+        "pixels": 63553
+      }
+    ]
+  }
+}

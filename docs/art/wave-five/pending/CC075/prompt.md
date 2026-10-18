@@ -1,0 +1,7 @@
+Built-in image_gen. Portrait style reference CC039-style.jpg; intended sheet identity reference CC075/ref.jpg.
+
+Portrait exact prompt: Use case: stylized-concept. Square fighting-game portrait of Pedro, Roundabout King. Dancing grey raccoon in sequined traffic vest inside circular spotlight. Wildly expressive absurd dancer face, traffic-roundabout comic energy. Dense etched black ink, fine crosshatching, gritty black halftone, neon magenta cyan yellow lime splatter underground comic poster. Rich detail, no lettering, watermark or logos.
+
+Attempted sheet exact prompt: Use case: stylized-concept. Genuine transparent landscape3x2 sprite sheet of SAME dancing grey raccoon Pedro Roundabout King with black mask markings and sequined orange traffic vest from reference. Six complete separate full raccoons with all limbs and ringed tails visible. Dense etched black ink, intricate crosshatching, gritty halftone neon accents. Row-major idle dancer stance, windup coiling spin, strike dance kick/lunge RIGHT with curved spin trail, victory paws raised, flinch recoil, embarrassed tangled feet and bowed head. Each figure occupy middle65% equal cell with15% clear alpha margin all sides and wide gutters. No circular solid spotlight background; isolated raccoon silhouettes only, no floor/text/checkerboard or detached particles. No touching neighbors/cropped limbs.
+
+Sheet blocked before output: HTTP429 usage_limit_reached. No fallback used.

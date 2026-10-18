@@ -1,0 +1,301 @@
+{
+  "background": "docs/art/layered-specials/fraudo-baggins/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/action-00.webp",
+        "width": 338,
+        "height": 502,
+        "sourceBounds": {
+          "x": 10,
+          "y": 7,
+          "w": 338,
+          "h": 502
+        },
+        "area": 105438
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/action-01.webp",
+        "width": 293,
+        "height": 498,
+        "sourceBounds": {
+          "x": 414,
+          "y": 10,
+          "w": 293,
+          "h": 498
+        },
+        "area": 100340
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/action-02.webp",
+        "width": 416,
+        "height": 506,
+        "sourceBounds": {
+          "x": 756,
+          "y": 9,
+          "w": 416,
+          "h": 506
+        },
+        "area": 109879
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/action-03.webp",
+        "width": 355,
+        "height": 457,
+        "sourceBounds": {
+          "x": 1164,
+          "y": 33,
+          "w": 355,
+          "h": 457
+        },
+        "area": 99872
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/action-04.webp",
+        "width": 378,
+        "height": 496,
+        "sourceBounds": {
+          "x": 8,
+          "y": 511,
+          "w": 378,
+          "h": 496
+        },
+        "area": 108906
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/action-05.webp",
+        "width": 348,
+        "height": 515,
+        "sourceBounds": {
+          "x": 401,
+          "y": 499,
+          "w": 348,
+          "h": 515
+        },
+        "area": 94528
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/action-06.webp",
+        "width": 442,
+        "height": 478,
+        "sourceBounds": {
+          "x": 744,
+          "y": 526,
+          "w": 442,
+          "h": 478
+        },
+        "area": 110844
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/action-07.webp",
+        "width": 364,
+        "height": 343,
+        "sourceBounds": {
+          "x": 1162,
+          "y": 606,
+          "w": 364,
+          "h": 343
+        },
+        "area": 82591
+      }
+    ],
+    "attack": [
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/attack-00.webp",
+        "width": 377,
+        "height": 389,
+        "sourceBounds": {
+          "x": 17,
+          "y": 87,
+          "w": 377,
+          "h": 389
+        },
+        "area": 83076
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/attack-01.webp",
+        "width": 368,
+        "height": 417,
+        "sourceBounds": {
+          "x": 399,
+          "y": 75,
+          "w": 368,
+          "h": 417
+        },
+        "area": 86782
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/attack-02.webp",
+        "width": 332,
+        "height": 476,
+        "sourceBounds": {
+          "x": 786,
+          "y": 8,
+          "w": 332,
+          "h": 476
+        },
+        "area": 86611
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/attack-03.webp",
+        "width": 403,
+        "height": 402,
+        "sourceBounds": {
+          "x": 1128,
+          "y": 88,
+          "w": 403,
+          "h": 402
+        },
+        "area": 92665
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/attack-04.webp",
+        "width": 426,
+        "height": 476,
+        "sourceBounds": {
+          "x": 5,
+          "y": 505,
+          "w": 426,
+          "h": 476
+        },
+        "area": 90374
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/attack-05.webp",
+        "width": 405,
+        "height": 401,
+        "sourceBounds": {
+          "x": 384,
+          "y": 561,
+          "w": 405,
+          "h": 401
+        },
+        "area": 89176
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/attack-06.webp",
+        "width": 426,
+        "height": 457,
+        "sourceBounds": {
+          "x": 773,
+          "y": 519,
+          "w": 426,
+          "h": 457
+        },
+        "area": 108945
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/attack-07.webp",
+        "width": 332,
+        "height": 482,
+        "sourceBounds": {
+          "x": 1185,
+          "y": 516,
+          "w": 332,
+          "h": 482
+        },
+        "area": 86004
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/ending-00.webp",
+        "width": 358,
+        "height": 496,
+        "sourceBounds": {
+          "x": 28,
+          "y": 15,
+          "w": 358,
+          "h": 496
+        },
+        "area": 99483
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/ending-01.webp",
+        "width": 377,
+        "height": 498,
+        "sourceBounds": {
+          "x": 407,
+          "y": 16,
+          "w": 377,
+          "h": 498
+        },
+        "area": 102020
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/ending-02.webp",
+        "width": 343,
+        "height": 456,
+        "sourceBounds": {
+          "x": 784,
+          "y": 43,
+          "w": 343,
+          "h": 456
+        },
+        "area": 95233
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/ending-03.webp",
+        "width": 385,
+        "height": 476,
+        "sourceBounds": {
+          "x": 1136,
+          "y": 26,
+          "w": 385,
+          "h": 476
+        },
+        "area": 96480
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/ending-04.webp",
+        "width": 520,
+        "height": 455,
+        "sourceBounds": {
+          "x": 13,
+          "y": 522,
+          "w": 520,
+          "h": 455
+        },
+        "area": 100414
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/ending-05.webp",
+        "width": 442,
+        "height": 398,
+        "sourceBounds": {
+          "x": 409,
+          "y": 600,
+          "w": 442,
+          "h": 398
+        },
+        "area": 86893
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/ending-06.webp",
+        "width": 298,
+        "height": 497,
+        "sourceBounds": {
+          "x": 841,
+          "y": 503,
+          "w": 298,
+          "h": 497
+        },
+        "area": 90614
+      },
+      {
+        "file": "docs/art/layered-specials/fraudo-baggins/actors/ending-07.webp",
+        "width": 292,
+        "height": 490,
+        "sourceBounds": {
+          "x": 1203,
+          "y": 514,
+          "w": 292,
+          "h": 490
+        },
+        "area": 85334
+      }
+    ]
+  },
+  "props": {},
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

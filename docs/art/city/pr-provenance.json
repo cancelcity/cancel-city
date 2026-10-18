@@ -1,0 +1,456 @@
+{
+  "building_id": "pr",
+  "name": "PR Factory",
+  "method": "builtin image_gen.imagegen",
+  "transparent_background": true,
+  "style_reference": "docs/art/residents/CC026.png",
+  "style_reference_role": "Inspected local image; style only, no identity or scenery carried over.",
+  "workflow": "L1 generation, L1→L2 edit, L2→L3 edit. Then targeted builtin framing repairs: two attempts for L2 and one for L3. No manual raster manipulation.",
+  "qa_status": "Selected L1/L2/L3 are fully framed, genuine alpha, no text/logos/scenery. Repaired L2/L3 solid artwork has at least 8% margin on every side. Ground tips land at approximately 89% and 91% canvas height rather than exact 90%.",
+  "levels": [
+    {
+      "level": 1,
+      "output_path": "docs/art/city/pr-l1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "687fab5e006383ab32007ad1852044b7bcbe4f0e191c827237bd56c60981da3b",
+      "alpha_qa": {
+        "range": [
+          0,
+          255
+        ],
+        "fully_transparent_fraction": 0.6231987464674446,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox_alpha_gt_128": [
+          225,
+          100,
+          1029,
+          1227
+        ],
+        "solid_art_margin_pixels": {
+          "left": 225,
+          "top": 100,
+          "right": 225,
+          "bottom": 27
+        },
+        "opaque_edge_pixels": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "exact_prompt": "Use case: illustration-story. Asset type: transparent isometric building sprite for an interactive Cancel City neighbourhood. NEW illustration. Reference portrait is STYLE ONLY: match its bold grotesque punk comic black ink outlines, dense scratchy crosshatching, distressed screen-printed vivid colour, textured hand-drawn details. Show ONE complete building, detached, centered, full structure visible, three-quarter isometric view from diagonally above, orthographic game camera, vertical walls upright. Two visible front/side faces meet at center; ground base is a small diamond-like isometric square. Use the same approximately 30-degree isometric view for all assets. Frame comfortably inside a square canvas with clear transparent margin, preserve room above roof. Include ONLY the building and its own narrow ground footprint, no street, no sky, no background scenery, no large shadow extending outside footprint. TRUE alpha transparent background, not white or checkerboard painted background. NO card frame, UI, captions, readable text, watermark or real logos. High detail at least 1024 square; legible silhouette at 250px. Level 1 starting building, compact and modest but expressive. Palette: lavender-violet. Subject: A compact three-storey lavender bureaucratic office factory, mismatched concrete slabs, large purple glass windows, complicated exposed ventilation pipes, a giant takeaway coffee cup on the roof with no writing, blank paper sheets escaping a roof vent, tiny cracked entry steps and violet neon window trim. Satirize corporate wellness and endless paperwork.\nStyle reference: the previously viewed CC026 resident portrait supplies the ink and print style only. Do not depict the portrait, people, helicopters, skyline or its background. Composition lock for the upgrade series: square 1024px canvas, stable narrow isometric footprint centered at approximately x=512, with base bottom near y=900; keep the level 1 roof/cup below y=310 to reserve clear vertical headroom for later floors. No painted checkerboard.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3bbcc61c-9ba7-41d5-a91e-f8c8b0287e5e.png",
+      "input_target": null,
+      "visual_qa": {
+        "style_match": true,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_people": true,
+        "no_background": true,
+        "true_alpha_transparency": true,
+        "entire_building_framed": true,
+        "canvas_size_preserved": true,
+        "camera_identity_preserved": true
+      },
+      "notes": [
+        "Detailed compact three-storey lavender office factory, large blank purple coffee cup, exposed pipes and escaping paperwork.",
+        "Solid artwork has 27px bottom margin. Some nearly transparent pixels lie at canvas edges."
+      ]
+    },
+    {
+      "level": 2,
+      "output_path": "docs/art/city/pr-l2.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "396d01c82b37b8ac785f4c4a5fdf2249dc634a05e44b649606317ce4133f5429",
+      "alpha_qa": {
+        "range": [
+          0,
+          255
+        ],
+        "fully_transparent_fraction": 0.7679940935418145,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox_alpha_gt_128": [
+          344,
+          230,
+          946,
+          1116
+        ],
+        "solid_art_margin_pixels": {
+          "left": 344,
+          "top": 230,
+          "right": 308,
+          "bottom": 138
+        },
+        "opaque_edge_pixels": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "exact_prompt": "Use case: precise-object-edit. Framing-only repair of the attached PR Factory level 2 sprite. Current result is fully visible but still too large and too low. Keep 1254x1254 square canvas and TRUE transparent alpha. Uniformly scale THE ENTIRE EXISTING ARTWORK GROUP to 85% of its current size, keeping all building architecture, cup, papers, door, steps, base, balcony, pipe details, colours and isometric camera unchanged. Then position the group so its lowest ground tip is at y=1128 (90% canvas height), with at least 125 fully transparent pixels beneath it. Leave generous empty alpha margin above and all sides; none of the building or base may touch or approach a canvas edge. The entire sprite should occupy only the central approximately 70% of the square. Do not zoom back in. Do not add details or scenery. Preserve the same orthographic isometric camera, distressed black ink lavender-violet style, and precise building identity. This is ONLY whole-group scale and translation within an unchanged transparent canvas, no redesign. No text, logos, background or checkerboard.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-fe847cf3-24b6-4930-8751-71dcd7d70729.png",
+      "input_target": "docs/art/city/pr-l2-repair-1.png",
+      "visual_qa": {
+        "style_match": true,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_people": true,
+        "no_background": true,
+        "true_alpha_transparency": true,
+        "entire_building_framed": true,
+        "canvas_size_preserved": true,
+        "camera_identity_preserved": true,
+        "minimum_8_percent_solid_art_margin": true,
+        "original_pixel_base_position_preserved": false
+      },
+      "notes": [
+        "First variant is preserved; selected master uses authorized builtin framing-only repair.",
+        "Architecture/camera/identity visually retained; full base and all roof details visible.",
+        "Full building framed; minimum solid-art margin 138px (11%); ground tip approximately 89% canvas height.",
+        "Whole-group scaling and translation intentionally change original pixel base position; exact 90% requested placement differs by about 1% canvas height."
+      ],
+      "initial_generation": {
+        "exact_prompt": "Use case: precise-object-edit. Edit target: this PR Factory level 1 sprite. Upgrade this exact building to level 2: keep its identity, camera, footprint, front-door position, palette, transparent background and canvas size. Add one small balcony or upper floor, brighter window fixtures and a few richer rooftop details. Preserve clear space around edges; no new buildings, lettering or background.\nPreserve the existing base footprint at exactly its current pixel position, entry steps and doorway location, same 1254x1254 square canvas, lavender-violet distressed punk-comic ink style, purple blank coffee cup, pipes and paper vent identity. Add a small upper-floor extension or narrow balcony using the current upper-roof space and brighten violet window fixtures. Keep every part comfortably inside the canvas. Do not enlarge or shift the base, do not crop. Background must be genuine transparent alpha including all four corners, not a painted black, white or checkerboard field. No readable text or writing on the paper sheets, no logo, no new scenery. Keep any shadow strictly within the existing base.",
+        "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-7e5db747-c91a-4c53-8b20-cd85ec8e2efd.png",
+        "input_target": "docs/art/city/pr-l1.png",
+        "variant_path": "docs/art/city/pr-l2-first.png",
+        "qa": {
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "sha256": "6e5bcdcd66af4c9e3e4e2dbad8034072521a5b0409babd635097cb33ebd3ea55",
+          "alpha_qa": {
+            "range": [
+              0,
+              255
+            ],
+            "fully_transparent_fraction": 0.5709048429395949,
+            "corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "bbox_alpha_gt_128": [
+              222,
+              57,
+              1041,
+              1254
+            ],
+            "solid_art_margin_pixels": {
+              "left": 222,
+              "top": 57,
+              "right": 213,
+              "bottom": 0
+            },
+            "opaque_edge_pixels": {
+              "top": 0,
+              "bottom": 55,
+              "left": 0,
+              "right": 0
+            }
+          }
+        },
+        "notes": [
+          "Upgrade preserves camera, lavender identity, door and machinery language.",
+          "Generator shifted footprint downward; base tip touches bottom canvas edge, so full-framing/base-position constraint is not fully met.",
+          "One builtin call per level enforced; no extra edit, crop, pad or raster manipulation applied."
+        ]
+      }
+    },
+    {
+      "level": 3,
+      "output_path": "docs/art/city/pr-l3.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "2f83137df5961ebe42f29831a8e833cd5de84bd0856e884fd1f7f7d7ef87ffed",
+      "alpha_qa": {
+        "range": [
+          0,
+          255
+        ],
+        "fully_transparent_fraction": 0.7271061152954883,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "bbox_alpha_gt_128": [
+          317,
+          197,
+          951,
+          1142
+        ],
+        "solid_art_margin_pixels": {
+          "left": 317,
+          "top": 197,
+          "right": 303,
+          "bottom": 112
+        },
+        "opaque_edge_pixels": {
+          "top": 0,
+          "bottom": 0,
+          "left": 0,
+          "right": 0
+        }
+      },
+      "exact_prompt": "Use case: precise-object-edit. Framing-only repair of the attached PR Factory level 3 sprite. Keep SAME 1254x1254 square canvas with TRUE transparent alpha. Uniformly scale THE ENTIRE EXISTING ARTWORK GROUP to 75% of its current size, keeping all level 3 building architecture, coffee cup, floating sheets, door, steps, diamond ground base, balcony, rooftop machinery, pipes, details, colours and orthographic isometric camera unchanged. Then position the group so its lowest ground tip is at y=1128 (90% canvas height), with at least 125 fully transparent pixels beneath it. Leave generous empty alpha margins above and all sides; at least 8% empty transparent margin on every side. None of the building or base may touch or approach a canvas edge. The entire sprite should occupy only the central approximately 70% of the square. The current original image has its base tip clipped at the bottom: recover the ENTIRE COMPLETE BASE AND STEPS while shrinking. Do not zoom back in. Do not add or remove architecture or scenery. Preserve distressed bold black ink lavender-violet style and precise building identity. This is ONLY whole-group scaling and translation within an unchanged transparent canvas, no redesign. No text, logos, painted background or checkerboard.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6422dd26-925e-4838-aa58-c64f3a4371a6.png",
+      "input_target": "docs/art/city/pr-l3-first.png",
+      "visual_qa": {
+        "style_match": true,
+        "no_readable_text": true,
+        "no_logos": true,
+        "no_people": true,
+        "no_background": true,
+        "true_alpha_transparency": true,
+        "entire_building_framed": true,
+        "canvas_size_preserved": true,
+        "camera_identity_preserved": true,
+        "minimum_8_percent_solid_art_margin": true,
+        "original_pixel_base_position_preserved": false
+      },
+      "notes": [
+        "First variant is preserved; selected master uses authorized builtin framing-only repair.",
+        "Architecture/camera/identity visually retained; full base and all roof details visible.",
+        "Full building framed; minimum solid-art margin 112px (8.9%); ground tip approximately 91% canvas height.",
+        "Whole-group scaling and translation intentionally change original pixel base position; exact 90% requested placement differs by about 1% canvas height."
+      ],
+      "initial_generation": {
+        "exact_prompt": "Use case: precise-object-edit. Edit target: the attached PR Factory level 2 sprite. Upgrade this exact building to its maximum level 3: keep the same building identity, orthographic isometric camera, ground footprint, entry position, palette and transparent canvas. Create a more impressive taller structure with richer rooftop machinery/sculpture, expressive neon trim and additional architecture. Keep the entire building comfortably in frame and its base at the same location. No writing, logos, people or background scenery.\nExact constraints: retain the level 2 lavender-violet office factory identity, camera, same window-and-door facade, and narrow ground footprint. Output same 1254x1254 square canvas. The previous edit moved the base slightly too low: restore the diamond base bottom to y=1220 with at least 30 pixels of fully transparent margin beneath and do not cut any base, stair, pipe or railing. Keep base horizontally centered at x=627 and the original level 1 footprint scale. Add a visually richer top-level roof architecture with stepped upper office structure, elaborate ventilation sculpture and violet neon outline. Use available upper roof headroom and keep floating blank sheets plus coffee cup wholly below y=50, with clear alpha margin above. Preserve bold black distressed punk comic crosshatching and vivid lavender print colours. Genuine transparent alpha background and transparent corners; no painted background, checkerboard, writing, logos, people or scenery.",
+        "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-bd76d697-41ba-4aec-b2b3-0daf8fec6708.png",
+        "input_target": "docs/art/city/pr-l2.png",
+        "variant_path": "docs/art/city/pr-l3-first.png",
+        "qa": {
+          "dimensions": [
+            1254,
+            1254
+          ],
+          "mode": "RGBA",
+          "sha256": "c2ffcfbb9f5614bfc3725893db4502dbd19fb82bd6a65144e276c66bb1126ee6",
+          "alpha_qa": {
+            "range": [
+              0,
+              255
+            ],
+            "fully_transparent_fraction": 0.5484134978594812,
+            "corner_alpha": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "bbox_alpha_gt_128": [
+              229,
+              40,
+              1044,
+              1254
+            ],
+            "solid_art_margin_pixels": {
+              "left": 229,
+              "top": 40,
+              "right": 210,
+              "bottom": 0
+            },
+            "opaque_edge_pixels": {
+              "top": 0,
+              "bottom": 44,
+              "left": 0,
+              "right": 0
+            }
+          }
+        },
+        "notes": [
+          "Upgrade preserves camera, lavender identity, door and machinery language.",
+          "Generator shifted footprint downward; base tip touches bottom canvas edge, so full-framing/base-position constraint is not fully met.",
+          "One builtin call per level enforced; no extra edit, crop, pad or raster manipulation applied."
+        ]
+      }
+    }
+  ],
+  "repair_authorization": "Parent clarified one call per level was separate prompt guidance, not a cap on necessary quality fixes, and authorized up to two targeted builtin repair attempts.",
+  "framing_repairs": [
+    {
+      "level": 2,
+      "attempt": 1,
+      "exact_prompt": "Use case: precise-object-edit. Asset: transparent isometric PR Factory level 2 building game sprite. Edit target is the supplied complete building. Perform ONLY a framing repair: scale the entire existing building, its coffee cup, floating paper sheets, pipes, balcony, doorway, steps and ground diamond SMALLER AS ONE GROUP inside the SAME 1254x1254 square alpha canvas. Preserve every architectural feature and their proportions, the exact lavender/violet palette, distressed punk comic black ink style, orthographic isometric camera and building identity. Do not redesign, add or remove anything. Fit ALL artwork within x=100..1153 and y=100..1128, leaving at least 8% transparent margin on every side. Put the lowest tip of the ground diamond at y=1128, exactly 90% of the canvas height, centered near x=627. Topmost paper must remain below y=100. Current image's base tip hits canvas bottom: move and uniformly shrink whole artwork to repair this. ENTIRE BUILDING AND COMPLETE BASE MUST BE VISIBLE with transparent breathing room below the tip. True transparent alpha background, not black/white/checkerboard. No text, logos, extra scenery or large shadow. Preserve same square canvas dimensions.",
+      "input_target": "docs/art/city/pr-l2-first.png",
+      "output_path": "docs/art/city/pr-l2-repair-1.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-bfa58c7e-76ec-4e9a-80d6-784614cbf59f.png",
+      "selected_as_master": false,
+      "qa": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "sha256": "400f12d72550750b25fac73353f67273f938d1b9b5c68ac8bba8fbb9f327b9e5",
+        "alpha_qa": {
+          "range": [
+            0,
+            255
+          ],
+          "fully_transparent_fraction": 0.6721546871383185,
+          "corner_alpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_128": [
+            280,
+            132,
+            997,
+            1196
+          ],
+          "solid_art_margin_pixels": {
+            "left": 280,
+            "top": 132,
+            "right": 257,
+            "bottom": 58
+          },
+          "opaque_edge_pixels": {
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          }
+        }
+      },
+      "notes": [
+        "Complete base recovered and no edge contact; bottom solid-art margin 58px did not meet 8% target.",
+        "Visual inspection confirms identity, architecture, orthographic camera and lavender-violet comic style retained."
+      ]
+    },
+    {
+      "level": 2,
+      "attempt": 2,
+      "exact_prompt": "Use case: precise-object-edit. Framing-only repair of the attached PR Factory level 2 sprite. Current result is fully visible but still too large and too low. Keep 1254x1254 square canvas and TRUE transparent alpha. Uniformly scale THE ENTIRE EXISTING ARTWORK GROUP to 85% of its current size, keeping all building architecture, cup, papers, door, steps, base, balcony, pipe details, colours and isometric camera unchanged. Then position the group so its lowest ground tip is at y=1128 (90% canvas height), with at least 125 fully transparent pixels beneath it. Leave generous empty alpha margin above and all sides; none of the building or base may touch or approach a canvas edge. The entire sprite should occupy only the central approximately 70% of the square. Do not zoom back in. Do not add details or scenery. Preserve the same orthographic isometric camera, distressed black ink lavender-violet style, and precise building identity. This is ONLY whole-group scale and translation within an unchanged transparent canvas, no redesign. No text, logos, background or checkerboard.",
+      "input_target": "docs/art/city/pr-l2-repair-1.png",
+      "output_path": "docs/art/city/pr-l2-repair-2.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-fe847cf3-24b6-4930-8751-71dcd7d70729.png",
+      "selected_as_master": true,
+      "qa": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "sha256": "396d01c82b37b8ac785f4c4a5fdf2249dc634a05e44b649606317ce4133f5429",
+        "alpha_qa": {
+          "range": [
+            0,
+            255
+          ],
+          "fully_transparent_fraction": 0.7679940935418145,
+          "corner_alpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_128": [
+            344,
+            230,
+            946,
+            1116
+          ],
+          "solid_art_margin_pixels": {
+            "left": 344,
+            "top": 230,
+            "right": 308,
+            "bottom": 138
+          },
+          "opaque_edge_pixels": {
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          }
+        }
+      },
+      "notes": [
+        "Full building framed; minimum solid-art margin 138px (11%); ground tip approximately 89% canvas height.",
+        "Visual inspection confirms identity, architecture, orthographic camera and lavender-violet comic style retained."
+      ]
+    },
+    {
+      "level": 3,
+      "attempt": 1,
+      "exact_prompt": "Use case: precise-object-edit. Framing-only repair of the attached PR Factory level 3 sprite. Keep SAME 1254x1254 square canvas with TRUE transparent alpha. Uniformly scale THE ENTIRE EXISTING ARTWORK GROUP to 75% of its current size, keeping all level 3 building architecture, coffee cup, floating sheets, door, steps, diamond ground base, balcony, rooftop machinery, pipes, details, colours and orthographic isometric camera unchanged. Then position the group so its lowest ground tip is at y=1128 (90% canvas height), with at least 125 fully transparent pixels beneath it. Leave generous empty alpha margins above and all sides; at least 8% empty transparent margin on every side. None of the building or base may touch or approach a canvas edge. The entire sprite should occupy only the central approximately 70% of the square. The current original image has its base tip clipped at the bottom: recover the ENTIRE COMPLETE BASE AND STEPS while shrinking. Do not zoom back in. Do not add or remove architecture or scenery. Preserve distressed bold black ink lavender-violet style and precise building identity. This is ONLY whole-group scaling and translation within an unchanged transparent canvas, no redesign. No text, logos, painted background or checkerboard.",
+      "input_target": "docs/art/city/pr-l3-first.png",
+      "output_path": "docs/art/city/pr-l3-repair-1.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6422dd26-925e-4838-aa58-c64f3a4371a6.png",
+      "selected_as_master": true,
+      "qa": {
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "sha256": "2f83137df5961ebe42f29831a8e833cd5de84bd0856e884fd1f7f7d7ef87ffed",
+        "alpha_qa": {
+          "range": [
+            0,
+            255
+          ],
+          "fully_transparent_fraction": 0.7271061152954883,
+          "corner_alpha": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "bbox_alpha_gt_128": [
+            317,
+            197,
+            951,
+            1142
+          ],
+          "solid_art_margin_pixels": {
+            "left": 317,
+            "top": 197,
+            "right": 303,
+            "bottom": 112
+          },
+          "opaque_edge_pixels": {
+            "top": 0,
+            "bottom": 0,
+            "left": 0,
+            "right": 0
+          }
+        }
+      },
+      "notes": [
+        "Full building framed; minimum solid-art margin 112px (8.9%); ground tip approximately 91% canvas height.",
+        "Visual inspection confirms identity, architecture, orthographic camera and lavender-violet comic style retained."
+      ]
+    }
+  ]
+}

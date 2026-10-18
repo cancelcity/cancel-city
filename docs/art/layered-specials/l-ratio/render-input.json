@@ -1,0 +1,179 @@
+{
+  "background": "docs/art/layered-specials/l-ratio/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/action-00.webp",
+        "width": 383,
+        "height": 368,
+        "sourceBounds": {
+          "x": 566,
+          "y": 1,
+          "w": 383,
+          "h": 368
+        },
+        "area": 78245
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/action-01.webp",
+        "width": 364,
+        "height": 391,
+        "sourceBounds": {
+          "x": 574,
+          "y": 372,
+          "w": 364,
+          "h": 391
+        },
+        "area": 89611
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/action-02.webp",
+        "width": 497,
+        "height": 369,
+        "sourceBounds": {
+          "x": 24,
+          "y": 757,
+          "w": 497,
+          "h": 369
+        },
+        "area": 85498
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/action-03.webp",
+        "width": 512,
+        "height": 332,
+        "sourceBounds": {
+          "x": 511,
+          "y": 767,
+          "w": 512,
+          "h": 332
+        },
+        "area": 74248
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/action-04.webp",
+        "width": 613,
+        "height": 412,
+        "sourceBounds": {
+          "x": 20,
+          "y": 1121,
+          "w": 613,
+          "h": 412
+        },
+        "area": 113478
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/action-05.webp",
+        "width": 277,
+        "height": 454,
+        "sourceBounds": {
+          "x": 661,
+          "y": 1075,
+          "w": 277,
+          "h": 454
+        },
+        "area": 68608
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/ending-00.webp",
+        "width": 325,
+        "height": 424,
+        "sourceBounds": {
+          "x": 116,
+          "y": 2,
+          "w": 325,
+          "h": 424
+        },
+        "area": 68816
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/ending-01.webp",
+        "width": 338,
+        "height": 423,
+        "sourceBounds": {
+          "x": 566,
+          "y": 9,
+          "w": 338,
+          "h": 423
+        },
+        "area": 75897
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/ending-02.webp",
+        "width": 374,
+        "height": 383,
+        "sourceBounds": {
+          "x": 91,
+          "y": 411,
+          "w": 374,
+          "h": 383
+        },
+        "area": 82788
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/ending-03.webp",
+        "width": 409,
+        "height": 383,
+        "sourceBounds": {
+          "x": 539,
+          "y": 412,
+          "w": 409,
+          "h": 383
+        },
+        "area": 84149
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/ending-04.webp",
+        "width": 399,
+        "height": 382,
+        "sourceBounds": {
+          "x": 75,
+          "y": 768,
+          "w": 399,
+          "h": 382
+        },
+        "area": 81215
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/ending-05.webp",
+        "width": 325,
+        "height": 352,
+        "sourceBounds": {
+          "x": 599,
+          "y": 789,
+          "w": 325,
+          "h": 352
+        },
+        "area": 71541
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/ending-06.webp",
+        "width": 401,
+        "height": 358,
+        "sourceBounds": {
+          "x": 102,
+          "y": 1163,
+          "w": 401,
+          "h": 358
+        },
+        "area": 83574
+      },
+      {
+        "file": "docs/art/layered-specials/l-ratio/actors/ending-07.webp",
+        "width": 295,
+        "height": 417,
+        "sourceBounds": {
+          "x": 613,
+          "y": 1116,
+          "w": 295,
+          "h": 417
+        },
+        "area": 70832
+      }
+    ]
+  },
+  "props": {},
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

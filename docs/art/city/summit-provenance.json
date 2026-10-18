@@ -1,0 +1,189 @@
+{
+  "asset_id": "summit",
+  "asset_name": "Summit Club",
+  "method": "Built-in image_gen.imagegen; L1 generated from style reference, L2 edited selected L1, L3 edited selected L2, one targeted built-in L3 framing repair. No CLI fallback or manual pixel changes; original generated alpha preserved.",
+  "style_reference": "docs/art/residents/CC026.png",
+  "brief_source": "docs/art/city/building-briefs.json",
+  "levels": [
+    {
+      "level": 1,
+      "path": "docs/art/city/summit-l1.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "348bacc9869c42615662a118ad32f07681e52dc0d6f83c70a814ee961212e996",
+      "alpha_qa": {
+        "extrema": [
+          0,
+          255
+        ],
+        "zero_alpha_pixels": 768491,
+        "zero_alpha_percent": 48.87,
+        "raw_alpha_bbox": [
+          0,
+          17,
+          1240,
+          1254
+        ],
+        "visible_bbox_alpha_gt_5": [
+          123,
+          35,
+          1161,
+          1228
+        ],
+        "visible_margins_left_top_right_bottom": [
+          123,
+          35,
+          93,
+          26
+        ],
+        "main_content_on_canvas_boundary": false,
+        "bottom_row_visible_pixels": 0,
+        "all_four_corners_alpha_zero": false
+      },
+      "source_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-4ee4f6f5-f838-4670-acc1-16a403d6daa0.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/summit-l1.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent isometric building sprite for an interactive Cancel City neighbourhood. NEW illustration. Reference portrait is STYLE ONLY: match its bold grotesque punk comic black ink outlines, dense scratchy crosshatching, distressed screen-printed vivid colour, textured hand-drawn details. Show ONE complete building, detached, centered, full structure visible, three-quarter isometric view from diagonally above, orthographic game camera, vertical walls upright. Two visible front/side faces meet at center; ground base is a small diamond-like isometric square. Use the same approximately 30-degree isometric view for all assets. Frame comfortably inside a square canvas with clear transparent margin, preserve room above roof. Include ONLY the building and its own narrow ground footprint, no street, no sky, no background scenery, no large shadow extending outside footprint. TRUE alpha transparent background, not white or checkerboard painted background. NO card frame, UI, captions, readable text, watermark or real logos. High detail at least 1024 square; legible silhouette at 250px. Level 1 starting building, compact and modest but expressive. Palette: burnt orange-gold. Subject: A compact two-storey art-deco diplomatic gala nightclub, orange and warm cream stucco, grand red velvet entry, small gold columns, rooftop glowing globe sculpture and plain blank bunting, elegant balcony, strange gold statues and warm amber windows. Satirize diplomacy as a fancy party. No readable signs or real flags.\nInput image: docs/art/residents/CC026.png is a STYLE-ONLY reference. Do not depict the person or portrait content. Reserve generous transparent headroom for later building upgrades; keep the compact base toward the lower portion of the square canvas.",
+      "transparent_background": true,
+      "edit_target": null,
+      "selected_revision": "initial",
+      "visual_qa": {
+        "style": "Detailed scratchy black-ink comic art in burnt orange, cream and gold; stylistically follows portrait reference.",
+        "camera": "Orthographic three-quarter isometric building; camera orientation maintained across levels.",
+        "no_readable_text_or_real_logos": true,
+        "no_background_scenery": true,
+        "transparent_background": true,
+        "complete_structure_fully_framed": true,
+        "notes": "Compact two-storey gala club with red velvet entrance, gold globe, balconies and statues. Transparent margin around visible structure. Small patron silhouettes visible behind windows."
+      }
+    },
+    {
+      "level": 2,
+      "path": "docs/art/city/summit-l2.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "07bd5c88f05db04be5d005e5ee103866d61d744ffc37988acf34258f61271b17",
+      "alpha_qa": {
+        "extrema": [
+          0,
+          255
+        ],
+        "zero_alpha_pixels": 749259,
+        "zero_alpha_percent": 47.65,
+        "raw_alpha_bbox": [
+          0,
+          11,
+          1180,
+          1238
+        ],
+        "visible_bbox_alpha_gt_5": [
+          122,
+          13,
+          1164,
+          1229
+        ],
+        "visible_margins_left_top_right_bottom": [
+          122,
+          13,
+          90,
+          25
+        ],
+        "main_content_on_canvas_boundary": false,
+        "bottom_row_visible_pixels": 0,
+        "all_four_corners_alpha_zero": true
+      },
+      "source_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-b70db978-e6bb-4192-9df9-33e4a14b4ef7.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/summit-l2.png",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent isometric Cancel City Summit Club sprite. Input image 1 is the EXACT EDIT TARGET, summit-l1.png. Upgrade this exact building to level 2: keep its identity, camera, footprint, front-door position, palette, transparent background and canvas size. Add one small balcony or upper floor, brighter window fixtures and a few richer rooftop details. Preserve clear space around edges; no new buildings, lettering or background.\nPreserve the detailed distressed black-ink comic illustration style, burnt-orange stucco, cream stone, gold sculpted globe, red velvet entrance and existing balcony. Choose the additional small balcony option; enhance amber window fixtures and add richer gold rooftop finials, so level 2 is clearly upgraded. Preserve the exact orthographic camera, narrow diamond-like ground footprint, entrance placement, image dimensions, building base pixel position and actual alpha transparency. Do not translate, rotate, recenter, rescale or crop the existing structure. Keep complete structure and all roof detail fully inside transparent margins. No people, readable text, lettering, logos, signs, scenery or opaque background.",
+      "transparent_background": true,
+      "edit_target": "docs/art/city/summit-l1.png",
+      "selected_revision": "initial",
+      "visual_qa": {
+        "style": "Detailed scratchy black-ink comic art in burnt orange, cream and gold; stylistically follows portrait reference.",
+        "camera": "Orthographic three-quarter isometric building; camera orientation maintained across levels.",
+        "no_readable_text_or_real_logos": true,
+        "no_background_scenery": true,
+        "transparent_background": true,
+        "complete_structure_fully_framed": true,
+        "notes": "Level 2 enriches gold rooftop finials, lamp fixtures and balcony ornament. Footprint/base position stays within approximately one pixel of L1."
+      }
+    },
+    {
+      "level": 3,
+      "path": "docs/art/city/summit-l3.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "9dbd0df6a544023bd6d7339488f4d30e9b8966f0d6b1d1ad37c8071075021c9e",
+      "alpha_qa": {
+        "extrema": [
+          0,
+          255
+        ],
+        "zero_alpha_pixels": 1056764,
+        "zero_alpha_percent": 67.2,
+        "raw_alpha_bbox": [
+          0,
+          29,
+          1240,
+          1254
+        ],
+        "visible_bbox_alpha_gt_5": [
+          237,
+          115,
+          1031,
+          1121
+        ],
+        "visible_margins_left_top_right_bottom": [
+          237,
+          115,
+          223,
+          133
+        ],
+        "main_content_on_canvas_boundary": false,
+        "bottom_row_visible_pixels": 0,
+        "all_four_corners_alpha_zero": true
+      },
+      "source_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-bad3b2ec-6411-45f2-90ae-8aa91bd1f1c5.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/summit-l3.png",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent isometric Cancel City Summit Club sprite. Input image 1 is the EXACT EDIT TARGET, summit-l2.png. Upgrade this exact building to its maximum level 3: keep the same building identity, orthographic isometric camera, ground footprint, entry position, palette and transparent canvas. Create a more impressive taller structure with richer rooftop machinery/sculpture, expressive neon trim and additional architecture. Keep the entire building comfortably in frame and its base at the same location. No writing, logos, people or background scenery.\nPreserve the distressed black-ink comic style, burnt-orange stucco, warm cream stone, gold architectural trim, red velvet entrance and characteristic gold globe sculpture. Make level 3 visibly grander by adding a compact third architectural storey/upper pavilion into the existing roof area with new amber windows, ornate gold columns, stronger amber neon trim and more elaborate globe-support sculpture. Reconfigure the existing tall roof sculpture to be slightly more compact so the added upper floor and globe remain entirely inside the same canvas with visible transparent margin. Keep every lower-floor feature, entrance, stairs and narrow diamond ground base in their exact original positions. Keep the base at the same pixel location and the same footprint/camera/image dimensions. Do not rotate, recenter, move the base or crop. Preserve TRUE alpha transparency. No people, readable writing, lettering, logos, signs, extra buildings, scenery, street or opaque background.",
+      "transparent_background": true,
+      "edit_target": "docs/art/city/summit-l2.png",
+      "selected_revision": "framing repair",
+      "visual_qa": {
+        "style": "Detailed scratchy black-ink comic art in burnt orange, cream and gold; stylistically follows portrait reference.",
+        "camera": "Orthographic three-quarter isometric building; camera orientation maintained across levels.",
+        "no_readable_text_or_real_logos": true,
+        "no_background_scenery": true,
+        "transparent_background": true,
+        "complete_structure_fully_framed": true,
+        "notes": "Level 3 adds a third upper pavilion with brighter trim, more elaborate sculpture and smaller globe. Selected framing repair scales entire building smaller to provide at least 9% vertical transparent margin and complete bottom clearance. Raw selected L3 ground position/size differs from L1/L2 and requires common consumer sprite normalization if exact base alignment is needed. Small patron silhouettes remain behind windows."
+      }
+    }
+  ],
+  "repair_history": [
+    {
+      "level": 3,
+      "preserved_initial_path": "docs/art/city/summit-l3-first.png",
+      "initial_source_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-dcf7f74a-9939-4a2b-8851-f85f1ec649e6.png",
+      "issue": "Initial L3 third-storey edit moved ground tip down ~25px to last canvas row. Framing repair explicitly authorized by parent.",
+      "repair_prompt": "Use case: precise-object-edit. Asset type: transparent isometric Cancel City Summit Club level 3 game sprite. Input image is the EXACT EDIT TARGET, summit-l3-first.png. Repair only framing: scale the ENTIRE existing building and its narrow diamond ground footprint uniformly smaller within the same 1254×1254 square canvas. Provide clear transparent margin of at least 8 percent on every side; place the lowest ground tip at 90 percent of image height and the top gold finial at about 10 percent of height. Preserve ALL existing architecture, three-storey upper pavilion, gold globe sculpture, red velvet entrance, orange and cream stucco, gold neon trim, ink outlines, scratchy print textures, lighting, camera angle and building proportions. This is a canvas framing repair, not an architectural redesign. Do not cut or extend any structure or ground. No new features, no new text, logos, scenery or people. Genuine alpha transparent empty background; no white or checkerboard painting. Keep the complete building comfortably in frame with generous empty alpha around it.",
+      "repair_input_path": "docs/art/city/summit-l3-first.png",
+      "selected_repair_output_path": "docs/art/city/summit-l3.png",
+      "qa_result": "Passed first targeted repair: alpha>5 bbox [237,115,1031,1121], canvas 1254 square, lowest ground tip 89.4% height."
+    }
+  ],
+  "qa_notes": [
+    "Actual alpha values span 0–255; every image has at least 47% exactly transparent pixels. Genuine alpha cutouts, not painted white/checkerboards.",
+    "Extremely faint alpha artifacts (mainly alpha=1) can extend beyond visible content. Visible bounding boxes reported at alpha >5; main subject is inside margin.",
+    "L1/L2 visible bottom ends differ by 1px. Repaired L3 intentionally uses a smaller raw framing per repair instruction; consumer common normalization should align ground tips/footprints across levels.",
+    "No readable signs, real logos, scenery or outside characters. Small interior patron silhouettes were inherited by upgrades despite the no-people constraint."
+  ]
+}

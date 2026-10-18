@@ -1,0 +1,61 @@
+{
+  "id": "CC007",
+  "portrait": "/assets/roster-v2/CC007.webp",
+  "baseHeight": 484,
+  "poses": [
+    {
+      "src": "/assets/actors/CC007-roster-v2-0.webp",
+      "width": 512,
+      "height": 512,
+      "anchor": {
+        "x": 287,
+        "y": 487
+      }
+    },
+    {
+      "src": "/assets/actors/CC007-roster-v2-1.webp",
+      "width": 512,
+      "height": 512,
+      "anchor": {
+        "x": 249,
+        "y": 484
+      }
+    },
+    {
+      "src": "/assets/actors/CC007-roster-v2-2.webp",
+      "width": 512,
+      "height": 512,
+      "anchor": {
+        "x": 262,
+        "y": 485
+      }
+    },
+    {
+      "src": "/assets/actors/CC007-roster-v2-3.webp",
+      "width": 512,
+      "height": 512,
+      "anchor": {
+        "x": 288,
+        "y": 480
+      }
+    },
+    {
+      "src": "/assets/actors/CC007-roster-v2-4.webp",
+      "width": 512,
+      "height": 512,
+      "anchor": {
+        "x": 259,
+        "y": 488
+      }
+    },
+    {
+      "src": "/assets/actors/CC007-roster-v2-5.webp",
+      "width": 512,
+      "height": 512,
+      "anchor": {
+        "x": 263,
+        "y": 490
+      }
+    }
+  ]
+}

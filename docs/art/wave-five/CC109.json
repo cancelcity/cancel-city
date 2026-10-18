@@ -1,0 +1,191 @@
+{
+  "characterId": "CC109",
+  "characterName": "Yoda, Terms Read You Must",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Grid-cell alpha contour crop; source alpha preserved; uniformly scaled and square padded."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-0.webp",
+      "sourceExtraction": {
+        "left": 26,
+        "top": 10,
+        "width": 444,
+        "height": 519
+      },
+      "scale": 0.789980732177264,
+      "suggestedAnchor": {
+        "x": 141,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 80,
+        "top": 46,
+        "right": 431,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 170319,
+        "transparentFraction": 0.6497154235839844
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-1.webp",
+      "sourceExtraction": {
+        "left": 526,
+        "top": 6,
+        "width": 408,
+        "height": 479
+      },
+      "scale": 0.8559498956158664,
+      "suggestedAnchor": {
+        "x": 290,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 81,
+        "top": 46,
+        "right": 430,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 162665,
+        "transparentFraction": 0.6205177307128906
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-2.webp",
+      "sourceExtraction": {
+        "left": 952,
+        "top": 23,
+        "width": 572,
+        "height": 464
+      },
+      "scale": 0.7167832167832168,
+      "suggestedAnchor": {
+        "x": 248,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 51,
+        "top": 123,
+        "right": 461,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 170966,
+        "transparentFraction": 0.6521835327148438
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-3.webp",
+      "sourceExtraction": {
+        "left": 32,
+        "top": 498,
+        "width": 465,
+        "height": 507
+      },
+      "scale": 0.8086785009861933,
+      "suggestedAnchor": {
+        "x": 261,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 68,
+        "top": 46,
+        "right": 444,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 166209,
+        "transparentFraction": 0.6340370178222656
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-4.webp",
+      "sourceExtraction": {
+        "left": 545,
+        "top": 541,
+        "width": 436,
+        "height": 465
+      },
+      "scale": 0.8817204301075269,
+      "suggestedAnchor": {
+        "x": 176,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 64,
+        "top": 46,
+        "right": 448,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 162729,
+        "transparentFraction": 0.6207618713378906
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-5.webp",
+      "sourceExtraction": {
+        "left": 1115,
+        "top": 529,
+        "width": 344,
+        "height": 476
+      },
+      "scale": 0.8613445378151261,
+      "suggestedAnchor": {
+        "x": 243,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 108,
+        "top": 46,
+        "right": 404,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 176859,
+        "transparentFraction": 0.6746635437011719
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest 36px; y at lowest alpha>32 art pixel."
+}

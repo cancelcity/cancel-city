@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "originalDesign": true,
+  "note": "Original safe visualbrief design used; fully clothed adults where humanoid. Portrait and all six acting sprites inspected. Technical alpha-contour isolation, uniform scale, square padding and encoding only; no painting.",
+  "portraitSource": "exec-968bd632-6efb-4fe0-936a-2a2ac44d3349.png",
+  "posesSource": "exec-7bdbc36e-bac4-48c8-8ffb-7f3ebdc52f29.png"
+}

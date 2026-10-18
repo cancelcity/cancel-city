@@ -1,0 +1,191 @@
+{
+  "characterId": "CC074",
+  "characterName": "Capybara Ombudsman",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC074-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Full-sheet alpha>32 connected-body bounds expand nominal grid cells where needed, retaining complete silhouettes; isolated distant small fringe removed; uniform scale and transparent square padding; original alpha retained."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC074-0.webp",
+      "sourceExtraction": {
+        "left": 133,
+        "top": 23,
+        "width": 310,
+        "height": 456
+      },
+      "scale": 0.9649122807017544,
+      "suggestedAnchor": {
+        "x": 241,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 106,
+        "top": 16,
+        "right": 405,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 168616,
+        "transparentFraction": 0.643218994140625
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC074-1.webp",
+      "sourceExtraction": {
+        "left": 567,
+        "top": 41,
+        "width": 404,
+        "height": 432
+      },
+      "scale": 1.0185185185185186,
+      "suggestedAnchor": {
+        "x": 118,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 50,
+        "top": 16,
+        "right": 461,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 146813,
+        "transparentFraction": 0.5600471496582031
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC074-2.webp",
+      "sourceExtraction": {
+        "left": 1005,
+        "top": 69,
+        "width": 516,
+        "height": 392
+      },
+      "scale": 0.8527131782945736,
+      "suggestedAnchor": {
+        "x": 245,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 122,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 186844,
+        "transparentFraction": 0.7127532958984375
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC074-3.webp",
+      "sourceExtraction": {
+        "left": 81,
+        "top": 509,
+        "width": 457,
+        "height": 455
+      },
+      "scale": 0.962800875273523,
+      "suggestedAnchor": {
+        "x": 171,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 18,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 144192,
+        "transparentFraction": 0.550048828125
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC074-4.webp",
+      "sourceExtraction": {
+        "left": 632,
+        "top": 516,
+        "width": 334,
+        "height": 447
+      },
+      "scale": 0.9843400447427293,
+      "suggestedAnchor": {
+        "x": 228,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 91,
+        "top": 16,
+        "right": 420,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 163657,
+        "transparentFraction": 0.6243019104003906
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC074-5.webp",
+      "sourceExtraction": {
+        "left": 1108,
+        "top": 532,
+        "width": 316,
+        "height": 433
+      },
+      "scale": 1.0161662817551964,
+      "suggestedAnchor": {
+        "x": 251,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 95,
+        "top": 16,
+        "right": 416,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 156747,
+        "transparentFraction": 0.5979423522949219
+      }
+    }
+  ],
+  "anchorMethod": "Median x of solid lowest36px; y at lowest alpha>32 pixel."
+}

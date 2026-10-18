@@ -1,0 +1,191 @@
+{
+  "characterId": "CC071",
+  "characterName": "Grumpy Service Desk",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC071-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Full-sheet alpha>32 connected-body bounds expand nominal grid cells where needed, retaining complete silhouettes; isolated distant small fringe removed; uniform scale and transparent square padding; original alpha retained."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC071-0.webp",
+      "sourceExtraction": {
+        "left": 10,
+        "top": 50,
+        "width": 488,
+        "height": 430
+      },
+      "scale": 0.9016393442622951,
+      "suggestedAnchor": {
+        "x": 259,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 68,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 140506,
+        "transparentFraction": 0.5359878540039062
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC071-1.webp",
+      "sourceExtraction": {
+        "left": 520,
+        "top": 20,
+        "width": 489,
+        "height": 461
+      },
+      "scale": 0.8997955010224948,
+      "suggestedAnchor": {
+        "x": 261,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 41,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 131044,
+        "transparentFraction": 0.4998931884765625
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC071-2.webp",
+      "sourceExtraction": {
+        "left": 1034,
+        "top": 77,
+        "width": 490,
+        "height": 407
+      },
+      "scale": 0.8979591836734694,
+      "suggestedAnchor": {
+        "x": 263,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 91,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 144566,
+        "transparentFraction": 0.5514755249023438
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC071-3.webp",
+      "sourceExtraction": {
+        "left": 8,
+        "top": 498,
+        "width": 492,
+        "height": 481
+      },
+      "scale": 0.8943089430894309,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 26,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 128375,
+        "transparentFraction": 0.4897117614746094
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC071-4.webp",
+      "sourceExtraction": {
+        "left": 522,
+        "top": 571,
+        "width": 488,
+        "height": 401
+      },
+      "scale": 0.9016393442622951,
+      "suggestedAnchor": {
+        "x": 259,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 94,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 142506,
+        "transparentFraction": 0.5436172485351562
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC071-5.webp",
+      "sourceExtraction": {
+        "left": 1035,
+        "top": 602,
+        "width": 490,
+        "height": 375
+      },
+      "scale": 0.8979591836734694,
+      "suggestedAnchor": {
+        "x": 258,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 119,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 149126,
+        "transparentFraction": 0.5688705444335938
+      }
+    }
+  ],
+  "anchorMethod": "Median x of solid lowest36px; y at lowest alpha>32 pixel."
+}

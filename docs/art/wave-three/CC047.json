@@ -1,0 +1,190 @@
+{
+  "characterId": "CC047",
+  "characterName": "Auntie Fact Check",
+  "master": "docs/art/wave-three/CC047-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest alpha>32 connected bodies identify the six poses. Smaller prop components assigned whole to nearest actor. Original alpha retained near solid artwork, and disconnected distant faint fringe removed. Each full figure cropped, uniformly scaled, square padded. Source master unmodified."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC047-0.webp",
+      "sourceExtraction": {
+        "left": 78,
+        "top": 0,
+        "width": 329,
+        "height": 504
+      },
+      "scale": 0.88,
+      "suggestedAnchor": {
+        "x": 285,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 117,
+        "top": 28,
+        "right": 397,
+        "bottom": 461
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 186938,
+        "transparentFraction": 0.7131118774414062
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC047-1.webp",
+      "sourceExtraction": {
+        "left": 566,
+        "top": 0,
+        "width": 428,
+        "height": 503
+      },
+      "scale": 0.88,
+      "suggestedAnchor": {
+        "x": 252,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 73,
+        "top": 31,
+        "right": 439,
+        "bottom": 461
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 164962,
+        "transparentFraction": 0.6292800903320312
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC047-2.webp",
+      "sourceExtraction": {
+        "left": 1014,
+        "top": 0,
+        "width": 522,
+        "height": 508
+      },
+      "scale": 0.88,
+      "suggestedAnchor": {
+        "x": 248,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 32,
+        "top": 27,
+        "right": 484,
+        "bottom": 461
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 156891,
+        "transparentFraction": 0.5984916687011719
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC047-3.webp",
+      "sourceExtraction": {
+        "left": 94,
+        "top": 495,
+        "width": 380,
+        "height": 529
+      },
+      "scale": 0.8544423440453687,
+      "suggestedAnchor": {
+        "x": 262,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 100,
+        "top": 21,
+        "right": 415,
+        "bottom": 460
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 181150,
+        "transparentFraction": 0.6910324096679688
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC047-4.webp",
+      "sourceExtraction": {
+        "left": 557,
+        "top": 518,
+        "width": 452,
+        "height": 487
+      },
+      "scale": 0.88,
+      "suggestedAnchor": {
+        "x": 231,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 62,
+        "top": 42,
+        "right": 450,
+        "bottom": 461
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 165927,
+        "transparentFraction": 0.6329612731933594
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC047-5.webp",
+      "sourceExtraction": {
+        "left": 1114,
+        "top": 502,
+        "width": 324,
+        "height": 516
+      },
+      "scale": 0.875968992248062,
+      "suggestedAnchor": {
+        "x": 276,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 118,
+        "top": 19,
+        "right": 393,
+        "bottom": 461
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 187834,
+        "transparentFraction": 0.7165298461914062
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest36px (shoe span for ordinary sprites); y at lowest alpha>32 art pixel."
+}

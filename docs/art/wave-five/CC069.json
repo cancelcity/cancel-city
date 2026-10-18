@@ -1,0 +1,191 @@
+{
+  "characterId": "CC069",
+  "characterName": "Longcat, City Planner",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC069-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Equal cells, alpha>32 contour bounding crop, uniform scaling and transparent square padding; original alpha preserved."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC069-0.webp",
+      "sourceExtraction": {
+        "left": 74,
+        "top": 12,
+        "width": 378,
+        "height": 478
+      },
+      "scale": 0.9205020920502092,
+      "suggestedAnchor": {
+        "x": 261,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 82,
+        "top": 16,
+        "right": 430,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 181313,
+        "transparentFraction": 0.6916542053222656
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC069-1.webp",
+      "sourceExtraction": {
+        "left": 565,
+        "top": 11,
+        "width": 330,
+        "height": 475
+      },
+      "scale": 0.9263157894736842,
+      "suggestedAnchor": {
+        "x": 285,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 103,
+        "top": 16,
+        "right": 409,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 181765,
+        "transparentFraction": 0.6933784484863281
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC069-2.webp",
+      "sourceExtraction": {
+        "left": 969,
+        "top": 45,
+        "width": 554,
+        "height": 440
+      },
+      "scale": 0.7942238267148014,
+      "suggestedAnchor": {
+        "x": 231,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 107,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 198783,
+        "transparentFraction": 0.7582969665527344
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC069-3.webp",
+      "sourceExtraction": {
+        "left": 84,
+        "top": 493,
+        "width": 289,
+        "height": 515
+      },
+      "scale": 0.8543689320388349,
+      "suggestedAnchor": {
+        "x": 274,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 132,
+        "top": 16,
+        "right": 379,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 205561,
+        "transparentFraction": 0.7841529846191406
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC069-4.webp",
+      "sourceExtraction": {
+        "left": 603,
+        "top": 523,
+        "width": 293,
+        "height": 483
+      },
+      "scale": 0.9109730848861284,
+      "suggestedAnchor": {
+        "x": 301,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 122,
+        "top": 16,
+        "right": 389,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 193503,
+        "transparentFraction": 0.7381553649902344
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC069-5.webp",
+      "sourceExtraction": {
+        "left": 1103,
+        "top": 527,
+        "width": 335,
+        "height": 475
+      },
+      "scale": 0.9263157894736842,
+      "suggestedAnchor": {
+        "x": 217,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 101,
+        "top": 16,
+        "right": 411,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 184737,
+        "transparentFraction": 0.7047157287597656
+      }
+    }
+  ],
+  "anchorMethod": "Median x of solid lowest36px; y at lowest alpha>32 pixel."
+}

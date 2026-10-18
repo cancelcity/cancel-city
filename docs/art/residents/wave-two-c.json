@@ -1,0 +1,36 @@
+{
+  "assets": [
+    {
+      "id": "CC035",
+      "name": "Il Monumento",
+      "mode": "builtin image_gen",
+      "intent": "new illustration, style reference only",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; reference image is style guidance only. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: A flamboyant aging Mediterranean celebrity-politician caricature with deep bronze tan, glossy dark swept-back hair, exaggerated huge white smile, tiny gold-framed sunglasses, ivory tuxedo and thick jeweled rings. He embraces a miniature bronze statue of his own head while raising a glass of sparkling mineral water. Chaotic gold-red diplomatic gala with statues and flash cameras, no recognizable flag or text.\nInput image: CC026.png is a STYLE REFERENCE ONLY. Draw a completely new character, composition, props and background as specified; do not depict the reference subject. Fictional satirical alter ego named Il Monumento.",
+      "reference_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "selected_generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ee17fa1a-d3e5-4d25-996b-6e79dd9d5519.png",
+      "saved_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC035.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "image_mode": "RGB",
+      "inspection_notes": "Pass. Square full-bleed head-dominant caricature; ivory tuxedo, bronze tan, swept-back dark hair, gold sunglasses, large white smile, jeweled rings, sparkling-water glass and miniature self-statue all visible. Dense ink and distressed red-gold gala match reference. No readable lettering, branding, card border or watermark observed."
+    },
+    {
+      "id": "CC036",
+      "name": "World Tour Savior",
+      "mode": "builtin image_gen",
+      "intent": "new illustration, style reference only",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; reference image is style guidance only. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: A recognizable Bono-inspired rock-star diplomat caricature, middle-aged man with pushed-back brown hair, enormous amber wraparound sunglasses, black leather jacket, passionate self-important open mouth, microphone in one hand and an absurdly oversized glowing peace-shaped stage-light in the other. Orange-cyan concert and diplomatic podium backdrop, no logos or words.\nInput image: CC026.png is a STYLE REFERENCE ONLY. Draw a completely new character, composition, props and background as specified; do not depict the reference subject. Fictional satirical rock-star diplomat alter ego named World Tour Savior, inspired by a recognizable public performance persona, no implication of real events.",
+      "reference_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "selected_generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2f53c884-2870-4185-a452-97dda65e47d6.png",
+      "saved_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC036.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "image_mode": "RGB",
+      "inspection_notes": "Pass. Square full-bleed rock-star diplomat caricature; pushed-back brown hair, oversized amber glasses, black leather jacket, shouting mouth, microphone and absurd illuminated peace-shaped stage prop all visible. Orange-cyan concert/diplomatic backdrop and scratchy distressed ink match reference. No readable words, logos, card border or watermark observed."
+    }
+  ]
+}

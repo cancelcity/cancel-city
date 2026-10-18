@@ -1,0 +1,178 @@
+{
+  "characterId": "CC049",
+  "characterName": "Touch Grass Final Boss",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-three/CC049-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2,
+    "cutsX": [
+      0,
+      509,
+      1008,
+      1536
+    ],
+    "cutsY": [
+      0,
+      512,
+      1024
+    ]
+  },
+  "preparation": "Crop at actual transparent gutters; tight visible-alpha bounds with 4px margin; uniform scale and alpha padding with Sharp. No repainting. Alpha bounds threshold 32.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC049-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 102,
+        "top": 33,
+        "right": 408,
+        "bottom": 465
+      },
+      "transparentPixels": 177003,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 61,
+        "top": 10,
+        "width": 360,
+        "height": 502
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC049-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 71,
+        "top": 32,
+        "right": 440,
+        "bottom": 462
+      },
+      "transparentPixels": 172048,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 549,
+        "top": 5,
+        "width": 432,
+        "height": 502
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "path": "/assets/actors/CC049-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 37,
+        "top": 93,
+        "right": 475,
+        "bottom": 462
+      },
+      "transparentPixels": 177002,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 1011,
+        "top": 72,
+        "width": 513,
+        "height": 434
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC049-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 77,
+        "top": 35,
+        "right": 435,
+        "bottom": 461
+      },
+      "transparentPixels": 169747,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 49,
+        "top": 512,
+        "width": 421,
+        "height": 497
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC049-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 76,
+        "top": 74,
+        "right": 434,
+        "bottom": 462
+      },
+      "transparentPixels": 182040,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 585,
+        "top": 542,
+        "width": 421,
+        "height": 456
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "path": "/assets/actors/CC049-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 87,
+        "top": 60,
+        "right": 423,
+        "bottom": 462
+      },
+      "transparentPixels": 182184,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 1124,
+        "top": 536,
+        "width": 396,
+        "height": 472
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "method": "built-in image_gen",
+  "created_at": "2026-10-11",
+  "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "reference_role": "style guidance only for newly generated illustrations; not an edit target",
+  "assets": [
+    {
+      "id": "CC031",
+      "name": "Zuck.exe",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create a NEW illustration of the fictional satirical alter ego Zuck.exe, recognizably inspired by Mark Zuckerberg; the attached reference image is STYLE GUIDANCE ONLY, not an edit target. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: A recognizably Mark Zuckerberg-inspired satirical cartoon, slim pale man with short curly brown hair, very wide unblinking eyes and stiff empty smile. Wearing an oversized dark hoodie over an android torso, one palm holds a glowing blue miniature cage made of app-window shapes, the other hand gives an unnaturally rigid thumbs-up. Cyan and purple surveillance screens with abstract eye symbols, no brands or letters. Preserve the exaggerated fictional robot persona and bold grimy illustrated art, not photorealism.",
+      "selected_generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3dde2ad2-0a00-46c2-91a7-3d73de2c64af.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC031.png",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "mode": "RGB",
+      "inspection_notes": [
+        "Square full-bleed, face dominates; grotesque scratchy black ink and distressed cyan-purple print palette match style reference.",
+        "Recognizable Zuckerberg-inspired fictional robot persona with short curly hair, wide unblinking eyes, fixed grin, dark hoodie and exposed android torso.",
+        "Glowing blue app-window cage held on palm and rigid thumbs-up are clear; surveillance screens show abstract eyes.",
+        "No readable lettering, title, card border, logo or watermark visible."
+      ]
+    },
+    {
+      "id": "CC032",
+      "name": "Stan Empress",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create a NEW illustration of the fictional satirical alter ego Stan Empress, a blonde stadium-pop queen recognizably inspired by Taylor Swift's public performance persona; the attached reference image is STYLE GUIDANCE ONLY, not an edit target. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: A blonde stadium-pop queen inspired by Taylor Swift's recognizable public performance persona: tall slim woman, sweeping blonde fringe, red lipstick, sharp knowing smile, holding a jeweled microphone like a royal scepter. Exaggerated glittering crimson military-pop jacket, tiny fan silhouettes with raised phones orbiting her, pink-violet stage lights, no logos or text. Preserve the exaggerated fictional royal pop persona and bold grimy illustrated art, not photorealism.",
+      "selected_generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-27b65cd3-5aee-455c-b3e9-895bdc2d2335.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC032.png",
+      "dimensions": {
+        "width": 1254,
+        "height": 1254
+      },
+      "format": "PNG",
+      "mode": "RGB",
+      "inspection_notes": [
+        "Square full-bleed, face dominates; grotesque scratchy black ink and distressed vivid pink stage palette match style reference.",
+        "Recognizable Swift-inspired fictional pop empress with sweeping blonde fringe, red lips, crimson military-pop jacket, jeweled microphone and royal crown.",
+        "Pink-violet stage lights and small fan silhouettes holding glowing phones are legible.",
+        "Expression is dramatic open-mouth singing rather than the requested sharp knowing smile; selected as a strong stage-performance caricature.",
+        "No readable lettering, title, card border, logo or watermark visible."
+      ]
+    }
+  ]
+}

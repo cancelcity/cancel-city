@@ -1,0 +1,146 @@
+{
+  "characterId": "CC064",
+  "characterName": "Big Bald Energy",
+  "ability": "One Punch, One Coupon",
+  "status": "generated-and-inspected",
+  "generator": "built-in image_gen",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/action-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "action",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "usablePoseIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omittedPoseIndices": [],
+      "order": "row-major",
+      "poses": [
+        "bored-ready",
+        "notices-sale",
+        "checks-coupon",
+        "close-coupon-inspection",
+        "hopeful-glance",
+        "slow-fighting-stance",
+        "slow-windup",
+        "paused-anticipation"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/attack-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "attack",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "usablePoseIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omittedPoseIndices": [],
+      "order": "row-major",
+      "poses": [
+        "anticipation",
+        "forward-start",
+        "halfway-thrust",
+        "near-contact",
+        "oversized-fist-contact",
+        "full-followthrough",
+        "recoil",
+        "recovery"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/big-bald-energy/ending-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "ending",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "usablePoseIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "omittedPoseIndices": [],
+      "order": "row-major",
+      "poses": [
+        "notices-coupon-again",
+        "hopeful-smile",
+        "eager-hope",
+        "hope-vanishes",
+        "expired-coupon-disappointment",
+        "unimpressed-victory-shrug",
+        "deadpan-victory",
+        "deadpan-final"
+      ]
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/big-bald-energy/forecourt-original.png",
+    "width": 1672,
+    "height": 941,
+    "hasAlpha": false,
+    "role": "fixed-empty-discount-supermarket-forecourt"
+  },
+  "references": [
+    "public/assets/residents/CC064.webp",
+    "public/assets/actors/CC064-0.webp",
+    "public/assets/actors/CC064-2.webp",
+    "public/assets/actors/CC064-4.webp"
+  ],
+  "prompts": "docs/art/layered-specials/big-bald-energy/prompts.json",
+  "extractionReport": "docs/art/layered-specials/big-bald-energy/component-report.json",
+  "alpha": {
+    "actionFullyTransparentPixels": 892877,
+    "attackFullyTransparentPixels": 800908,
+    "endingFullyTransparentPixels": 878233,
+    "fullyOpaquePixels": 0,
+    "modalSubjectAlpha": 253,
+    "totalPixelsPerSheet": 1572864,
+    "notes": "Actual transparent alpha. Colored background RGB under alpha0 is invisible; preserve alpha, do not flatten or chroma-key."
+  },
+  "inspection": {
+    "actionComponents": 8,
+    "attackComponents": 8,
+    "endingComponents": 8,
+    "alphaThreshold": 48,
+    "minComponentPixels": 500,
+    "edgeTouchingPoseCount": 0,
+    "usablePoseCount": 24,
+    "style": "Existing CC064 bald egg head, stippled peach skin and bored droopy eyelids; yellow silver-zipped suit, black belt/gold buckle, red gauntlets and boots, white cape/black clasps. Dense card scratch-hatching and grotesque deadpan humor. Connected tan blank coupon and brown leek/carrot grocery bag remain consistent.",
+    "warnings": [
+      "Extract by connected-component masks rather than equal-cell rectangles; figures cross nominal row lines without touching neighbors.",
+      "Every consumed component is complete and does not touch the canvas edge. No pose omission or margin retry was needed.",
+      "Attack pose5 (index4) is the oversized foreshortened contact fist, continuously connected to the actor, while pose4/index3 and pose6/index5 use side-forward extension. Use the stronger foreshortened pose at brief impact/camera cut rather than slowly blending perspective.",
+      "All attack drawings retain the left coupon and grocery bag attached to left elbow. Do not animate a detached right hand.",
+      "Coupon and sale signage are blank. Lettering, expiration gag, shockwave, debris and effects must be separately composited.",
+      "Fist and cape are included as connected parts of the full actor; no background or baked impact is present."
+    ],
+    "background": "Empty discount-supermarket forecourt with grey clear asphalt, magenta/acid-yellow storefront, cyan glass, blank sale-sign rectangles, distant cart corral. No people or impact effects."
+  },
+  "summary": "24 usable complete connected actors across3alpha sheets, one fixed empty1672x941 supermarket forecourt. All8poses per sheet pass alpha/component and canvas-edge checks."
+}

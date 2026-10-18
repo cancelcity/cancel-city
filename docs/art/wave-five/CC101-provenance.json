@@ -1,0 +1,8 @@
+{
+  "characterId": "CC101",
+  "generatedWith": "built-in image_gen",
+  "prompts": "exactprompt.md",
+  "operations": "whole contour extraction, alpha-preserving padding resize and WebP encoding",
+  "portraitSource": "exec-7f68d867-fcab-4882-bbc3-ac30a5c13dd8.png",
+  "posesSource": "exec-3d0ff190-4dd2-4c14-acf6-c7cb99e117de.png"
+}

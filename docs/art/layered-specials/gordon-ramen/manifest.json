@@ -1,0 +1,94 @@
+{
+  "characterId": "CC014",
+  "characterName": "Gordon Ramen",
+  "status": "generated-and-inspected",
+  "generator": "built-in image_gen",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/action-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "action",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "order": "row-major",
+      "poses": [
+        "furious-ready",
+        "tastes-fork",
+        "disgusted-recoil",
+        "raises-cup",
+        "cast-windup",
+        "cast-midway",
+        "cast-followthrough",
+        "incredulous-followthrough"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/ending-sheet-clean.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "ending",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "order": "row-major",
+      "poses": [
+        "arms-folded-disapproval",
+        "stern-inspection",
+        "furious-verdict",
+        "points-at-noodle",
+        "pushes-cup-away",
+        "fed-up",
+        "deadpan-stare",
+        "dinner-declined"
+      ]
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/gordon-ramen/kitchen-original.png",
+    "width": 1672,
+    "height": 941,
+    "hasAlpha": false,
+    "role": "fixed-empty-food-court-kitchen"
+  },
+  "references": [
+    "public/assets/roster-v3/CC014.webp",
+    "public/assets/actors/CC014-roster-v2-0.webp",
+    "public/assets/actors/CC014-roster-v2-2.webp",
+    "public/assets/actors/CC014-roster-v2-4.webp"
+  ],
+  "prompts": "docs/art/layered-specials/gordon-ramen/prompts.json",
+  "extractionReport": "docs/art/layered-specials/gordon-ramen/component-report.json",
+  "alpha": {
+    "actionFullyTransparentPixels": 1023482,
+    "endingFullyTransparentPixels": 1107085,
+    "fullyOpaquePixels": 0,
+    "modalSubjectAlpha": 253,
+    "totalPixelsPerSheet": 1572864,
+    "notes": "True alpha, colored RGB matting under alpha=0 is harmless. Preserve transparency; do not flatten or chroma-key."
+  },
+  "inspection": {
+    "actionComponents": 8,
+    "endingComponents": 8,
+    "alphaThreshold": 48,
+    "minComponentPixels": 500,
+    "style": "Wild short blond hair, sun-reddened creased angry face, white double-breasted rolled-sleeve chef jacket, black pants and chunky black boots, magenta yellow/teal noodle cup and silver fork. Rough current-card etched crosshatching and stipple.",
+    "warnings": [
+      "Use ending-sheet-clean.png; ending-sheet-original.png touched canvas edges and is rejected.",
+      "Both consumed sheets use2cols4rows. Extract connected components rather than equal cells; hair and boots can cross nominal cell rows without touching neighboring figures.",
+      "The card’s fork is retained consistently for tasting and gestures instead of changing utensils mid-sequence.",
+      "The card’s magenta instant-noodle cup is retained instead of a different bowl.",
+      "Action frame2 includes short attached tasting noodles near mouth; no long noodle whip, flying food or steam is baked in.",
+      "Final dinner-declined palm includes fork resting alongside hand; keep the actor whole rather than independently animating fingers."
+    ],
+    "background": "Inspected empty grungy food-court kitchen with clear foreground, stainless surfaces, blank poster and empty pots. No people, food, steam, text or foreground props."
+  },
+  "discarded": [
+    {
+      "path": "docs/art/layered-specials/gordon-ramen/ending-sheet-original.png",
+      "reason": "Top hair and final boot touched outer canvas. Built-in framing correction generated the clean ending sheet."
+    }
+  ],
+  "summary": "16 usable intact full-body poses and one fixed empty kitchen background. One built-in correction restored complete hair/boots and safe outer margins. Ready for separate noodle whip and knot effects."
+}

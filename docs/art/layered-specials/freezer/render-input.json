@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/freezer/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/freezer/actors/action-00.webp",
+        "width": 344,
+        "height": 405,
+        "sourceBounds": {
+          "x": 103,
+          "y": 14,
+          "w": 344,
+          "h": 405
+        },
+        "area": 72972
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/action-01.webp",
+        "width": 342,
+        "height": 390,
+        "sourceBounds": {
+          "x": 590,
+          "y": 29,
+          "w": 342,
+          "h": 390
+        },
+        "area": 79460
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/action-02.webp",
+        "width": 365,
+        "height": 374,
+        "sourceBounds": {
+          "x": 102,
+          "y": 414,
+          "w": 365,
+          "h": 374
+        },
+        "area": 81227
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/action-03.webp",
+        "width": 361,
+        "height": 364,
+        "sourceBounds": {
+          "x": 576,
+          "y": 421,
+          "w": 361,
+          "h": 364
+        },
+        "area": 83312
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/action-04.webp",
+        "width": 362,
+        "height": 383,
+        "sourceBounds": {
+          "x": 91,
+          "y": 784,
+          "w": 362,
+          "h": 383
+        },
+        "area": 89187
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/action-05.webp",
+        "width": 352,
+        "height": 375,
+        "sourceBounds": {
+          "x": 585,
+          "y": 789,
+          "w": 352,
+          "h": 375
+        },
+        "area": 97921
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/action-06.webp",
+        "width": 349,
+        "height": 356,
+        "sourceBounds": {
+          "x": 119,
+          "y": 1161,
+          "w": 349,
+          "h": 356
+        },
+        "area": 95149
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/action-07.webp",
+        "width": 348,
+        "height": 339,
+        "sourceBounds": {
+          "x": 588,
+          "y": 1173,
+          "w": 348,
+          "h": 339
+        },
+        "area": 86927
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/freezer/actors/ending-00.webp",
+        "width": 388,
+        "height": 484,
+        "sourceBounds": {
+          "x": 6,
+          "y": 29,
+          "w": 388,
+          "h": 484
+        },
+        "area": 131913
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/ending-01.webp",
+        "width": 370,
+        "height": 435,
+        "sourceBounds": {
+          "x": 401,
+          "y": 79,
+          "w": 370,
+          "h": 435
+        },
+        "area": 112492
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/ending-02.webp",
+        "width": 380,
+        "height": 430,
+        "sourceBounds": {
+          "x": 773,
+          "y": 85,
+          "w": 380,
+          "h": 430
+        },
+        "area": 113195
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/ending-03.webp",
+        "width": 370,
+        "height": 338,
+        "sourceBounds": {
+          "x": 1159,
+          "y": 178,
+          "w": 370,
+          "h": 338
+        },
+        "area": 102417
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/ending-04.webp",
+        "width": 378,
+        "height": 486,
+        "sourceBounds": {
+          "x": 15,
+          "y": 509,
+          "w": 378,
+          "h": 486
+        },
+        "area": 139495
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/ending-05.webp",
+        "width": 369,
+        "height": 403,
+        "sourceBounds": {
+          "x": 411,
+          "y": 592,
+          "w": 369,
+          "h": 403
+        },
+        "area": 118254
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/ending-06.webp",
+        "width": 366,
+        "height": 342,
+        "sourceBounds": {
+          "x": 790,
+          "y": 652,
+          "w": 366,
+          "h": 342
+        },
+        "area": 106699
+      },
+      {
+        "file": "docs/art/layered-specials/freezer/actors/ending-07.webp",
+        "width": 357,
+        "height": 407,
+        "sourceBounds": {
+          "x": 1169,
+          "y": 587,
+          "w": 357,
+          "h": 407
+        },
+        "area": 116365
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

@@ -1,0 +1,191 @@
+{
+  "characterId": "CC110",
+  "characterName": "BatExpense",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Grid-cell alpha contour crop; source alpha preserved; uniformly scaled and square padded."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-0.webp",
+      "sourceExtraction": {
+        "left": 29,
+        "top": 6,
+        "width": 501,
+        "height": 483
+      },
+      "scale": 0.8183632734530938,
+      "suggestedAnchor": {
+        "x": 287,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 51,
+        "top": 61,
+        "right": 461,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 159338,
+        "transparentFraction": 0.6078262329101562
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-1.webp",
+      "sourceExtraction": {
+        "left": 522,
+        "top": 14,
+        "width": 425,
+        "height": 472
+      },
+      "scale": 0.8686440677966102,
+      "suggestedAnchor": {
+        "x": 393,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 71,
+        "top": 46,
+        "right": 440,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 178806,
+        "transparentFraction": 0.6820907592773438
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-2.webp",
+      "sourceExtraction": {
+        "left": 945,
+        "top": 48,
+        "width": 573,
+        "height": 433
+      },
+      "scale": 0.7155322862129145,
+      "suggestedAnchor": {
+        "x": 336,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 51,
+        "top": 146,
+        "right": 461,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 193984,
+        "transparentFraction": 0.739990234375
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-3.webp",
+      "sourceExtraction": {
+        "left": 63,
+        "top": 491,
+        "width": 473,
+        "height": 527
+      },
+      "scale": 0.777988614800759,
+      "suggestedAnchor": {
+        "x": 327,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 72,
+        "top": 46,
+        "right": 440,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 175909,
+        "transparentFraction": 0.6710395812988281
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-4.webp",
+      "sourceExtraction": {
+        "left": 525,
+        "top": 488,
+        "width": 496,
+        "height": 522
+      },
+      "scale": 0.7854406130268199,
+      "suggestedAnchor": {
+        "x": 278,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 61,
+        "top": 46,
+        "right": 451,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 171998,
+        "transparentFraction": 0.6561203002929688
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-5.webp",
+      "sourceExtraction": {
+        "left": 1061,
+        "top": 502,
+        "width": 433,
+        "height": 509
+      },
+      "scale": 0.8055009823182712,
+      "suggestedAnchor": {
+        "x": 269,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 81,
+        "top": 46,
+        "right": 430,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 166154,
+        "transparentFraction": 0.6338272094726562
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest 36px; y at lowest alpha>32 art pixel."
+}

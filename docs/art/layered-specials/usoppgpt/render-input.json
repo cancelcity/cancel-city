@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/usoppgpt/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/action-00.webp",
+        "width": 350,
+        "height": 522,
+        "sourceBounds": {
+          "x": 12,
+          "y": 1,
+          "w": 350,
+          "h": 522
+        },
+        "area": 106634
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/action-01.webp",
+        "width": 338,
+        "height": 507,
+        "sourceBounds": {
+          "x": 405,
+          "y": 14,
+          "w": 338,
+          "h": 507
+        },
+        "area": 96982
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/action-02.webp",
+        "width": 358,
+        "height": 522,
+        "sourceBounds": {
+          "x": 775,
+          "y": 2,
+          "w": 358,
+          "h": 522
+        },
+        "area": 99275
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/action-03.webp",
+        "width": 358,
+        "height": 521,
+        "sourceBounds": {
+          "x": 1165,
+          "y": 3,
+          "w": 358,
+          "h": 521
+        },
+        "area": 97882
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/action-04.webp",
+        "width": 390,
+        "height": 431,
+        "sourceBounds": {
+          "x": 12,
+          "y": 578,
+          "w": 390,
+          "h": 431
+        },
+        "area": 99449
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/action-05.webp",
+        "width": 384,
+        "height": 464,
+        "sourceBounds": {
+          "x": 399,
+          "y": 555,
+          "w": 384,
+          "h": 464
+        },
+        "area": 95037
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/action-06.webp",
+        "width": 363,
+        "height": 501,
+        "sourceBounds": {
+          "x": 794,
+          "y": 509,
+          "w": 363,
+          "h": 501
+        },
+        "area": 89119
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/action-07.webp",
+        "width": 378,
+        "height": 479,
+        "sourceBounds": {
+          "x": 1156,
+          "y": 539,
+          "w": 378,
+          "h": 479
+        },
+        "area": 97227
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/ending-00.webp",
+        "width": 384,
+        "height": 500,
+        "sourceBounds": {
+          "x": 9,
+          "y": 11,
+          "w": 384,
+          "h": 500
+        },
+        "area": 106028
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/ending-01.webp",
+        "width": 328,
+        "height": 497,
+        "sourceBounds": {
+          "x": 437,
+          "y": 8,
+          "w": 328,
+          "h": 497
+        },
+        "area": 90497
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/ending-02.webp",
+        "width": 374,
+        "height": 458,
+        "sourceBounds": {
+          "x": 787,
+          "y": 51,
+          "w": 374,
+          "h": 458
+        },
+        "area": 87679
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/ending-03.webp",
+        "width": 353,
+        "height": 507,
+        "sourceBounds": {
+          "x": 1169,
+          "y": 0,
+          "w": 353,
+          "h": 507
+        },
+        "area": 104411
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/ending-04.webp",
+        "width": 395,
+        "height": 483,
+        "sourceBounds": {
+          "x": 9,
+          "y": 531,
+          "w": 395,
+          "h": 483
+        },
+        "area": 88023
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/ending-05.webp",
+        "width": 384,
+        "height": 508,
+        "sourceBounds": {
+          "x": 411,
+          "y": 506,
+          "w": 384,
+          "h": 508
+        },
+        "area": 85989
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/ending-06.webp",
+        "width": 304,
+        "height": 465,
+        "sourceBounds": {
+          "x": 823,
+          "y": 547,
+          "w": 304,
+          "h": 465
+        },
+        "area": 77556
+      },
+      {
+        "file": "docs/art/layered-specials/usoppgpt/actors/ending-07.webp",
+        "width": 314,
+        "height": 499,
+        "sourceBounds": {
+          "x": 1201,
+          "y": 517,
+          "w": 314,
+          "h": 499
+        },
+        "area": 86709
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

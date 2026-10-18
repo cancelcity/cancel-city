@@ -1,0 +1,133 @@
+{
+  "asset": "Gokart corrected card-style impact sequence",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit/style-transfer",
+  "original": "original-sheet.png",
+  "prompt": "prompt.txt",
+  "generatedSource": "/workspace/scratch/80a8c8c1affe/generated_images/exec-4e1cb17c-c1c0-4a7a-8756-17f484809fd0.png",
+  "references": [
+    "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/gokart/impact/original-sheet.png",
+    "/workspace/scratch/80a8c8c1affe/generated_images/exec-7530eca5-c52b-49ce-b42c-b09c2e1f8d82.png",
+    "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/roster-b2/CC010.webp"
+  ],
+  "sheet": {
+    "width": 1182,
+    "height": 1330,
+    "columns": 2,
+    "rows": 4
+  },
+  "frames": [
+    {
+      "index": 0,
+      "filename": "impact-00.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 0,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 120414
+    },
+    {
+      "index": 1,
+      "filename": "impact-01.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 0,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 126122
+    },
+    {
+      "index": 2,
+      "filename": "impact-02.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 333,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 125734
+    },
+    {
+      "index": 3,
+      "filename": "impact-03.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 333,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 129086
+    },
+    {
+      "index": 4,
+      "filename": "impact-04.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 665,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 124018
+    },
+    {
+      "index": 5,
+      "filename": "impact-05.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 665,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 122140
+    },
+    {
+      "index": 6,
+      "filename": "impact-06.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 998,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 110822
+    },
+    {
+      "index": 7,
+      "filename": "impact-07.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 998,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 123426
+    }
+  ],
+  "processing": "Mechanical rectangular crop only and WebP quality 92. Kept native resolution; fractional row boundary remainder excluded at cell bottom. No repaint, compositing or artificial in-betweens.",
+  "review": {
+    "approvedGrid": true,
+    "bodyIntact": true,
+    "poseProgressionPreserved": true,
+    "styleCorrected": true,
+    "notes": "Correct 2×4 grid, no gutters. Approach, closer kart, near power slide, contact, tire wall burst, foreground flying tires, then emergence progression preserved. Hero has oversized bulging eyes, crumpled brow and huge wonky teeth scream. Dense dirty crosshatch/stipple, black inked city/palm silhouettes, acid-yellow/hot-pink flat blasts, and scratched tire/road textures match corrected master and game card. No glossy city/bokeh or clean handsome cel face. Whole seated body stays consistent."
+  }
+}

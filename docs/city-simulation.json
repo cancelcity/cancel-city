@@ -1,0 +1,192 @@
+{
+  "players": 10,
+  "days": 30,
+  "policy": "No missed days. Claims ordinary jobs, opens all earned packs, fuses once daily, recycles spare regulars, crafts for rocket jobs, and attempts two heuristic street battles per day. Builds one of each type, upgrades after chapter rewards. Does not simulate filling extra decorative plots.",
+  "limits": [
+    "Synthetic policy, not measured human fun/retention or a complete economy balance approval.",
+    "Battles use a simple player heuristic.",
+    "Server clock, network failure and real devices are covered separately or remain QA gates."
+  ],
+  "rows": [
+    {
+      "player": 0,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 38,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 1,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 42,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 2,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 38,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 3,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 41,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 4,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 40,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 5,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 40,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 6,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 41,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 7,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 40,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 8,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 40,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "player": 9,
+      "allTypesDay": 1,
+      "firstLevel3Day": 2,
+      "allJobsDay": 7,
+      "claimedJobs": 12,
+      "generatedInfluence": 4800,
+      "cityPackRewards": 12,
+      "discovered": 38,
+      "levels": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ]
+    }
+  ]
+}

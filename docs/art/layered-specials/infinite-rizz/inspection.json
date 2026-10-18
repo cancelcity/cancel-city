@@ -1,0 +1,244 @@
+{
+  "action-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 98.94550768534343
+    },
+    "bytes": 2764813,
+    "components": [
+      {
+        "area": 76887,
+        "left": 62,
+        "top": 7,
+        "width": 323,
+        "height": 509,
+        "touchesEdge": false
+      },
+      {
+        "area": 79015,
+        "left": 463,
+        "top": 8,
+        "width": 272,
+        "height": 509,
+        "touchesEdge": false
+      },
+      {
+        "area": 80969,
+        "left": 827,
+        "top": 7,
+        "width": 273,
+        "height": 510,
+        "touchesEdge": false
+      },
+      {
+        "area": 79566,
+        "left": 1181,
+        "top": 7,
+        "width": 318,
+        "height": 512,
+        "touchesEdge": false
+      },
+      {
+        "area": 81140,
+        "left": 25,
+        "top": 513,
+        "width": 361,
+        "height": 496,
+        "touchesEdge": false
+      },
+      {
+        "area": 84140,
+        "left": 384,
+        "top": 516,
+        "width": 459,
+        "height": 496,
+        "touchesEdge": false
+      },
+      {
+        "area": 67389,
+        "left": 852,
+        "top": 512,
+        "width": 254,
+        "height": 504,
+        "touchesEdge": false
+      },
+      {
+        "area": 82421,
+        "left": 1146,
+        "top": 513,
+        "width": 383,
+        "height": 501,
+        "touchesEdge": false
+      }
+    ]
+  },
+  "attack-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 102.44278081258138
+    },
+    "bytes": 2757955,
+    "components": [
+      {
+        "area": 77739,
+        "left": 18,
+        "top": 7,
+        "width": 388,
+        "height": 494,
+        "touchesEdge": false
+      },
+      {
+        "area": 79629,
+        "left": 417,
+        "top": 5,
+        "width": 329,
+        "height": 500,
+        "touchesEdge": false
+      },
+      {
+        "area": 86289,
+        "left": 777,
+        "top": 15,
+        "width": 356,
+        "height": 491,
+        "touchesEdge": false
+      },
+      {
+        "area": 79194,
+        "left": 1180,
+        "top": 19,
+        "width": 328,
+        "height": 486,
+        "touchesEdge": false
+      },
+      {
+        "area": 91762,
+        "left": 11,
+        "top": 506,
+        "width": 388,
+        "height": 500,
+        "touchesEdge": false
+      },
+      {
+        "area": 90807,
+        "left": 401,
+        "top": 574,
+        "width": 387,
+        "height": 428,
+        "touchesEdge": false
+      },
+      {
+        "area": 84286,
+        "left": 761,
+        "top": 502,
+        "width": 476,
+        "height": 513,
+        "touchesEdge": false
+      },
+      {
+        "area": 64411,
+        "left": 1255,
+        "top": 507,
+        "width": 239,
+        "height": 507,
+        "touchesEdge": false
+      }
+    ]
+  },
+  "ending-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 101.1363073984782
+    },
+    "bytes": 2827842,
+    "components": [
+      {
+        "area": 82199,
+        "left": 58,
+        "top": 7,
+        "width": 312,
+        "height": 497,
+        "touchesEdge": false
+      },
+      {
+        "area": 76719,
+        "left": 478,
+        "top": 5,
+        "width": 262,
+        "height": 498,
+        "touchesEdge": false
+      },
+      {
+        "area": 81631,
+        "left": 774,
+        "top": 4,
+        "width": 439,
+        "height": 498,
+        "touchesEdge": false
+      },
+      {
+        "area": 76340,
+        "left": 1237,
+        "top": 3,
+        "width": 276,
+        "height": 507,
+        "touchesEdge": false
+      },
+      {
+        "area": 88493,
+        "left": 42,
+        "top": 510,
+        "width": 330,
+        "height": 504,
+        "touchesEdge": false
+      },
+      {
+        "area": 83494,
+        "left": 433,
+        "top": 506,
+        "width": 307,
+        "height": 504,
+        "touchesEdge": false
+      },
+      {
+        "area": 78377,
+        "left": 831,
+        "top": 510,
+        "width": 296,
+        "height": 503,
+        "touchesEdge": false
+      },
+      {
+        "area": 79503,
+        "left": 1227,
+        "top": 512,
+        "width": 284,
+        "height": 505,
+        "touchesEdge": false
+      }
+    ]
+  },
+  "rooftop-original.png": {
+    "width": 1672,
+    "height": 941,
+    "channels": 3,
+    "isOpaque": true,
+    "alpha": null,
+    "bytes": 3864324
+  }
+}

@@ -1,0 +1,12 @@
+# CC058 artwork
+
+Generated with the built-in image_gen tool. Reference portraits CC039 and CC044 used for style only.
+
+Portrait prompt:
+
+Use case: stylized-concept. Square collectible game character portrait for Cancel City, no frame or words. Reference images STYLE ONLY, not identity. Subject Vaccine Update: humorous exaggerated older adult white billionaire tech-nerd caricature inspired by Bill Gates, graying side-parted hair, thick black rectangle glasses, narrow friendly smiling face, blue crewneck nerd sweater under rumpled white tech labcoat, holding enormous tablet with abstract update progress rectangles and a little green USB patch applicator, squeaky-safe tech-support demeanor. Chest-up to waist framing face clearly recognizable and prominent, comically hunched shoulders. BACKGROUND explosive acid yellow hotpink cyan screen-print burst with black distressed ink, abstract error windows and motherboard cables. Exact same raw underground punk trading-card illustration as references: thick hand-etched black contours, meticulous coarse crosshatching, scratchy face wrinkles, heavily gritty halftone and ink spatters, highcontrast neon colors. Not polishedclean vector or cleananime orsmooth3D. This is absurd software update parody, no medical needles, harm or conspiracy imagery. All imagery original graphic caricature. No text, numbers, logos, watermark or border.
+
+Six-pose prompt:
+
+Use case: identity-preserve. Exact same older cartoon tech-nerd from reference portrait, identity/outfit/roughetchedpunkcomicstyle locked. Create SIX SMALL FULL BODY acting poses on true alpha transparency in spacious3columns x2rows layout. Each body including every head hair/shoe/raisedprop must be no more than400pixels high on1536x1024sheet. STRICT40pixelsclearoutermargin and70pixelsfullyemptygutter between top/bottomrows. Never touching/overlappingneighborpose. White techcoat bluesweater jeansgray shoes bigtablet smallgreenUSBpatch, same blackrectglasses/grayhair/face. Poseorder top leftidle, topmiddlewindup, top rightSUPPORT cast protective green shieldsymbol on tablet towardSCREENRIGHT. Bottomleftvictory botharmsraised withtablet, bottommiddleflinch guardingtablet, bottomrightembarrassed hunched slowprogressscreen. Draw COMPLETEhairandfeetinsideeverycell. Alpha0everywhereoutsidefigures includinggutters, no backdrop, glow, shadows ormotionlines. Roughblackinkcrosshatching/halftonedistressedcomicneoncolors, no cleanvector/anime. No text/logos/numbers/medicalneedles/scenery.
+

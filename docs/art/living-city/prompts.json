@@ -1,0 +1,50 @@
+[
+  {
+    "name": "court",
+    "prompt": "Use case: stylized-concept. Production asset for CANCEL CITY, a gritty satirical 2.5D comic game. Use the recent image of the full street render as the STYLE AND ARCHITECTURE reference; other recent images are supporting city assets. Output ONE independent transparent building sprite. Thick hand-inked black linework, dense crosshatching, chipped paint, dirty cream walls, saturated acid yellow and magenta signs, warm golden upper-left lighting and muted purple shadows. Elevated three-quarter view with a visible roof, entire building intact, full silhouette with 4% margin, square high-resolution canvas. REAL alpha background, no ground island, skyline, street, people, UI, or surrounding buildings. No polished 3D. Recreate the Screenshot Court: squat wide courthouse, four stone pillars and deep dark doorway, five broad stairs, eye symbol pediment, seated blindfolded Lady Justice holding a smartphone aloft on its roof, roof antennas and HVAC, pasted receipts and magenta graffiti on walls. Huge cream fascia says SCREENSHOT COURT. Show its front and right wall. Preserve the architectural character seen in the street render.",
+    "mode": "built-in imagegen",
+    "original": "docs/art/living-city/court.png",
+    "runtime": "public/assets/living-city/court.webp",
+    "transparent_background": true
+  },
+  {
+    "name": "palace",
+    "prompt": "Use case: stylized-concept. Production asset for CANCEL CITY, a gritty satirical 2.5D comic game. Use the recent image of the full street render as the STYLE AND ARCHITECTURE reference; other recent images are supporting city assets. Output ONE independent transparent building sprite. Thick hand-inked black linework, dense crosshatching, chipped paint, dirty cream walls, saturated acid yellow and magenta signs, warm golden upper-left lighting and muted purple shadows. Elevated three-quarter view with a visible roof, entire building intact, full silhouette with 4% margin, square high-resolution canvas. REAL alpha background, no ground island, skyline, street, people, UI, or surrounding buildings. No polished 3D. Recreate Airfryer Palace: two-storey magenta takeaway restaurant, ornate golden dragon curling around a giant black airfryer on the flat roof, cooking pipes and metal chimney. A broad black fascia reads AIRFRYER PALACE in acid yellow. Warm gold takeaway windows, lanterns, service hatch, greasy cream awning. Show its front and left wall as in the street render. No steam or flames; those are added in code.",
+    "mode": "built-in imagegen",
+    "original": "docs/art/living-city/palace.png",
+    "runtime": "public/assets/living-city/palace.webp",
+    "transparent_background": true
+  },
+  {
+    "name": "packs",
+    "prompt": "Use case: stylized-concept. Production asset for CANCEL CITY, a gritty satirical 2.5D comic game. Use the recent image of the full street render as the STYLE AND ARCHITECTURE reference; other recent images are supporting city assets. Output ONE independent transparent building sprite. Thick hand-inked black linework, dense crosshatching, chipped paint, dirty cream walls, saturated acid yellow and magenta signs, warm golden upper-left lighting and muted purple shadows. Elevated three-quarter view with a visible roof, entire building intact, full silhouette with 4% margin, square high-resolution canvas. REAL alpha background, no ground island, skyline, street, people, UI, or surrounding buildings. No polished 3D. Recreate Open Packs: one-storey magenta corner card shop. Large cream fascia reading OPEN PACKS in rough bold black letters. Visible flat grimy rooftop with small HVAC, magenta awning over warm golden display windows full of trading cards, recessed open front door, a little card vending machine attached left. Show its front and right wall. No floating cards.",
+    "mode": "built-in imagegen",
+    "original": "docs/art/living-city/packs.png",
+    "runtime": "public/assets/living-city/packs.webp",
+    "transparent_background": true
+  },
+  {
+    "name": "ground",
+    "prompt": "Use case: stylized-concept. Production GROUND AND DISTANT SKYLINE layer for CANCEL CITY, 1920x1120 landscape. Use the recent full street render only to match camera and road layout, and the recent comic illustrations for style. Create ONLY the environment floor and far background. No foreground landmarks, court, palace, shop, characters, vehicles, fences, UI or text. Main road: centerline from(0,655) through(380,710),(920,675),(1550,785) to(1920,725), width130. A narrower road goes from(525,1120) to(630,700) to(690,160), width100. Another goes from(1260,1120) through(1200,730) to(1270,160), width100. Dirty ochre-grey concrete sidewalks cover the other areas, richly inked slab seams, cracks, little litter, drain grilles, faded acidpink stencils, yellow curb paint, road patching, crosswalks at the two intersections. Small densely packed, dark brick tenements along the far upper160pixel edge ONLY, acid yellow sunset and magenta sky behind them. A dense, handdrawn underground punk-comic street, thick black crosshatching, detailed weathering, warm upperleft light, muted purple shadows. Avoid flat clipart or glossy3D. Preserve lots of clear ground for separately rendered landmark sprites. This is not a UI screenshot or finished city: ONLY ground and very far skyline. Full bleed rectangle, no transparency.",
+    "mode": "built-in imagegen",
+    "original": "docs/art/living-city/ground.png",
+    "runtime": "public/assets/living-city/ground.webp",
+    "transparent_background": false
+  },
+  {
+    "name": "walker",
+    "prompt": "Use case: stylized-concept. Transparent production WALK CYCLE sheet. Exactly8 equalcells, FOUR columns by TWO rows,1536x768. Same adult courier in all eight cells, black bomber jacket, magenta armband, greyjeans, yellow sneakers, messy dark hair, cardboardparcel underonearm. Gritty black-inked punk comic style matching the recent game city, roughoutline, simple shadedcolors, fullydrawn headtofeet. Elevated three-quarter side view facing SCREEN RIGHT. Eight successive phases of ONE continuous walk cycle, contact,recoil,passing,highpoint,oppositecontact,recoil,passing,highpoint. Restrained natural limbs, stabletorso. Character identicalscale and identity inallcells. Feet aligned consistently to eachcell bottom, safe20pxmargin. Real alpha background, NO floor, shadows, text, celllines, frames, labels or numbers. No overlappingfigures.",
+    "mode": "built-in imagegen",
+    "original": "docs/art/living-city/walker.png",
+    "runtime": "public/assets/living-city/walker.webp",
+    "transparent_background": true
+  },
+  {
+    "name": "van",
+    "prompt": "Use case: stylized-concept. ONE standalone transparent vehicle sprite for CANCEL CITY, gritty handinked comic style matching the recent city. Worn charcoalgrey deliveryvan, front points SCREEN RIGHT, elevatedthreequarter side view with visible roof. Black ink/crosshatching, rustydents, acidyellow upperleftlight. Cream sidepanel stencilled EVIDENCE REMOVAL, magenta alarm beacon onroof, roofpaperworkbox, yellowheadlights. Complete silhouette, roughly2.4:1 horizontalaspect, highresolution. Actualtransparentbackground, no street, people, shadows, otherobjects, panelsorUI. Readable at120pixels but detailed whenenlarged. No photorealism/glossy3D.",
+    "mode": "built-in imagegen",
+    "original": "docs/art/living-city/van.png",
+    "runtime": "public/assets/living-city/van.webp",
+    "transparent_background": true
+  }
+]

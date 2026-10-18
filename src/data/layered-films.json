@@ -1,0 +1,867 @@
+[
+  {
+    "cardId":"CC010","slug":"homelesslander","title":"Homelesslander: Cardboard Fortress","tagline":"Unlimited power.\nNo fixed address.","duration":5.6,"impact":2.9,
+    "video":"/assets/layered-specials/homelesslander-v1/special.mp4","poster":"/assets/layered-specials/homelesslander-v1/poster.webp","captions":"/assets/layered-specials/homelesslander-v1/captions.vtt",
+    "shots":[
+      {"id":"close","title":"Notice served","start":0,"end":0.55,"thumbnail":"/assets/layered-specials/homelesslander-v1/close.webp","description":"A furious blond superhero squints at an eviction notice."},
+      {"id":"reveal","title":"The penthouse","start":0.55,"end":1.35,"thumbnail":"/assets/layered-specials/homelesslander-v1/reveal.webp","description":"His luxury fortress is a pile of cardboard boxes beneath a bridge."},
+      {"id":"launch","title":"Superpowered gust","start":1.35,"end":2.7,"thumbnail":"/assets/layered-specials/homelesslander-v1/launch.webp","description":"The whole hero launches through the air, sending a furious gust along the street."},
+      {"id":"impact","title":"Deposit gone","start":2.7,"end":3.65,"thumbnail":"/assets/layered-specials/homelesslander-v1/impact.webp","description":"The blast destroys the cardboard fortress. Its panels tumble away independently."},
+      {"id":"return","title":"Victory inspection","start":3.65,"end":4.4,"thumbnail":"/assets/layered-specials/homelesslander-v1/return.webp","description":"He returns for his triumphant victory pose as his address falls from the sky."},
+      {"id":"gag","title":"No forwarding address","start":4.4,"end":5.6,"thumbnail":"/assets/layered-specials/homelesslander-v1/gag.webp","description":"The hero stares at his ruined box. The security deposit has blown away."}
+    ]
+  },
+  {
+    "cardId":"CC019","slug":"master-cheese","title":"Master Cheese: Cheddar Command","tagline":"Finish the fight.\nRefrigerate after opening.","duration":5.8,"impact":3.05,
+    "video":"/assets/layered-specials/master-cheese-v1/special.mp4","poster":"/assets/layered-specials/master-cheese-v1/poster.webp","captions":"/assets/layered-specials/master-cheese-v1/captions.vtt",
+    "shots":[
+      {"id":"close","title":"Combat ready","start":0,"end":0.65,"thumbnail":"/assets/layered-specials/master-cheese-v1/close.webp","description":"A stern green visor peers out of scratched cheddar armor."},
+      {"id":"reveal","title":"Dairy division","start":0.65,"end":1.4,"thumbnail":"/assets/layered-specials/master-cheese-v1/reveal.webp","description":"The cheese soldier shoulders an enormous box-grater rifle in a cold-storage loading bay."},
+      {"id":"launch","title":"Cheddar rounds","start":1.4,"end":2.85,"thumbnail":"/assets/layered-specials/master-cheese-v1/launch.webp","description":"The grater recoils as a volley of cheddar shavings accelerates across the bay."},
+      {"id":"impact","title":"Grated","start":2.85,"end":3.65,"thumbnail":"/assets/layered-specials/master-cheese-v1/impact.webp","description":"The shavings burst against a stack of supply tins, scattering it across the floor."},
+      {"id":"return","title":"Mission complete","start":3.65,"end":4.35,"thumbnail":"/assets/layered-specials/master-cheese-v1/return.webp","description":"The soldier straightens for a proud military salute. His armor begins to sag."},
+      {"id":"gag","title":"Shelf life expired","start":4.35,"end":5.8,"thumbnail":"/assets/layered-specials/master-cheese-v1/gag.webp","description":"He keeps saluting while his cheesy victory slowly melts. A refrigeration reminder lands beside him."}
+    ]
+  },
+  {
+    "cardId":"CC017","slug":"mrleast","title":"MrLeast: Microscopic Giveaway","tagline":"The biggest announcement.\nThe smallest prize.","duration":5.7,"impact":2.85,
+    "video":"/assets/layered-specials/mrleast-v1/special.mp4","poster":"/assets/layered-specials/mrleast-v1/poster.webp","captions":"/assets/layered-specials/mrleast-v1/captions.vtt",
+    "shots":[
+      {"id":"close","title":"Huge announcement","start":0,"end":0.55,"thumbnail":"/assets/layered-specials/mrleast-v1/close.webp","description":"A manic giveaway host grins as a spotlight snaps on."},
+      {"id":"reveal","title":"Oversized generosity","start":0.55,"end":1.35,"thumbnail":"/assets/layered-specials/mrleast-v1/reveal.webp","description":"He unveils a presentation cheque almost larger than the stage."},
+      {"id":"launch","title":"Promotional damage","start":1.35,"end":2.65,"thumbnail":"/assets/layered-specials/mrleast-v1/launch.webp","description":"The host swings the enormous board through the giveaway set."},
+      {"id":"impact","title":"Cheque delivered","start":2.65,"end":3.55,"thumbnail":"/assets/layered-specials/mrleast-v1/impact.webp","description":"The giant cheque crashes down and sends the cheap stage props tumbling."},
+      {"id":"return","title":"Actual prize","start":3.55,"end":4.35,"thumbnail":"/assets/layered-specials/mrleast-v1/return.webp","description":"He proudly pinches the real prize between two fingers: one tiny dollar."},
+      {"id":"gag","title":"Applause pending","start":4.35,"end":5.7,"thumbnail":"/assets/layered-specials/mrleast-v1/gag.webp","description":"The host waits for a standing ovation. One piece of confetti drifts past the dollar."}
+    ]
+  },
+  {
+    "cardId":"CC011","slug":"nanami","title":"Nine-to-Five Nanami: Paid Overtime","tagline":"One hit.\nBillable hours.","duration":5.4,"impact":2.95,
+    "video":"/assets/layered-specials/nanami-v1/special.mp4","poster":"/assets/layered-specials/nanami-v1/poster.webp","captions":"/assets/layered-specials/nanami-v1/captions.vtt",
+    "shots":[
+      {"id":"close","title":"17:59","start":0,"end":0.55,"thumbnail":"/assets/layered-specials/nanami-v1/close.webp","description":"The suited fighter looks at his watch through dark glasses."},
+      {"id":"reveal","title":"Contracted hours","start":0.55,"end":1.4,"thumbnail":"/assets/layered-specials/nanami-v1/reveal.webp","description":"He loosens his spotted tie beside the office time clock."},
+      {"id":"launch","title":"Overtime approved","start":1.4,"end":2.7,"thumbnail":"/assets/layered-specials/nanami-v1/launch.webp","description":"The clock hits eighteen hundred. He draws his wrapped blade and makes one clean rush."},
+      {"id":"impact","title":"One paid strike","start":2.7,"end":3.5,"thumbnail":"/assets/layered-specials/nanami-v1/impact.webp","description":"A single bright strike scatters a stack of overdue paperwork."},
+      {"id":"return","title":"Clocking out","start":3.5,"end":4.2,"thumbnail":"/assets/layered-specials/nanami-v1/return.webp","description":"He calmly presents his timecard and picks up his briefcase."},
+      {"id":"gag","title":"Shift over","start":4.2,"end":5.4,"thumbnail":"/assets/layered-specials/nanami-v1/gag.webp","description":"The fighter walks away. The time clock is left to finish the battle."}
+    ]
+  },
+  {
+    "cardId":"CC012","slug":"freezer","title":"Freezer: Cold Storage Final Form","tagline":"Unlimited menace.\nMinus eighteen degrees.","duration":5.7,"impact":3.0,
+    "video":"/assets/layered-specials/freezer-v1/special.mp4","poster":"/assets/layered-specials/freezer-v1/poster.webp","captions":"/assets/layered-specials/freezer-v1/captions.vtt",
+    "shots":[
+      {"id":"close","title":"Behold","start":0,"end":0.6,"thumbnail":"/assets/layered-specials/freezer-v1/close.webp","description":"A white and violet alien clerk gives a terrifyingly smug look."},
+      {"id":"reveal","title":"Final form","start":0.6,"end":1.4,"thumbnail":"/assets/layered-specials/freezer-v1/reveal.webp","description":"He proudly presents a white chest freezer in the frozen-food aisle."},
+      {"id":"launch","title":"Cold storage","start":1.4,"end":2.8,"thumbnail":"/assets/layered-specials/freezer-v1/launch.webp","description":"The alien awkwardly climbs into his own appliance."},
+      {"id":"impact","title":"Minus eighteen","start":2.8,"end":3.65,"thumbnail":"/assets/layered-specials/freezer-v1/impact.webp","description":"Cold mist and ice shards burst around the freezer, forming a protective frost barrier."},
+      {"id":"return","title":"Maximum efficiency","start":3.65,"end":4.35,"thumbnail":"/assets/layered-specials/freezer-v1/return.webp","description":"He shivers inside the chest freezer while trying to retain a commanding expression."},
+      {"id":"gag","title":"Clocked out","start":4.35,"end":5.7,"thumbnail":"/assets/layered-specials/freezer-v1/gag.webp","description":"The lid closes. He peeks out once, then hides from the rest of the incident."}
+    ]
+  },
+  {
+    "cardId":"CC016","slug":"powerpoint","title":"PowerPoint: Mandatory Blood Deck","tagline":"Ultimate blood spell.\nNinety-seven slides.","duration":5.9,"impact":3.05,
+    "video":"/assets/layered-specials/powerpoint-v1/special.mp4","poster":"/assets/layered-specials/powerpoint-v1/poster.webp","captions":"/assets/layered-specials/powerpoint-v1/captions.vtt",
+    "shots":[
+      {"id":"close","title":"Witness me","start":0,"end":0.6,"thumbnail":"/assets/layered-specials/powerpoint-v1/close.webp","description":"A horned corporate presenter grins with far too much confidence."},
+      {"id":"reveal","title":"The blood deck","start":0.6,"end":1.4,"thumbnail":"/assets/layered-specials/powerpoint-v1/reveal.webp","description":"She raises a red presentation remote in front of a mandatory training screen."},
+      {"id":"launch","title":"Next slide","start":1.4,"end":2.85,"thumbnail":"/assets/layered-specials/powerpoint-v1/launch.webp","description":"Rapid clicks summon a storm of presentation pages."},
+      {"id":"impact","title":"Paper shield","start":2.85,"end":3.7,"thumbnail":"/assets/layered-specials/powerpoint-v1/impact.webp","description":"The pages gather into an enormous protective paper shield for the squad."},
+      {"id":"return","title":"Slide ninety-seven","start":3.7,"end":4.4,"thumbnail":"/assets/layered-specials/powerpoint-v1/return.webp","description":"The presenter proudly explains a completely useless pie chart."},
+      {"id":"gag","title":"Questions mandatory","start":4.4,"end":5.9,"thumbnail":"/assets/layered-specials/powerpoint-v1/gag.webp","description":"She waits smugly for questions. The presentation keeps going."}
+    ]
+  },
+  {
+    "cardId": "CC007",
+    "slug": "kobeni",
+    "title": "Kobeni Minimum Wage: Minimum-Wage Miracle",
+    "tagline": "All plates saved.\nNo wages found.",
+    "duration": 5.7,
+    "impact": 2.95,
+    "video": "/assets/layered-specials/kobeni-v1/special.mp4",
+    "poster": "/assets/layered-specials/kobeni-v1/poster.webp",
+    "captions": "/assets/layered-specials/kobeni-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "Lunch rush",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/kobeni-v1/close.webp",
+        "description": "An anxious server clutches a tray with a sandwich and drink."
+      },
+      {
+        "id": "reveal",
+        "title": "No benefits",
+        "start": 0.6,
+        "end": 1.4,
+        "thumbnail": "/assets/layered-specials/kobeni-v1/reveal.webp",
+        "description": "The tray tilts while she tries to keep smiling for the customer."
+      },
+      {
+        "id": "launch",
+        "title": "Minimum-wage miracle",
+        "start": 1.4,
+        "end": 2.75,
+        "thumbnail": "/assets/layered-specials/kobeni-v1/launch.webp",
+        "description": "She slips, twists and catches the meal without dropping it."
+      },
+      {
+        "id": "impact",
+        "title": "Lunch saved",
+        "start": 2.75,
+        "end": 3.65,
+        "thumbnail": "/assets/layered-specials/kobeni-v1/impact.webp",
+        "description": "Plates arc safely into place, delivering lunch to the squad."
+      },
+      {
+        "id": "return",
+        "title": "The tip",
+        "start": 3.65,
+        "end": 4.35,
+        "thumbnail": "/assets/layered-specials/kobeni-v1/return.webp",
+        "description": "She presents the perfect tray and waits for a tip."
+      },
+      {
+        "id": "gag",
+        "title": "Unpaid invoice",
+        "start": 4.35,
+        "end": 5.7,
+        "thumbnail": "/assets/layered-specials/kobeni-v1/gag.webp",
+        "description": "The receipt says zero. The exhausted server gives one last forced smile."
+      }
+    ]
+  },
+  {
+    "cardId": "CC014",
+    "slug": "gordon-ramen",
+    "title": "Gordon Ramen: Instant Noodle Inspection",
+    "tagline": "A very serious tasting.\nA very instant dinner.",
+    "duration": 5.8,
+    "impact": 3.05,
+    "video": "/assets/layered-specials/gordon-ramen-v1/special.mp4",
+    "poster": "/assets/layered-specials/gordon-ramen-v1/poster.webp",
+    "captions": "/assets/layered-specials/gordon-ramen-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "Taste test",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/gordon-ramen-v1/close.webp",
+        "description": "A furious blond chef holds a magenta instant-noodle cup and fork."
+      },
+      {
+        "id": "reveal",
+        "title": "Not acceptable",
+        "start": 0.6,
+        "end": 1.45,
+        "thumbnail": "/assets/layered-specials/gordon-ramen-v1/reveal.webp",
+        "description": "He tastes one noodle and recoils in disgust."
+      },
+      {
+        "id": "launch",
+        "title": "Noodle inspection",
+        "start": 1.45,
+        "end": 2.85,
+        "thumbnail": "/assets/layered-specials/gordon-ramen-v1/launch.webp",
+        "description": "His next fork gesture sends a long noodle whip across the kitchen."
+      },
+      {
+        "id": "impact",
+        "title": "Knot accepted",
+        "start": 2.85,
+        "end": 3.7,
+        "thumbnail": "/assets/layered-specials/gordon-ramen-v1/impact.webp",
+        "description": "The noodles coil into an enormous tangled knot."
+      },
+      {
+        "id": "return",
+        "title": "The verdict",
+        "start": 3.7,
+        "end": 4.4,
+        "thumbnail": "/assets/layered-specials/gordon-ramen-v1/return.webp",
+        "description": "The chef inspects the aftermath with complete disapproval."
+      },
+      {
+        "id": "gag",
+        "title": "Sent back",
+        "start": 4.4,
+        "end": 5.8,
+        "thumbnail": "/assets/layered-specials/gordon-ramen-v1/gag.webp",
+        "description": "After all that destruction, he still refuses the dinner."
+      }
+    ]
+  },
+  {
+    "cardId": "CC004",
+    "slug": "usoppgpt",
+    "title": "UsoppGPT: Generate Canon",
+    "tagline": "One prompt.\nZero sources.",
+    "duration": 5.8,
+    "impact": 3,
+    "video": "/assets/layered-specials/usoppgpt-v1/special.mp4",
+    "poster": "/assets/layered-specials/usoppgpt-v1/poster.webp",
+    "captions": "/assets/layered-specials/usoppgpt-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "One impossible story",
+        "start": 0,
+        "end": 0.55,
+        "thumbnail": "/assets/layered-specials/usoppgpt-v1/close.webp",
+        "description": "A long-nosed pirate proudly enters a prompt into his phone."
+      },
+      {
+        "id": "reveal",
+        "title": "Fact check offline",
+        "start": 0.55,
+        "end": 1.35,
+        "thumbnail": "/assets/layered-specials/usoppgpt-v1/reveal.webp",
+        "description": "He makes a completely impossible claim beside a suspicious printing machine."
+      },
+      {
+        "id": "launch",
+        "title": "Generating canon",
+        "start": 1.35,
+        "end": 2.8,
+        "thumbnail": "/assets/layered-specials/usoppgpt-v1/launch.webp",
+        "description": "The machine feeds a storm of pages into his arms."
+      },
+      {
+        "id": "impact",
+        "title": "Plot armor delivered",
+        "start": 2.8,
+        "end": 3.7,
+        "thumbnail": "/assets/layered-specials/usoppgpt-v1/impact.webp",
+        "description": "The pages become a cannon-sized book and crash across the print shop."
+      },
+      {
+        "id": "return",
+        "title": "Publication date",
+        "start": 3.7,
+        "end": 4.35,
+        "thumbnail": "/assets/layered-specials/usoppgpt-v1/return.webp",
+        "description": "He proudly presents the newly published story, struggling under its weight."
+      },
+      {
+        "id": "gag",
+        "title": "The lie is canon",
+        "start": 4.35,
+        "end": 5.8,
+        "thumbnail": "/assets/layered-specials/usoppgpt-v1/gag.webp",
+        "description": "The liar poses with his enormous book. The lie now has a publication date."
+      }
+    ]
+  },
+  {
+    "cardId": "CC002",
+    "slug": "light-yagamod",
+    "title": "Light Yagamod: Ban Note",
+    "tagline": "One username.\nTotal control.",
+    "duration": 5.7,
+    "impact": 3,
+    "video": "/assets/layered-specials/light-yagamod-v1/special.mp4",
+    "poster": "/assets/layered-specials/light-yagamod-v1/poster.webp",
+    "captions": "/assets/layered-specials/light-yagamod-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "The moderator",
+        "start": 0,
+        "end": 0.55,
+        "thumbnail": "/assets/layered-specials/light-yagamod-v1/close.webp",
+        "description": "A smug moderator opens a black notebook."
+      },
+      {
+        "id": "reveal",
+        "title": "The black notebook",
+        "start": 0.55,
+        "end": 1.35,
+        "thumbnail": "/assets/layered-specials/light-yagamod-v1/reveal.webp",
+        "description": "He raises his pen beside a wall of glowing moderation screens."
+      },
+      {
+        "id": "launch",
+        "title": "Username entered",
+        "start": 1.35,
+        "end": 2.8,
+        "thumbnail": "/assets/layered-specials/light-yagamod-v1/launch.webp",
+        "description": "One furious written username unleashes a wave of ban notices."
+      },
+      {
+        "id": "impact",
+        "title": "Channel deleted",
+        "start": 2.8,
+        "end": 3.65,
+        "thumbnail": "/assets/layered-specials/light-yagamod-v1/impact.webp",
+        "description": "An enormous ban stamp slams across the monitors."
+      },
+      {
+        "id": "return",
+        "title": "The perfect purge",
+        "start": 3.65,
+        "end": 4.35,
+        "thumbnail": "/assets/layered-specials/light-yagamod-v1/return.webp",
+        "description": "He admires the perfect purge, then notices a missing channel."
+      },
+      {
+        "id": "gag",
+        "title": "Tech support banned",
+        "start": 4.35,
+        "end": 5.7,
+        "thumbnail": "/assets/layered-specials/light-yagamod-v1/gag.webp",
+        "description": "The appeal channel and tech support are both gone. The moderator stares at his notebook in panic."
+      }
+    ]
+  },
+  {
+    "cardId": "CC013",
+    "slug": "copy-paste-kakashi",
+    "title": "Copy-Paste Kakashi: Photocopy Jutsu",
+    "tagline": "A thousand techniques.\nOne office printer.",
+    "duration": 5.8,
+    "impact": 3.05,
+    "video": "/assets/layered-specials/copy-paste-kakashi-v1/special.mp4",
+    "poster": "/assets/layered-specials/copy-paste-kakashi-v1/poster.webp",
+    "captions": "/assets/layered-specials/copy-paste-kakashi-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "Copy the stance",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/copy-paste-kakashi-v1/close.webp",
+        "description": "A masked silver-haired ninja prepares a copied technique."
+      },
+      {
+        "id": "reveal",
+        "title": "Office ninja",
+        "start": 0.6,
+        "end": 1.4,
+        "thumbnail": "/assets/layered-specials/copy-paste-kakashi-v1/reveal.webp",
+        "description": "He leans over a photocopier in a very suspicious dojo."
+      },
+      {
+        "id": "launch",
+        "title": "Photocopy jutsu",
+        "start": 1.4,
+        "end": 2.85,
+        "thumbnail": "/assets/layered-specials/copy-paste-kakashi-v1/launch.webp",
+        "description": "The printer produces a paper clone of the entire ninja."
+      },
+      {
+        "id": "impact",
+        "title": "Watermarked",
+        "start": 2.85,
+        "end": 3.7,
+        "thumbnail": "/assets/layered-specials/copy-paste-kakashi-v1/impact.webp",
+        "description": "The clone charges in the wrong direction while watermarked paper flies across the room."
+      },
+      {
+        "id": "return",
+        "title": "Paper handling",
+        "start": 3.7,
+        "end": 4.4,
+        "thumbnail": "/assets/layered-specials/copy-paste-kakashi-v1/return.webp",
+        "description": "The original tries to make sense of the printed instructions."
+      },
+      {
+        "id": "gag",
+        "title": "Wrong direction",
+        "start": 4.4,
+        "end": 5.8,
+        "thumbnail": "/assets/layered-specials/copy-paste-kakashi-v1/gag.webp",
+        "description": "He holds the instructions upside down. The clone has no paper handling skills."
+      }
+    ]
+  },
+  {
+    "cardId": "CC005",
+    "slug": "sauron-surveillance",
+    "title": "Sauron Surveillance: One Eye to Track Them All",
+    "tagline": "Search history acquired.\nCookies are mandatory.",
+    "duration": 5.9,
+    "impact": 3.1,
+    "video": "/assets/layered-specials/sauron-surveillance-v1/special.mp4",
+    "poster": "/assets/layered-specials/sauron-surveillance-v1/poster.webp",
+    "captions": "/assets/layered-specials/sauron-surveillance-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "Always watching",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/sauron-surveillance-v1/close.webp",
+        "description": "A flaming surveillance eye narrows inside a spiked black tower."
+      },
+      {
+        "id": "reveal",
+        "title": "Privacy tower",
+        "start": 0.6,
+        "end": 1.4,
+        "thumbnail": "/assets/layered-specials/sauron-surveillance-v1/reveal.webp",
+        "description": "The tower watches an empty corporate courtyard through its attached cameras."
+      },
+      {
+        "id": "launch",
+        "title": "Profile acquired",
+        "start": 1.4,
+        "end": 2.9,
+        "thumbnail": "/assets/layered-specials/sauron-surveillance-v1/launch.webp",
+        "description": "A scanning cone sweeps the street and creates a fictional profile."
+      },
+      {
+        "id": "impact",
+        "title": "Mandatory policy",
+        "start": 2.9,
+        "end": 3.75,
+        "thumbnail": "/assets/layered-specials/sauron-surveillance-v1/impact.webp",
+        "description": "An impossibly long privacy policy crashes through the courtyard."
+      },
+      {
+        "id": "return",
+        "title": "Consent required",
+        "start": 3.75,
+        "end": 4.45,
+        "thumbnail": "/assets/layered-specials/sauron-surveillance-v1/return.webp",
+        "description": "The eye tries to keep its terrifying stare as cookies gather below."
+      },
+      {
+        "id": "gag",
+        "title": "Accept all",
+        "start": 4.45,
+        "end": 5.9,
+        "thumbnail": "/assets/layered-specials/sauron-surveillance-v1/gag.webp",
+        "description": "The eye also accepts all cookies. The privacy policy remains enormous."
+      }
+    ]
+  },
+  {
+    "cardId": "CC063",
+    "slug": "infinite-rizz",
+    "title": "Infinite Rizz: Domain Expansion: Main Character",
+    "tagline": "Untouchable confidence.\nUnrecoverable embarrassment.",
+    "duration": 5.9,
+    "impact": 3.05,
+    "video": "/assets/layered-specials/infinite-rizz-v1/special.mp4",
+    "poster": "/assets/layered-specials/infinite-rizz-v1/poster.webp",
+    "captions": "/assets/layered-specials/infinite-rizz-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "No eye contact",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/infinite-rizz-v1/close.webp",
+        "description": "A white-haired show-off lifts the edge of his black blindfold."
+      },
+      {
+        "id": "reveal",
+        "title": "The main character",
+        "start": 0.6,
+        "end": 1.4,
+        "thumbnail": "/assets/layered-specials/infinite-rizz-v1/reveal.webp",
+        "description": "He makes a finger seal above the neon city."
+      },
+      {
+        "id": "launch",
+        "title": "Personal space",
+        "start": 1.4,
+        "end": 2.9,
+        "thumbnail": "/assets/layered-specials/infinite-rizz-v1/launch.webp",
+        "description": "A domain grows around his intact body while an incoming attack slows to a stop."
+      },
+      {
+        "id": "impact",
+        "title": "Infinity",
+        "start": 2.9,
+        "end": 3.75,
+        "thumbnail": "/assets/layered-specials/infinite-rizz-v1/impact.webp",
+        "description": "Infinity holds the attack at a humiliating distance and returns the entire gesture."
+      },
+      {
+        "id": "return",
+        "title": "Rizz secured",
+        "start": 3.75,
+        "end": 4.5,
+        "thumbnail": "/assets/layered-specials/infinite-rizz-v1/return.webp",
+        "description": "He relaxes into a smug victory pose."
+      },
+      {
+        "id": "gag",
+        "title": "Blindfold malfunction",
+        "start": 4.5,
+        "end": 5.9,
+        "thumbnail": "/assets/layered-specials/infinite-rizz-v1/gag.webp",
+        "description": "His blindfold slips. He tries to rescue his dignity while the domain keeps working."
+      }
+    ]
+  },
+  {
+    "cardId": "CC064",
+    "slug": "big-bald-energy",
+    "title": "Big Bald Energy: One Punch, One Coupon",
+    "tagline": "A perfectly ordinary punch.\nAn extraordinary discount.",
+    "duration": 5.7,
+    "impact": 2.9,
+    "video": "/assets/layered-specials/big-bald-energy-v1/special.mp4",
+    "poster": "/assets/layered-specials/big-bald-energy-v1/poster.webp",
+    "captions": "/assets/layered-specials/big-bald-energy-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "Sale day",
+        "start": 0,
+        "end": 0.55,
+        "thumbnail": "/assets/layered-specials/big-bald-energy-v1/close.webp",
+        "description": "A bored bald hero checks his grocery coupon."
+      },
+      {
+        "id": "reveal",
+        "title": "The coupon",
+        "start": 0.55,
+        "end": 1.35,
+        "thumbnail": "/assets/layered-specials/big-bald-energy-v1/reveal.webp",
+        "description": "He waits outside a battered discount supermarket with his shopping bag."
+      },
+      {
+        "id": "launch",
+        "title": "Almost some effort",
+        "start": 1.35,
+        "end": 2.75,
+        "thumbnail": "/assets/layered-specials/big-bald-energy-v1/launch.webp",
+        "description": "One restrained punch travels through eight whole-body drawings."
+      },
+      {
+        "id": "impact",
+        "title": "One punch",
+        "start": 2.75,
+        "end": 3.6,
+        "thumbnail": "/assets/layered-specials/big-bald-energy-v1/impact.webp",
+        "description": "A giant shock front clears the forecourt while his groceries stay safe."
+      },
+      {
+        "id": "return",
+        "title": "The real priority",
+        "start": 3.6,
+        "end": 4.35,
+        "thumbnail": "/assets/layered-specials/big-bald-energy-v1/return.webp",
+        "description": "He immediately checks the coupon again."
+      },
+      {
+        "id": "gag",
+        "title": "Expired",
+        "start": 4.35,
+        "end": 5.7,
+        "thumbnail": "/assets/layered-specials/big-bald-energy-v1/gag.webp",
+        "description": "The coupon expired yesterday. The victory receives no further attention."
+      }
+    ]
+  },
+  {
+    "cardId": "CC066",
+    "slug": "eternal-second",
+    "title": "The Eternal 2nd: Runner-Up Final Flash",
+    "tagline": "Maximum power.\nConsistent placement.",
+    "duration": 6,
+    "impact": 3.15,
+    "video": "/assets/layered-specials/eternal-second-v1/special.mp4",
+    "poster": "/assets/layered-specials/eternal-second-v1/poster.webp",
+    "captions": "/assets/layered-specials/eternal-second-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "This time",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/eternal-second-v1/close.webp",
+        "description": "A furious black-haired warrior expects to win this time."
+      },
+      {
+        "id": "reveal",
+        "title": "The charge",
+        "start": 0.6,
+        "end": 1.45,
+        "thumbnail": "/assets/layered-specials/eternal-second-v1/reveal.webp",
+        "description": "He braces in an empty tournament arena."
+      },
+      {
+        "id": "launch",
+        "title": "Final flash",
+        "start": 1.45,
+        "end": 3,
+        "thumbnail": "/assets/layered-specials/eternal-second-v1/launch.webp",
+        "description": "His hands come together and thrust forward as the enormous beam charges."
+      },
+      {
+        "id": "impact",
+        "title": "Maximum effort",
+        "start": 3,
+        "end": 3.85,
+        "thumbnail": "/assets/layered-specials/eternal-second-v1/impact.webp",
+        "description": "A colossal golden beam tears across the arena."
+      },
+      {
+        "id": "return",
+        "title": "Awaiting results",
+        "start": 3.85,
+        "end": 4.55,
+        "thumbnail": "/assets/layered-specials/eternal-second-v1/return.webp",
+        "description": "He waits for his award, already smiling."
+      },
+      {
+        "id": "gag",
+        "title": "Runner-up",
+        "start": 4.55,
+        "end": 6,
+        "thumbnail": "/assets/layered-specials/eternal-second-v1/gag.webp",
+        "description": "A silver medal arrives. The podium still says second place. He has a very small tantrum."
+      }
+    ]
+  },
+  {
+    "cardId": "CC023",
+    "slug": "fraudo-baggins",
+    "title": "Fraudo Baggins: One Ring to Refer Them All",
+    "tagline": "A once-in-a-lifetime opportunity.\nFor every new referral.",
+    "duration": 5.9,
+    "impact": 3.1,
+    "video": "/assets/layered-specials/fraudo-baggins-v1/special.mp4",
+    "poster": "/assets/layered-specials/fraudo-baggins-v1/poster.webp",
+    "captions": "/assets/layered-specials/fraudo-baggins-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "The pitch",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/fraudo-baggins-v1/close.webp",
+        "description": "A smiling hobbit shows a tiny gold ring."
+      },
+      {
+        "id": "reveal",
+        "title": "The referral Shire",
+        "start": 0.6,
+        "end": 1.4,
+        "thumbnail": "/assets/layered-specials/fraudo-baggins-v1/reveal.webp",
+        "description": "He opens his investment pitch in a suspiciously welcoming Shire courtyard."
+      },
+      {
+        "id": "launch",
+        "title": "One ring",
+        "start": 1.4,
+        "end": 2.95,
+        "thumbnail": "/assets/layered-specials/fraudo-baggins-v1/launch.webp",
+        "description": "He throws the ring and it grows into a gigantic gold referral loop."
+      },
+      {
+        "id": "impact",
+        "title": "Refer them all",
+        "start": 2.95,
+        "end": 3.8,
+        "thumbnail": "/assets/layered-specials/fraudo-baggins-v1/impact.webp",
+        "description": "The loop sweeps a wall of guaranteed-return claims across the courtyard."
+      },
+      {
+        "id": "return",
+        "title": "Guaranteed returns",
+        "start": 3.8,
+        "end": 4.5,
+        "thumbnail": "/assets/layered-specials/fraudo-baggins-v1/return.webp",
+        "description": "The welcome carpet begins rolling out from under him."
+      },
+      {
+        "id": "gag",
+        "title": "The rug pull",
+        "start": 4.5,
+        "end": 5.9,
+        "thumbnail": "/assets/layered-specials/fraudo-baggins-v1/gag.webp",
+        "description": "The carpet unravels the entire pitch. The conman lands flat and tries to keep smiling."
+      }
+    ]
+  },
+  {
+    "cardId": "CC135",
+    "slug": "daenerys-airfryer",
+    "title": "Daenerys Airfryer: Dracarys, Preheat",
+    "tagline": "Mother of countertop appliances.\nBreaker of cooking timers.",
+    "duration": 6.1,
+    "impact": 3.2,
+    "video": "/assets/layered-specials/daenerys-airfryer-v1/special.mp4",
+    "poster": "/assets/layered-specials/daenerys-airfryer-v1/poster.webp",
+    "captions": "/assets/layered-specials/daenerys-airfryer-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "The queen",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/daenerys-airfryer-v1/close.webp",
+        "description": "A platinum-haired queen commands the room."
+      },
+      {
+        "id": "reveal",
+        "title": "Three appliances",
+        "start": 0.6,
+        "end": 1.4,
+        "thumbnail": "/assets/layered-specials/daenerys-airfryer-v1/reveal.webp",
+        "description": "Three black dragon-head air fryers wait in the throne-room kitchen."
+      },
+      {
+        "id": "launch",
+        "title": "Dracarys",
+        "start": 1.4,
+        "end": 3.05,
+        "thumbnail": "/assets/layered-specials/daenerys-airfryer-v1/launch.webp",
+        "description": "Her grand command is answered by a preheating countdown."
+      },
+      {
+        "id": "impact",
+        "title": "Preheat complete",
+        "start": 3.05,
+        "end": 3.9,
+        "thumbnail": "/assets/layered-specials/daenerys-airfryer-v1/impact.webp",
+        "description": "All three appliances launch a small scorched projectile after the ready chime."
+      },
+      {
+        "id": "return",
+        "title": "The royal result",
+        "start": 3.9,
+        "end": 4.6,
+        "thumbnail": "/assets/layered-specials/daenerys-airfryer-v1/return.webp",
+        "description": "She waits for an appropriately royal result."
+      },
+      {
+        "id": "gag",
+        "title": "One tiny morsel",
+        "start": 4.6,
+        "end": 6.1,
+        "thumbnail": "/assets/layered-specials/daenerys-airfryer-v1/gag.webp",
+        "description": "The queen inspects one tiny crisped morsel. The appliances are very pleased with themselves."
+      }
+    ]
+  },
+  {
+    "cardId": "CC003",
+    "slug": "l-ratio",
+    "title": "L Ratio: Case Closed, Ratio Open",
+    "tagline": "Perfect evidence.\nCatastrophic replies.",
+    "duration": 5.7,
+    "impact": 3,
+    "video": "/assets/layered-specials/l-ratio-v1/special.mp4",
+    "poster": "/assets/layered-specials/l-ratio-v1/poster.webp",
+    "captions": "/assets/layered-specials/l-ratio-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "The detective",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/l-ratio-v1/close.webp",
+        "description": "An exhausted detective studies his black tablet."
+      },
+      {
+        "id": "reveal",
+        "title": "The reply scene",
+        "start": 0.6,
+        "end": 1.4,
+        "thumbnail": "/assets/layered-specials/l-ratio-v1/reveal.webp",
+        "description": "He inspects an empty alley through an enormous magnifying glass."
+      },
+      {
+        "id": "launch",
+        "title": "Evidence delivered",
+        "start": 1.4,
+        "end": 2.85,
+        "thumbnail": "/assets/layered-specials/l-ratio-v1/launch.webp",
+        "description": "A barrage of evidence cards travels toward the reply board."
+      },
+      {
+        "id": "impact",
+        "title": "Case closed",
+        "start": 2.85,
+        "end": 3.65,
+        "thumbnail": "/assets/layered-specials/l-ratio-v1/impact.webp",
+        "description": "Every point receives a perfect verdict, then a huge letter L lands on the board."
+      },
+      {
+        "id": "return",
+        "title": "The public verdict",
+        "start": 3.65,
+        "end": 4.35,
+        "thumbnail": "/assets/layered-specials/l-ratio-v1/return.webp",
+        "description": "He checks the public reply count and cannot believe it."
+      },
+      {
+        "id": "gag",
+        "title": "Take the L",
+        "start": 4.35,
+        "end": 5.7,
+        "thumbnail": "/assets/layered-specials/l-ratio-v1/gag.webp",
+        "description": "The evidence is still correct. The detective has been comprehensively ratioed."
+      }
+    ]
+  },
+  {
+    "cardId": "CC001",
+    "slug": "yasuo-zero-ten",
+    "title": "Yasuo 0/10: Windwall of Excuses",
+    "tagline": "One flawless sword technique.\nTen flawless excuses.",
+    "duration": 5.8,
+    "impact": 3.05,
+    "video": "/assets/layered-specials/yasuo-zero-ten-v1/special.mp4",
+    "poster": "/assets/layered-specials/yasuo-zero-ten-v1/poster.webp",
+    "captions": "/assets/layered-specials/yasuo-zero-ten-v1/captions.vtt",
+    "shots": [
+      {
+        "id": "close",
+        "title": "The swordsman",
+        "start": 0,
+        "end": 0.6,
+        "thumbnail": "/assets/layered-specials/yasuo-zero-ten-v1/close.webp",
+        "description": "A disheveled swordsman prepares his weapon."
+      },
+      {
+        "id": "reveal",
+        "title": "Choose a lane",
+        "start": 0.6,
+        "end": 1.35,
+        "thumbnail": "/assets/layered-specials/yasuo-zero-ten-v1/reveal.webp",
+        "description": "The neon street splits into two very clear lanes."
+      },
+      {
+        "id": "launch",
+        "title": "Perfect dash",
+        "start": 1.35,
+        "end": 2.9,
+        "thumbnail": "/assets/layered-specials/yasuo-zero-ten-v1/launch.webp",
+        "description": "He dashes forward through an elaborate wind wall."
+      },
+      {
+        "id": "impact",
+        "title": "Wrong exit",
+        "start": 2.9,
+        "end": 3.75,
+        "thumbnail": "/assets/layered-specials/yasuo-zero-ten-v1/impact.webp",
+        "description": "The slash clears the wrong exit and the defeat counter reaches ten."
+      },
+      {
+        "id": "return",
+        "title": "The scoreboard",
+        "start": 3.75,
+        "end": 4.45,
+        "thumbnail": "/assets/layered-specials/yasuo-zero-ten-v1/return.webp",
+        "description": "He finally notices the scoreboard."
+      },
+      {
+        "id": "gag",
+        "title": "Team difference",
+        "start": 4.45,
+        "end": 5.8,
+        "thumbnail": "/assets/layered-specials/yasuo-zero-ten-v1/gag.webp",
+        "description": "The tenth defeat is definitely everyone else's fault."
+      }
+    ]
+  }
+]

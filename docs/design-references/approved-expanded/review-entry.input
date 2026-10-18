@@ -1,0 +1,29 @@
+import React,{useState,useEffect} from 'react';
+import {createRoot} from 'react-dom/client';
+import {ApprovedCity} from '../../../src/components/approved-city';
+import {ApprovedMarket} from '../../../src/components/approved-market';
+import {ApprovedPacks} from '../../../src/components/approved-packs';
+import {ApprovedStash} from '../../../src/components/approved-stash';
+import {useGame} from '../../../src/state/store';
+import {initialSave,applyCommand} from '../../../src/domain/game';
+import {Dialog} from '../../../src/components/dialog';
+import {RARITIES,CARD_BY_ID} from '../../../src/data/cards';
+import {cityProduction,cityCanCollect} from '../../../src/domain/city';
+const now=new Date('2026-10-16T05:00:00Z');
+let save=initialSave(now,'approved-preview-example');
+save=applyCommand(save,{type:'city-start'},now,Math.random,'preview-city',save.revision);
+save=applyCommand(save,{type:'open',sessionId:'preview-pack'},now,Math.random,'preview-open',save.revision);
+const ids=['CC063','CC064','CC023','CC002','CC066'];
+for(const [i,id] of ids.entries()){save.inventory[id]={regular:i<2?2:i===2?3:4,foil:0};if(!save.discoveredCardIds.includes(id))save.discoveredCardIds.push(id);save.pendingOpening!.pulls[i]={slot:i,cardId:id,isNewDiscovery:false,regularQuantityAfter:save.inventory[id].regular};}
+save.pendingOpening!.revealedCount=2;save.packBalance=12;save.totalXp=420;save.career.scrap=2450;
+save.inventory.CC135={regular:1,foil:0};save.discoveredCardIds.push('CC135');
+save.city!.plots[1]={kind:'afterparty',level:1,residentId:'CC135'};save.city!.tutorialSeen=true;save.city!.influence=28;
+save.props.ownedIds=['P001','P002','P003','P004','P007','P008','P009','P011'];save.props.loadout.CC063='P002';save.discoveredCardIds=[...new Set(save.discoveredCardIds)];for(const id of save.props.ownedIds)save.awardedRewardIds.push('prop:'+id);
+useGame.setState({save,hydrated:true,mode:'local',busy:false,error:null,run:async command=>{try{const before=useGame.getState().save!;const next=applyCommand(before,command,now,Math.random,crypto.randomUUID(),before.revision);useGame.setState({save:next,error:null});return true;}catch(error){window.alert(error instanceof Error?error.message:String(error));return false;}},enter:async()=>true});
+function App(){const [scene,setScene]=useState(location.hash.slice(1)||'city'),[dialog,setDialog]=useState('');const state=useGame();useEffect(()=>{const change=()=>setScene(location.hash.slice(1)||'city');addEventListener('hashchange',change);return()=>removeEventListener('hashchange',change);},[]);const city=state.save!.city!;
+const inspect=(c:any)=>setDialog(c.name+' — '+c.quote);
+return <><header className="review-toolbar"><b>APERÇU · DONNÉES D’EXEMPLE</b>{[['city','VILLE'],['market','MARCHÉ'],['packs','PACKS'],['stash','PROP STASH']].map(([id,label])=><a href={'#'+id} key={id} aria-current={scene===id?'page':undefined}>{label}</a>)}<a href="https://cancel-city-gacha.wiryant4.chatgpt.site/" target="_blank">JEU PUBLIC ↗</a></header><div className="game-app approved-app"><main>
+{scene==='city'?<ApprovedCity building={city.plots[1]} kind="afterparty" hasCity income={cityProduction(city)} canCollect={cityCanCollect(city,now)} disabled={false} onFound={()=>setDialog('La ville est déjà fondée dans cet aperçu.')} onAssign={()=>setDialog('Dans le jeu, ce bouton ouvre le choix du résident.')} onUpgrade={()=>void state.run({type:'city-upgrade',plot:1})} onCollect={()=>void state.run({type:'city-collect'})} onLandmark={()=>setDialog('Gestion contextuelle du bâtiment.')} onBuild={()=>setDialog('Dans le jeu, ce panneau donne accès aux douze parcelles.')} onDetails={()=>setDialog('Airfryer Palace / bâtiment niveau 1')} onJobs={()=>setDialog('Dans le jeu : contrats de la ville et récompenses sauvegardées.')} onIncidents={()=>setDialog('Dans le jeu : événements et incidents de la ville.')}/>:scene==='market'?<ApprovedMarket onInspect={inspect}/>:scene==='packs'?<ApprovedPacks onInspect={inspect} onOdds={()=>setDialog(RARITIES.map(r=>r.name+' '+r.weight*100+'%').join(' · '))}/>:<ApprovedStash/>}
+</main></div>{dialog&&<Dialog title="APERÇU DES COMPOSANTS" onClose={()=>setDialog('')}><p>{dialog}</p></Dialog>}</>;
+}
+createRoot(document.getElementById('root')!).render(<App/>);

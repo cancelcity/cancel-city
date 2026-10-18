@@ -1,0 +1,120 @@
+{
+  "id": "CC013",
+  "baseHeight": 493,
+  "poses": [
+    {
+      "src": "/assets/actors/CC013-roster-v2-0.webp",
+      "width": 255,
+      "height": 509,
+      "anchor": {
+        "x": 158,
+        "y": 501
+      }
+    },
+    {
+      "src": "/assets/actors/CC013-roster-v2-1.webp",
+      "width": 323,
+      "height": 459,
+      "anchor": {
+        "x": 143,
+        "y": 451
+      }
+    },
+    {
+      "src": "/assets/actors/CC013-roster-v2-2.webp",
+      "width": 496,
+      "height": 442,
+      "anchor": {
+        "x": 259,
+        "y": 434
+      }
+    },
+    {
+      "src": "/assets/actors/CC013-roster-v2-3.webp",
+      "width": 425,
+      "height": 506,
+      "anchor": {
+        "x": 167,
+        "y": 498
+      }
+    },
+    {
+      "src": "/assets/actors/CC013-roster-v2-4.webp",
+      "width": 290,
+      "height": 515,
+      "anchor": {
+        "x": 153,
+        "y": 507
+      }
+    },
+    {
+      "src": "/assets/actors/CC013-roster-v2-5.webp",
+      "width": 449,
+      "height": 431,
+      "anchor": {
+        "x": 222,
+        "y": 423
+      }
+    }
+  ],
+  "portrait": "/assets/roster-v2/CC013.webp",
+  "qa": [
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 246,
+        "maxY": 500
+      },
+      "alphaPixels": 65863
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 314,
+        "maxY": 450
+      },
+      "alphaPixels": 82833
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 487,
+        "maxY": 433
+      },
+      "alphaPixels": 108376
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 416,
+        "maxY": 497
+      },
+      "alphaPixels": 114117
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 281,
+        "maxY": 506
+      },
+      "alphaPixels": 73939
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 440,
+        "maxY": 422
+      },
+      "alphaPixels": 121067
+    }
+  ],
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: game whole-body character acting sprite sheet. Landscape canvas, exact uniform 3 columns x 2 rows equal cells, six complete independent full-body drawings of SAME character, reading order. TRUE transparent background with alpha, NO checkerboard texture, no ground shadows outside feet, no labels or grids. Rich hand-inked punk manga crosshatching and halftone illustration, black contours, creamy highlights, lime/magenta/cyan accents, expressive caricature, like satirical illustrated game cards. Keep anatomy coherent and clothing identical between cells. Every drawing entire intact person head to both feet, all props held correctly, ample transparent gutters so each figure fits wholly inside its own cell. Not detached limbs, not joint pieces, not rigs. Character height about 80% of cell, similar scale and foot baseline.\nSubject: Kakashi-inspired adult silver spiky-haired masked ninja in olive tactical vest with cream photocopier-scroll slung over shoulder, small copyright sticker on scroll, dark blue trousers and ninja sandals.\nSix poses reading order: neutral holding rolled photocopier-scroll; anticipation peering at paper scroll copying a pose; release unrolling a blank paper ribbon with strong ninja gesture; recoil tangled in harmless long white photocopy paper; victory smug one-eye wink holding scroll; panic hunched covered by one big paper watermark stamp icon.\nNo text needed. Preserve recognizable parody identity.\n",
+  "original": "original-sheet.png"
+}

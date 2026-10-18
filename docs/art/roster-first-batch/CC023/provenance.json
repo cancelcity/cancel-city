@@ -1,0 +1,9 @@
+{
+  "id": "CC023",
+  "name": "Fraudo Baggins",
+  "generator": "built-in image_gen",
+  "original": "original-sheet.png",
+  "portrait": "/assets/roster-v2/CC023.webp",
+  "prompt": "Use case: illustration-story. Asset type: transparent full-body game pose atlas. Create a coherent 3-column by 2-row sheet of SIX poses of ONE character, reading left-to-right top then bottom. Each cell equal sized, entire body head to feet plus held props fully visible, centered, substantial empty gutters and outer margins. No cropping, no overlapping cells, no labels, no panels, no backgrounds or floor shadows. REAL transparent alpha. Intact whole figures, every limb physically connected, naturally grasped props; never detached limbs. Consistent scale and identity across all six. Style: premium satirical manga/graphic-novel caricature, heavy black ink contours, fine crosshatching and halftone, hand-painted cream highlights, restrained neon lime magenta cyan accents. Rich expressive faces, clothing folds and ink texture. Portrait camera three-quarter view mostly facing right. Not photorealistic, not 3D. Character: a recognizable Frodo-inspired small curly brown-haired adult hobbit investment promoter, green cloak, cream shirt, brown waistcoat and trousers, large bare hairy feet, oversized gold referral ring and rolled velvet carpet. Six ordered poses: neutral displaying gold ring; sly pitch with ring extended; dramatic carpet-pulling lunge; startled ring-thread recoil; smug successful promoter flourish; panicked caught in rolled carpet with feet visible.",
+  "processing": "Sharp: mechanical cell crop, alpha-aware bounds and webp encoding; no repainting. Whole body anchor metadata manually marked at feet."
+}

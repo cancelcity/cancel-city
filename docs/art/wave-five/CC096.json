@@ -1,0 +1,190 @@
+{
+  "characterId": "CC096",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Grid cell contour crop, uniform fit and transparent square padding; generated alpha retained."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC096-0.webp",
+      "sourceExtraction": {
+        "left": 114,
+        "top": 4,
+        "width": 302,
+        "height": 503
+      },
+      "scale": 0.8349900596421471,
+      "suggestedAnchor": {
+        "x": 261,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 130,
+        "top": 36,
+        "right": 382,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 199243,
+        "transparentFraction": 0.7600517272949219
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC096-1.webp",
+      "sourceExtraction": {
+        "left": 525,
+        "top": 17,
+        "width": 499,
+        "height": 483
+      },
+      "scale": 0.8416833667334669,
+      "suggestedAnchor": {
+        "x": 208,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 49,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 179607,
+        "transparentFraction": 0.6851463317871094
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC096-2.webp",
+      "sourceExtraction": {
+        "left": 1024,
+        "top": 46,
+        "width": 500,
+        "height": 466
+      },
+      "scale": 0.84,
+      "suggestedAnchor": {
+        "x": 334,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 65,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 153457,
+        "transparentFraction": 0.5853919982910156
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC096-3.webp",
+      "sourceExtraction": {
+        "left": 73,
+        "top": 513,
+        "width": 365,
+        "height": 507
+      },
+      "scale": 0.8284023668639053,
+      "suggestedAnchor": {
+        "x": 263,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 105,
+        "top": 36,
+        "right": 407,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 202326,
+        "transparentFraction": 0.7718124389648438
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC096-4.webp",
+      "sourceExtraction": {
+        "left": 528,
+        "top": 548,
+        "width": 467,
+        "height": 413
+      },
+      "scale": 0.8993576017130621,
+      "suggestedAnchor": {
+        "x": 268,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 85,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 144335,
+        "transparentFraction": 0.5505943298339844
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC096-5.webp",
+      "sourceExtraction": {
+        "left": 1122,
+        "top": 512,
+        "width": 316,
+        "height": 503
+      },
+      "scale": 0.8349900596421471,
+      "suggestedAnchor": {
+        "x": 263,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 124,
+        "top": 36,
+        "right": 388,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 176093,
+        "transparentFraction": 0.6717414855957031
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest36px; y at lowest alpha>32 art pixel."
+}

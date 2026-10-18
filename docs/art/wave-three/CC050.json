@@ -1,0 +1,178 @@
+{
+  "characterId": "CC050",
+  "characterName": "Verified Goblin",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-three/CC050-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2,
+    "cutsX": [
+      0,
+      509,
+      1047,
+      1536
+    ],
+    "cutsY": [
+      0,
+      505,
+      1024
+    ]
+  },
+  "preparation": "Crop at actual transparent gutters; tight visible-alpha bounds with 4px margin; uniform scale and alpha padding with Sharp. No repainting. Alpha bounds threshold 32.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC050-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 100,
+        "top": 37,
+        "right": 409,
+        "bottom": 462
+      },
+      "transparentPixels": 174909,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 68,
+        "top": 7,
+        "width": 361,
+        "height": 492
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC050-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 49,
+        "top": 76,
+        "right": 461,
+        "bottom": 462
+      },
+      "transparentPixels": 166663,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 534,
+        "top": 43,
+        "width": 477,
+        "height": 447
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "path": "/assets/actors/CC050-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 63,
+        "top": 36,
+        "right": 447,
+        "bottom": 462
+      },
+      "transparentPixels": 163864,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 1084,
+        "top": 12,
+        "width": 446,
+        "height": 493
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC050-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 67,
+        "top": 23,
+        "right": 443,
+        "bottom": 462
+      },
+      "transparentPixels": 167015,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 48,
+        "top": 505,
+        "width": 436,
+        "height": 508
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC050-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 90,
+        "top": 43,
+        "right": 418,
+        "bottom": 462
+      },
+      "transparentPixels": 175567,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 621,
+        "top": 523,
+        "width": 382,
+        "height": 485
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "path": "/assets/actors/CC050-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 145,
+        "top": 44,
+        "right": 365,
+        "bottom": 461
+      },
+      "transparentPixels": 191118,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 1185,
+        "top": 520,
+        "width": 258,
+        "height": 484
+      }
+    }
+  ]
+}

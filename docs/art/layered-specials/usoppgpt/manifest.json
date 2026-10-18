@@ -1,0 +1,160 @@
+{
+  "character": "CC004",
+  "name": "UsoppGPT",
+  "generator": "built-in image_gen",
+  "styleReference": "public/assets/roster-b2/CC004.webp",
+  "costumeReference": "public/assets/actors/CC004-b2-0.webp",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/usoppgpt/action-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action",
+      "usableCount": 8,
+      "cropBoxes": [
+        [
+          13,
+          3,
+          347,
+          518
+        ],
+        [
+          407,
+          16,
+          334,
+          503
+        ],
+        [
+          777,
+          4,
+          354,
+          518
+        ],
+        [
+          1166,
+          4,
+          355,
+          519
+        ],
+        [
+          14,
+          580,
+          386,
+          427
+        ],
+        [
+          401,
+          557,
+          380,
+          460
+        ],
+        [
+          796,
+          511,
+          359,
+          498
+        ],
+        [
+          1158,
+          540,
+          374,
+          476
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/usoppgpt/action-prompt.txt",
+      "poses": [
+        "Smug terminal ready",
+        "Types prompt on terminal",
+        "Incredulous printer glance",
+        "Manic liar boast",
+        "Grips blank printed bundle",
+        "Pulls blank pages toward chest",
+        "Stagger pulls pages overhead",
+        "Delighted page-pull follow-through"
+      ],
+      "notes": "Eight intact full actors with exact long nose, curly hair, yellow bandana and brass goggles, mustard dungarees, cream sash, brown boots and green slingshot. Screens/pages blank; no baked backgrounds or particle effects. Tiny isolated expression ticks near pose3 can be omitted by component extraction."
+    },
+    {
+      "path": "docs/art/layered-specials/usoppgpt/ending-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "usableCount": 8,
+      "cropBoxes": [
+        [
+          11,
+          13,
+          380,
+          496
+        ],
+        [
+          439,
+          9,
+          325,
+          495
+        ],
+        [
+          789,
+          52,
+          370,
+          455
+        ],
+        [
+          1171,
+          2,
+          349,
+          503
+        ],
+        [
+          11,
+          533,
+          391,
+          480
+        ],
+        [
+          413,
+          508,
+          380,
+          504
+        ],
+        [
+          825,
+          549,
+          301,
+          461
+        ],
+        [
+          1203,
+          519,
+          310,
+          495
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/usoppgpt/ending-prompt.txt",
+      "poses": [
+        "Proud blank book presentation",
+        "Notices book becoming too big",
+        "Struggles with heavy book",
+        "Heavy book overhead panic",
+        "Panicked forced book-offer grin",
+        "Triumphant award boast",
+        "Bows accepting publish trophy",
+        "Puzzled final book glance"
+      ],
+      "notes": "All held books and trophies connect to intact actor hands. Blank cream front covers provide space for code typography. Props remain part of same alpha component as actor."
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/usoppgpt/print-workshop-original.png",
+    "prompt": "docs/art/layered-specials/usoppgpt/print-workshop-prompt.txt",
+    "notes": "Visually inspected opaque fixed1672x941 empty pirate print workshop: timber interior, metal cannon-like printing press on right rear, workbench rear left, large open wooden floor, acid-yellow and magenta lamps. No people, foreground papers, text, moving projectiles or particles."
+  },
+  "inspection": {
+    "allOutputsViewed": true,
+    "requestedPoses": 16,
+    "visuallyUsablePoses": 16,
+    "alphaPreserved": true,
+    "componentCheck": "8 independent connected alpha components over1500 pixels in each sheet at alpha>=36. cropBoxes are [left,top,width,height] in reading order without padding. Extract actual components, not rigid cell boundaries. Original PNG alpha preserved; exact stats in inspection.json."
+  }
+}
+

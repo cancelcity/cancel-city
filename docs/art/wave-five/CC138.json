@@ -1,0 +1,191 @@
+{
+  "characterId": "CC138",
+  "characterName": "Discord E-Knight",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC138-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest alpha-connected bodies identify poses in row-major order; disconnected substantial props assigned nearest body; small fringe removed. Original generated alpha preserved near solid contours. Complete figures cropped, uniformly scaled and square padded."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC138-0.webp",
+      "sourceExtraction": {
+        "left": 23,
+        "top": 11,
+        "width": 449,
+        "height": 487
+      },
+      "scale": 0.9034907597535934,
+      "suggestedAnchor": {
+        "x": 262,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 53,
+        "top": 16,
+        "right": 457,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 133136,
+        "transparentFraction": 0.50787353515625
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC138-1.webp",
+      "sourceExtraction": {
+        "left": 517,
+        "top": 25,
+        "width": 448,
+        "height": 470
+      },
+      "scale": 0.9361702127659575,
+      "suggestedAnchor": {
+        "x": 199,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 47,
+        "top": 16,
+        "right": 465,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 124320,
+        "transparentFraction": 0.4742431640625
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC138-2.webp",
+      "sourceExtraction": {
+        "left": 976,
+        "top": 44,
+        "width": 560,
+        "height": 448
+      },
+      "scale": 0.7857142857142857,
+      "suggestedAnchor": {
+        "x": 271,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 104,
+        "right": 476,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 151493,
+        "transparentFraction": 0.5778999328613281
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC138-3.webp",
+      "sourceExtraction": {
+        "left": 50,
+        "top": 510,
+        "width": 440,
+        "height": 495
+      },
+      "scale": 0.8888888888888888,
+      "suggestedAnchor": {
+        "x": 261,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 60,
+        "top": 16,
+        "right": 450,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 138577,
+        "transparentFraction": 0.5286293029785156
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC138-4.webp",
+      "sourceExtraction": {
+        "left": 514,
+        "top": 512,
+        "width": 545,
+        "height": 485
+      },
+      "scale": 0.8073394495412844,
+      "suggestedAnchor": {
+        "x": 216,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 64,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 160111,
+        "transparentFraction": 0.6107749938964844
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC138-5.webp",
+      "sourceExtraction": {
+        "left": 1000,
+        "top": 536,
+        "width": 525,
+        "height": 471
+      },
+      "scale": 0.8380952380952381,
+      "suggestedAnchor": {
+        "x": 271,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 61,
+        "right": 476,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 152113,
+        "transparentFraction": 0.5802650451660156
+      }
+    }
+  ],
+  "anchorMethod": "Median of solid lowest36px; y at lowest alpha>32 art pixel."
+}

@@ -1,0 +1,36 @@
+{
+  "id": "CC005",
+  "name": "Sauron Surveillance",
+  "portrait": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3f2d4187-4ee2-4d76-ac52-594afddf963b.png",
+  "portraitPrompt": "Use case: stylized-concept. Asset: opaque square gacha CARD PORTRAIT, not a card template. Input images are STYLE ONLY, do not copy their characters. Match their gritty expressive underground comic style exactly: scratched heavy black pen ink, dense crosshatching, coarse halftone, saturated flat color, splatter, stark black city silhouette skyline. Large grotesquely expressive face, dynamic foreshortened foreground prop, full bleed, no margins. No beige, no soft 3D, no clean anime cel shade, no text, no border, no watermark. Square 1024x1024.\nSubject: Sauron Surveillance. A single giant flaming orange eyeball permanently held within the forked crown of one black spiked surveillance tower, unmistakable Eye of Sauron parody. Iris resembles a suspicious camera lens; tiny surveillance cameras embedded in the tower point back at the eye. Extreme close-up on giant furious camera-eye and the top of the black tower, wide-eyed comic outrage, whole eye supported by crown. No humanoid body or limbs.\nPalette: hot magenta sky with acid yellow orange flames and black city silhouettes.",
+  "sheet": "/workspace/scratch/80a8c8c1affe/generated_images/exec-85756424-398c-4ca2-baf6-dd60aa0b34ae.png",
+  "sheetPrompt": "Use case: illustration-story. Asset: real transparent alpha full-character sprite atlas. Reference image is IDENTITY and INK STYLE only. Create exactly SIX intact WHOLE-character poses in a regular THREE COLUMN by TWO ROW grid, landscape 1536x1024. No panels, no labels, no city, no background, no floor shadows. Every cell shows the COMPLETE character from head to both feet, and all held props, at consistent physical scale, generous 35px outer margins and 35px transparent gutters. No clipping or overlapping cells. Every limb naturally attached, hands anatomically correct. Keep face, hair, outfit and held props identical to reference; heavy scratched black ink, crosshatching, coarse halftone, saturated colors. Three-quarter facing right. Character: A single giant flaming orange eyeball permanently held within the forked crown of one black spiked surveillance tower, unmistakable Eye of Sauron parody. Iris resembles a suspicious camera lens; tiny surveillance cameras embedded in the tower point back at the eye.  Ordered cells left-to-right: 0 upright stable complete tower with neutral lens iris; 1 suspicious narrowed eye within same crown; 2 blazing wide lens as whole tower leans forward; 3 startled squint and whole tower slight lean back; 4 smug narrowed iris in upright tower; 5 embarrassed dim iris looking down while whole tower slumps slightly. Tower remains intact, no detached eye, no movable pieces.. Bodies remain single illustrations, never separated limbs. No floating objects outside cell.",
+  "anchors": [
+    [
+      268,
+      494
+    ],
+    [
+      770,
+      494
+    ],
+    [
+      1250,
+      491
+    ],
+    [
+      287,
+      995
+    ],
+    [
+      775,
+      995
+    ],
+    [
+      1270,
+      992
+    ]
+  ],
+  "generator": "built-in image_gen",
+  "processing": "Sharp mechanical alpha cell crop and WebP encoding. Whole-character images only; manual foot anchors. Originals preserved."
+}

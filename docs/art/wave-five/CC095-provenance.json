@@ -1,0 +1,8 @@
+{
+  "characterId": "CC095",
+  "generatedWith": "built-in image_gen",
+  "portrait": "portrait.png",
+  "poses": "poses.png",
+  "exactPrompts": "exactprompt.md",
+  "operations": "technical contour crop, transparent padding, resize and WebP encoding only"
+}

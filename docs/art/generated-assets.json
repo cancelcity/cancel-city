@@ -1,0 +1,27 @@
+{
+  "generator": "OpenAI built-in imagegen",
+  "generated_at": "2026-10-11",
+  "reference_role": "Four user supplied Cancel City visual references; first screenshot is primary logo reference.",
+  "assets": [
+    {
+      "file": "city-backdrop.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "RGB PNG",
+      "prompt_summary": "Standalone edge-to-edge dense hand-inked underground punk comic city from four references: dark charcoal crooked skyscrapers, pink dusk, central grotesque slime Statue of Liberty with pink X eyes, helicopter silhouettes, yellow billboards, rats, rubbish, broken televisions, flame accents. No UI, game cards, menu, logo, or buttons. Tactile scratchy crosshatching and worn ink.",
+      "qa": "Viewed full output. Dense detailed grunge illustration matches references, slogans legible, no UI/cards."
+    },
+    {
+      "file": "title-logo.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "format": "RGBA PNG",
+      "prompt_summary": "Isolated transparent raster recreation of first screenshot title: CANCEL ivory distressed graffiti, CITY acid lime yellow ragged brush, hotpink circular slash and splashes, lime crown, off-white torn strip exact tagline Everyone is the problem. No city, scene, UI, cards, page or buttons.",
+      "qa": "Viewed output. All requested words accurate. Alpha channel extrema 0\u2013255 confirmed."
+    }
+  ]
+}

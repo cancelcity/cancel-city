@@ -1,0 +1,11 @@
+{
+  "status": "paused-not-started",
+  "reason": "User pivot to Battle/City design; finish only active generation, then hold",
+  "completed": [],
+  "pending": [
+    "action",
+    "ending",
+    "background"
+  ],
+  "note": "No generation started. Existing stage contained empty originals directory."
+}

@@ -1,0 +1,191 @@
+{
+  "characterId": "CC123",
+  "characterName": "Solid Snake, Terms in a Box",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC123-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest connected alpha bodies assigned row-major; detached props assigned whole to nearest body. Generated alpha preserved within 3px contour fringe; uniformly cropped, scaled and padded."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC123-0.webp",
+      "sourceExtraction": {
+        "left": 42,
+        "top": 19,
+        "width": 459,
+        "height": 455
+      },
+      "scale": 0.9586056644880174,
+      "suggestedAnchor": {
+        "x": 258,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 21,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 130279,
+        "transparentFraction": 0.4969749450683594
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC123-1.webp",
+      "sourceExtraction": {
+        "left": 561,
+        "top": 6,
+        "width": 368,
+        "height": 469
+      },
+      "scale": 0.9381663113006397,
+      "suggestedAnchor": {
+        "x": 317,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 84,
+        "top": 18,
+        "right": 427,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 158511,
+        "transparentFraction": 0.6046714782714844
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC123-2.webp",
+      "sourceExtraction": {
+        "left": 998,
+        "top": 5,
+        "width": 525,
+        "height": 470
+      },
+      "scale": 0.8380952380952381,
+      "suggestedAnchor": {
+        "x": 390,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 37,
+        "top": 64,
+        "right": 475,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 174516,
+        "transparentFraction": 0.6657257080078125
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC123-3.webp",
+      "sourceExtraction": {
+        "left": 67,
+        "top": 470,
+        "width": 433,
+        "height": 535
+      },
+      "scale": 0.822429906542056,
+      "suggestedAnchor": {
+        "x": 354,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 79,
+        "top": 16,
+        "right": 434,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 193528,
+        "transparentFraction": 0.738250732421875
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC123-4.webp",
+      "sourceExtraction": {
+        "left": 515,
+        "top": 494,
+        "width": 508,
+        "height": 509
+      },
+      "scale": 0.8644400785854617,
+      "suggestedAnchor": {
+        "x": 244,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 16,
+        "right": 475,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 173478,
+        "transparentFraction": 0.6617660522460938
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC123-5.webp",
+      "sourceExtraction": {
+        "left": 1106,
+        "top": 482,
+        "width": 365,
+        "height": 522
+      },
+      "scale": 0.842911877394636,
+      "suggestedAnchor": {
+        "x": 344,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 102,
+        "top": 16,
+        "right": 410,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 180443,
+        "transparentFraction": 0.6883354187011719
+      }
+    }
+  ],
+  "anchorMethod": "Median of solid lowest36px; y at lowest alpha>32 art pixel."
+}

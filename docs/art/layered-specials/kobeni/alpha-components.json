@@ -1,0 +1,146 @@
+[
+  {
+    "name": "action-sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "transparentFraction": 0.6159636179606119,
+    "components": [
+      {
+        "pixels": 65575,
+        "left": 85,
+        "top": 9,
+        "width": 211,
+        "height": 496,
+        "poseIndex": 1
+      },
+      {
+        "pixels": 72838,
+        "left": 432,
+        "top": 6,
+        "width": 242,
+        "height": 497,
+        "poseIndex": 2
+      },
+      {
+        "pixels": 81891,
+        "left": 702,
+        "top": 19,
+        "width": 382,
+        "height": 483,
+        "poseIndex": 3
+      },
+      {
+        "pixels": 74043,
+        "left": 1065,
+        "top": 6,
+        "width": 470,
+        "height": 496,
+        "poseIndex": 4
+      },
+      {
+        "pixels": 83149,
+        "left": 21,
+        "top": 530,
+        "width": 416,
+        "height": 471,
+        "poseIndex": 5
+      },
+      {
+        "pixels": 76580,
+        "left": 469,
+        "top": 510,
+        "width": 328,
+        "height": 499,
+        "poseIndex": 6
+      },
+      {
+        "pixels": 68051,
+        "left": 855,
+        "top": 505,
+        "width": 220,
+        "height": 504,
+        "poseIndex": 7
+      },
+      {
+        "pixels": 66331,
+        "left": 1238,
+        "top": 502,
+        "width": 215,
+        "height": 509,
+        "poseIndex": 8
+      }
+    ]
+  },
+  {
+    "name": "ending-sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "transparentFraction": 0.5998350779215494,
+    "components": [
+      {
+        "pixels": 74291,
+        "left": 89,
+        "top": 4,
+        "width": 238,
+        "height": 507,
+        "poseIndex": 1
+      },
+      {
+        "pixels": 80755,
+        "left": 441,
+        "top": 6,
+        "width": 254,
+        "height": 504,
+        "poseIndex": 2
+      },
+      {
+        "pixels": 87491,
+        "left": 794,
+        "top": 4,
+        "width": 310,
+        "height": 511,
+        "poseIndex": 3
+      },
+      {
+        "pixels": 72128,
+        "left": 1221,
+        "top": 4,
+        "width": 231,
+        "height": 503,
+        "poseIndex": 4
+      },
+      {
+        "pixels": 78561,
+        "left": 86,
+        "top": 508,
+        "width": 258,
+        "height": 513,
+        "poseIndex": 5
+      },
+      {
+        "pixels": 73018,
+        "left": 469,
+        "top": 503,
+        "width": 210,
+        "height": 518,
+        "poseIndex": 6
+      },
+      {
+        "pixels": 76081,
+        "left": 843,
+        "top": 515,
+        "width": 236,
+        "height": 503,
+        "poseIndex": 7
+      },
+      {
+        "pixels": 73420,
+        "left": 1253,
+        "top": 503,
+        "width": 197,
+        "height": 518,
+        "poseIndex": 8
+      }
+    ]
+  }
+]

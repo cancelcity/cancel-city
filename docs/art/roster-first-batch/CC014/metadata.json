@@ -1,0 +1,120 @@
+{
+  "id": "CC014",
+  "baseHeight": 499,
+  "poses": [
+    {
+      "src": "/assets/actors/CC014-roster-v2-0.webp",
+      "width": 252,
+      "height": 515,
+      "anchor": {
+        "x": 134,
+        "y": 507
+      }
+    },
+    {
+      "src": "/assets/actors/CC014-roster-v2-1.webp",
+      "width": 326,
+      "height": 501,
+      "anchor": {
+        "x": 200,
+        "y": 493
+      }
+    },
+    {
+      "src": "/assets/actors/CC014-roster-v2-2.webp",
+      "width": 427,
+      "height": 516,
+      "anchor": {
+        "x": 293,
+        "y": 508
+      }
+    },
+    {
+      "src": "/assets/actors/CC014-roster-v2-3.webp",
+      "width": 372,
+      "height": 518,
+      "anchor": {
+        "x": 225,
+        "y": 510
+      }
+    },
+    {
+      "src": "/assets/actors/CC014-roster-v2-4.webp",
+      "width": 268,
+      "height": 511,
+      "anchor": {
+        "x": 147,
+        "y": 503
+      }
+    },
+    {
+      "src": "/assets/actors/CC014-roster-v2-5.webp",
+      "width": 403,
+      "height": 492,
+      "anchor": {
+        "x": 174,
+        "y": 484
+      }
+    }
+  ],
+  "portrait": "/assets/roster-v2/CC014.webp",
+  "qa": [
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 243,
+        "maxY": 506
+      },
+      "alphaPixels": 58241
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 317,
+        "maxY": 492
+      },
+      "alphaPixels": 77979
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 418,
+        "maxY": 507
+      },
+      "alphaPixels": 87552
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 363,
+        "maxY": 509
+      },
+      "alphaPixels": 74260
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 259,
+        "maxY": 502
+      },
+      "alphaPixels": 56060
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 394,
+        "maxY": 483
+      },
+      "alphaPixels": 83882
+    }
+  ],
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: game whole-body character acting sprite sheet. Landscape canvas, exact uniform 3 columns x 2 rows equal cells, six complete independent full-body drawings of SAME character, reading order. TRUE transparent background with alpha, NO checkerboard texture, no ground shadows outside feet, no labels or grids. Rich hand-inked punk manga crosshatching and halftone illustration, black contours, creamy highlights, lime/magenta/cyan accents, expressive caricature, like satirical illustrated game cards. Keep anatomy coherent and clothing identical between cells. Every drawing entire intact person head to both feet, all props held correctly, ample transparent gutters so each figure fits wholly inside its own cell. Not detached limbs, not joint pieces, not rigs. Character height about 80% of cell, similar scale and foot baseline.\nSubject: Gordon Ramsay-inspired fictional parody blond spiky-haired middle-aged chef with furious brow, white chef jacket, black trousers, chunky boots, cheap instant-noodle cup in left hand and exaggerated long tasting fork in right.\nSix poses reading order: neutral holding noodle cup and fork; anticipation examining lifted noodles with intense squint; release outraged chef thrusting fork forward with long noodle knot held on fork; recoil revolted face pulling back from cup; victory smug folded arms still carrying fork and cup; panic tangled in the noodles but entire body intact.\nNo text needed. Preserve recognizable parody identity.\n",
+  "original": "original-sheet.png"
+}

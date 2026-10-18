@@ -1,0 +1,160 @@
+{
+  "character": "CC005",
+  "name": "Sauron Surveillance",
+  "generator": "built-in image_gen",
+  "styleReference": "public/assets/roster-b2/CC005.webp",
+  "costumeReference": "public/assets/actors/CC005-b2-0.webp",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/action-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action",
+      "usableCount": 8,
+      "cropBoxes": [
+        [
+          11,
+          6,
+          370,
+          476
+        ],
+        [
+          392,
+          5,
+          372,
+          477
+        ],
+        [
+          776,
+          4,
+          372,
+          477
+        ],
+        [
+          1160,
+          6,
+          371,
+          475
+        ],
+        [
+          8,
+          496,
+          375,
+          489
+        ],
+        [
+          391,
+          490,
+          377,
+          494
+        ],
+        [
+          776,
+          502,
+          372,
+          480
+        ],
+        [
+          1159,
+          496,
+          374,
+          488
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/sauron-surveillance/action-prompt.txt",
+      "poses": [
+        "Neutral watch",
+        "Eye lens looks left",
+        "Eye lens looks right",
+        "Suspicious narrow lid",
+        "Alarmingly wide tiny lens",
+        "Dominant enlarged lens focus",
+        "Sideways surveillance glare",
+        "Proud pleased half lid"
+      ],
+      "notes": "Eight whole nonhuman tower/eye actors, no invented humanoid limbs. Dense scratched black tower with attached CCTV cameras and compact intrinsic flaming eye corona. Camera-lens pupil preserved. All structures separate and intact."
+    },
+    {
+      "path": "docs/art/layered-specials/sauron-surveillance/ending-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "usableCount": 8,
+      "cropBoxes": [
+        [
+          6,
+          9,
+          374,
+          493
+        ],
+        [
+          389,
+          5,
+          373,
+          497
+        ],
+        [
+          775,
+          5,
+          374,
+          497
+        ],
+        [
+          1158,
+          9,
+          372,
+          493
+        ],
+        [
+          6,
+          512,
+          374,
+          499
+        ],
+        [
+          388,
+          512,
+          376,
+          499
+        ],
+        [
+          775,
+          512,
+          375,
+          499
+        ],
+        [
+          1157,
+          512,
+          372,
+          499
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/sauron-surveillance/ending-prompt.txt",
+      "poses": [
+        "Grand proud watchful",
+        "Confused tiny lens",
+        "Uncertain upward glance",
+        "Cookie scrutiny squint",
+        "Helpless caught stare",
+        "Furious privacy eye",
+        "Embarrassed sideways defeat",
+        "Awkward tired final watch"
+      ],
+      "notes": "Whole eye-and-tower silhouettes with highly consistent architecture. Eyelid/lens changes provide expression. No external cookies, policies, scanning cones or floating windows baked into sprite."
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/sauron-surveillance/courtyard-original.png",
+    "prompt": "docs/art/layered-specials/sauron-surveillance/courtyard-prompt.txt",
+    "notes": "Fixed empty1672x941 grungy corporate courtyard, cracked floor, blank signs, distant ordinary city towers and palms, dramatic magenta/acid-yellow light. No foreground tower/eye, people, documents, cookies or animated effects."
+  },
+  "inspection": {
+    "allOutputsViewed": true,
+    "requestedPoses": 16,
+    "visuallyUsablePoses": 16,
+    "alphaPreserved": true,
+    "componentCheck": "8 independent connected alpha components over1500 pixels in each sheet at alpha>=36. cropBoxes are [left,top,width,height] in reading order without padding. Original alpha preserved. stats/bounds in inspection.json."
+  }
+}
+

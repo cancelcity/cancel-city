@@ -1,0 +1,191 @@
+{
+  "characterId": "CC073",
+  "characterName": "Hampter, Supply Chain Manager",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC073-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Full-sheet alpha>32 connected-body bounds expand nominal grid cells where needed, retaining complete silhouettes; isolated distant small fringe removed; uniform scale and transparent square padding; original alpha retained."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC073-0.webp",
+      "sourceExtraction": {
+        "left": 57,
+        "top": 21,
+        "width": 375,
+        "height": 446
+      },
+      "scale": 0.9865470852017937,
+      "suggestedAnchor": {
+        "x": 265,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 71,
+        "top": 16,
+        "right": 441,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 133978,
+        "transparentFraction": 0.5110855102539062
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC073-1.webp",
+      "sourceExtraction": {
+        "left": 525,
+        "top": 29,
+        "width": 491,
+        "height": 436
+      },
+      "scale": 0.8961303462321792,
+      "suggestedAnchor": {
+        "x": 281,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 65,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 134791,
+        "transparentFraction": 0.5141868591308594
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC073-2.webp",
+      "sourceExtraction": {
+        "left": 1037,
+        "top": 45,
+        "width": 483,
+        "height": 419
+      },
+      "scale": 0.9109730848861284,
+      "suggestedAnchor": {
+        "x": 281,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 74,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 156515,
+        "transparentFraction": 0.5970573425292969
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC073-3.webp",
+      "sourceExtraction": {
+        "left": 21,
+        "top": 493,
+        "width": 477,
+        "height": 502
+      },
+      "scale": 0.8764940239043825,
+      "suggestedAnchor": {
+        "x": 199,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 47,
+        "top": 16,
+        "right": 465,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 150012,
+        "transparentFraction": 0.5722503662109375
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC073-4.webp",
+      "sourceExtraction": {
+        "left": 583,
+        "top": 544,
+        "width": 424,
+        "height": 447
+      },
+      "scale": 0.9843400447427293,
+      "suggestedAnchor": {
+        "x": 254,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 47,
+        "top": 16,
+        "right": 464,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 141789,
+        "transparentFraction": 0.5408821105957031
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC073-5.webp",
+      "sourceExtraction": {
+        "left": 1109,
+        "top": 534,
+        "width": 372,
+        "height": 459
+      },
+      "scale": 0.9586056644880174,
+      "suggestedAnchor": {
+        "x": 198,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 77,
+        "top": 16,
+        "right": 434,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 141842,
+        "transparentFraction": 0.5410842895507812
+      }
+    }
+  ],
+  "anchorMethod": "Median x of solid lowest36px; y at lowest alpha>32 pixel."
+}

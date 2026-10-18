@@ -1,0 +1,191 @@
+{
+  "characterId": "CC070",
+  "characterName": "Ceiling Cat, Internal Auditor",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC070-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Full-sheet alpha>32 connected-body bounds expand nominal grid cells where needed, retaining complete silhouettes; isolated distant small fringe removed; uniform scale and transparent square padding; original alpha retained."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC070-0.webp",
+      "sourceExtraction": {
+        "left": 47,
+        "top": 38,
+        "width": 441,
+        "height": 438
+      },
+      "scale": 0.9977324263038548,
+      "suggestedAnchor": {
+        "x": 139,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 19,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 136354,
+        "transparentFraction": 0.5201492309570312
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC070-1.webp",
+      "sourceExtraction": {
+        "left": 526,
+        "top": 12,
+        "width": 480,
+        "height": 457
+      },
+      "scale": 0.9166666666666666,
+      "suggestedAnchor": {
+        "x": 140,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 37,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 138704,
+        "transparentFraction": 0.52911376953125
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC070-2.webp",
+      "sourceExtraction": {
+        "left": 1029,
+        "top": 56,
+        "width": 494,
+        "height": 425
+      },
+      "scale": 0.8906882591093117,
+      "suggestedAnchor": {
+        "x": 136,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 77,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 147748,
+        "transparentFraction": 0.5636138916015625
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC070-3.webp",
+      "sourceExtraction": {
+        "left": 37,
+        "top": 522,
+        "width": 440,
+        "height": 453
+      },
+      "scale": 0.9713024282560706,
+      "suggestedAnchor": {
+        "x": 354,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 42,
+        "top": 16,
+        "right": 469,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 134280,
+        "transparentFraction": 0.512237548828125
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC070-4.webp",
+      "sourceExtraction": {
+        "left": 523,
+        "top": 527,
+        "width": 481,
+        "height": 450
+      },
+      "scale": 0.9147609147609148,
+      "suggestedAnchor": {
+        "x": 202,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 44,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 142635,
+        "transparentFraction": 0.5441093444824219
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC070-5.webp",
+      "sourceExtraction": {
+        "left": 1037,
+        "top": 560,
+        "width": 458,
+        "height": 420
+      },
+      "scale": 0.9606986899563319,
+      "suggestedAnchor": {
+        "x": 346,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 53,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 148440,
+        "transparentFraction": 0.566253662109375
+      }
+    }
+  ],
+  "anchorMethod": "Median x of solid lowest36px; y at lowest alpha>32 pixel."
+}

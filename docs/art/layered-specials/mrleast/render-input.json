@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/mrleast/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/action-00.webp",
+        "width": 364,
+        "height": 434,
+        "sourceBounds": {
+          "x": 13,
+          "y": 81,
+          "w": 364,
+          "h": 434
+        },
+        "area": 80531
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/action-01.webp",
+        "width": 364,
+        "height": 441,
+        "sourceBounds": {
+          "x": 413,
+          "y": 78,
+          "w": 364,
+          "h": 441
+        },
+        "area": 86140
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/action-02.webp",
+        "width": 329,
+        "height": 507,
+        "sourceBounds": {
+          "x": 793,
+          "y": 7,
+          "w": 329,
+          "h": 507
+        },
+        "area": 81591
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/action-03.webp",
+        "width": 391,
+        "height": 404,
+        "sourceBounds": {
+          "x": 1136,
+          "y": 116,
+          "w": 391,
+          "h": 404
+        },
+        "area": 68784
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/action-04.webp",
+        "width": 511,
+        "height": 335,
+        "sourceBounds": {
+          "x": 17,
+          "y": 642,
+          "w": 511,
+          "h": 335
+        },
+        "area": 78358
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/action-05.webp",
+        "width": 355,
+        "height": 421,
+        "sourceBounds": {
+          "x": 437,
+          "y": 570,
+          "w": 355,
+          "h": 421
+        },
+        "area": 70078
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/action-06.webp",
+        "width": 356,
+        "height": 427,
+        "sourceBounds": {
+          "x": 811,
+          "y": 581,
+          "w": 356,
+          "h": 427
+        },
+        "area": 80217
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/action-07.webp",
+        "width": 358,
+        "height": 521,
+        "sourceBounds": {
+          "x": 1161,
+          "y": 493,
+          "w": 358,
+          "h": 521
+        },
+        "area": 86215
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/ending-00.webp",
+        "width": 347,
+        "height": 493,
+        "sourceBounds": {
+          "x": 7,
+          "y": 7,
+          "w": 347,
+          "h": 493
+        },
+        "area": 110541
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/ending-01.webp",
+        "width": 360,
+        "height": 491,
+        "sourceBounds": {
+          "x": 379,
+          "y": 9,
+          "w": 360,
+          "h": 491
+        },
+        "area": 113854
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/ending-02.webp",
+        "width": 388,
+        "height": 490,
+        "sourceBounds": {
+          "x": 754,
+          "y": 10,
+          "w": 388,
+          "h": 490
+        },
+        "area": 114899
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/ending-03.webp",
+        "width": 374,
+        "height": 490,
+        "sourceBounds": {
+          "x": 1156,
+          "y": 10,
+          "w": 374,
+          "h": 490
+        },
+        "area": 102205
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/ending-04.webp",
+        "width": 351,
+        "height": 502,
+        "sourceBounds": {
+          "x": 7,
+          "y": 512,
+          "w": 351,
+          "h": 502
+        },
+        "area": 107335
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/ending-05.webp",
+        "width": 383,
+        "height": 499,
+        "sourceBounds": {
+          "x": 365,
+          "y": 515,
+          "w": 383,
+          "h": 499
+        },
+        "area": 117316
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/ending-06.webp",
+        "width": 404,
+        "height": 495,
+        "sourceBounds": {
+          "x": 769,
+          "y": 519,
+          "w": 404,
+          "h": 495
+        },
+        "area": 117151
+      },
+      {
+        "file": "docs/art/layered-specials/mrleast/actors/ending-07.webp",
+        "width": 370,
+        "height": 502,
+        "sourceBounds": {
+          "x": 1157,
+          "y": 512,
+          "w": 370,
+          "h": 502
+        },
+        "area": 118340
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

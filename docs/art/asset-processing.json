@@ -1,0 +1,763 @@
+{
+  "encoding": "WebP",
+  "quality": 82,
+  "creativeChanges": false,
+  "records": [
+    {
+      "id": "CC001",
+      "source": "docs/art/residents/CC001.png",
+      "sourceSha256": "a3b03242277000de35e95cc11172b5205ff0d943f8c253ae2bf508c1aad5e321",
+      "sourceBytes": 3460589,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC001-small.webp",
+          "width": 384,
+          "bytes": 68162
+        },
+        {
+          "file": "public/assets/residents/CC001.webp",
+          "width": 1024,
+          "bytes": 374316
+        }
+      ]
+    },
+    {
+      "id": "CC002",
+      "source": "docs/art/residents/CC002.png",
+      "sourceSha256": "0f1fb77aaf979223b4dd8244df5e5a75414c4c2288629a44bd42fccd03b152cc",
+      "sourceBytes": 3358197,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC002-small.webp",
+          "width": 384,
+          "bytes": 58426
+        },
+        {
+          "file": "public/assets/residents/CC002.webp",
+          "width": 1024,
+          "bytes": 317152
+        }
+      ]
+    },
+    {
+      "id": "CC003",
+      "source": "docs/art/residents/CC003.png",
+      "sourceSha256": "25c4142022de15077fa0b9d75ab387dbd004a26a58a7d7f3f0405055562802a1",
+      "sourceBytes": 3947015,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC003-small.webp",
+          "width": 384,
+          "bytes": 70296
+        },
+        {
+          "file": "public/assets/residents/CC003.webp",
+          "width": 1024,
+          "bytes": 423642
+        }
+      ]
+    },
+    {
+      "id": "CC004",
+      "source": "docs/art/residents/CC004.png",
+      "sourceSha256": "3745294b81724b02bc486a38c7f78f9c3b0adfab57edb3774c61bd3bded9146a",
+      "sourceBytes": 3814508,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC004-small.webp",
+          "width": 384,
+          "bytes": 87042
+        },
+        {
+          "file": "public/assets/residents/CC004.webp",
+          "width": 1024,
+          "bytes": 490778
+        }
+      ]
+    },
+    {
+      "id": "CC005",
+      "source": "docs/art/residents/CC005.png",
+      "sourceSha256": "bf012b56dd747c9113ced5bd8fadf096b8d9d3d5e7b2d07c2a0965722142f6bf",
+      "sourceBytes": 3217141,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC005-small.webp",
+          "width": 384,
+          "bytes": 72828
+        },
+        {
+          "file": "public/assets/residents/CC005.webp",
+          "width": 1024,
+          "bytes": 373172
+        }
+      ]
+    },
+    {
+      "id": "CC006",
+      "source": "docs/art/residents/CC006.png",
+      "sourceSha256": "eb3ee9bd68c7a56562ad20c3e7a9deab81ef8d6a4936028113134ce5ab5f52dd",
+      "sourceBytes": 3509543,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC006-small.webp",
+          "width": 384,
+          "bytes": 76846
+        },
+        {
+          "file": "public/assets/residents/CC006.webp",
+          "width": 1024,
+          "bytes": 420022
+        }
+      ]
+    },
+    {
+      "id": "CC007",
+      "source": "docs/art/residents/CC007.png",
+      "sourceSha256": "5a5f4fc5b83f0e04607639a1ce3a6484bbcd0e30ce90ede9e4993312309a9fc3",
+      "sourceBytes": 3580868,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC007-small.webp",
+          "width": 384,
+          "bytes": 70920
+        },
+        {
+          "file": "public/assets/residents/CC007.webp",
+          "width": 1024,
+          "bytes": 376872
+        }
+      ]
+    },
+    {
+      "id": "CC008",
+      "source": "docs/art/residents/CC008.png",
+      "sourceSha256": "c3655040c2f856cddfbfe4ad236e70a0e282e6552aa5628c72f41433febc8203",
+      "sourceBytes": 3964160,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC008-small.webp",
+          "width": 384,
+          "bytes": 79346
+        },
+        {
+          "file": "public/assets/residents/CC008.webp",
+          "width": 1024,
+          "bytes": 461462
+        }
+      ]
+    },
+    {
+      "id": "CC009",
+      "source": "docs/art/residents/CC009.png",
+      "sourceSha256": "4e0626f09072fd6b69304f95105e195357d5e64760b68a2a025069d33230e566",
+      "sourceBytes": 3711242,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC009-small.webp",
+          "width": 384,
+          "bytes": 79660
+        },
+        {
+          "file": "public/assets/residents/CC009.webp",
+          "width": 1024,
+          "bytes": 445886
+        }
+      ]
+    },
+    {
+      "id": "CC010",
+      "source": "docs/art/residents/CC010.png",
+      "sourceSha256": "da6f11dfca5532c70a3c12add0b1f1e3e01708e084e033d582a02445dc1d9f0e",
+      "sourceBytes": 3589589,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC010-small.webp",
+          "width": 384,
+          "bytes": 68694
+        },
+        {
+          "file": "public/assets/residents/CC010.webp",
+          "width": 1024,
+          "bytes": 386716
+        }
+      ]
+    },
+    {
+      "id": "CC011",
+      "source": "docs/art/residents/CC011.png",
+      "sourceSha256": "c6c5ae7224f750da5e684b0a625716a3f13003dfd6ff20d1c6f73b04acaf9019",
+      "sourceBytes": 3584315,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC011-small.webp",
+          "width": 384,
+          "bytes": 71844
+        },
+        {
+          "file": "public/assets/residents/CC011.webp",
+          "width": 1024,
+          "bytes": 418052
+        }
+      ]
+    },
+    {
+      "id": "CC012",
+      "source": "docs/art/residents/CC012.png",
+      "sourceSha256": "d59295811533ded3bc650d658e2bedc5932221dad3cf8a4a1bc11df9ac60f695",
+      "sourceBytes": 3937908,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC012-small.webp",
+          "width": 384,
+          "bytes": 78878
+        },
+        {
+          "file": "public/assets/residents/CC012.webp",
+          "width": 1024,
+          "bytes": 480948
+        }
+      ]
+    },
+    {
+      "id": "CC013",
+      "source": "docs/art/residents/CC013.png",
+      "sourceSha256": "02f0f9e79c46ab22a3f2d31e2e9adcb4ca9ea94f41e215154c9f15ee52ef53c1",
+      "sourceBytes": 3568188,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC013-small.webp",
+          "width": 384,
+          "bytes": 72004
+        },
+        {
+          "file": "public/assets/residents/CC013.webp",
+          "width": 1024,
+          "bytes": 406866
+        }
+      ]
+    },
+    {
+      "id": "CC014",
+      "source": "docs/art/residents/CC014.png",
+      "sourceSha256": "724564b784f1a9eedd2cd2ac5b65da0f03af44f42a9fb4e70fe80f7626b2d6fd",
+      "sourceBytes": 3764747,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC014-small.webp",
+          "width": 384,
+          "bytes": 83018
+        },
+        {
+          "file": "public/assets/residents/CC014.webp",
+          "width": 1024,
+          "bytes": 480732
+        }
+      ]
+    },
+    {
+      "id": "CC015",
+      "source": "docs/art/residents/CC015.png",
+      "sourceSha256": "93a4f525d74a7c254e9eebd0821290c287129acd3a98fb6bd3b3ee6ac4bc2059",
+      "sourceBytes": 3935276,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC015-small.webp",
+          "width": 384,
+          "bytes": 79102
+        },
+        {
+          "file": "public/assets/residents/CC015.webp",
+          "width": 1024,
+          "bytes": 466020
+        }
+      ]
+    },
+    {
+      "id": "CC016",
+      "source": "docs/art/residents/CC016.png",
+      "sourceSha256": "9e4b6b89a6622097cbd33f17f4b836559c96a79d0d17b9121d06313e0512e486",
+      "sourceBytes": 3240306,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC016-small.webp",
+          "width": 384,
+          "bytes": 64378
+        },
+        {
+          "file": "public/assets/residents/CC016.webp",
+          "width": 1024,
+          "bytes": 349142
+        }
+      ]
+    },
+    {
+      "id": "CC017",
+      "source": "docs/art/residents/CC017.png",
+      "sourceSha256": "8d4716bfd9ff4986c09e3fbf08840e6e037a046efa1ad0ffd0678480d11cf2db",
+      "sourceBytes": 4043920,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC017-small.webp",
+          "width": 384,
+          "bytes": 83916
+        },
+        {
+          "file": "public/assets/residents/CC017.webp",
+          "width": 1024,
+          "bytes": 490282
+        }
+      ]
+    },
+    {
+      "id": "CC018",
+      "source": "docs/art/residents/CC018.png",
+      "sourceSha256": "f6f33c29b1f7be6a37dccf069349151e2e3546dc105287399d74b04d16984bbb",
+      "sourceBytes": 4087460,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC018-small.webp",
+          "width": 384,
+          "bytes": 84030
+        },
+        {
+          "file": "public/assets/residents/CC018.webp",
+          "width": 1024,
+          "bytes": 490744
+        }
+      ]
+    },
+    {
+      "id": "CC019",
+      "source": "docs/art/residents/CC019.png",
+      "sourceSha256": "a533ef724ef092242bd6dab19fb989cb831b11d399b13f1525d8d932dd6d16ac",
+      "sourceBytes": 3409110,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC019-small.webp",
+          "width": 384,
+          "bytes": 69346
+        },
+        {
+          "file": "public/assets/residents/CC019.webp",
+          "width": 1024,
+          "bytes": 391768
+        }
+      ]
+    },
+    {
+      "id": "CC020",
+      "source": "docs/art/residents/CC020.png",
+      "sourceSha256": "ac6cb1298e74b94564acddb0b72183f262e80030000c3c7a96547809bd663b1f",
+      "sourceBytes": 3461272,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC020-small.webp",
+          "width": 384,
+          "bytes": 68524
+        },
+        {
+          "file": "public/assets/residents/CC020.webp",
+          "width": 1024,
+          "bytes": 414212
+        }
+      ]
+    },
+    {
+      "id": "CC021",
+      "source": "docs/art/residents/CC021.png",
+      "sourceSha256": "a0cc93add9c924086ecab0516b523fc837dcc8f94950ae26166faad3a5ae5f2e",
+      "sourceBytes": 3699716,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC021-small.webp",
+          "width": 384,
+          "bytes": 77576
+        },
+        {
+          "file": "public/assets/residents/CC021.webp",
+          "width": 1024,
+          "bytes": 413510
+        }
+      ]
+    },
+    {
+      "id": "CC022",
+      "source": "docs/art/residents/CC022.png",
+      "sourceSha256": "01be65a607c5e7018d24811fcf51c07e71a8de136628deb209731e3019363298",
+      "sourceBytes": 3964405,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC022-small.webp",
+          "width": 384,
+          "bytes": 90492
+        },
+        {
+          "file": "public/assets/residents/CC022.webp",
+          "width": 1024,
+          "bytes": 525038
+        }
+      ]
+    },
+    {
+      "id": "CC023",
+      "source": "docs/art/residents/CC023.png",
+      "sourceSha256": "740c839b30ed17eac60ebb1ff38e6806ea9eab8487e8b4dc0b296eccc9f18695",
+      "sourceBytes": 3834100,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC023-small.webp",
+          "width": 384,
+          "bytes": 75050
+        },
+        {
+          "file": "public/assets/residents/CC023.webp",
+          "width": 1024,
+          "bytes": 431900
+        }
+      ]
+    },
+    {
+      "id": "CC024",
+      "source": "docs/art/residents/CC024.png",
+      "sourceSha256": "a7f8f9437545dd7ecca6578a5b77e86427659997871eadd59d74fe57d6a94ef6",
+      "sourceBytes": 3572512,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC024-small.webp",
+          "width": 384,
+          "bytes": 78740
+        },
+        {
+          "file": "public/assets/residents/CC024.webp",
+          "width": 1024,
+          "bytes": 451648
+        }
+      ]
+    },
+    {
+      "id": "CC025",
+      "source": "docs/art/residents/CC025.png",
+      "sourceSha256": "744328a9542bd926bec972695fc5bdfba980eb2ca1e8a58e3ec5ea065fcdc09b",
+      "sourceBytes": 3867919,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC025-small.webp",
+          "width": 384,
+          "bytes": 72348
+        },
+        {
+          "file": "public/assets/residents/CC025.webp",
+          "width": 1024,
+          "bytes": 435918
+        }
+      ]
+    },
+    {
+      "id": "CC026",
+      "source": "docs/art/residents/CC026.png",
+      "sourceSha256": "b8627d097bb2ecc7ff6ed9d446ebb894ff6fd56366de189d5cfcfa44ce559ad0",
+      "sourceBytes": 3677240,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC026-small.webp",
+          "width": 384,
+          "bytes": 69556
+        },
+        {
+          "file": "public/assets/residents/CC026.webp",
+          "width": 1024,
+          "bytes": 403976
+        }
+      ]
+    },
+    {
+      "id": "CC027",
+      "source": "docs/art/residents/CC027.png",
+      "sourceSha256": "a1db76b78628693f56ad13508fcba7c5d454d2826171583a3aeadb037b9b2bc2",
+      "sourceBytes": 3873240,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC027-small.webp",
+          "width": 384,
+          "bytes": 77852
+        },
+        {
+          "file": "public/assets/residents/CC027.webp",
+          "width": 1024,
+          "bytes": 474352
+        }
+      ]
+    },
+    {
+      "id": "CC028",
+      "source": "docs/art/residents/CC028.png",
+      "sourceSha256": "0be8ff4894863884c5a1c483c46d59acc2bcfeca2865eb20410d01748fcd9122",
+      "sourceBytes": 4029221,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC028-small.webp",
+          "width": 384,
+          "bytes": 76614
+        },
+        {
+          "file": "public/assets/residents/CC028.webp",
+          "width": 1024,
+          "bytes": 451936
+        }
+      ]
+    },
+    {
+      "id": "CC029",
+      "source": "docs/art/residents/CC029.png",
+      "sourceSha256": "926e4a3d5a3679a9413e0aa063eda137f23bb8366b4adbb6e9127e9261cbaeff",
+      "sourceBytes": 3698315,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC029-small.webp",
+          "width": 384,
+          "bytes": 72532
+        },
+        {
+          "file": "public/assets/residents/CC029.webp",
+          "width": 1024,
+          "bytes": 407116
+        }
+      ]
+    },
+    {
+      "id": "CC030",
+      "source": "docs/art/residents/CC030.png",
+      "sourceSha256": "9e5ed8fe43d4e3f96653233f36cdbc3de7bf6bce61509239e0e360fbd56f3485",
+      "sourceBytes": 4116699,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC030-small.webp",
+          "width": 384,
+          "bytes": 85666
+        },
+        {
+          "file": "public/assets/residents/CC030.webp",
+          "width": 1024,
+          "bytes": 509874
+        }
+      ]
+    },
+    {
+      "id": "CC031",
+      "source": "docs/art/residents/CC031.png",
+      "sourceSha256": "a9557a63e760ed1cce28208f282162153ba30c126cb1e6d5c0d32bb7138ca59e",
+      "sourceBytes": 3756463,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC031-small.webp",
+          "width": 384,
+          "bytes": 71542
+        },
+        {
+          "file": "public/assets/residents/CC031.webp",
+          "width": 1024,
+          "bytes": 428532
+        }
+      ]
+    },
+    {
+      "id": "CC032",
+      "source": "docs/art/residents/CC032.png",
+      "sourceSha256": "1478792ebf246d169302f81ee2b84ab076dce879981ad6d3eb0c44137183c1af",
+      "sourceBytes": 4095314,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC032-small.webp",
+          "width": 384,
+          "bytes": 85176
+        },
+        {
+          "file": "public/assets/residents/CC032.webp",
+          "width": 1024,
+          "bytes": 512034
+        }
+      ]
+    },
+    {
+      "id": "CC033",
+      "source": "docs/art/residents/CC033.png",
+      "sourceSha256": "1a5c9bb8c9a2165a35452d903a9585bbc572c15b745d30bf6fbfdee6dbe3cf8d",
+      "sourceBytes": 3913691,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC033-small.webp",
+          "width": 384,
+          "bytes": 74836
+        },
+        {
+          "file": "public/assets/residents/CC033.webp",
+          "width": 1024,
+          "bytes": 463184
+        }
+      ]
+    },
+    {
+      "id": "CC034",
+      "source": "docs/art/residents/CC034.png",
+      "sourceSha256": "7db218125eb91385db98981690b0d15bbd75cdf2984d6577bc992aa52de2be68",
+      "sourceBytes": 3933058,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC034-small.webp",
+          "width": 384,
+          "bytes": 76466
+        },
+        {
+          "file": "public/assets/residents/CC034.webp",
+          "width": 1024,
+          "bytes": 467906
+        }
+      ]
+    },
+    {
+      "id": "CC035",
+      "source": "docs/art/residents/CC035.png",
+      "sourceSha256": "938ba6c751addbe89fcab46f02e8ddf43d9140d78b3092e42b23f638f46f392a",
+      "sourceBytes": 4011162,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC035-small.webp",
+          "width": 384,
+          "bytes": 75526
+        },
+        {
+          "file": "public/assets/residents/CC035.webp",
+          "width": 1024,
+          "bytes": 471504
+        }
+      ]
+    },
+    {
+      "id": "CC036",
+      "source": "docs/art/residents/CC036.png",
+      "sourceSha256": "0d74a4fa009b847759f60503801830a595ef097ee0783e72981f80ebb6fa7621",
+      "sourceBytes": 3648057,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC036-small.webp",
+          "width": 384,
+          "bytes": 72194
+        },
+        {
+          "file": "public/assets/residents/CC036.webp",
+          "width": 1024,
+          "bytes": 431718
+        }
+      ]
+    },
+    {
+      "id": "CC037",
+      "source": "docs/art/residents/CC037.png",
+      "sourceSha256": "c1756dabfb42ee26090adcecbdf4e9e5b56b7051171854fa5534234b15e3029e",
+      "sourceBytes": 3773187,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC037-small.webp",
+          "width": 384,
+          "bytes": 77334
+        },
+        {
+          "file": "public/assets/residents/CC037.webp",
+          "width": 1024,
+          "bytes": 471650
+        }
+      ]
+    },
+    {
+      "id": "CC038",
+      "source": "docs/art/residents/CC038.png",
+      "sourceSha256": "2004d758e01b5bdade4344ad4153ba0734a3a6db67fed550d0f93b8d908c357e",
+      "sourceBytes": 3806348,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC038-small.webp",
+          "width": 384,
+          "bytes": 78598
+        },
+        {
+          "file": "public/assets/residents/CC038.webp",
+          "width": 1024,
+          "bytes": 451348
+        }
+      ]
+    },
+    {
+      "id": "CC039",
+      "source": "docs/art/residents/CC039.png",
+      "sourceSha256": "2d89277d37065e2c36a413e7d18b415beced7956612aed89cd9d29da5e140f16",
+      "sourceBytes": 4203423,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC039-small.webp",
+          "width": 384,
+          "bytes": 78718
+        },
+        {
+          "file": "public/assets/residents/CC039.webp",
+          "width": 1024,
+          "bytes": 488526
+        }
+      ]
+    },
+    {
+      "id": "CC040",
+      "source": "docs/art/residents/CC040.png",
+      "sourceSha256": "beafa6152eaa1faa3fb3d2c49a2ba7d747a2eb9d3e34f797125ff9cb63d43493",
+      "sourceBytes": 3835336,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC040-small.webp",
+          "width": 384,
+          "bytes": 76986
+        },
+        {
+          "file": "public/assets/residents/CC040.webp",
+          "width": 1024,
+          "bytes": 476018
+        }
+      ]
+    },
+    {
+      "id": "CC041",
+      "source": "docs/art/residents/CC041.png",
+      "sourceSha256": "a084477de86dca6fdd75f6d13ba9eee3774212337b22cfa34490cabe4c67d740",
+      "sourceBytes": 3853090,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC041-small.webp",
+          "width": 384,
+          "bytes": 73252
+        },
+        {
+          "file": "public/assets/residents/CC041.webp",
+          "width": 1024,
+          "bytes": 441208
+        }
+      ]
+    },
+    {
+      "id": "CC042",
+      "source": "docs/art/residents/CC042.png",
+      "sourceSha256": "b0e7744074c4f6286f10091390eb45073c50b8abf755454220dcd403a5dcbe70",
+      "sourceBytes": 3582421,
+      "derivatives": [
+        {
+          "file": "public/assets/residents/CC042-small.webp",
+          "width": 384,
+          "bytes": 69148
+        },
+        {
+          "file": "public/assets/residents/CC042.webp",
+          "width": 1024,
+          "bytes": 378532
+        }
+      ]
+    }
+  ]
+}

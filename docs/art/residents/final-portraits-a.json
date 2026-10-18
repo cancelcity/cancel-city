@@ -1,0 +1,147 @@
+{
+  "mode": "built-in image_gen",
+  "status": "final",
+  "referenceArt": "User-provided four Cancel City comic game mockups, viewed before generation. Standalone illustrations regenerated individually; no screenshot crops.",
+  "assets": [
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: the exact tan yelling brown-haired bearded male Crypto Bro visible in the first featured card of the reference. Black angular sunglasses, mouth open in a wild arrogant shout showing uneven teeth, stubbly neck, open yellow tropical shirt, thick gold crypto-coin chains, numerous floating gold coins, cyan tropical seaside background with a white yacht and palms. Keep the same face proportions, tan pinkish skin, upward messy brown hair, black sunglasses, gold excess and comically deranged expression. Replace any coin writing with simple geometric coin symbols. Make a finished detailed hand-inked illustration, not a crop or screenshot.",
+      "id": "CC021",
+      "name": "Crypto Bro",
+      "ref": "mockup-1.png",
+      "details": "Subject: the exact tan yelling brown-haired bearded male Crypto Bro visible in the first featured card of the reference. Black angular sunglasses, mouth open in a wild arrogant shout showing uneven teeth, stubbly neck, open yellow tropical shirt, thick gold crypto-coin chains, numerous floating gold coins, cyan tropical seaside background with a white yacht and palms. Keep the same face proportions, tan pinkish skin, upward messy brown hair, black sunglasses, gold excess and comically deranged expression. Replace any coin writing with simple geometric coin symbols. Make a finished detailed hand-inked illustration, not a crop or screenshot.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-cc4369ab-a560-4232-abb6-c98b69d752cc.png",
+      "path": "docs/art/residents/CC021.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: the exact older blonde Final Boss Karen in the large right-side dossier reference: voluminous short wavy blond bob with deep shadows, heavy black rectangular sunglasses, massive screaming mouth with teeth and tongue, pearl necklace and earrings, black blazer over brown shirt, one hand raised holding a shiny bright blue smartphone. Large head, angry squinting cheeks and pink complexion. Full-bleed hot pink backdrop with rough black helicopter silhouettes and palm silhouettes. Preserve this precise caricature identity and furious expression. No coffee cup is necessary; focus on the blue phone.",
+      "id": "CC026",
+      "name": "Final Boss Karen",
+      "ref": "mockup-3.png",
+      "details": "Subject: the exact older blonde Final Boss Karen in the large right-side dossier reference: voluminous short wavy blond bob with deep shadows, heavy black rectangular sunglasses, massive screaming mouth with teeth and tongue, pearl necklace and earrings, black blazer over brown shirt, one hand raised holding a shiny bright blue smartphone. Large head, angry squinting cheeks and pink complexion. Full-bleed hot pink backdrop with rough black helicopter silhouettes and palm silhouettes. Preserve this precise caricature identity and furious expression. No coffee cup is necessary; focus on the blue phone.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-06b45021-dc4b-46b3-aaf8-1eedc499ba14.png",
+      "path": "docs/art/residents/CC026.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: exact large obese lavender-purple-skinned Discord Dictator visible in third featured card. Large round chubby bald or very short-haired head with dark hair at sides, pudgy angry face with tiny downturned mouth, heavy black gaming headset arching over head, dark blue hoodie, seated hands raised slightly in controlling gesture. Hoodie chest has a plain white generic game-controller icon (not a brand or word). Purple room backdrop with vaguely threatening mod silhouettes and screens, no writing. Preserve the reference's squat round proportions and sour expression; detailed crosshatching and hand-inked grotesque cartoon.",
+      "id": "CC002",
+      "name": "Discord Dictator",
+      "ref": "mockup-1.png",
+      "details": "Subject: exact large obese lavender-purple-skinned Discord Dictator visible in third featured card. Large round chubby bald or very short-haired head with dark hair at sides, pudgy angry face with tiny downturned mouth, heavy black gaming headset arching over head, dark blue hoodie, seated hands raised slightly in controlling gesture. Hoodie chest has a plain white generic game-controller icon (not a brand or word). Purple room backdrop with vaguely threatening mod silhouettes and screens, no writing. Preserve the reference's squat round proportions and sour expression; detailed crosshatching and hand-inked grotesque cartoon.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6f391ba0-5ea2-40cc-95ef-888dff070a93.png",
+      "path": "docs/art/residents/CC002.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: exact Florida Man visible in fourth featured card, a wildly bug-eyed pale redneck caricature with weathered pink skin, messy curly brown hair, round dirty goggles perched on forehead (eyes completely visible underneath), massive open screaming mouth and uneven teeth, scraggly beard, sweaty stained white tank top. One hand holding a plain beer can with no writing. Orange sunburst Florida swamp backdrop, palms and two snapping alligators visible around his shoulders. Keep the same skinny chaotic proportions, huge frantic eyes, scratched inked facial marks and hair as source.",
+      "id": "CC015",
+      "name": "Florida Man",
+      "ref": "mockup-1.png",
+      "details": "Subject: exact Florida Man visible in fourth featured card, a wildly bug-eyed pale redneck caricature with weathered pink skin, messy curly brown hair, round dirty goggles perched on forehead (eyes completely visible underneath), massive open screaming mouth and uneven teeth, scraggly beard, sweaty stained white tank top. One hand holding a plain beer can with no writing. Orange sunburst Florida swamp backdrop, palms and two snapping alligators visible around his shoulders. Keep the same skinny chaotic proportions, huge frantic eyes, scratched inked facial marks and hair as source.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2669c3b5-5196-46d8-bc3e-ffdd648ca4b0.png",
+      "path": "docs/art/residents/CC015.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: exact frazzled Reply Guy visible on the upper-left opened card. Brown wild tousled thinning hair, scruffy stubble, tired wrinkly pink face, round spectacles with magnified wide eyes, mouth screaming in self-righteous horror, dark blue shirt. Hunched shoulders, skinny fingers furiously typing on a dark gray laptop whose lid has rough generic sticker shapes without text or brand symbols. Hot pink backdrop with blank white speech bubbles, no letters anywhere. Detailed comic crosshatching and distressed ink, preserve the source nerd identity.",
+      "id": "CC003",
+      "name": "The Reply Guy",
+      "ref": "mockup-2.png",
+      "details": "Subject: exact frazzled Reply Guy visible on the upper-left opened card. Brown wild tousled thinning hair, scruffy stubble, tired wrinkly pink face, round spectacles with magnified wide eyes, mouth screaming in self-righteous horror, dark blue shirt. Hunched shoulders, skinny fingers furiously typing on a dark gray laptop whose lid has rough generic sticker shapes without text or brand symbols. Hot pink backdrop with blank white speech bubbles, no letters anywhere. Detailed comic crosshatching and distressed ink, preserve the source nerd identity.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2abafda8-ab26-442c-a27a-de5168c02673.png",
+      "path": "docs/art/residents/CC003.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: exact young Unpaid Intern visible on lower-left card. Frazzled orange-red hair, slender pale face, large round eyeglasses and enormous panicked eyes, dark circles, slightly open despairing mouth, office charcoal blazer over dark shirt, tie optional only if source requires. Sitting at a tiny desk, hands poised over keyboard, paper stacks crowding both sides with a takeaway coffee cup. Warm cream and orange cluttered office backdrop containing blank pinned papers, no writing. Young and exhausted, shoulders small and hunched, same wild nervous identity as source. No UI, no card border.",
+      "id": "CC007",
+      "name": "Unpaid Intern",
+      "ref": "mockup-2.png",
+      "details": "Subject: exact young Unpaid Intern visible on lower-left card. Frazzled orange-red hair, slender pale face, large round eyeglasses and enormous panicked eyes, dark circles, slightly open despairing mouth, office charcoal blazer over dark shirt, tie optional only if source requires. Sitting at a tiny desk, hands poised over keyboard, paper stacks crowding both sides with a takeaway coffee cup. Warm cream and orange cluttered office backdrop containing blank pinned papers, no writing. Young and exhausted, shoulders small and hunched, same wild nervous identity as source. No UI, no card border.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-518259fa-d9fc-415d-8dfe-83bbcbf25da6.png",
+      "path": "docs/art/residents/CC007.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: exact Rug Pull Magician visible in the opened card upper-right of source. Sleazy dark-haired pale-pink gentleman with short dark moustache, long hooked nose, huge grinning mouth with uneven teeth, exaggerated sparkling eyes, black magician top hat decorated with gold dollar symbols, black formal coat with golden accents. One hand flourishes a wand, other hand holding a small black top hat from which a comically concerned white rabbit appears. Green banknotes fly around him; notes contain abstract shapes rather than readable text. Hot pink distressed sunburst background. Keep his conniving moustached grinning reference identity and grotesque detailed inky style.",
+      "id": "CC023",
+      "name": "Rug Pull Magician",
+      "ref": "mockup-2.png",
+      "details": "Subject: exact Rug Pull Magician visible in the opened card upper-right of source. Sleazy dark-haired pale-pink gentleman with short dark moustache, long hooked nose, huge grinning mouth with uneven teeth, exaggerated sparkling eyes, black magician top hat decorated with gold dollar symbols, black formal coat with golden accents. One hand flourishes a wand, other hand holding a small black top hat from which a comically concerned white rabbit appears. Green banknotes fly around him; notes contain abstract shapes rather than readable text. Hot pink distressed sunburst background. Keep his conniving moustached grinning reference identity and grotesque detailed inky style.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-e2dfaf8a-d85b-45dc-aa2b-369e1ffa0c84.png",
+      "path": "docs/art/residents/CC023.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: exact Cancelled Messiah visible in huge center card of reference. Wild shoulder-length dirty blonde hair, pink weathered scruffy male face with frantically open screaming mouth, black sunglasses with bold white X shapes on both lenses, bright golden halo floating above hair. Rumpled off-white open-neck shirt and many gold necklaces with generic bright circular badges but no words. One hand brandishes a black smartphone, other hand grips a golden staff with stylized heart-in-circle finial and tiny crown. Cyan and electric-lime distressed celestial rays behind him. He looks like a ludicrous arrogant influencer cult leader. Preserve same expressive character proportions as reference, no caption areas or title.",
+      "id": "CC030",
+      "name": "Cancelled Messiah",
+      "ref": "mockup-2.png",
+      "details": "Subject: exact Cancelled Messiah visible in huge center card of reference. Wild shoulder-length dirty blonde hair, pink weathered scruffy male face with frantically open screaming mouth, black sunglasses with bold white X shapes on both lenses, bright golden halo floating above hair. Rumpled off-white open-neck shirt and many gold necklaces with generic bright circular badges but no words. One hand brandishes a black smartphone, other hand grips a golden staff with stylized heart-in-circle finial and tiny crown. Cyan and electric-lime distressed celestial rays behind him. He looks like a ludicrous arrogant influencer cult leader. Preserve same expressive character proportions as reference, no caption areas or title.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-0729ad52-d0da-4de6-ae27-4a1bef1a47c9.png",
+      "path": "docs/art/residents/CC030.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: exact blue-haired Virtue Signaler visible on lower-right opened card. Colorful dyed long blue/turquoise hair with purple and pink highlights, black angular sunglasses, pale pink face turned in three-quarter profile, mouth screaming toward a hot-pink megaphone held close, large gold hoop earrings, colorful patterned sleeveless shirt covered in generic circles and symbols without words. Tattoos and rainbow-colored bangles. Hot pink/cyan/neon yellow and rainbow distressed protest backdrop. Preserve the reference's expressive loud female character identity. Close chest-up square portrait, no extra people, no readable signs.",
+      "id": "CC017",
+      "name": "Virtue Signaler",
+      "ref": "mockup-2.png",
+      "details": "Subject: exact blue-haired Virtue Signaler visible on lower-right opened card. Colorful dyed long blue/turquoise hair with purple and pink highlights, black angular sunglasses, pale pink face turned in three-quarter profile, mouth screaming toward a hot-pink megaphone held close, large gold hoop earrings, colorful patterned sleeveless shirt covered in generic circles and symbols without words. Tattoos and rainbow-colored bangles. Hot pink/cyan/neon yellow and rainbow distressed protest backdrop. Preserve the reference's expressive loud female character identity. Close chest-up square portrait, no extra people, no readable signs.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-29e7064e-391a-44f0-a980-07d2f3611e0a.png",
+      "path": "docs/art/residents/CC017.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    },
+    {
+      "prompt": "Use case: illustration-story. Asset type: final standalone square resident portrait for the Cancel City trading-card game, high resolution 1024 x 1024 or greater. Input image: a visual style and character-identity reference only; this is a new standalone illustration, not a UI screenshot. Match the extremely detailed grotesque underground satirical comic drawings seen INSIDE the reference trading cards: thick energetic black ink contours, dense scratchy crosshatching, visible paper grain, rough handmade linework, overstated expressions, scuffed vivid color printing. Square full-bleed composition, chest-up character centered, fill the image and preserve clear facial features at thumbnail size. NO card border, NO white caption area, NO interface, NO lettering, NO title, NO logos, NO watermark. Keep style consistent with the source art rather than clean modern vector cartoon.\nSubject: exact Tax Evasion Wizard visible on the right team, middle card of the battle reference. Elderly sinister wizard with long tangled grey-white beard and hair, ruddy wrinkled face, black angular sunglasses, tall bent navy wizard hat decorated with bold gold coin and dollar-shaped symbols. Dark navy robes trimmed in gold, green dollar bills stuffed at neckline and flying around him. Left hand grips a tall black staff topped by a glowing golden circular orb. Background rich purple and electric lime magic smoke spirals, crude occult triangles and coin glints, no letters or numbers. Same grey beard, dark shades and money-wizard caricature as source. High-detail scratchy crosshatched black inks, scuffed print texture. Standalone square artwork only, no card/UI/border/text.",
+      "id": "CC018",
+      "name": "Tax Evasion Wizard",
+      "ref": "mockup-4.png",
+      "details": "Subject: exact Tax Evasion Wizard visible on the right team, middle card of the battle reference. Elderly sinister wizard with long tangled grey-white beard and hair, ruddy wrinkled face, black angular sunglasses, tall bent navy wizard hat decorated with bold gold coin and dollar-shaped symbols. Dark navy robes trimmed in gold, green dollar bills stuffed at neckline and flying around him. Left hand grips a tall black staff topped by a glowing golden circular orb. Background rich purple and electric lime magic smoke spirals, crude occult triangles and coin glints, no letters or numbers. Same grey beard, dark shades and money-wizard caricature as source. High-detail scratchy crosshatched black inks, scuffed print texture. Standalone square artwork only, no card/UI/border/text.",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-66d2876c-8aa9-44bd-b1e6-503a7460af77.png",
+      "path": "docs/art/residents/CC018.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "qa": "visually inspected; standalone square, no frame/UI/text"
+    }
+  ]
+}

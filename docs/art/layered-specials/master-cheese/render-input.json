@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/master-cheese/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/action-00.webp",
+        "width": 357,
+        "height": 492,
+        "sourceBounds": {
+          "x": 15,
+          "y": 24,
+          "w": 357,
+          "h": 492
+        },
+        "area": 106921
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/action-01.webp",
+        "width": 375,
+        "height": 491,
+        "sourceBounds": {
+          "x": 391,
+          "y": 24,
+          "w": 375,
+          "h": 491
+        },
+        "area": 110912
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/action-02.webp",
+        "width": 377,
+        "height": 497,
+        "sourceBounds": {
+          "x": 764,
+          "y": 19,
+          "w": 377,
+          "h": 497
+        },
+        "area": 113162
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/action-03.webp",
+        "width": 385,
+        "height": 483,
+        "sourceBounds": {
+          "x": 1142,
+          "y": 32,
+          "w": 385,
+          "h": 483
+        },
+        "area": 109957
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/action-04.webp",
+        "width": 410,
+        "height": 468,
+        "sourceBounds": {
+          "x": 23,
+          "y": 530,
+          "w": 410,
+          "h": 468
+        },
+        "area": 109438
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/action-05.webp",
+        "width": 377,
+        "height": 458,
+        "sourceBounds": {
+          "x": 394,
+          "y": 539,
+          "w": 377,
+          "h": 458
+        },
+        "area": 108713
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/action-06.webp",
+        "width": 339,
+        "height": 458,
+        "sourceBounds": {
+          "x": 790,
+          "y": 540,
+          "w": 339,
+          "h": 458
+        },
+        "area": 100637
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/action-07.webp",
+        "width": 398,
+        "height": 467,
+        "sourceBounds": {
+          "x": 1136,
+          "y": 531,
+          "w": 398,
+          "h": 467
+        },
+        "area": 102271
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/ending-00.webp",
+        "width": 412,
+        "height": 490,
+        "sourceBounds": {
+          "x": 27,
+          "y": 17,
+          "w": 412,
+          "h": 490
+        },
+        "area": 112174
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/ending-01.webp",
+        "width": 412,
+        "height": 489,
+        "sourceBounds": {
+          "x": 409,
+          "y": 16,
+          "w": 412,
+          "h": 489
+        },
+        "area": 111773
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/ending-02.webp",
+        "width": 399,
+        "height": 462,
+        "sourceBounds": {
+          "x": 780,
+          "y": 46,
+          "w": 399,
+          "h": 462
+        },
+        "area": 105216
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/ending-03.webp",
+        "width": 363,
+        "height": 411,
+        "sourceBounds": {
+          "x": 1172,
+          "y": 96,
+          "w": 363,
+          "h": 411
+        },
+        "area": 96377
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/ending-04.webp",
+        "width": 412,
+        "height": 480,
+        "sourceBounds": {
+          "x": 28,
+          "y": 514,
+          "w": 412,
+          "h": 480
+        },
+        "area": 114972
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/ending-05.webp",
+        "width": 357,
+        "height": 436,
+        "sourceBounds": {
+          "x": 436,
+          "y": 556,
+          "w": 357,
+          "h": 436
+        },
+        "area": 106256
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/ending-06.webp",
+        "width": 372,
+        "height": 398,
+        "sourceBounds": {
+          "x": 799,
+          "y": 605,
+          "w": 372,
+          "h": 398
+        },
+        "area": 106854
+      },
+      {
+        "file": "docs/art/layered-specials/master-cheese/actors/ending-07.webp",
+        "width": 349,
+        "height": 408,
+        "sourceBounds": {
+          "x": 1172,
+          "y": 593,
+          "w": 349,
+          "h": 408
+        },
+        "area": 96218
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

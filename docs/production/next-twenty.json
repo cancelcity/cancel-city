@@ -1,0 +1,227 @@
+{
+  "target": 20,
+  "userPriority": [
+    "CC063",
+    "CC064",
+    "CC066",
+    "CC005",
+    "CC023",
+    "CC135"
+  ],
+  "approvedReference": "/cinema/gokart/",
+  "productionContract": {
+    "fixedSceneryPerCard": true,
+    "intactAlphaDrawingsTarget": 24,
+    "fps": 60,
+    "durationSecondsTarget": [
+      5.4,
+      6.2
+    ],
+    "separateEffects": true,
+    "characterSpecificEnding": true,
+    "publishOnlyAfterRenderAndArchiveVerification": true,
+    "minimumCompleteDrawings": 12
+  },
+  "cards": [
+    {
+      "order": 1,
+      "cardId": "CC063",
+      "name": "Infinite Rizz",
+      "ability": "Domain Expansion: Main Character",
+      "stage": "Neon rooftop",
+      "comicEnding": "Infinity holds the attack at a humiliating distance; his own black blindfold slips.",
+      "status": "render-verified",
+      "productionSlug": "infinite-rizz"
+    },
+    {
+      "order": 2,
+      "cardId": "CC064",
+      "name": "Big Bald Energy",
+      "ability": "One Punch, One Coupon",
+      "stage": "Discount supermarket forecourt",
+      "comicEnding": "An absurdly restrained single punch clears the arena; the expired coupon matters more.",
+      "status": "render-verified",
+      "productionSlug": "big-bald-energy"
+    },
+    {
+      "order": 3,
+      "cardId": "CC066",
+      "name": "The Eternal 2nd",
+      "ability": "Runner-Up Final Flash",
+      "stage": "Battered tournament podium",
+      "comicEnding": "The gigantic beam earns second place; a tiny silver medal lands in his hand.",
+      "status": "render-verified",
+      "productionSlug": "eternal-second"
+    },
+    {
+      "order": 4,
+      "cardId": "CC005",
+      "name": "Sauron Surveillance",
+      "ability": "One Eye to Track Them All",
+      "stage": "Privacy tower courtyard",
+      "comicEnding": "The all-seeing eye buries the scene in policy paper, then accepts all cookies.",
+      "status": "render-verified",
+      "productionSlug": "sauron-surveillance"
+    },
+    {
+      "order": 5,
+      "cardId": "CC023",
+      "name": "Fraudo Baggins",
+      "ability": "One Ring to Refer Them All",
+      "stage": "The referral Shire",
+      "comicEnding": "The referral ring unravels the welcome carpet and his entire investment pitch.",
+      "status": "render-verified",
+      "productionSlug": "fraudo-baggins"
+    },
+    {
+      "order": 6,
+      "cardId": "CC135",
+      "name": "Daenerys Airfryer",
+      "ability": "Dracarys, Preheat",
+      "stage": "Countertop throne room",
+      "comicEnding": "Three terrifying countertop fryers must politely finish preheating before one crisped projectile.",
+      "status": "render-verified",
+      "productionSlug": "daenerys-airfryer"
+    },
+    {
+      "order": 7,
+      "cardId": "CC002",
+      "name": "Light Yagamod",
+      "ability": "Ban Note",
+      "stage": "Moderation bedroom",
+      "comicEnding": "His perfect purge bans his appeal channel and tech support.",
+      "status": "render-verified",
+      "productionSlug": "light-yagamod"
+    },
+    {
+      "order": 8,
+      "cardId": "CC013",
+      "name": "Copy-Paste Kakashi",
+      "ability": "Photocopy Jutsu",
+      "stage": "Photocopier dojo",
+      "comicEnding": "A paper clone attacks backwards under a giant watermark.",
+      "status": "render-verified",
+      "productionSlug": "copy-paste-kakashi"
+    },
+    {
+      "order": 9,
+      "cardId": "CC001",
+      "name": "Yasuo 0/10",
+      "ability": "Windwall of Excuses",
+      "stage": "The wrong neon lane",
+      "comicEnding": "The perfect sword dash takes the wrong exit; the defeat counter reaches ten.",
+      "status": "render-verified",
+      "productionSlug": "yasuo-zero-ten"
+    },
+    {
+      "order": 10,
+      "cardId": "CC003",
+      "name": "L Ratio",
+      "ability": "Case Closed, Ratio Open",
+      "stage": "Reply crime scene",
+      "comicEnding": "Every piece of evidence is correct; a literal letter L wins the argument.",
+      "status": "render-verified",
+      "productionSlug": "l-ratio"
+    },
+    {
+      "order": 11,
+      "cardId": "CC006",
+      "name": "Erwin LinkedIn",
+      "ability": "Dedicate Your Quarterly Results",
+      "stage": "Quarterly charge avenue",
+      "comicEnding": "He rallies the workforce into a chart; the graph receives the promotion.",
+      "status": "queued",
+      "productionSlug": "erwin-linkedin"
+    },
+    {
+      "order": 12,
+      "cardId": "CC018",
+      "name": "Gandalf the Grey Market",
+      "ability": "You Shall Not Audit",
+      "stage": "Customs doorway",
+      "comicEnding": "The grand magical stand becomes an unlicensed shop and a rolling shutter.",
+      "status": "queued",
+      "productionSlug": "gandalf-grey-market"
+    },
+    {
+      "order": 13,
+      "cardId": "CC058",
+      "name": "GenOS Windows Update",
+      "ability": "Restart Required",
+      "stage": "Repair bay",
+      "comicEnding": "The transformation stalls at 99 percent; victory is followed by a very late startup chime.",
+      "status": "queued",
+      "productionSlug": "genos-windows-update"
+    },
+    {
+      "order": 14,
+      "cardId": "CC008",
+      "name": "Sully Sullivan HR",
+      "ability": "Mandatory Monster Wellness",
+      "stage": "Performance-review office",
+      "comicEnding": "A motivational roar gets him fired; his severance blanket still protects the squad.",
+      "status": "queued",
+      "productionSlug": "sully-hr"
+    },
+    {
+      "order": 15,
+      "cardId": "CC009",
+      "name": "Olaf Global Warming",
+      "ability": "Sponsored Cold Front",
+      "stage": "Sponsored heatwave street",
+      "comicEnding": "A snowman melts during his sponsored campaign, then delivers squad cooling with a fan.",
+      "status": "queued",
+      "productionSlug": "olaf-global-warming"
+    },
+    {
+      "order": 16,
+      "cardId": "CC021",
+      "name": "Dutch Pyramid Scheme",
+      "ability": "I Have a Payment Plan",
+      "stage": "Subscription frontier",
+      "comicEnding": "His next payment plan becomes a gold pyramid that collapses across the scene.",
+      "status": "queued",
+      "productionSlug": "dutch-pyramid-scheme"
+    },
+    {
+      "order": 17,
+      "cardId": "CC065",
+      "name": "Absent Father",
+      "ability": "Instant Abandonment",
+      "stage": "Tournament concourse",
+      "comicEnding": "The powerful fighter charges up, sees a family bill, and instantly disappears.",
+      "status": "queued",
+      "productionSlug": "absent-father"
+    },
+    {
+      "order": 18,
+      "cardId": "CC062",
+      "name": "Anti-Anti-Meat Activist",
+      "ability": "Barbecue Liberation",
+      "stage": "Rooftop barbecue",
+      "comicEnding": "A furious pirate rescues a barbecue from a salad and celebrates the wrong moral victory.",
+      "status": "queued",
+      "productionSlug": "anti-anti-meat"
+    },
+    {
+      "order": 19,
+      "cardId": "CC061",
+      "name": "Power of Friendship",
+      "ability": "Flashback Barrage",
+      "stage": "Ruined training courtyard",
+      "comicEnding": "An epic friendship attack brings so many flashbacks that the ending needs a recap.",
+      "status": "queued",
+      "productionSlug": "power-of-friendship"
+    },
+    {
+      "order": 20,
+      "cardId": "CC049",
+      "name": "Touch Grass Final Boss",
+      "ability": "Offline Rehabilitation",
+      "stage": "Overgrown city park",
+      "comicEnding": "A giant leaf drags the incident offline; the final boss becomes distracted by a tiny phone.",
+      "status": "queued",
+      "productionSlug": "touch-grass-final-boss"
+    }
+  ]
+}

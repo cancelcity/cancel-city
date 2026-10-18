@@ -1,0 +1,197 @@
+{
+  "characterId": "CC042",
+  "characterName": "Apology Influencer",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-three/CC042-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Crop at empty grid gutters, transparent margin trim, uniform scale0.78 and ground padding with Sharp. Original alpha retained, no repainting. Bounds measured at alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC042-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 161,
+        "top": 72,
+        "right": 350,
+        "bottom": 462
+      },
+      "transparentPixels": 220508,
+      "sourceCrop": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 152,
+        "top": 2,
+        "width": 249,
+        "height": 508
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC042-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 122,
+        "top": 73,
+        "right": 390,
+        "bottom": 462
+      },
+      "transparentPixels": 209429,
+      "sourceCrop": {
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 87,
+        "top": 5,
+        "width": 351,
+        "height": 507
+      }
+    },
+    {
+      "index": 2,
+      "name": "cast",
+      "path": "/assets/actors/CC042-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 463
+      },
+      "alphaBounds": {
+        "left": 132,
+        "top": 69,
+        "right": 380,
+        "bottom": 463
+      },
+      "transparentPixels": 201613,
+      "sourceCrop": {
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 83,
+        "top": 0,
+        "width": 326,
+        "height": 512
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC042-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 124,
+        "top": 70,
+        "right": 387,
+        "bottom": 462
+      },
+      "transparentPixels": 207338,
+      "sourceCrop": {
+        "left": 0,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 99,
+        "top": 0,
+        "width": 346,
+        "height": 510
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC042-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 255,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 120,
+        "top": 79,
+        "right": 390,
+        "bottom": 462
+      },
+      "transparentPixels": 207025,
+      "sourceCrop": {
+        "left": 512,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 111,
+        "top": 5,
+        "width": 352,
+        "height": 499
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC042-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 118,
+        "top": 104,
+        "right": 393,
+        "bottom": 462
+      },
+      "transparentPixels": 191786,
+      "sourceCrop": {
+        "left": 1024,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "sourceBodyCrop": {
+        "left": 94,
+        "top": 22,
+        "width": 359,
+        "height": 468
+      }
+    }
+  ]
+}

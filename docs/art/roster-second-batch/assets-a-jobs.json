@@ -1,0 +1,26 @@
+[
+  {
+    "id": "CC003",
+    "name": "L Ratio",
+    "portrait": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2eee2d4c-fbbc-4828-bedf-d0dda962777d.png",
+    "portraitPrompt": "Use case: stylized-concept. Asset: opaque square gacha CARD PORTRAIT, not a card template. Input images are STYLE ONLY, do not copy their characters. Match their gritty expressive underground comic style exactly: scratched heavy black pen ink, dense crosshatching, coarse halftone, saturated flat color, splatter, stark black city silhouette skyline. Large grotesquely expressive face, dynamic foreshortened foreground prop, full bleed, no margins. No beige, no soft 3D, no clean anime cel shade, no text, no border, no watermark. Square 1024x1024.\nSubject: L Ratio. An unmistakably adult L from Death Note: messy spiky black hair, huge tired dark-ringed eyes, white long-sleeve shirt, skinny jeans. Hunched genius detective holding an oversized magnifying glass at the foreground and a laptop; his smug deduction turns into furious disbelief after losing an internet argument. Close head-and-shoulders portrait, face fills over half frame, exaggerated eye-bags and angry open mouth, both hands anatomically sound.\nPalette: acid cyan with yellow lightning and magenta splatter."
+  },
+  {
+    "id": "CC004",
+    "name": "UsoppGPT",
+    "portrait": "/workspace/scratch/80a8c8c1affe/generated_images/exec-91aaf726-fda3-4eda-ae9f-f604c14449ff.png",
+    "portraitPrompt": "Use case: stylized-concept. Asset: opaque square gacha CARD PORTRAIT, not a card template. Input images are STYLE ONLY, do not copy their characters. Match their gritty expressive underground comic style exactly: scratched heavy black pen ink, dense crosshatching, coarse halftone, saturated flat color, splatter, stark black city silhouette skyline. Large grotesquely expressive face, dynamic foreshortened foreground prop, full bleed, no margins. No beige, no soft 3D, no clean anime cel shade, no text, no border, no watermark. Square 1024x1024.\nSubject: UsoppGPT. An unmistakably adult Usopp from One Piece: famously long nose, curly dark hair, yellow bandana, goggles resting on forehead, brown/yellow overalls, bare strong arms. One hand brandishes slingshot, the other a glowing AI prompt smartphone; his terrified face insists his outrageous generated lies are true. Extreme expressive close-up, face and long nose fill frame; coherent pirate clothing, no duplicate hands.\nPalette: acid lime with magenta splatter and cyan sparks."
+  },
+  {
+    "id": "CC005",
+    "name": "Sauron Surveillance",
+    "portrait": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3f2d4187-4ee2-4d76-ac52-594afddf963b.png",
+    "portraitPrompt": "Use case: stylized-concept. Asset: opaque square gacha CARD PORTRAIT, not a card template. Input images are STYLE ONLY, do not copy their characters. Match their gritty expressive underground comic style exactly: scratched heavy black pen ink, dense crosshatching, coarse halftone, saturated flat color, splatter, stark black city silhouette skyline. Large grotesquely expressive face, dynamic foreshortened foreground prop, full bleed, no margins. No beige, no soft 3D, no clean anime cel shade, no text, no border, no watermark. Square 1024x1024.\nSubject: Sauron Surveillance. A single giant flaming orange eyeball permanently held within the forked crown of one black spiked surveillance tower, unmistakable Eye of Sauron parody. Iris resembles a suspicious camera lens; tiny surveillance cameras embedded in the tower point back at the eye. Extreme close-up on giant furious camera-eye and the top of the black tower, wide-eyed comic outrage, whole eye supported by crown. No humanoid body or limbs.\nPalette: hot magenta sky with acid yellow orange flames and black city silhouettes."
+  },
+  {
+    "id": "CC008",
+    "name": "Sully Sullivan HR",
+    "portrait": "/workspace/scratch/80a8c8c1affe/generated_images/exec-814668f7-3277-44f6-b73f-9c301b17e224.png",
+    "portraitPrompt": "Use case: stylized-concept. Asset: opaque square gacha CARD PORTRAIT, not a card template. Input images are STYLE ONLY, do not copy their characters. Match their gritty expressive underground comic style exactly: scratched heavy black pen ink, dense crosshatching, coarse halftone, saturated flat color, splatter, stark black city silhouette skyline. Large grotesquely expressive face, dynamic foreshortened foreground prop, full bleed, no margins. No beige, no soft 3D, no clean anime cel shade, no text, no border, no watermark. Square 1024x1024.\nSubject: Sully Sullivan HR. Unmistakably adult Sulley from Monsters Inc: large broad blue furry monster, purple spots, two ivory horns, enormous expressive friendly face with a panicked open-mouth roar. Corporate necktie and employee ID badge, wellness mug held in one huge clawed hand and a termination letter in the other. Head-and-shoulders fills frame, mug thrust toward viewer, comic shock at human resources.\nPalette: acid yellow lime with cyan and hot magenta splatter."
+  }
+]

@@ -1,0 +1,218 @@
+[
+  {
+    "name": "action-sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "transparentFraction": 0.6185989379882812,
+    "components": [
+      {
+        "pixels": 72618,
+        "left": 78,
+        "top": 0,
+        "width": 254,
+        "height": 520,
+        "poseIndex": 1
+      },
+      {
+        "pixels": 68498,
+        "left": 443,
+        "top": 5,
+        "width": 264,
+        "height": 511,
+        "poseIndex": 2
+      },
+      {
+        "pixels": 77657,
+        "left": 806,
+        "top": 4,
+        "width": 319,
+        "height": 515,
+        "poseIndex": 3
+      },
+      {
+        "pixels": 72965,
+        "left": 1170,
+        "top": 42,
+        "width": 328,
+        "height": 476,
+        "poseIndex": 4
+      },
+      {
+        "pixels": 66916,
+        "left": 5,
+        "top": 570,
+        "width": 421,
+        "height": 418,
+        "poseIndex": 5
+      },
+      {
+        "pixels": 73593,
+        "left": 410,
+        "top": 521,
+        "width": 381,
+        "height": 498,
+        "poseIndex": 6
+      },
+      {
+        "pixels": 79866,
+        "left": 810,
+        "top": 511,
+        "width": 388,
+        "height": 505,
+        "poseIndex": 7
+      },
+      {
+        "pixels": 74408,
+        "left": 1240,
+        "top": 507,
+        "width": 280,
+        "height": 512,
+        "poseIndex": 8
+      }
+    ]
+  },
+  {
+    "name": "ending-sheet.png",
+    "width": 1536,
+    "height": 1024,
+    "transparentFraction": 0.6426506042480469,
+    "components": [
+      {
+        "pixels": 66650,
+        "left": 55,
+        "top": 24,
+        "width": 289,
+        "height": 478,
+        "poseIndex": 1
+      },
+      {
+        "pixels": 71645,
+        "left": 464,
+        "top": 31,
+        "width": 278,
+        "height": 470,
+        "poseIndex": 2
+      },
+      {
+        "pixels": 66043,
+        "left": 849,
+        "top": 68,
+        "width": 248,
+        "height": 438,
+        "poseIndex": 3
+      },
+      {
+        "pixels": 73140,
+        "left": 1186,
+        "top": 47,
+        "width": 312,
+        "height": 455,
+        "poseIndex": 4
+      },
+      {
+        "pixels": 73081,
+        "left": 37,
+        "top": 529,
+        "width": 386,
+        "height": 468,
+        "poseIndex": 5
+      },
+      {
+        "pixels": 69456,
+        "left": 453,
+        "top": 524,
+        "width": 315,
+        "height": 469,
+        "poseIndex": 6
+      },
+      {
+        "pixels": 62802,
+        "left": 850,
+        "top": 545,
+        "width": 267,
+        "height": 455,
+        "poseIndex": 7
+      },
+      {
+        "pixels": 68762,
+        "left": 1242,
+        "top": 519,
+        "width": 242,
+        "height": 481,
+        "poseIndex": 8
+      }
+    ]
+  },
+  {
+    "name": "action-margin-safe.png",
+    "width": 1536,
+    "height": 1024,
+    "transparentFraction": 0.6774450937906901,
+    "components": [
+      {
+        "pixels": 65016,
+        "left": 84,
+        "top": 22,
+        "width": 242,
+        "height": 479,
+        "poseIndex": 1
+      },
+      {
+        "pixels": 60986,
+        "left": 463,
+        "top": 30,
+        "width": 256,
+        "height": 468,
+        "poseIndex": 2
+      },
+      {
+        "pixels": 66468,
+        "left": 820,
+        "top": 24,
+        "width": 304,
+        "height": 476,
+        "poseIndex": 3
+      },
+      {
+        "pixels": 61977,
+        "left": 1191,
+        "top": 71,
+        "width": 294,
+        "height": 430,
+        "poseIndex": 4
+      },
+      {
+        "pixels": 56161,
+        "left": 15,
+        "top": 588,
+        "width": 384,
+        "height": 377,
+        "poseIndex": 5
+      },
+      {
+        "pixels": 61144,
+        "left": 427,
+        "top": 545,
+        "width": 345,
+        "height": 433,
+        "poseIndex": 6
+      },
+      {
+        "pixels": 64834,
+        "left": 827,
+        "top": 535,
+        "width": 354,
+        "height": 443,
+        "poseIndex": 7
+      },
+      {
+        "pixels": 59665,
+        "left": 1244,
+        "top": 536,
+        "width": 255,
+        "height": 441,
+        "poseIndex": 8
+      }
+    ]
+  }
+]

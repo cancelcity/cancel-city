@@ -1,0 +1,120 @@
+{
+  "id": "CC012",
+  "baseHeight": 500,
+  "poses": [
+    {
+      "src": "/assets/actors/CC012-roster-v2-0.webp",
+      "width": 501,
+      "height": 516,
+      "anchor": {
+        "x": 204,
+        "y": 508
+      }
+    },
+    {
+      "src": "/assets/actors/CC012-roster-v2-1.webp",
+      "width": 488,
+      "height": 503,
+      "anchor": {
+        "x": 171,
+        "y": 495
+      }
+    },
+    {
+      "src": "/assets/actors/CC012-roster-v2-2.webp",
+      "width": 403,
+      "height": 464,
+      "anchor": {
+        "x": 194,
+        "y": 456
+      }
+    },
+    {
+      "src": "/assets/actors/CC012-roster-v2-3.webp",
+      "width": 440,
+      "height": 493,
+      "anchor": {
+        "x": 95,
+        "y": 485
+      }
+    },
+    {
+      "src": "/assets/actors/CC012-roster-v2-4.webp",
+      "width": 499,
+      "height": 501,
+      "anchor": {
+        "x": 210,
+        "y": 493
+      }
+    },
+    {
+      "src": "/assets/actors/CC012-roster-v2-5.webp",
+      "width": 444,
+      "height": 490,
+      "anchor": {
+        "x": 148,
+        "y": 482
+      }
+    }
+  ],
+  "portrait": "/assets/roster-v2/CC012.webp",
+  "qa": [
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 492,
+        "maxY": 507
+      },
+      "alphaPixels": 105149
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 479,
+        "maxY": 494
+      },
+      "alphaPixels": 125955
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 394,
+        "maxY": 455
+      },
+      "alphaPixels": 118027
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 431,
+        "maxY": 484
+      },
+      "alphaPixels": 113233
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 490,
+        "maxY": 492
+      },
+      "alphaPixels": 114128
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 435,
+        "maxY": 481
+      },
+      "alphaPixels": 104489
+    }
+  ],
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: game whole-body character acting sprite sheet. Landscape canvas, exact uniform 3 columns x 2 rows equal cells, six complete independent full-body drawings of SAME character, reading order. TRUE transparent background with alpha, NO checkerboard texture, no ground shadows outside feet, no labels or grids. Rich hand-inked punk manga crosshatching and halftone illustration, black contours, creamy highlights, lime/magenta/cyan accents, expressive caricature, like satirical illustrated game cards. Keep anatomy coherent and clothing identical between cells. Every drawing entire intact person head to both feet, all props held correctly, ample transparent gutters so each figure fits wholly inside its own cell. Not detached limbs, not joint pieces, not rigs. Character height about 80% of cell, similar scale and foot baseline.\nSubject: Frieza-inspired purple-and-white alien tyrant working as a frozen-food supermarket clerk, glossy purple head dome, white skin, long white tail, cheap teal store apron and nametag, little chest freezer beside him.\nSix poses reading order: neutral smug clerk beside CLOSED small freezer; anticipation grand villain pointing while opening freezer; release absurdly crouching into open freezer while whole body remains visible; recoil bashfully climbing out, dripping ice; victory calmly holding a little cold drink beside closed freezer; panic horrified shivering clutching drink.\nNo text needed. Preserve recognizable parody identity.\n",
+  "original": "original-sheet.png"
+}

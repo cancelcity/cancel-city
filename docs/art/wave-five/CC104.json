@@ -1,0 +1,191 @@
+{
+  "characterId": "CC104",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest solid alpha connected bodies; smaller prop/effect components assigned whole by proximity. Original master retained. Uniform square padded extraction."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC104-0.webp",
+      "sourceExtraction": {
+        "left": 128,
+        "top": 9,
+        "width": 315,
+        "height": 487
+      },
+      "scale": 0.8624229979466119,
+      "suggestedAnchor": {
+        "x": 253,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 120,
+        "top": 36,
+        "right": 392,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 205544,
+        "transparentFraction": 0.784088134765625
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC104-1.webp",
+      "sourceExtraction": {
+        "left": 515,
+        "top": 18,
+        "width": 451,
+        "height": 459
+      },
+      "scale": 0.9150326797385621,
+      "suggestedAnchor": {
+        "x": 317,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 49,
+        "top": 36,
+        "right": 462,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 189790,
+        "transparentFraction": 0.7239913940429688
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC104-2.webp",
+      "sourceExtraction": {
+        "left": 994,
+        "top": 31,
+        "width": 529,
+        "height": 442
+      },
+      "scale": 0.7939508506616257,
+      "suggestedAnchor": {
+        "x": 237,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 46,
+        "top": 105,
+        "right": 466,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 188827,
+        "transparentFraction": 0.7203178405761719
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC104-3.webp",
+      "sourceExtraction": {
+        "left": 124,
+        "top": 470,
+        "width": 288,
+        "height": 539
+      },
+      "scale": 0.7792207792207793,
+      "suggestedAnchor": {
+        "x": 261,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 144,
+        "top": 36,
+        "right": 368,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 208487,
+        "transparentFraction": 0.7953147888183594
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC104-4.webp",
+      "sourceExtraction": {
+        "left": 642,
+        "top": 548,
+        "width": 287,
+        "height": 460
+      },
+      "scale": 0.9130434782608695,
+      "suggestedAnchor": {
+        "x": 301,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 125,
+        "top": 36,
+        "right": 387,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 202447,
+        "transparentFraction": 0.7722740173339844
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC104-5.webp",
+      "sourceExtraction": {
+        "left": 1157,
+        "top": 540,
+        "width": 228,
+        "height": 453
+      },
+      "scale": 0.9271523178807947,
+      "suggestedAnchor": {
+        "x": 230,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 150,
+        "top": 36,
+        "right": 361,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 212791,
+        "transparentFraction": 0.8117332458496094
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest36px; y at lowest alpha>32 art pixel.",
+  "characterName": "Nicki Min-Max"
+}

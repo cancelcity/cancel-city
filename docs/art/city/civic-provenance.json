@@ -1,0 +1,169 @@
+{
+  "asset_id": "civic",
+  "asset_name": "City Hall",
+  "generator": "builtin image_gen.imagegen",
+  "style_reference": "docs/art/residents/CC026.png",
+  "transparent_background_requested": true,
+  "selected_outputs": [
+    {
+      "level": 1,
+      "path": "docs/art/city/civic-l1.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-7ac587f9-8a30-4a33-a42e-c436c1c473bc.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent isometric building sprite for an interactive Cancel City neighbourhood. NEW illustration. Reference portrait is STYLE ONLY: match its bold grotesque punk comic black ink outlines, dense scratchy crosshatching, distressed screen-printed vivid colour, textured hand-drawn details. Show ONE complete building, detached, centered, full structure visible, three-quarter isometric view from diagonally above, orthographic game camera, vertical walls upright. Two visible front/side faces meet at center; ground base is a small diamond-like isometric square. Use the same approximately 30-degree isometric view for all assets. Frame comfortably inside a square canvas with clear transparent margin, preserve room above roof. Include ONLY the building and its own narrow ground footprint, no street, no sky, no background scenery, no large shadow extending outside footprint. TRUE alpha transparent background, not white or checkerboard painted background. NO card frame, UI, captions, readable text, watermark or real logos. High detail at least 1024 square; legible silhouette at 250px. Level 1 starting building, compact and modest but expressive. Palette: red-gold. Subject: A comically pompous small neoclassical city hall with cream stone, oversized gold columns, red draped blank banners, ludicrous gold roof dome, little television antennas, podium-shaped doorway and red-neon side windows. Satirize political vanity. No actual government emblems, no flags, no lettering.",
+      "input_images": [
+        "docs/art/residents/CC026.png"
+      ],
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_qa": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          255
+        ],
+        "transparent_pixels": 688735,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt_8": [
+          92,
+          8,
+          1186,
+          1241
+        ],
+        "genuine_transparency": true
+      },
+      "visual_qa": {
+        "fully_framed": true,
+        "readable_text": false,
+        "logos": false,
+        "background": false,
+        "notes": "Complete building visible; tight roof and ground margins. Small alpha values <=8 leave faint stray pixels at image edges. Red-gold neoclassical city hall, bold comic ink and distressed hatching."
+      }
+    },
+    {
+      "level": 2,
+      "path": "docs/art/city/civic-l2.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-c14fe540-e9e9-4633-b188-95215e0dc828.png",
+      "prompt": "Upgrade this exact building to level 2: keep its identity, camera, footprint, front-door position, palette, transparent background and canvas size. Add one small balcony or upper floor, brighter window fixtures and a few richer rooftop details. Preserve clear space around edges; no new buildings, lettering or background. Use case: precise-object-edit. The supplied image is the exact edit target, not just a reference. Retain cream stone, oversized gold columns, blank red draped banners, gold dome, television antennas and red neon windows. Choose a small balcony for this upgrade. Preserve the current orthographic camera, base footprint position, square canvas and genuinely transparent alpha. Do not enlarge the building's ground base or introduce a backdrop. Keep all extremities visible with clear transparent edge margin. No readable text, logos, people or flags.",
+      "input_images": [
+        "docs/art/city/civic-l1.png"
+      ],
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_qa": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          255
+        ],
+        "transparent_pixels": 673142,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt_8": [
+          91,
+          7,
+          1189,
+          1242
+        ],
+        "genuine_transparency": true
+      },
+      "visual_qa": {
+        "fully_framed": true,
+        "readable_text": false,
+        "logos": false,
+        "background": false,
+        "notes": "Adds small side balcony, lamps, rooftop planters and brighter windows. Identity, camera, canvas, base and entry closely preserve L1. Complete silhouette visible with tight top/bottom margin; faint alpha <=8 edge strays."
+      }
+    },
+    {
+      "level": 3,
+      "path": "docs/art/city/civic-l3.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-92f874b9-ca4a-47a6-8909-10d7c5a66c8f.png",
+      "prompt": "Use case: precise-object-edit. Reframe only this exact City Hall level 3 sprite; preserve all architecture, dome, gold columns, blank red drapery, cream stone, red neon trim, balcony, rooftop machinery, camera, style and detail. Same square 1254 by 1254 genuine transparent-alpha canvas. Make the entire supplied building 20 percent SMALLER, horizontally centered, and shift it UP enough that the very lowest complete diamond ground tip ends at pixel y=1110, about 88.5 percent of canvas height. Keep the entire building inside an invisible rectangular safe area x=180 to 1074 and y=180 to 1120. Leave obvious completely transparent empty margin BELOW the tip as well as above and on sides. Remove isolated stray pixels in the empty margins. Do not crop, add, remove, redesign or relight any architecture. No background, text, logos, emblems, people or flags.",
+      "input_images": [
+        "docs/art/city/civic-l3-repair-first.png"
+      ],
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "alpha_qa": {
+        "mode": "RGBA",
+        "extrema": [
+          0,
+          255
+        ],
+        "transparent_pixels": 1084536,
+        "corner_alpha": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "visible_bbox_alpha_gt_8": [
+          242,
+          204,
+          1044,
+          1102
+        ],
+        "genuine_transparency": true
+      },
+      "visual_qa": {
+        "fully_framed": true,
+        "readable_text": false,
+        "logos": false,
+        "background": false,
+        "notes": "Maximum upgrade adds upper roof tier, richer machinery and neon. Two built-in framing repairs reduced whole sprite to preserve all architecture and show complete diamond ground tip. Main visible sprite has >8% margin on all sides; bottom tip at 87.9% canvas height. This quality repair changes sprite scale/base canvas position from L1/L2, as explicitly requested by parent after initial L3 clipping. Low-alpha <=8 stray pixels remain in margins."
+      }
+    }
+  ],
+  "generation_history": [
+    {
+      "stage": "level3_initial",
+      "path": "docs/art/city/civic-l3-first.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-667263fa-43fd-4a2f-bbff-34453359ba48.png",
+      "input_images": [
+        "docs/art/city/civic-l2.png"
+      ],
+      "prompt": "Upgrade this exact building to its maximum level 3: keep the same building identity, orthographic isometric camera, ground footprint, entry position, palette and transparent canvas. Create a more impressive taller structure with richer rooftop machinery/sculpture, expressive neon trim and additional architecture. Keep the entire building comfortably in frame and its base at the same location. No writing, logos, people or background scenery. Use case: precise-object-edit. The supplied level 2 PNG is the exact edit target. Preserve cream stone, oversized gold columns, blank red draped banners, ludicrous red-and-gold dome, television antennas, side balcony and red neon windows. Keep the base footprint and front doorway exactly aligned to the same canvas coordinates. Preserve 1254 by 1254 square canvas with genuine alpha transparency. Express maximum upgrade through an additional compact upper architectural tier, elaborate roof mechanical details and red neon trim while accommodating all extremities within the same frame. No cropping, background, readable text, emblems, flags or people.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "selected": false,
+      "notes": "Bottom ground tip clipped at canvas edge; retained as non-selected first output."
+    },
+    {
+      "stage": "level3_framing_repair_1",
+      "path": "docs/art/city/civic-l3-repair-first.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-1c02c316-c700-4be8-b170-4831980c55fd.png",
+      "input_images": [
+        "docs/art/city/civic-l3-first.png"
+      ],
+      "prompt": "Use case: precise-object-edit. This supplied transparent level 3 City Hall sprite is the exact edit target. Preserve its architecture, cream stone, gold columns, blank red drapery, red and gold dome, side balcony, rooftop antennas and machinery, neon trim, distressed ink crosshatching and red-gold palette. Preserve this exact orthographic isometric camera. Correct only the framing: scale the complete building smaller inside the same 1254 by 1254 square transparent canvas, reconstruct the clipped lowest ground tip faithfully, and show every extremity. Place the lowest ground tip at 90% of canvas height; keep at least 8% fully transparent clear margin on both sides and above the rooftop. Entire ground footprint must be visible with no crop. Transparent background must be genuine alpha, not a checkerboard or solid color. Add no new architecture, objects, text, emblems, flags, logos, people, background or shadow outside the footprint.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "selected": false,
+      "notes": "Entire ground tip restored but bottom visible margin only ~4%; second targeted repair selected instead."
+    }
+  ],
+  "notes": [
+    "One separate built-in call per initial level; two targeted built-in L3 quality repairs explicitly authorized by parent.",
+    "All images copied unchanged from imagegen outputs; no manual pixel editing, background extraction, vector stand-ins or CLI fallback.",
+    "Visual inspection performed on reference, each selected level, and both L3 repair targets."
+  ]
+}

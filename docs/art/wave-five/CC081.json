@@ -1,0 +1,191 @@
+{
+  "characterId": "CC081",
+  "characterName": "Big Chungus, Minister of Inflation",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC081-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Equal cell extraction, generated alpha preserved; complete alpha bounds cropped, uniformly scaled and padded."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC081-0.webp",
+      "sourceExtraction": {
+        "left": 64,
+        "top": 8,
+        "width": 445,
+        "height": 504
+      },
+      "scale": 0.873015873015873,
+      "suggestedAnchor": {
+        "x": 284,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 62,
+        "top": 16,
+        "right": 449,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 143502,
+        "transparentFraction": 0.5474166870117188
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC081-1.webp",
+      "sourceExtraction": {
+        "left": 559,
+        "top": 7,
+        "width": 465,
+        "height": 495
+      },
+      "scale": 0.8888888888888888,
+      "suggestedAnchor": {
+        "x": 140,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 50,
+        "top": 17,
+        "right": 462,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 167730,
+        "transparentFraction": 0.6398391723632812
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC081-2.webp",
+      "sourceExtraction": {
+        "left": 1024,
+        "top": 58,
+        "width": 497,
+        "height": 454
+      },
+      "scale": 0.8853118712273642,
+      "suggestedAnchor": {
+        "x": 339,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 54,
+        "right": 475,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 146519,
+        "transparentFraction": 0.5589256286621094
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC081-3.webp",
+      "sourceExtraction": {
+        "left": 44,
+        "top": 512,
+        "width": 468,
+        "height": 489
+      },
+      "scale": 0.8997955010224948,
+      "suggestedAnchor": {
+        "x": 196,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 45,
+        "top": 16,
+        "right": 466,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 119684,
+        "transparentFraction": 0.4565582275390625
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC081-4.webp",
+      "sourceExtraction": {
+        "left": 512,
+        "top": 519,
+        "width": 496,
+        "height": 470
+      },
+      "scale": 0.8870967741935484,
+      "suggestedAnchor": {
+        "x": 344,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 39,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 147894,
+        "transparentFraction": 0.5641708374023438
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC081-5.webp",
+      "sourceExtraction": {
+        "left": 1064,
+        "top": 512,
+        "width": 422,
+        "height": 485
+      },
+      "scale": 0.9072164948453608,
+      "suggestedAnchor": {
+        "x": 258,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 64,
+        "top": 16,
+        "right": 447,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 146100,
+        "transparentFraction": 0.5573272705078125
+      }
+    }
+  ],
+  "anchorMethod": "Median of solid lowest36px; y at lowest alpha>32 art pixel."
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "shot": "ignition",
+    "attempt": 1,
+    "prompt": "Use case: background-extraction. Edit the supplied image into a TRUE transparent sprite sheet. Asset: 8 sequential GOKART character+kart layers for compositing over one fixed background.\nPRESERVE exact 2-column ×4-row regular grid, eight edge-to-edge 16:9 cells, same original per-cell canvas coordinates and scale/framing. Do not trim, recenter, rearrange, add labels/borders/gutters or change poses. Each cell keeps the entire visible adult character plus visible steering wheel/kart only; close-up hair/body may touch original cell edges. Preserve EXACT character poses, hand/arm anatomy, golden spiky hair/fabric details, scratchy black crosshatching/stipple/gritty card style, bloodshot eyes/teeth/sweat, orange gi/navy clothing and progressive gritted-teeth to screaming acting. Preserve red kart and numeral2 where visible.\nREMOVE ALL backdrop and effects to alpha: sky, flat city skyline, palms, bridges, road/asphalt, magenta/yellow scenery/splatter/marks, golden aura/energy/lightning strokes, smoke, spray, sparks and detached decorative marks. No ground, floor, shadow or glow. Keep character skin/hair/clothes/attached body details and mechanical kart opaque; cutout holes around hands/wheel and between hair silhouette are transparent where they show background.\nOutput a clean RGBA cutout sprite sheet with genuinely transparent alpha everywhere outside whole character+kart. No checkerboard pattern baked into pixels, no white/black/colored opaque matte, no backdrop, no new cast shadows. Keep the grid and every frame's original placement unchanged. Only remove background and atmospheric effects; do not redraw style or change composition.",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-017ac863-6237-490d-a2ca-92ff72453f2e.png",
+    "target": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/gokart-card-style/intro/ignition-original.png",
+    "selected": true,
+    "mode": "built-in image_gen background-extraction edit",
+    "transparent_background": true
+  },
+  {
+    "shot": "reveal",
+    "attempt": 1,
+    "prompt": "Use case: background-extraction. Edit supplied animation sheet into true RGBA transparent character+kart layers.\nPRESERVE exact 2-column ×4-row regular grid, eight edge-to-edge 16:9 cells, same original per-cell canvas coordinates, scale, framing and drawn pose/progression. Do not trim, recenter, rearrange, change dimensions, add gutters/borders/captions. Keep complete hero plus tiny red number2 kart in each frame, full wheels and hair retained with original safe space. Preserve exact poses, intact arms/hands on wheel, orange gi/navy/blue wristbands, spiky gold hair, bloodshot grotesque eyes, gritted-to-screaming mouth progression and scratchy black crosshatching/stipple/newsprint style. The white circle and numeral2 and kart chassis/tyres/engine remain opaque.\nREMOVE ALL scene/background/effects to genuine alpha: skyline, buildings, palms, bridge, sky, road/asphalt, neon yellow/magenta backdrop, painted scenery, splashes, aura, energy strokes, smoke puffs, spray, sparks, dust/debris and detached decorative marks. No ground, cast shadow, glow or new effects. Cutout consists exclusively of character+kart, including small mechanical components and attached hair/fabric. Spaces between limbs, kart components and hair silhouette are transparent wherever they previously showed background.\nTrue transparent background output, clean RGBA alpha. No checkerboard baked into image, no white/black/colored opaque matte. Avoid magenta/yellow colored edge fringe from removed scenery, preserve clean black ink character outlines. Only remove scene/effects; keep exact original frame placement and grid.",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-21b1dd15-26a3-4f56-a0d7-db49fdc1f1a0.png",
+    "target": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/gokart-card-style/intro/reveal-original.png",
+    "selected": false,
+    "mode": "built-in image_gen background-extraction edit",
+    "transparent_background": true
+  },
+  {
+    "shot": "reveal",
+    "attempt": 2,
+    "prompt": "Use case: background-extraction repair.\nImage1 is the transparent extraction to repair. Image2 is the exact original eight-frame layout/poses reference.\nRepair ONLY these issues: restore EXACT EQUAL regular grid cell boundaries and remove stray background-colored residues. Output sheet still 2 columns ×4 rows, 8 cells of16:9 in8:9 total canvas. Coordinates MUST align to exactly halfwidth and exactly quarterheight. No frame may intrude into another. Every hero+kart fits inside its own exact 16:9 cell, with a small transparent safety margin at top/bottom/right/left. The first row must not leak hair from row2 into its cell. Final row right tyre must be fully visible inside its cell. Use original image2 per-frame composition and scale as guide, preserving the eight distinct body/kart poses.\nKeep all subject appearance, scratchy black card hatching, orange/navy clothes, number2 red kart, gritted→screaming expressions of image1. All scenery remains removed. Remove remaining detached yellow/magenta pieces behind or below hair and kart. Remove yellow aura slivers, colored edge fringe and smoke. Alpha everywhere except whole hero+kart. No road, shadows, scenery, aura, marks, checkerboard or opaque matte. Do not add drawn guides/gridlines/borders. This is a true RGBA sheet intended for mechanical equal-grid cutting. Keep complete tyres, mechanical details and attached anatomy. Preserve the eight poses and acting progression. Transparent background.",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-735ce53c-fa2e-4d4d-b86b-12a3851d2e0a.png",
+    "target": "/workspace/scratch/80a8c8c1affe/generated_images/exec-21b1dd15-26a3-4f56-a0d7-db49fdc1f1a0.png",
+    "selected": true,
+    "mode": "built-in image_gen background-extraction edit",
+    "transparent_background": true
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "CC001",
+    "number": 1,
+    "name": "Rage Gamer",
+    "rarity": "nobody",
+    "faction": "terminally-online",
+    "ability": "Rage Quit",
+    "description": "Lost thirteen ranked games and opened a forensic investigation into the Wi-Fi. His mouse has a better lawyer than his teammates. Touching grass would violate his training schedule.",
+    "quote": "My skill is fine. Reality needs a patch.",
+    "stats": {
+      "clout": 60,
+      "shame": 80,
+      "chaos": 70
+    },
+    "art": "/assets/residents/CC001.webp"
+  },
+  {
+    "id": "CC002",
+    "number": 2,
+    "name": "Discord Dictator",
+    "rarity": "problematic",
+    "faction": "terminally-online",
+    "ability": "Permaban",
+    "description": "Rules a twelve-member server like a collapsing empire. His crown is a colored username. His constitution is a pinned message nobody read. Has declared sunlight a raid.",
+    "quote": "Your appeal has been banned.",
+    "stats": {
+      "clout": 70,
+      "shame": 80,
+      "chaos": 60
+    },
+    "art": "/assets/residents/CC002.webp"
+  },
+  {
+    "id": "CC003",
+    "number": 3,
+    "name": "The Reply Guy",
+    "rarity": "nobody",
+    "faction": "terminally-online",
+    "ability": "Actually…",
+    "description": "Posts source? under a photo of someone’s lunch. Uses an expanding-brain diagram to explain why he has never been invited to lunch. His ultimate form is correcting his own correction thread.",
+    "quote": "Actually, your bagel lacks peer review.",
+    "stats": {
+      "clout": 25,
+      "shame": 35,
+      "chaos": 30
+    },
+    "art": "/assets/residents/CC003.webp"
+  },
+  {
+    "id": "CC004",
+    "number": 4,
+    "name": "AI Apocalypse Bro",
+    "rarity": "public-menace",
+    "faction": "terminally-online",
+    "ability": "Slop Apocalypse",
+    "description": "Built an army of AI agents to replace the other AI agents. The demo hallucinates revenue; the pitch deck calls it vision. Thinks the dead internet needs a subscription.",
+    "quote": "The slop is sentient. The invoice is real.",
+    "stats": {
+      "clout": 60,
+      "shame": 45,
+      "chaos": 65
+    },
+    "art": "/assets/residents/CC004.webp"
+  },
+  {
+    "id": "CC005",
+    "number": 5,
+    "name": "The Algorithm",
+    "rarity": "public-enemy",
+    "faction": "terminally-online",
+    "ability": "You Are The Product",
+    "description": "An ancient machine that learned humans argue longer when miserable. Feeds you rage bait, then asks whether you enjoyed your experience. Every exit leads to a recommended video.",
+    "quote": "You seem upset. Here are more reasons.",
+    "stats": {
+      "clout": 95,
+      "shame": 65,
+      "chaos": 95
+    },
+    "art": "/assets/residents/CC005.webp"
+  },
+  {
+    "id": "CC006",
+    "number": 6,
+    "name": "LinkedIn Gladiator",
+    "rarity": "nobody",
+    "faction": "corporate-hell",
+    "ability": "Humbled and Honored",
+    "description": "Turns every layoff into a leadership parable. Wrote a twelve-paragraph post about how being ghosted by HR taught him gratitude. The landlord declined his personal brand.",
+    "quote": "Humbled. Honored. Financially cooked.",
+    "stats": {
+      "clout": 60,
+      "shame": 40,
+      "chaos": 70
+    },
+    "art": "/assets/residents/CC006.webp"
+  },
+  {
+    "id": "CC007",
+    "number": 7,
+    "name": "Unpaid Intern",
+    "rarity": "nobody",
+    "faction": "corporate-hell",
+    "ability": "Exposure Payment",
+    "description": "Works for exposure in a building with blackout blinds. The company calls him family because wages would make it awkward. His portfolio contains three coffees and a Slack reaction.",
+    "quote": "Can I pay rent in transferable skills?",
+    "stats": {
+      "clout": 10,
+      "shame": 70,
+      "chaos": 20
+    },
+    "art": "/assets/residents/CC007.webp"
+  },
+  {
+    "id": "CC008",
+    "number": 8,
+    "name": "HR Necromancer",
+    "rarity": "problematic",
+    "faction": "corporate-hell",
+    "ability": "Mandatory Wellness",
+    "description": "Morale died in Q2. HR brought it back on a compulsory webinar. Her wellness program has a retention rate because the doors are locked. This is fine; the form says so.",
+    "quote": "Your burnout has been marked as enthusiasm.",
+    "stats": {
+      "clout": 40,
+      "shame": 45,
+      "chaos": 45
+    },
+    "art": "/assets/residents/CC008.webp"
+  },
+  {
+    "id": "CC009",
+    "number": 9,
+    "name": "Eco Influencer",
+    "rarity": "uncancelable",
+    "faction": "corporate-hell",
+    "ability": "Sponsored Sustainability",
+    "description": "Takes a private flight to film a reel about reusable straws. Every planetary emergency comes with a discount code. Her carbon footprint has a publicist.",
+    "quote": "Saving the planet. Link in bio.",
+    "stats": {
+      "clout": 40,
+      "shame": 50,
+      "chaos": 60
+    },
+    "art": "/assets/residents/CC009.webp"
+  },
+  {
+    "id": "CC010",
+    "number": 10,
+    "name": "CEO on a Yacht",
+    "rarity": "public-enemy",
+    "faction": "corporate-hell",
+    "ability": "Offshore Everything",
+    "description": "Announces austerity from the yacht’s smaller yacht. Calls the company a family until somebody asks for lunch money. His grindset includes outsourcing all the grinding.",
+    "quote": "We are a family. You are the unpaid cousin.",
+    "stats": {
+      "clout": 95,
+      "shame": 65,
+      "chaos": 95
+    },
+    "art": "/assets/residents/CC010.webp"
+  },
+  {
+    "id": "CC011",
+    "number": 11,
+    "name": "French Strike Simulator",
+    "rarity": "problematic",
+    "faction": "international-incidents",
+    "ability": "Grève Générale",
+    "description": "Went on strike from explaining the strike. Refuses to elaborate, optimize or join a stand-up meeting. The productivity app has filed for emotional damages.",
+    "quote": "No grind. Only grève.",
+    "stats": {
+      "clout": 40,
+      "shame": 45,
+      "chaos": 45
+    },
+    "art": "/assets/residents/CC011.webp"
+  },
+  {
+    "id": "CC012",
+    "number": 12,
+    "name": "Neutrality NPC",
+    "rarity": "public-menace",
+    "faction": "international-incidents",
+    "ability": "Not My Problem",
+    "description": "Four dialogue options. All of them say both sides. His face is permanently loading; his invoice renders instantly. Gives you the quest to stop having a strong opinion in his insured lobby.",
+    "quote": "[1] Both sides. [2] Both sides. [3] Processing fee.",
+    "stats": {
+      "clout": 55,
+      "shame": 90,
+      "chaos": 15
+    },
+    "art": "/assets/residents/CC012.webp"
+  },
+  {
+    "id": "CC013",
+    "number": 13,
+    "name": "Culture Vulture",
+    "rarity": "uncancelable",
+    "faction": "international-incidents",
+    "ability": "Culture Harvest",
+    "description": "Finds a niche community, learns three words and sells it back as a lifestyle. Every meme he touches becomes a brand activation. Claims he was there before the subreddit.",
+    "quote": "We have monetized your inside joke.",
+    "stats": {
+      "clout": 70,
+      "shame": 60,
+      "chaos": 70
+    },
+    "art": "/assets/residents/CC013.webp"
+  },
+  {
+    "id": "CC014",
+    "number": 14,
+    "name": "Italian Pasta Inquisition",
+    "rarity": "problematic",
+    "faction": "international-incidents",
+    "ability": "Nonna's Wrath",
+    "description": "Investigates pasta crimes with the intensity of an international tribunal. One broken noodle can collapse negotiations. His final form activates when somebody says ketchup.",
+    "quote": "Nonna has seen the screenshot.",
+    "stats": {
+      "clout": 40,
+      "shame": 45,
+      "chaos": 45
+    },
+    "art": "/assets/residents/CC014.webp"
+  },
+  {
+    "id": "CC015",
+    "number": 15,
+    "name": "Florida Man",
+    "rarity": "public-enemy",
+    "faction": "international-incidents",
+    "ability": "Local News",
+    "description": "A headline with legs and no quest marker. Told to touch grass, he challenged the lawn to a boss fight. The tutorial cannot predict him. Neither can the lawn.",
+    "quote": "Is this a side quest or a court date?",
+    "stats": {
+      "clout": 50,
+      "shame": 70,
+      "chaos": 90
+    },
+    "art": "/assets/residents/CC015.webp"
+  },
+  {
+    "id": "CC016",
+    "number": 16,
+    "name": "Performative Ally",
+    "rarity": "nobody",
+    "faction": "politics-hypocrisy",
+    "ability": "Public Solidarity",
+    "description": "Changes the avatar, saves the world, logs off before the follow-up question. Measures solidarity in likes. The cause is permanent until another one has better lighting.",
+    "quote": "I have updated my profile. Crisis averted.",
+    "stats": {
+      "clout": 25,
+      "shame": 35,
+      "chaos": 30
+    },
+    "art": "/assets/residents/CC016.webp"
+  },
+  {
+    "id": "CC017",
+    "number": 17,
+    "name": "Virtue Signaler",
+    "rarity": "problematic",
+    "faction": "politics-hypocrisy",
+    "ability": "Performative Outrage",
+    "description": "Speedruns moral outrage with every cutscene skipped. Has condemned the article, the author and reading. Needs a new emergency before the previous one becomes homework.",
+    "quote": "I read the headline. I am basically an expert.",
+    "stats": {
+      "clout": 40,
+      "shame": 45,
+      "chaos": 45
+    },
+    "art": "/assets/residents/CC017.webp"
+  },
+  {
+    "id": "CC018",
+    "number": 18,
+    "name": "Tax Evasion Wizard",
+    "rarity": "public-menace",
+    "faction": "politics-hypocrisy",
+    "ability": "Offshore Portal",
+    "description": "Summons shell companies from a portal labeled totally normal accounting. His money lives on an island; consequences cannot swim. The spreadsheet has more layers than the iceberg lore.",
+    "quote": "Tax is a skill issue.",
+    "stats": {
+      "clout": 90,
+      "shame": 30,
+      "chaos": 80
+    },
+    "art": "/assets/residents/CC018.webp"
+  },
+  {
+    "id": "CC019",
+    "number": 19,
+    "name": "Populist Megaphone",
+    "rarity": "uncancelable",
+    "faction": "politics-hypocrisy",
+    "ability": "Blame Someone Else",
+    "description": "An NPC with one dialogue option and seventeen amplifiers. Every policy begins with blame and ends with louder blame. The microphone is begging to enter witness protection.",
+    "quote": "My solution has more volume than your problem.",
+    "stats": {
+      "clout": 80,
+      "shame": 80,
+      "chaos": 60
+    },
+    "art": "/assets/residents/CC019.webp"
+  },
+  {
+    "id": "CC020",
+    "number": 20,
+    "name": "Democracy Paywall",
+    "rarity": "public-enemy",
+    "faction": "politics-hypocrisy",
+    "ability": "Premium Voting",
+    "description": "Put democracy behind a free trial and forgot the unsubscribe button. Basic citizens may listen. Premium citizens may reply. The terms are longer than the constitution.",
+    "quote": "Your freedom has entered the billing cycle.",
+    "stats": {
+      "clout": 95,
+      "shame": 65,
+      "chaos": 95
+    },
+    "art": "/assets/residents/CC020.webp"
+  },
+  {
+    "id": "CC021",
+    "number": 21,
+    "name": "Crypto Bro",
+    "rarity": "nobody",
+    "faction": "crypto-degenerates",
+    "ability": "Greed Delusion Scam",
+    "description": "Down 99 percent, spiritually up infinity. Runs on pure copium and a screenshot from the good week. His financial thesis is three rocket emojis arguing with arithmetic.",
+    "quote": "It is only a loss if math is real.",
+    "stats": {
+      "clout": 60,
+      "shame": 70,
+      "chaos": 60
+    },
+    "art": "/assets/residents/CC021.webp"
+  },
+  {
+    "id": "CC022",
+    "number": 22,
+    "name": "Diamond Hands Corpse",
+    "rarity": "problematic",
+    "faction": "crypto-degenerates",
+    "ability": "Never Selling",
+    "description": "Held through every dip, every delisting and the invention of geology. The bag has become a family heirloom. Refuses to sell because then the chart might win.",
+    "quote": "I am not trapped. I am historically early.",
+    "stats": {
+      "clout": 40,
+      "shame": 45,
+      "chaos": 45
+    },
+    "art": "/assets/residents/CC022.webp"
+  },
+  {
+    "id": "CC023",
+    "number": 23,
+    "name": "Rug Pull Magician",
+    "rarity": "public-menace",
+    "faction": "crypto-degenerates",
+    "ability": "Liquidity Vanished",
+    "description": "The devs were cooking. Unfortunately, it was the books. Makes the liquidity disappear, then reappears as a new team with the same roadmap and a better font.",
+    "quote": "The exit was always on the roadmap.",
+    "stats": {
+      "clout": 60,
+      "shame": 45,
+      "chaos": 65
+    },
+    "art": "/assets/residents/CC023.webp"
+  },
+  {
+    "id": "CC024",
+    "number": 24,
+    "name": "Smooth Rug Pull",
+    "rarity": "uncancelable",
+    "faction": "crypto-degenerates",
+    "ability": "Liquidity Disappears",
+    "description": "A velvet rug pull with concierge service. Thanks the community for becoming liquidity, then changes the community’s name. His last update was a plane ticket.",
+    "quote": "Your funds have found product-market exit.",
+    "stats": {
+      "clout": 80,
+      "shame": 80,
+      "chaos": 60
+    },
+    "art": "/assets/residents/CC024.webp"
+  },
+  {
+    "id": "CC025",
+    "number": 25,
+    "name": "Forgotten Seed Phrase",
+    "rarity": "public-enemy",
+    "faction": "crypto-degenerates",
+    "ability": "Funds Are Safu",
+    "description": "A fortune separated from its owner by one word and eleven bad guesses. The password manager has entered spectator mode. Funds are safu; access is archaeology.",
+    "quote": "I remember the vibe of the password.",
+    "stats": {
+      "clout": 95,
+      "shame": 65,
+      "chaos": 95
+    },
+    "art": "/assets/residents/CC025.webp"
+  },
+  {
+    "id": "CC026",
+    "number": 26,
+    "name": "Final Boss Karen",
+    "rarity": "public-menace",
+    "faction": "cursed-society",
+    "ability": "Privilege Outrage Summon",
+    "description": "Left a one-star review of causality. Can summon a manager from any plane of existence, including planes without management. Her final phase begins when reality refuses a refund.",
+    "quote": "I would like to escalate the universe.",
+    "stats": {
+      "clout": 80,
+      "shame": 90,
+      "chaos": 70
+    },
+    "art": "/assets/residents/CC026.webp"
+  },
+  {
+    "id": "CC027",
+    "number": 27,
+    "name": "Doomer Wojak",
+    "rarity": "problematic",
+    "faction": "cursed-society",
+    "ability": "I Told You So",
+    "description": "A beanie, a coffee and one browser tab away from declaring the world over. Keeps 900 cans of beans for an apocalypse that refuses to respect his posting schedule. The bean supply has its own iceberg.",
+    "quote": "It is so over. The beans are so back.",
+    "stats": {
+      "clout": 40,
+      "shame": 45,
+      "chaos": 45
+    },
+    "art": "/assets/residents/CC027.webp"
+  },
+  {
+    "id": "CC028",
+    "number": 28,
+    "name": "Conspiracy Mom",
+    "rarity": "nobody",
+    "faction": "cursed-society",
+    "ability": "Secret Research",
+    "description": "Descended the iceberg and returned with red string instead of evidence. Her research is a screenshot of a screenshot. The pigeons are involved; she has not decided how.",
+    "quote": "The JPEG artifacts are trying to tell you something.",
+    "stats": {
+      "clout": 25,
+      "shame": 35,
+      "chaos": 30
+    },
+    "art": "/assets/residents/CC028.webp"
+  },
+  {
+    "id": "CC029",
+    "number": 29,
+    "name": "Doomscroll Parasite",
+    "rarity": "public-menace",
+    "faction": "cursed-society",
+    "ability": "One More Video",
+    "description": "Opened one video before bed and acquired a doctorate in spoon-reviewer drama. His sleep schedule is an urban legend. The algorithm knows his weaknesses better than his therapist.",
+    "quote": "One more video. Then a new personality.",
+    "stats": {
+      "clout": 50,
+      "shame": 20,
+      "chaos": 90
+    },
+    "art": "/assets/residents/CC029.webp"
+  },
+  {
+    "id": "CC030",
+    "number": 30,
+    "name": "Cancelled Messiah",
+    "rarity": "public-enemy",
+    "faction": "cursed-society",
+    "ability": "You Can't Cancel Me Twice",
+    "description": "Every cancellation is a season finale with a merch table. His redemption arc has a trailer before the apology. The Streisand effect is his entire marketing department.",
+    "quote": "My downfall has been renewed for season two.",
+    "stats": {
+      "clout": 95,
+      "shame": 65,
+      "chaos": 95
+    },
+    "art": "/assets/residents/CC030.webp"
+  },
+  {
+    "id": "CC031",
+    "number": 31,
+    "name": "Zuck.exe",
+    "rarity": "uncancelable",
+    "faction": "terminally-online",
+    "ability": "Terms of Your Life",
+    "description": "An NPC livestream with a board of directors. Accepts a cookie, says thank you for the data, repeats the gesture and sells the audience to itself. His human dialogue tree has one option: agree to new terms.",
+    "quote": "Thank you for the data cookie. Yes yes yes.",
+    "stats": {
+      "clout": 86,
+      "shame": 62,
+      "chaos": 81
+    },
+    "art": "/assets/residents/CC031.webp",
+    "setId": "set-02",
+    "satire": "Zuckerberg-inspired parody"
+  },
+  {
+    "id": "CC032",
+    "number": 32,
+    "name": "Stan Empress",
+    "rarity": "public-menace",
+    "faction": "terminally-online",
+    "ability": "Weaponized Fanbase",
+    "description": "A fictional pop monarch whose fan army treats disagreement as a military campaign. Drops twelve versions of the same feud. Even the ceasefire has an exclusive vinyl pressing.",
+    "quote": "The beef has a deluxe edition.",
+    "stats": {
+      "clout": 88,
+      "shame": 49,
+      "chaos": 73
+    },
+    "art": "/assets/residents/CC032.webp",
+    "setId": "set-02",
+    "satire": "Pop-superstar parody"
+  },
+  {
+    "id": "CC033",
+    "number": 33,
+    "name": "Prime Overlord",
+    "rarity": "uncancelable",
+    "faction": "corporate-hell",
+    "ability": "Same-Day Domination",
+    "description": "A fictional delivery emperor who can ship burnout overnight but never a day off. Watches the warehouse from an orbital ego. The worker’s break remains out for delivery.",
+    "quote": "Your dignity was not included with Prime.",
+    "stats": {
+      "clout": 87,
+      "shame": 58,
+      "chaos": 76
+    },
+    "art": "/assets/residents/CC033.webp",
+    "setId": "set-02",
+    "satire": "Bezos-inspired parody"
+  },
+  {
+    "id": "CC034",
+    "number": 34,
+    "name": "Subscription Goblin",
+    "rarity": "nobody",
+    "faction": "corporate-hell",
+    "ability": "Free Trial Forever",
+    "description": "Built the unsubscribe button inside another subscription. His customer journey is a maze with monthly billing. Calls every hostage a returning user.",
+    "quote": "Free will is an Enterprise feature.",
+    "stats": {
+      "clout": 54,
+      "shame": 81,
+      "chaos": 66
+    },
+    "art": "/assets/residents/CC034.webp",
+    "setId": "set-02",
+    "satire": "Fictional corporate caricature"
+  },
+  {
+    "id": "CC035",
+    "number": 35,
+    "name": "Il Monumento",
+    "rarity": "public-menace",
+    "faction": "international-incidents",
+    "ability": "Bronze Diplomacy",
+    "description": "A fictional gala king who answers every crisis with a larger statue of himself. Diplomacy is a photo opportunity wearing a suit. The monument to humility is six floors tall.",
+    "quote": "The statue has approved the peace process.",
+    "stats": {
+      "clout": 78,
+      "shame": 64,
+      "chaos": 84
+    },
+    "art": "/assets/residents/CC035.webp",
+    "setId": "set-02",
+    "satire": "Fictional celebrity-politician caricature"
+  },
+  {
+    "id": "CC036",
+    "number": 36,
+    "name": "World Tour Savior",
+    "rarity": "problematic",
+    "faction": "international-incidents",
+    "ability": "Charity Encore",
+    "description": "A fictional stadium savior who thinks an encore can repair geopolitics. His humanitarian plan includes a spotlight, a twelve-minute solo and premium seats to the solution.",
+    "quote": "Have we tried releasing the deluxe crisis?",
+    "stats": {
+      "clout": 71,
+      "shame": 73,
+      "chaos": 67
+    },
+    "art": "/assets/residents/CC036.webp",
+    "setId": "set-02",
+    "satire": "Bono-inspired parody"
+  },
+  {
+    "id": "CC037",
+    "number": 37,
+    "name": "Don Tremendous",
+    "rarity": "public-enemy",
+    "faction": "politics-hypocrisy",
+    "ability": "Absolutely Tremendous",
+    "description": "A fictional golden podium tyrant whose defeats are all tremendous victories. Argues with the scoreboard until it needs therapy. His tie is longer than the fact-check thread.",
+    "quote": "Nobody has ever lost this victoriously.",
+    "stats": {
+      "clout": 93,
+      "shame": 35,
+      "chaos": 95
+    },
+    "art": "/assets/residents/CC037.webp",
+    "setId": "set-02",
+    "satire": "Trump-inspired parody"
+  },
+  {
+    "id": "CC038",
+    "number": 38,
+    "name": "The Eternal Candidate",
+    "rarity": "problematic",
+    "faction": "politics-hypocrisy",
+    "ability": "One More Term",
+    "description": "The campaign is permanent; the promises are seasonal cosmetics. Has announced the announcement of the future since the tutorial. The next term is his loading screen.",
+    "quote": "The policy is coming in the next update.",
+    "stats": {
+      "clout": 65,
+      "shame": 84,
+      "chaos": 61
+    },
+    "art": "/assets/residents/CC038.webp",
+    "setId": "set-02",
+    "satire": "Fictional career-politician caricature"
+  },
+  {
+    "id": "CC039",
+    "number": 39,
+    "name": "Elongated Ego",
+    "rarity": "public-enemy",
+    "faction": "crypto-degenerates",
+    "ability": "Hostile Rebrand",
+    "description": "A fictional rocket baron who buys the town square to win an argument in it. Rebrands every skill issue as a moonshot. His next invention is charging the stairs a subscription.",
+    "quote": "Bought the platform. Still getting ratioed.",
+    "stats": {
+      "clout": 94,
+      "shame": 41,
+      "chaos": 96
+    },
+    "art": "/assets/residents/CC039.webp",
+    "setId": "set-02",
+    "satire": "Elon-inspired parody"
+  },
+  {
+    "id": "CC040",
+    "number": 40,
+    "name": "Laser-Eye Prophet",
+    "rarity": "public-menace",
+    "faction": "crypto-degenerates",
+    "ability": "Number Go Up",
+    "description": "Reads candlesticks like ancient prophecy and calls every crash a test of faith. His laser eyes only point up, even when the floor leaves the building. Copium pressure: critical.",
+    "quote": "The red candle is just a shy green candle.",
+    "stats": {
+      "clout": 77,
+      "shame": 61,
+      "chaos": 86
+    },
+    "art": "/assets/residents/CC040.webp",
+    "setId": "set-02",
+    "satire": "Fictional crypto-celebrity caricature"
+  },
+  {
+    "id": "CC041",
+    "number": 41,
+    "name": "Ye of Chaos",
+    "rarity": "uncancelable",
+    "faction": "cursed-society",
+    "ability": "I Am the Feature",
+    "description": "A fictional headline in designer armor. The album is a monologue about the album, featuring the man announcing the album. His ego has its own tour bus and rejects features.",
+    "quote": "The guest feature is also me.",
+    "stats": {
+      "clout": 92,
+      "shame": 44,
+      "chaos": 97
+    },
+    "art": "/assets/residents/CC041.webp",
+    "setId": "set-02",
+    "satire": "Kanye-inspired parody"
+  },
+  {
+    "id": "CC042",
+    "number": 42,
+    "name": "Apology Influencer",
+    "rarity": "nobody",
+    "faction": "cursed-society",
+    "ability": "Tears Sponsored",
+    "description": "Practiced the apology until the ring light cried. Opens the Notes app, outsources accountability and restocks the redemption hoodie. The comeback arc was booked before the disaster.",
+    "quote": "I am taking accountability. Use code SORRY.",
+    "stats": {
+      "clout": 68,
+      "shame": 76,
+      "chaos": 89
+    },
+    "art": "/assets/residents/CC042.webp",
+    "setId": "set-02",
+    "satire": "Fictional influencer caricature"
+  },
+  {
+    "id": "CC043",
+    "number": 43,
+    "name": "Mew Khalifa",
+    "rarity": "uncancelable",
+    "faction": "cursed-society",
+    "ability": "Copyright Psychic Strike",
+    "description": "Booked a convention booth and opened a copyright dimension. An adult cosplay parody with psychic receipts, a curled pink tail and a comment section that cannot behave. The costume is cute. The legal department is feral.",
+    "quote": "My special move is a cease-and-desist with cat ears.",
+    "stats": {
+      "clout": 85,
+      "shame": 62,
+      "chaos": 92
+    },
+    "art": "/assets/residents/CC043.webp",
+    "setId": "set-03",
+    "satire": "Mia-inspired fictional adult cosplay parody"
+  },
+  {
+    "id": "CC044",
+    "number": 44,
+    "name": "Clip Farmer",
+    "rarity": "public-menace",
+    "faction": "terminally-online",
+    "ability": "Clip Farm Frenzy",
+    "description": "A Black streamer who turns a mildly surprising sandwich into a twelve-camera emergency. Every reaction has a thumbnail face. Every thumbnail face has a sponsor. Chat, is this rent?",
+    "quote": "CHAT. CHAT. CHAT. THIS IS A BAGEL.",
+    "stats": {
+      "clout": 82,
+      "shame": 48,
+      "chaos": 90
+    },
+    "art": "/assets/residents/CC044.webp",
+    "setId": "set-03",
+    "satire": "Original streamer caricature"
+  },
+  {
+    "id": "CC045",
+    "number": 45,
+    "name": "Live Laugh Lawsuit",
+    "rarity": "problematic",
+    "faction": "corporate-hell",
+    "ability": "Sponsored Accountability",
+    "description": "A Black lifestyle mogul selling inner peace through a ninety-seven-page checkout. Her apology has a ring light, her ring light has an affiliate link, and the affiliate link has retained counsel.",
+    "quote": "I manifested accountability. Shipping is extra.",
+    "stats": {
+      "clout": 76,
+      "shame": 72,
+      "chaos": 67
+    },
+    "art": "/assets/residents/CC045.webp",
+    "setId": "set-03",
+    "satire": "Original lifestyle influencer caricature"
+  },
+  {
+    "id": "CC046",
+    "number": 46,
+    "name": "Sigma Landlord",
+    "rarity": "public-menace",
+    "faction": "politics-hypocrisy",
+    "ability": "Rent Free Forever",
+    "description": "A South Asian property guru whose morning routine includes buying your morning. Calls tenants a mindset problem and sells an alpha course filmed in a borrowed penthouse. The key is bigger than the apartment.",
+    "quote": "Your poverty is interrupting my podcast.",
+    "stats": {
+      "clout": 79,
+      "shame": 60,
+      "chaos": 88
+    },
+    "art": "/assets/residents/CC046.webp",
+    "setId": "set-03",
+    "satire": "Original property guru caricature"
+  },
+  {
+    "id": "CC047",
+    "number": 47,
+    "name": "Auntie Fact Check",
+    "rarity": "problematic",
+    "faction": "cursed-society",
+    "ability": "Forwarded 47 Times",
+    "description": "A Black group-chat veteran with silver locs, receipts and absolutely no patience for a screenshot of a screenshot. The correction stamp lands before you finish typing SOURCE: TRUST ME.",
+    "quote": "Baby, that headline is from 2009.",
+    "stats": {
+      "clout": 66,
+      "shame": 86,
+      "chaos": 58
+    },
+    "art": "/assets/residents/CC047.webp",
+    "setId": "set-03",
+    "satire": "Original group-chat fact checker"
+  },
+  {
+    "id": "CC048",
+    "number": 48,
+    "name": "Algorithm Daddy",
+    "rarity": "public-enemy",
+    "faction": "terminally-online",
+    "ability": "Feed Adoption",
+    "description": "An East Asian techwear villain who adopts your attention and invoices your personality. His bot children agree with every post. You clicked once; congratulations on your new interests forever.",
+    "quote": "The feed loves you. Consent was in the footer.",
+    "stats": {
+      "clout": 97,
+      "shame": 65,
+      "chaos": 96
+    },
+    "art": "/assets/residents/CC048.webp",
+    "setId": "set-03",
+    "satire": "Original algorithm villain caricature"
+  },
+  {
+    "id": "CC049",
+    "number": 49,
+    "name": "Touch Grass Final Boss",
+    "rarity": "nobody",
+    "faction": "international-incidents",
+    "ability": "Offline Rehabilitation",
+    "description": "A Latino park ranger guarding the most terrifying place on the internet: outside. Carries a leaf shield, prescribes daylight and confiscates reply drafts. Grass touching is supervised because Florida Man exists.",
+    "quote": "Log off. The sun has no comment section.",
+    "stats": {
+      "clout": 44,
+      "shame": 83,
+      "chaos": 64
+    },
+    "art": "/assets/residents/CC049.webp",
+    "setId": "set-03",
+    "satire": "Original park ranger caricature"
+  },
+  {
+    "id": "CC050",
+    "number": 50,
+    "name": "Verified Goblin",
+    "rarity": "problematic",
+    "faction": "crypto-degenerates",
+    "ability": "Blue Check Tax",
+    "description": "A nonbinary fantasy goblin renting credibility by the month. The badge is gold, the take is garbage and the invoice is recurring. Will explain free speech after checking your subscription tier.",
+    "quote": "My check is blue. My overdraft is red.",
+    "stats": {
+      "clout": 72,
+      "shame": 55,
+      "chaos": 81
+    },
+    "art": "/assets/residents/CC050.webp",
+    "setId": "set-03",
+    "satire": "Original subscription goblin caricature"
+  }
+]

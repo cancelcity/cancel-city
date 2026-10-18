@@ -1,0 +1,22 @@
+import './expansion.css';
+import './roast.css';
+import './starter.css';
+import './mega-city.css';
+import type {Metadata} from 'next';
+import {CARDS} from '../src/data/cards';
+import {Bootstrap} from '../src/components/bootstrap';
+import './globals.css';
+import './lore.css';
+import './city.css';
+import './internet.css';
+import './specials.css';
+import './city-fancy.css';
+import './props.css';
+import './cinema.css';
+import './live-motion.css';
+import './culture-collision.css';
+import './karen.css';
+import './living-city.css';
+import './court.css';
+export const metadata:Metadata={title:'Cancel City — Everyone is the problem',description:`Collect the worst of humanity. A free punk cartoon card game. Open packs, collect ${CARDS.length} residents, fuse cursed foils and build your worst neighbourhood. Internet folklore, original shitposts and terminally online satire.`,icons:{icon:'/favicon.svg'}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><Bootstrap>{children}</Bootstrap></body></html>;}

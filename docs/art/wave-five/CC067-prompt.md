@@ -1,0 +1,9 @@
+Built-in image_gen. Style reference: CC039-style.jpg; identity reference: CC067/ref.jpg.
+
+Exact portrait: Use case: stylized-concept. Square fighting-game resident portrait: Nyan Overdraft, grey pastry cat with pink icing torso, tiny banker's tie, rainbow conveyor pouring banknotes behind. Match reference dense etched ink, intricate crosshatching, black halftone grain, wildly expressive caricature, neon lime magenta cyan splatter, saturated underground comic poster. Face prominent, whole pastry prop clear, energetic diagonal composition, no lettering, no watermark.
+
+Exact sheet: Use case: stylized-concept. Create transparent-background game sprite sheet, landscape 3 columns x 2 rows, six separate complete figures of EXACT SAME Nyan Overdraft grey cat as reference, identical grey fur, pink iced pastry torso with sprinkles, red banker's tie and rainbow conveyor prop. Dense etched black ink, crosshatching, gritty halftone neon colors. Row-major poses: idle standing/floating, windup pulling rainbow back, strike lunging to RIGHT with rainbow conveyor, victory both paws raised, flinch recoiling, embarrassed drooping ears with rainbow tangled. Each complete silhouette fits within its own equal cell with 15% transparent margin on ALL sides and clear gutters; all paws, ears, tail, rainbow, props entirely visible. Absolutely no backgrounds, floor, text, panels or labels. Genuine RGBA alpha outside figures; no checkerboard drawn. Six distinct separated figures, never touching neighbors.
+
+Portrait: Nyan Overdraft, grey pastry cat with pink icing torso, tiny banker tie, rainbow conveyor pouring banknotes. Dense etched ink, crosshatching, halftone neon lime magenta cyan splatter.
+
+Pose sheet: Six same grey pastry cat with red banker tie and rainbow conveyor. 3x2 row-major idle, windup, right strike, victory, flinch, embarrassed. Transparent background, 15% margins, complete limbs/props, no text.

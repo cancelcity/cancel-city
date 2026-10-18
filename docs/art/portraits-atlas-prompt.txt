@@ -1,0 +1,21 @@
+Use case: stylized-concept
+Asset type: ONE rectangular 4-by-3 portrait atlas for a satirical punk trading-card game; each cell is square and will be cropped separately by code.
+Input images: all four supplied images are STYLE references ONLY, especially the collection image's hand-inked portraits. Generate original new character art matching that dense, gritty underground-comic caricature medium.
+Canvas: 4 columns and 3 rows, exactly equal square cells in a perfect grid, 4:3 total aspect ratio. NO margins, NO gutters, NO border lines, NO card frames. Every subject fits inside its own square; cannot bleed into another cell. Chest-up, face large in middle, leave hair and head entirely visible.
+Art: grotesque satirical punk caricatures, meticulous bold black hand-ink contours, irregular expressive hatching, fine black ink scratches, grungy paper print grain, manic bug eyes, exaggerated mouths and noses, jagged teeth. Vibrant dirty cyan, hot pink, acid-lime, purple and dirty yellow backdrops with energetic ink marks. Looks hand drawn and screen printed, rich detailed anatomy and clothes. Match the supplied portraits, not clean flat vector/cartoon icons.
+ROW 1 left to right:
+1 The Algorithm: malevolent CRT screen-headed social-media deity, evil glitching face displayed on screen, thick cybercables, mechanical business-suit torso, cyan and pink backdrop.
+2 HR Necromancer: undead female HR manager with pale corpse face, hornrim glasses, clipboard held close to chest, office suit, small zombie employees behind her, purple and lime backdrop.
+3 French Strike Simulator: furious mustached French striker with black beret, striped shirt, protesting and clenching a baguette, red face, pink backdrop.
+4 Swiss Neutrality Enjoyer: very smug alpine private banker with expensive watch, monocle, green cash spilling from blazer, snowy mountain shapes, cyan backdrop.
+ROW 2 left to right:
+5 Italian Pasta Inquisition: furious Italian chef with giant chef hat, curled mustache, wild angry eyes, fist with tangled spaghetti, yellow and red backdrop.
+6 Populist Megaphone: raging politician shouting into an oversized megaphone, suit and tie, clenched fist, acid-lime and pink backdrop.
+7 Democracy Paywall: smug grinning politician with ticket-booth/payment-barrier props, expensive suit, price-ticket shapes with NO readable letters or numerals, purple backdrop.
+8 Diamond Hands Corpse: decaying excited zombie wearing torn rich-broker suit clutching gold crypto coins in both diamond-shaped hands, green and cyan backdrop.
+ROW 3 left to right:
+9 Forgotten Seed Phrase: panicked sweating trader with wide terrified eyes clutching a tattered blank recovery-word sheet, messy hair, pink backdrop.
+10 Doomsday Prepper: unhinged bearded prepper with huge anxious eyes, gas mask dangling at neck, military vest stuffed with canned food, dirty yellow and green backdrop.
+11 Doomscroll Parasite: bug-eyed phone-obsessed zombie, slack jaw, dark eye bags, hunched body gripping bright phone close to face, spindly parasite tendrils, purple and cyan backdrop.
+12 EMPTY cell: no character, only dirty acid yellow paper grain with sparse black ink scratches.
+Text: absolutely NO text, no titles, no words, no lettering, no logos, no watermarks. Deliver the complete aligned atlas.

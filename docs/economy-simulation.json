@@ -1,0 +1,31 @@
+{
+  "balanceVersion": "gacha-5",
+  "players": 200,
+  "maxDays": 180,
+  "seed": "123456789 + player × 977",
+  "scenario": "Every player claims the daily grant, opens every earned pack, claims every ready job, and fuses at most once daily. Battles, mastery and scrap crafting are excluded in this baseline. Monday start. Optimistic engagement; no missed days. Synthetic simulation, not observed players.",
+  "firstMythicDay": {
+    "p50": 1,
+    "p90": 5
+  },
+  "firstFoilDay": {
+    "p50": 1,
+    "p90": 1
+  },
+  "collectionCompletion": {
+    "finishedWithinHorizon": 200,
+    "p50Days": 48,
+    "p90Days": 92,
+    "p99Days": 124,
+    "finishedByDay7": 0,
+    "finishedByDay30": 33,
+    "p50Packs": 370
+  },
+  "limitations": [
+    "Small synthetic cohort; percentiles are estimates.",
+    "Completion percentiles are conditional on finishing within the horizon.",
+    "Does not model missed days, optional jobs, player attention or all-foil completion.",
+    "A no-pity pool always has an unbounded unlucky tail.",
+    "Results require product targets and human playtesting before production sign-off."
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/kobeni/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/action-00.webp",
+        "width": 215,
+        "height": 500,
+        "sourceBounds": {
+          "x": 83,
+          "y": 7,
+          "w": 215,
+          "h": 500
+        },
+        "area": 65186
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/action-01.webp",
+        "width": 246,
+        "height": 500,
+        "sourceBounds": {
+          "x": 430,
+          "y": 5,
+          "w": 246,
+          "h": 500
+        },
+        "area": 72422
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/action-02.webp",
+        "width": 385,
+        "height": 487,
+        "sourceBounds": {
+          "x": 701,
+          "y": 17,
+          "w": 385,
+          "h": 487
+        },
+        "area": 81392
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/action-03.webp",
+        "width": 472,
+        "height": 500,
+        "sourceBounds": {
+          "x": 1064,
+          "y": 4,
+          "w": 472,
+          "h": 500
+        },
+        "area": 73554
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/action-04.webp",
+        "width": 420,
+        "height": 474,
+        "sourceBounds": {
+          "x": 19,
+          "y": 529,
+          "w": 420,
+          "h": 474
+        },
+        "area": 82775
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/action-05.webp",
+        "width": 331,
+        "height": 502,
+        "sourceBounds": {
+          "x": 467,
+          "y": 509,
+          "w": 331,
+          "h": 502
+        },
+        "area": 76144
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/action-06.webp",
+        "width": 224,
+        "height": 507,
+        "sourceBounds": {
+          "x": 853,
+          "y": 504,
+          "w": 224,
+          "h": 507
+        },
+        "area": 67593
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/action-07.webp",
+        "width": 219,
+        "height": 513,
+        "sourceBounds": {
+          "x": 1236,
+          "y": 500,
+          "w": 219,
+          "h": 513
+        },
+        "area": 65915
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/ending-00.webp",
+        "width": 241,
+        "height": 510,
+        "sourceBounds": {
+          "x": 87,
+          "y": 2,
+          "w": 241,
+          "h": 510
+        },
+        "area": 73893
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/ending-01.webp",
+        "width": 258,
+        "height": 508,
+        "sourceBounds": {
+          "x": 439,
+          "y": 4,
+          "w": 258,
+          "h": 508
+        },
+        "area": 80353
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/ending-02.webp",
+        "width": 314,
+        "height": 515,
+        "sourceBounds": {
+          "x": 792,
+          "y": 2,
+          "w": 314,
+          "h": 515
+        },
+        "area": 86977
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/ending-03.webp",
+        "width": 235,
+        "height": 506,
+        "sourceBounds": {
+          "x": 1219,
+          "y": 3,
+          "w": 235,
+          "h": 506
+        },
+        "area": 71718
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/ending-04.webp",
+        "width": 261,
+        "height": 517,
+        "sourceBounds": {
+          "x": 84,
+          "y": 506,
+          "w": 261,
+          "h": 517
+        },
+        "area": 78065
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/ending-05.webp",
+        "width": 214,
+        "height": 522,
+        "sourceBounds": {
+          "x": 467,
+          "y": 501,
+          "w": 214,
+          "h": 522
+        },
+        "area": 72515
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/ending-06.webp",
+        "width": 240,
+        "height": 507,
+        "sourceBounds": {
+          "x": 841,
+          "y": 513,
+          "w": 240,
+          "h": 507
+        },
+        "area": 75645
+      },
+      {
+        "file": "docs/art/layered-specials/kobeni/actors/ending-07.webp",
+        "width": 200,
+        "height": 522,
+        "sourceBounds": {
+          "x": 1252,
+          "y": 501,
+          "w": 200,
+          "h": 522
+        },
+        "area": 73009
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/homelesslander/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/action-00.webp",
+        "width": 346,
+        "height": 476,
+        "sourceBounds": {
+          "x": 26,
+          "y": 4,
+          "w": 346,
+          "h": 476
+        },
+        "area": 90090
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/action-01.webp",
+        "width": 384,
+        "height": 356,
+        "sourceBounds": {
+          "x": 393,
+          "y": 121,
+          "w": 384,
+          "h": 356
+        },
+        "area": 84060
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/action-02.webp",
+        "width": 367,
+        "height": 484,
+        "sourceBounds": {
+          "x": 774,
+          "y": 5,
+          "w": 367,
+          "h": 484
+        },
+        "area": 94609
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/action-03.webp",
+        "width": 373,
+        "height": 432,
+        "sourceBounds": {
+          "x": 1157,
+          "y": 6,
+          "w": 373,
+          "h": 432
+        },
+        "area": 75472
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/action-04.webp",
+        "width": 516,
+        "height": 290,
+        "sourceBounds": {
+          "x": 6,
+          "y": 585,
+          "w": 516,
+          "h": 290
+        },
+        "area": 75937
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/action-05.webp",
+        "width": 431,
+        "height": 511,
+        "sourceBounds": {
+          "x": 399,
+          "y": 485,
+          "w": 431,
+          "h": 511
+        },
+        "area": 109813
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/action-06.webp",
+        "width": 364,
+        "height": 494,
+        "sourceBounds": {
+          "x": 822,
+          "y": 503,
+          "w": 364,
+          "h": 494
+        },
+        "area": 99653
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/action-07.webp",
+        "width": 305,
+        "height": 511,
+        "sourceBounds": {
+          "x": 1222,
+          "y": 485,
+          "w": 305,
+          "h": 511
+        },
+        "area": 89917
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/ending-00.webp",
+        "width": 328,
+        "height": 526,
+        "sourceBounds": {
+          "x": 30,
+          "y": 9,
+          "w": 328,
+          "h": 526
+        },
+        "area": 96956
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/ending-01.webp",
+        "width": 331,
+        "height": 522,
+        "sourceBounds": {
+          "x": 413,
+          "y": 10,
+          "w": 331,
+          "h": 522
+        },
+        "area": 98929
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/ending-02.webp",
+        "width": 404,
+        "height": 512,
+        "sourceBounds": {
+          "x": 757,
+          "y": 22,
+          "w": 404,
+          "h": 512
+        },
+        "area": 109182
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/ending-03.webp",
+        "width": 349,
+        "height": 484,
+        "sourceBounds": {
+          "x": 1180,
+          "y": 49,
+          "w": 349,
+          "h": 484
+        },
+        "area": 95837
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/ending-04.webp",
+        "width": 345,
+        "height": 483,
+        "sourceBounds": {
+          "x": 18,
+          "y": 522,
+          "w": 345,
+          "h": 483
+        },
+        "area": 95152
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/ending-05.webp",
+        "width": 406,
+        "height": 395,
+        "sourceBounds": {
+          "x": 367,
+          "y": 580,
+          "w": 406,
+          "h": 395
+        },
+        "area": 97665
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/ending-06.webp",
+        "width": 417,
+        "height": 391,
+        "sourceBounds": {
+          "x": 763,
+          "y": 588,
+          "w": 417,
+          "h": 391
+        },
+        "area": 101210
+      },
+      {
+        "file": "docs/art/layered-specials/homelesslander/actors/ending-07.webp",
+        "width": 354,
+        "height": 454,
+        "sourceBounds": {
+          "x": 1179,
+          "y": 529,
+          "w": 354,
+          "h": 454
+        },
+        "area": 97124
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

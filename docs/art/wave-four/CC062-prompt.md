@@ -1,0 +1,9 @@
+# CC062 Anti-Anti-Meat Activist
+
+Generated with built-in image_gen. Existing portrait preserved.
+
+## Six-pose sprite sheet prompt
+
+Use case: stylized-concept. Asset type: six-pose 3 by 2 transparent acting sprite sheet for Cancel City game. Input images: Image 1 CC062 portrait is the identity reference; Images 2 and 3 are reference style only. Create the same adult strawhat rubber pirate caricature from Image 1, grinning exaggerated goofy face, straw hat red band, black hair, cheek scar, open red shirt/coat, blue knee shorts with white cuffs, sandals, giant roasted meat-on-bone club. Match the gritty engraved punk comic black crosshatching, dirty paper-like skin texture inside silhouette, thick ink contours, acid yellow/cyan/hot pink paint streaks of the refs. Six different complete full-body characters evenly separated in a 3 columns by 2 rows grid with wide fully transparent gutters and margins, no overlapping poses. Order left-to-right top row: idle holding meat club; windup leaning forward preparing a rubber punch with club; stretch attack to the RIGHT with elongated arm and meat club extended toward right, entirely inside its cell. Bottom row: victory laughing with meat club raised; flinch recoil still holding club; embarrassed slumped hungry expression after eating most of club. Feet, hats, arms, huge meat club, effect streaks and entire bodies must all fit comfortably within each cell with substantial clearance from all neighbors. Make full body acting readable and expressive. Real transparent background alpha, no checkerboard paint, no background scenery, no frame, no text, no watermark, no additional people. Consistent identity, costume, adult body proportions and art style across all six.
+
+References: CC062-portrait.png identity; docs/art/residents/CC039.png and CC044.png style.

@@ -1,0 +1,300 @@
+{
+  "background": "docs/art/layered-specials/infinite-rizz/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/action-00.webp",
+        "width": 327,
+        "height": 513,
+        "sourceBounds": {
+          "x": 60,
+          "y": 5,
+          "w": 327,
+          "h": 513
+        },
+        "area": 76582
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/action-01.webp",
+        "width": 276,
+        "height": 513,
+        "sourceBounds": {
+          "x": 461,
+          "y": 6,
+          "w": 276,
+          "h": 513
+        },
+        "area": 78729
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/action-02.webp",
+        "width": 277,
+        "height": 514,
+        "sourceBounds": {
+          "x": 825,
+          "y": 5,
+          "w": 277,
+          "h": 514
+        },
+        "area": 80649
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/action-03.webp",
+        "width": 322,
+        "height": 516,
+        "sourceBounds": {
+          "x": 1179,
+          "y": 5,
+          "w": 322,
+          "h": 516
+        },
+        "area": 79240
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/action-04.webp",
+        "width": 364,
+        "height": 500,
+        "sourceBounds": {
+          "x": 23,
+          "y": 511,
+          "w": 364,
+          "h": 500
+        },
+        "area": 80841
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/action-05.webp",
+        "width": 463,
+        "height": 500,
+        "sourceBounds": {
+          "x": 382,
+          "y": 514,
+          "w": 463,
+          "h": 500
+        },
+        "area": 83859
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/action-06.webp",
+        "width": 258,
+        "height": 508,
+        "sourceBounds": {
+          "x": 850,
+          "y": 510,
+          "w": 258,
+          "h": 508
+        },
+        "area": 67118
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/action-07.webp",
+        "width": 386,
+        "height": 505,
+        "sourceBounds": {
+          "x": 1145,
+          "y": 511,
+          "w": 386,
+          "h": 505
+        },
+        "area": 82083
+      }
+    ],
+    "attack": [
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/attack-00.webp",
+        "width": 392,
+        "height": 498,
+        "sourceBounds": {
+          "x": 16,
+          "y": 5,
+          "w": 392,
+          "h": 498
+        },
+        "area": 77440
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/attack-01.webp",
+        "width": 333,
+        "height": 504,
+        "sourceBounds": {
+          "x": 415,
+          "y": 3,
+          "w": 333,
+          "h": 504
+        },
+        "area": 79324
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/attack-02.webp",
+        "width": 360,
+        "height": 495,
+        "sourceBounds": {
+          "x": 775,
+          "y": 13,
+          "w": 360,
+          "h": 495
+        },
+        "area": 85921
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/attack-03.webp",
+        "width": 332,
+        "height": 490,
+        "sourceBounds": {
+          "x": 1178,
+          "y": 17,
+          "w": 332,
+          "h": 490
+        },
+        "area": 78857
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/attack-04.webp",
+        "width": 391,
+        "height": 503,
+        "sourceBounds": {
+          "x": 10,
+          "y": 504,
+          "w": 391,
+          "h": 503
+        },
+        "area": 91435
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/attack-05.webp",
+        "width": 391,
+        "height": 431,
+        "sourceBounds": {
+          "x": 399,
+          "y": 573,
+          "w": 391,
+          "h": 431
+        },
+        "area": 90481
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/attack-06.webp",
+        "width": 479,
+        "height": 516,
+        "sourceBounds": {
+          "x": 760,
+          "y": 500,
+          "w": 479,
+          "h": 516
+        },
+        "area": 83926
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/attack-07.webp",
+        "width": 243,
+        "height": 510,
+        "sourceBounds": {
+          "x": 1253,
+          "y": 506,
+          "w": 243,
+          "h": 510
+        },
+        "area": 64134
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/ending-00.webp",
+        "width": 316,
+        "height": 500,
+        "sourceBounds": {
+          "x": 56,
+          "y": 6,
+          "w": 316,
+          "h": 500
+        },
+        "area": 81852
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/ending-01.webp",
+        "width": 266,
+        "height": 501,
+        "sourceBounds": {
+          "x": 476,
+          "y": 4,
+          "w": 266,
+          "h": 501
+        },
+        "area": 76377
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/ending-02.webp",
+        "width": 443,
+        "height": 501,
+        "sourceBounds": {
+          "x": 772,
+          "y": 3,
+          "w": 443,
+          "h": 501
+        },
+        "area": 81268
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/ending-03.webp",
+        "width": 280,
+        "height": 510,
+        "sourceBounds": {
+          "x": 1235,
+          "y": 1,
+          "w": 280,
+          "h": 510
+        },
+        "area": 76010
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/ending-04.webp",
+        "width": 334,
+        "height": 508,
+        "sourceBounds": {
+          "x": 40,
+          "y": 508,
+          "w": 334,
+          "h": 508
+        },
+        "area": 88164
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/ending-05.webp",
+        "width": 311,
+        "height": 508,
+        "sourceBounds": {
+          "x": 431,
+          "y": 504,
+          "w": 311,
+          "h": 508
+        },
+        "area": 83163
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/ending-06.webp",
+        "width": 300,
+        "height": 507,
+        "sourceBounds": {
+          "x": 829,
+          "y": 508,
+          "w": 300,
+          "h": 507
+        },
+        "area": 78013
+      },
+      {
+        "file": "docs/art/layered-specials/infinite-rizz/actors/ending-07.webp",
+        "width": 288,
+        "height": 509,
+        "sourceBounds": {
+          "x": 1225,
+          "y": 510,
+          "w": 288,
+          "h": 509
+        },
+        "area": 79171
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

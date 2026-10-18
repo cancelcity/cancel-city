@@ -1,0 +1,74 @@
+{
+  "id": "CC008",
+  "name": "Sully Sullivan HR",
+  "portrait": "/workspace/scratch/80a8c8c1affe/generated_images/exec-814668f7-3277-44f6-b73f-9c301b17e224.png",
+  "portraitPrompt": "Use case: stylized-concept. Asset: opaque square gacha CARD PORTRAIT, not a card template. Input images are STYLE ONLY, do not copy their characters. Match their gritty expressive underground comic style exactly: scratched heavy black pen ink, dense crosshatching, coarse halftone, saturated flat color, splatter, stark black city silhouette skyline. Large grotesquely expressive face, dynamic foreshortened foreground prop, full bleed, no margins. No beige, no soft 3D, no clean anime cel shade, no text, no border, no watermark. Square 1024x1024.\nSubject: Sully Sullivan HR. Unmistakably adult Sulley from Monsters Inc: large broad blue furry monster, purple spots, two ivory horns, enormous expressive friendly face with a panicked open-mouth roar. Corporate necktie and employee ID badge, wellness mug held in one huge clawed hand and a termination letter in the other. Head-and-shoulders fills frame, mug thrust toward viewer, comic shock at human resources.\nPalette: acid yellow lime with cyan and hot magenta splatter.",
+  "sheet": "/workspace/scratch/80a8c8c1affe/generated_images/exec-74537fb4-4fa1-49ab-ac84-02d1f3bfee9a.png",
+  "sheetPrompt": "Use case: illustration-story. Asset: real transparent alpha game sprite atlas. Reference is identity and ink style. SIX WHOLE-BODY poses of Sully Sullivan HR in THREE COLUMNS TWO ROWS, landscape1536x1024, equal cells. Recognizable large adult blue furry purple-spotted Sulley monster with two ivory horns, corporate tie and employee ID badge, small wellness mug and HR letter. Intact bulky body with both hands attached and both large clawed feet visible. Heavy scratched black ink and crosshatch/halftone, saturated blue fur. Identity/outfit consistent across poses, same physical scale. Ordered cells: 0 friendly neutral upright carrying mug; 1 preparing a roar braced stance; 2 big roaring arms-wide whole-body stance; 3 surprised recoiling at held HR letter; 4 caring proud gesture offering wellness mug; 5 embarrassed hunched whole-body crouch reading letter, both feet visible. Generous transparent margins/gutters, no overlap, no crop, no panels, no labels, no background or floor shadow. All held objects naturally grasped. No detached body parts.",
+  "anchors": [
+    [
+      232,
+      482
+    ],
+    [
+      722,
+      485
+    ],
+    [
+      1257,
+      484
+    ],
+    [
+      254,
+      995
+    ],
+    [
+      752,
+      1007
+    ],
+    [
+      1280,
+      997
+    ]
+  ],
+  "regions": [
+    [
+      0,
+      0,
+      480,
+      490
+    ],
+    [
+      480,
+      0,
+      480,
+      490
+    ],
+    [
+      960,
+      0,
+      576,
+      490
+    ],
+    [
+      0,
+      490,
+      512,
+      534
+    ],
+    [
+      512,
+      490,
+      512,
+      534
+    ],
+    [
+      1024,
+      490,
+      512,
+      534
+    ]
+  ],
+  "generator": "built-in image_gen",
+  "processing": "Sharp mechanical alpha cell crop and WebP encoding. Whole-character images only; manual foot anchors. Originals preserved."
+}

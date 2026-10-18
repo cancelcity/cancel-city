@@ -1,0 +1,191 @@
+{
+  "characterId": "CC111",
+  "characterName": "The Clown of Customer Service",
+  "generatedWith": "built-in image_gen",
+  "master": "poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest alpha>32 contours identify complete bodies; smaller detached props assigned nearest actor. Original alpha retained within two-pixel contour allowance. Uniform scaling and transparent square padding, no painting."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-0.webp",
+      "sourceExtraction": {
+        "left": 57,
+        "top": 10,
+        "width": 377,
+        "height": 476
+      },
+      "scale": 0.8613445378151261,
+      "suggestedAnchor": {
+        "x": 208,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 93,
+        "top": 46,
+        "right": 418,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 186451,
+        "transparentFraction": 0.7112541198730469
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-1.webp",
+      "sourceExtraction": {
+        "left": 523,
+        "top": 11,
+        "width": 466,
+        "height": 478
+      },
+      "scale": 0.8577405857740585,
+      "suggestedAnchor": {
+        "x": 379,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 56,
+        "top": 46,
+        "right": 456,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 179394,
+        "transparentFraction": 0.6843338012695312
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-2.webp",
+      "sourceExtraction": {
+        "left": 1018,
+        "top": 29,
+        "width": 495,
+        "height": 451
+      },
+      "scale": 0.8282828282828283,
+      "suggestedAnchor": {
+        "x": 328,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 51,
+        "top": 82,
+        "right": 461,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 184257,
+        "transparentFraction": 0.7028846740722656
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-3.webp",
+      "sourceExtraction": {
+        "left": 63,
+        "top": 497,
+        "width": 433,
+        "height": 507
+      },
+      "scale": 0.8086785009861933,
+      "suggestedAnchor": {
+        "x": 179,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 81,
+        "top": 46,
+        "right": 431,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 197379,
+        "transparentFraction": 0.7529411315917969
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-4.webp",
+      "sourceExtraction": {
+        "left": 562,
+        "top": 531,
+        "width": 424,
+        "height": 469
+      },
+      "scale": 0.8742004264392325,
+      "suggestedAnchor": {
+        "x": 173,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 70,
+        "top": 46,
+        "right": 441,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 186575,
+        "transparentFraction": 0.7117271423339844
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "actor-5.webp",
+      "sourceExtraction": {
+        "left": 1118,
+        "top": 524,
+        "width": 329,
+        "height": 476
+      },
+      "scale": 0.8613445378151261,
+      "suggestedAnchor": {
+        "x": 208,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 114,
+        "top": 46,
+        "right": 397,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 184963,
+        "transparentFraction": 0.7055778503417969
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest 36px; y at lowest alpha>32 art pixel."
+}

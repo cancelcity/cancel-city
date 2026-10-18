@@ -1,0 +1,300 @@
+{
+  "background": "docs/art/layered-specials/big-bald-energy/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/action-00.webp",
+        "width": 315,
+        "height": 376,
+        "sourceBounds": {
+          "x": 127,
+          "y": 8,
+          "w": 315,
+          "h": 376
+        },
+        "area": 66184
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/action-01.webp",
+        "width": 332,
+        "height": 374,
+        "sourceBounds": {
+          "x": 566,
+          "y": 8,
+          "w": 332,
+          "h": 374
+        },
+        "area": 67126
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/action-02.webp",
+        "width": 338,
+        "height": 385,
+        "sourceBounds": {
+          "x": 114,
+          "y": 387,
+          "w": 338,
+          "h": 385
+        },
+        "area": 73938
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/action-03.webp",
+        "width": 357,
+        "height": 384,
+        "sourceBounds": {
+          "x": 550,
+          "y": 388,
+          "w": 357,
+          "h": 384
+        },
+        "area": 79040
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/action-04.webp",
+        "width": 362,
+        "height": 374,
+        "sourceBounds": {
+          "x": 105,
+          "y": 775,
+          "w": 362,
+          "h": 374
+        },
+        "area": 75507
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/action-05.webp",
+        "width": 381,
+        "height": 371,
+        "sourceBounds": {
+          "x": 543,
+          "y": 778,
+          "w": 381,
+          "h": 371
+        },
+        "area": 80529
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/action-06.webp",
+        "width": 364,
+        "height": 365,
+        "sourceBounds": {
+          "x": 98,
+          "y": 1151,
+          "w": 364,
+          "h": 365
+        },
+        "area": 82745
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/action-07.webp",
+        "width": 367,
+        "height": 366,
+        "sourceBounds": {
+          "x": 564,
+          "y": 1151,
+          "w": 367,
+          "h": 366
+        },
+        "area": 81807
+      }
+    ],
+    "attack": [
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/attack-00.webp",
+        "width": 421,
+        "height": 377,
+        "sourceBounds": {
+          "x": 56,
+          "y": 5,
+          "w": 421,
+          "h": 377
+        },
+        "area": 87203
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/attack-01.webp",
+        "width": 389,
+        "height": 372,
+        "sourceBounds": {
+          "x": 567,
+          "y": 9,
+          "w": 389,
+          "h": 372
+        },
+        "area": 83788
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/attack-02.webp",
+        "width": 440,
+        "height": 376,
+        "sourceBounds": {
+          "x": 46,
+          "y": 382,
+          "w": 440,
+          "h": 376
+        },
+        "area": 95124
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/attack-03.webp",
+        "width": 427,
+        "height": 376,
+        "sourceBounds": {
+          "x": 551,
+          "y": 386,
+          "w": 427,
+          "h": 376
+        },
+        "area": 93924
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/attack-04.webp",
+        "width": 429,
+        "height": 364,
+        "sourceBounds": {
+          "x": 48,
+          "y": 757,
+          "w": 429,
+          "h": 364
+        },
+        "area": 90470
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/attack-05.webp",
+        "width": 478,
+        "height": 358,
+        "sourceBounds": {
+          "x": 527,
+          "y": 762,
+          "w": 478,
+          "h": 358
+        },
+        "area": 86075
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/attack-06.webp",
+        "width": 393,
+        "height": 401,
+        "sourceBounds": {
+          "x": 63,
+          "y": 1115,
+          "w": 393,
+          "h": 401
+        },
+        "area": 90671
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/attack-07.webp",
+        "width": 367,
+        "height": 403,
+        "sourceBounds": {
+          "x": 568,
+          "y": 1117,
+          "w": 367,
+          "h": 403
+        },
+        "area": 83068
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/ending-00.webp",
+        "width": 364,
+        "height": 382,
+        "sourceBounds": {
+          "x": 86,
+          "y": 4,
+          "w": 364,
+          "h": 382
+        },
+        "area": 77586
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/ending-01.webp",
+        "width": 356,
+        "height": 376,
+        "sourceBounds": {
+          "x": 574,
+          "y": 9,
+          "w": 356,
+          "h": 376
+        },
+        "area": 76072
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/ending-02.webp",
+        "width": 371,
+        "height": 378,
+        "sourceBounds": {
+          "x": 74,
+          "y": 385,
+          "w": 371,
+          "h": 378
+        },
+        "area": 80329
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/ending-03.webp",
+        "width": 383,
+        "height": 372,
+        "sourceBounds": {
+          "x": 557,
+          "y": 390,
+          "w": 383,
+          "h": 372
+        },
+        "area": 81769
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/ending-04.webp",
+        "width": 351,
+        "height": 363,
+        "sourceBounds": {
+          "x": 93,
+          "y": 769,
+          "w": 351,
+          "h": 363
+        },
+        "area": 76983
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/ending-05.webp",
+        "width": 366,
+        "height": 371,
+        "sourceBounds": {
+          "x": 577,
+          "y": 763,
+          "w": 366,
+          "h": 371
+        },
+        "area": 78748
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/ending-06.webp",
+        "width": 368,
+        "height": 394,
+        "sourceBounds": {
+          "x": 105,
+          "y": 1129,
+          "w": 368,
+          "h": 394
+        },
+        "area": 82392
+      },
+      {
+        "file": "docs/art/layered-specials/big-bald-energy/actors/ending-07.webp",
+        "width": 375,
+        "height": 394,
+        "sourceBounds": {
+          "x": 579,
+          "y": 1130,
+          "w": 375,
+          "h": 394
+        },
+        "area": 79684
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

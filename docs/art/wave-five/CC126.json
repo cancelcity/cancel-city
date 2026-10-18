@@ -1,0 +1,191 @@
+{
+  "characterId": "CC126",
+  "characterName": "Godzilla, Zoning Violation",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC126-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest connected alpha bodies assigned row-major; detached props assigned whole to nearest body. Generated alpha preserved within 3px contour fringe; uniformly cropped, scaled and padded."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC126-0.webp",
+      "sourceExtraction": {
+        "left": 2,
+        "top": 2,
+        "width": 441,
+        "height": 482
+      },
+      "scale": 0.9128630705394191,
+      "suggestedAnchor": {
+        "x": 230,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 57,
+        "top": 19,
+        "right": 456,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 134660,
+        "transparentFraction": 0.5136871337890625
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC126-1.webp",
+      "sourceExtraction": {
+        "left": 487,
+        "top": 21,
+        "width": 428,
+        "height": 453
+      },
+      "scale": 0.9713024282560706,
+      "suggestedAnchor": {
+        "x": 175,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 50,
+        "top": 18,
+        "right": 464,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 125039,
+        "transparentFraction": 0.4769859313964844
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC126-2.webp",
+      "sourceExtraction": {
+        "left": 936,
+        "top": 62,
+        "width": 590,
+        "height": 410
+      },
+      "scale": 0.7457627118644068,
+      "suggestedAnchor": {
+        "x": 172,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 37,
+        "top": 151,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 164473,
+        "transparentFraction": 0.6274147033691406
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC126-3.webp",
+      "sourceExtraction": {
+        "left": 8,
+        "top": 465,
+        "width": 505,
+        "height": 536
+      },
+      "scale": 0.8208955223880597,
+      "suggestedAnchor": {
+        "x": 209,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 49,
+        "top": 19,
+        "right": 463,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 151808,
+        "transparentFraction": 0.5791015625
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC126-4.webp",
+      "sourceExtraction": {
+        "left": 506,
+        "top": 519,
+        "width": 478,
+        "height": 476
+      },
+      "scale": 0.9205020920502092,
+      "suggestedAnchor": {
+        "x": 294,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 37,
+        "top": 20,
+        "right": 474,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 138862,
+        "transparentFraction": 0.5297164916992188
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC126-5.webp",
+      "sourceExtraction": {
+        "left": 1002,
+        "top": 571,
+        "width": 526,
+        "height": 431
+      },
+      "scale": 0.8365019011406845,
+      "suggestedAnchor": {
+        "x": 268,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 97,
+        "right": 476,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 145341,
+        "transparentFraction": 0.5544319152832031
+      }
+    }
+  ],
+  "anchorMethod": "Median of solid lowest36px; y at lowest alpha>32 art pixel."
+}

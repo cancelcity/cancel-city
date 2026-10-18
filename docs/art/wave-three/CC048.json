@@ -1,0 +1,178 @@
+{
+  "characterId": "CC048",
+  "characterName": "Algorithm Daddy",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-three/CC048-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2,
+    "cutsX": [
+      0,
+      521,
+      1035,
+      1536
+    ],
+    "cutsY": [
+      0,
+      515,
+      1024
+    ]
+  },
+  "preparation": "Crop at actual transparent gutters; tight visible-alpha bounds with 4px margin; uniform scale and alpha padding with Sharp. No repainting. Alpha bounds threshold 32.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC048-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 92,
+        "top": 23,
+        "right": 417,
+        "bottom": 461
+      },
+      "transparentPixels": 168498,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 79,
+        "top": 4,
+        "width": 378,
+        "height": 507
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC048-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 78,
+        "top": 49,
+        "right": 432,
+        "bottom": 461
+      },
+      "transparentPixels": 158410,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 557,
+        "top": 29,
+        "width": 412,
+        "height": 477
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "path": "/assets/actors/CC048-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 54,
+        "top": 57,
+        "right": 456,
+        "bottom": 462
+      },
+      "transparentPixels": 155730,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 1061,
+        "top": 38,
+        "width": 465,
+        "height": 469
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC048-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 44,
+        "top": 28,
+        "right": 466,
+        "bottom": 461
+      },
+      "transparentPixels": 127859,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 13,
+        "top": 520,
+        "width": 487,
+        "height": 502
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC048-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 55,
+        "top": 53,
+        "right": 456,
+        "bottom": 462
+      },
+      "transparentPixels": 152593,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 543,
+        "top": 530,
+        "width": 466,
+        "height": 474
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "path": "/assets/actors/CC048-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 466
+      },
+      "alphaBounds": {
+        "left": 81,
+        "top": 40,
+        "right": 430,
+        "bottom": 462
+      },
+      "transparentPixels": 164141,
+      "opaqueEdgePixels": 0,
+      "sourceCrop": {
+        "left": 1111,
+        "top": 531,
+        "width": 407,
+        "height": 488
+      }
+    }
+  ]
+}

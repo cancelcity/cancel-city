@@ -1,0 +1,5 @@
+{
+  "tool": "built-in image_gen",
+  "technicalProcessing": "global connected alpha contour crop; scale pad encode only",
+  "likenessAdaptation": false
+}

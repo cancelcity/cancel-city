@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/nanami/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/nanami/actors/action-00.webp",
+        "width": 284,
+        "height": 505,
+        "sourceBounds": {
+          "x": 50,
+          "y": 16,
+          "w": 284,
+          "h": 505
+        },
+        "area": 72966
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/action-01.webp",
+        "width": 279,
+        "height": 506,
+        "sourceBounds": {
+          "x": 427,
+          "y": 17,
+          "w": 279,
+          "h": 506
+        },
+        "area": 73141
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/action-02.webp",
+        "width": 307,
+        "height": 507,
+        "sourceBounds": {
+          "x": 766,
+          "y": 16,
+          "w": 307,
+          "h": 507
+        },
+        "area": 74587
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/action-03.webp",
+        "width": 411,
+        "height": 410,
+        "sourceBounds": {
+          "x": 1121,
+          "y": 102,
+          "w": 411,
+          "h": 410
+        },
+        "area": 67168
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/action-04.webp",
+        "width": 365,
+        "height": 451,
+        "sourceBounds": {
+          "x": 18,
+          "y": 523,
+          "w": 365,
+          "h": 451
+        },
+        "area": 67197
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/action-05.webp",
+        "width": 493,
+        "height": 344,
+        "sourceBounds": {
+          "x": 381,
+          "y": 615,
+          "w": 493,
+          "h": 344
+        },
+        "area": 70691
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/action-06.webp",
+        "width": 445,
+        "height": 337,
+        "sourceBounds": {
+          "x": 857,
+          "y": 632,
+          "w": 445,
+          "h": 337
+        },
+        "area": 61258
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/action-07.webp",
+        "width": 267,
+        "height": 503,
+        "sourceBounds": {
+          "x": 1242,
+          "y": 507,
+          "w": 267,
+          "h": 503
+        },
+        "area": 69272
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/nanami/actors/ending-00.webp",
+        "width": 368,
+        "height": 515,
+        "sourceBounds": {
+          "x": 11,
+          "y": 4,
+          "w": 368,
+          "h": 515
+        },
+        "area": 78080
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/ending-01.webp",
+        "width": 313,
+        "height": 513,
+        "sourceBounds": {
+          "x": 435,
+          "y": 8,
+          "w": 313,
+          "h": 513
+        },
+        "area": 75253
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/ending-02.webp",
+        "width": 317,
+        "height": 515,
+        "sourceBounds": {
+          "x": 792,
+          "y": 6,
+          "w": 317,
+          "h": 515
+        },
+        "area": 78589
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/ending-03.webp",
+        "width": 385,
+        "height": 515,
+        "sourceBounds": {
+          "x": 1148,
+          "y": 5,
+          "w": 385,
+          "h": 515
+        },
+        "area": 84278
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/ending-04.webp",
+        "width": 372,
+        "height": 489,
+        "sourceBounds": {
+          "x": 46,
+          "y": 516,
+          "w": 372,
+          "h": 489
+        },
+        "area": 72867
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/ending-05.webp",
+        "width": 354,
+        "height": 481,
+        "sourceBounds": {
+          "x": 459,
+          "y": 524,
+          "w": 354,
+          "h": 481
+        },
+        "area": 65695
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/ending-06.webp",
+        "width": 285,
+        "height": 493,
+        "sourceBounds": {
+          "x": 835,
+          "y": 519,
+          "w": 285,
+          "h": 493
+        },
+        "area": 68517
+      },
+      {
+        "file": "docs/art/layered-specials/nanami/actors/ending-07.webp",
+        "width": 275,
+        "height": 494,
+        "sourceBounds": {
+          "x": 1206,
+          "y": 518,
+          "w": 275,
+          "h": 494
+        },
+        "area": 67610
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

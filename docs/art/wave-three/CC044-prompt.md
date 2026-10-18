@@ -1,0 +1,4 @@
+# Clip Farmer artwork
+Built-in image_gen; original fictional adult Black streamer, deep dark brown skin, short twists, orange jacket and headphones, black joggers and orange sneakers. Punk comic engraving, thick scratched black ink, rich crosshatching and halftone distress. Portrait: absurd exaggerated shocked reaction to an ordinary bagel while filming through phone ringlight; acid yellow/magenta/cyan splatter background; no text or logos.
+
+Acting sheet: use approved portrait as exact identity/style reference. True alpha 1536x1024, six full-body poses strict3x2 grid, row-major: idle bagel/ringlight, windup ringlight overhead, strike forward right, victory camera pointing, flinch recoil, embarrassed zero-view reaction. No backdrop or floating effects. Cell crops preserve complete bodies; original alpha retained, uniform scale0.78 and ground padding. Metadata and inspected review sheet alongside.

@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "group": "occult",
+  "generated_date_utc": "2026-10-12",
+  "mode": "built-in image_gen only",
+  "scope": "CC026, CC027, CC028, CC029, CC030, CC041, CC042 PNGs and this provenance file only",
+  "assets": [
+    {
+      "id": "CC026",
+      "name": "Final Boss Karen",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC026.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "reference_inspected": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: furious Karen with a phone in one hand, summoning a sinister spectral manager with the other.",
+      "selected_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-485de9d0-d4bc-4b14-a3d4-1e3845c24c4c.png",
+      "destination": "docs/art/specials/CC026.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC026.png",
+      "copy_method": "byte-for-byte unchanged copy of selected PNG; no raster postprocessing",
+      "edit_history": [
+        {
+          "operation": "generate_action_pose",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: furious Karen with a phone in one hand, summoning a sinister spectral manager with the other.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6673f2c4-f18e-41bf-a5d5-84e816ac13c5.png",
+          "selected": false
+        },
+        {
+          "operation": "repair_framing",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: identity-preserve. Edit target: attached transparent Final Boss Karen action sprite. Keep this exact furious blonde woman identity, sunglasses, pearl jewelry, costume, blue phone, complete lunging body and cyan-magenta spectral manager, hand-inked painted punk rendering, all colors and action unchanged. Change only framing: REDUCE the entire subject and every effect to fit within the middle 80 percent of the canvas, centered, leaving AT LEAST 8 percent absolutely clear transparent margin on each of all four sides. Full shoes, hair, fingers, phone and ghost must be present. Remove any stray isolated pixels beyond this central subject. True transparent alpha background; no solid fill, no checkerboard, no new background, no frame, no text. All visible content must remain strictly away from every image edge. The full silhouette's longest dimension must be no more than 80 percent of the canvas.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/generated_images/exec-6673f2c4-f18e-41bf-a5d5-84e816ac13c5.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-485de9d0-d4bc-4b14-a3d4-1e3845c24c4c.png",
+          "selected": true
+        }
+      ],
+      "quality": {
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          55,
+          1236,
+          1254
+        ],
+        "alpha_gt_16_bbox": [
+          272,
+          121,
+          1036,
+          1146
+        ],
+        "fully_transparent_fraction": 0.67438,
+        "sha256": "887ec36b01895ab7e000d1d9668645ea984bab2ddccd1415e729c5b86cb537f4",
+        "file_size_bytes": 1448482,
+        "visually_inspected": true,
+        "genuine_alpha": true,
+        "full_body_and_props_complete": true,
+        "identity_and_style": "passed",
+        "visual_notes": "Identity retained: swept blonde hair, oversized sunglasses, pearl jewelry, black blazer, brown top, blue phone and furious face. Full lunging body, both heels and cyan-magenta spectral manager complete. Framing repair reduced entire illustration; visible silhouette has at least 8% margins.",
+        "margin_note": "Original built-in alpha retained. Visible margins may be below 8%; root authorized acceptance of complete silhouettes and applies common transparent canvas/baseline during runtime technical encoding. Near-zero alpha specks may lie beyond alpha>16 silhouette."
+      }
+    },
+    {
+      "id": "CC027",
+      "name": "Doomsday Prepper",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC027.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC027.png",
+      "reference_inspected": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: doomsday prepper bracing behind a shield made from canned beans and survival supplies.",
+      "selected_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-a2537060-c632-4c62-ada6-4a60cacd41cc.png",
+      "destination": "docs/art/specials/CC027.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC027.png",
+      "copy_method": "byte-for-byte unchanged copy of selected PNG; no raster postprocessing",
+      "edit_history": [
+        {
+          "operation": "generate_action_pose",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: doomsday prepper bracing behind a shield made from canned beans and survival supplies.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC027.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-a2537060-c632-4c62-ada6-4a60cacd41cc.png",
+          "selected": true
+        }
+      ],
+      "quality": {
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          1246,
+          1254
+        ],
+        "alpha_gt_16_bbox": [
+          38,
+          15,
+          1225,
+          1238
+        ],
+        "fully_transparent_fraction": 0.39773,
+        "sha256": "f86f51164e408201fcd1f1a6115d231403e27dfe81265edcd2a6519f4bb2114c",
+        "file_size_bytes": 2710950,
+        "visually_inspected": true,
+        "genuine_alpha": true,
+        "full_body_and_props_complete": true,
+        "identity_and_style": "passed",
+        "visual_notes": "Identity retained: bulging frightened eyes, shaggy brown beard/hair, camo boonie hat and overloaded olive survival kit. Full bracing body and both boots complete. Shield built from cans, rope and survival supplies fully visible.",
+        "margin_note": "Original built-in alpha retained. Visible margins may be below 8%; root authorized acceptance of complete silhouettes and applies common transparent canvas/baseline during runtime technical encoding. Near-zero alpha specks may lie beyond alpha>16 silhouette."
+      }
+    },
+    {
+      "id": "CC028",
+      "name": "Conspiracy Mom",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC028.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC028.png",
+      "reference_inspected": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: conspiracy mother pulling red strings like a puppet master while pointing dramatically.",
+      "selected_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6f7d9aa5-2a50-4dd6-be84-d868607f4296.png",
+      "destination": "docs/art/specials/CC028.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC028.png",
+      "copy_method": "byte-for-byte unchanged copy of selected PNG; no raster postprocessing",
+      "edit_history": [
+        {
+          "operation": "generate_action_pose",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: conspiracy mother pulling red strings like a puppet master while pointing dramatically.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC028.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6f7d9aa5-2a50-4dd6-be84-d868607f4296.png",
+          "selected": true
+        }
+      ],
+      "quality": {
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          1250,
+          1254
+        ],
+        "alpha_gt_16_bbox": [
+          35,
+          1,
+          1230,
+          1235
+        ],
+        "fully_transparent_fraction": 0.45972,
+        "sha256": "199a619312e4ac1d573572ffc9938638019d8678613ac38c36645fb8e022a7ff",
+        "file_size_bytes": 2505423,
+        "visually_inspected": true,
+        "genuine_alpha": true,
+        "full_body_and_props_complete": true,
+        "identity_and_style": "passed",
+        "visual_notes": "Identity retained: blonde hair, foil hat, startled face, pearls, purple cardigan and floral dress. New wide lunging pose, red puppet strings/photos and extended pointing finger complete. Foil-hat tip is extremely near top but intact; no clipped subject or held prop.",
+        "margin_note": "Original built-in alpha retained. Visible margins may be below 8%; root authorized acceptance of complete silhouettes and applies common transparent canvas/baseline during runtime technical encoding. Near-zero alpha specks may lie beyond alpha>16 silhouette."
+      }
+    },
+    {
+      "id": "CC029",
+      "name": "Doomscroll Parasite",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC029.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC029.png",
+      "reference_inspected": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: doomscroll parasite hunched over a glowing phone, spiraling screen ghosts around it.",
+      "selected_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-f0ac3c61-1fa4-410d-a1a9-fed8a8418380.png",
+      "destination": "docs/art/specials/CC029.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC029.png",
+      "copy_method": "byte-for-byte unchanged copy of selected PNG; no raster postprocessing",
+      "edit_history": [
+        {
+          "operation": "generate_action_pose",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: doomscroll parasite hunched over a glowing phone, spiraling screen ghosts around it.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC029.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-f0ac3c61-1fa4-410d-a1a9-fed8a8418380.png",
+          "selected": true
+        }
+      ],
+      "quality": {
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          16,
+          1244,
+          1254
+        ],
+        "alpha_gt_16_bbox": [
+          100,
+          19,
+          1219,
+          1236
+        ],
+        "fully_transparent_fraction": 0.45723,
+        "sha256": "f0d37f215777a8e47e9c2bd07affd079940b96473e23ae72be713d5b59eb1736",
+        "file_size_bytes": 2423713,
+        "visually_inspected": true,
+        "genuine_alpha": true,
+        "full_body_and_props_complete": true,
+        "identity_and_style": "passed",
+        "visual_notes": "Identity retained: pale gaunt face, bulging bloodshot eyes, messy dark hair, gray torn clothes and magenta tentacles. Complete crouched body/shoes, glowing phone and cyan screen ghosts. Dynamic hunched pose preserves parasite silhouette.",
+        "margin_note": "Original built-in alpha retained. Visible margins may be below 8%; root authorized acceptance of complete silhouettes and applies common transparent canvas/baseline during runtime technical encoding. Near-zero alpha specks may lie beyond alpha>16 silhouette."
+      }
+    },
+    {
+      "id": "CC030",
+      "name": "Cancelled Messiah",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC030.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC030.png",
+      "reference_inspected": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: cancelled messiah rising triumphantly under a golden spotlight with comeback energy.",
+      "selected_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6a8456c0-f4d4-4359-9684-f2762c4706a6.png",
+      "destination": "docs/art/specials/CC030.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC030.png",
+      "copy_method": "byte-for-byte unchanged copy of selected PNG; no raster postprocessing",
+      "edit_history": [
+        {
+          "operation": "generate_action_pose",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: cancelled messiah rising triumphantly under a golden spotlight with comeback energy.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC030.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6a8456c0-f4d4-4359-9684-f2762c4706a6.png",
+          "selected": true
+        }
+      ],
+      "quality": {
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          0,
+          1242,
+          1254
+        ],
+        "alpha_gt_16_bbox": [
+          164,
+          4,
+          1140,
+          1251
+        ],
+        "fully_transparent_fraction": 0.50386,
+        "sha256": "772911207ebf64e702da76731af94994c73e0a0a4cad6fdbb13a83aa90c3f420",
+        "file_size_bytes": 2351371,
+        "visually_inspected": true,
+        "genuine_alpha": true,
+        "full_body_and_props_complete": true,
+        "identity_and_style": "passed",
+        "visual_notes": "Identity retained: messy blonde hair, white-X sunglasses, distressed cream robe, layered gold jewelry, golden halo/staff and black phone. Complete triumphant rising pose, sandals, staff and raised phone. Golden halo/glow conveys comeback energy.",
+        "margin_note": "Original built-in alpha retained. Visible margins may be below 8%; root authorized acceptance of complete silhouettes and applies common transparent canvas/baseline during runtime technical encoding. Near-zero alpha specks may lie beyond alpha>16 silhouette."
+      }
+    },
+    {
+      "id": "CC041",
+      "name": "Ye of Chaos",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC041.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC041.png",
+      "reference_inspected": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional designer-armored headline king standing powerfully atop a speaker with a microphone.",
+      "selected_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-b716a413-db1b-40ee-b9b0-d2bedc738e7f.png",
+      "destination": "docs/art/specials/CC041.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC041.png",
+      "copy_method": "byte-for-byte unchanged copy of selected PNG; no raster postprocessing",
+      "edit_history": [
+        {
+          "operation": "generate_action_pose",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional designer-armored headline king standing powerfully atop a speaker with a microphone.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC041.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3894c4af-0c42-4af7-b310-2944465d3578.png",
+          "selected": false
+        },
+        {
+          "operation": "repair_clipped_speaker",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: identity-preserve. Edit target: attached Ye of Chaos transparent action sprite. Preserve this exact designer-armored headline king's face, dark skin, shaved hair, beard, gold crowned microphone, black-magenta huge coat, gold armor trims, power stance, complete boots, hand gestures, hand-inked painted punk rendering and palette. Repair the clipped speaker: show the ENTIRE rectangular speaker below his raised boot, with all four sides and bottom clearly visible. Reduce and center the whole character and speaker together so full body, microphone, every coat edge and the complete speaker all fit inside the canvas with 8 percent clear margin on all sides. Keep the same character action. Actual transparent alpha background. No scenery, no solid background, no text, no frame. The bottom of the speaker must not touch or cross the canvas edge.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/generated_images/exec-3894c4af-0c42-4af7-b310-2944465d3578.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-b716a413-db1b-40ee-b9b0-d2bedc738e7f.png",
+          "selected": true
+        }
+      ],
+      "quality": {
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          50,
+          1230,
+          1238
+        ],
+        "alpha_gt_16_bbox": [
+          247,
+          52,
+          1010,
+          1211
+        ],
+        "fully_transparent_fraction": 0.60823,
+        "sha256": "9226ffa7412d700327b3dcbf967e85a4713ab3c9dfcbfd2efda9f693626c53ca",
+        "file_size_bytes": 1773637,
+        "visually_inspected": true,
+        "genuine_alpha": true,
+        "full_body_and_props_complete": true,
+        "identity_and_style": "passed",
+        "visual_notes": "Identity retained: dark-skinned shaved-haired goateed face, enormous black-magenta coat, gold king details and crowned microphone. Initial speaker bottom was actually clipped; built-in repair completed the entire speaker with four sides/bottom. Complete boots, coat and hands.",
+        "margin_note": "Original built-in alpha retained. Visible margins may be below 8%; root authorized acceptance of complete silhouettes and applies common transparent canvas/baseline during runtime technical encoding. Near-zero alpha specks may lie beyond alpha>16 silhouette."
+      }
+    },
+    {
+      "id": "CC042",
+      "name": "Apology Influencer",
+      "faction": "cursed-society",
+      "reference": "docs/art/residents/CC042.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC042.png",
+      "reference_inspected": true,
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: apology influencer melodramatically crying while presenting a merch hoodie under a ring light.",
+      "selected_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-0029540d-46b3-42e2-9a6f-b50668c94560.png",
+      "destination": "docs/art/specials/CC042.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC042.png",
+      "copy_method": "byte-for-byte unchanged copy of selected PNG; no raster postprocessing",
+      "edit_history": [
+        {
+          "operation": "generate_action_pose",
+          "tool": "image_gen.imagegen",
+          "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: apology influencer melodramatically crying while presenting a merch hoodie under a ring light.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC042.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-0029540d-46b3-42e2-9a6f-b50668c94560.png",
+          "selected": true
+        }
+      ],
+      "quality": {
+        "mode": "RGBA",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "alpha_bbox": [
+          0,
+          5,
+          1236,
+          1254
+        ],
+        "alpha_gt_16_bbox": [
+          58,
+          12,
+          1230,
+          1232
+        ],
+        "fully_transparent_fraction": 0.40673,
+        "sha256": "c04d68e9adf389e7c64107058c987662da624881b86e81d21c98ed33ecbdf3a5",
+        "file_size_bytes": 2632491,
+        "visually_inspected": true,
+        "genuine_alpha": true,
+        "full_body_and_props_complete": true,
+        "identity_and_style": "passed",
+        "visual_notes": "Identity retained: swept blonde hair, tearful smile, turquoise hoodie and pale complexion. New kneeling pose with full shoes, bright pink trousers, merch hoodie and ring-light phone/tripod complete.",
+        "margin_note": "Original built-in alpha retained. Visible margins may be below 8%; root authorized acceptance of complete silhouettes and applies common transparent canvas/baseline during runtime technical encoding. Near-zero alpha specks may lie beyond alpha>16 silhouette."
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "complete": [
+    "CC067",
+    "CC068",
+    "CC069",
+    "CC070",
+    "CC071",
+    "CC072",
+    "CC073",
+    "CC074"
+  ],
+  "portraitOnly": [
+    "CC075"
+  ],
+  "notStarted": [
+    "CC076",
+    "CC077",
+    "CC078",
+    "CC079",
+    "CC080"
+  ],
+  "blocked": "Built-in image_gen usage limit; no CLI/API fallback authorized"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "CC004",
+  "name": "UsoppGPT",
+  "portrait": "/workspace/scratch/80a8c8c1affe/generated_images/exec-91aaf726-fda3-4eda-ae9f-f604c14449ff.png",
+  "portraitPrompt": "Use case: stylized-concept. Asset: opaque square gacha CARD PORTRAIT, not a card template. Input images are STYLE ONLY, do not copy their characters. Match their gritty expressive underground comic style exactly: scratched heavy black pen ink, dense crosshatching, coarse halftone, saturated flat color, splatter, stark black city silhouette skyline. Large grotesquely expressive face, dynamic foreshortened foreground prop, full bleed, no margins. No beige, no soft 3D, no clean anime cel shade, no text, no border, no watermark. Square 1024x1024.\nSubject: UsoppGPT. An unmistakably adult Usopp from One Piece: famously long nose, curly dark hair, yellow bandana, goggles resting on forehead, brown/yellow overalls, bare strong arms. One hand brandishes slingshot, the other a glowing AI prompt smartphone; his terrified face insists his outrageous generated lies are true. Extreme expressive close-up, face and long nose fill frame; coherent pirate clothing, no duplicate hands.\nPalette: acid lime with magenta splatter and cyan sparks.",
+  "sheet": "/workspace/scratch/80a8c8c1affe/generated_images/exec-e9cd2c47-36e9-441b-9e97-e9485c7bd13a.png",
+  "sheetPrompt": "Use case: illustration-story. Asset: real transparent alpha full-character sprite atlas. Reference image is IDENTITY and INK STYLE only. Create exactly SIX intact WHOLE-character poses in a regular THREE COLUMN by TWO ROW grid, landscape 1536x1024. No panels, no labels, no city, no background, no floor shadows. Every cell shows the COMPLETE character from head to both feet, and all held props, at consistent physical scale, generous 35px outer margins and 35px transparent gutters. No clipping or overlapping cells. Every limb naturally attached, hands anatomically correct. Keep face, hair, outfit and held props identical to reference; heavy scratched black ink, crosshatching, coarse halftone, saturated colors. Three-quarter facing right. Character: An unmistakably adult Usopp from One Piece: famously long nose, curly dark hair, yellow bandana, goggles resting on forehead, brown/yellow overalls, bare strong arms. One hand brandishes slingshot, the other a glowing AI prompt smartphone; his terrified face insists his outrageous generated lies are true.  Ordered cells left-to-right: 0 neutral standing slingshot and phone; 1 tense aim with slingshot gripped correctly; 2 dramatic firing lunge slingshot held in hands; 3 panicked recoil gripping phone; 4 proud victory displaying AI phone; 5 comically terrified crouch with both boots on ground and phone held. Bodies remain single illustrations, never separated limbs. No floating objects outside cell.",
+  "anchors": [
+    [
+      198,
+      496
+    ],
+    [
+      748,
+      477
+    ],
+    [
+      1275,
+      478
+    ],
+    [
+      307,
+      1011
+    ],
+    [
+      734,
+      1010
+    ],
+    [
+      1275,
+      977
+    ]
+  ],
+  "regions": [
+    [
+      0,
+      0,
+      512,
+      512
+    ],
+    [
+      512,
+      0,
+      478,
+      484
+    ],
+    [
+      990,
+      0,
+      546,
+      512
+    ],
+    [
+      0,
+      512,
+      512,
+      512
+    ],
+    [
+      512,
+      484,
+      512,
+      540
+    ],
+    [
+      1024,
+      512,
+      512,
+      512
+    ]
+  ],
+  "generator": "built-in image_gen",
+  "processing": "Sharp mechanical alpha cell crop and WebP encoding. Whole-character images only; manual foot anchors. Originals preserved."
+}

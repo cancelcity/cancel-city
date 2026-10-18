@@ -1,0 +1,646 @@
+{
+  "reference": "/cinema/gokart/",
+  "note": "Production briefs. Presence here does not mean an animation is rendered or published; current status is recorded separately in next-twenty.json.",
+  "cards": [
+    {
+      "cardId": "CC063",
+      "slug": "infinite-rizz",
+      "title": "Infinite Rizz: Domain Expansion: Main Character",
+      "tagline": "Untouchable confidence.\nUnrecoverable embarrassment.",
+      "duration": 5.9,
+      "impact": 3.05,
+      "ends": [
+        0.6,
+        1.4,
+        2.9,
+        3.75,
+        4.5,
+        5.9
+      ],
+      "titles": [
+        "No eye contact",
+        "The main character",
+        "Personal space",
+        "Infinity",
+        "Rizz secured",
+        "Blindfold malfunction"
+      ],
+      "descriptions": [
+        "A white-haired show-off lifts the edge of his black blindfold.",
+        "He makes a finger seal above the neon city.",
+        "A domain grows around his intact body while an incoming attack slows to a stop.",
+        "Infinity holds the attack at a humiliating distance and returns the entire gesture.",
+        "He relaxes into a smug victory pose.",
+        "His blindfold slips. He tries to rescue his dignity while the domain keeps working."
+      ]
+    },
+    {
+      "cardId": "CC064",
+      "slug": "big-bald-energy",
+      "title": "Big Bald Energy: One Punch, One Coupon",
+      "tagline": "A perfectly ordinary punch.\nAn extraordinary discount.",
+      "duration": 5.7,
+      "impact": 2.9,
+      "ends": [
+        0.55,
+        1.35,
+        2.75,
+        3.6,
+        4.35,
+        5.7
+      ],
+      "titles": [
+        "Sale day",
+        "The coupon",
+        "Almost some effort",
+        "One punch",
+        "The real priority",
+        "Expired"
+      ],
+      "descriptions": [
+        "A bored bald hero checks his grocery coupon.",
+        "He waits outside a battered discount supermarket with his shopping bag.",
+        "One restrained punch travels through eight whole-body drawings.",
+        "A giant shock front clears the forecourt while his groceries stay safe.",
+        "He immediately checks the coupon again.",
+        "The coupon expired yesterday. The victory receives no further attention."
+      ]
+    },
+    {
+      "cardId": "CC066",
+      "slug": "eternal-second",
+      "title": "The Eternal 2nd: Runner-Up Final Flash",
+      "tagline": "Maximum power.\nConsistent placement.",
+      "duration": 6,
+      "impact": 3.15,
+      "ends": [
+        0.6,
+        1.45,
+        3,
+        3.85,
+        4.55,
+        6
+      ],
+      "titles": [
+        "This time",
+        "The charge",
+        "Final flash",
+        "Maximum effort",
+        "Awaiting results",
+        "Runner-up"
+      ],
+      "descriptions": [
+        "A furious black-haired warrior expects to win this time.",
+        "He braces in an empty tournament arena.",
+        "His hands come together and thrust forward as the enormous beam charges.",
+        "A colossal golden beam tears across the arena.",
+        "He waits for his award, already smiling.",
+        "A silver medal arrives. The podium still says second place. He has a very small tantrum."
+      ]
+    },
+    {
+      "cardId": "CC005",
+      "slug": "sauron-surveillance",
+      "title": "Sauron Surveillance: One Eye to Track Them All",
+      "tagline": "Search history acquired.\nCookies are mandatory.",
+      "duration": 5.9,
+      "impact": 3.1,
+      "ends": [
+        0.6,
+        1.4,
+        2.9,
+        3.75,
+        4.45,
+        5.9
+      ],
+      "titles": [
+        "Always watching",
+        "Privacy tower",
+        "Profile acquired",
+        "Mandatory policy",
+        "Consent required",
+        "Accept all"
+      ],
+      "descriptions": [
+        "A flaming surveillance eye narrows inside a spiked black tower.",
+        "The tower watches an empty corporate courtyard through its attached cameras.",
+        "A scanning cone sweeps the street and creates a fictional profile.",
+        "An impossibly long privacy policy crashes through the courtyard.",
+        "The eye tries to keep its terrifying stare as cookies gather below.",
+        "The eye also accepts all cookies. The privacy policy remains enormous."
+      ]
+    },
+    {
+      "cardId": "CC023",
+      "slug": "fraudo-baggins",
+      "title": "Fraudo Baggins: One Ring to Refer Them All",
+      "tagline": "A once-in-a-lifetime opportunity.\nFor every new referral.",
+      "duration": 5.9,
+      "impact": 3.1,
+      "ends": [
+        0.6,
+        1.4,
+        2.95,
+        3.8,
+        4.5,
+        5.9
+      ],
+      "titles": [
+        "The pitch",
+        "The referral Shire",
+        "One ring",
+        "Refer them all",
+        "Guaranteed returns",
+        "The rug pull"
+      ],
+      "descriptions": [
+        "A smiling hobbit shows a tiny gold ring.",
+        "He opens his investment pitch in a suspiciously welcoming Shire courtyard.",
+        "He throws the ring and it grows into a gigantic gold referral loop.",
+        "The loop sweeps a wall of guaranteed-return claims across the courtyard.",
+        "The welcome carpet begins rolling out from under him.",
+        "The carpet unravels the entire pitch. The conman lands flat and tries to keep smiling."
+      ]
+    },
+    {
+      "cardId": "CC135",
+      "slug": "daenerys-airfryer",
+      "title": "Daenerys Airfryer: Dracarys, Preheat",
+      "tagline": "Mother of countertop appliances.\nBreaker of cooking timers.",
+      "duration": 6.1,
+      "impact": 3.2,
+      "ends": [
+        0.6,
+        1.4,
+        3.05,
+        3.9,
+        4.6,
+        6.1
+      ],
+      "titles": [
+        "The queen",
+        "Three appliances",
+        "Dracarys",
+        "Preheat complete",
+        "The royal result",
+        "One tiny morsel"
+      ],
+      "descriptions": [
+        "A platinum-haired queen commands the room.",
+        "Three black dragon-head air fryers wait in the throne-room kitchen.",
+        "Her grand command is answered by a preheating countdown.",
+        "All three appliances launch a small scorched projectile after the ready chime.",
+        "She waits for an appropriately royal result.",
+        "The queen inspects one tiny crisped morsel. The appliances are very pleased with themselves."
+      ]
+    },
+    {
+      "cardId": "CC002",
+      "slug": "light-yagamod",
+      "title": "Light Yagamod: Ban Note",
+      "tagline": "One username.\nTotal control.",
+      "duration": 5.7,
+      "impact": 3,
+      "ends": [
+        0.55,
+        1.35,
+        2.8,
+        3.65,
+        4.35,
+        5.7
+      ],
+      "titles": [
+        "The moderator",
+        "The black notebook",
+        "Username entered",
+        "Channel deleted",
+        "The perfect purge",
+        "Tech support banned"
+      ],
+      "descriptions": [
+        "A smug moderator opens a black notebook.",
+        "He raises his pen beside a wall of glowing moderation screens.",
+        "One furious written username unleashes a wave of ban notices.",
+        "An enormous ban stamp slams across the monitors.",
+        "He admires the perfect purge, then notices a missing channel.",
+        "The appeal channel and tech support are both gone. The moderator stares at his notebook in panic."
+      ]
+    },
+    {
+      "cardId": "CC013",
+      "slug": "copy-paste-kakashi",
+      "title": "Copy-Paste Kakashi: Photocopy Jutsu",
+      "tagline": "A thousand techniques.\nOne office printer.",
+      "duration": 5.8,
+      "impact": 3.05,
+      "ends": [
+        0.6,
+        1.4,
+        2.85,
+        3.7,
+        4.4,
+        5.8
+      ],
+      "titles": [
+        "Copy the stance",
+        "Office ninja",
+        "Photocopy jutsu",
+        "Watermarked",
+        "Paper handling",
+        "Wrong direction"
+      ],
+      "descriptions": [
+        "A masked silver-haired ninja prepares a copied technique.",
+        "He leans over a photocopier in a very suspicious dojo.",
+        "The printer produces a paper clone of the entire ninja.",
+        "The clone charges in the wrong direction while watermarked paper flies across the room.",
+        "The original tries to make sense of the printed instructions.",
+        "He holds the instructions upside down. The clone has no paper handling skills."
+      ]
+    },
+    {
+      "cardId": "CC003",
+      "slug": "l-ratio",
+      "title": "L Ratio: Case Closed, Ratio Open",
+      "tagline": "Perfect evidence.\nCatastrophic replies.",
+      "duration": 5.7,
+      "impact": 3,
+      "ends": [
+        0.6,
+        1.4,
+        2.85,
+        3.65,
+        4.35,
+        5.7
+      ],
+      "titles": [
+        "The detective",
+        "The reply scene",
+        "Evidence delivered",
+        "Case closed",
+        "The public verdict",
+        "Take the L"
+      ],
+      "descriptions": [
+        "An exhausted detective studies his black tablet.",
+        "He inspects an empty alley through an enormous magnifying glass.",
+        "A barrage of evidence cards travels toward the reply board.",
+        "Every point receives a perfect verdict, then a huge letter L lands on the board.",
+        "He checks the public reply count and cannot believe it.",
+        "The evidence is still correct. The detective has been comprehensively ratioed."
+      ]
+    },
+    {
+      "cardId": "CC001",
+      "slug": "yasuo-zero-ten",
+      "title": "Yasuo 0/10: Windwall of Excuses",
+      "tagline": "One flawless sword technique.\nTen flawless excuses.",
+      "duration": 5.8,
+      "impact": 3.05,
+      "ends": [
+        0.6,
+        1.35,
+        2.9,
+        3.75,
+        4.45,
+        5.8
+      ],
+      "titles": [
+        "The swordsman",
+        "Choose a lane",
+        "Perfect dash",
+        "Wrong exit",
+        "The scoreboard",
+        "Team difference"
+      ],
+      "descriptions": [
+        "A disheveled swordsman prepares his weapon.",
+        "The neon street splits into two very clear lanes.",
+        "He dashes forward through an elaborate wind wall.",
+        "The slash clears the wrong exit and the defeat counter reaches ten.",
+        "He finally notices the scoreboard.",
+        "The tenth defeat is definitely everyone else's fault."
+      ]
+    },
+    {
+      "cardId": "CC006",
+      "slug": "erwin-linkedin",
+      "title": "Erwin LinkedIn: Dedicate Your Quarterly Results",
+      "tagline": "Your sacrifice matters.\nTo the growth graph.",
+      "duration": 5.9,
+      "impact": 3.1,
+      "ends": [
+        0.6,
+        1.4,
+        2.95,
+        3.8,
+        4.5,
+        5.9
+      ],
+      "titles": [
+        "The executive",
+        "Quarterly charge",
+        "Dedicate your results",
+        "Exponential growth",
+        "Promotion time",
+        "The graph wins"
+      ],
+      "descriptions": [
+        "A stern blond commander prepares a motivational address.",
+        "He raises his arm on a battered office-district avenue.",
+        "His charge sends a column of employee ID cards into a rising graph.",
+        "The graph rockets upward through the quarterly report.",
+        "He stands proudly waiting for his promotion.",
+        "A tiny promotion badge is pinned to the graph. The commander remains middle management."
+      ]
+    },
+    {
+      "cardId": "CC018",
+      "slug": "gandalf-grey-market",
+      "title": "Gandalf the Grey Market: You Shall Not Audit",
+      "tagline": "A wizard is never licensed.\nHe invoices precisely when he means to.",
+      "duration": 5.9,
+      "impact": 3.05,
+      "ends": [
+        0.6,
+        1.4,
+        2.9,
+        3.75,
+        4.45,
+        5.9
+      ],
+      "titles": [
+        "The merchant",
+        "Customs doorway",
+        "You shall not audit",
+        "Inspection denied",
+        "Closing time",
+        "Cash only"
+      ],
+      "descriptions": [
+        "A scruffy grey wizard grips his staff.",
+        "He guards a suspicious market doorway.",
+        "The staff strikes the ground and illegal magical receipts spiral around him.",
+        "A rolling shop shutter crashes down across the inspection entrance.",
+        "The wizard quietly opens a small side hatch.",
+        "The grand magical defense is an unlicensed shop. Cash only."
+      ]
+    },
+    {
+      "cardId": "CC058",
+      "slug": "genos-windows-update",
+      "title": "GenOS Windows Update: Restart Required",
+      "tagline": "An unstoppable transformation.\nPending installation.",
+      "duration": 6,
+      "impact": 3.15,
+      "ends": [
+        0.6,
+        1.4,
+        3,
+        3.85,
+        4.55,
+        6
+      ],
+      "titles": [
+        "The upgrade",
+        "Repair bay",
+        "Installing power",
+        "Restart required",
+        "Almost ready",
+        "Welcome back"
+      ],
+      "descriptions": [
+        "A damaged cybernetic fighter prepares an upgrade.",
+        "His intact body braces in an empty repair bay.",
+        "A progress ring climbs toward maximum power and stops at ninety-nine percent.",
+        "The upgrade finally fires an enormous blast into the repair target.",
+        "He waits silently for the system to confirm victory.",
+        "The startup chime arrives embarrassingly late. Another restart is already pending."
+      ]
+    },
+    {
+      "cardId": "CC008",
+      "slug": "sully-hr",
+      "title": "Sully Sullivan HR: Mandatory Monster Wellness",
+      "tagline": "Please enjoy your wellbeing.\nAttendance is compulsory.",
+      "duration": 5.8,
+      "impact": 3,
+      "ends": [
+        0.6,
+        1.4,
+        2.85,
+        3.7,
+        4.4,
+        5.8
+      ],
+      "titles": [
+        "The wellbeing lead",
+        "Performance review",
+        "Mandatory wellness",
+        "Motivational roar",
+        "Human resources",
+        "Exit interview"
+      ],
+      "descriptions": [
+        "A huge furry monster practices a professional smile.",
+        "He prepares a mandatory wellness session in a grubby office.",
+        "The monster opens his arms and gathers a protective blanket.",
+        "His motivational roar sends a wall of performance reviews across the office.",
+        "An employment notice lands in front of him.",
+        "He has been fired for scaring employees. The severance blanket still protects the squad."
+      ]
+    },
+    {
+      "cardId": "CC009",
+      "slug": "olaf-global-warming",
+      "title": "Olaf Global Warming: Sponsored Cold Front",
+      "tagline": "This cooling campaign\nis brought to you by the heatwave.",
+      "duration": 5.8,
+      "impact": 3,
+      "ends": [
+        0.6,
+        1.4,
+        2.85,
+        3.7,
+        4.4,
+        5.8
+      ],
+      "titles": [
+        "The campaign",
+        "Sponsored heatwave",
+        "Cold front",
+        "Cooling delivered",
+        "Climate check",
+        "Low power mode"
+      ],
+      "descriptions": [
+        "A worried snowman tries to look cheerful.",
+        "He starts a sponsored cooling campaign on a blazing city street.",
+        "The intact snowman whips up a cold front while his confidence melts.",
+        "A giant portable fan sweeps snow and cool air across the street.",
+        "He checks the heat and then looks at the fan.",
+        "The snowman needs the fan more than anyone else. The sponsorship sign stays very expensive."
+      ]
+    },
+    {
+      "cardId": "CC021",
+      "slug": "dutch-pyramid-scheme",
+      "title": "Dutch Pyramid Scheme: I Have a Payment Plan",
+      "tagline": "One more payment.\nThen we all retire.",
+      "duration": 5.9,
+      "impact": 3.1,
+      "ends": [
+        0.6,
+        1.4,
+        2.95,
+        3.8,
+        4.5,
+        5.9
+      ],
+      "titles": [
+        "The plan",
+        "The frontier pitch",
+        "Recurring payments",
+        "Pyramid complete",
+        "Trust the process",
+        "Another plan"
+      ],
+      "descriptions": [
+        "A swaggering outlaw promises a brilliant new plan.",
+        "He presents a payment contract in an empty frontier town.",
+        "Golden invoices stack into a massive triangular pyramid.",
+        "The pyramid crashes across the street under its own subscription fees.",
+        "The outlaw brushes himself off and examines the wreckage.",
+        "He immediately unfolds another blank contract. This next plan is definitely different."
+      ]
+    },
+    {
+      "cardId": "CC065",
+      "slug": "absent-father",
+      "title": "Absent Father: Instant Abandonment",
+      "tagline": "Unmatched power.\nUnreachable parent.",
+      "duration": 5.7,
+      "impact": 2.95,
+      "ends": [
+        0.6,
+        1.35,
+        2.8,
+        3.65,
+        4.35,
+        5.7
+      ],
+      "titles": [
+        "The fighter",
+        "Tournament concourse",
+        "Full power",
+        "Family notification",
+        "Instant movement",
+        "Gone again"
+      ],
+      "descriptions": [
+        "A confident spiky-haired fighter prepares for battle.",
+        "He takes his stance on a tournament concourse.",
+        "An enormous charge builds around his intact body.",
+        "A family bill appears and the fighter vanishes in a single movement.",
+        "The empty concourse waits beside the untouched bill.",
+        "A departure slip remains where he stood. The family bill is still unpaid."
+      ]
+    },
+    {
+      "cardId": "CC062",
+      "slug": "anti-anti-meat",
+      "title": "Anti-Anti-Meat Activist: Barbecue Liberation",
+      "tagline": "Freedom for the barbecue.\nJustice for absolutely no salad.",
+      "duration": 5.9,
+      "impact": 3.1,
+      "ends": [
+        0.6,
+        1.4,
+        2.95,
+        3.8,
+        4.5,
+        5.9
+      ],
+      "titles": [
+        "The activist",
+        "Rooftop barbecue",
+        "Liberation charge",
+        "Salad defeated",
+        "The rescue",
+        "A moral victory"
+      ],
+      "descriptions": [
+        "A furious straw-hatted pirate spots a threat to lunch.",
+        "He stands between a rooftop barbecue and a bowl of salad.",
+        "His whole body lunges into a wild liberation attack.",
+        "The attack sends the salad bowl spinning while the barbecue remains safe.",
+        "He solemnly checks the rescued food.",
+        "He celebrates the wrong moral victory with an enormous meal."
+      ]
+    },
+    {
+      "cardId": "CC061",
+      "slug": "power-of-friendship",
+      "title": "Power of Friendship: Flashback Barrage",
+      "tagline": "One more memory.\nThen we finish the attack.",
+      "duration": 6.1,
+      "impact": 3.2,
+      "ends": [
+        0.6,
+        1.4,
+        3.05,
+        3.9,
+        4.6,
+        6.1
+      ],
+      "titles": [
+        "The promise",
+        "Training courtyard",
+        "Remember everyone",
+        "Flashback barrage",
+        "The final memory",
+        "Previously on"
+      ],
+      "descriptions": [
+        "A determined young fighter remembers a promise.",
+        "He braces in a battered training courtyard.",
+        "Whole-body memories gather in picture panels as the charge grows.",
+        "The panels fly forward as an overwhelming friendship barrage.",
+        "The hero begins one last inspirational recollection.",
+        "The attack has accumulated so many memories that its own ending needs a recap."
+      ]
+    },
+    {
+      "cardId": "CC049",
+      "slug": "touch-grass-final-boss",
+      "title": "Touch Grass Final Boss: Offline Rehabilitation",
+      "tagline": "Your session has ended.\nPlease acknowledge the outdoors.",
+      "duration": 5.9,
+      "impact": 3.1,
+      "ends": [
+        0.6,
+        1.4,
+        2.95,
+        3.8,
+        4.5,
+        5.9
+      ],
+      "titles": [
+        "The outdoor threat",
+        "Overgrown park",
+        "Offline mode",
+        "Rehabilitation",
+        "Real life",
+        "One notification"
+      ],
+      "descriptions": [
+        "An imposing outdoor guardian prepares to intervene.",
+        "The city park grows quiet around him.",
+        "A gigantic leaf sweeps forward through a stream of disconnected notification cards.",
+        "The leaf drags the entire incident offline.",
+        "The guardian takes a satisfied breath of fresh air.",
+        "A tiny phone lights up. The final boss immediately checks the notification."
+      ]
+    }
+  ]
+}

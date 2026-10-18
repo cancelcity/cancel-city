@@ -1,0 +1,22 @@
+{
+  "testsPassed": 196,
+  "sharedPainterReviewedFrames": 33,
+  "castsWithSixPoses": [
+    "CC001",
+    "CC007",
+    "CC026",
+    "CC037",
+    "CC039"
+  ],
+  "specialsUsingLivePainter": 42,
+  "cityBuildingTypes": 6,
+  "unchangedCloudSchema": true,
+  "unchangedGameEconomy": true,
+  "browserPlayback": "unverified; supported browser QA surface unavailable",
+  "screensInspected": [
+    "special-contact-sheet",
+    "city-contact-sheet",
+    "battle-contact-sheet",
+    "Karen strike after pose remap"
+  ]
+}

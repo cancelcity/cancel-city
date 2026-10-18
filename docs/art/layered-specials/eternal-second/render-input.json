@@ -1,0 +1,252 @@
+{
+  "background": "docs/art/layered-specials/eternal-second/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/action-00.webp",
+        "width": 287,
+        "height": 496,
+        "sourceBounds": {
+          "x": 41,
+          "y": 12,
+          "w": 287,
+          "h": 496
+        },
+        "area": 68312
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/action-01.webp",
+        "width": 307,
+        "height": 494,
+        "sourceBounds": {
+          "x": 415,
+          "y": 12,
+          "w": 307,
+          "h": 494
+        },
+        "area": 77747
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/action-02.webp",
+        "width": 368,
+        "height": 399,
+        "sourceBounds": {
+          "x": 760,
+          "y": 103,
+          "w": 368,
+          "h": 399
+        },
+        "area": 73615
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/action-03.webp",
+        "width": 379,
+        "height": 369,
+        "sourceBounds": {
+          "x": 1149,
+          "y": 132,
+          "w": 379,
+          "h": 369
+        },
+        "area": 68891
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/action-04.webp",
+        "width": 361,
+        "height": 492,
+        "sourceBounds": {
+          "x": 11,
+          "y": 518,
+          "w": 361,
+          "h": 492
+        },
+        "area": 84280
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/action-05.webp",
+        "width": 478,
+        "height": 478,
+        "sourceBounds": {
+          "x": 334,
+          "y": 530,
+          "w": 478,
+          "h": 478
+        },
+        "area": 87035
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/action-06.webp",
+        "width": 382,
+        "height": 468,
+        "sourceBounds": {
+          "x": 781,
+          "y": 535,
+          "w": 382,
+          "h": 468
+        },
+        "area": 83937
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/action-07.webp",
+        "width": 350,
+        "height": 468,
+        "sourceBounds": {
+          "x": 1178,
+          "y": 535,
+          "w": 350,
+          "h": 468
+        },
+        "area": 73145
+      }
+    ],
+    "attack": [
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/attack-00.webp",
+        "width": 389,
+        "height": 496,
+        "sourceBounds": {
+          "x": 12,
+          "y": 15,
+          "w": 389,
+          "h": 496
+        },
+        "area": 88129
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/attack-01.webp",
+        "width": 366,
+        "height": 488,
+        "sourceBounds": {
+          "x": 401,
+          "y": 18,
+          "w": 366,
+          "h": 488
+        },
+        "area": 79091
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/attack-02.webp",
+        "width": 389,
+        "height": 460,
+        "sourceBounds": {
+          "x": 766,
+          "y": 48,
+          "w": 389,
+          "h": 460
+        },
+        "area": 79238
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/attack-03.webp",
+        "width": 383,
+        "height": 451,
+        "sourceBounds": {
+          "x": 1147,
+          "y": 56,
+          "w": 383,
+          "h": 451
+        },
+        "area": 77758
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/attack-04.webp",
+        "width": 433,
+        "height": 490,
+        "sourceBounds": {
+          "x": 6,
+          "y": 510,
+          "w": 433,
+          "h": 490
+        },
+        "area": 90102
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/attack-05.webp",
+        "width": 393,
+        "height": 450,
+        "sourceBounds": {
+          "x": 445,
+          "y": 551,
+          "w": 393,
+          "h": 450
+        },
+        "area": 84119
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/ending-00.webp",
+        "width": 348,
+        "height": 519,
+        "sourceBounds": {
+          "x": 13,
+          "y": 4,
+          "w": 348,
+          "h": 519
+        },
+        "area": 92716
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/ending-01.webp",
+        "width": 337,
+        "height": 520,
+        "sourceBounds": {
+          "x": 425,
+          "y": 4,
+          "w": 337,
+          "h": 520
+        },
+        "area": 85624
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/ending-02.webp",
+        "width": 331,
+        "height": 520,
+        "sourceBounds": {
+          "x": 1196,
+          "y": 6,
+          "w": 331,
+          "h": 520
+        },
+        "area": 95330
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/ending-03.webp",
+        "width": 434,
+        "height": 509,
+        "sourceBounds": {
+          "x": 14,
+          "y": 502,
+          "w": 434,
+          "h": 509
+        },
+        "area": 99856
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/ending-04.webp",
+        "width": 324,
+        "height": 507,
+        "sourceBounds": {
+          "x": 456,
+          "y": 504,
+          "w": 324,
+          "h": 507
+        },
+        "area": 85693
+      },
+      {
+        "file": "docs/art/layered-specials/eternal-second/actors/ending-05.webp",
+        "width": 287,
+        "height": 498,
+        "sourceBounds": {
+          "x": 834,
+          "y": 513,
+          "w": 287,
+          "h": 498
+        },
+        "area": 87345
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

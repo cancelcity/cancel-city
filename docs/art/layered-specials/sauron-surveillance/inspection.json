@@ -1,0 +1,150 @@
+{
+  "action-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 164.79782104492188
+    },
+    "bytes": 3351129,
+    "components": [
+      {
+        "area": 129589,
+        "left": 11,
+        "top": 6,
+        "width": 370,
+        "height": 476
+      },
+      {
+        "area": 128536,
+        "left": 392,
+        "top": 5,
+        "width": 372,
+        "height": 477
+      },
+      {
+        "area": 128441,
+        "left": 776,
+        "top": 4,
+        "width": 372,
+        "height": 477
+      },
+      {
+        "area": 127405,
+        "left": 1160,
+        "top": 6,
+        "width": 371,
+        "height": 475
+      },
+      {
+        "area": 133375,
+        "left": 8,
+        "top": 496,
+        "width": 375,
+        "height": 489
+      },
+      {
+        "area": 133811,
+        "left": 391,
+        "top": 490,
+        "width": 377,
+        "height": 494
+      },
+      {
+        "area": 128337,
+        "left": 776,
+        "top": 502,
+        "width": 372,
+        "height": 480
+      },
+      {
+        "area": 130236,
+        "left": 1159,
+        "top": 496,
+        "width": 374,
+        "height": 488
+      }
+    ]
+  },
+  "ending-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 171.34812100728354
+    },
+    "bytes": 3374744,
+    "components": [
+      {
+        "area": 135218,
+        "left": 6,
+        "top": 9,
+        "width": 374,
+        "height": 493
+      },
+      {
+        "area": 134492,
+        "left": 389,
+        "top": 5,
+        "width": 373,
+        "height": 497
+      },
+      {
+        "area": 134781,
+        "left": 775,
+        "top": 5,
+        "width": 374,
+        "height": 497
+      },
+      {
+        "area": 133320,
+        "left": 1158,
+        "top": 9,
+        "width": 372,
+        "height": 493
+      },
+      {
+        "area": 135932,
+        "left": 6,
+        "top": 512,
+        "width": 374,
+        "height": 499
+      },
+      {
+        "area": 136367,
+        "left": 388,
+        "top": 512,
+        "width": 376,
+        "height": 499
+      },
+      {
+        "area": 135676,
+        "left": 775,
+        "top": 512,
+        "width": 375,
+        "height": 499
+      },
+      {
+        "area": 134010,
+        "left": 1157,
+        "top": 512,
+        "width": 372,
+        "height": 499
+      }
+    ]
+  },
+  "courtyard-original.png": {
+    "width": 1672,
+    "height": 941,
+    "channels": 3,
+    "isOpaque": true,
+    "alpha": null,
+    "bytes": 3570015
+  }
+}

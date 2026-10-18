@@ -1,0 +1,4 @@
+'use client';
+import {useState} from 'react';
+import {api} from '../src/state/store';
+export default function ErrorPage({error,reset}:{error:Error&{digest?:string};reset:()=>void}){const [status,setStatus]=useState('');return <main className="leaderboard-page"><span className="tape pink">THE THREAD BROKE</span><h1>THE CITY NEEDS A MINUTE.</h1><p>Your committed cloud progress is safe. Retry or reload to recover the current state.</p><button className="button acid" onClick={reset}>TRY AGAIN</button><button className="button paper" onClick={async()=>{try{const p=await api('feedback',{kind:'bug',message:`Client rendering failure on ${location.pathname.slice(0,100)}. Category: ${error.name.slice(0,80)}. Reference: ${error.digest?.slice(0,80)||'client-only'}.`});setStatus(`Reported: ${p.reference}`);}catch{setStatus('Report unavailable. Retry later.');}}}>REPORT ERROR</button><p role="status">{status}</p></main>;}

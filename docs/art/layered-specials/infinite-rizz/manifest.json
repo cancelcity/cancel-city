@@ -1,0 +1,237 @@
+{
+  "character": "CC063",
+  "name": "Infinite Rizz",
+  "ability": "Domain Expansion: Main Character",
+  "generator": "built-in image_gen",
+  "styleReference": "public/assets/residents/CC063.webp",
+  "costumeReference": "public/assets/actors/CC063-0.webp",
+  "identityNotes": "Authoritative card wears a black CLOTH BLINDFOLD, not glasses. Wild white spiky hair, tan stippled overconfident face with wide crooked grin, one cyan eye when fold lifted; black high-collar angular split-tail tunic/coat, loose trousers, heavy lace-up boots. Magenta/cyan rim ink is part of character shading, not detached effects.",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/action-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action",
+      "usableCount": 8,
+      "excludedIndices": [],
+      "cropBoxes": [
+        [
+          62,
+          7,
+          323,
+          509
+        ],
+        [
+          463,
+          8,
+          272,
+          509
+        ],
+        [
+          827,
+          7,
+          273,
+          510
+        ],
+        [
+          1181,
+          7,
+          318,
+          512
+        ],
+        [
+          25,
+          513,
+          361,
+          496
+        ],
+        [
+          384,
+          516,
+          459,
+          496
+        ],
+        [
+          852,
+          512,
+          254,
+          504
+        ],
+        [
+          1146,
+          513,
+          383,
+          501
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/infinite-rizz/action-prompt.txt",
+      "poses": [
+        "Smug readiness hand pocket",
+        "Pinches blindfold edge",
+        "Lifts blindfold corner",
+        "Two-finger sign near face",
+        "Both hands finger seal",
+        "Wide stance anticipation",
+        "Half-turn stop palm",
+        "Invites admiration open palms"
+      ],
+      "notes": "All eight whole actors intact, separate, visually complete and not touching canvas edges. Dense distressed black/cyan/magenta ink matches existing cast. No barriers/hearts/energy baked in."
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/attack-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "attack",
+      "usableCount": 8,
+      "excludedIndices": [],
+      "cropBoxes": [
+        [
+          18,
+          7,
+          388,
+          494
+        ],
+        [
+          417,
+          5,
+          329,
+          500
+        ],
+        [
+          777,
+          15,
+          356,
+          491
+        ],
+        [
+          1180,
+          19,
+          328,
+          486
+        ],
+        [
+          11,
+          506,
+          388,
+          500
+        ],
+        [
+          401,
+          574,
+          387,
+          428
+        ],
+        [
+          761,
+          502,
+          476,
+          513
+        ],
+        [
+          1255,
+          507,
+          239,
+          507
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/infinite-rizz/attack-prompt.txt",
+      "poses": [
+        "Stop-palm anticipation",
+        "Steps and extends palm",
+        "Full confident palm-stop",
+        "Deep palm thrust with finger seal",
+        "Sideways torso pivot palm held",
+        "Exertion crouched palm stop",
+        "Open-arm domain follow-through",
+        "Calm palm-out finish"
+      ],
+      "notes": "Eight sequential complete whole-character domain poses. Large hands physically connected; intact body/coat/hair/boots. Wide poses cross nominal cell gutters; use alpha components or cropBoxes, not rigid grid crops."
+    },
+    {
+      "path": "docs/art/layered-specials/infinite-rizz/ending-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "usableCount": 8,
+      "excludedIndices": [],
+      "cropBoxes": [
+        [
+          58,
+          7,
+          312,
+          497
+        ],
+        [
+          478,
+          5,
+          262,
+          498
+        ],
+        [
+          774,
+          4,
+          439,
+          498
+        ],
+        [
+          1237,
+          3,
+          276,
+          507
+        ],
+        [
+          42,
+          510,
+          330,
+          504
+        ],
+        [
+          433,
+          506,
+          307,
+          504
+        ],
+        [
+          831,
+          510,
+          296,
+          503
+        ],
+        [
+          1227,
+          512,
+          284,
+          505
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/infinite-rizz/ending-prompt.txt",
+      "poses": [
+        "Vain blindfold corner lift",
+        "Confident wink and thumbs-up",
+        "Waits proudly for admiration",
+        "Awkward self-point waiting",
+        "Blindfold slips embarrassed stare",
+        "Awkward band recovery",
+        "Smug hair-rake recovery",
+        "Final two-finger wink"
+      ],
+      "notes": "All eight complete full actors. Slipping prop is original black blindfold, preserving exact card identity. Strong embarrassing reaction pose index4; no external hearts/effects."
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/infinite-rizz/rooftop-original.png",
+    "prompt": "docs/art/layered-specials/infinite-rizz/rooftop-prompt.txt",
+    "notes": "Fixed empty1672x941 rooftop plate with light/midtone scratched concrete central performance space, low parapet, distant city/palms and blank signs. Acid-yellow sky and magenta/cyan rim lighting, dense etched black hatching. No actors, infinity barriers, hearts, projectiles or animated effects."
+  },
+  "inspection": {
+    "allOutputsViewed": true,
+    "requestedPoses": 24,
+    "visuallyUsablePoses": 24,
+    "minimumRequestedPerSheet": 6,
+    "allSheetsMeetMinimum": true,
+    "alphaPreserved": true,
+    "edgeTouchingPoses": 0,
+    "componentCheck": "Exactly8 independent connected alpha components over1500 pixels in each of3 sheets at alpha>=36. All24 large components have touchesEdge=false. cropBoxes are [left,top,width,height] in reading order without padding. Original PNG alpha preserved; exact stats in inspection.json."
+  }
+}
+

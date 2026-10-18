@@ -1,0 +1,244 @@
+{
+  "action-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 127.61119270324707
+    },
+    "bytes": 3165209,
+    "components": [
+      {
+        "area": 105848,
+        "left": 12,
+        "top": 8,
+        "width": 335,
+        "height": 499,
+        "touchesEdge": false
+      },
+      {
+        "area": 100652,
+        "left": 416,
+        "top": 12,
+        "width": 289,
+        "height": 494,
+        "touchesEdge": false
+      },
+      {
+        "area": 110317,
+        "left": 758,
+        "top": 11,
+        "width": 412,
+        "height": 502,
+        "touchesEdge": false
+      },
+      {
+        "area": 100208,
+        "left": 1166,
+        "top": 34,
+        "width": 351,
+        "height": 454,
+        "touchesEdge": false
+      },
+      {
+        "area": 109268,
+        "left": 10,
+        "top": 513,
+        "width": 374,
+        "height": 492,
+        "touchesEdge": false
+      },
+      {
+        "area": 94856,
+        "left": 403,
+        "top": 501,
+        "width": 344,
+        "height": 511,
+        "touchesEdge": false
+      },
+      {
+        "area": 111263,
+        "left": 746,
+        "top": 528,
+        "width": 438,
+        "height": 474,
+        "touchesEdge": false
+      },
+      {
+        "area": 82895,
+        "left": 1164,
+        "top": 608,
+        "width": 360,
+        "height": 339,
+        "touchesEdge": false
+      }
+    ]
+  },
+  "attack-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 113.70859845479329
+    },
+    "bytes": 2950672,
+    "components": [
+      {
+        "area": 83443,
+        "left": 19,
+        "top": 89,
+        "width": 373,
+        "height": 385,
+        "touchesEdge": false
+      },
+      {
+        "area": 87102,
+        "left": 400,
+        "top": 77,
+        "width": 365,
+        "height": 413,
+        "touchesEdge": false
+      },
+      {
+        "area": 86920,
+        "left": 787,
+        "top": 10,
+        "width": 329,
+        "height": 472,
+        "touchesEdge": false
+      },
+      {
+        "area": 93071,
+        "left": 1130,
+        "top": 90,
+        "width": 399,
+        "height": 398,
+        "touchesEdge": false
+      },
+      {
+        "area": 90754,
+        "left": 7,
+        "top": 507,
+        "width": 422,
+        "height": 472,
+        "touchesEdge": false
+      },
+      {
+        "area": 89510,
+        "left": 386,
+        "top": 563,
+        "width": 401,
+        "height": 397,
+        "touchesEdge": false
+      },
+      {
+        "area": 109288,
+        "left": 775,
+        "top": 521,
+        "width": 423,
+        "height": 453,
+        "touchesEdge": false
+      },
+      {
+        "area": 86268,
+        "left": 1187,
+        "top": 518,
+        "width": 328,
+        "height": 478,
+        "touchesEdge": false
+      }
+    ]
+  },
+  "ending-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 118.60507901509602
+    },
+    "bytes": 3075171,
+    "components": [
+      {
+        "area": 99955,
+        "left": 30,
+        "top": 16,
+        "width": 354,
+        "height": 493,
+        "touchesEdge": false
+      },
+      {
+        "area": 102519,
+        "left": 409,
+        "top": 18,
+        "width": 373,
+        "height": 494,
+        "touchesEdge": false
+      },
+      {
+        "area": 95666,
+        "left": 785,
+        "top": 45,
+        "width": 340,
+        "height": 452,
+        "touchesEdge": false
+      },
+      {
+        "area": 97015,
+        "left": 1138,
+        "top": 28,
+        "width": 381,
+        "height": 472,
+        "touchesEdge": false
+      },
+      {
+        "area": 100918,
+        "left": 15,
+        "top": 524,
+        "width": 516,
+        "height": 452,
+        "touchesEdge": false
+      },
+      {
+        "area": 87198,
+        "left": 411,
+        "top": 602,
+        "width": 438,
+        "height": 394,
+        "touchesEdge": false
+      },
+      {
+        "area": 90923,
+        "left": 843,
+        "top": 505,
+        "width": 294,
+        "height": 493,
+        "touchesEdge": false
+      },
+      {
+        "area": 85728,
+        "left": 1205,
+        "top": 516,
+        "width": 288,
+        "height": 486,
+        "touchesEdge": false
+      }
+    ]
+  },
+  "referral-shire-original.png": {
+    "width": 1672,
+    "height": 941,
+    "channels": 3,
+    "isOpaque": true,
+    "alpha": null,
+    "bytes": 4108053
+  }
+}

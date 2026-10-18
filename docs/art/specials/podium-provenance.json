@@ -1,0 +1,344 @@
+{
+  "batch": "podium",
+  "mode": "built-in image_gen",
+  "status": "complete",
+  "framing_note": "All bodies and props visually inspected. Under-8% margins accepted by parent; root applies common transparent canvas/baseline during technical encoding. Only CC016 and CC017 received prior margin edits.",
+  "assets": [
+    {
+      "id": "CC016",
+      "name": "Performative Ally",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC016.png",
+      "destination": "docs/art/specials/CC016.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: performative ally holding a glowing profile-avatar badge like a shield.",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC016.png",
+      "output_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC016.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-bc88f004-6b19-4717-9150-3681c6c25095.png",
+      "final_generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-26f5e916-28c3-4ffa-8f08-6dc0f70ec9be.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "edit_chain": [
+        {
+          "prompt": "Use case: precise-object-edit. Edit the provided transparent Cancel City action sprite. Change ONLY its framing: scale the COMPLETE existing character, all props and all glow/effect pixels together down so the entire illustration fits within the central 76 percent of a square transparent canvas. Leave at least 12 percent completely empty transparent margin on ALL four edges. Preserve the existing facial identity, exact costume, pose, palette, punk editorial ink texture, body anatomy, objects and object placement. Do not add anything, do not crop anything, do not redraw or simplify. Genuine transparent background, no black background, no checkerboard pixels, no text, no watermark.",
+          "input": "/workspace/scratch/80a8c8c1affe/generated_images/exec-bc88f004-6b19-4717-9150-3681c6c25095.png",
+          "output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-26f5e916-28c3-4ffa-8f08-6dc0f70ec9be.png",
+          "reason": "Margin-only refinement was started before parent framing clarification."
+        }
+      ],
+      "observations": "Inspected generated and edited result. Same recognizable reference face and costume, full body and all props/effects visible, no clipping. Genuine alpha to be verified on copy.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        19,
+        1190,
+        1254
+      ],
+      "alpha_128_bbox": [
+        192,
+        171,
+        1117,
+        1099
+      ],
+      "sha256": "b4c0b76e8c482f0e2855d9786bf9f78344fb5e72a6c793a641985abc837133b8",
+      "copied_unchanged": true,
+      "alpha_128_edge_counts": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "fully_transparent_pixel_ratio": 0.6961938702054542
+    },
+    {
+      "id": "CC017",
+      "name": "Virtue Signaler",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC017.png",
+      "destination": "docs/art/specials/CC017.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: virtue signaler shouting into a phone with a fiery warning symbol aura.",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC017.png",
+      "output_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC017.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-be56cf25-ebed-4d58-aca9-ae61bab1b304.png",
+      "final_generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-94b36990-d9c9-4d15-bd6b-cb68aafa77e1.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "edit_chain": [
+        {
+          "prompt": "Use case: precise-object-edit. Edit the provided transparent Cancel City action sprite. Change ONLY its framing: scale the COMPLETE existing character, all props and all glow/effect pixels together down so the entire illustration fits within the central 76 percent of a square transparent canvas. Leave at least 12 percent completely empty transparent margin on ALL four edges. Preserve the existing facial identity, exact costume, pose, palette, punk editorial ink texture, body anatomy, objects and object placement. Do not add anything, do not crop anything, do not redraw or simplify. Genuine transparent background, no black background, no checkerboard pixels, no text, no watermark.",
+          "input": "/workspace/scratch/80a8c8c1affe/generated_images/exec-be56cf25-ebed-4d58-aca9-ae61bab1b304.png",
+          "output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-94b36990-d9c9-4d15-bd6b-cb68aafa77e1.png",
+          "reason": "Margin-only refinement was started before parent framing clarification."
+        }
+      ],
+      "observations": "Inspected generated and edited result. Same recognizable reference face and costume, full body and all props/effects visible, no clipping. Genuine alpha to be verified on copy.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        57,
+        1236,
+        1254
+      ],
+      "alpha_128_bbox": [
+        201,
+        136,
+        1138,
+        1181
+      ],
+      "sha256": "60e0e741710dfa420403554ef419d4a6a877cc96c7ec772ca047db8d0ba8cae5",
+      "copied_unchanged": true,
+      "alpha_128_edge_counts": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "fully_transparent_pixel_ratio": 0.6376443864482142
+    },
+    {
+      "id": "CC018",
+      "name": "Tax Evasion Wizard",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC018.png",
+      "destination": "docs/art/specials/CC018.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: tax wizard opening a golden portal with a rolled account ledger.",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC018.png",
+      "output_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC018.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-024ee0ef-0086-4bd6-8ce5-1985cca5868b.png",
+      "final_generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-024ee0ef-0086-4bd6-8ce5-1985cca5868b.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "edit_chain": [],
+      "observations": "Inspected result. Recognizable reference face and costume; full body, prop and effect visible. Alpha >=128 does not touch any canvas edge. Tight margins accepted under parent framing clarification; root handles common canvas/baseline.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1254,
+        1254
+      ],
+      "alpha_128_bbox": [
+        40,
+        2,
+        1244,
+        1246
+      ],
+      "sha256": "eae6f967a4da195b68e02fe735fb06d2d4fbc2dd10685f37156696629cff7ea5",
+      "copied_unchanged": true,
+      "alpha_128_edge_counts": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "fully_transparent_pixel_ratio": 0.2948555054447777
+    },
+    {
+      "id": "CC019",
+      "name": "Populist Megaphone",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC019.png",
+      "destination": "docs/art/specials/CC019.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: populist wielding a colossal megaphone, dynamic shout pose.",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC019.png",
+      "output_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC019.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-fbc1ab86-380f-4aba-980f-463f7a0792f6.png",
+      "final_generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-fbc1ab86-380f-4aba-980f-463f7a0792f6.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "edit_chain": [],
+      "observations": "Inspected result. Recognizable reference face and costume; full body, prop and effect visible. Alpha >=128 does not touch any canvas edge. Tight margins accepted under parent framing clarification; root handles common canvas/baseline.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1248,
+        1254
+      ],
+      "alpha_128_bbox": [
+        71,
+        8,
+        1221,
+        1243
+      ],
+      "sha256": "2fc3d5c13190dca614a2b752a17cbc80f17673bbce71d4a41fd915566ad55820",
+      "copied_unchanged": true,
+      "alpha_128_edge_counts": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "fully_transparent_pixel_ratio": 0.472903296373455
+    },
+    {
+      "id": "CC020",
+      "name": "Democracy Paywall",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC020.png",
+      "destination": "docs/art/specials/CC020.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: democracy paywall monster raising a giant locked payment gate.",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC020.png",
+      "output_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC020.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-60a7cfd0-73ea-4596-a409-10d8f9f9c6a3.png",
+      "final_generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-60a7cfd0-73ea-4596-a409-10d8f9f9c6a3.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "edit_chain": [],
+      "observations": "Inspected result. Recognizable reference face, costume and palette; full body and complete main prop visible with no serious clipping. Tight margins accepted under parent framing clarification; root handles common canvas/baseline.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        1240,
+        1254
+      ],
+      "alpha_128_bbox": [
+        98,
+        4,
+        1225,
+        1239
+      ],
+      "sha256": "28cdea4b4959ed0d87baee0e6c7ddb31a81b44b263bda84f4a3cd9448a51f5fc",
+      "copied_unchanged": true,
+      "alpha_128_edge_counts": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "fully_transparent_pixel_ratio": 0.4532882336332349
+    },
+    {
+      "id": "CC037",
+      "name": "Don Tremendous",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC037.png",
+      "destination": "docs/art/specials/CC037.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional golden podium tyrant slamming a golden podium with one hand and pointing outward with the other.",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC037.png",
+      "output_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC037.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3102ac1c-fcc5-4bd1-8dc5-1caaec5d0d7e.png",
+      "final_generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3102ac1c-fcc5-4bd1-8dc5-1caaec5d0d7e.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "edit_chain": [],
+      "observations": "Inspected result. Recognizable reference face, costume and palette; full body and complete main prop visible with no serious clipping. Tight margins accepted under parent framing clarification; root handles common canvas/baseline.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        11,
+        1236,
+        1254
+      ],
+      "alpha_128_bbox": [
+        57,
+        14,
+        1206,
+        1244
+      ],
+      "sha256": "cee093059d14aef2cf621fe604ade0f58c010157fc18a6a472a9a8dc08387965",
+      "copied_unchanged": true,
+      "alpha_128_edge_counts": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "fully_transparent_pixel_ratio": 0.4782603165881937
+    },
+    {
+      "id": "CC038",
+      "name": "The Eternal Candidate",
+      "faction": "politics-hypocrisy",
+      "reference": "docs/art/residents/CC038.png",
+      "destination": "docs/art/specials/CC038.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: eternal candidate holding an oversized clock and a campaign sign while striking a theatrical pose.",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC038.png",
+      "output_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC038.png",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ab041f09-2b97-4fa1-b0a9-2e99297d531f.png",
+      "final_generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ab041f09-2b97-4fa1-b0a9-2e99297d531f.png",
+      "tool": "built-in image_gen.imagegen",
+      "transparent_background": true,
+      "edit_chain": [],
+      "observations": "Inspected result. Recognizable reference face, silver hair, exaggerated ears and campaign-button suit; full body, oversized golden clock, and campaign sign visible with no serious clipping. Sign uses a stars-and-stripes graphic without slogans. Tight margins accepted under parent framing clarification; root handles common canvas/baseline.",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "color_mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        5,
+        1238,
+        1254
+      ],
+      "alpha_128_bbox": [
+        98,
+        7,
+        1235,
+        1246
+      ],
+      "sha256": "822513cf65a937046d07d3156ff871f320eaf27b5a1880f5faa0ccbdf97ff64b",
+      "copied_unchanged": true,
+      "alpha_128_edge_counts": {
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "fully_transparent_pixel_ratio": 0.5412453672967398
+    }
+  ]
+}

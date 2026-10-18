@@ -1,0 +1,133 @@
+{
+  "asset": "Gokart corrected card-style ending sequence",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "edit/style-transfer",
+  "original": "original-sheet.png",
+  "prompt": "prompt.txt",
+  "generatedSource": "/workspace/scratch/80a8c8c1affe/generated_images/exec-164bb312-c131-4312-8e9b-2a4f1683c8be.png",
+  "references": [
+    "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/gokart/ending/original-sheet.png",
+    "/workspace/scratch/80a8c8c1affe/generated_images/exec-7530eca5-c52b-49ce-b42c-b09c2e1f8d82.png",
+    "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/roster-b2/CC010.webp"
+  ],
+  "sheet": {
+    "width": 1182,
+    "height": 1330,
+    "columns": 2,
+    "rows": 4
+  },
+  "frames": [
+    {
+      "index": 1,
+      "filename": "ending-01.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 0,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 130296
+    },
+    {
+      "index": 2,
+      "filename": "ending-02.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 0,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 128448
+    },
+    {
+      "index": 3,
+      "filename": "ending-03.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 333,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 129470
+    },
+    {
+      "index": 4,
+      "filename": "ending-04.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 333,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 127668
+    },
+    {
+      "index": 5,
+      "filename": "ending-05.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 665,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 129766
+    },
+    {
+      "index": 6,
+      "filename": "ending-06.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 665,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 127924
+    },
+    {
+      "index": 7,
+      "filename": "ending-07.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 0,
+        "top": 998,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 123894
+    },
+    {
+      "index": 8,
+      "filename": "ending-08.webp",
+      "width": 591,
+      "height": 332,
+      "crop": {
+        "left": 591,
+        "top": 998,
+        "width": 591,
+        "height": 332
+      },
+      "bytes": 123606
+    }
+  ],
+  "processing": "Mechanical rectangular crop only and WebP quality 92. Kept native resolution; fractional row boundary remainder excluded at cell bottom. No repaint, compositing or artificial in-betweens.",
+  "review": {
+    "approvedGrid": true,
+    "bodyIntact": true,
+    "poseProgressionPreserved": true,
+    "styleCorrected": true,
+    "notes": "Correct 2×4 grid, no gutters. The fist lowers and head tracks wheel down-left; nearest front-left wheel detaches in frame 4 and rolls progressively off screen-left by frame 8. Proud face is more exaggerated than original. Confused/deadpan expressions stay restrained rather than yelling. Dense scratches/stipple, flat acid-yellow and hot-pink sky, black palm and city silhouettes, and dirty inked asphalt match card. Quiet face shape is less grotesque than screaming master, but acting is preserved. Whole seated body stays consistent."
+  }
+}

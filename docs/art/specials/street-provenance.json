@@ -1,0 +1,143 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "CC011",
+      "name": "French Strike Simulator",
+      "faction": "international-incidents",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC011.png",
+      "destination": "docs/art/specials/CC011.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: defiant French striker planting a flag and thrusting a picket sign.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6de09c8c-5335-4094-a6c1-aba8f9d3e00b.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC011.png",
+      "final_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-5cce3c3d-17ea-4a49-ba09-181c3badadd2.png",
+      "edit_chain": [
+        {
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6de09c8c-5335-4094-a6c1-aba8f9d3e00b.png",
+          "result": "/workspace/scratch/80a8c8c1affe/generated_images/exec-5cce3c3d-17ea-4a49-ba09-181c3badadd2.png",
+          "prompt": "Use case: identity-preserve. Correct ONLY the framing of this transparent sprite. Preserve the character's face, costume, palette, line style, pose, flag, and blank picket sign exactly. Show every part fully inside the canvas with at least 8 percent genuinely transparent empty margin on all four sides. Reduce and center the entire existing sprite composition; no body or prop changes. Keep the background genuinely transparent; no new marks, ground, text, frame, or scene."
+        }
+      ],
+      "observations": [
+        "Reference inspected before generation.",
+        "Identity preserved: beret, moustache, red scarf and striped shirt.",
+        "Full body, flag and blank picket sign fully visible; genuine RGBA alpha.",
+        "Framing edit retained identity and props with wider composition margins."
+      ]
+    },
+    {
+      "id": "CC012",
+      "name": "Swiss Neutrality Enjoyer",
+      "faction": "international-incidents",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC012.png",
+      "destination": "docs/art/specials/CC012.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: calm Swiss neutrality enjoyer holding a golden bank-vault shield.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3f9e1288-e400-4fcd-9279-483dc115c896.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC012.png",
+      "final_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-3f9e1288-e400-4fcd-9279-483dc115c896.png",
+      "edit_chain": [],
+      "observations": [
+        "Reference inspected before generation.",
+        "Identity preserved: alpine hat, red feather, monocle, cigar, suit and fur cape.",
+        "Full body and golden vault shield fully visible; genuine RGBA alpha.",
+        "Complete silhouette accepted per root framing clarification; encoding will add common margins."
+      ]
+    },
+    {
+      "id": "CC013",
+      "name": "Culture Vulture",
+      "faction": "international-incidents",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC013.png",
+      "destination": "docs/art/specials/CC013.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: culture vulture spreading claws and flinging a torrent of colorful sticker tokens.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ca5ca2a5-972f-4667-adc7-89b66676677d.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC013.png",
+      "final_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ca5ca2a5-972f-4667-adc7-89b66676677d.png",
+      "edit_chain": [],
+      "observations": [
+        "Reference inspected before generation.",
+        "Identity preserved: vulture species, tired eyes, cap, feather colors and camera.",
+        "Full body, claws and complete sticker torrent fully visible; genuine RGBA alpha.",
+        "Complete silhouette accepted per root framing clarification; encoding will add common margins."
+      ]
+    },
+    {
+      "id": "CC014",
+      "name": "Italian Pasta Inquisition",
+      "faction": "international-incidents",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC014.png",
+      "destination": "docs/art/specials/CC014.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: Italian pasta inquisitor swinging a fork wrapped with long pasta like a whip.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-72329972-5722-49db-b675-726836aa662a.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC014.png",
+      "final_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-71a2e074-9f91-464c-bbe5-0ef2585543c6.png",
+      "edit_chain": [
+        {
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-72329972-5722-49db-b675-726836aa662a.png",
+          "result": "/workspace/scratch/80a8c8c1affe/generated_images/exec-71a2e074-9f91-464c-bbe5-0ef2585543c6.png",
+          "prompt": "Use case: identity-preserve. Repair the clipped top of this transparent action sprite. Preserve the same angry Italian pasta inquisitor, distinctive face, moustache, chef costume, palette, irregular ink texture, dynamic swinging pose, fork and pasta whip. Fit the COMPLETE character and entire fork/pasta whip arc inside the image. Restore any clipped noodle or sauce details at the top. Reduce and center the entire composition enough to leave clear transparent space on every side. Do not crop any prop or limb. Genuine transparent background; no ground, frame, text, environment or watermark."
+        }
+      ],
+      "observations": [
+        "Reference inspected before generation.",
+        "Identity preserved: moustache, screaming face, chef hat, red scarf and stained chef whites.",
+        "Initial output clipped the top pasta arc. Built-in framing repair restored the whole pasta/fork composition.",
+        "Repaired full body, limbs and pasta-whip arc visually complete; RGBA transparency confirmed. No solid alpha pixels touch canvas edges."
+      ]
+    },
+    {
+      "id": "CC015",
+      "name": "Florida Man",
+      "faction": "international-incidents",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC015.png",
+      "destination": "docs/art/specials/CC015.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: Florida Man charging wildly with beer in one hand and a ridiculous improvised weapon in the other.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-859e62c0-1105-4535-9fb0-d6380a555889.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC015.png",
+      "final_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-859e62c0-1105-4535-9fb0-d6380a555889.png",
+      "edit_chain": [],
+      "observations": [
+        "Reference inspected before generation.",
+        "Identity preserved: goggles, wild hair, screaming face, tank top and alligator tattoo.",
+        "Full charging body, beer can and improvised saw-blade club fully visible.",
+        "Genuine RGBA alpha; no solid alpha pixels touch canvas edges."
+      ]
+    },
+    {
+      "id": "CC035",
+      "name": "Il Monumento",
+      "faction": "international-incidents",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC035.png",
+      "destination": "docs/art/specials/CC035.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional gala statesman raising a huge bronze bust of himself like a weapon.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-1f602f28-1dd5-496f-a5e0-2ae1a139aa5f.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC035.png",
+      "final_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-1f602f28-1dd5-496f-a5e0-2ae1a139aa5f.png",
+      "edit_chain": [],
+      "observations": [
+        "Reference inspected before generation.",
+        "Identity preserved: swept black hair, grin, gold-rim sunglasses, cream tuxedo and jeweled rings.",
+        "Full lunging body and huge bronze self-bust fully visible.",
+        "Genuine RGBA transparency confirmed; no solid alpha pixels touch canvas edges. Generated portrait canvas is 1164 by 1351."
+      ]
+    },
+    {
+      "id": "CC036",
+      "name": "World Tour Savior",
+      "faction": "international-incidents",
+      "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC036.png",
+      "destination": "docs/art/specials/CC036.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent action sprite for an original punk comic game cinematic. Reference image is identity and rendering style ONLY. Create ONE new full-body dynamic action pose of the same Cancel City caricature. Preserve distinctive face, costume, species and palette. Thick irregular black ink, grotesque editorial cartoon, painted cel shading, cream highlights, neon accents, rough comic textures. NOT anime, no Dragon Ball characters or copied branded artwork. Genuine transparent background. Full subject and all held objects fully visible, isolated, with at least 8 percent clear margin on every side. No frame, no environment, no interface, no written text, no watermark. Face toward viewer/right three-quarter if possible. No motion trails extending beyond sprite bounds. Pose: fictional stadium prophet playing a dramatic power chord with a guitar.",
+      "generated_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-59740172-fd82-46a9-8695-f443d8f435bd.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/specials/CC036.png",
+      "final_source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-59740172-fd82-46a9-8695-f443d8f435bd.png",
+      "edit_chain": [],
+      "observations": [
+        "Reference inspected before generation.",
+        "Identity preserved: swept long hair, amber sunglasses, leather jacket, beaded necklace and shouting expression.",
+        "Full body, boots and complete guitar visible in a dramatic power-chord stance.",
+        "Genuine RGBA transparency confirmed; no solid alpha pixels touch canvas edges."
+      ]
+    }
+  ]
+}

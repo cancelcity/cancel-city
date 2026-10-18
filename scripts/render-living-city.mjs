@@ -1,0 +1,30 @@
+import {createRequire} from 'node:module';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+const require=createRequire(import.meta.url);
+const {build}=createRequire(require.resolve('vite/package.json'))('esbuild');
+const runtime=process.env.CODEX_PRIMARY_RUNTIME_NODE_MODULES;
+const {createCanvas,loadImage,GlobalFonts}=runtime?createRequire(path.join(runtime,'package.json'))('@napi-rs/canvas'):require('@napi-rs/canvas');
+const out=path.resolve('work/living-city-review');
+await fs.mkdir(out,{recursive:true});
+await build({stdin:{contents:"export {paintWorld,worldAssets} from './src/components/living-city-painter'; export {fitCamera,clampCamera} from './src/domain/living-city'; export {freshCity} from './src/domain/city';",resolveDir:process.cwd(),loader:'ts'},bundle:true,platform:'node',format:'esm',outfile:path.join(out,'painter.mjs')});
+const {paintWorld,worldAssets,fitCamera,clampCamera,freshCity}=await import(path.join(out,'painter.mjs'));
+GlobalFonts.registerFromPath('public/assets/approved/bebas-neue-latin-400.woff2','CityCondensed');
+const city=freshCity(new Date('2026-10-16T12:00:00Z'));
+const developed=structuredClone(city);
+developed.plots[1]={kind:'afterparty',level:2,residentId:'CC135'};
+developed.plots[2]={kind:'pr',level:2,residentId:'CC017'};
+developed.plots[3]={kind:'civic',level:1,residentId:'CC023'};
+developed.plots[4]={kind:'rocket',level:2,residentId:null};
+developed.plots[5]={kind:'summit',level:1,residentId:null};
+const images={};
+await Promise.all(worldAssets(developed).map(async src=>{images[src]=await loadImage(path.resolve('public'+src));}));
+const cases=[{name:'first-block',city,w:1600,h:900,time:0},{name:'developed-block',city:developed,w:1600,h:900,time:9.5},{name:'developed-later',city:developed,w:1600,h:900,time:18.5},{name:'mobile-court',city,w:390,h:650,time:4}];
+for(const example of cases){
+ const {w,h,time,city,name}=example,canvas=createCanvas(w,h),ctx=canvas.getContext('2d');
+ const camera=w<700?clampCamera({...fitCamera(w,h),x:940,y:470},w,h):fitCamera(w,h);
+ const hits=paintWorld(ctx,images,{city,selected:'court',hover:null,time,reduced:false},w,h,camera);
+ await fs.writeFile(path.join(out,name+'.png'),canvas.toBuffer('image/png'));
+ console.log(`${name}: ${hits.length} interactive objects; ${w}×${h}`);
+}
+console.log('Canvas scene inspection only; this does not verify browser layout or pointer interaction.');

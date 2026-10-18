@@ -1,0 +1,303 @@
+{
+  "background": "docs/art/layered-specials/daenerys-airfryer/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/action-00.webp",
+        "width": 280,
+        "height": 413,
+        "sourceBounds": {
+          "x": 175,
+          "y": 3,
+          "w": 280,
+          "h": 413
+        },
+        "area": 60204
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/action-01.webp",
+        "width": 269,
+        "height": 411,
+        "sourceBounds": {
+          "x": 624,
+          "y": 4,
+          "w": 269,
+          "h": 411
+        },
+        "area": 59532
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/action-02.webp",
+        "width": 379,
+        "height": 392,
+        "sourceBounds": {
+          "x": 126,
+          "y": 405,
+          "w": 379,
+          "h": 392
+        },
+        "area": 68252
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/action-03.webp",
+        "width": 273,
+        "height": 392,
+        "sourceBounds": {
+          "x": 615,
+          "y": 403,
+          "w": 273,
+          "h": 392
+        },
+        "area": 57473
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/action-04.webp",
+        "width": 371,
+        "height": 392,
+        "sourceBounds": {
+          "x": 131,
+          "y": 773,
+          "w": 371,
+          "h": 392
+        },
+        "area": 67213
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/action-05.webp",
+        "width": 279,
+        "height": 388,
+        "sourceBounds": {
+          "x": 617,
+          "y": 779,
+          "w": 279,
+          "h": 388
+        },
+        "area": 63245
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/action-06.webp",
+        "width": 423,
+        "height": 384,
+        "sourceBounds": {
+          "x": 77,
+          "y": 1151,
+          "w": 423,
+          "h": 384
+        },
+        "area": 70723
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/action-07.webp",
+        "width": 316,
+        "height": 408,
+        "sourceBounds": {
+          "x": 611,
+          "y": 1128,
+          "w": 316,
+          "h": 408
+        },
+        "area": 60292
+      }
+    ],
+    "attack": [
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/attack-00.webp",
+        "width": 331,
+        "height": 410,
+        "sourceBounds": {
+          "x": 115,
+          "y": 3,
+          "w": 331,
+          "h": 410
+        },
+        "area": 69515
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/attack-01.webp",
+        "width": 312,
+        "height": 411,
+        "sourceBounds": {
+          "x": 592,
+          "y": 2,
+          "w": 312,
+          "h": 411
+        },
+        "area": 68846
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/attack-02.webp",
+        "width": 330,
+        "height": 402,
+        "sourceBounds": {
+          "x": 112,
+          "y": 386,
+          "w": 330,
+          "h": 402
+        },
+        "area": 70030
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/attack-03.webp",
+        "width": 405,
+        "height": 400,
+        "sourceBounds": {
+          "x": 541,
+          "y": 389,
+          "w": 405,
+          "h": 400
+        },
+        "area": 75284
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/attack-04.webp",
+        "width": 418,
+        "height": 385,
+        "sourceBounds": {
+          "x": 89,
+          "y": 761,
+          "w": 418,
+          "h": 385
+        },
+        "area": 76242
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/attack-05.webp",
+        "width": 470,
+        "height": 388,
+        "sourceBounds": {
+          "x": 537,
+          "y": 762,
+          "w": 470,
+          "h": 388
+        },
+        "area": 79569
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/attack-06.webp",
+        "width": 350,
+        "height": 408,
+        "sourceBounds": {
+          "x": 95,
+          "y": 1117,
+          "w": 350,
+          "h": 408
+        },
+        "area": 74565
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/attack-07.webp",
+        "width": 388,
+        "height": 414,
+        "sourceBounds": {
+          "x": 555,
+          "y": 1115,
+          "w": 388,
+          "h": 414
+        },
+        "area": 80397
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/ending-00.webp",
+        "width": 289,
+        "height": 407,
+        "sourceBounds": {
+          "x": 159,
+          "y": 8,
+          "w": 289,
+          "h": 407
+        },
+        "area": 59756
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/ending-01.webp",
+        "width": 275,
+        "height": 404,
+        "sourceBounds": {
+          "x": 594,
+          "y": 10,
+          "w": 275,
+          "h": 404
+        },
+        "area": 59528
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/ending-02.webp",
+        "width": 348,
+        "height": 388,
+        "sourceBounds": {
+          "x": 125,
+          "y": 397,
+          "w": 348,
+          "h": 388
+        },
+        "area": 63618
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/ending-03.webp",
+        "width": 306,
+        "height": 393,
+        "sourceBounds": {
+          "x": 590,
+          "y": 396,
+          "w": 306,
+          "h": 393
+        },
+        "area": 62291
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/ending-04.webp",
+        "width": 288,
+        "height": 410,
+        "sourceBounds": {
+          "x": 155,
+          "y": 764,
+          "w": 288,
+          "h": 410
+        },
+        "area": 64888
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/ending-05.webp",
+        "width": 287,
+        "height": 405,
+        "sourceBounds": {
+          "x": 613,
+          "y": 769,
+          "w": 287,
+          "h": 405
+        },
+        "area": 66264
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/ending-06.webp",
+        "width": 331,
+        "height": 378,
+        "sourceBounds": {
+          "x": 145,
+          "y": 1156,
+          "w": 331,
+          "h": 378
+        },
+        "area": 64708
+      },
+      {
+        "file": "docs/art/layered-specials/daenerys-airfryer/actors/ending-07.webp",
+        "width": 275,
+        "height": 384,
+        "sourceBounds": {
+          "x": 624,
+          "y": 1150,
+          "w": 275,
+          "h": 384
+        },
+        "area": 56743
+      }
+    ]
+  },
+  "props": {
+    "airfryer": "docs/art/layered-specials/daenerys-airfryer/airfryer-prop.webp"
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

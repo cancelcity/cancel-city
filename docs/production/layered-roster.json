@@ -1,0 +1,2833 @@
+{
+  "target": 113,
+  "reference": "/cinema/gokart/",
+  "renderVerified": 19,
+  "notes": "Render verification is local QA, not a claim of browser or audible playback. Publication is recorded by native Site versions. Gokart is a standalone style prototype and is not counted as a separate roster card.",
+  "cards": [
+    {
+      "cardId": "CC010",
+      "name": "Homelesslander",
+      "ability": "Cardboard Fortress",
+      "status": "render-verified",
+      "priority": 1,
+      "reference": "/assets/roster-b2/CC010.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/homelesslander-v1/special.mp4",
+      "storyboard": {
+        "setup": "LUXURY ADDRESS: UNDER BRIDGE.",
+        "attack": "CARDBOARD FORTRESS",
+        "impact": "SUPERPOWERED RENT",
+        "ending": "The penthouse is the box with the higher flap."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC019",
+      "name": "Master Cheese",
+      "ability": "Cheddar Command",
+      "status": "render-verified",
+      "priority": 2,
+      "reference": "/assets/roster-b2/CC019.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/master-cheese-v1/special.mp4",
+      "storyboard": {
+        "setup": "SPARTAN. SHELF LIFE: LIMITED.",
+        "attack": "CHEDDAR COMMAND",
+        "impact": "GRATED",
+        "ending": "Finish the fight. Refrigerate after opening."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC017",
+      "name": "MrLeast",
+      "ability": "Microscopic Giveaway",
+      "status": "render-verified",
+      "priority": 3,
+      "reference": "/assets/roster-b2/CC017.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/mrleast-v1/special.mp4",
+      "storyboard": {
+        "setup": "THE BIGGEST ANNOUNCEMENT. THE SMALLEST PRIZE.",
+        "attack": "MICROSCOPIC GIVEAWAY",
+        "impact": "PROMOTION DELIVERED",
+        "ending": "One dollar. Please hold the standing ovation."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC011",
+      "name": "Nine-to-Five Nanami",
+      "ability": "Paid Overtime",
+      "status": "render-verified",
+      "priority": 4,
+      "reference": "/assets/roster-b2/CC011.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/nanami-v1/special.mp4",
+      "storyboard": {
+        "setup": "17:59. DO NOT ASK.",
+        "attack": "PAID OVERTIME",
+        "impact": "OVERTIME APPROVED",
+        "ending": "That hit was outside my contracted hours."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC012",
+      "name": "Freezer",
+      "ability": "Cold Storage Final Form",
+      "status": "render-verified",
+      "priority": 5,
+      "reference": "/assets/roster-v3/CC012.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/freezer-v1/special.mp4",
+      "storyboard": {
+        "setup": "BEHOLD MY FINAL FORM.",
+        "attack": "COLD STORAGE",
+        "impact": "FROZEN-GOODS SHIELD",
+        "ending": "My final form is minus eighteen degrees."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC016",
+      "name": "PowerPoint",
+      "ability": "Mandatory Blood Deck",
+      "status": "render-verified",
+      "priority": 6,
+      "reference": "/assets/roster-v3/CC016.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/powerpoint-v1/special.mp4",
+      "storyboard": {
+        "setup": "THE ULTIMATE BLOOD SPELL.",
+        "attack": "MANDATORY BLOOD DECK",
+        "impact": "PAPER SHIELD",
+        "ending": "Witness my ultimate quarterly pie chart!"
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC004",
+      "name": "UsoppGPT",
+      "ability": "Generate Canon",
+      "status": "render-verified",
+      "priority": 7,
+      "reference": "/assets/roster-b2/CC004.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/usoppgpt-v1/special.mp4",
+      "storyboard": {
+        "setup": "ONE PROMPT. ZERO SOURCES.",
+        "attack": "GENERATE CANON",
+        "impact": "PLOT ARMOR DELIVERED",
+        "ending": "It is not a lie if the next chapter prints it."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC007",
+      "name": "Kobeni Minimum Wage",
+      "ability": "Minimum-Wage Miracle",
+      "status": "render-verified",
+      "priority": 8,
+      "reference": "/assets/roster-v3/CC007.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/kobeni-v1/special.mp4",
+      "storyboard": {
+        "setup": "ONE TRAY. NO BENEFITS.",
+        "attack": "MINIMUM-WAGE MIRACLE",
+        "impact": "LUNCH SAVED",
+        "ending": "Please tell me exposure is not the tip."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC014",
+      "name": "Gordon Ramen",
+      "ability": "Instant Noodle Inspection",
+      "status": "render-verified",
+      "priority": 9,
+      "reference": "/assets/roster-v3/CC014.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/gordon-ramen-v1/special.mp4",
+      "storyboard": {
+        "setup": "A VERY SERIOUS TASTING.",
+        "attack": "NOODLE INSPECTION",
+        "impact": "KNOT ACCEPTABLE",
+        "ending": "The noodles have more backbone than this menu."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC063",
+      "name": "Infinite Rizz",
+      "ability": "Domain Expansion: Main Character",
+      "status": "render-verified",
+      "priority": 10,
+      "reference": "/assets/residents/CC063.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/infinite-rizz-v1/special.mp4",
+      "storyboard": {
+        "setup": "MAIN CHARACTER LOADING",
+        "attack": "DOMAIN: RIZZ BUFFER",
+        "impact": "ATTACK BUFFERED",
+        "ending": "Your attack is buffering. My entrance is not."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC064",
+      "name": "Big Bald Energy",
+      "ability": "One Punch, One Coupon",
+      "status": "render-verified",
+      "priority": 11,
+      "reference": "/assets/residents/CC064.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/big-bald-energy-v1/special.mp4",
+      "storyboard": {
+        "setup": "THE COUPON EXPIRES AT SIX",
+        "attack": "ONE PUNCH. NO SPEECH.",
+        "impact": "COUPON APPLIED",
+        "ending": "Can we finish? The coupon expires at six."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC066",
+      "name": "The Eternal 2nd",
+      "ability": "Runner-Up Final Flash",
+      "status": "render-verified",
+      "priority": 12,
+      "reference": "/assets/residents/CC066.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/eternal-second-v1/special.mp4",
+      "storyboard": {
+        "setup": "FOREHEAD: FINAL FORM",
+        "attack": "RUNNER-UP FINAL FLASH",
+        "impact": "SECOND PLACE ENERGY",
+        "ending": "Kakarot’s trophy is being carried by the algorithm."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC005",
+      "name": "Sauron Surveillance",
+      "ability": "One Eye to Track Them All",
+      "status": "render-verified",
+      "priority": 13,
+      "reference": "/assets/roster-b2/CC005.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/sauron-surveillance-v1/special.mp4",
+      "storyboard": {
+        "setup": "SEARCH HISTORY ACQUIRED.",
+        "attack": "ONE EYE TO TRACK THEM ALL",
+        "impact": "PROFILED",
+        "ending": "One eye to track them all. Cookies are mandatory."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC023",
+      "name": "Fraudo Baggins",
+      "ability": "One Ring to Refer Them All",
+      "status": "render-verified",
+      "priority": 14,
+      "reference": "/assets/roster-v3/CC023.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/fraudo-baggins-v1/special.mp4",
+      "storyboard": {
+        "setup": "WELCOME TO THE FELLOWSHIP.",
+        "attack": "ONE RING TO REFER THEM ALL",
+        "impact": "CARPET UNRAVELLED",
+        "ending": "One referral ring. Unlimited exit liquidity."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC135",
+      "name": "Daenerys Airfryer",
+      "ability": "Dracarys, Preheat",
+      "status": "render-verified",
+      "priority": 15,
+      "reference": "/assets/roster-v3/CC135.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/daenerys-airfryer-v1/special.mp4",
+      "storyboard": {
+        "setup": "THREE DRAGONS. ONE SOCKET.",
+        "attack": "DRACARYS, PREHEAT",
+        "impact": "EXTRA CRISPY",
+        "ending": "Dracarys. After the preheat cycle."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC002",
+      "name": "Light Yagamod",
+      "ability": "Ban Note",
+      "status": "render-verified",
+      "priority": 16,
+      "reference": "/assets/roster-v3/CC002.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/light-yagamod-v1/special.mp4",
+      "storyboard": {
+        "setup": "ONE USERNAME. TOTAL CONTROL.",
+        "attack": "BAN NOTE",
+        "impact": "CHANNEL DELETED",
+        "ending": "The appeal channel has also been banned."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC013",
+      "name": "Copy-Paste Kakashi",
+      "ability": "Photocopy Jutsu",
+      "status": "render-verified",
+      "priority": 17,
+      "reference": "/assets/roster-v3/CC013.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/copy-paste-kakashi-v1/special.mp4",
+      "storyboard": {
+        "setup": "COPY THE STANCE.",
+        "attack": "PHOTOCOPY JUTSU",
+        "impact": "WATERMARKED",
+        "ending": "A thousand techniques. One office printer."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC001",
+      "name": "Yasuo 0/10",
+      "ability": "Windwall of Excuses",
+      "status": "render-verified",
+      "priority": 18,
+      "reference": "/assets/roster-v3/CC001.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/yasuo-zero-ten-v1/special.mp4",
+      "storyboard": {
+        "setup": "THE PERFECT DASH",
+        "attack": "WINDWALL OF EXCUSES",
+        "impact": "WRONG EXIT",
+        "ending": "My power spike is one more defeat away."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC003",
+      "name": "L Ratio",
+      "ability": "Case Closed, Ratio Open",
+      "status": "render-verified",
+      "priority": 19,
+      "reference": "/assets/roster-b2/CC003.webp",
+      "existingWholeBodyPoses": 6,
+      "film": "/assets/layered-specials/l-ratio-v1/special.mp4",
+      "storyboard": {
+        "setup": "CASE SOLVED. THREAD OPEN.",
+        "attack": "CASE CLOSED, RATIO OPEN",
+        "impact": "EVIDENCE APPLIED",
+        "ending": "The evidence is conclusive. Why is the reply winning?"
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC006",
+      "name": "Erwin LinkedIn",
+      "ability": "Dedicate Your Quarterly Results",
+      "status": "queued",
+      "priority": 20,
+      "reference": "/assets/roster-v3/CC006.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "HUMBLED. HONORED. HORSEPOWER.",
+        "attack": "DEDICATE YOUR RESULTS",
+        "impact": "MORALE PROMOTED",
+        "ending": "Dedicate your hearts. Attach the quarterly report."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC018",
+      "name": "Gandalf the Grey Market",
+      "ability": "You Shall Not Audit",
+      "status": "queued",
+      "priority": 21,
+      "reference": "/assets/roster-v3/CC018.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "YOU SHALL NOT AUDIT.",
+        "attack": "GREY-MARKET PORTAL",
+        "impact": "SHUTTERED",
+        "ending": "You shall not audit. Please use the rear entrance."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC058",
+      "name": "GenOS Windows Update",
+      "ability": "Restart Required",
+      "status": "queued",
+      "priority": 22,
+      "reference": "/assets/roster-v3/CC058.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "TRANSFORMATION: 99%",
+        "attack": "RESTART REQUIRED",
+        "impact": "SQUAD REPAIRED",
+        "ending": "Do not turn off the hero during the update."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC008",
+      "name": "Sully Sullivan HR",
+      "ability": "Mandatory Monster Wellness",
+      "status": "queued",
+      "priority": 23,
+      "reference": "/assets/roster-b2/CC008.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "PLEASE RATE THE ROAR.",
+        "attack": "MANDATORY MONSTER WELLNESS",
+        "impact": "SQUAD RESTORED",
+        "ending": "The roar was intended as constructive feedback."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC009",
+      "name": "Olaf Global Warming",
+      "ability": "Sponsored Cold Front",
+      "status": "queued",
+      "priority": 24,
+      "reference": "/assets/roster-b2/CC009.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "CLIMATE CAMPAIGN: MELTING.",
+        "attack": "SPONSORED COLD FRONT",
+        "impact": "COOLING DELIVERED",
+        "ending": "The planet is warming. So is my sponsorship deal."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC021",
+      "name": "Dutch Pyramid Scheme",
+      "ability": "I Have a Payment Plan",
+      "status": "queued",
+      "priority": 25,
+      "reference": "/assets/roster-b2/CC021.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "HE HAS ANOTHER PLAN.",
+        "attack": "I HAVE A PAYMENT PLAN",
+        "impact": "PLAN COLLAPSED",
+        "ending": "One more payment. Then we are going to Tahiti."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC065",
+      "name": "Absent Father",
+      "ability": "Instant Abandonment",
+      "status": "queued",
+      "priority": 26,
+      "reference": "/assets/residents/CC065.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "TRAINING: STILL IN PROGRESS",
+        "attack": "INSTANT ABANDONMENT",
+        "impact": "INVOICE DELIVERED",
+        "ending": "Tell Piccolo the training ran a little long. Again."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC062",
+      "name": "Anti-Anti-Meat Activist",
+      "ability": "Barbecue Liberation",
+      "status": "queued",
+      "priority": 27,
+      "reference": "/assets/residents/CC062.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "MEAT HAS NO BORDERS",
+        "attack": "BARBECUE LIBERATION",
+        "impact": "BUFFET ANNEXED",
+        "ending": "The meat has been liberated. Into my inventory."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC061",
+      "name": "Power of Friendship",
+      "ability": "Flashback Barrage",
+      "status": "queued",
+      "priority": 28,
+      "reference": "/assets/residents/CC061.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "PREVIOUSLY ON THIS ATTACK",
+        "attack": "SEVENTEEN FLASHBACKS LATER",
+        "impact": "FRIENDSHIP BARRAGE",
+        "ending": "We met twelve seconds ago. Cue the childhood montage."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC049",
+      "name": "Touch Grass Final Boss",
+      "ability": "Offline Rehabilitation",
+      "status": "queued",
+      "priority": 29,
+      "reference": "/assets/residents/CC049.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "DAYLIGHT EXPOSURE THERAPY",
+        "attack": "OFFLINE REHABILITATION",
+        "impact": "TOUCHED GRASS",
+        "ending": "Log off. The sun has no comment section."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC015",
+      "name": "Florida Man",
+      "ability": "Local News",
+      "status": "queued",
+      "priority": 115,
+      "reference": "/assets/residents/CC015.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "SIDE QUEST ACCEPTED",
+        "attack": "FLORIDA HAS ENTERED",
+        "impact": "BREAKING",
+        "ending": "Is this a side quest or a court date?"
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC020",
+      "name": "Democracy Paywall",
+      "ability": "Premium Voting",
+      "status": "queued",
+      "priority": 120,
+      "reference": "/assets/residents/CC020.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "FREE TRIAL EXPIRED",
+        "attack": "PREMIUM VOTING",
+        "impact": "LOCKED OUT",
+        "ending": "Your freedom has entered the billing cycle."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC022",
+      "name": "Diamond Hands Corpse",
+      "ability": "Never Selling",
+      "status": "queued",
+      "priority": 122,
+      "reference": "/assets/residents/CC022.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "HOLDING SINCE FOREVER",
+        "attack": "NEVER SELLING",
+        "impact": "DIAMOND HANDS",
+        "ending": "I am not trapped. I am historically early."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC024",
+      "name": "Smooth Rug Pull",
+      "ability": "Liquidity Disappears",
+      "status": "queued",
+      "priority": 124,
+      "reference": "/assets/residents/CC024.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "COMMUNITY TRANSFER",
+        "attack": "LIQUIDITY DISAPPEARS",
+        "impact": "EXIT LIQUIDITY",
+        "ending": "Your funds have found product-market exit."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC025",
+      "name": "Forgotten Seed Phrase",
+      "ability": "Funds Are Safu",
+      "status": "queued",
+      "priority": 125,
+      "reference": "/assets/residents/CC025.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "LAST ATTEMPT REMAINING",
+        "attack": "FUNDS ARE SAFU",
+        "impact": "UNLOCKED",
+        "ending": "I remember the vibe of the password."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC026",
+      "name": "Final Boss Karen",
+      "ability": "Privilege Outrage Summon",
+      "status": "queued",
+      "priority": 126,
+      "reference": "/assets/residents/CC026.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "I KEPT THE RECEIPTS",
+        "attack": "RECEIPT APOCALYPSE",
+        "impact": "THREAD LOCKED",
+        "ending": "I would like to escalate the universe."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC027",
+      "name": "Doomer Wojak",
+      "ability": "I Told You So",
+      "status": "queued",
+      "priority": 127,
+      "reference": "/assets/residents/CC027.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "APOCALYPSE: PENDING",
+        "attack": "I TOLD YOU SO",
+        "impact": "PREPARED",
+        "ending": "It is so over. The beans are so back."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC028",
+      "name": "Conspiracy Mom",
+      "ability": "Secret Research",
+      "status": "queued",
+      "priority": 128,
+      "reference": "/assets/residents/CC028.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "PIGEONS CONNECTED",
+        "attack": "SECRET RESEARCH",
+        "impact": "EXPOSED",
+        "ending": "The JPEG artifacts are trying to tell you something."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC029",
+      "name": "Doomscroll Parasite",
+      "ability": "One More Video",
+      "status": "queued",
+      "priority": 129,
+      "reference": "/assets/residents/CC029.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "SLEEP SCHEDULE DELETED",
+        "attack": "ONE MORE VIDEO",
+        "impact": "DOOMSCROLLED",
+        "ending": "One more video. Then a new personality."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC030",
+      "name": "Cancelled Messiah",
+      "ability": "You Can't Cancel Me Twice",
+      "status": "queued",
+      "priority": 130,
+      "reference": "/assets/residents/CC030.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "DOWNFALL: SOLD OUT",
+        "attack": "YOU CAN’T CANCEL ME TWICE",
+        "impact": "RENEWED",
+        "ending": "My downfall has been renewed for season two."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC031",
+      "name": "Zuck.exe",
+      "ability": "Terms of Your Life",
+      "status": "queued",
+      "priority": 131,
+      "reference": "/assets/residents/CC031.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "TERMS UPDATED",
+        "attack": "TERMS OF YOUR LIFE",
+        "impact": "ACCEPTED",
+        "ending": "Thank you for the data cookie. Yes yes yes."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC032",
+      "name": "Stan Empress",
+      "ability": "Weaponized Fanbase",
+      "status": "queued",
+      "priority": 132,
+      "reference": "/assets/residents/CC032.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "FANBASE MOBILIZED",
+        "attack": "WEAPONIZED FANBASE",
+        "impact": "RATIO ARMY",
+        "ending": "The beef has a deluxe edition."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC033",
+      "name": "Prime Overlord",
+      "ability": "Same-Day Domination",
+      "status": "queued",
+      "priority": 133,
+      "reference": "/assets/residents/CC033.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "SAME-DAY STRIKE",
+        "attack": "SAME-DAY DOMINATION",
+        "impact": "DELIVERED",
+        "ending": "Your dignity was not included with Prime."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC034",
+      "name": "Subscription Goblin",
+      "ability": "Free Trial Forever",
+      "status": "queued",
+      "priority": 134,
+      "reference": "/assets/residents/CC034.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "CANCELLATION DENIED",
+        "attack": "FREE TRIAL FOREVER",
+        "impact": "AUTO-RENEWED",
+        "ending": "Free will is an Enterprise feature."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC035",
+      "name": "Il Monumento",
+      "ability": "Bronze Diplomacy",
+      "status": "queued",
+      "priority": 135,
+      "reference": "/assets/residents/CC035.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "EGO MONUMENT RISING",
+        "attack": "BRONZE DIPLOMACY",
+        "impact": "HISTORIC",
+        "ending": "The statue has approved the peace process."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC036",
+      "name": "World Tour Savior",
+      "ability": "Charity Encore",
+      "status": "queued",
+      "priority": 136,
+      "reference": "/assets/residents/CC036.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "SPOTLIGHTS ONLINE",
+        "attack": "CHARITY ENCORE",
+        "impact": "ENCORE",
+        "ending": "Have we tried releasing the deluxe crisis?"
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC037",
+      "name": "Don Tremendous",
+      "ability": "Absolutely Tremendous",
+      "status": "queued",
+      "priority": 137,
+      "reference": "/assets/residents/CC037.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "DEFEAT RECLASSIFIED",
+        "attack": "ABSOLUTELY TREMENDOUS",
+        "impact": "TREMENDOUS",
+        "ending": "Nobody has ever lost this victoriously."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC038",
+      "name": "The Eternal Candidate",
+      "ability": "One More Term",
+      "status": "queued",
+      "priority": 138,
+      "reference": "/assets/residents/CC038.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "NEXT TERM LOADING",
+        "attack": "ONE MORE TERM",
+        "impact": "REELECTED",
+        "ending": "The policy is coming in the next update."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC039",
+      "name": "Elongated Ego",
+      "ability": "Hostile Rebrand",
+      "status": "queued",
+      "priority": 139,
+      "reference": "/assets/residents/CC039.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "TOWN SQUARE ACQUIRED",
+        "attack": "HOSTILE REBRAND",
+        "impact": "RENAMED",
+        "ending": "Bought the platform. Still getting ratioed."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC040",
+      "name": "Laser-Eye Prophet",
+      "ability": "Number Go Up",
+      "status": "queued",
+      "priority": 140,
+      "reference": "/assets/residents/CC040.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "COPIUM: CRITICAL",
+        "attack": "NUMBER GO UP",
+        "impact": "BULLISH",
+        "ending": "The red candle is just a shy green candle."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC041",
+      "name": "Ye of Chaos",
+      "ability": "I Am the Feature",
+      "status": "queued",
+      "priority": 141,
+      "reference": "/assets/residents/CC041.webp",
+      "existingWholeBodyPoses": 0,
+      "film": null,
+      "storyboard": {
+        "setup": "MAIN CHARACTER MAXIMUM",
+        "attack": "I AM THE FEATURE",
+        "impact": "HEADLINED",
+        "ending": "The guest feature is also me."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC042",
+      "name": "Apology Influencer",
+      "ability": "Tears Sponsored",
+      "status": "queued",
+      "priority": 142,
+      "reference": "/assets/residents/CC042.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "RING LIGHT CALIBRATED",
+        "attack": "TEARS SPONSORED",
+        "impact": "ACCOUNTABILITY*",
+        "ending": "I am taking accountability. Use code SORRY."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC043",
+      "name": "Mew Khalifa",
+      "ability": "Copyright Psychic Strike",
+      "status": "queued",
+      "priority": 143,
+      "reference": "/assets/residents/CC043.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "CAT EARS: LEGALLY DISTINCT",
+        "attack": "COPYRIGHT PSYCHIC STRIKE",
+        "impact": "CEASE AND DESIST",
+        "ending": "My special move is a cease-and-desist with cat ears."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC044",
+      "name": "Clip Farmer",
+      "ability": "Clip Farm Frenzy",
+      "status": "queued",
+      "priority": 144,
+      "reference": "/assets/residents/CC044.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "CHAT: MILKED",
+        "attack": "CLIP FARM FRENZY",
+        "impact": "THUMBNAILED",
+        "ending": "CHAT. CHAT. CHAT. THIS IS A BAGEL."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC045",
+      "name": "Live Laugh Lawsuit",
+      "ability": "Sponsored Accountability",
+      "status": "queued",
+      "priority": 145,
+      "reference": "/assets/residents/CC045.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "ACCOUNTABILITY: SPONSORED",
+        "attack": "SPONSORED ACCOUNTABILITY",
+        "impact": "INVOICED",
+        "ending": "I manifested accountability. Shipping is extra."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC046",
+      "name": "Sigma Landlord",
+      "ability": "Rent Free Forever",
+      "status": "queued",
+      "priority": 146,
+      "reference": "/assets/residents/CC046.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "RENT: YOUR ENTIRE SOUL",
+        "attack": "RENT FREE FOREVER",
+        "impact": "EVICTED",
+        "ending": "Your poverty is interrupting my podcast."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC047",
+      "name": "Auntie Fact Check",
+      "ability": "Forwarded 47 Times",
+      "status": "queued",
+      "priority": 147,
+      "reference": "/assets/residents/CC047.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "SCREENSHOT OF A SCREENSHOT",
+        "attack": "FORWARDED 47 TIMES",
+        "impact": "FACT CHECKED",
+        "ending": "Baby, that headline is from 2009."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC048",
+      "name": "Algorithm Daddy",
+      "ability": "Feed Adoption",
+      "status": "queued",
+      "priority": 148,
+      "reference": "/assets/residents/CC048.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "YOUR INTERESTS: REASSIGNED",
+        "attack": "FEED ADOPTION",
+        "impact": "ADOPTED",
+        "ending": "The feed loves you. Consent was in the footer."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC050",
+      "name": "Verified Goblin",
+      "ability": "Blue Check Tax",
+      "status": "queued",
+      "priority": 150,
+      "reference": "/assets/residents/CC050.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "CREDIBILITY: MONTHLY",
+        "attack": "BLUE CHECK TAX",
+        "impact": "PAY TO COPE",
+        "ending": "My check is blue. My overdraft is red."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC051",
+      "name": "Oscar Goblin",
+      "ability": "Award Season Immunity",
+      "status": "queued",
+      "priority": 151,
+      "reference": "/assets/residents/CC051.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "GOLD DOES NOT EQUAL GOOD",
+        "attack": "RECEIPTS OVER TROPHIES",
+        "impact": "TROPHY DEFENSE: SHATTERED",
+        "ending": "The trophy would like to decline being my character witness."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC052",
+      "name": "Sentence Is Just a Number",
+      "ability": "Encore Denied",
+      "status": "queued",
+      "priority": 152,
+      "reference": "/assets/residents/CC052.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "MICROPHONE: NOT INTERESTED",
+        "attack": "CURTAIN CALL. LITERALLY.",
+        "impact": "ENCORE DENIED",
+        "ending": "The encore has been declined by absolutely everyone."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC053",
+      "name": "Island Guide",
+      "ability": "Redacted Itinerary",
+      "status": "queued",
+      "priority": 153,
+      "reference": "/assets/residents/CC053.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "ITINERARY: MOSTLY RECTANGLES",
+        "attack": "BLACK BAR TOURISM",
+        "impact": "ITINERARY REDACTED",
+        "ending": "The map is all-inclusive. The information is not."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC054",
+      "name": "420 Overlord",
+      "ability": "Contact High",
+      "status": "queued",
+      "priority": 154,
+      "reference": "/assets/residents/CC054.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THIS MEETING COULD BE A CLOUD",
+        "attack": "DO NOT DISTURB THE SQUAD",
+        "impact": "CONTACT HIGH",
+        "ending": "The meeting could have been a cloud."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC055",
+      "name": "Rain of Subscribers",
+      "ability": "Paywall Weather",
+      "status": "queued",
+      "priority": 155,
+      "reference": "/assets/residents/CC055.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "DRYNESS IS PREMIUM",
+        "attack": "RAINING RENEWALS",
+        "impact": "PAYWALL WEATHER",
+        "ending": "The free forecast is wet. Dryness is premium."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC056",
+      "name": "Jeffrey Gobstein",
+      "ability": "VIP Immunity",
+      "status": "queued",
+      "priority": 156,
+      "reference": "/assets/residents/CC056.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "CONSEQUENCES: TRYING TO CONNECT",
+        "attack": "IMMUNITY SOLD SEPARATELY",
+        "impact": "BUBBLE BURST",
+        "ending": "My immunity bubble has requested independent legal advice."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC057",
+      "name": "Baby Oil Supplier",
+      "ability": "Bulk Order",
+      "status": "queued",
+      "priority": 157,
+      "reference": "/assets/residents/CC057.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "DELIVERY: ABSURD QUANTITY",
+        "attack": "SUPPLY CHAIN SLIPPERY",
+        "impact": "BULK ORDER",
+        "ending": "The supplier has slipped on his own supply chain."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC059",
+      "name": "Oprahoma",
+      "ability": "Everybody Gets a Debuff",
+      "status": "queued",
+      "priority": 159,
+      "reference": "/assets/residents/CC059.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "GIFTS FOR EVERY POSTCODE",
+        "attack": "THE STATE IS THROWING HANDS",
+        "impact": "GIFTS HAVE CONSEQUENCES",
+        "ending": "YOU get a debuff. YOU get a debuff. The postcode gets a debuff."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC060",
+      "name": "Matrixed",
+      "ability": "Escape the Checkout",
+      "status": "queued",
+      "priority": 160,
+      "reference": "/assets/residents/CC060.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "EXIT: PREMIUM FEATURE",
+        "attack": "ESCAPE THE CHECKOUT",
+        "impact": "CHECKOUT COMPLETE",
+        "ending": "The Matrix has renewed your annual subscription."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC067",
+      "name": "Nyan Overdraft",
+      "ability": "Rainbow Overdraft",
+      "status": "queued",
+      "priority": 167,
+      "reference": "/assets/residents/CC067.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE RAINBOW IS A RECURRING PAYMENT.",
+        "attack": "RAINBOW OVERDRAFT",
+        "impact": "RAINBOW OVERDRAFT",
+        "ending": "The rainbow is a recurring payment."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC068",
+      "name": "Keyboard Cat: Final Performance",
+      "ability": "Play Them Out",
+      "status": "queued",
+      "priority": 168,
+      "reference": "/assets/residents/CC068.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE EXIT THEME HAS AN EXIT THEME.",
+        "attack": "PLAY THEM OUT",
+        "impact": "PLAY THEM OUT",
+        "ending": "The exit theme has an exit theme."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC069",
+      "name": "Longcat, City Planner",
+      "ability": "Vertical Expansion",
+      "status": "queued",
+      "priority": 169,
+      "reference": "/assets/residents/CC069.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "HEIGHT LIMIT: CAT.",
+        "attack": "VERTICAL EXPANSION",
+        "impact": "VERTICAL EXPANSION",
+        "ending": "Height limit: cat."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC070",
+      "name": "Ceiling Cat, Internal Auditor",
+      "ability": "Overhead Inspection",
+      "status": "queued",
+      "priority": 170,
+      "reference": "/assets/residents/CC070.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "YOUR CEILING CLEARANCE HAS BEEN DECLINED.",
+        "attack": "OVERHEAD INSPECTION",
+        "impact": "OVERHEAD INSPECTION",
+        "ending": "Your ceiling clearance has been declined."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC071",
+      "name": "Grumpy Service Desk",
+      "ability": "Request Rejected",
+      "status": "queued",
+      "priority": 171,
+      "reference": "/assets/residents/CC071.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "CUSTOMER SATISFACTION: NO.",
+        "attack": "REQUEST REJECTED",
+        "impact": "REQUEST REJECTED",
+        "ending": "Customer satisfaction: no."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC072",
+      "name": "Bongo Magistrate",
+      "ability": "Order in the Bongos",
+      "status": "queued",
+      "priority": 172,
+      "reference": "/assets/residents/CC072.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE COURT HAS ENTERED ITS DRUM SOLO.",
+        "attack": "ORDER IN THE BONGOS",
+        "impact": "ORDER IN THE BONGOS",
+        "ending": "The court has entered its drum solo."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC073",
+      "name": "Hampter, Supply Chain Manager",
+      "ability": "Inventory Regurgitation",
+      "status": "queued",
+      "priority": 173,
+      "reference": "/assets/residents/CC073.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "YOUR INVENTORY IS IN ANOTHER CHEEK.",
+        "attack": "INVENTORY REGURGITATION",
+        "impact": "INVENTORY REGURGITATION",
+        "ending": "Your inventory is in another cheek."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC074",
+      "name": "Capybara Ombudsman",
+      "ability": "Mandatory Calm",
+      "status": "queued",
+      "priority": 174,
+      "reference": "/assets/residents/CC074.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE DISPUTE COULD HAVE BEEN A BATH.",
+        "attack": "MANDATORY CALM",
+        "impact": "MANDATORY CALM",
+        "ending": "The dispute could have been a bath."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC081",
+      "name": "Big Chungus, Minister of Inflation",
+      "ability": "Fill the Frame",
+      "status": "queued",
+      "priority": 181,
+      "reference": "/assets/residents/CC081.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE FRAME HAS APPLIED FOR AN EXTENSION.",
+        "attack": "FILL THE FRAME",
+        "impact": "FILL THE FRAME",
+        "ending": "The frame has applied for an extension."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC082",
+      "name": "Clippy, Debt Collector",
+      "ability": "Looks Like Consequences",
+      "status": "queued",
+      "priority": 182,
+      "reference": "/assets/residents/CC082.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "LOOKS LIKE YOU ARE TRYING TO SURVIVE.",
+        "attack": "LOOKS LIKE CONSEQUENCES",
+        "impact": "LOOKS LIKE CONSEQUENCES",
+        "ending": "Looks like you are trying to survive."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC083",
+      "name": "Bonzi Bandwidth",
+      "ability": "Unsolicited Assistance",
+      "status": "queued",
+      "priority": 183,
+      "reference": "/assets/residents/CC083.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "YOUR ASSISTANT HAS INSTALLED MORE ASSISTANTS.",
+        "attack": "UNSOLICITED ASSISTANCE",
+        "impact": "UNSOLICITED ASSISTANCE",
+        "ending": "Your assistant has installed more assistants."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC084",
+      "name": "Internet Explorer, Archaeologist",
+      "ability": "Historically Late",
+      "status": "queued",
+      "priority": 184,
+      "reference": "/assets/residents/CC084.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE HIT HAS ARRIVED THREE PATCHES LATE.",
+        "attack": "HISTORICALLY LATE",
+        "impact": "HISTORICALLY LATE",
+        "ending": "The hit has arrived three patches late."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC085",
+      "name": "This Is Fine, Fire Marshal",
+      "ability": "Selective Extinguisher",
+      "status": "queued",
+      "priority": 185,
+      "reference": "/assets/residents/CC085.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "EVERYTHING IS FINE WITHIN THIS TEACUP.",
+        "attack": "SELECTIVE EXTINGUISHER",
+        "impact": "SELECTIVE EXTINGUISHER",
+        "ending": "Everything is fine within this teacup."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC086",
+      "name": "Stonks Prophet",
+      "ability": "Upward Consequences",
+      "status": "queued",
+      "priority": 186,
+      "reference": "/assets/residents/CC086.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE LINE GOES UP. SO DO YOU.",
+        "attack": "UPWARD CONSEQUENCES",
+        "impact": "UPWARD CONSEQUENCES",
+        "ending": "The line goes up. so do you."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC087",
+      "name": "Speed Runaway",
+      "ability": "World Tour Sprint",
+      "status": "queued",
+      "priority": 187,
+      "reference": "/assets/residents/CC087.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE PING IS TRYING TO CATCH UP.",
+        "attack": "WORLD TOUR SPRINT",
+        "impact": "WORLD TOUR SPRINT",
+        "ending": "The ping is trying to catch up."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC088",
+      "name": "Case Closed",
+      "ability": "Moderation Masonry",
+      "status": "queued",
+      "priority": 188,
+      "reference": "/assets/residents/CC088.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE APPEAL HAS ALSO BEEN BANNED.",
+        "attack": "MODERATION MASONRY",
+        "impact": "MODERATION MASONRY",
+        "ending": "The appeal has also been banned."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC095",
+      "name": "PokiManage",
+      "ability": "Emote Traffic Control",
+      "status": "queued",
+      "priority": 195,
+      "reference": "/assets/residents/CC095.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "ALL EMOTES MUST MERGE IN AN ORDERLY MANNER.",
+        "attack": "EMOTE TRAFFIC CONTROL",
+        "impact": "EMOTE TRAFFIC CONTROL",
+        "ending": "All emotes must merge in an orderly manner."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC096",
+      "name": "Hot-Tub Zoning Officer",
+      "ability": "Inflatable Municipal Resort",
+      "status": "queued",
+      "priority": 196,
+      "reference": "/assets/residents/CC096.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THIS SPLASH IS ZONED FOR COMMERCIAL USE.",
+        "attack": "INFLATABLE MUNICIPAL RESORT",
+        "impact": "INFLATABLE MUNICIPAL RESORT",
+        "ending": "This splash is zoned for commercial use."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC097",
+      "name": "Dr. Disconnect",
+      "ability": "Connection Lost",
+      "status": "queued",
+      "priority": 197,
+      "reference": "/assets/residents/CC097.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "VIOLENCE. SPEED. A LOOSE ETHERNET CABLE.",
+        "attack": "CONNECTION LOST",
+        "impact": "CONNECTION LOST",
+        "ending": "Violence. speed. a loose ethernet cable."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC098",
+      "name": "Mileage Mayhem",
+      "ability": "Nonsense Odometer",
+      "status": "queued",
+      "priority": 198,
+      "reference": "/assets/residents/CC098.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE NEXT MILE IS MEASURED IN FURNITURE.",
+        "attack": "NONSENSE ODOMETER",
+        "impact": "NONSENSE ODOMETER",
+        "ending": "The next mile is measured in furniture."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC099",
+      "name": "Ye Olde Monologue",
+      "ability": "Infinite Acceptance Speech",
+      "status": "queued",
+      "priority": 199,
+      "reference": "/assets/residents/CC099.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE GUEST SPEAKER IS ALSO ME.",
+        "attack": "INFINITE ACCEPTANCE SPEECH",
+        "impact": "INFINITE ACCEPTANCE SPEECH",
+        "ending": "The guest speaker is also me."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC100",
+      "name": "Champagne Support Ticket",
+      "ability": "Voice Mail Stadium",
+      "status": "queued",
+      "priority": 200,
+      "reference": "/assets/residents/CC100.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE SUPPORT TICKET HAS REQUESTED A FEATURE.",
+        "attack": "VOICE MAIL STADIUM",
+        "impact": "VOICE MAIL STADIUM",
+        "ending": "The support ticket has requested a feature."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC101",
+      "name": "Community Note Lamar",
+      "ability": "Footnote Crossfire",
+      "status": "queued",
+      "priority": 201,
+      "reference": "/assets/residents/CC101.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE FOOTNOTE HAS ITS OWN FOOTNOTE.",
+        "attack": "FOOTNOTE CROSSFIRE",
+        "impact": "FOOTNOTE CROSSFIRE",
+        "ending": "The footnote has its own footnote."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC102",
+      "name": "Taylor Shift",
+      "ability": "Era Rotation",
+      "status": "queued",
+      "priority": 202,
+      "reference": "/assets/residents/CC102.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "NEW ERA. SAME COMPLICATED SEATING CHART.",
+        "attack": "ERA ROTATION",
+        "impact": "ERA ROTATION",
+        "ending": "New era. same complicated seating chart."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC103",
+      "name": "BeyonQueue",
+      "ability": "Velvet Rope Formation",
+      "status": "queued",
+      "priority": 203,
+      "reference": "/assets/residents/CC103.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE ENTRANCE REQUIRES A SEPARATE ENTRANCE.",
+        "attack": "VELVET ROPE FORMATION",
+        "impact": "VELVET ROPE FORMATION",
+        "ending": "The entrance requires a separate entrance."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC104",
+      "name": "Nicki Min-Max",
+      "ability": "Pink Tactical Perfection",
+      "status": "queued",
+      "priority": 204,
+      "reference": "/assets/residents/CC104.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE SPREADSHEET HAS DROPPED A VERSE.",
+        "attack": "PINK TACTICAL PERFECTION",
+        "impact": "PINK TACTICAL PERFECTION",
+        "ending": "The spreadsheet has dropped a verse."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC105",
+      "name": "Lady Lag-Lag",
+      "ability": "Buffering Couture",
+      "status": "queued",
+      "priority": 205,
+      "reference": "/assets/residents/CC105.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "MY NEXT FORM IS STILL INSTALLING.",
+        "attack": "BUFFERING COUTURE",
+        "impact": "BUFFERING COUTURE",
+        "ending": "My next form is still installing."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC106",
+      "name": "Britney Spears",
+      "ability": "Synchronized Spearwork",
+      "status": "queued",
+      "priority": 206,
+      "reference": "/assets/residents/CC106.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE SPEARS ARE PART OF THE CHOREOGRAPHY.",
+        "attack": "SYNCHRONIZED SPEARWORK",
+        "impact": "SYNCHRONIZED SPEARWORK",
+        "ending": "The spears are part of the choreography."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC109",
+      "name": "Yoda, Terms Read You Must",
+      "ability": "Reverse Contract",
+      "status": "queued",
+      "priority": 209,
+      "reference": "/assets/residents/CC109.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "SMALL PRINT. LARGE CONSEQUENCES.",
+        "attack": "REVERSE CONTRACT",
+        "impact": "REVERSE CONTRACT",
+        "ending": "Small print. large consequences."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC110",
+      "name": "BatExpense",
+      "ability": "Expense Account Justice",
+      "status": "queued",
+      "priority": 210,
+      "reference": "/assets/residents/CC110.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "JUSTICE REQUIRES ITEMIZED DOCUMENTATION.",
+        "attack": "EXPENSE ACCOUNT JUSTICE",
+        "impact": "EXPENSE ACCOUNT JUSTICE",
+        "ending": "Justice requires itemized documentation."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC111",
+      "name": "The Clown of Customer Service",
+      "ability": "Three Terrible Solutions",
+      "status": "queued",
+      "priority": 211,
+      "reference": "/assets/residents/CC111.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "ALL THREE OPTIONS WERE PIE.",
+        "attack": "THREE TERRIBLE SOLUTIONS",
+        "impact": "THREE TERRIBLE SOLUTIONS",
+        "ending": "All three options were pie."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC112",
+      "name": "Deadlinepool",
+      "ability": "Skip to Impact",
+      "status": "queued",
+      "priority": 212,
+      "reference": "/assets/residents/CC112.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "WE CAN FIX THIS SCENE IN POST.",
+        "attack": "SKIP TO IMPACT",
+        "impact": "SKIP TO IMPACT",
+        "ending": "We can fix this scene in post."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC113",
+      "name": "Doctor Time Zone",
+      "ability": "Six-Time-Zone Appointment",
+      "status": "queued",
+      "priority": 213,
+      "reference": "/assets/residents/CC113.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "YOU HAVE MISSED THIS MEETING SIX TIMES.",
+        "attack": "SIX-TIME-ZONE APPOINTMENT",
+        "impact": "SIX-TIME-ZONE APPOINTMENT",
+        "ending": "You have missed this meeting six times."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC123",
+      "name": "Solid Snake, Terms in a Box",
+      "ability": "Box Inside a Box",
+      "status": "queued",
+      "priority": 223,
+      "reference": "/assets/residents/CC123.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THIS BOX HAS A SECOND PHASE.",
+        "attack": "BOX INSIDE A BOX",
+        "impact": "BOX INSIDE A BOX",
+        "ending": "This box has a second phase."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC124",
+      "name": "Phoenix Wright, Wrong Tab",
+      "ability": "Accidental Evidence",
+      "status": "queued",
+      "priority": 224,
+      "reference": "/assets/residents/CC124.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE WRONG TAB WAS THE RIGHT EVIDENCE.",
+        "attack": "ACCIDENTAL EVIDENCE",
+        "impact": "ACCIDENTAL EVIDENCE",
+        "ending": "The wrong tab was the right evidence."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC125",
+      "name": "Ken, Beach Committee Chairman",
+      "ability": "Beach Council Session",
+      "status": "queued",
+      "priority": 225,
+      "reference": "/assets/residents/CC125.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "MY JOB IS STILL BEACH.",
+        "attack": "BEACH COUNCIL SESSION",
+        "impact": "BEACH COUNCIL SESSION",
+        "ending": "My job is still beach."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC126",
+      "name": "Godzilla, Zoning Violation",
+      "ability": "Permitted Demolition",
+      "status": "queued",
+      "priority": 226,
+      "reference": "/assets/residents/CC126.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE PERMIT OFFICE WAS NOT ON THE PERMIT.",
+        "attack": "PERMITTED DEMOLITION",
+        "impact": "PERMITTED DEMOLITION",
+        "ending": "The permit office was not on the permit."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC127",
+      "name": "Reply-All Paladin",
+      "ability": "Entire Office Summoned",
+      "status": "queued",
+      "priority": 227,
+      "reference": "/assets/residents/CC127.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "ADDING EVERYONE FOR VISIBILITY.",
+        "attack": "ENTIRE OFFICE SUMMONED",
+        "impact": "ENTIRE OFFICE SUMMONED",
+        "ending": "Adding everyone for visibility."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC128",
+      "name": "Voice-Note Warlock",
+      "ability": "Nine-Minute Recording",
+      "status": "queued",
+      "priority": 228,
+      "reference": "/assets/residents/CC128.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THIS COULD HAVE BEEN THREE WORDS.",
+        "attack": "NINE-MINUTE RECORDING",
+        "impact": "NINE-MINUTE RECORDING",
+        "ending": "This could have been three words."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC136",
+      "name": "Prompt Goblin",
+      "ability": "Adjective Overflow",
+      "status": "queued",
+      "priority": 236,
+      "reference": "/assets/residents/CC136.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "ULTRA EPIC DEFINITIVE FINAL FINAL.",
+        "attack": "ADJECTIVE OVERFLOW",
+        "impact": "ADJECTIVE OVERFLOW",
+        "ending": "Ultra epic definitive final final."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC137",
+      "name": "Repost Necromancer",
+      "ability": "Ancient JPEG Revival",
+      "status": "queued",
+      "priority": 237,
+      "reference": "/assets/residents/CC137.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE WATERMARK RESURRECTED FIRST.",
+        "attack": "ANCIENT JPEG REVIVAL",
+        "impact": "ANCIENT JPEG REVIVAL",
+        "ending": "The watermark resurrected first."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC138",
+      "name": "Discord E-Knight",
+      "ability": "Server Rules Shield",
+      "status": "queued",
+      "priority": 238,
+      "reference": "/assets/residents/CC138.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "YOUR ENTRANCE VIOLATES PARAGRAPH FOURTEEN.",
+        "attack": "SERVER RULES SHIELD",
+        "impact": "SERVER RULES SHIELD",
+        "ending": "Your entrance violates paragraph fourteen."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC139",
+      "name": "LinkedIn Main Character",
+      "ability": "Leadership Lesson",
+      "status": "queued",
+      "priority": 239,
+      "reference": "/assets/residents/CC139.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "SEVEN THINGS THIS INJURY TAUGHT ME.",
+        "attack": "LEADERSHIP LESSON",
+        "impact": "LEADERSHIP LESSON",
+        "ending": "Seven things this injury taught me."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC140",
+      "name": "Unskippable Intro",
+      "ability": "Brand Sequence Forever",
+      "status": "queued",
+      "priority": 240,
+      "reference": "/assets/residents/CC140.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "BEFORE WE BEGIN, ANOTHER QUICK INTRODUCTION.",
+        "attack": "BRAND SEQUENCE FOREVER",
+        "impact": "BRAND SEQUENCE FOREVER",
+        "ending": "Before we begin, another quick introduction."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC141",
+      "name": "Side-Quest Dad",
+      "ability": "Unexpected Tool Inventory",
+      "status": "queued",
+      "priority": 241,
+      "reference": "/assets/residents/CC141.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "WHILE I WAS OUT, I FIXED THE ENTIRE FENCE.",
+        "attack": "UNEXPECTED TOOL INVENTORY",
+        "impact": "UNEXPECTED TOOL INVENTORY",
+        "ending": "While i was out, i fixed the entire fence."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    },
+    {
+      "cardId": "CC142",
+      "name": "Sleep-Deprived Editor",
+      "ability": "Suspicious Jump Cut",
+      "status": "queued",
+      "priority": 242,
+      "reference": "/assets/residents/CC142.webp",
+      "existingWholeBodyPoses": 6,
+      "film": null,
+      "storyboard": {
+        "setup": "THE MISS HAS BEEN REMOVED IN POST.",
+        "attack": "SUSPICIOUS JUMP CUT",
+        "impact": "SUSPICIOUS JUMP CUT",
+        "ending": "The miss has been removed in post."
+      },
+      "qualityGate": [
+        "matching card identity and scratched ink style",
+        "intact alpha actors",
+        "fixed opaque scenery",
+        "continuous camera and prop trajectories",
+        "character-specific setup, impact and ending",
+        "decoded media and exact duration",
+        "production archive contains current page and assets"
+      ]
+    }
+  ]
+}

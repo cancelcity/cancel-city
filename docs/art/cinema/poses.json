@@ -1,0 +1,190 @@
+{
+  "cardId": "CC026",
+  "character": "Final Boss Karen",
+  "attack": "Receipt Apocalypse",
+  "generator": "built-in image_gen",
+  "master": "docs/art/cinema/karen-poses.png",
+  "source": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "hasAlpha": true
+  },
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "cellWidth": 512,
+    "cellHeight": 512,
+    "order": "row-major"
+  },
+  "processing": "Geometric crop, WebP encoding only; alpha preserved.",
+  "qualityChecks": {
+    "poseCount": 6,
+    "allFiguresFullyContained": true,
+    "consistentIdentity": true,
+    "referenceImages": [
+      "public/assets/residents/CC026.webp",
+      "public/assets/reference/city-backdrop.webp"
+    ],
+    "containmentThresholdAlpha": 8,
+    "backgroundAlphaNote": "Generator leaves at most 1/255 alpha on cell borders; all visible figure alpha remains at least 25px inside cell boundaries."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "suspicious-arms-crossed",
+      "sourceCrop": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "runtime": "/assets/cinema/karen-pose-0.webp",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": {
+        "left": 179,
+        "top": 63,
+        "right": 423,
+        "bottom": 483
+      },
+      "borderMaxAlpha": 1,
+      "nonTransparentPixels": 62353,
+      "suggestedAnchor": {
+        "x": 301,
+        "y": 483
+      },
+      "fileBytes": 49810
+    },
+    {
+      "index": 1,
+      "name": "angry-point",
+      "sourceCrop": {
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "runtime": "/assets/cinema/karen-pose-1.webp",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": {
+        "left": 99,
+        "top": 82,
+        "right": 456,
+        "bottom": 483
+      },
+      "borderMaxAlpha": 1,
+      "nonTransparentPixels": 77031,
+      "suggestedAnchor": {
+        "x": 278,
+        "y": 483
+      },
+      "fileBytes": 61938
+    },
+    {
+      "index": 2,
+      "name": "receipt-triumph",
+      "sourceCrop": {
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "runtime": "/assets/cinema/karen-pose-2.webp",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": {
+        "left": 98,
+        "top": 56,
+        "right": 414,
+        "bottom": 483
+      },
+      "borderMaxAlpha": 1,
+      "nonTransparentPixels": 67539,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 483
+      },
+      "fileBytes": 56914
+    },
+    {
+      "index": 3,
+      "name": "receipt-thrust",
+      "sourceCrop": {
+        "left": 0,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "runtime": "/assets/cinema/karen-pose-3.webp",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": {
+        "left": 71,
+        "top": 50,
+        "right": 456,
+        "bottom": 448
+      },
+      "borderMaxAlpha": 1,
+      "nonTransparentPixels": 87479,
+      "suggestedAnchor": {
+        "x": 264,
+        "y": 448
+      },
+      "fileBytes": 68998
+    },
+    {
+      "index": 4,
+      "name": "smug-arms-crossed",
+      "sourceCrop": {
+        "left": 512,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "runtime": "/assets/cinema/karen-pose-4.webp",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": {
+        "left": 148,
+        "top": 25,
+        "right": 381,
+        "bottom": 454
+      },
+      "borderMaxAlpha": 1,
+      "nonTransparentPixels": 64125,
+      "suggestedAnchor": {
+        "x": 265,
+        "y": 454
+      },
+      "fileBytes": 52166
+    },
+    {
+      "index": 5,
+      "name": "shocked-flinch",
+      "sourceCrop": {
+        "left": 1024,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "runtime": "/assets/cinema/karen-pose-5.webp",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": {
+        "left": 116,
+        "top": 47,
+        "right": 419,
+        "bottom": 452
+      },
+      "borderMaxAlpha": 1,
+      "nonTransparentPixels": 77118,
+      "suggestedAnchor": {
+        "x": 268,
+        "y": 452
+      },
+      "fileBytes": 62792
+    }
+  ]
+}

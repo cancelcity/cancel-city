@@ -1,0 +1,190 @@
+{
+  "background": "docs/art/layered-specials/light-yagamod/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/action-00.webp",
+        "width": 268,
+        "height": 515,
+        "sourceBounds": {
+          "x": 441,
+          "y": 3,
+          "w": 268,
+          "h": 515
+        },
+        "area": 68157
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/action-01.webp",
+        "width": 323,
+        "height": 519,
+        "sourceBounds": {
+          "x": 804,
+          "y": 2,
+          "w": 323,
+          "h": 519
+        },
+        "area": 77218
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/action-02.webp",
+        "width": 332,
+        "height": 480,
+        "sourceBounds": {
+          "x": 1168,
+          "y": 40,
+          "w": 332,
+          "h": 480
+        },
+        "area": 72655
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/action-03.webp",
+        "width": 425,
+        "height": 421,
+        "sourceBounds": {
+          "x": 3,
+          "y": 569,
+          "w": 425,
+          "h": 421
+        },
+        "area": 66619
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/action-04.webp",
+        "width": 384,
+        "height": 502,
+        "sourceBounds": {
+          "x": 408,
+          "y": 519,
+          "w": 384,
+          "h": 502
+        },
+        "area": 73156
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/action-05.webp",
+        "width": 392,
+        "height": 509,
+        "sourceBounds": {
+          "x": 808,
+          "y": 509,
+          "w": 392,
+          "h": 509
+        },
+        "area": 79447
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/action-06.webp",
+        "width": 284,
+        "height": 516,
+        "sourceBounds": {
+          "x": 1238,
+          "y": 505,
+          "w": 284,
+          "h": 516
+        },
+        "area": 74023
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/ending-00.webp",
+        "width": 292,
+        "height": 482,
+        "sourceBounds": {
+          "x": 53,
+          "y": 22,
+          "w": 292,
+          "h": 482
+        },
+        "area": 66376
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/ending-01.webp",
+        "width": 282,
+        "height": 474,
+        "sourceBounds": {
+          "x": 462,
+          "y": 29,
+          "w": 282,
+          "h": 474
+        },
+        "area": 71371
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/ending-02.webp",
+        "width": 252,
+        "height": 441,
+        "sourceBounds": {
+          "x": 847,
+          "y": 66,
+          "w": 252,
+          "h": 441
+        },
+        "area": 65780
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/ending-03.webp",
+        "width": 316,
+        "height": 459,
+        "sourceBounds": {
+          "x": 1184,
+          "y": 45,
+          "w": 316,
+          "h": 459
+        },
+        "area": 72880
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/ending-04.webp",
+        "width": 390,
+        "height": 472,
+        "sourceBounds": {
+          "x": 35,
+          "y": 527,
+          "w": 390,
+          "h": 472
+        },
+        "area": 72729
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/ending-05.webp",
+        "width": 319,
+        "height": 473,
+        "sourceBounds": {
+          "x": 451,
+          "y": 522,
+          "w": 319,
+          "h": 473
+        },
+        "area": 69076
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/ending-06.webp",
+        "width": 271,
+        "height": 459,
+        "sourceBounds": {
+          "x": 848,
+          "y": 543,
+          "w": 271,
+          "h": 459
+        },
+        "area": 62555
+      },
+      {
+        "file": "docs/art/layered-specials/light-yagamod/actors/ending-07.webp",
+        "width": 246,
+        "height": 485,
+        "sourceBounds": {
+          "x": 1240,
+          "y": 517,
+          "w": 246,
+          "h": 485
+        },
+        "area": 68458
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

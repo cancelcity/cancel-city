@@ -1,0 +1,197 @@
+{
+  "characterId": "CC055",
+  "characterName": "Rain of Subscribers",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC055-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Connected alpha contours at threshold 32 split vertically interleaved subjects. Nearest contour assignment within 2 pixels retains original RGBA antialiasing without neighboring pixels. All color and selected alpha are original; no repainting. Uniform 0.78 scale, transparent 512-square ground alignment at 462. Bounds measured on decoded runtime webp alpha>=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC055-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 146,
+        "top": 86,
+        "right": 365,
+        "bottom": 459
+      },
+      "transparentPixels": 219707,
+      "sourceColumn": {
+        "left": 0,
+        "top": 0,
+        "width": 510,
+        "height": 1024
+      },
+      "sourceBodyCrop": {
+        "left": 61,
+        "top": 2,
+        "width": 287,
+        "height": 484
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC055-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 96,
+        "top": 84,
+        "right": 415,
+        "bottom": 459
+      },
+      "transparentPixels": 202976,
+      "sourceColumn": {
+        "left": 510,
+        "top": 0,
+        "width": 441,
+        "height": 1024
+      },
+      "sourceBodyCrop": {
+        "left": 17,
+        "top": 0,
+        "width": 415,
+        "height": 487
+      }
+    },
+    {
+      "index": 2,
+      "name": "cast",
+      "path": "/assets/actors/CC055-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 35,
+        "top": 86,
+        "right": 475,
+        "bottom": 459
+      },
+      "transparentPixels": 169067,
+      "sourceColumn": {
+        "left": 951,
+        "top": 0,
+        "width": 585,
+        "height": 1024
+      },
+      "sourceBodyCrop": {
+        "left": 9,
+        "top": 0,
+        "width": 570,
+        "height": 484
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC055-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 101,
+        "top": 46,
+        "right": 410,
+        "bottom": 460
+      },
+      "transparentPixels": 197430,
+      "sourceColumn": {
+        "left": 0,
+        "top": 0,
+        "width": 510,
+        "height": 1024
+      },
+      "sourceBodyCrop": {
+        "left": 73,
+        "top": 488,
+        "width": 403,
+        "height": 536
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC055-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 142,
+        "top": 59,
+        "right": 368,
+        "bottom": 459
+      },
+      "transparentPixels": 209282,
+      "sourceColumn": {
+        "left": 510,
+        "top": 0,
+        "width": 441,
+        "height": 1024
+      },
+      "sourceBodyCrop": {
+        "left": 91,
+        "top": 499,
+        "width": 296,
+        "height": 519
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC055-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 156,
+        "top": 39,
+        "right": 355,
+        "bottom": 459
+      },
+      "transparentPixels": 209761,
+      "sourceColumn": {
+        "left": 951,
+        "top": 0,
+        "width": 585,
+        "height": 1024
+      },
+      "sourceBodyCrop": {
+        "left": 204,
+        "top": 480,
+        "width": 261,
+        "height": 544
+      }
+    }
+  ]
+}

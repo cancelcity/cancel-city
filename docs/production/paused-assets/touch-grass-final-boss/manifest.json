@@ -1,0 +1,25 @@
+{
+  "cardId": "CC049",
+  "slug": "touch-grass-final-boss",
+  "status": "partial-paused-user-pivot",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/touch-grass-final-boss/action.png",
+      "role": "action",
+      "cols": 4,
+      "rows": 2
+    },
+    {
+      "path": "docs/art/layered-specials/touch-grass-final-boss/ending.png",
+      "role": "ending",
+      "cols": 4,
+      "rows": 2
+    }
+  ],
+  "background": null,
+  "originalToolPaths": {
+    "action": "/workspace/scratch/80a8c8c1affe/generated_images/exec-a7c13abd-9a75-47f9-bfbb-9a0e9e893cc2.png",
+    "ending": "/workspace/scratch/80a8c8c1affe/generated_images/exec-e8a92222-cd38-48f5-a201-0389c5bffb73.png"
+  },
+  "inspection": "Partial checkpoint. Action and ending generated but not visually QA reviewed. Background not generated. Paused immediately after running call per user pivot."
+}

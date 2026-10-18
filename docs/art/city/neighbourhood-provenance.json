@@ -1,0 +1,32 @@
+{
+  "asset_id": "neighbourhood",
+  "name": "Cancel City Empty Lot Backdrop",
+  "generated_on": "2026-10-11",
+  "tool": "builtin image_gen.imagegen",
+  "fallback_used": false,
+  "prompt": "Use case: illustration-story. Asset type: nontransparent landscape neighbourhood backdrop for Cancel City, approximately 1600x1000 pixels (wide 8:5 landscape).\nCreate a NEW environment illustration, not a UI mockup. Match the inspected CC026 portrait's bold grotesque punk comic black ink outlines, dense scratchy crosshatching, distressed screen-printed vivid colour and textured hand-drawn details. Evening magenta-violet sky in the upper part, with a dense DISTANT wonky city skyline confined to the upper 30% of the image and extreme outer edges only. Silhouetted crooked tenements, antennas and small neon magenta window flecks far away; skyline remains background scale.\nThe large centre and bottom 70% must be one EMPTY OPEN dark textured paved lot, a quiet continuous charcoal-purple asphalt plane with subtle distressed paper/ink grain, fine cracks and sparse crosshatching. This open ground is reserved for separately rendered interactive game plots and roads, so leave it clear and visually low contrast. View the lot from a slightly elevated diagonal game-camera angle with broad uninterrupted open space. The lot should dominate the composition. Keep skyline above it, with no foreground structures intruding into the empty centre or bottom.\nOpaque nontransparent background. NO foreground buildings, no standalone building sprites, no people, no cars, no props, no marked plots, no grid, no roads, no lane markings, no paths, no labels, no readable text, no logos, no UI, no cards, no watermark. Do not draw the 12 interactive plots; they will be rendered separately. Full-bleed illustrated background, no border.",
+  "intent": "generate",
+  "reference_style_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "reference_use": "Inspected portrait for style; generation used explicit style description.",
+  "transparent_background": false,
+  "generated_output_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-559f8ba9-99f1-4ae7-bca5-cff629098540.png",
+  "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/neighbourhood.png",
+  "dimensions": [
+    1586,
+    992
+  ],
+  "mode": "RGB",
+  "qa": {
+    "opaque_background": true,
+    "landscape_ratio": 1.5988,
+    "skyline_confined_to_upper_30_percent": true,
+    "empty_ground_centre_and_bottom_70_percent": true,
+    "no_foreground_buildings_people_roads_plots_labels_ui_text_logos": true,
+    "visually_inspected": true
+  },
+  "notes": [
+    "Dense distant wonky skyline and magenta-violet evening sky occupy approximately upper20% of canvas; dark charcoal-purple distressed paved lot fills remainder.",
+    "Centre and lower canvas have textured asphalt/crosshatching only, leaving an uninterrupted empty space for separately rendered interactive plots and roads.",
+    "No marked plots, grids, roads, lane markings, foreground buildings, people, vehicles, props, labels, UI, readable lettering or logos observed."
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "CC016",
+  "baseHeight": 505,
+  "poses": [
+    {
+      "src": "/assets/actors/CC016-roster-v2-0.webp",
+      "width": 247,
+      "height": 519,
+      "anchor": {
+        "x": 131,
+        "y": 511
+      }
+    },
+    {
+      "src": "/assets/actors/CC016-roster-v2-1.webp",
+      "width": 344,
+      "height": 519,
+      "anchor": {
+        "x": 181,
+        "y": 511
+      }
+    },
+    {
+      "src": "/assets/actors/CC016-roster-v2-2.webp",
+      "width": 402,
+      "height": 521,
+      "anchor": {
+        "x": 249,
+        "y": 513
+      }
+    },
+    {
+      "src": "/assets/actors/CC016-roster-v2-3.webp",
+      "width": 225,
+      "height": 509,
+      "anchor": {
+        "x": 98,
+        "y": 501
+      }
+    },
+    {
+      "src": "/assets/actors/CC016-roster-v2-4.webp",
+      "width": 314,
+      "height": 514,
+      "anchor": {
+        "x": 155,
+        "y": 506
+      }
+    },
+    {
+      "src": "/assets/actors/CC016-roster-v2-5.webp",
+      "width": 255,
+      "height": 522,
+      "anchor": {
+        "x": 124,
+        "y": 514
+      }
+    }
+  ],
+  "portrait": "/assets/roster-v2/CC016.webp",
+  "qa": [
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 6,
+        "maxX": 238,
+        "maxY": 510
+      },
+      "alphaPixels": 55770
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 335,
+        "maxY": 510
+      },
+      "alphaPixels": 67927
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 6,
+        "maxX": 393,
+        "maxY": 512
+      },
+      "alphaPixels": 74904
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 216,
+        "maxY": 500
+      },
+      "alphaPixels": 55710
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 305,
+        "maxY": 505
+      },
+      "alphaPixels": 66127
+    },
+    {
+      "bounds": {
+        "minX": 8,
+        "minY": 8,
+        "maxX": 246,
+        "maxY": 513
+      },
+      "alphaPixels": 61561
+    }
+  ],
+  "tool": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Asset type: game whole-body character acting sprite sheet. Landscape canvas, exact uniform 3 columns x 2 rows equal cells, six complete independent full-body drawings of SAME character, reading order. TRUE transparent background with alpha, NO checkerboard texture, no ground shadows outside feet, no labels or grids. Rich hand-inked punk manga crosshatching and halftone illustration, black contours, creamy highlights, lime/magenta/cyan accents, expressive caricature, like satirical illustrated game cards. Keep anatomy coherent and clothing identical between cells. Every drawing entire intact person head to both feet, all props held correctly, ample transparent gutters so each figure fits wholly inside its own cell. Not detached limbs, not joint pieces, not rigs. Character height about 80% of cell, similar scale and foot baseline.\nSubject: Power from Chainsaw Man-inspired adult blonde horned demon woman with tiny red horns, sharp toothy grin, loose corporate cream shirt and black blazer, black office trousers, red slide clicker securely held in one hand, flimsy paper presentation folder.\nSix poses reading order: neutral overconfident presenter grin holding clicker; anticipation dramatic spellcaster pointing clicker; release proudly gesturing at paper report held in other hand; recoil baffled by report looking left; victory huge toothy grin triumphant presenter both feet grounded; panic grimacing embarrassed clutching crumpled paper folder.\nNo text needed. Preserve recognizable parody identity.\n",
+  "original": "original-sheet.png"
+}

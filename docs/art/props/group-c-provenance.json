@@ -1,0 +1,252 @@
+{
+  "group": "C",
+  "generator": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "assets": [
+    {
+      "id": "P009",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a folded-open extravagant golden umbrella with dollar-shaped handle, protective offshore tax shelter motif, glittering but distressed.",
+      "reference": "docs/art/residents/CC026.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ceb4693b-5512-45b0-8eb1-7005c9fe56a1.png",
+      "output": "docs/art/props/P009.png",
+      "edits": [
+        {
+          "reason": "Initial generation had visible clipping/contact at left, right and bottom canvas edges.",
+          "tool": "built-in image_gen.imagegen",
+          "prompt": "Use case: precise-object-edit. Asset type: transparent collectible prop sprite for Cancel City. Image 1 is the target golden umbrella. Image 2 is the rough ink and cel-painted punk STYLE reference only, no character or scene to include. Repair only the framing: extend/reconstruct any clipped canopy ornament at the right edge and any clipped handle or ink fleck at the bottom/left, and show the complete umbrella at slightly smaller scale with clear transparent margins on ALL four sides. Keep the same gold/cream/black offshore palm-island design, dollar-shaped handle, thick distressed irregular black ink, materials, shading, and three-quarter pose. Preserve actual alpha transparency. Full isolated object; no characters, no text, no logos, no background.",
+          "referenced_image_paths": [
+            "/workspace/scratch/80a8c8c1affe/generated_images/exec-95f837e5-9281-4da1-900c-21aa57127ab6.png",
+            "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+          ],
+          "transparent_background": true,
+          "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-95f837e5-9281-4da1-900c-21aa57127ab6.png",
+          "output": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ceb4693b-5512-45b0-8eb1-7005c9fe56a1.png",
+          "source_sha256": "2d72a2e7e8afe1e7bc7ecccf718dbedce7087eead25b8e02635b299b69bea334",
+          "output_sha256": "3fe8a37a74e0fc07d4d741fcfe144e29192ad7f580896e59df0c17ff09e8fd5d"
+        }
+      ],
+      "post_generation_processing": "None. Selected PNG copied unchanged; no resize, crop, alpha processing, re-encoding, or background removal.",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Extravagant gold umbrella with complete canopy, distressed palm-island motifs, decorative drops, and dollar-shaped handle. Initial generation clipped edge parts; selected framing repair reconstructs complete object. Reference style retained.",
+        "silhouette_complete": true,
+        "no_characters": true,
+        "no_readable_text": true,
+        "reference_style_match": "pass",
+        "pixel_checks": {
+          "mode": "RGBA",
+          "width": 1254,
+          "height": 1254,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "alpha_bbox": [
+            0,
+            45,
+            1240,
+            1254
+          ],
+          "visible_alpha_128_bbox": [
+            63,
+            64,
+            1203,
+            1205
+          ],
+          "transparent_pixel_fraction": 0.620755,
+          "opaque_128_edge_pixel_counts_left_right_top_bottom": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fully_transparent_corners": true,
+          "corner_alpha_top_left_top_right_bottom_left_bottom_right": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "low_alpha_note": "Some sub-128-alpha generated ink/sparkle specks extend near canvas edges; visible object remains complete. Preserved unchanged."
+      },
+      "source_sha256": "3fe8a37a74e0fc07d4d741fcfe144e29192ad7f580896e59df0c17ff09e8fd5d",
+      "output_sha256": "3fe8a37a74e0fc07d4d741fcfe144e29192ad7f580896e59df0c17ff09e8fd5d",
+      "byte_identical": true
+    },
+    {
+      "id": "P010",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: an absurd oversized corporate lanyard with battered gold blank ID badge, cheap plastic clasp, desperate award ribbons and an empty tiny wallet charm.",
+      "reference": "docs/art/residents/CC026.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-615153be-bf79-48e4-a2e6-950d14ff6c5d.png",
+      "output": "docs/art/props/P010.png",
+      "edits": [],
+      "post_generation_processing": "None. Selected PNG copied unchanged; no resize, crop, alpha processing, re-encoding, or background removal.",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Full oversized hot-pink lanyard loop, plastic clasp, blank battered gold badge, two ribbons, and open empty wallet charm. Complete isolated silhouette with no readable text.",
+        "silhouette_complete": true,
+        "no_characters": true,
+        "no_readable_text": true,
+        "reference_style_match": "pass",
+        "pixel_checks": {
+          "mode": "RGBA",
+          "width": 1254,
+          "height": 1254,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "alpha_bbox": [
+            0,
+            17,
+            1248,
+            1254
+          ],
+          "visible_alpha_128_bbox": [
+            41,
+            31,
+            1236,
+            1231
+          ],
+          "transparent_pixel_fraction": 0.50203,
+          "opaque_128_edge_pixel_counts_left_right_top_bottom": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fully_transparent_corners": false,
+          "corner_alpha_top_left_top_right_bottom_left_bottom_right": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "low_alpha_note": "Some sub-128-alpha generated ink/sparkle specks extend near canvas edges; visible object remains complete. Preserved unchanged."
+      },
+      "source_sha256": "11fab54aaf598b4e16463d3a1202b21a8046e64939864338804912d2e0a60e91",
+      "output_sha256": "11fab54aaf598b4e16463d3a1202b21a8046e64939864338804912d2e0a60e91",
+      "byte_identical": true
+    },
+    {
+      "id": "P011",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a black and hot-pink selfie staff topped with a glowing ring light, a cracked smartphone mounted inside the ring, main-character energy.",
+      "reference": "docs/art/residents/CC026.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-a089344f-e64d-45f4-9848-d76d2614e59b.png",
+      "output": "docs/art/props/P011.png",
+      "edits": [],
+      "post_generation_processing": "None. Selected PNG copied unchanged; no resize, crop, alpha processing, re-encoding, or background removal.",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Complete black/hot-pink selfie staff, glowing ring light, cracked smartphone, spiked grip, and charms. Strong rough ink and distressed cel-painted style; tight margins, complete object.",
+        "silhouette_complete": true,
+        "no_characters": true,
+        "no_readable_text": true,
+        "reference_style_match": "pass",
+        "pixel_checks": {
+          "mode": "RGBA",
+          "width": 1254,
+          "height": 1254,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "alpha_bbox": [
+            0,
+            14,
+            1243,
+            1254
+          ],
+          "visible_alpha_128_bbox": [
+            60,
+            17,
+            1239,
+            1239
+          ],
+          "transparent_pixel_fraction": 0.703244,
+          "opaque_128_edge_pixel_counts_left_right_top_bottom": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fully_transparent_corners": true,
+          "corner_alpha_top_left_top_right_bottom_left_bottom_right": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "low_alpha_note": "Some sub-128-alpha generated ink/sparkle specks extend near canvas edges; visible object remains complete. Preserved unchanged."
+      },
+      "source_sha256": "858ae9e431ac81ec8809cdda1f043e151ce0bd0c95395eed9ae1c30a3a913c2d",
+      "output_sha256": "858ae9e431ac81ec8809cdda1f043e151ce0bd0c95395eed9ae1c30a3a913c2d",
+      "byte_identical": true
+    },
+    {
+      "id": "P012",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a heavy old wooden rolling pin covered with pasta curls and sauce splashes, distressed carved decorative details, culinary judgment weapon.",
+      "reference": "docs/art/residents/CC026.png",
+      "reference_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-6857fc0d-0f0c-4e33-9d41-5fb967b3ecf4.png",
+      "output": "docs/art/props/P012.png",
+      "edits": [],
+      "post_generation_processing": "None. Selected PNG copied unchanged; no resize, crop, alpha processing, re-encoding, or background removal.",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Complete heavy carved wooden rolling pin with both handles, pasta ribbons, red sauce, decorative carving and distress. No characters or text.",
+        "silhouette_complete": true,
+        "no_characters": true,
+        "no_readable_text": true,
+        "reference_style_match": "pass",
+        "pixel_checks": {
+          "mode": "RGBA",
+          "width": 1254,
+          "height": 1254,
+          "alpha_extrema": [
+            0,
+            255
+          ],
+          "alpha_bbox": [
+            0,
+            21,
+            1254,
+            1254
+          ],
+          "visible_alpha_128_bbox": [
+            15,
+            50,
+            1245,
+            1218
+          ],
+          "transparent_pixel_fraction": 0.602839,
+          "opaque_128_edge_pixel_counts_left_right_top_bottom": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "fully_transparent_corners": true,
+          "corner_alpha_top_left_top_right_bottom_left_bottom_right": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "low_alpha_note": "Some sub-128-alpha generated ink/sparkle specks extend near canvas edges; visible object remains complete. Preserved unchanged."
+      },
+      "source_sha256": "c9a559afa42c38ae049bf541faa0a84e2867066f76ca44cfe09f51baedc80b02",
+      "output_sha256": "c9a559afa42c38ae049bf541faa0a84e2867066f76ca44cfe09f51baedc80b02",
+      "byte_identical": true
+    }
+  ],
+  "reference_sha256": "b8627d097bb2ecc7ff6ed9d446ebb894ff6fd56366de189d5cfcfa44ce559ad0"
+}

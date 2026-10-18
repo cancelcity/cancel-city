@@ -1,0 +1,15 @@
+{
+  "id": "CC014",
+  "tool": "built-in image_gen",
+  "useCase": "style-transfer",
+  "generatedOriginal": "/workspace/scratch/80a8c8c1affe/generated_images/exec-b2e7869a-39e8-4657-b743-af48e2801642.png",
+  "identityReference": "public/assets/roster-v2/CC014.webp",
+  "styleReferences": [
+    "public/assets/residents/CC014.webp",
+    "public/assets/residents/CC026.webp"
+  ],
+  "outputPortrait": "public/assets/roster-v3/CC014.webp",
+  "outputSmall": "public/assets/roster-v3/CC014-small.webp",
+  "processing": "Opaque square image mechanically resized with sharp to 896px and 384px; WebP quality 90; no painting or feature changes after generation.",
+  "inspection": "Generated image visually inspected against old card references. Saturated full-bleed background, large expressive face, foreground signature prop, dense scratchy crosshatching and halftone."
+}

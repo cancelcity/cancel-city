@@ -1,0 +1,191 @@
+{
+  "characterId": "CC124",
+  "characterName": "Phoenix Wright, Wrong Tab",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC124-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest connected alpha bodies assigned row-major; detached props assigned whole to nearest body. Generated alpha preserved within 3px contour fringe; uniformly cropped, scaled and padded."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC124-0.webp",
+      "sourceExtraction": {
+        "left": 105,
+        "top": 7,
+        "width": 342,
+        "height": 464
+      },
+      "scale": 0.9482758620689655,
+      "suggestedAnchor": {
+        "x": 186,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 95,
+        "top": 17,
+        "right": 418,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 173008,
+        "transparentFraction": 0.65997314453125
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC124-1.webp",
+      "sourceExtraction": {
+        "left": 574,
+        "top": 15,
+        "width": 397,
+        "height": 456
+      },
+      "scale": 0.9649122807017544,
+      "suggestedAnchor": {
+        "x": 398,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 64,
+        "top": 17,
+        "right": 446,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 152511,
+        "transparentFraction": 0.5817832946777344
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC124-2.webp",
+      "sourceExtraction": {
+        "left": 1067,
+        "top": 19,
+        "width": 435,
+        "height": 442
+      },
+      "scale": 0.995475113122172,
+      "suggestedAnchor": {
+        "x": 381,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 39,
+        "top": 16,
+        "right": 472,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 147178,
+        "transparentFraction": 0.5614395141601562
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC124-3.webp",
+      "sourceExtraction": {
+        "left": 87,
+        "top": 490,
+        "width": 378,
+        "height": 505
+      },
+      "scale": 0.8712871287128713,
+      "suggestedAnchor": {
+        "x": 340,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 92,
+        "top": 16,
+        "right": 420,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 175869,
+        "transparentFraction": 0.6708869934082031
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC124-4.webp",
+      "sourceExtraction": {
+        "left": 581,
+        "top": 520,
+        "width": 387,
+        "height": 465
+      },
+      "scale": 0.946236559139785,
+      "suggestedAnchor": {
+        "x": 151,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 74,
+        "top": 16,
+        "right": 439,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 150826,
+        "transparentFraction": 0.5753555297851562
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC124-5.webp",
+      "sourceExtraction": {
+        "left": 1131,
+        "top": 510,
+        "width": 330,
+        "height": 483
+      },
+      "scale": 0.9109730848861284,
+      "suggestedAnchor": {
+        "x": 261,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 105,
+        "top": 16,
+        "right": 406,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 173028,
+        "transparentFraction": 0.6600494384765625
+      }
+    }
+  ],
+  "anchorMethod": "Median of solid lowest36px; y at lowest alpha>32 art pixel."
+}

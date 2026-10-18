@@ -1,0 +1,169 @@
+{
+  "characterId": "CC039",
+  "characterName": "Elongated Ego",
+  "generator": "built-in image_gen",
+  "master": "docs/art/live-motion/CC039-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "cellWidth": 512,
+    "cellHeight": 512,
+    "width": 1536,
+    "height": 1024
+  },
+  "coordinates": "pixel coordinates within each 512x512 cell; suggestedAnchor is bottom center of visible feet",
+  "alphaThresholdForBounds": 16,
+  "processing": "Geometric per-cell crop trims 16 transparent gutter pixels on each side, then restores identical 16px transparent padding. Only discarded alpha fringe was alpha=1; all visible artwork retained.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "smug-toy-rocket",
+      "src": "/assets/actors/CC039-0.webp",
+      "width": 512,
+      "height": 512,
+      "sheetCell": {
+        "left": 0,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "suggestedAnchor": {
+        "x": 295,
+        "y": 456
+      },
+      "alphaBounds": {
+        "left": 141,
+        "top": 57,
+        "right": 447,
+        "bottom": 456
+      },
+      "transparentPixels": 184075,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "index": 1,
+      "name": "tense-preparation",
+      "src": "/assets/actors/CC039-1.webp",
+      "width": 512,
+      "height": 512,
+      "sheetCell": {
+        "left": 512,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "suggestedAnchor": {
+        "x": 255,
+        "y": 457
+      },
+      "alphaBounds": {
+        "left": 121,
+        "top": 113,
+        "right": 409,
+        "bottom": 457
+      },
+      "transparentPixels": 189335,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "index": 2,
+      "name": "dramatic-launch",
+      "src": "/assets/actors/CC039-2.webp",
+      "width": 512,
+      "height": 512,
+      "sheetCell": {
+        "left": 1024,
+        "top": 0,
+        "width": 512,
+        "height": 512
+      },
+      "suggestedAnchor": {
+        "x": 269,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 58,
+        "top": 65,
+        "right": 418,
+        "bottom": 459
+      },
+      "transparentPixels": 180756,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "index": 3,
+      "name": "phone-victory",
+      "src": "/assets/actors/CC039-3.webp",
+      "width": 512,
+      "height": 512,
+      "sheetCell": {
+        "left": 0,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "suggestedAnchor": {
+        "x": 282,
+        "y": 447
+      },
+      "alphaBounds": {
+        "left": 131,
+        "top": 56,
+        "right": 433,
+        "bottom": 447
+      },
+      "transparentPixels": 187298,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "index": 4,
+      "name": "launch-failure-recoil",
+      "src": "/assets/actors/CC039-4.webp",
+      "width": 512,
+      "height": 512,
+      "sheetCell": {
+        "left": 512,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "suggestedAnchor": {
+        "x": 285,
+        "y": 447
+      },
+      "alphaBounds": {
+        "left": 137,
+        "top": 64,
+        "right": 416,
+        "bottom": 447
+      },
+      "transparentPixels": 187450,
+      "edgeAlphaPixels": 0
+    },
+    {
+      "index": 5,
+      "name": "sooty-everything-fine-shrug",
+      "src": "/assets/actors/CC039-5.webp",
+      "width": 512,
+      "height": 512,
+      "sheetCell": {
+        "left": 1024,
+        "top": 512,
+        "width": 512,
+        "height": 512
+      },
+      "suggestedAnchor": {
+        "x": 257,
+        "y": 449
+      },
+      "alphaBounds": {
+        "left": 76,
+        "top": 72,
+        "right": 429,
+        "bottom": 449
+      },
+      "transparentPixels": 184650,
+      "edgeAlphaPixels": 0
+    }
+  ]
+}

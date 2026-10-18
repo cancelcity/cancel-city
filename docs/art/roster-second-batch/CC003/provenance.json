@@ -1,0 +1,75 @@
+{
+  "id": "CC003",
+  "name": "L Ratio",
+  "portrait": "/workspace/scratch/80a8c8c1affe/generated_images/exec-2eee2d4c-fbbc-4828-bedf-d0dda962777d.png",
+  "portraitPrompt": "Use case: stylized-concept. Asset: opaque square gacha CARD PORTRAIT, not a card template. Input images are STYLE ONLY, do not copy their characters. Match their gritty expressive underground comic style exactly: scratched heavy black pen ink, dense crosshatching, coarse halftone, saturated flat color, splatter, stark black city silhouette skyline. Large grotesquely expressive face, dynamic foreshortened foreground prop, full bleed, no margins. No beige, no soft 3D, no clean anime cel shade, no text, no border, no watermark. Square 1024x1024.\nSubject: L Ratio. An unmistakably adult L from Death Note: messy spiky black hair, huge tired dark-ringed eyes, white long-sleeve shirt, skinny jeans. Hunched genius detective holding an oversized magnifying glass at the foreground and a laptop; his smug deduction turns into furious disbelief after losing an internet argument. Close head-and-shoulders portrait, face fills over half frame, exaggerated eye-bags and angry open mouth, both hands anatomically sound.\nPalette: acid cyan with yellow lightning and magenta splatter.",
+  "sheet": "/workspace/scratch/80a8c8c1affe/generated_images/exec-5ae1e310-5074-495c-bcee-411e1b0cf1b5.png",
+  "sheetPrompt": "Use case: illustration-story. Asset: real transparent alpha full-character sprite atlas. Reference image is IDENTITY and INK STYLE only. Create exactly SIX intact WHOLE-character poses in a regular THREE COLUMN by TWO ROW grid, landscape 1536x1024. No panels, no labels, no city, no background, no floor shadows. Every cell shows the COMPLETE character from head to both feet, and all held props, at consistent physical scale, generous 35px outer margins and 35px transparent gutters. No clipping or overlapping cells. Every limb naturally attached, hands anatomically correct. Keep face, hair, outfit and held props identical to reference; heavy scratched black ink, crosshatching, coarse halftone, saturated colors. Three-quarter facing right. Character: An unmistakably adult L from Death Note: messy spiky black hair, huge tired dark-ringed eyes, white long-sleeve shirt, skinny jeans. Hunched genius detective holding an oversized magnifying glass at the foreground and a laptop; his smug deduction turns into furious disbelief after losing an internet argument.  Ordered cells left-to-right: 0 hunched neutral standing detective cradling closed laptop; 1 bent forward examining magnifier; 2 full-body finger-pointing accusation while clutching laptop; 3 shocked recoil as laptop shows an arrow icon; 4 smug chin-touch detective stance; 5 defeated deep crouch staring at laptop, both bare feet visible. Bodies remain single illustrations, never separated limbs. No floating objects outside cell.",
+  "sheetRepairPrompt": "Edit this SIX-pose transparent L Ratio atlas. Preserve exact dimensions, alpha, ink style, identity, outfit, all other FIVE poses and their positions. Correct ONLY the bottom-left recoil pose, which has an erroneous third arm. Redraw that entire intact bottom-left figure in a startled recoil with exactly TWO arms and TWO hands: LEFT hand holding magnifying glass beside face; RIGHT hand supporting the laptop. Remove the extra open raised palm/arm next to laptop. Keep both attached natural arms, original jeans, bare feet, surprised face, and position/scale. Do not alter other five cells. Real transparent background remains. No new text, no labels, no separate limbs.",
+  "anchors": [
+    [
+      240,
+      499
+    ],
+    [
+      737,
+      493
+    ],
+    [
+      1280,
+      508
+    ],
+    [
+      441,
+      1005
+    ],
+    [
+      745,
+      1005
+    ],
+    [
+      1275,
+      1004
+    ]
+  ],
+  "regions": [
+    [
+      0,
+      0,
+      512,
+      512
+    ],
+    [
+      512,
+      0,
+      512,
+      500
+    ],
+    [
+      1024,
+      0,
+      512,
+      512
+    ],
+    [
+      0,
+      512,
+      512,
+      512
+    ],
+    [
+      512,
+      500,
+      512,
+      524
+    ],
+    [
+      1024,
+      512,
+      512,
+      512
+    ]
+  ],
+  "generator": "built-in image_gen",
+  "processing": "Sharp mechanical alpha cell crop and WebP encoding. Whole-character images only; manual foot anchors. Originals preserved."
+}

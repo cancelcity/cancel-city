@@ -1,0 +1,17 @@
+Use case: stylized-concept.
+Asset type: alpha-transparent eight-pose 2D videogame ending/reaction sprite sheet.
+Reference roles: first card AUTHORITATIVE for exact Fraudo Baggins face and rough etched style; second actor costume reference only. Short ADULT male hobbit fraudster, wild curly chestnut-brown hair, pointed ears, enormous blue-green eyes, freckles/stipple on tan skin, broad greedy crooked grin. Green cloak with green/gold leaf clasp, cream rolled-sleeve shirt, brass-button brown waistcoat, brown cropped trousers, brown crossbody satchel, huge HAIRY BARE FEET. Same identity/clothes all8, retain grotesque card grin instead of smooth cute old actor face.
+Primary request: EXACTLY8 separate complete FULL BODY actors in FOUR columns TWO rows, one entire actor per invisible cell, whole hair/ears/hands/hairy feet/coat inside canvas, generous clear transparent gutters/margins. No overlap, clipping or merged silhouettes.
+Ending progression as a referral scheme unravels; the carpet will be added separately and must NOT be drawn:
+(1) supremely confident sales pitch, tiny plain gold ring pinched in one hand and free hand on heart, proud grin;
+(2) smugly offers tiny gold ring forward, head tilted, other hand spread grandly;
+(3) notices something wrong below, stares down wide-eyed with both EMPTY hands half-raised and knees bent;
+(4) panicked backward stagger balancing with arms windmilling, one hairy foot lifted, mouth agape;
+(5) desperate one-leg slip recovery, torso leaning far forward and both empty hands grasping air, terrified forced grin;
+(6) sits dazed on invisible floor with bent legs, both hands on knees, cloak pooled as attached clothing, stunned expression;
+(7) stands awkwardly brushing vest with one hand and rubbing back of head with other, embarrassed forced smile;
+(8) final embarrassed deadpan, slumped shoulders, arms hanging and palms slightly open, blank tired blue-green eyes, crooked mouth and huge bare hairy feet planted.
+Tiny ring only held physically by fingers in poses1-2. No ring/other props poses3-8. All hands and limbs connected to intact bodies.
+Style: exact card's dense black scratch etching/hatching, stippled skin, rough imperfect contours and distressed dirty neon screenprint. Tactile cloth and grotesquely expressive face, not clean smooth anime or3D.
+Every empty pixel genuinely transparent alpha. NO backdrop, floor plane, shadows, carpets, glow, trails, money, floating pages, panels, FX, text, words, numbers, logos or symbols.
+

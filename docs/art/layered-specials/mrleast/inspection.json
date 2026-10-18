@@ -1,0 +1,34 @@
+{
+  "wholebody-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 99.79601224263509
+    },
+    "bytes": 2650574
+  },
+  "reaction-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 142.39385414123535
+    },
+    "bytes": 3119008
+  },
+  "soundstage-original.png": {
+    "width": 1672,
+    "height": 941,
+    "channels": 3,
+    "isOpaque": true,
+    "alpha": null,
+    "bytes": 3965574
+  }
+}

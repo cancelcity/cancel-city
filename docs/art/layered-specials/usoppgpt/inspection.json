@@ -1,0 +1,150 @@
+{
+  "action-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 123.50056648254395
+    },
+    "bytes": 3114268,
+    "components": [
+      {
+        "area": 106926,
+        "left": 13,
+        "top": 3,
+        "width": 347,
+        "height": 518
+      },
+      {
+        "area": 97249,
+        "left": 407,
+        "top": 16,
+        "width": 334,
+        "height": 503
+      },
+      {
+        "area": 99510,
+        "left": 777,
+        "top": 4,
+        "width": 354,
+        "height": 518
+      },
+      {
+        "area": 98208,
+        "left": 1166,
+        "top": 4,
+        "width": 355,
+        "height": 519
+      },
+      {
+        "area": 99693,
+        "left": 14,
+        "top": 580,
+        "width": 386,
+        "height": 427
+      },
+      {
+        "area": 95322,
+        "left": 401,
+        "top": 557,
+        "width": 380,
+        "height": 460
+      },
+      {
+        "area": 89442,
+        "left": 796,
+        "top": 511,
+        "width": 359,
+        "height": 498
+      },
+      {
+        "area": 97550,
+        "left": 1158,
+        "top": 540,
+        "width": 374,
+        "height": 476
+      }
+    ]
+  },
+  "ending-original.png": {
+    "width": 1536,
+    "height": 1024,
+    "channels": 4,
+    "isOpaque": false,
+    "alpha": {
+      "min": 0,
+      "max": 254,
+      "mean": 115.17150052388509
+    },
+    "bytes": 2972966,
+    "components": [
+      {
+        "area": 106286,
+        "left": 11,
+        "top": 13,
+        "width": 380,
+        "height": 496
+      },
+      {
+        "area": 90764,
+        "left": 439,
+        "top": 9,
+        "width": 325,
+        "height": 495
+      },
+      {
+        "area": 87887,
+        "left": 789,
+        "top": 52,
+        "width": 370,
+        "height": 455
+      },
+      {
+        "area": 104632,
+        "left": 1171,
+        "top": 2,
+        "width": 349,
+        "height": 503
+      },
+      {
+        "area": 88248,
+        "left": 11,
+        "top": 533,
+        "width": 391,
+        "height": 480
+      },
+      {
+        "area": 86282,
+        "left": 413,
+        "top": 508,
+        "width": 380,
+        "height": 504
+      },
+      {
+        "area": 77732,
+        "left": 825,
+        "top": 549,
+        "width": 301,
+        "height": 461
+      },
+      {
+        "area": 86907,
+        "left": 1203,
+        "top": 519,
+        "width": 310,
+        "height": 495
+      }
+    ]
+  },
+  "print-workshop-original.png": {
+    "width": 1672,
+    "height": 941,
+    "channels": 3,
+    "isOpaque": true,
+    "alpha": null,
+    "bytes": 4058554
+  }
+}

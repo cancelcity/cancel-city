@@ -1,0 +1,31 @@
+{
+  "cardId": "CC061",
+  "slug": "power-of-friendship",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/power-of-friendship/action.png",
+      "role": "action",
+      "cols": 4,
+      "rows": 2,
+      "excludePoseIndices": [
+        1,
+        4
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/power-of-friendship/ending.png",
+      "role": "ending",
+      "cols": 4,
+      "rows": 2
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/power-of-friendship/background.png"
+  },
+  "originalToolPaths": {
+    "action": "/workspace/scratch/80a8c8c1affe/generated_images/exec-bd55d8f9-31a6-4b62-9bc2-17656e849c70.png",
+    "ending": "/workspace/scratch/80a8c8c1affe/generated_images/exec-aab2d3b5-9205-4f52-afc7-77f0c7764f3c.png",
+    "background": "/workspace/scratch/80a8c8c1affe/generated_images/exec-27b4ecac-ebee-4c6b-81bf-cf815d48b234.png"
+  },
+  "inspection": "Visual inspection costume, face, scratched style match references. Action1,4 excluded conservatively for tight hair at top; remaining six complete action poses. All8 ending intact support inspirational recollection to memory overload/exhausted shrug. Original true alpha retained; component extraction recommended."
+}

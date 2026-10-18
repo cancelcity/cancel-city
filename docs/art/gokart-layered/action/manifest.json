@@ -1,0 +1,843 @@
+{
+  "title": "Gokart action subject layers",
+  "method": "Built-in imagegen background-extraction edit. Sharp used only for regular cell extraction, RGBA WebP encoding and alpha inspection.",
+  "sheets": [
+    {
+      "name": "drift",
+      "source": "drift-original.png",
+      "prompt": "drift-prompt.txt",
+      "width": 1448,
+      "height": 1086,
+      "hasAlpha": true,
+      "columns": 3,
+      "rows": 4,
+      "frames": [
+        {
+          "index": 1,
+          "file": "drift-01.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 48052,
+          "alpha": {
+            "zero": 70431,
+            "partial": 60881,
+            "opaque": 64,
+            "transparentFraction": 0.5361024844720497,
+            "bounds": {
+              "left": 36,
+              "top": 0,
+              "width": 357,
+              "height": 272
+            },
+            "components": [
+              {
+                "pixels": 53130,
+                "left": 38,
+                "top": 0,
+                "width": 354,
+                "height": 269
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "file": "drift-02.webp",
+          "width": 482,
+          "height": 272,
+          "sourceRect": {
+            "left": 483,
+            "top": 0,
+            "width": 482,
+            "height": 272
+          },
+          "bytes": 48580,
+          "alpha": {
+            "zero": 66934,
+            "partial": 64072,
+            "opaque": 98,
+            "transparentFraction": 0.5105412496948987,
+            "bounds": {
+              "left": 36,
+              "top": 0,
+              "width": 357,
+              "height": 272
+            },
+            "components": [
+              {
+                "pixels": 57995,
+                "left": 37,
+                "top": 0,
+                "width": 355,
+                "height": 272
+              },
+              {
+                "pixels": 44,
+                "left": 240,
+                "top": 270,
+                "width": 25,
+                "height": 2
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "file": "drift-03.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 965,
+            "top": 0,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 48388,
+          "alpha": {
+            "zero": 69052,
+            "partial": 62218,
+            "opaque": 106,
+            "transparentFraction": 0.5256058945317257,
+            "bounds": {
+              "left": 65,
+              "top": 0,
+              "width": 366,
+              "height": 272
+            },
+            "components": [
+              {
+                "pixels": 55258,
+                "left": 66,
+                "top": 0,
+                "width": 364,
+                "height": 272
+              },
+              {
+                "pixels": 54,
+                "left": 242,
+                "top": 268,
+                "width": 20,
+                "height": 4
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "file": "drift-04.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 0,
+            "top": 272,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 46428,
+          "alpha": {
+            "zero": 71946,
+            "partial": 58868,
+            "opaque": 79,
+            "transparentFraction": 0.5496550617680089,
+            "bounds": {
+              "left": 69,
+              "top": 0,
+              "width": 357,
+              "height": 271
+            },
+            "components": [
+              {
+                "pixels": 51929,
+                "left": 71,
+                "top": 0,
+                "width": 354,
+                "height": 255
+              },
+              {
+                "pixels": 45,
+                "left": 279,
+                "top": 265,
+                "width": 15,
+                "height": 6
+              },
+              {
+                "pixels": 34,
+                "left": 248,
+                "top": 268,
+                "width": 19,
+                "height": 3
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "file": "drift-05.webp",
+          "width": 482,
+          "height": 271,
+          "sourceRect": {
+            "left": 483,
+            "top": 272,
+            "width": 482,
+            "height": 271
+          },
+          "bytes": 53338,
+          "alpha": {
+            "zero": 61260,
+            "partial": 69262,
+            "opaque": 100,
+            "transparentFraction": 0.468986847544824,
+            "bounds": {
+              "left": 30,
+              "top": 0,
+              "width": 413,
+              "height": 271
+            },
+            "components": [
+              {
+                "pixels": 60992,
+                "left": 31,
+                "top": 0,
+                "width": 411,
+                "height": 271
+              },
+              {
+                "pixels": 165,
+                "left": 323,
+                "top": 0,
+                "width": 51,
+                "height": 5
+              },
+              {
+                "pixels": 77,
+                "left": 241,
+                "top": 266,
+                "width": 24,
+                "height": 5
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "file": "drift-06.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 965,
+            "top": 272,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 48806,
+          "alpha": {
+            "zero": 66546,
+            "partial": 64262,
+            "opaque": 85,
+            "transparentFraction": 0.5083999908322064,
+            "bounds": {
+              "left": 45,
+              "top": 0,
+              "width": 380,
+              "height": 271
+            },
+            "components": [
+              {
+                "pixels": 58258,
+                "left": 45,
+                "top": 0,
+                "width": 380,
+                "height": 271
+              },
+              {
+                "pixels": 121,
+                "left": 374,
+                "top": 0,
+                "width": 43,
+                "height": 4
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "file": "drift-07.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 0,
+            "top": 543,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 50034,
+          "alpha": {
+            "zero": 69198,
+            "partial": 62105,
+            "opaque": 73,
+            "transparentFraction": 0.5267172086225794,
+            "bounds": {
+              "left": 52,
+              "top": 0,
+              "width": 394,
+              "height": 272
+            },
+            "components": [
+              {
+                "pixels": 53863,
+                "left": 54,
+                "top": 0,
+                "width": 391,
+                "height": 249
+              },
+              {
+                "pixels": 572,
+                "left": 200,
+                "top": 257,
+                "width": 70,
+                "height": 15
+              },
+              {
+                "pixels": 67,
+                "left": 268,
+                "top": 261,
+                "width": 15,
+                "height": 11
+              },
+              {
+                "pixels": 46,
+                "left": 169,
+                "top": 267,
+                "width": 26,
+                "height": 5
+              }
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "file": "drift-08.webp",
+          "width": 482,
+          "height": 272,
+          "sourceRect": {
+            "left": 483,
+            "top": 543,
+            "width": 482,
+            "height": 272
+          },
+          "bytes": 55006,
+          "alpha": {
+            "zero": 59287,
+            "partial": 71707,
+            "opaque": 110,
+            "transparentFraction": 0.4522135098852819,
+            "bounds": {
+              "left": 28,
+              "top": 0,
+              "width": 411,
+              "height": 272
+            },
+            "components": [
+              {
+                "pixels": 63675,
+                "left": 29,
+                "top": 0,
+                "width": 409,
+                "height": 272
+              },
+              {
+                "pixels": 157,
+                "left": 383,
+                "top": 0,
+                "width": 44,
+                "height": 5
+              },
+              {
+                "pixels": 127,
+                "left": 237,
+                "top": 265,
+                "width": 36,
+                "height": 7
+              }
+            ]
+          }
+        },
+        {
+          "index": 9,
+          "file": "drift-09.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 965,
+            "top": 543,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 39042,
+          "alpha": {
+            "zero": 83713,
+            "partial": 47578,
+            "opaque": 85,
+            "transparentFraction": 0.6372016197783461,
+            "bounds": {
+              "left": 113,
+              "top": 0,
+              "width": 328,
+              "height": 272
+            },
+            "components": [
+              {
+                "pixels": 40081,
+                "left": 114,
+                "top": 56,
+                "width": 326,
+                "height": 216
+              },
+              {
+                "pixels": 798,
+                "left": 315,
+                "top": 0,
+                "width": 104,
+                "height": 13
+              }
+            ]
+          }
+        },
+        {
+          "index": 10,
+          "file": "drift-10.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 0,
+            "top": 815,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 47054,
+          "alpha": {
+            "zero": 68301,
+            "partial": 62441,
+            "opaque": 151,
+            "transparentFraction": 0.5218078888863423,
+            "bounds": {
+              "left": 22,
+              "top": 0,
+              "width": 426,
+              "height": 251
+            },
+            "components": [
+              {
+                "pixels": 56141,
+                "left": 22,
+                "top": 0,
+                "width": 426,
+                "height": 248
+              }
+            ]
+          }
+        },
+        {
+          "index": 11,
+          "file": "drift-11.webp",
+          "width": 482,
+          "height": 271,
+          "sourceRect": {
+            "left": 483,
+            "top": 815,
+            "width": 482,
+            "height": 271
+          },
+          "bytes": 45912,
+          "alpha": {
+            "zero": 71261,
+            "partial": 59232,
+            "opaque": 129,
+            "transparentFraction": 0.5455512853883726,
+            "bounds": {
+              "left": 39,
+              "top": 0,
+              "width": 414,
+              "height": 239
+            },
+            "components": [
+              {
+                "pixels": 52099,
+                "left": 40,
+                "top": 0,
+                "width": 413,
+                "height": 238
+              },
+              {
+                "pixels": 206,
+                "left": 365,
+                "top": 0,
+                "width": 61,
+                "height": 6
+              }
+            ]
+          }
+        },
+        {
+          "index": 12,
+          "file": "drift-12.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 965,
+            "top": 815,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 48836,
+          "alpha": {
+            "zero": 66600,
+            "partial": 64219,
+            "opaque": 74,
+            "transparentFraction": 0.5088125415415645,
+            "bounds": {
+              "left": 41,
+              "top": 0,
+              "width": 425,
+              "height": 258
+            },
+            "components": [
+              {
+                "pixels": 57576,
+                "left": 42,
+                "top": 0,
+                "width": 423,
+                "height": 257
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "rush",
+      "source": "rush-original.png",
+      "prompt": "rush-prompt.txt",
+      "width": 1182,
+      "height": 1330,
+      "hasAlpha": true,
+      "columns": 2,
+      "rows": 4,
+      "frames": [
+        {
+          "index": 1,
+          "file": "rush-01.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 21050,
+          "alpha": {
+            "zero": 175078,
+            "partial": 21653,
+            "opaque": 72,
+            "transparentFraction": 0.8896104226053465,
+            "bounds": {
+              "left": 194,
+              "top": 97,
+              "width": 182,
+              "height": 236
+            },
+            "components": [
+              {
+                "pixels": 18268,
+                "left": 194,
+                "top": 98,
+                "width": 181,
+                "height": 161
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "file": "rush-02.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 591,
+            "top": 0,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 48004,
+          "alpha": {
+            "zero": 136632,
+            "partial": 60125,
+            "opaque": 46,
+            "transparentFraction": 0.6942577094861359,
+            "bounds": {
+              "left": 134,
+              "top": 36,
+              "width": 313,
+              "height": 297
+            },
+            "components": [
+              {
+                "pixels": 50412,
+                "left": 135,
+                "top": 37,
+                "width": 312,
+                "height": 275
+              },
+              {
+                "pixels": 132,
+                "left": 270,
+                "top": 323,
+                "width": 30,
+                "height": 10
+              }
+            ]
+          }
+        },
+        {
+          "index": 3,
+          "file": "rush-03.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 58534,
+          "alpha": {
+            "zero": 122466,
+            "partial": 73700,
+            "opaque": 46,
+            "transparentFraction": 0.6241514280472142,
+            "bounds": {
+              "left": 107,
+              "top": 0,
+              "width": 360,
+              "height": 332
+            },
+            "components": [
+              {
+                "pixels": 61456,
+                "left": 109,
+                "top": 0,
+                "width": 357,
+                "height": 298
+              },
+              {
+                "pixels": 1513,
+                "left": 229,
+                "top": 312,
+                "width": 125,
+                "height": 20
+              }
+            ]
+          }
+        },
+        {
+          "index": 4,
+          "file": "rush-04.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 61156,
+          "alpha": {
+            "zero": 118521,
+            "partial": 77669,
+            "opaque": 22,
+            "transparentFraction": 0.6040456241208488,
+            "bounds": {
+              "left": 113,
+              "top": 0,
+              "width": 360,
+              "height": 332
+            },
+            "components": [
+              {
+                "pixels": 64802,
+                "left": 114,
+                "top": 0,
+                "width": 358,
+                "height": 291
+              },
+              {
+                "pixels": 1917,
+                "left": 221,
+                "top": 309,
+                "width": 147,
+                "height": 23
+              },
+              {
+                "pixels": 32,
+                "left": 190,
+                "top": 326,
+                "width": 12,
+                "height": 6
+              }
+            ]
+          }
+        },
+        {
+          "index": 5,
+          "file": "rush-05.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 0,
+            "top": 665,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 76744,
+          "alpha": {
+            "zero": 91111,
+            "partial": 105572,
+            "opaque": 120,
+            "transparentFraction": 0.46295534112792996,
+            "bounds": {
+              "left": 71,
+              "top": 0,
+              "width": 460,
+              "height": 333
+            },
+            "components": [
+              {
+                "pixels": 91242,
+                "left": 72,
+                "top": 0,
+                "width": 458,
+                "height": 317
+              },
+              {
+                "pixels": 3120,
+                "left": 178,
+                "top": 315,
+                "width": 231,
+                "height": 18
+              }
+            ]
+          }
+        },
+        {
+          "index": 6,
+          "file": "rush-06.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 591,
+            "top": 665,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 85890,
+          "alpha": {
+            "zero": 74274,
+            "partial": 122442,
+            "opaque": 87,
+            "transparentFraction": 0.37740278349415407,
+            "bounds": {
+              "left": 47,
+              "top": 0,
+              "width": 499,
+              "height": 333
+            },
+            "components": [
+              {
+                "pixels": 110447,
+                "left": 48,
+                "top": 0,
+                "width": 498,
+                "height": 333
+              }
+            ]
+          }
+        },
+        {
+          "index": 7,
+          "file": "rush-07.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 84924,
+          "alpha": {
+            "zero": 68506,
+            "partial": 127675,
+            "opaque": 31,
+            "transparentFraction": 0.3491427639491978,
+            "bounds": {
+              "left": 32,
+              "top": 0,
+              "width": 559,
+              "height": 321
+            },
+            "components": [
+              {
+                "pixels": 119000,
+                "left": 32,
+                "top": 0,
+                "width": 547,
+                "height": 320
+              }
+            ]
+          }
+        },
+        {
+          "index": 8,
+          "file": "rush-08.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 99436,
+          "alpha": {
+            "zero": 45517,
+            "partial": 150675,
+            "opaque": 20,
+            "transparentFraction": 0.2319786761258231,
+            "bounds": {
+              "left": 0,
+              "top": 0,
+              "width": 591,
+              "height": 332
+            },
+            "components": [
+              {
+                "pixels": 143602,
+                "left": 0,
+                "top": 0,
+                "width": 589,
+                "height": 332
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

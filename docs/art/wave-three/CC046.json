@@ -1,0 +1,190 @@
+{
+  "characterId": "CC046",
+  "characterName": "Sigma Landlord",
+  "master": "docs/art/wave-three/CC046-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest alpha>32 connected bodies identify the six poses. Smaller prop components assigned whole to nearest actor. Original alpha retained near solid artwork, and disconnected distant faint fringe removed. Each full figure cropped, uniformly scaled, square padded. Source master unmodified."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC046-0.webp",
+      "sourceExtraction": {
+        "left": 77,
+        "top": 0,
+        "width": 316,
+        "height": 503
+      },
+      "scale": 0.88,
+      "suggestedAnchor": {
+        "x": 275,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 122,
+        "top": 29,
+        "right": 389,
+        "bottom": 461
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 192812,
+        "transparentFraction": 0.7355194091796875
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC046-1.webp",
+      "sourceExtraction": {
+        "left": 502,
+        "top": 0,
+        "width": 430,
+        "height": 494
+      },
+      "scale": 0.88,
+      "suggestedAnchor": {
+        "x": 283,
+        "y": 457
+      },
+      "alphaBounds": {
+        "left": 73,
+        "top": 39,
+        "right": 441,
+        "bottom": 458
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 196253,
+        "transparentFraction": 0.7486457824707031
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC046-2.webp",
+      "sourceExtraction": {
+        "left": 974,
+        "top": 26,
+        "width": 548,
+        "height": 467
+      },
+      "scale": 0.8613138686131386,
+      "suggestedAnchor": {
+        "x": 232,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 25,
+        "top": 68,
+        "right": 482,
+        "bottom": 460
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 187929,
+        "transparentFraction": 0.7168922424316406
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC046-3.webp",
+      "sourceExtraction": {
+        "left": 39,
+        "top": 490,
+        "width": 379,
+        "height": 528
+      },
+      "scale": 0.8560606060606061,
+      "suggestedAnchor": {
+        "x": 270,
+        "y": 460
+      },
+      "alphaBounds": {
+        "left": 99,
+        "top": 20,
+        "right": 413,
+        "bottom": 461
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 188629,
+        "transparentFraction": 0.7195625305175781
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC046-4.webp",
+      "sourceExtraction": {
+        "left": 528,
+        "top": 495,
+        "width": 381,
+        "height": 512
+      },
+      "scale": 0.88,
+      "suggestedAnchor": {
+        "x": 284,
+        "y": 458
+      },
+      "alphaBounds": {
+        "left": 95,
+        "top": 24,
+        "right": 419,
+        "bottom": 459
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 181748,
+        "transparentFraction": 0.6933135986328125
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC046-5.webp",
+      "sourceExtraction": {
+        "left": 1109,
+        "top": 532,
+        "width": 319,
+        "height": 470
+      },
+      "scale": 0.88,
+      "suggestedAnchor": {
+        "x": 252,
+        "y": 459
+      },
+      "alphaBounds": {
+        "left": 121,
+        "top": 58,
+        "right": 391,
+        "bottom": 460
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 194855,
+        "transparentFraction": 0.7433128356933594
+      }
+    }
+  ],
+  "anchorMethod": "Centre of solid lowest36px (shoe span for ordinary sprites); y at lowest alpha>32 art pixel."
+}

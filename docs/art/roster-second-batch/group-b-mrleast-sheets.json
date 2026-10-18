@@ -1,0 +1,35 @@
+[
+  {
+    "id": "CC017",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-a8016826-0792-4654-824d-5e6089cc8fc3.png",
+    "prompt": "Use case: stylized-concept. Asset type: transparent production sprite pose atlas. Create EXACT 3 columns by 2 rows of SIX COMPLETE INTACT WHOLE-BODY drawings of same character from reference portrait, one centered inside each equal cell. Landscape canvas 1536x1024 preferred. Consistent scale across cells: standing characters approx380px high, crouched or seated physically shorter at same scale. Every pose includes entire head, outfit, limbs and both feet. Feet touch consistent lower cell baseline. Keep all held props inside its cell. At least40px transparent gutters and40px outer margins. Real alpha transparency everywhere behind drawings. NO opaque white or checkerboard, no background scene, no ground shadow, no labels, no panels. Heavy scratched black ink and halftone exactly matching portrait; consistent saturated costume. Each is independent fully connected complete body, NO detached part rigs. Read cells row-major top-left to bottom-right.\nMrLeast fictional adult brown-haired bearded hype creator from reference, same electricblue hoodie-jacket black trousers white sneakers, oversized blank blue giveaway cheque and tiny one-dollar coin. SIX row-major poses:0 excited neutral upright holding folded cheque;1 anticipatory crouch revealing tiny coin pinched fingers;2 planted feet both hands presenting wide massive cheque forward, no more than320px width;3 startled backward stagger holding cheque;4 upright smug victory with both arms raised demanding applause, tinycoin in fingers;5 disappointed seated crouch searching empty palms missing coin. Keep entire cheque coin handsfeet inside each equalcell with55px gutters, complete intact whole body. No logos or text.",
+    "fixPrompt": "Edit existing six-pose transparent sprite atlas. Preserve EXACT same six complete MrLeast drawings, face costume expressions props and ink style. Change ONLY layout and scale: shrink all six drawings uniformly to75% of current size, then center each in its correct equalcell within exact3columns2rows. At least55px genuine transparent gutters around every complete figure including coinchequehairhandsfeet, no cropping nooverlap. Same standing scale across cells, crouched/seated naturally shorter. Preserve original cellorder and alpha, no scene orshadow or labels. Landscape1536x1024.",
+    "baseHeight": 412,
+    "feet": [
+      [
+        292,
+        487
+      ],
+      [
+        750,
+        471
+      ],
+      [
+        1235,
+        486
+      ],
+      [
+        282,
+        944
+      ],
+      [
+        776,
+        943
+      ],
+      [
+        1198,
+        925
+      ]
+    ]
+  }
+]

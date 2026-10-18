@@ -1,0 +1,202 @@
+{
+  "background": "docs/art/layered-specials/copy-paste-kakashi/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/action-00.webp",
+        "width": 235,
+        "height": 414,
+        "sourceBounds": {
+          "x": 180,
+          "y": 5,
+          "w": 235,
+          "h": 414
+        },
+        "area": 54995
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/action-01.webp",
+        "width": 326,
+        "height": 409,
+        "sourceBounds": {
+          "x": 572,
+          "y": 11,
+          "w": 326,
+          "h": 409
+        },
+        "area": 57010
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/action-02.webp",
+        "width": 247,
+        "height": 402,
+        "sourceBounds": {
+          "x": 171,
+          "y": 412,
+          "w": 247,
+          "h": 402
+        },
+        "area": 51727
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/action-03.webp",
+        "width": 401,
+        "height": 388,
+        "sourceBounds": {
+          "x": 580,
+          "y": 427,
+          "w": 401,
+          "h": 388
+        },
+        "area": 65358
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/action-04.webp",
+        "width": 334,
+        "height": 369,
+        "sourceBounds": {
+          "x": 143,
+          "y": 807,
+          "w": 334,
+          "h": 369
+        },
+        "area": 53561
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/action-05.webp",
+        "width": 300,
+        "height": 374,
+        "sourceBounds": {
+          "x": 611,
+          "y": 795,
+          "w": 300,
+          "h": 374
+        },
+        "area": 52265
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/action-06.webp",
+        "width": 436,
+        "height": 360,
+        "sourceBounds": {
+          "x": 92,
+          "y": 1168,
+          "w": 436,
+          "h": 360
+        },
+        "area": 64140
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/action-07.webp",
+        "width": 254,
+        "height": 376,
+        "sourceBounds": {
+          "x": 647,
+          "y": 1155,
+          "w": 254,
+          "h": 376
+        },
+        "area": 45543
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-00.webp",
+        "width": 335,
+        "height": 393,
+        "sourceBounds": {
+          "x": 178,
+          "y": 8,
+          "w": 335,
+          "h": 393
+        },
+        "area": 53563
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-01.webp",
+        "width": 310,
+        "height": 393,
+        "sourceBounds": {
+          "x": 589,
+          "y": 8,
+          "w": 310,
+          "h": 393
+        },
+        "area": 55748
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-02.webp",
+        "width": 256,
+        "height": 409,
+        "sourceBounds": {
+          "x": 173,
+          "y": 391,
+          "w": 256,
+          "h": 409
+        },
+        "area": 55307
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-03.webp",
+        "width": 239,
+        "height": 399,
+        "sourceBounds": {
+          "x": 629,
+          "y": 393,
+          "w": 239,
+          "h": 399
+        },
+        "area": 51618
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-04.webp",
+        "width": 227,
+        "height": 380,
+        "sourceBounds": {
+          "x": 208,
+          "y": 793,
+          "w": 227,
+          "h": 380
+        },
+        "area": 49748
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-05.webp",
+        "width": 263,
+        "height": 390,
+        "sourceBounds": {
+          "x": 602,
+          "y": 781,
+          "w": 263,
+          "h": 390
+        },
+        "area": 48983
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-06.webp",
+        "width": 265,
+        "height": 372,
+        "sourceBounds": {
+          "x": 189,
+          "y": 1162,
+          "w": 265,
+          "h": 372
+        },
+        "area": 51610
+      },
+      {
+        "file": "docs/art/layered-specials/copy-paste-kakashi/actors/ending-07.webp",
+        "width": 282,
+        "height": 379,
+        "sourceBounds": {
+          "x": 605,
+          "y": 1155,
+          "w": 282,
+          "h": 379
+        },
+        "area": 49450
+      }
+    ]
+  },
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

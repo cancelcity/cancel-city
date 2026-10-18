@@ -1,0 +1,230 @@
+[
+  {
+    "name": "action-sheet.png",
+    "width": 1086,
+    "height": 1448,
+    "cols": 2,
+    "rows": 4,
+    "transparentFraction": 0.5915156995614704,
+    "components": [
+      {
+        "pixels": 71693,
+        "left": 133,
+        "top": 6,
+        "width": 347,
+        "height": 422,
+        "poseIndex": 1,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 73898,
+        "left": 643,
+        "top": 4,
+        "width": 355,
+        "height": 421,
+        "poseIndex": 2,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 86467,
+        "left": 81,
+        "top": 428,
+        "width": 448,
+        "height": 372,
+        "poseIndex": 3,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 87196,
+        "left": 584,
+        "top": 422,
+        "width": 458,
+        "height": 374,
+        "poseIndex": 4,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 87074,
+        "left": 103,
+        "top": 775,
+        "width": 421,
+        "height": 401,
+        "poseIndex": 5,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 85567,
+        "left": 593,
+        "top": 794,
+        "width": 404,
+        "height": 380,
+        "poseIndex": 6,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 67221,
+        "left": 57,
+        "top": 1167,
+        "width": 432,
+        "height": 273,
+        "poseIndex": 7,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 68266,
+        "left": 546,
+        "top": 1172,
+        "width": 494,
+        "height": 268,
+        "poseIndex": 8,
+        "touchesCanvas": false
+      }
+    ]
+  },
+  {
+    "name": "attack-sheet.png",
+    "width": 1086,
+    "height": 1448,
+    "cols": 2,
+    "rows": 4,
+    "transparentFraction": 0.5415661915081957,
+    "components": [
+      {
+        "pixels": 93036,
+        "left": 33,
+        "top": 6,
+        "width": 507,
+        "height": 345,
+        "poseIndex": 1,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 82262,
+        "left": 605,
+        "top": 4,
+        "width": 446,
+        "height": 355,
+        "poseIndex": 2,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 94077,
+        "left": 48,
+        "top": 363,
+        "width": 471,
+        "height": 366,
+        "poseIndex": 3,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 86480,
+        "left": 544,
+        "top": 373,
+        "width": 538,
+        "height": 343,
+        "poseIndex": 4,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 83461,
+        "left": 35,
+        "top": 707,
+        "width": 434,
+        "height": 378,
+        "poseIndex": 5,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 88401,
+        "left": 600,
+        "top": 722,
+        "width": 432,
+        "height": 359,
+        "poseIndex": 6,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 82987,
+        "left": 99,
+        "top": 1089,
+        "width": 434,
+        "height": 350,
+        "poseIndex": 7,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 89903,
+        "left": 550,
+        "top": 1061,
+        "width": 483,
+        "height": 375,
+        "poseIndex": 8,
+        "touchesCanvas": false
+      }
+    ]
+  },
+  {
+    "name": "ending-sheet.png",
+    "width": 1024,
+    "height": 1536,
+    "cols": 2,
+    "rows": 3,
+    "transparentFraction": 0.5110759735107422,
+    "components": [
+      {
+        "pixels": 127243,
+        "left": 42,
+        "top": 12,
+        "width": 475,
+        "height": 488,
+        "poseIndex": 1,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 123128,
+        "left": 526,
+        "top": 11,
+        "width": 452,
+        "height": 489,
+        "poseIndex": 2,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 130078,
+        "left": 50,
+        "top": 501,
+        "width": 477,
+        "height": 499,
+        "poseIndex": 3,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 126601,
+        "left": 534,
+        "top": 499,
+        "width": 484,
+        "height": 503,
+        "poseIndex": 4,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 127108,
+        "left": 78,
+        "top": 985,
+        "width": 459,
+        "height": 532,
+        "poseIndex": 5,
+        "touchesCanvas": false
+      },
+      {
+        "pixels": 112454,
+        "left": 582,
+        "top": 1002,
+        "width": 401,
+        "height": 516,
+        "poseIndex": 6,
+        "touchesCanvas": false
+      }
+    ]
+  }
+]

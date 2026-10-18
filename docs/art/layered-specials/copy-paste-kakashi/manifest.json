@@ -1,0 +1,88 @@
+{
+  "characterId": "CC013",
+  "characterName": "Copy-Paste Kakashi",
+  "status": "generated-and-inspected",
+  "generator": "built-in image_gen",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/action-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "action",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "order": "row-major",
+      "poses": [
+        "ready",
+        "hand-gesture-1",
+        "hand-gesture-2",
+        "leans-on-implied-copier",
+        "presses-implied-button",
+        "printer-recoil",
+        "attack-lunge",
+        "dismayed-followthrough"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/copy-paste-kakashi/ending-sheet-original.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "ending",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "order": "row-major",
+      "poses": [
+        "points-at-printer",
+        "notices-backwards-clone",
+        "confused-head-tilt",
+        "reverses-paper",
+        "embarrassed-facepalm",
+        "arms-folded-frustration",
+        "instruction-sheet-hold",
+        "deadpan-final"
+      ]
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/copy-paste-kakashi/dojo-office-original.png",
+    "width": 1672,
+    "height": 941,
+    "hasAlpha": false,
+    "role": "fixed-empty-photocopy-dojo-office"
+  },
+  "references": [
+    "public/assets/roster-v3/CC013.webp",
+    "public/assets/actors/CC013-roster-v2-0.webp",
+    "public/assets/actors/CC013-roster-v2-2.webp",
+    "public/assets/actors/CC013-roster-v2-4.webp"
+  ],
+  "prompts": "docs/art/layered-specials/copy-paste-kakashi/prompts.json",
+  "extractionReport": "docs/art/layered-specials/copy-paste-kakashi/component-report.json",
+  "alpha": {
+    "actionFullyTransparentPixels": 1035390,
+    "endingFullyTransparentPixels": 1073272,
+    "fullyOpaquePixels": 0,
+    "modalSubjectAlpha": 253,
+    "totalPixelsPerSheet": 1572864,
+    "notes": "Real alpha channel; colored background RGB under alpha0 is invisible. Do not flatten or chroma-key."
+  },
+  "inspection": {
+    "actionComponents": 8,
+    "endingComponents": 8,
+    "alphaThreshold": 48,
+    "minComponentPixels": 500,
+    "style": "Exact silver spiky hair, tilted silver/navy headband, one visible eye and navy mask, olive pocket vest, navy outfit/red sleeve spiral, white straps/anklewraps, open-toe sandals and ivory shoulder roll. Current card etched hatching/stipple and magenta/cyan edge accent.",
+    "warnings": [
+      "Actor-only sheets deliberately omit foreground photocopier; action poses4/5 place the extended hand at implied waist-high machine control position. Composite machine separately.",
+      "Shoulder scroll remains attached in every pose, matching existing CC013 actors. No long ribbons or clone are baked in.",
+      "Ending contains hand-held small instruction paper connected to actor; paper has crude triangle marks only, no text.",
+      "Instruction pictograms do not clearly communicate upside-down orientation. Overlay a reversed copyright mark or instruction cue separately if that joke is needed.",
+      "Ending pose2 includes tiny detached surprise ink ticks; large-component extraction should discard these.",
+      "Extract connected components rather than equal cells. Hair/toes cross nominal row boundaries but eight silhouettes remain separate."
+    ],
+    "background": "Empty office-dojo with wide tatami foreground, distant copier at right, filing furniture, blank noticeboard and neon lights. No character or moving paper."
+  },
+  "summary": "16 intact full-body actor cutouts and one fixed empty photocopy dojo. Foreground copier, clones, moving paper and watermarks remain separate for continuous compositing."
+}

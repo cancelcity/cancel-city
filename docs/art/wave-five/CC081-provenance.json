@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "portraitSource": "exec-083ca988-30e9-4a3c-ab69-630013d5ee00.png",
+  "posesSource": "exec-f1abd940-0e8e-4350-9c25-40accf5655c6.png",
+  "derived": "Pillow crop uniform-scale transparent pad WebP only",
+  "likenessAdaptation": false
+}

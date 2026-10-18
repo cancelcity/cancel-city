@@ -1,0 +1,5 @@
+Use case: background-extraction.
+Target: the attached already-transparent 2-column by 4-row RGBA animation sheet.
+SINGLE PRECISE CORRECTION: erase the thin bright red/hot-pink stray background fringes and small colored islands outside the hero/kart/wheel silhouettes, especially above and between golden hair spikes and around shoulders. These red/pink bits are remnants of the removed sky, not part of the hero. They must become true zero-alpha transparency. Do not add any background or matte.
+
+Preserve the entire existing image canvas exactly, the exact 2×4 grid, all eight poses and per-cell positions/scales, rough ink linework, faces, hair, orange gi, navy undershirt, skin, hands, kart chassis and red number-2 plate, attached tires and any loose wheel already present. DO NOT remove the red kart or orange costume; erase only foreign red/pink fringe OUTSIDE the subject outline. Keep fine black ink edges and golden hair tips. Every empty area remains actual alpha transparency, never checkerboard. Do not trim, resize, rearrange or redraw expressions. No scenery, shadows, dust, aura or effects. Output genuine RGBA with transparent background.

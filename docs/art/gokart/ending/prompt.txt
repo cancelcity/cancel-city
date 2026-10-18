@@ -1,0 +1,19 @@
+Use case: illustration-story.
+Asset type: production cel-animation sprite sheet for an anime-comedy game special.
+Input image 1 is the definitive character, kart, palette, linework, and city design reference. Keep this adult golden-spiky-haired muscular hero's face, orange gi, navy undershirt, blue wristbands and boots, and tiny red go-kart with white number-2 plate consistent. Generate NEW epilogue drawings, not a duplicate of the reference.
+
+OUTPUT LAYOUT IS CRITICAL: one continuous image 1536 x 1728 pixels or larger in this same 8:9 aspect ratio, exactly TWO equal columns and FOUR equal rows. EIGHT equal 16:9 landscape animation frames, read left to right then down. Cells touch directly with NO gutters, NO borders, NO labels, NO text captions, NO panels inside cells. Each cell is one full animation frame. The camera and scenery are locked identically in all eight cells, showing the whole tiny kart and all the adult hero's head and intact body, with room at screen left for a wheel to roll away. Frame-to-frame drawings must actually change character expression, head angle, arm position, wheel position and chassis tilt as specified.
+
+Scene: comic aftermath after a victorious race. Wet neon city street at blue hour, teal and pink reflected pavement, restrained amber rim light. The golden aura is completely gone. Polished professional clean black cel-animation linework and crisp painted city background matching input image 1. Use a wide low-angle three-quarter frontal view, less extreme than the reference and far enough away to see the whole kart and hero. Small harmless grey wisps of engine steam. No enemy or other person. The hero remains seated in the kart with his knees cramped high. All limbs anatomically attached and consistent. This is a physical comedy gag, no injury, no violence.
+
+Eight consecutive new drawings:
+1 top left: hero smugly celebrates, eyes closed, one proud raised fist; stationary intact little red kart number 2.
+2 top right: proud fist lowers a little; hero opens one eye, hears an odd mechanical rattle; nearest front wheel on SCREEN LEFT begins to lean outwards on its axle.
+3 row2 left: hero's fist drops and he turns his head DOWN LEFT with one eyebrow raised; that same front screen-left wheel is visibly tilted, hub loose.
+4 row2 right: hero looks baffled down left, shoulders sink; the same wheel has slipped clear of its axle and stands just beside the kart, while the unsupported front-left corner drops slightly.
+5 row3 left: the wheel rolls a short distance toward the LEFT FOREGROUND, clearly separate from the vehicle; the hero looks after it, whole body stays seated; chassis settles a little further askew.
+6 row3 right: wheel has rolled farther LEFT in front of the kart and is almost at screen-left edge; hero begins slowly turning his eyes toward the viewer, incredulous; front-left of kart now rests harmlessly lower.
+7 bottom left: wheel is near far screen-left, steam drifts up, hero faces viewer with deeply unimpressed deadpan expression and both hands resting near steering wheel.
+8 bottom right: wheel rolls beyond screen-left edge, just a sliver remains or has exited; hold hero's dry deadpan stare at viewer, intact body cramped in lopsided number-2 kart, last small steam wisp.
+
+Every frame must remain coherent in chronology. Draw wheel rolling progressively left, not teleporting. Same locked lens, horizon, background buildings, road reflections, character scale, kart design and palette in all cells. No aura, no extra arms, no cropped head or feet, no face swaps, no motion-comic cutaways, no typography except the kart number 2, no watermark.

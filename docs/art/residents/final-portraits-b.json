@@ -1,0 +1,215 @@
+{
+  "createdAt": "2026-10-11",
+  "method": "built-in image_gen",
+  "purpose": "Production resident portraits replacing screenshot crops",
+  "artDirection": "User-approved Cancel City reference mockups and original dense ink portrait atlas",
+  "portraits": [
+    {
+      "id": "CC001",
+      "name": "Rage Gamer",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: A furious red-faced wild black-haired bearded male gamer with enormous shouting mouth and glaring bloodshot eyes, wearing a thick red gaming headset and dark hoodie, clenching a game controller in both hands. Sick acid green rage bursts behind him with red darkroom accents. Match Rage Gamer in the supplied collection mockup.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-3.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ef73fc0f-f079-4729-aee1-9dbc85adcf15.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC001.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC001.png"
+    },
+    {
+      "id": "CC004",
+      "name": "AI Apocalypse Bro",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: A bug-eyed curly dark-haired panicking man wearing small round eyeglasses with glowing bright green lenses. Mouth open in scream, cables and robotic mechanical tubes curl around his shoulders. Cyan and acid green computer-lab chaos backdrop. Match AI Apocalypse Bro in the supplied collection mockup.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-3.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-018b7cd2-06d1-434b-a619-c8104c1ff137.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC004.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC004.png"
+    },
+    {
+      "id": "CC006",
+      "name": "LinkedIn Gladiator",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: A fierce grinning stubbled brown-haired male corporate gladiator, wearing blue rectangular eyeglasses without branding, white shirt, loosened dark tie and navy suit sleeves, muscular biceps flexed as he grasps a heavy briefcase. Cynical wild expression. Cyan corporate skyscraper backdrop with yellow lightning and dark ink. Match LinkedIn Gladiator in the supplied battle mockup.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-4.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-945cb4d9-8e38-434b-bc2a-6972be99d848.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC006.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC006.png"
+    },
+    {
+      "id": "CC009",
+      "name": "Eco Influencer",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: A smug stylish blonde young woman with black sunglasses pushed onto her head, green summer outfit, big sly smile and sparkling exaggerated eyes. Holding an unbranded takeaway sponsored iced drink cup in one hand and posing as lush tropical leaves grow behind her. Cyan jungle-urban backdrop with green acid paint splashes. Match Eco Influencer in the collection mockup. Do not render any words or branding on cup.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-3.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-ed4036c3-a61c-448f-bd8f-5b52b279eced.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC009.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC009.png"
+    },
+    {
+      "id": "CC010",
+      "name": "CEO on a Yacht",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: An overweight smug middle-aged male CEO with short brown hair, a fat round neck, thick dark moustache, black sunglasses, navy suit and loose white shirt. Wide arrogant grin, cigar in his mouth, holding a champagne flute. Golden bubbles and a white luxury yacht offshore in cyan ocean behind him. Match CEO on a Yacht in the collection mockup. Satirical dense ink caricature, not photoreal.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-3.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-eeab5f4a-dc81-46e1-afa0-f3931a83e6c5.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC010.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC010.png"
+    },
+    {
+      "id": "CC013",
+      "name": "Culture Vulture",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: One anthropomorphic scruffy vulture with long pink neck, hooked yellow beak, tired cynical sly eyes, fluffy gray neck ruff and gray-black feathers. Wearing an unbranded black baseball cap and dark jacket, clutching a large paparazzi DSLR camera with a huge lens. Faint palms and angular urban backdrop in orange and cream with black ink splatter. Match Culture Vulture in collection mockup. No words on cap or camera.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-3.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-a47aa15e-8c8d-4157-95c9-f00698c6c998.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC013.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC013.png"
+    },
+    {
+      "id": "CC016",
+      "name": "Performative Ally",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: A smug smirking young adult man with neatly swept dark hair, glossy black sunglasses, orange shirt under dark jacket. Big performative smile, one hand theatrically held over his heart, other holding a small rainbow flag. Bright orange ink-splash city backdrop with a large rainbow sweep. Match the theatrical energy and sunglasses of Performative Ally in the supplied collection mockup, as an original male resident. No slogans or symbols besides rainbow stripes.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-3.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-19620ad0-dfca-4849-ae82-ae9e04de2658.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC016.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC016.png"
+    },
+    {
+      "id": "CC024",
+      "name": "Smooth Rug Pull",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: A slick blond smiling businessman with black sunglasses, sharp navy pinstripe suit and loosened tie, smug toothy grin, greedily clutching an open leather wallet spilling shiny gold coins. Distinct blonde pompadour, glossy arrogant face. Orange and yellow golden casino-finance backdrop with coins and ragged ink splashes. Match Smooth Rug Pull in the collection mockup. Coins must have plain decorative rings only, no lettering or cryptocurrency logos.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-3.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-aa024e04-0a7a-4f10-b8c8-5fbb855a07d2.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC024.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC024.png"
+    },
+    {
+      "id": "CC028",
+      "name": "Conspiracy Mom",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square high-resolution resident portrait for Cancel City collectible card. Input image 1 is the approved UI mockup: extract only the assigned resident's design cues; image 2 is the approved original portrait atlas defining the exact illustration style. Create a new original clean square 1024x1024 artwork filling the canvas, NOT a screenshot crop. Match grotesque satirical underground punk comic style: dense black ink contour, hand-drawn crosshatching, gritty stipple and paper grain, expressive slightly grotesque anatomy, acid color fills, chaotic painted splashes behind subject, sharp polished facial detail. Composition bust/waist-up, face and identifying props readable at thumbnail size, center character with generous top of head within canvas. No text, no words, no letters, no frame, no stats, no logos, no watermark, no card border, no UI. Single character only. Subject: A bug-eyed alarmed middle-aged woman with messy dark wavy hair, wearing a crumpled shiny tinfoil hat and frumpy cardigan. Mouth open in shock, hands clutching a tattered paper and pointing frantically. Dense gray, cream and rusty orange backdrop showing chaotic conspiracy pinboard red string and unreadable unmarked papers, black ink scratches. Match Conspiracy Mom in the supplied collection mockup. No text or lettering anywhere, only blank papers and red connecting strings.",
+      "referenceImages": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/design-references/mockup-3.png",
+        "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/reference/portraits-atlas.png"
+      ],
+      "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-5cf4535a-2fbd-441d-9b8d-2f27d725ff07.png",
+      "output": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC028.png",
+      "method": "built-in image_gen",
+      "status": "ready",
+      "generatedAt": "2026-10-11",
+      "width": 1254,
+      "height": 1254,
+      "format": "PNG",
+      "mode": "RGB",
+      "visualQA": {
+        "passed": true,
+        "notes": "Standalone square portrait; identity, props, ink texture, palette, and absence of card frame/UI text inspected."
+      },
+      "relativeOutput": "docs/art/residents/CC028.png"
+    }
+  ]
+}

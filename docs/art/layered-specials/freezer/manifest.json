@@ -1,0 +1,94 @@
+{
+  "characterId": "CC012",
+  "characterName": "Freezer",
+  "status": "generated-and-inspected",
+  "generator": "built-in image_gen",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/freezer/action-sheet-clean.png",
+      "cols": 2,
+      "rows": 4,
+      "role": "action",
+      "width": 1024,
+      "height": 1536,
+      "poseCount": 8,
+      "order": "row-major",
+      "poses": [
+        "imperious-ready",
+        "boastful-finger",
+        "powering-up",
+        "grabs-lid",
+        "climbing-1",
+        "climbing-2",
+        "lowering-inside",
+        "peeking-out"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/freezer/ending-sheet-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "width": 1536,
+      "height": 1024,
+      "poseCount": 8,
+      "order": "row-major",
+      "poses": [
+        "commanding-inside",
+        "shivers",
+        "closes-lid",
+        "lid-half-closed",
+        "happy-clerk-smile",
+        "lid-nearly-closed",
+        "closed-freezer-angry-eyes",
+        "offended-peek"
+      ]
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/freezer/frozen-aisle-original.png",
+    "width": 1672,
+    "height": 941,
+    "hasAlpha": false,
+    "role": "fixed-empty-frozen-food-aisle"
+  },
+  "references": [
+    "public/assets/roster-v3/CC012.webp",
+    "public/assets/actors/CC012-roster-v2-0.webp",
+    "public/assets/actors/CC012-roster-v2-2.webp",
+    "public/assets/actors/CC012-roster-v2-4.webp"
+  ],
+  "prompts": "docs/art/layered-specials/freezer/prompts.json",
+  "extractionReport": "docs/art/layered-specials/freezer/component-report.json",
+  "alpha": {
+    "actionFullyTransparentPixels": 839458,
+    "endingFullyTransparentPixels": 584646,
+    "fullyOpaquePixels": 0,
+    "modalSubjectAlpha": 253,
+    "totalPixelsPerSheet": 1572864,
+    "notes": "Actual alpha backgrounds. RGB under alpha=0 carries colored matting but is invisible; preserve alpha, do not flatten or chroma-key."
+  },
+  "inspection": {
+    "actionComponents": 8,
+    "endingComponents": 8,
+    "alphaThreshold": 48,
+    "minComponentPixels": 500,
+    "style": "White/violet alien clerk with teal apron, tan blank badge, long tail, white cobalt-rim chest freezer. Current v3 card scratchy etching/stipple, deliberately rougher than existing clean v2 actors.",
+    "warnings": [
+      "Use action-sheet-clean.png, not action-sheet-original.png. Original action poses2+3 touch and were rejected.",
+      "Clean action uses2cols4rows, ending uses4cols2rows. Use manifest grid metadata.",
+      "Extract connected alpha components; poses extend across nominal equal-cell horizontal row boundaries.",
+      "Ending frames2 and3 include small detached ink shiver ticks. Main connected-component extraction should discard these marks; renderer can animate tremor separately.",
+      "Chest freezer body naturally conceals limbs in the inside/closed poses; no body-part rig is needed.",
+      "Prop lid changes between several fixed poses. Keep chapter duration short and align the freezer base; do not tween lid with a detached body rig."
+    ],
+    "background": "Empty frozen-food aisle with clear cracked-tile foreground; no actor, foreground chest freezer, projectile or loose particles."
+  },
+  "discarded": [
+    {
+      "path": "docs/art/layered-specials/freezer/action-sheet-original.png",
+      "reason": "Two neighboring large alpha components touch; retained only as generation history, not a consumed sheet."
+    }
+  ],
+  "summary": "16 usable intact character+prop cutouts across two verified alpha sheets, one opaque fixed aisle. One built-in spacing correction created the final action layout."
+}

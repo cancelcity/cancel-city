@@ -1,0 +1,26 @@
+[
+  {
+    "shot": "ignition",
+    "prompt": "Use case: style-transfer. Asset: drawn animation sheet for CANCEL CITY.\nImage 1 is the edit target ignition sheet. Image 2 is the approved corrected GOKART character/style master. Image 3 is the actual CANCEL CITY card style reference. REDRAW image 1 entirely to match the illustration style of images 2 and 3; this is not a color filter.\nPreserve exact layout: 2 columns × 4 rows, eight edge-to-edge widescreen16:9 cells, no gutters, borders, captions, UI, watermark. Preserve each cell's composition, attached anatomy, steering wheel and sequential acting/pose progression from image1. Preserve orange gi/navy undershirt/blue wristbands, golden spiky hair, tiny red number2 kart.\nReplace clean handsome soft cel-shaded anime face with the grotesque ugly funny adult hero of image2: oversized head, heavily creased face, bulging bloodshot eyes, sweat/spit, drawn crooked individual teeth, huge expressive mouth. Shot remains close on face/hands at wheel. VARY expression progressively: first two cells intense angry bloodshot stare with pressed/gritted teeth; middle two jaw opening with snarling teeth; next two angry open shout with tongue and sweat; last two huge unhinged scream, bloodshot wide eyes, fabric and hair whipping. Do not make all eight mouths identical.\nENTIRE frame and objects must have dense scratchy black ink crosshatching, stippled pores, irregular engraved lines, gritty newsprint speckles, coarse print texture like actual card3. Flat acid neon yellow and hot magenta, strong pitch-black masses, offwhite skin highlights, scuffed saturated orange/navy clothes. Replace soft blue cinematic city with flat BLACK skyline and palm silhouettes in acid yellow/magenta splatter fields. Replace any visible wet glossy road with rough dirty scratched asphalt. Aura is harsh scratchy neon ink flames/strokes, not soft glow. No glossy reflections, no polished rendering, no smooth cel anime, no handsome face. Keep frame sequence and camera crops of target; only art style and required grotesque acting change. Number2 unchanged where visible.",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-0865b758-f30e-4f70-aa36-49c24684d6d1.png",
+    "mode": "built-in image_gen edit",
+    "transparent_background": false,
+    "references": [
+      "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/gokart/intro/ignition-original.png",
+      "/workspace/scratch/80a8c8c1affe/generated_images/exec-7530eca5-c52b-49ce-b42c-b09c2e1f8d82.png",
+      "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/roster-b2/CC010.webp"
+    ]
+  },
+  {
+    "shot": "reveal",
+    "prompt": "Use case: style-transfer. Asset: drawn animation sheet for CANCEL CITY.\nImage 1 is the edit target reveal sheet. Image 2 is the approved corrected GOKART character/style master. Image 3 is the actual CANCEL CITY card style reference. REDRAW image 1 entirely in the exact illustration style of images 2 and 3; not a filter.\nPreserve exact sheet layout: 2 columns × 4 rows, 8 edge-to-edge 16:9 cells, no gutters, no labels/borders/UI/watermark. Preserve each cell's composition, intact pose, tiny red kart, white nose circle and black numeral2, wheel count, sequence/camera/progression of target image1. Hero cramped inside absurdly small kart, oversized adult head, orange gi with navy undershirt and blue wristbands, golden spiky hair, hands attached to arms gripping wheel.\nReplace handsome smooth anime man with the ugly funny grotesque caricature hero of approved image2: oversized head, bulging bloodshot eyes, deep creases, sweat/spit, irregular teeth, HUGE shouting mouth. VARY acting through sequence: frame1 frustrated clenched teeth as engine coughs, frame2 cranky grimace and grip, frame3 mouth cracks open, frame4 snarls, frame5 furious tense shout while suspension squats, frame6 open unhinged scream as nose lifts, frame7 frantic scream/eyes, frame8 huge ridiculous yell while kart lunges. Preserve different drawn body/car positions and evolving sparks/spray/sputter.\nENTIRE FRAME: dense hand-scratched black crosshatching and stippling, coarse engraved ink textures, newsprint spots, rough scuffed paint and tyres, dirty offwhite skin highlights. Saturated ACID NEON YELLOW and HOT MAGENTA flat fields contrasted with heavy pitch-black shapes, navy and orange. Background becomes flat black city and palm silhouettes with acid yellow/magenta ink splatter, like the approved master/card. Road is rough dirty scratched asphalt, spray becomes gritty cream ink chunks, aura sharp harsh scratchy yellow energy strokes. No wet glossy reflections, no soft neon city realism, no polished smooth cel anime, no handsome faces. Keep all 8 cells and action progression; do not collapse into a single scene or montage. Do not change numeral2.",
+    "source": "/workspace/scratch/80a8c8c1affe/generated_images/exec-d41fe791-8eb5-40bf-a1dc-d364d36bfcfd.png",
+    "mode": "built-in image_gen edit",
+    "transparent_background": false,
+    "references": [
+      "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/gokart/intro/reveal-original.png",
+      "/workspace/scratch/80a8c8c1affe/generated_images/exec-7530eca5-c52b-49ce-b42c-b09c2e1f8d82.png",
+      "/workspace/scratch/80a8c8c1affe/cancel-city/public/assets/roster-b2/CC010.webp"
+    ]
+  }
+]

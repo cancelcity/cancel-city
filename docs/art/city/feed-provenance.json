@@ -1,0 +1,466 @@
+{
+  "asset": "feed",
+  "name": "Feed Tower",
+  "tool": "builtin image_gen.imagegen",
+  "transparent_background": true,
+  "calls": 5,
+  "created_utc": "2026-10-11",
+  "style_reference": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "brief_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/building-briefs.json",
+  "status": "All three selected levels accepted. Level 3 framing repaired with two targeted builtin edits; final fully framed with generous transparent margin.",
+  "levels": [
+    {
+      "level": 1,
+      "operation": "generate from style reference",
+      "prompt": "Use case: illustration-story. Asset type: transparent isometric building sprite for an interactive Cancel City neighbourhood. NEW illustration. Reference portrait is STYLE ONLY: match its bold grotesque punk comic black ink outlines, dense scratchy crosshatching, distressed screen-printed vivid colour, textured hand-drawn details. Show ONE complete building, detached, centered, full structure visible, three-quarter isometric view from diagonally above, orthographic game camera, vertical walls upright. Two visible front/side faces meet at center; ground base is a small diamond-like isometric square. Use the same approximately 30-degree isometric view for all assets. Frame comfortably inside a square canvas with clear transparent margin, preserve room above roof. Include ONLY the building and its own narrow ground footprint, no street, no sky, no background scenery, no large shadow extending outside footprint. TRUE alpha transparent background, not white or checkerboard painted background. NO card frame, UI, captions, readable text, watermark or real logos. High detail at least 1024 square; legible silhouette at 250px. Level 1 starting building, compact and modest but expressive. Palette: teal-cyan. Subject: A ramshackle three-storey cyberpunk broadcast newsroom made from teal brick and patchwork steel, huge blank cyan billboard panels, many antennas and dish receivers, rooftop neon abstract eye symbol, tangled exterior cables, black fire escape and small glowing windows. Satirize terminally-online attention culture. No readable lettering or real company logos.",
+      "input_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+      ],
+      "generated_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-e5a3a5fd-4832-4af8-aa15-28f69263dac0.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l1.png",
+      "relative_output_path": "docs/art/city/feed-l1.png",
+      "sha256": "49a7741f2ae3447ad92c63babbdbb83811912f99c76aff30d7b015edaea2f2dd",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_qa": {
+        "genuine_alpha_transparency": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 656121,
+        "fully_transparent_fraction": 0.4172428134276535,
+        "nonzero_alpha_bbox": [
+          0,
+          0,
+          1251,
+          1254
+        ],
+        "visible_alpha_at_least_8_bbox": [
+          175,
+          8,
+          1109,
+          1246
+        ],
+        "strong_alpha_at_least_128_bbox": [
+          176,
+          9,
+          1108,
+          1245
+        ],
+        "edge_alpha_extrema": {
+          "top": [
+            0,
+            1
+          ],
+          "bottom": [
+            0,
+            1
+          ],
+          "left": [
+            0,
+            1
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "notes": "There are incidental alpha=1-2 trace pixels at some canvas edges; no opaque painted background or checkerboard. L3 additionally has opaque subject pixels at bottom edge."
+      },
+      "visual_qa": {
+        "inspected_with": "view_image",
+        "readable_text_present": false,
+        "real_logos_present": false,
+        "background_scenery_present": false,
+        "canvas_size_preserved": true,
+        "entire_structure_framed": true,
+        "base_position_preserved": true,
+        "notes": "Teal/cyan three-storey broadcast newsroom with blank billboard, antennas, dishes, neon eye, cables and fire escape. Fully framed with thin top/bottom margin; camera and narrow ground base conform. Small interior human silhouettes are present inside some windows, consistent with L1 prompt having no prohibition on people."
+      }
+    },
+    {
+      "level": 2,
+      "operation": "edit selected level 1",
+      "prompt": "Upgrade this exact building to level 2: keep its identity, camera, footprint, front-door position, palette, transparent background and canvas size. Add one small balcony or upper floor, brighter window fixtures and a few richer rooftop details. Preserve clear space around edges; no new buildings, lettering or background. Edit target: the attached feed-l1.png only. Preserve TRUE alpha transparency, exact square canvas dimensions, approximately 30-degree orthographic isometric camera, and bottom ground-base position. Keep the complete building inside the canvas; use the balcony option for this level so silhouette fits without clipping. No readable text, logos or background.",
+      "input_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l1.png"
+      ],
+      "generated_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-87bf62ca-8e65-4cc5-a0e1-6e7283914e29.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l2.png",
+      "relative_output_path": "docs/art/city/feed-l2.png",
+      "sha256": "915ce3d43f7560ed0cc7bf47bdb0f85900c2ea160d90481e862c17571b859fcf",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_qa": {
+        "genuine_alpha_transparency": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 653318,
+        "fully_transparent_fraction": 0.41546031964062685,
+        "nonzero_alpha_bbox": [
+          0,
+          2,
+          1238,
+          1254
+        ],
+        "visible_alpha_at_least_8_bbox": [
+          173,
+          8,
+          1129,
+          1248
+        ],
+        "strong_alpha_at_least_128_bbox": [
+          174,
+          9,
+          1128,
+          1247
+        ],
+        "edge_alpha_extrema": {
+          "top": [
+            0,
+            0
+          ],
+          "bottom": [
+            0,
+            2
+          ],
+          "left": [
+            0,
+            1
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "notes": "There are incidental alpha=1-2 trace pixels at some canvas edges; no opaque painted background or checkerboard. L3 additionally has opaque subject pixels at bottom edge."
+      },
+      "visual_qa": {
+        "inspected_with": "view_image",
+        "readable_text_present": false,
+        "real_logos_present": false,
+        "background_scenery_present": false,
+        "canvas_size_preserved": true,
+        "entire_structure_framed": true,
+        "base_position_preserved": true,
+        "notes": "Same building identity and base/entry retained closely; added side balcony, brighter fixtures, string lights and rooftop machinery. Fully framed with thin top/bottom margin. Small interior human silhouettes remain."
+      }
+    },
+    {
+      "level": 3,
+      "operation": "builtin framing edit",
+      "prompt": "Use case: precise-object-edit. Edit target: attached feed-l3-repair1.png. Final framing-only adjustment. Keep the exact same Feed Tower level 3 building, architecture, isometric camera, style, colors and every feature. Keep output canvas exactly 1254 by 1254 with genuine alpha transparency. Uniformly shrink the existing complete building by about 8% and move it slightly upward so the LOWEST GROUND DIAMOND TIP ends at vertical pixel 1129 (90% canvas height), leaving the entire bottom 125 pixels completely transparent. The current tip is too low at around pixel 1191; increase that bottom margin. Keep horizontal center at 627 and at least 100 transparent pixels above the tallest antenna. All features fully framed. No creative changes, extra architecture, text, logos, people, background or painted checkerboard.",
+      "input_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l3-repair1.png"
+      ],
+      "generated_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-22b6364d-d979-438c-aa2f-61b1bbd8396d.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l3.png",
+      "relative_output_path": "docs/art/city/feed-l3.png",
+      "sha256": "4d98d01880a0444f6588456368f3e1f0f1feb39b71d7bf5d36a4de28cd1c4022",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "selected": true,
+      "alpha_qa": {
+        "genuine_alpha_transparency": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 996565,
+        "fully_transparent_fraction": 0.6337391797603331,
+        "nonzero_alpha_bbox": [
+          0,
+          28,
+          1226,
+          1254
+        ],
+        "visible_alpha_at_least_8_bbox": [
+          278,
+          140,
+          1012,
+          1138
+        ],
+        "strong_alpha_at_least_128_bbox": [
+          279,
+          145,
+          1012,
+          1137
+        ],
+        "edge_alpha_extrema": {
+          "top": [
+            0,
+            0
+          ],
+          "bottom": [
+            0,
+            1
+          ],
+          "left": [
+            0,
+            1
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "lowest_visible_tip_fraction_of_height": 0.9066985645933014,
+        "notes": "Incidental alpha=1 traces at left/bottom edges are visually negligible; no opaque painted background or checkerboard. Visible/strong subject is fully inside canvas."
+      },
+      "visual_qa": {
+        "inspected_with": "view_image",
+        "readable_text_present": false,
+        "real_logos_present": false,
+        "background_scenery_present": false,
+        "people_present": false,
+        "canvas_size_preserved": true,
+        "entire_structure_framed": true,
+        "base_position_preserved": false,
+        "notes": "Accepted final. Complete ground diamond is visible. Identity, approximate 30-degree camera, style and existing upper-storey architecture preserved. Visible bbox [278,140,1012,1138]; lowest visible tip about 90.67% of canvas height, close to requested 90%, with about 9.25% clear lower margin and more than 8% upper/side margins. Base location changed from L1/L2 under parent-authorized framing repair."
+      }
+    }
+  ],
+  "postprocessing": "None. Selected generated PNGs copied byte-for-byte; alpha and dimensions preserved. Initial L3 and first repair retained as feed-l3-first.png and feed-l3-repair1.png.",
+  "level3_attempts": [
+    {
+      "level": 3,
+      "operation": "edit selected level 2",
+      "prompt": "Upgrade this exact building to its maximum level 3: keep the same building identity, orthographic isometric camera, ground footprint, entry position, palette and transparent canvas. Create a more impressive taller structure with richer rooftop machinery/sculpture, expressive neon trim and additional architecture. Keep the entire building comfortably in frame and its base at the same location. No writing, logos, people or background scenery. Edit target: the attached feed-l2.png only. Preserve TRUE alpha, exact square canvas size, the same camera and existing lower-floor geometry, entry and diamond ground base at precisely the same position. Build upward into the existing antenna height with a compact additional upper storey and richer broadcast rooftop machinery; shorten slender aerial masts as needed to leave clear transparent margin above the entire structure. Retain the recognizable cyan eye sculpture, blank billboard and teal brick identity. No writing, logos, people, background or painted transparency pattern. Remove any tiny human silhouettes visible inside windows; show equipment only.",
+      "input_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l2.png"
+      ],
+      "generated_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-241fe1dc-3d11-4c57-9d8a-e46e81cf4345.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l3-first.png",
+      "relative_output_path": "docs/art/city/feed-l3-first.png",
+      "sha256": "b77038023869e00eafd10ba9c50fdc05599fba9ae519beb4ef275ae14769ea47",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_qa": {
+        "genuine_alpha_transparency": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 681396,
+        "fully_transparent_fraction": 0.4333157818426013,
+        "nonzero_alpha_bbox": [
+          0,
+          0,
+          1246,
+          1254
+        ],
+        "visible_alpha_at_least_8_bbox": [
+          203,
+          10,
+          1112,
+          1254
+        ],
+        "strong_alpha_at_least_128_bbox": [
+          204,
+          14,
+          1111,
+          1254
+        ],
+        "edge_alpha_extrema": {
+          "top": [
+            0,
+            1
+          ],
+          "bottom": [
+            0,
+            255
+          ],
+          "left": [
+            0,
+            1
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "notes": "There are incidental alpha=1-2 trace pixels at some canvas edges; no opaque painted background or checkerboard. L3 additionally has opaque subject pixels at bottom edge."
+      },
+      "visual_qa": {
+        "inspected_with": "view_image",
+        "readable_text_present": false,
+        "real_logos_present": false,
+        "background_scenery_present": false,
+        "canvas_size_preserved": true,
+        "entire_structure_framed": false,
+        "base_position_preserved": false,
+        "notes": "Recognizable same building and approximately same isometric camera; added an upper storey, richer broadcast machinery and cyan/magenta neon trim. Interior silhouettes removed. Ground base shifted downward and strong-alpha pixels reach bottom edge: full-framing and exact base-position invariants FAIL. No corrective generation performed because one builtin call per level was required."
+      },
+      "selected": false,
+      "attempt": "initial level 3 upgrade"
+    },
+    {
+      "level": 3,
+      "operation": "builtin framing edit",
+      "prompt": "Use case: precise-object-edit. Asset type: transparent isometric Feed Tower level 3 building sprite for Cancel City. Edit target: attached feed-l3-first.png. Repair ONLY framing. Show this exact entire existing building scaled smaller within the same 1254 by 1254 square transparent canvas. Preserve its camera, approximately 30-degree orthographic isometric view, punk black-ink/crosshatched style, teal-cyan palette, architecture, entry, equipment, blank billboard, neon eye and all detail. Keep the building horizontally centered. Leave at least 8% clear transparent margins at the left and right and above the tallest antenna. Put the lowest ground-base tip at exactly 90% of canvas height, leaving 10% clear transparent space below; reconstruct any tiny ground-base edge previously clipped so its complete diamond footprint is visible. No building parts may touch or cross any canvas edge. Preserve TRUE alpha transparency, no painted checkerboard, no background, no readable text, logos or people. Do not add new architectural features, just scale and fit the complete existing sprite.",
+      "input_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l3-first.png"
+      ],
+      "generated_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-4b714931-ee72-45d3-886b-eb75082228cb.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l3-repair1.png",
+      "relative_output_path": "docs/art/city/feed-l3-repair1.png",
+      "sha256": "d3d38961c5490d815c0664bdc03e8abf11dcf14bf7341e94aefbace01ec9c685",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "selected": false,
+      "alpha_qa": {
+        "genuine_alpha_transparency": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 898283,
+        "fully_transparent_fraction": 0.5712393387412275,
+        "nonzero_alpha_bbox": [
+          0,
+          53,
+          1240,
+          1206
+        ],
+        "visible_alpha_at_least_8_bbox": [
+          253,
+          108,
+          1044,
+          1192
+        ],
+        "strong_alpha_at_least_128_bbox": [
+          253,
+          112,
+          1042,
+          1191
+        ],
+        "edge_alpha_extrema": {
+          "top": [
+            0,
+            0
+          ],
+          "bottom": [
+            0,
+            0
+          ],
+          "left": [
+            0,
+            1
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "lowest_visible_tip_fraction_of_height": 0.9497607655502392,
+        "notes": "Incidental alpha=1 traces at left/bottom edges are visually negligible; no opaque painted background or checkerboard. Visible/strong subject is fully inside canvas."
+      },
+      "visual_qa": {
+        "inspected_with": "view_image",
+        "readable_text_present": false,
+        "real_logos_present": false,
+        "background_scenery_present": false,
+        "people_present": false,
+        "canvas_size_preserved": true,
+        "entire_structure_framed": true,
+        "base_position_preserved": false,
+        "notes": "Full building successfully reframed; identity, camera and architecture retained. Lowest tip at about 95% canvas height, so a second targeting edit was selected."
+      }
+    },
+    {
+      "level": 3,
+      "operation": "builtin framing edit",
+      "prompt": "Use case: precise-object-edit. Edit target: attached feed-l3-repair1.png. Final framing-only adjustment. Keep the exact same Feed Tower level 3 building, architecture, isometric camera, style, colors and every feature. Keep output canvas exactly 1254 by 1254 with genuine alpha transparency. Uniformly shrink the existing complete building by about 8% and move it slightly upward so the LOWEST GROUND DIAMOND TIP ends at vertical pixel 1129 (90% canvas height), leaving the entire bottom 125 pixels completely transparent. The current tip is too low at around pixel 1191; increase that bottom margin. Keep horizontal center at 627 and at least 100 transparent pixels above the tallest antenna. All features fully framed. No creative changes, extra architecture, text, logos, people, background or painted checkerboard.",
+      "input_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l3-repair1.png"
+      ],
+      "generated_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-22b6364d-d979-438c-aa2f-61b1bbd8396d.png",
+      "output_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/city/feed-l3.png",
+      "relative_output_path": "docs/art/city/feed-l3.png",
+      "sha256": "4d98d01880a0444f6588456368f3e1f0f1feb39b71d7bf5d36a4de28cd1c4022",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "selected": true,
+      "alpha_qa": {
+        "genuine_alpha_transparency": true,
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixels": 996565,
+        "fully_transparent_fraction": 0.6337391797603331,
+        "nonzero_alpha_bbox": [
+          0,
+          28,
+          1226,
+          1254
+        ],
+        "visible_alpha_at_least_8_bbox": [
+          278,
+          140,
+          1012,
+          1138
+        ],
+        "strong_alpha_at_least_128_bbox": [
+          279,
+          145,
+          1012,
+          1137
+        ],
+        "edge_alpha_extrema": {
+          "top": [
+            0,
+            0
+          ],
+          "bottom": [
+            0,
+            1
+          ],
+          "left": [
+            0,
+            1
+          ],
+          "right": [
+            0,
+            0
+          ]
+        },
+        "lowest_visible_tip_fraction_of_height": 0.9066985645933014,
+        "notes": "Incidental alpha=1 traces at left/bottom edges are visually negligible; no opaque painted background or checkerboard. Visible/strong subject is fully inside canvas."
+      },
+      "visual_qa": {
+        "inspected_with": "view_image",
+        "readable_text_present": false,
+        "real_logos_present": false,
+        "background_scenery_present": false,
+        "people_present": false,
+        "canvas_size_preserved": true,
+        "entire_structure_framed": true,
+        "base_position_preserved": false,
+        "notes": "Accepted final. Complete ground diamond is visible. Identity, approximate 30-degree camera, style and existing upper-storey architecture preserved. Visible bbox [278,140,1012,1138]; lowest visible tip about 90.67% of canvas height, close to requested 90%, with about 9.25% clear lower margin and more than 8% upper/side margins. Base location changed from L1/L2 under parent-authorized framing repair."
+      }
+    }
+  ],
+  "framing_repair_authorization": "Parent explicitly authorized extra builtin edits to repair L3 framing: same square canvas, smaller complete existing structure, at least 8% side margins and lowest ground tip near 90% canvas height. Up to two targeted attempts."
+}

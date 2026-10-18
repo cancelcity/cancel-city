@@ -1,0 +1,45 @@
+{
+  "asset_batch": "wave-two-e",
+  "generation_mode": "builtin image_gen",
+  "generated_at_utc": "2026-10-11",
+  "assets": [
+    {
+      "id": "CC039",
+      "name": "Elongated Ego",
+      "generation_mode": "builtin image_gen",
+      "intent": "new illustration with style-only reference",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; reference image is style guidance only. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: An unmistakably Elon Musk-inspired satirical cartoon, pale broad face, dark short side-parted hair, manic self-satisfied grin, intense wide eyes, black jacket, oversized head and small body. Riding a tiny shiny retro rocket while holding an absurdly large smartphone like a steering wheel; money-shaped sparks and chaotic neon-green jagged stock charts behind him. Purple and acid-lime backdrop, no Tesla/X/company logos, no readable text.",
+      "reference_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "selected_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-617c25da-c062-45b0-beff-56005c0db059.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC039.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "color_mode": "RGB",
+      "sha256": "2d89277d37065e2c36a413e7d18b415beced7956612aed89cd9d29da5e140f16",
+      "inspection_notes": "Inspected visually at full frame. Strong reference-matching black ink, crosshatching and distressed colour. Recognizable Elon-inspired comic face dominates square crop; rocket, oversized phone and jagged lime charts read clearly. No card frame, readable lettering, company logo or watermark. Both hands coherently grip phone. Bills use illustrative decoration without readable text.",
+      "qa_status": "accepted"
+    },
+    {
+      "id": "CC040",
+      "name": "Laser-Eye Prophet",
+      "generation_mode": "builtin image_gen",
+      "intent": "new illustration with style-only reference",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; reference image is style guidance only. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: A fictional middle-aged crypto evangelist with swept-back silver hair, small tidy beard, expensive dark suit and purple tie. Huge intense glowing laser-red eyes aimed skyward, hands clasped around a giant generic golden coin with a geometric lightning mark. Acid green finance-cathedral background with diagonal candlestick shapes and neon rays, no names, logos or text.",
+      "reference_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "selected_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-eaded17c-4c37-46cd-8f2e-8a2c1179c90c.png",
+      "final_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC040.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "format": "PNG",
+      "color_mode": "RGB",
+      "sha256": "beafa6152eaa1faa3fb3d2c49a2ba7d747a2eb9d3e34f797125ff9cb63d43493",
+      "inspection_notes": "Inspected visually at full frame. Fictional silver-haired crypto evangelist, glowing upward red laser eyes, dark suit, purple tie, generic gold lightning coin held by two coherent hands. Acid-green cathedral and candlesticks maintain dense reference-matching punk comic texture. Face and coin clear at thumbnail size. No frame, readable lettering, logos or watermark.",
+      "qa_status": "accepted"
+    }
+  ]
+}

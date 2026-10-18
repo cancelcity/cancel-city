@@ -1,0 +1,257 @@
+{
+  "mode": "Alpha-bound crop, proportional resize, common transparent canvas and WebP encoding. Generated masters unchanged.",
+  "records": [
+    {
+      "id": "P001",
+      "source": "docs/art/props/P001.png",
+      "sourceSha256": "51f5d7893ee6a1471db97189074f2e5a5cd6007e291f4c36eaedf21b1860f4a6",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 0,
+        "top": 4,
+        "width": 1254,
+        "height": 1246
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P001.webp",
+      "bytes": 74894
+    },
+    {
+      "id": "P002",
+      "source": "docs/art/props/P002.png",
+      "sourceSha256": "0e23d8fba0549f634995befc8b2b22a11cfc84a04f4b77f5c141372c68125bb3",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 14,
+        "top": 0,
+        "width": 1240,
+        "height": 1254
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P002.webp",
+      "bytes": 132680
+    },
+    {
+      "id": "P003",
+      "source": "docs/art/props/P003.png",
+      "sourceSha256": "0f319caacff0187647c04898e9b4329b36278463b36eea4aeecf8d8f4398c555",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 130,
+        "top": 0,
+        "width": 1044,
+        "height": 1254
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P003.webp",
+      "bytes": 156748
+    },
+    {
+      "id": "P004",
+      "source": "docs/art/props/P004.png",
+      "sourceSha256": "3b5fd2de5674016245599a77c2ef5b5e9b233a06ce578caab6c6414c421e058d",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 3,
+        "top": 2,
+        "width": 1250,
+        "height": 1243
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P004.webp",
+      "bytes": 140300
+    },
+    {
+      "id": "P005",
+      "source": "docs/art/props/P005.png",
+      "sourceSha256": "2be8a8aacbb75e134748b615ff96c34104dd5e5fdd73d86444e8a3a9930a9428",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 4,
+        "top": 6,
+        "width": 1243,
+        "height": 1240
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P005.webp",
+      "bytes": 112082
+    },
+    {
+      "id": "P006",
+      "source": "docs/art/props/P006.png",
+      "sourceSha256": "158d27d333b39a2ef35502d6dbd5cf8477b51353fe88f7aa6e58a65a8feeb9f3",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 0,
+        "top": 3,
+        "width": 1254,
+        "height": 1248
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P006.webp",
+      "bytes": 120588
+    },
+    {
+      "id": "P007",
+      "source": "docs/art/props/P007.png",
+      "sourceSha256": "6f9c137865fed447690c0a2ba13c0a644badd9bb3b477682ef17f7b4b4e99b49",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 0,
+        "top": 77,
+        "width": 1254,
+        "height": 1113
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P007.webp",
+      "bytes": 137480
+    },
+    {
+      "id": "P008",
+      "source": "docs/art/props/P008.png",
+      "sourceSha256": "66326f93a59f2b708a92295a4a7dc905a6a5660b416b14f8e75e63ee4bd186e9",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 1,
+        "top": 0,
+        "width": 1253,
+        "height": 1245
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P008.webp",
+      "bytes": 196426
+    },
+    {
+      "id": "P009",
+      "source": "docs/art/props/P009.png",
+      "sourceSha256": "3fe8a37a74e0fc07d4d741fcfe144e29192ad7f580896e59df0c17ff09e8fd5d",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 56,
+        "top": 57,
+        "width": 1154,
+        "height": 1155
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P009.webp",
+      "bytes": 122998
+    },
+    {
+      "id": "P010",
+      "source": "docs/art/props/P010.png",
+      "sourceSha256": "11fab54aaf598b4e16463d3a1202b21a8046e64939864338804912d2e0a60e91",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 34,
+        "top": 24,
+        "width": 1209,
+        "height": 1214
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P010.webp",
+      "bytes": 164408
+    },
+    {
+      "id": "P011",
+      "source": "docs/art/props/P011.png",
+      "sourceSha256": "858ae9e431ac81ec8809cdda1f043e151ce0bd0c95395eed9ae1c30a3a913c2d",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 53,
+        "top": 10,
+        "width": 1193,
+        "height": 1236
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P011.webp",
+      "bytes": 97838
+    },
+    {
+      "id": "P012",
+      "source": "docs/art/props/P012.png",
+      "sourceSha256": "c9a559afa42c38ae049bf541faa0a84e2867066f76ca44cfe09f51baedc80b02",
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "visibleAlphaBounds": {
+        "left": 8,
+        "top": 43,
+        "width": 1244,
+        "height": 1182
+      },
+      "runtimeCanvas": [
+        768,
+        768
+      ],
+      "output": "public/assets/props/P012.webp",
+      "bytes": 139312
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "CC018",
+  "name": "Gandalf the Grey Market",
+  "generator": "built-in image_gen",
+  "original": "original-sheet.png",
+  "portrait": "/assets/roster-v2/CC018.webp",
+  "prompt": "Use case: illustration-story. Asset type: transparent full-body game pose atlas. Create a coherent 3-column by 2-row sheet of SIX poses of ONE character, reading left-to-right top then bottom. Each cell equal sized, entire body head to feet plus held props fully visible, centered, substantial empty gutters and outer margins. No cropping, no overlapping cells, no labels, no panels, no backgrounds or floor shadows. REAL transparent alpha. Intact whole figures, every limb physically connected, naturally grasped props; never detached limbs. Consistent scale and identity across all six. Style: premium satirical manga/graphic-novel caricature, heavy black ink contours, fine crosshatching and halftone, hand-painted cream highlights, restrained neon lime magenta cyan accents. Rich expressive faces, clothing folds and ink texture. Portrait camera three-quarter view mostly facing right. Not photorealistic, not 3D. Character: a recognizable Gandalf-inspired elderly grey wizard: long silver beard, pointed grey hat, staff, battered grey robe and cloak covered in dangling price tags; customs paperwork tucked into belt. Six ordered poses: neutral upright holding staff; suspiciously examining customs papers; bold staff-raised doorway-blocking spell; startled backwards recoil gripping intact staff; smug knowing wizard pose; panicked tangled in own price-tag cloak.",
+  "processing": "Sharp: mechanical cell crop, alpha-aware bounds and webp encoding; no repainting. Whole body anchor metadata manually marked at feet."
+}

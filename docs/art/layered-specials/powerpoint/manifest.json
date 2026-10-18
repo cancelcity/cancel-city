@@ -1,0 +1,166 @@
+{
+  "character": "CC016",
+  "name": "PowerPoint",
+  "generator": "built-in image_gen",
+  "styleReference": "public/assets/roster-v3/CC016.webp",
+  "costumeReference": "public/assets/actors/CC016-roster-v2-0.webp",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/powerpoint/action-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action",
+      "usableCount": 8,
+      "cropBoxes": [
+        [
+          53,
+          7,
+          259,
+          518
+        ],
+        [
+          390,
+          31,
+          326,
+          492
+        ],
+        [
+          686,
+          21,
+          487,
+          505
+        ],
+        [
+          1223,
+          8,
+          295,
+          517
+        ],
+        [
+          31,
+          526,
+          309,
+          486
+        ],
+        [
+          367,
+          527,
+          342,
+          489
+        ],
+        [
+          737,
+          537,
+          459,
+          478
+        ],
+        [
+          1207,
+          523,
+          324,
+          490
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/powerpoint/action-prompt.txt",
+      "poses": [
+        "Smug presenter ready",
+        "Points at red remote",
+        "Aggressive announcement",
+        "Remote raised overhead",
+        "Coiled remote click wind-up",
+        "Forward click lunge",
+        "Deep click follow-through",
+        "Delighted announcement finale"
+      ],
+      "notes": "All eight full intact actors visually inspected and independently connected. Some poses extend across nominal cell boundaries; use connected components/cropBoxes rather than a rigid grid."
+    },
+    {
+      "path": "docs/art/layered-specials/powerpoint/ending-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "usableCount": 8,
+      "cropBoxes": [
+        [
+          48,
+          2,
+          369,
+          514
+        ],
+        [
+          469,
+          5,
+          314,
+          512
+        ],
+        [
+          806,
+          8,
+          375,
+          510
+        ],
+        [
+          1226,
+          4,
+          294,
+          512
+        ],
+        [
+          85,
+          507,
+          270,
+          509
+        ],
+        [
+          491,
+          510,
+          275,
+          505
+        ],
+        [
+          864,
+          512,
+          269,
+          506
+        ],
+        [
+          1197,
+          509,
+          326,
+          513
+        ]
+      ],
+      "prompt": "docs/art/layered-specials/powerpoint/ending-prompt.txt",
+      "poses": [
+        "Proud hostess flourish",
+        "Confident baffling lecture",
+        "Wild lecture reach",
+        "Arms folded waiting for applause",
+        "Irritated no applause",
+        "Bored yawn",
+        "Bored arms folded",
+        "Obnoxiously delighted final pitch"
+      ],
+      "notes": "Same horns, red eyes, blonde hair, black suit, cream shirt and loose tie throughout. Whole actors have all hair/horns/limbs/feet included; held papers blank."
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/powerpoint/training-room-original.png",
+    "prompt": "docs/art/layered-specials/powerpoint/training-room-prompt.txt",
+    "screenBoundsNormalized": [
+      0.282,
+      0.131,
+      0.434,
+      0.36
+    ],
+    "notes": "Fixed empty 1672x941 training room, blank cream projection screen, empty side chairs, open scratched concrete floor; no characters, text, particles or loose papers. screenBoundsNormalized approximates usable screen interior as left,top,width,height."
+  },
+  "inspection": {
+    "allOutputsViewed": true,
+    "requestedPoses": 16,
+    "visuallyUsablePoses": 16,
+    "alphaPreserved": true,
+    "componentCheck": "8 independent connected alpha components over 1500 pixels in each sheet at alpha >=36. cropBoxes are [left,top,width,height], reading order, without padding. Original alpha preserved; stats and exact bounds in inspection.json."
+  }
+}
+

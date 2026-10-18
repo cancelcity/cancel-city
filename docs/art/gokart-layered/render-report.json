@@ -1,0 +1,584 @@
+{
+  "duration": 5.8,
+  "fps": 60,
+  "frames": 348,
+  "alphaActors": [
+    {
+      "file": "docs/art/gokart-layered/intro/ignition-00.webp",
+      "clearFraction": 0.28583878661855544,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 591,
+        "h": 332
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/ignition-01.webp",
+      "clearFraction": 0.2796261186879498,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 591,
+        "h": 332
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/ignition-02.webp",
+      "clearFraction": 0.270651132448576,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 591,
+        "h": 332
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/ignition-03.webp",
+      "clearFraction": 0.2624355289177013,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 591,
+        "h": 332
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/ignition-04.webp",
+      "clearFraction": 0.2627566101971337,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 591,
+        "h": 332
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/ignition-05.webp",
+      "clearFraction": 0.23208570321896724,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 591,
+        "h": 332
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/ignition-06.webp",
+      "clearFraction": 0.24098933806291153,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 591,
+        "h": 332
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/ignition-07.webp",
+      "clearFraction": 0.2386908038244348,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 591,
+        "h": 332
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/reveal-clean-00.webp",
+      "clearFraction": 0.42160493827160495,
+      "bounds": {
+        "x": 2,
+        "y": 0,
+        "w": 431,
+        "h": 322
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/intro/reveal-clean-01.webp",
+      "clearFraction": 0.4291658223573117,
+      "bounds": {
+        "x": 2,
+        "y": 0,
+        "w": 446,
+        "h": 327
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-00.webp",
+      "clearFraction": 0.43271659268330015,
+      "bounds": {
+        "x": 2,
+        "y": 0,
+        "w": 372,
+        "h": 276
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-01.webp",
+      "clearFraction": 0.4478445165945166,
+      "bounds": {
+        "x": 2,
+        "y": 0,
+        "w": 381,
+        "h": 286
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-02.webp",
+      "clearFraction": 0.43439934399343993,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 374,
+        "h": 267
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-03.webp",
+      "clearFraction": 0.46523131116104127,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 397,
+        "h": 299
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-04.webp",
+      "clearFraction": 0.45632339656729903,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 406,
+        "h": 266
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-05.webp",
+      "clearFraction": 0.4464158403007324,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 413,
+        "h": 292
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-06.webp",
+      "clearFraction": 0.47326744462967374,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 438,
+        "h": 264
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-07.webp",
+      "clearFraction": 0.47415181298239767,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 410,
+        "h": 258
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/drift-clean-08.webp",
+      "clearFraction": 0.45428015564202334,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 428,
+        "h": 255
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/rush-clean-00.webp",
+      "clearFraction": 0.38120759627002077,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 187,
+        "h": 165
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/rush-clean-01.webp",
+      "clearFraction": 0.40878848831811854,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 318,
+        "h": 277
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/rush-clean-02.webp",
+      "clearFraction": 0.4239347833851209,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 362,
+        "h": 302
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/rush-clean-03.webp",
+      "clearFraction": 0.40206067645092036,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 365,
+        "h": 304
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/rush-clean-04.webp",
+      "clearFraction": 0.4068213043532077,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 463,
+        "h": 342
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/action/rush-clean-05.webp",
+      "clearFraction": 0.3491846134694386,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 550,
+        "h": 344
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/impact/impact-clean-00.webp",
+      "clearFraction": 0.43603074141048825,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 430,
+        "h": 312
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/impact/impact-clean-01.webp",
+      "clearFraction": 0.45944683292036026,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 489,
+        "h": 339
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/impact/impact-clean-02.webp",
+      "clearFraction": 0.4432486347379964,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 513,
+        "h": 347
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/impact/impact-clean-03.webp",
+      "clearFraction": 0.4485616273471353,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 492,
+        "h": 331
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/impact/impact-clean-04.webp",
+      "clearFraction": 0.4558474773308533,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 502,
+        "h": 336
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/impact/impact-clean-05.webp",
+      "clearFraction": 0.44584184020688716,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 461,
+        "h": 312
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/impact/impact-clean-06.webp",
+      "clearFraction": 0.4404220899089097,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 463,
+        "h": 315
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/ending/ending-clean-00.webp",
+      "clearFraction": 0.4352385172057303,
+      "bounds": {
+        "x": 2,
+        "y": 0,
+        "w": 362,
+        "h": 331
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/ending/ending-clean-01.webp",
+      "clearFraction": 0.4658358401375161,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 354,
+        "h": 321
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/ending/ending-clean-02.webp",
+      "clearFraction": 0.4606763331800247,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 375,
+        "h": 323
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/ending/ending-clean-03.webp",
+      "clearFraction": 0.42094746716697934,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 321,
+        "h": 324
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/ending/ending-clean-04.webp",
+      "clearFraction": 0.44923693513948687,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 352,
+        "h": 317
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/ending/ending-clean-05.webp",
+      "clearFraction": 0.43310962829067556,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 319,
+        "h": 318
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/ending/ending-clean-06.webp",
+      "clearFraction": 0.46926025609656635,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 362,
+        "h": 331
+      }
+    },
+    {
+      "file": "docs/art/gokart-layered/ending/ending-clean-07.webp",
+      "clearFraction": 0.4450621145768165,
+      "bounds": {
+        "x": 2,
+        "y": 2,
+        "w": 331,
+        "h": 330
+      }
+    }
+  ],
+  "backgroundStability": [
+    {
+      "shot": "ignition",
+      "exactBackgroundWithLockedCamera": true,
+      "hash": "09424607170314d2fb559ecf616d8c4324a727a225c0b25267e01f2ad7bc6d75"
+    },
+    {
+      "shot": "reveal",
+      "exactBackgroundWithLockedCamera": true,
+      "hash": "09424607170314d2fb559ecf616d8c4324a727a225c0b25267e01f2ad7bc6d75"
+    },
+    {
+      "shot": "drift",
+      "exactBackgroundWithLockedCamera": true,
+      "hash": "634167294ddba3aaa1f6c885bd72997929ab0024ec5d2c203211480d7ab73689"
+    },
+    {
+      "shot": "rush",
+      "exactBackgroundWithLockedCamera": true,
+      "hash": "1a2c07ddfaebfad69c1694c3ae74d47749acabc9918c2d34b774bfc202aeb063"
+    },
+    {
+      "shot": "impact",
+      "exactBackgroundWithLockedCamera": true,
+      "hash": "09424607170314d2fb559ecf616d8c4324a727a225c0b25267e01f2ad7bc6d75"
+    },
+    {
+      "shot": "ending",
+      "exactBackgroundWithLockedCamera": true,
+      "hash": "09424607170314d2fb559ecf616d8c4324a727a225c0b25267e01f2ad7bc6d75"
+    }
+  ],
+  "backgroundSourceHashes": {
+    "docs/art/gokart-layered/scenery/circuit.webp": "04966eb01b78dc0a7555a2c76617a54bf148037ff22ae0934424fc1ef6214eed",
+    "docs/art/gokart-layered/scenery/headon.webp": "05dacd49ccd2ce81f950a649076752d764b85ef98521b5581ee1df8e8b6249dd"
+  },
+  "motion": "Continuous intact actor transforms and deterministic effect trajectories at60fps. Discrete expression/pose drawings remain; no body-part rig, full-frame blending or optical-flow distortion.",
+  "verification": {
+    "decoded": true,
+    "browserPlayback": "unverified",
+    "phoneLayout": "unverified",
+    "audiblePlayback": "unverified"
+  },
+  "probe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "width": 1280,
+        "height": 720,
+        "coded_width": 1280,
+        "coded_height": 720,
+        "closed_captions": 0,
+        "film_grain": 0,
+        "has_b_frames": 2,
+        "pix_fmt": "yuv420p",
+        "level": 32,
+        "chroma_location": "left",
+        "field_order": "progressive",
+        "refs": 1,
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "60/1",
+        "avg_frame_rate": "60/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 89088,
+        "duration": "5.800000",
+        "bit_rate": "7958333",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "348",
+        "extradata_size": 45,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler",
+          "vendor_id": "[0][0][0][0]",
+          "encoder": "Lavc60.31.102 libx264"
+        }
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 277200,
+        "duration": "5.775000",
+        "bit_rate": "171997",
+        "nb_frames": "272",
+        "extradata_size": 5,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler",
+          "vendor_id": "[0][0][0][0]"
+        }
+      }
+    ],
+    "format": {
+      "filename": "public/assets/gokart/layered-v3/full-throttle.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "5.800000",
+      "size": "5904952",
+      "bit_rate": "8144761",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf60.16.100"
+      }
+    }
+  }
+}

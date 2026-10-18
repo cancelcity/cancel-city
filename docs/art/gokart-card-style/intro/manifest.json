@@ -1,0 +1,241 @@
+{
+  "schema": 1,
+  "generatedWith": "built-in image_gen edit",
+  "processing": "Mechanical regular-grid extraction and WebP encoding only; no upscaling or color filter.",
+  "shots": [
+    {
+      "name": "ignition",
+      "original": "ignition-original.png",
+      "sheet": {
+        "width": 1182,
+        "height": 1330,
+        "columns": 2,
+        "rows": 4,
+        "count": 8
+      },
+      "frames": [
+        {
+          "index": 0,
+          "file": "ignition-00.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 108290
+        },
+        {
+          "index": 1,
+          "file": "ignition-01.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 0,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 107708
+        },
+        {
+          "index": 2,
+          "file": "ignition-02.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 107322
+        },
+        {
+          "index": 3,
+          "file": "ignition-03.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 107774
+        },
+        {
+          "index": 4,
+          "file": "ignition-04.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 665,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 109614
+        },
+        {
+          "index": 5,
+          "file": "ignition-05.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 665,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 114990
+        },
+        {
+          "index": 6,
+          "file": "ignition-06.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 116108
+        },
+        {
+          "index": 7,
+          "file": "ignition-07.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 115574
+        }
+      ]
+    },
+    {
+      "name": "reveal",
+      "original": "reveal-original.png",
+      "sheet": {
+        "width": 1182,
+        "height": 1330,
+        "columns": 2,
+        "rows": 4,
+        "count": 8
+      },
+      "frames": [
+        {
+          "index": 0,
+          "file": "reveal-00.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 113040
+        },
+        {
+          "index": 1,
+          "file": "reveal-01.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 0,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 114446
+        },
+        {
+          "index": 2,
+          "file": "reveal-02.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 111800
+        },
+        {
+          "index": 3,
+          "file": "reveal-03.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 112276
+        },
+        {
+          "index": 4,
+          "file": "reveal-04.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 665,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 113986
+        },
+        {
+          "index": 5,
+          "file": "reveal-05.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 665,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 112788
+        },
+        {
+          "index": 6,
+          "file": "reveal-06.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 110186
+        },
+        {
+          "index": 7,
+          "file": "reveal-07.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 111358
+        }
+      ]
+    }
+  ]
+}

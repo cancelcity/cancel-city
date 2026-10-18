@@ -1,0 +1,319 @@
+{
+  "title": "Gokart action animation sheets",
+  "method": "Built-in imagegen; opaque original PNGs; sharp used only for grid extraction and WebP encoding.",
+  "reference": "../../generated_images/exec-4b446d66-17b5-4f65-9d0c-e7d85d53bb3e.png",
+  "sheets": [
+    {
+      "name": "drift",
+      "source": "drift-original.png",
+      "prompt": "drift-prompt.txt",
+      "width": 1448,
+      "height": 1086,
+      "columns": 3,
+      "rows": 4,
+      "hasAlpha": false,
+      "frames": [
+        {
+          "index": 1,
+          "file": "drift-01.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 63458
+        },
+        {
+          "index": 2,
+          "file": "drift-02.webp",
+          "width": 482,
+          "height": 272,
+          "sourceRect": {
+            "left": 483,
+            "top": 0,
+            "width": 482,
+            "height": 272
+          },
+          "bytes": 62634
+        },
+        {
+          "index": 3,
+          "file": "drift-03.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 965,
+            "top": 0,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 62804
+        },
+        {
+          "index": 4,
+          "file": "drift-04.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 0,
+            "top": 272,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 58734
+        },
+        {
+          "index": 5,
+          "file": "drift-05.webp",
+          "width": 482,
+          "height": 271,
+          "sourceRect": {
+            "left": 483,
+            "top": 272,
+            "width": 482,
+            "height": 271
+          },
+          "bytes": 64358
+        },
+        {
+          "index": 6,
+          "file": "drift-06.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 965,
+            "top": 272,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 60432
+        },
+        {
+          "index": 7,
+          "file": "drift-07.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 0,
+            "top": 543,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 55568
+        },
+        {
+          "index": 8,
+          "file": "drift-08.webp",
+          "width": 482,
+          "height": 272,
+          "sourceRect": {
+            "left": 483,
+            "top": 543,
+            "width": 482,
+            "height": 272
+          },
+          "bytes": 57118
+        },
+        {
+          "index": 9,
+          "file": "drift-09.webp",
+          "width": 483,
+          "height": 272,
+          "sourceRect": {
+            "left": 965,
+            "top": 543,
+            "width": 483,
+            "height": 272
+          },
+          "bytes": 58378
+        },
+        {
+          "index": 10,
+          "file": "drift-10.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 0,
+            "top": 815,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 54192
+        },
+        {
+          "index": 11,
+          "file": "drift-11.webp",
+          "width": 482,
+          "height": 271,
+          "sourceRect": {
+            "left": 483,
+            "top": 815,
+            "width": 482,
+            "height": 271
+          },
+          "bytes": 53322
+        },
+        {
+          "index": 12,
+          "file": "drift-12.webp",
+          "width": 483,
+          "height": 271,
+          "sourceRect": {
+            "left": 965,
+            "top": 815,
+            "width": 483,
+            "height": 271
+          },
+          "bytes": 52264
+        }
+      ]
+    },
+    {
+      "name": "rush",
+      "source": "rush-original.png",
+      "prompt": "rush-prompt.txt",
+      "width": 1182,
+      "height": 1330,
+      "columns": 2,
+      "rows": 4,
+      "hasAlpha": false,
+      "frames": [
+        {
+          "index": 1,
+          "file": "rush-01.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 0,
+            "top": 0,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 79772
+        },
+        {
+          "index": 2,
+          "file": "rush-02.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 591,
+            "top": 0,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 86392
+        },
+        {
+          "index": 3,
+          "file": "rush-03.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 85372
+        },
+        {
+          "index": 4,
+          "file": "rush-04.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 333,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 81586
+        },
+        {
+          "index": 5,
+          "file": "rush-05.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 0,
+            "top": 665,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 88150
+        },
+        {
+          "index": 6,
+          "file": "rush-06.webp",
+          "width": 591,
+          "height": 333,
+          "sourceRect": {
+            "left": 591,
+            "top": 665,
+            "width": 591,
+            "height": 333
+          },
+          "bytes": 90612
+        },
+        {
+          "index": 7,
+          "file": "rush-07.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 0,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 91462
+        },
+        {
+          "index": 8,
+          "file": "rush-08.webp",
+          "width": 591,
+          "height": 332,
+          "sourceRect": {
+            "left": 591,
+            "top": 998,
+            "width": 591,
+            "height": 332
+          },
+          "bytes": 92238
+        }
+      ]
+    }
+  ],
+  "editorialNotes": {
+    "drift": "All 12 grid cells extracted. Frame 09 is a rear-view camera cut; omit it from a continuous front/side drift or treat it as a deliberate insert. Source frames 01 and 02 are close to the upper hair edge. Do not crop further.",
+    "driftSuggestedOrder": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12
+    ],
+    "rush": "8 frames approach viewer, with real changing framing, lift and facial performance. Late frames intentionally approach the cell edges; hair tips are cut by the generated original in frames 05–08. Preserve the full extracted frame; do not add extra zoom.",
+    "rushSuggestedOrder": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "limitations": "Generated frame sheets are authored keyframes, not a fully cleaned 24-fps animation. Frame-to-frame design/perspective deviations remain and should be directed with cuts/effects. No interpolation has been invented in extraction."
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "characterId": "CC003",
+  "character": "L Ratio",
+  "ability": "Case Closed, Ratio Open",
+  "generator": "built-in image_gen",
+  "referencePaths": [
+    "public/assets/roster-b2/CC003.webp",
+    "public/assets/actors/CC003-b2-0.webp"
+  ],
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/l-ratio/action-original.png",
+      "role": "action",
+      "cols": 2,
+      "rows": 4
+    },
+    {
+      "path": "docs/art/layered-specials/l-ratio/ending-original.png",
+      "role": "ending",
+      "cols": 2,
+      "rows": 4
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/l-ratio/alley-original.png"
+  },
+  "prompts": "docs/art/layered-specials/l-ratio/prompts.json",
+  "inspection": "Whole adult detective silhouettes, wild black hair, tired eyes, grubby white shirt/blue jeans/bare feet and attached black tablet/magnifier retained. No effect or scenery baked into actors. Original alpha preserved. Edge-touching components are rejected during preparation."
+}

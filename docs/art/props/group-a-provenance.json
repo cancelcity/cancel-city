@@ -1,0 +1,205 @@
+{
+  "group": "a",
+  "generated_at": "2026-10-12",
+  "mode": "built-in image_gen",
+  "style_reference_inspected": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+  "assets": [
+    {
+      "id": "P001",
+      "status": "complete",
+      "mode": "built-in image_gen",
+      "use_case": "illustration-story",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible object sprite for Cancel City punk comic game. Reference image is painted-ink style only. Create one isolated absurd neon-pink foam rubber paddle used as a slapstick game weapon: broad flat rectangular cricket-bat paddle head, squiggly flexible handle, chunky rubber grip, silly floppy proportions, scratches and cartoon dents. Clearly a nonsexual sports-style foam paddle. Thick irregular black ink, painted cel shading, cream highlights, distressed surface, neon pink accents. Full object with clear margins and genuine transparent background. Three-quarter inventory presentation. No people, body parts, environment, text, logos or watermark.",
+      "referenced_image_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+      ],
+      "reference_role": "style only",
+      "transparent_background": true,
+      "generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-307d0003-e1dc-49e9-8d0f-db0e07d6e5ff.png",
+      "destination": "docs/art/props/P001.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/props/P001.png",
+      "edits": [],
+      "copied_unchanged": true,
+      "sha256": "51f5d7893ee6a1471db97189074f2e5a5cd6007e291f4c36eaedf21b1860f4a6",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Successful genuinely nonsexual substitute selected by root after original request was blocked: broad flat rectangular foam sports paddle head, squiggly handle and chunky rubber grip. Entire object visible; hand-inked distressed pink and cream style matches reference. No repair required.",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixel_percentage": 70.3819,
+        "silhouette_bbox_alpha_gt_128": [
+          7,
+          10,
+          1247,
+          1243
+        ],
+        "border_alpha_max": {
+          "top": 0,
+          "bottom": 1,
+          "left": 3,
+          "right": 2
+        },
+        "actual_clipping": false
+      }
+    },
+    {
+      "id": "P002",
+      "status": "complete",
+      "mode": "built-in image_gen",
+      "use_case": "illustration-story",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a huge rough metal moderator ban hammer with electric cyan circuitry and a chunky wooden handle, no logos or letters.",
+      "referenced_image_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+      ],
+      "reference_role": "style only",
+      "transparent_background": true,
+      "generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-68b89370-ee8c-4624-9b6e-a00ff0e87d7f.png",
+      "destination": "docs/art/props/P002.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/props/P002.png",
+      "edits": [],
+      "copied_unchanged": true,
+      "sha256": "0e23d8fba0549f634995befc8b2b22a11cfc84a04f4b77f5c141372c68125bb3",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Full rough metal hammer with cyan circuitry and complete wrapped wooden handle. Three-quarter silhouette is readable; reference ink/grit style matched. Narrow framing but intact opaque silhouette and no actual clipping. No repair required.",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixel_percentage": 56.4478,
+        "silhouette_bbox_alpha_gt_128": [
+          20,
+          6,
+          1253,
+          1249
+        ],
+        "border_alpha_max": {
+          "top": 5,
+          "bottom": 3,
+          "left": 1,
+          "right": 52
+        },
+        "actual_clipping": false
+      }
+    },
+    {
+      "id": "P003",
+      "status": "complete",
+      "mode": "built-in image_gen",
+      "use_case": "illustration-story",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a dented neon-green pressure tank with a wildly optimistic gauge, hose, and brass valve, industrial bottled copium.",
+      "referenced_image_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+      ],
+      "reference_role": "style only",
+      "transparent_background": true,
+      "generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-084e5595-0db4-4fb3-a78b-0c057e0fb171.png",
+      "destination": "docs/art/props/P003.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/props/P003.png",
+      "edits": [],
+      "copied_unchanged": true,
+      "sha256": "0f319caacff0187647c04898e9b4329b36278463b36eea4aeecf8d8f4398c555",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Dented neon-green pressure tank, optimistic smile gauge, complete hose and brass valve fully visible. Hand-painted distressed texture and ink outlines match reference. No repair required.",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixel_percentage": 46.9774,
+        "silhouette_bbox_alpha_gt_128": [
+          137,
+          6,
+          1167,
+          1253
+        ],
+        "border_alpha_max": {
+          "top": 6,
+          "bottom": 16,
+          "left": 1,
+          "right": 0
+        },
+        "actual_clipping": false
+      }
+    },
+    {
+      "id": "P004",
+      "status": "complete",
+      "mode": "built-in image_gen",
+      "use_case": "illustration-story",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a red and cream apology megaphone with a gold mouthpiece and dangling blank merch tag.",
+      "referenced_image_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+      ],
+      "reference_role": "style only",
+      "transparent_background": true,
+      "generated_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-7b513fd6-c3ae-4efc-b283-932bdf25b765.png",
+      "destination": "docs/art/props/P004.png",
+      "destination_absolute": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/props/P004.png",
+      "edits": [],
+      "copied_unchanged": true,
+      "sha256": "3b5fd2de5674016245599a77c2ef5b5e9b233a06ce578caab6c6414c421e058d",
+      "quality": {
+        "visual_inspection": "pass",
+        "notes": "Full red and cream megaphone, gold mouthpiece, complete handle and dangling blank tag. Distressed hand-inked style matches reference; no readable text. No repair required.",
+        "size": [
+          1254,
+          1254
+        ],
+        "mode": "RGBA",
+        "alpha_extrema": [
+          0,
+          255
+        ],
+        "fully_transparent_pixel_percentage": 44.9251,
+        "silhouette_bbox_alpha_gt_128": [
+          9,
+          8,
+          1246,
+          1239
+        ],
+        "border_alpha_max": {
+          "top": 1,
+          "bottom": 1,
+          "left": 1,
+          "right": 3
+        },
+        "actual_clipping": false
+      }
+    }
+  ],
+  "failed_attempts": [
+    {
+      "id": "P001",
+      "prompt": "Use case: illustration-story. Asset type: transparent collectible prop sprite for Cancel City, an original adult punk satire game. The supplied portrait is STYLE reference only, not a character to include. Make ONE isolated inventory object. Thick irregular black ink, grotesque editorial cartoon painting, saturated neon accents, distressed surfaces, cream highlights, hand-painted cel shading. Entire object and all attached parts fully visible with generous clear framing. Genuine transparent background. Three-quarter presentation, readable silhouette. No people, no body parts, no sexual activity, no environment, no interface, no text, no logos or watermark. Subject: a comically oversized neon-pink rubber novelty baton, clearly a fake rubber adult novelty toy repurposed as a ridiculous comic melee prop, rounded toy silhouette with a bulbous tip, padded grip and toy suction-cup-style base, exaggerated bent cartoon proportions; standalone object only.",
+      "referenced_image_paths": [
+        "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png"
+      ],
+      "transparent_background": true,
+      "status": "moderation_blocked",
+      "stage": "output",
+      "category": "sexual",
+      "request_id": "2f1144b0-1907-40ab-8f3f-68ce929e05ca",
+      "generated_path": null,
+      "edits": [],
+      "resolution": "Original design not retried. Root selected a new genuinely nonsexual foam sports paddle, represented by the successful P001 record."
+    }
+  ]
+}

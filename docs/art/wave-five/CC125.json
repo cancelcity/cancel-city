@@ -1,0 +1,191 @@
+{
+  "characterId": "CC125",
+  "characterName": "Ken, Beach Committee Chairman",
+  "generatedWith": "built-in image_gen",
+  "master": "docs/art/mega/CC125-poses.png",
+  "grid": {
+    "columns": 3,
+    "rows": 2,
+    "width": 1536,
+    "height": 1024,
+    "order": "row-major",
+    "note": "Six largest connected alpha bodies assigned row-major; detached props assigned whole to nearest body. Generated alpha preserved within 3px contour fringe; uniformly cropped, scaled and padded."
+  },
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC125-0.webp",
+      "sourceExtraction": {
+        "left": 113,
+        "top": 1,
+        "width": 319,
+        "height": 483
+      },
+      "scale": 0.9109730848861284,
+      "suggestedAnchor": {
+        "x": 275,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 110,
+        "top": 18,
+        "right": 400,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 190538,
+        "transparentFraction": 0.7268447875976562
+      }
+    },
+    {
+      "index": 1,
+      "name": "windup",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC125-1.webp",
+      "sourceExtraction": {
+        "left": 577,
+        "top": 11,
+        "width": 356,
+        "height": 465
+      },
+      "scale": 0.946236559139785,
+      "suggestedAnchor": {
+        "x": 145,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 87,
+        "top": 17,
+        "right": 424,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 180576,
+        "transparentFraction": 0.6888427734375
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC125-2.webp",
+      "sourceExtraction": {
+        "left": 1030,
+        "top": 14,
+        "width": 475,
+        "height": 466
+      },
+      "scale": 0.9263157894736842,
+      "suggestedAnchor": {
+        "x": 348,
+        "y": 454
+      },
+      "alphaBounds": {
+        "left": 36,
+        "top": 25,
+        "right": 475,
+        "bottom": 455
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 176395,
+        "transparentFraction": 0.6728935241699219
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC125-3.webp",
+      "sourceExtraction": {
+        "left": 67,
+        "top": 473,
+        "width": 409,
+        "height": 520
+      },
+      "scale": 0.8461538461538461,
+      "suggestedAnchor": {
+        "x": 340,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 83,
+        "top": 17,
+        "right": 429,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 182675,
+        "transparentFraction": 0.6968498229980469
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC125-4.webp",
+      "sourceExtraction": {
+        "left": 569,
+        "top": 486,
+        "width": 431,
+        "height": 497
+      },
+      "scale": 0.8853118712273642,
+      "suggestedAnchor": {
+        "x": 363,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 66,
+        "top": 17,
+        "right": 446,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 181238,
+        "transparentFraction": 0.6913681030273438
+      }
+    },
+    {
+      "index": 5,
+      "name": "gag",
+      "width": 512,
+      "height": 512,
+      "asset": "/assets/actors/CC125-5.webp",
+      "sourceExtraction": {
+        "left": 1105,
+        "top": 506,
+        "width": 407,
+        "height": 477
+      },
+      "scale": 0.9224318658280922,
+      "suggestedAnchor": {
+        "x": 291,
+        "y": 455
+      },
+      "alphaBounds": {
+        "left": 68,
+        "top": 17,
+        "right": 443,
+        "bottom": 456
+      },
+      "alpha": {
+        "hasAlpha": true,
+        "transparentPixels": 162773,
+        "transparentFraction": 0.6209297180175781
+      }
+    }
+  ],
+  "anchorMethod": "Median of solid lowest36px; y at lowest alpha>32 art pixel."
+}

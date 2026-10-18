@@ -1,0 +1,277 @@
+{
+  "background": "docs/art/layered-specials/yasuo-zero-ten/background.webp",
+  "groups": {
+    "action": [
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/action-00.webp",
+        "width": 350,
+        "height": 425,
+        "sourceBounds": {
+          "x": 131,
+          "y": 5,
+          "w": 350,
+          "h": 425
+        },
+        "area": 71154
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/action-01.webp",
+        "width": 359,
+        "height": 425,
+        "sourceBounds": {
+          "x": 641,
+          "y": 2,
+          "w": 359,
+          "h": 425
+        },
+        "area": 73375
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/action-02.webp",
+        "width": 452,
+        "height": 375,
+        "sourceBounds": {
+          "x": 79,
+          "y": 427,
+          "w": 452,
+          "h": 375
+        },
+        "area": 85993
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/action-03.webp",
+        "width": 462,
+        "height": 377,
+        "sourceBounds": {
+          "x": 582,
+          "y": 420,
+          "w": 462,
+          "h": 377
+        },
+        "area": 86533
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/action-04.webp",
+        "width": 425,
+        "height": 405,
+        "sourceBounds": {
+          "x": 101,
+          "y": 773,
+          "w": 425,
+          "h": 405
+        },
+        "area": 86402
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/action-05.webp",
+        "width": 408,
+        "height": 384,
+        "sourceBounds": {
+          "x": 591,
+          "y": 792,
+          "w": 408,
+          "h": 384
+        },
+        "area": 84964
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/action-06.webp",
+        "width": 436,
+        "height": 277,
+        "sourceBounds": {
+          "x": 55,
+          "y": 1165,
+          "w": 436,
+          "h": 277
+        },
+        "area": 66660
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/action-07.webp",
+        "width": 498,
+        "height": 272,
+        "sourceBounds": {
+          "x": 544,
+          "y": 1170,
+          "w": 498,
+          "h": 272
+        },
+        "area": 67745
+      }
+    ],
+    "attack": [
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-00.webp",
+        "width": 511,
+        "height": 349,
+        "sourceBounds": {
+          "x": 31,
+          "y": 4,
+          "w": 511,
+          "h": 349
+        },
+        "area": 92250
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-01.webp",
+        "width": 450,
+        "height": 359,
+        "sourceBounds": {
+          "x": 603,
+          "y": 2,
+          "w": 450,
+          "h": 359
+        },
+        "area": 81536
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-02.webp",
+        "width": 475,
+        "height": 370,
+        "sourceBounds": {
+          "x": 46,
+          "y": 361,
+          "w": 475,
+          "h": 370
+        },
+        "area": 93411
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-03.webp",
+        "width": 541,
+        "height": 347,
+        "sourceBounds": {
+          "x": 543,
+          "y": 371,
+          "w": 541,
+          "h": 347
+        },
+        "area": 85697
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-04.webp",
+        "width": 437,
+        "height": 382,
+        "sourceBounds": {
+          "x": 33,
+          "y": 705,
+          "w": 437,
+          "h": 382
+        },
+        "area": 82780
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-05.webp",
+        "width": 436,
+        "height": 363,
+        "sourceBounds": {
+          "x": 598,
+          "y": 720,
+          "w": 436,
+          "h": 363
+        },
+        "area": 87667
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-06.webp",
+        "width": 438,
+        "height": 354,
+        "sourceBounds": {
+          "x": 97,
+          "y": 1087,
+          "w": 438,
+          "h": 354
+        },
+        "area": 82245
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/attack-07.webp",
+        "width": 487,
+        "height": 379,
+        "sourceBounds": {
+          "x": 548,
+          "y": 1059,
+          "w": 487,
+          "h": 379
+        },
+        "area": 89186
+      }
+    ],
+    "ending": [
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-00.webp",
+        "width": 479,
+        "height": 492,
+        "sourceBounds": {
+          "x": 40,
+          "y": 10,
+          "w": 479,
+          "h": 492
+        },
+        "area": 126036
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-01.webp",
+        "width": 456,
+        "height": 493,
+        "sourceBounds": {
+          "x": 524,
+          "y": 9,
+          "w": 456,
+          "h": 493
+        },
+        "area": 122129
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-02.webp",
+        "width": 480,
+        "height": 503,
+        "sourceBounds": {
+          "x": 49,
+          "y": 499,
+          "w": 480,
+          "h": 503
+        },
+        "area": 129006
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-03.webp",
+        "width": 488,
+        "height": 507,
+        "sourceBounds": {
+          "x": 532,
+          "y": 497,
+          "w": 488,
+          "h": 507
+        },
+        "area": 125591
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-04.webp",
+        "width": 462,
+        "height": 535,
+        "sourceBounds": {
+          "x": 76,
+          "y": 983,
+          "w": 462,
+          "h": 535
+        },
+        "area": 126087
+      },
+      {
+        "file": "docs/art/layered-specials/yasuo-zero-ten/actors/ending-05.webp",
+        "width": 405,
+        "height": 520,
+        "sourceBounds": {
+          "x": 580,
+          "y": 1000,
+          "w": 405,
+          "h": 520
+        },
+        "area": 111630
+      }
+    ]
+  },
+  "props": {},
+  "method": "RGBA connected component isolation; original pixels retained, no limb rig or redraw"
+}

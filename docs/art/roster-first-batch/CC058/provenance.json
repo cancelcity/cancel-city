@@ -1,0 +1,9 @@
+{
+  "id": "CC058",
+  "name": "GenOS Windows Update",
+  "generator": "built-in image_gen",
+  "original": "original-sheet.png",
+  "portrait": "/assets/roster-v2/CC058.webp",
+  "prompt": "Use case: illustration-story. Asset type: game sprite atlas with REAL transparent alpha. A clean 3-column 2-row sheet, SIX miniature full-body illustrations of ONE character. Each figure must be SMALL ENOUGH to leave at least 40 pixels empty padding on ALL FOUR sides within its equal cell, ESPECIALLY below both boots and above hair. No body part or glow may touch cell edge. Feet and entire boots are mandatory visible. Whole connected bodies only. Subject: recognizable Genos-inspired blond young adult anime cyborg: short spiky blond hair, serious handsome face, black sleeveless top, silver metallic arms connected naturally, black trousers and boots, rectangular glowing cyan repair-progress display set into chest plate, no logos. Same identity and clothing in every pose. Ordered poses: neutral upright repair display glowing; gathering energy braced anticipation; spectacular whole-body heroic transformation stance; frozen stiff mid-pose staring at chest display; pleased repair-complete support stance; panicked stiff reboot pose looking at stalled chest display. Bold black ink outlines, manga comic crosshatching and halftone, cream highlights and restrained neon cyan effects. Mostly facing right. Props integrated into character. No panels, words, floor, shadows, labels or background. Generous fully transparent gutters. Make each figure about 70 percent of its cell height, do not fill canvas. No crop anywhere.",
+  "processing": "Sharp: mechanical cell crop, alpha-aware bounds and webp encoding; no repainting. Whole body anchor metadata manually marked at feet."
+}

@@ -1,0 +1,48 @@
+{
+  "generator": "builtin image_gen.imagegen",
+  "inspected": true,
+  "assets": [
+    {
+      "id": "CC037",
+      "name": "Don Tremendous",
+      "mode": "builtin-image_gen",
+      "intent": "new-generation-with-style-reference",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; reference image is style guidance only. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: An unmistakably Donald Trump-inspired grotesque political cartoon, huge orange face, aggressively swooping pale blond comb-over, squinting eyes, pursed shouting mouth, oversized navy suit and absurdly long bright red necktie. Standing behind a ludicrous gold podium with both tiny hands performing emphatic pinching gestures. Gold-red fireworks and abstract television-camera silhouettes, no readable slogans, no logos or flags.",
+      "reference_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "selected_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-686471cf-5a73-4ba7-952f-039ddb136a1c.png",
+      "selected_master_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC037.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "image_mode": "RGB",
+      "sha256": "c1756dabfb42ee26090adcecbdf4e9e5b56b7051171854fa5534234b15e3029e",
+      "inspection_notes": [
+        "Inspected rendered output against CC026 reference: thick scratchy black ink, vivid distressed red/gold/navy palette, paper grain, full-bleed square composition.",
+        "Exaggerated orange face and pale blond sweep dominate frame; navy suit, long red tie, two pinching hand gestures, gold podium, camera silhouettes and fireworks all present.",
+        "No readable text, card frame, watermark or identifiable brand logo. Political satire is clearly a drawn comic, not a realistic photograph."
+      ]
+    },
+    {
+      "id": "CC038",
+      "name": "The Eternal Candidate",
+      "mode": "builtin-image_gen",
+      "intent": "new-generation-with-style-reference",
+      "prompt": "Use case: illustration-story. Asset type: final standalone square portrait for Cancel City card game. Create NEW illustration; reference image is style guidance only. Match its grotesque punk underground comic art: thick energetic black ink outlines, dense scratchy crosshatching, textured cheap paper, distressed vivid screen-printed colours, exaggerated confrontational face, detailed hand-drawn anatomy. Square full-bleed chest-up or tight waist-up composition, head dominates frame, instantly legible at thumbnail size. No card frame, border, UI, titles, readable lettering, logos or watermark. Rich detailed background with symbolic props. High resolution at least 1024 square. Subject: A fictional silver-haired elderly career-politician caricature with a broad practiced smile, exaggerated long ears, blue suit with too many blank campaign buttons. He proudly holds a ribbon-shaped timeline of endless tiny blank ballot papers, surrounded by red-white-blue paper confetti and dusty microphones. Keep individual fictional face, not a specific real person, no lettering.",
+      "reference_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC026.png",
+      "selected_source_path": "/workspace/scratch/80a8c8c1affe/generated_images/exec-e09bac14-4ece-4ae2-a7d1-c0fe34a60b8b.png",
+      "selected_master_path": "/workspace/scratch/80a8c8c1affe/cancel-city/docs/art/residents/CC038.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "image_mode": "RGB",
+      "sha256": "2004d758e01b5bdade4344ad4153ba0734a3a6db67fed550d0f93b8d908c357e",
+      "inspection_notes": [
+        "Inspected rendered output against CC026 reference: thick energetic black ink, dense crosshatching, distressed cream/red/blue printing and paper texture.",
+        "Fictional elderly character has silver hair, oversized ears, broad practiced grin, blue suit with multiple blank campaign buttons, long ballot ribbon and foreground microphones.",
+        "Ballots use empty boxes and non-letter horizontal rules; no readable lettering or watermark. Background includes red-white-blue confetti, generic campaign flags and a civic dome."
+      ]
+    }
+  ]
+}

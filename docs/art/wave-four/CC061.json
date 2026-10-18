@@ -1,0 +1,161 @@
+{
+  "characterId": "CC061",
+  "characterName": "Power of Friendship",
+  "generatedWith": "built-in image_gen",
+  "source": {
+    "path": "docs/art/wave-four/CC061-poses.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "sourceGrid": {
+    "columns": 3,
+    "rows": 2
+  },
+  "preparation": "Six connected opaque alpha silhouettes isolated with nearest-silhouette contours including original anti-aliased edges and nearby disconnected particles within 32 source pixels. Original RGB and alpha preserved inside silhouette; no repainting. Individual transparent crops resized to at most 456x420 and centered on 512-square transparent canvases with ground anchor 462. Runtime bounds measured after WebP decoding at alpha >=16.",
+  "poses": [
+    {
+      "index": 0,
+      "name": "idle",
+      "path": "/assets/actors/CC061-0.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 120,
+        "top": 64,
+        "right": 391,
+        "bottom": 462
+      },
+      "transparentPixels": 196593,
+      "sourceBodyCrop": {
+        "left": 65,
+        "top": 0,
+        "width": 377,
+        "height": 530
+      }
+    },
+    {
+      "index": 1,
+      "name": "wind-up",
+      "path": "/assets/actors/CC061-1.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 54,
+        "top": 78,
+        "right": 457,
+        "bottom": 462
+      },
+      "transparentPixels": 159906,
+      "sourceBodyCrop": {
+        "left": 509,
+        "top": 39,
+        "width": 465,
+        "height": 467
+      }
+    },
+    {
+      "index": 2,
+      "name": "strike-right",
+      "path": "/assets/actors/CC061-2.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 40,
+        "top": 77,
+        "right": 472,
+        "bottom": 462
+      },
+      "transparentPixels": 151084,
+      "sourceBodyCrop": {
+        "left": 968,
+        "top": 13,
+        "width": 568,
+        "height": 501
+      }
+    },
+    {
+      "index": 3,
+      "name": "victory",
+      "path": "/assets/actors/CC061-3.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 96,
+        "top": 57,
+        "right": 416,
+        "bottom": 462
+      },
+      "transparentPixels": 193239,
+      "sourceBodyCrop": {
+        "left": 49,
+        "top": 494,
+        "width": 441,
+        "height": 530
+      }
+    },
+    {
+      "index": 4,
+      "name": "flinch",
+      "path": "/assets/actors/CC061-4.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 87,
+        "top": 61,
+        "right": 424,
+        "bottom": 462
+      },
+      "transparentPixels": 174637,
+      "sourceBodyCrop": {
+        "left": 533,
+        "top": 501,
+        "width": 461,
+        "height": 511
+      }
+    },
+    {
+      "index": 5,
+      "name": "embarrassed",
+      "path": "/assets/actors/CC061-5.webp",
+      "width": 512,
+      "height": 512,
+      "suggestedAnchor": {
+        "x": 256,
+        "y": 462
+      },
+      "alphaBounds": {
+        "left": 116,
+        "top": 63,
+        "right": 395,
+        "bottom": 462
+      },
+      "transparentPixels": 190521,
+      "sourceBodyCrop": {
+        "left": 1089,
+        "top": 501,
+        "width": 354,
+        "height": 509
+      }
+    }
+  ]
+}

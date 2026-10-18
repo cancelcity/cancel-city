@@ -1,0 +1,86 @@
+{
+  "characterId": "CC019",
+  "characterName": "Master Cheese",
+  "status": "generated-and-inspected",
+  "generator": "built-in image_gen",
+  "sheets": [
+    {
+      "path": "docs/art/layered-specials/master-cheese/action-sheet-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "action",
+      "width": 1536,
+      "height": 1024,
+      "poseCount": 8,
+      "order": "row-major",
+      "poses": [
+        "ready",
+        "notices-heat",
+        "raises-rifle",
+        "aim",
+        "recoil-1",
+        "recoil-2",
+        "recovery",
+        "followthrough"
+      ]
+    },
+    {
+      "path": "docs/art/layered-specials/master-cheese/ending-sheet-original.png",
+      "cols": 4,
+      "rows": 2,
+      "role": "ending",
+      "width": 1536,
+      "height": 1024,
+      "poseCount": 8,
+      "order": "row-major",
+      "poses": [
+        "proud-salute",
+        "worried-salute",
+        "knees-wobble",
+        "knees-buckle",
+        "attempt-to-stand",
+        "slump",
+        "melted-crouch",
+        "sad-final-salute"
+      ]
+    }
+  ],
+  "background": {
+    "path": "docs/art/layered-specials/master-cheese/cold-storage-original.png",
+    "width": 1672,
+    "height": 941,
+    "hasAlpha": false,
+    "role": "fixed-cold-storage-loading-bay"
+  },
+  "references": [
+    "public/assets/roster-b2/CC019.webp",
+    "public/assets/actors/CC019-b2-0.webp",
+    "public/assets/actors/CC019-b2-2.webp",
+    "public/assets/actors/CC019-b2-4.webp"
+  ],
+  "prompts": "docs/art/layered-specials/master-cheese/prompts.json",
+  "extractionReport": "docs/art/layered-specials/master-cheese/component-report.json",
+  "alpha": {
+    "actionFullyTransparentPixels": 607111,
+    "endingFullyTransparentPixels": 638540,
+    "fullyOpaquePixels": 0,
+    "modalSubjectAlpha": 253,
+    "totalPixelsPerSheet": 1572864,
+    "notes": "Genuinely clear background. Brown RGB under alpha=0 is invisible in correct compositing. Subject is almost opaque (~253/255). Preserve alpha; do not chroma-key or flatten."
+  },
+  "inspection": {
+    "actionComponents": 8,
+    "endingComponents": 8,
+    "alphaThreshold": 48,
+    "minComponentPixels": 500,
+    "style": "Consistent scratched-ink cheddar armor, lime green face/visor, black undersuit, silver box-grater rifle.",
+    "warnings": [
+      "Some poses cross nominal grid cell boundaries. Do not equal-cell crop.",
+      "Bounding boxes can overlap another figure's projection. Isolate each connected alpha component and retain nearby antialias pixels; a bare rectangular crop can include adjacent gun fragments.",
+      "Ending frames3 and5 retain a partial salute rather than strictly lowering fully; movement should use adjacent poses selectively.",
+      "Ending armor slump is slight, not full-body liquefaction. Keep motion intact; add melting drips as separate effects if desired."
+    ],
+    "background": "Inspected empty loading bay, wide clear foreground, no character or projectile baked in."
+  },
+  "summary": "16 intact full-body poses across two transparent sheets and one reusable fixed background. No external video service or CLI generation."
+}
