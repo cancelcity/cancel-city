@@ -1,0 +1,452 @@
+{
+  "version": 1,
+  "artDirection": "Original punk cutout cartoon, thick ink outlines, misregistered colours, halftone, paper bursts. No external images or copyrighted character designs.",
+  "assets": [
+    {
+      "key": "CC001",
+      "path": "/assets/cards/CC001.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of The Professional Victim",
+      "faction": "terminally-online"
+    },
+    {
+      "key": "CC002",
+      "path": "/assets/cards/CC002.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Discord Dictator",
+      "faction": "terminally-online"
+    },
+    {
+      "key": "CC003",
+      "path": "/assets/cards/CC003.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of The Reply Guy",
+      "faction": "terminally-online"
+    },
+    {
+      "key": "CC004",
+      "path": "/assets/cards/CC004.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of AI Slop Prophet",
+      "faction": "terminally-online"
+    },
+    {
+      "key": "CC005",
+      "path": "/assets/cards/CC005.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of The Algorithm",
+      "faction": "terminally-online"
+    },
+    {
+      "key": "CC006",
+      "path": "/assets/cards/CC006.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of LinkedIn Gladiator",
+      "faction": "corporate-hell"
+    },
+    {
+      "key": "CC007",
+      "path": "/assets/cards/CC007.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Unpaid Intern",
+      "faction": "corporate-hell"
+    },
+    {
+      "key": "CC008",
+      "path": "/assets/cards/CC008.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of HR Necromancer",
+      "faction": "corporate-hell"
+    },
+    {
+      "key": "CC009",
+      "path": "/assets/cards/CC009.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Private Jet Environmentalist",
+      "faction": "corporate-hell"
+    },
+    {
+      "key": "CC010",
+      "path": "/assets/cards/CC010.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of CEO of Poverty",
+      "faction": "corporate-hell"
+    },
+    {
+      "key": "CC011",
+      "path": "/assets/cards/CC011.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of French Strike Simulator",
+      "faction": "international-incidents"
+    },
+    {
+      "key": "CC012",
+      "path": "/assets/cards/CC012.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Swiss Neutrality Enjoyer",
+      "faction": "international-incidents"
+    },
+    {
+      "key": "CC013",
+      "path": "/assets/cards/CC013.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of British Museum Collector",
+      "faction": "international-incidents"
+    },
+    {
+      "key": "CC014",
+      "path": "/assets/cards/CC014.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Italian Pasta Inquisition",
+      "faction": "international-incidents"
+    },
+    {
+      "key": "CC015",
+      "path": "/assets/cards/CC015.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Florida Man",
+      "faction": "international-incidents"
+    },
+    {
+      "key": "CC016",
+      "path": "/assets/cards/CC016.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Minister of Denial",
+      "faction": "politics-hypocrisy"
+    },
+    {
+      "key": "CC017",
+      "path": "/assets/cards/CC017.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Virtue Signal Knight",
+      "faction": "politics-hypocrisy"
+    },
+    {
+      "key": "CC018",
+      "path": "/assets/cards/CC018.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Tax Evasion Wizard",
+      "faction": "politics-hypocrisy"
+    },
+    {
+      "key": "CC019",
+      "path": "/assets/cards/CC019.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Populist Megaphone",
+      "faction": "politics-hypocrisy"
+    },
+    {
+      "key": "CC020",
+      "path": "/assets/cards/CC020.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Democracy Paywall",
+      "faction": "politics-hypocrisy"
+    },
+    {
+      "key": "CC021",
+      "path": "/assets/cards/CC021.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Exit Liquidity Chad",
+      "faction": "crypto-degenerates"
+    },
+    {
+      "key": "CC022",
+      "path": "/assets/cards/CC022.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Diamond Hands Corpse",
+      "faction": "crypto-degenerates"
+    },
+    {
+      "key": "CC023",
+      "path": "/assets/cards/CC023.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Rug Pull Magician",
+      "faction": "crypto-degenerates"
+    },
+    {
+      "key": "CC024",
+      "path": "/assets/cards/CC024.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Dubai Course Seller",
+      "faction": "crypto-degenerates"
+    },
+    {
+      "key": "CC025",
+      "path": "/assets/cards/CC025.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Forgotten Seed Phrase",
+      "faction": "crypto-degenerates"
+    },
+    {
+      "key": "CC026",
+      "path": "/assets/cards/CC026.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Final Boss Karen",
+      "faction": "cursed-society"
+    },
+    {
+      "key": "CC027",
+      "path": "/assets/cards/CC027.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Doomsday Prepper",
+      "faction": "cursed-society"
+    },
+    {
+      "key": "CC028",
+      "path": "/assets/cards/CC028.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Conspiracy Uncle",
+      "faction": "cursed-society"
+    },
+    {
+      "key": "CC029",
+      "path": "/assets/cards/CC029.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Doomscroll Parasite",
+      "faction": "cursed-society"
+    },
+    {
+      "key": "CC030",
+      "path": "/assets/cards/CC030.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Punk cartoon portrait of Cancelled Messiah",
+      "faction": "cursed-society"
+    },
+    {
+      "key": "city-skyline",
+      "path": "/assets/city/skyline.svg",
+      "dimensions": {
+        "width": 1800,
+        "height": 900
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Crooked corporate towers, acidic windows, cable lines and satirical cartoon billboards at night"
+    },
+    {
+      "key": "city-intake",
+      "path": "/assets/packs/city-intake.svg",
+      "dimensions": {
+        "width": 480,
+        "height": 480
+      },
+      "author": "Cancel City / Codex original vector illustration",
+      "source": "Authored SVG paths; generate_assets.py",
+      "licence": "Original project asset; no third-party source material",
+      "status": "final",
+      "alt": "Magenta booster wrapper with acid burst, crowned skull and a blank paper label"
+    }
+  ]
+}
