@@ -1,30 +1,353 @@
 'use client';
-import Link from 'next/link';
-import {useSearchParams} from 'next/navigation';
-import {CSSProperties,useEffect,useRef,useState} from 'react';
-import {AnimatePresence,motion} from 'motion/react';
-import {ArrowRight,Check,Package,Search,Shield,Skull,Sparkles} from 'lucide-react';
-import {CARDS,CARD_BY_ID,factionOf,rarityOf} from '../data/cards';
-import {PROPS,PROP_BY_ID,PropDefinition} from '../data/props';
-import {LOANERS} from '../domain/battle';
-import {quantity} from '../domain/game';
-import {propsFor} from '../domain/props';
-import {useGame} from '../state/store';
-import {Portrait} from './card';
-import {PropArt} from './prop-art';
-import {PropLootReveal} from './city-fx';
-import {useCinematicMode} from './special-cinematic';
-import {CITY_EASE,useCityMotion} from './city-motion';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { CSSProperties, useEffect, useMemo, useState } from 'react';
+import { Check, Lock, Play, Shield, Sparkles } from 'lucide-react';
+import { CARDS, CARD_BY_ID, rarityOf } from '../data/cards';
+import { PROPS, PROP_BY_ID } from '../data/props';
+import { LOANERS } from '../domain/battle';
+import { quantity } from '../domain/game';
+import { propsFor } from '../domain/props';
+import { previewSpecial } from '../domain/cinematic';
+import { useGame } from '../state/store';
+import { Portrait, rarityBadgeLabel } from './card';
+import { PropArt } from './prop-art';
+import { PropLootReveal } from './city-fx';
+import { SpecialCinematic, useCinematicMode } from './special-cinematic';
+import { Dialog } from './dialog';
 
-export function StashScreen(){
- const {save,run,enter,busy,error,hydrated,mode}=useGame(),params=useSearchParams(),reduced=useCityMotion(),[sceneMode]=useCinematicMode('cancel-city.city-cinematics.v1');
- const [selected,setSelected]=useState(Object.hasOwn(PROP_BY_ID,params.get('prop')||'')?params.get('prop')!:'P001'),[resident,setResident]=useState(params.get('resident')||'CC001'),[query,setQuery]=useState(''),[filter,setFilter]=useState('all'),[notice,setNotice]=useState(''),[loot,setLoot]=useState<string|null>(null),details=useRef<HTMLDivElement>(null);
- const rows=propsFor(save),owned=rows.filter(p=>p.owned).length,ready=rows.filter(p=>p.ready).length,prop=rows.find(p=>p.id===selected)!,roster=CARDS.filter(c=>LOANERS.includes(c.id)||quantity(save,c.id).regular+quantity(save,c.id).foil>0),residentId=roster.some(c=>c.id===resident)?resident:'CC001',equipped=save?.props.loadout[residentId]||null,disabled=busy||!!error||mode==='offline'||!hydrated;
- useEffect(()=>{if(!notice)return;const timer=setTimeout(()=>setNotice(''),4500);return()=>clearTimeout(timer);},[notice]);
- const list=rows.filter(p=>`${p.name} ${p.description} ${factionOf(p.faction).name}`.toLowerCase().includes(query.toLowerCase().trim())&&(filter==='all'||filter==='owned'&&p.owned||filter==='ready'&&p.ready));
- const inspect=(p:PropDefinition)=>{setSelected(p.id);if(window.matchMedia('(max-width:850px)').matches)requestAnimationFrame(()=>{details.current?.focus({preventScroll:true});details.current?.scrollIntoView({behavior:reduced?'instant':'smooth',block:'start'});});};
- const claim=async(id:string)=>{if(!save&&!await enter())return;const before=useGame.getState().save?.props.ownedIds.includes(id);if(await run({type:'prop-claim',propId:id})){setSelected(id);setNotice(`${PROP_BY_ID[id].name.toUpperCase()} IS IN YOUR STASH.`);if(!before&&sceneMode!=='off')setLoot(id);}};
- const equip=async()=>{if(await run({type:'prop-equip',residentId,propId:equipped===prop.id?null:prop.id}))setNotice(equipped===prop.id?'PROP UNEQUIPPED.':`${CARD_BY_ID[residentId].name.toUpperCase()} HAS WORSE TASTE NOW.`);};
- const display=async()=>{if(await run({type:'prop-display',propId:save?.props.cityDisplay===prop.id?null:prop.id}))setNotice('YOUR CITY DISPLAY IS SAVED.');};
- return <div className="stash-page"><header className="stash-heading"><div><span className="tape pink">CANCEL CITY / LOST & VERY FOUND</span><h1>BAD IDEAS.<br/><span>GOOD LOOT.</span></h1><p>Collect twelve absurd weapons, gadgets and trophies. Equip residents for their specials. Put your favourite on the city plinth.</p></div><div className="stash-count"><Package size={35}/><b>{owned}<small>/ {PROPS.length}</small></b><span>PROPS COLLECTED</span></div></header><nav className="collection-switch" aria-label="Collection type"><Link href="/collection/">RESIDENT CARDS</Link><Link href="/stash/" aria-current="page">PROP STASH {ready>0&&<b>{ready} READY</b>}</Link><Link href="/city/">CITY DISPLAY <ArrowRight size={15}/></Link></nav><div className="stash-contract"><Shield size={18}/><p><b>COSMETIC LOADOUTS.</b> Earn every prop through play. One prop per resident; one city display. Owned props are reusable. They add visual flair to specials.</p></div><div className="stash-layout"><section><div className="stash-filters"><label className="search-box"><Search size={18}/><input aria-label="Search collectible props" placeholder="Find your next terrible accessory…" value={query} onChange={e=>setQuery(e.target.value)}/></label><select aria-label="Filter prop stash" value={filter} onChange={e=>setFilter(e.target.value)}><option value="all">ALL PROPS</option><option value="ready">READY TO CLAIM · {ready}</option><option value="owned">OWNED · {owned}</option></select></div><div className="stash-grid"><AnimatePresence mode="popLayout">{list.map((p,i)=><motion.button key={p.id} layout={reduced?false:'position'} className={`stash-item ${selected===p.id?'selected':''} ${p.owned?'owned':p.ready?'ready':'locked'}`} onClick={()=>inspect(p)} aria-label={`${p.name}, ${p.owned?'owned':p.ready?'ready to claim':p.goal}`} initial={reduced?false:{opacity:0,y:15}} animate={{opacity:1,y:0}} exit={{opacity:0}} transition={{duration:reduced?0:.24,ease:CITY_EASE}} style={{'--prop-color':rarityOf(p.rarity).color} as CSSProperties}><div className="stash-item-art"><PropArt id={p.id} priority={i===0} decorative/><span>{p.id}</span>{p.ready&&<b className="tape yellow">READY</b>}{p.owned&&<b className="stash-owned-stamp"><Check size={15}/>OWNED</b>}</div><div className="stash-item-copy"><small>{rarityOf(p.rarity).name} · {p.type.toUpperCase()}</small><h2>{p.name}</h2><p>{p.owned?'IN YOUR STASH':p.goal}</p><div className="progress-track"><i style={{width:`${p.progress/p.target*100}%`}}/></div><span>{p.owned?'COLLECTED':`${p.progress} / ${p.target}`}</span></div></motion.button>)}</AnimatePresence></div>{!list.length&&<div className="empty-state"><Search size={30}/><h2>No matching bad ideas.</h2><button className="button paper" onClick={()=>{setQuery('');setFilter('all');}}>CLEAR FILTERS</button></div>}</section><aside className="stash-details" ref={details} tabIndex={-1}><span className="stash-detail-kicker">EVIDENCE {prop.id} / 12</span><div className="stash-detail-art"><PropArt id={prop.id}/><span className="tape yellow">{rarityOf(prop.rarity).name}</span></div><h2>{prop.name.toUpperCase()}</h2><blockquote>“{prop.quote}”</blockquote><p>{prop.description}</p><div className="stash-goal"><b>{prop.owned?'COLLECTED':prop.goal}</b>{!prop.owned&&<span>{prop.progress} / {prop.target}</span>}{prop.milestone==='crafts'&&!prop.owned&&<small>New crafts count from the props update.</small>}</div>{!prop.owned?<button className="button magenta city-full" disabled={disabled||(!prop.ready&&!(prop.id==='P001'&&!save))} onClick={()=>void claim(prop.id)}><Package size={18}/>{!save&&prop.id==='P001'?'ENTER & COLLECT':prop.ready?'CLAIM THIS PROP':'FINISH THE MILESTONE'}<ArrowRight size={17}/></button>:<><label className="stash-resident-select">WHO HAS THE WORST TASTE?<select aria-label="Resident prop loadout" value={residentId} disabled={disabled} onChange={e=>setResident(e.target.value)}>{roster.map(c=><option key={c.id} value={c.id}>{c.name}{quantity(save,c.id).regular+quantity(save,c.id).foil===0?' · LOANER':''}</option>)}</select></label><div className="stash-equipped"><Portrait card={CARD_BY_ID[residentId]}/><span><b>{CARD_BY_ID[residentId].name}</b><small>{equipped?PROP_BY_ID[equipped].name:'NO PROP EQUIPPED'}</small></span></div><button className={`button ${equipped===prop.id?'paper':'acid'} city-full`} disabled={disabled} onClick={()=>void equip()}><Skull size={17}/>{equipped===prop.id?'UNEQUIP PROP':'EQUIP FOR SPECIALS'}<ArrowRight size={17}/></button>{save?.city?<button className="button paper city-full stash-display-button" disabled={disabled} onClick={()=>void display()}><Sparkles size={17}/>{save.props.cityDisplay===prop.id?'REMOVE FROM CITY DISPLAY':'DISPLAY IN MY CITY'}</button>:<Link href="/city/" className="button paper city-full stash-display-button">FOUND A CITY TO DISPLAY IT <ArrowRight size={17}/></Link>}<Link href="/battle/?specials=1" className="text-link">WATCH YOUR RESIDENT’S SPECIAL <ArrowRight size={15}/></Link></>}</aside></div>{notice&&<p className="stash-notice" role="status"><Check size={18}/>{notice}</p>}{loot&&<PropLootReveal key={loot} id={loot} mode={sceneMode} onComplete={()=>{setLoot(null);requestAnimationFrame(()=>details.current?.focus({preventScroll:true}));}}/>}</div>;
+const MOCKUP_CUBBY_ORDER = [
+  'P001', // The Bonk Stick
+  'P002', // Moderator's Ban Hammer
+  'P003', // Emergency Copium Tank
+  'P004', // Apology Megaphone (Megahorn)
+  'P007', // RGB Keyboard
+  'P008', // Rolled Carpet
+  'P009', // Golden Umbrella
+  'P011', // Ring Light Staff
+  'P012', // Rolling Pin
+  'P005', // Touch-Grass Blade
+  'P006', // Mandatory Wellness Mace
+  'P010', // Exposure Lanyard
+];
+
+const SHORT_PROP_NAMES: Record<string, string> = {
+  P001: 'THE BONK STICK',
+  P002: 'MODERATOR’S BAN HAMMER',
+  P003: 'EMERGENCY COPIUM TANK',
+  P004: 'MEGAHORN',
+  P007: 'RGB KEYBOARD',
+  P008: 'ROLLED CARPET',
+  P009: 'GOLDEN UMBRELLA',
+  P011: 'RING LIGHT STAFF',
+  P012: 'ROLLING PIN',
+  P005: 'TOUCH-GRASS BLADE',
+  P006: 'WELLNESS MACE',
+  P010: 'EXPOSURE LANYARD',
+};
+
+export function StashScreen() {
+  const { save, run, enter, busy, error, hydrated, mode } = useGame();
+  const router = useRouter();
+  const params = useSearchParams();
+  const [sceneMode] = useCinematicMode('cancel-city.city-cinematics.v1');
+  const [selected, setSelected] = useState(
+    Object.hasOwn(PROP_BY_ID, params.get('prop') || '') ? params.get('prop')! : 'P002'
+  );
+  const [resident, setResident] = useState(params.get('resident') || 'CC063');
+  const [notice, setNotice] = useState('');
+  const [loot, setLoot] = useState<string | null>(null);
+  const [pickerOpen, setPickerOpen] = useState(false);
+  const [previewing, setPreviewing] = useState(false);
+
+  const rows = propsFor(save);
+  const owned = rows.filter((p) => p.owned).length;
+  const prop = rows.find((p) => p.id === selected) || rows[1] || rows[0];
+
+  const orderedCubbies = useMemo(() => {
+    const rank = new Map(MOCKUP_CUBBY_ORDER.map((id, i) => [id, i]));
+    return [...rows].sort((a, b) => (rank.get(a.id) ?? 99) - (rank.get(b.id) ?? 99));
+  }, [rows]);
+
+  const roster = useMemo(() => {
+    const ownedOrLoaner = CARDS.filter(
+      (c) =>
+        LOANERS.includes(c.id) ||
+        quantity(save, c.id).regular + quantity(save, c.id).foil > 0
+    );
+    return ownedOrLoaner.length ? ownedOrLoaner : CARDS.slice(0, 12);
+  }, [save]);
+
+  const residentId = roster.some((c) => c.id === resident) ? resident : roster[0]?.id || 'CC001';
+  const activeResident = CARD_BY_ID[residentId] || CARD_BY_ID.CC001;
+  const equipped = save?.props.loadout[residentId] || null;
+  const disabled = busy || !!error || mode === 'offline' || !hydrated;
+
+  useEffect(() => {
+    if (!notice) return;
+    const timer = setTimeout(() => setNotice(''), 4200);
+    return () => clearTimeout(timer);
+  }, [notice]);
+
+  const claim = async (id: string) => {
+    if (!save && !(await enter())) return;
+    const before = useGame.getState().save?.props.ownedIds.includes(id);
+    if (await run({ type: 'prop-claim', propId: id })) {
+      setSelected(id);
+      setNotice(`${PROP_BY_ID[id].name.toUpperCase()} CLAIMED!`);
+      if (!before && sceneMode !== 'off') setLoot(id);
+    }
+  };
+
+  const equip = async () => {
+    if (!save && !(await enter())) return;
+    if (!prop.owned) {
+      if (prop.ready || prop.id === 'P001') {
+        await claim(prop.id);
+      } else {
+        setNotice(`UNLOCK ${prop.name.toUpperCase()} FIRST: ${prop.goal.toUpperCase()} (${prop.progress}/${prop.target})`);
+      }
+      return;
+    }
+    if (
+      await run({
+        type: 'prop-equip',
+        residentId,
+        propId: equipped === prop.id ? null : prop.id,
+      })
+    ) {
+      setNotice(
+        equipped === prop.id
+          ? 'PROP UNEQUIPPED.'
+          : `${activeResident.name.toUpperCase()} EQUIPPED ${prop.name.toUpperCase()}.`
+      );
+    }
+  };
+
+  const displayInCity = async () => {
+    if (!save && !(await enter())) return;
+    if (!save?.city) {
+      router.push('/city/');
+      return;
+    }
+    if (!prop.owned) {
+      setNotice(`UNLOCK ${prop.name.toUpperCase()} FIRST: ${prop.goal.toUpperCase()} (${prop.progress}/${prop.target})`);
+      return;
+    }
+    if (
+      await run({
+        type: 'prop-display',
+        propId: save.props.cityDisplay === prop.id ? null : prop.id,
+      })
+    ) {
+      setNotice('CITY TROPHY PLINTH UPDATED.');
+    }
+  };
+
+  return (
+    <section className="stash-locker-stage" aria-label="Prop Stash — Lost and Very Found">
+      <div className="stash-locker-backdrop" aria-hidden="true" />
+      <div className="stash-locker-vignette" aria-hidden="true" />
+
+      {/* Top Brush Banner + 8 / 12 Pill */}
+      <header className="stash-header-banner">
+        <div className="stash-brush-title">
+          <h1>PROP STASH / LOST &amp; VERY FOUND</h1>
+        </div>
+        <div className="stash-count-pill">
+          <b>
+            {owned} / {PROPS.length}
+          </b>
+        </div>
+      </header>
+
+      {/* Main Workspace: Left 4×3 Wooden Cubby Shelf + Right Inspector */}
+      <div className="stash-main-workspace">
+        {/* Left Wooden Shelf Cabinet */}
+        <div className="stash-wooden-cabinet" role="listbox" aria-label="Collectible props shelf">
+          {orderedCubbies.map((p, index) => {
+            const isSelected = selected === p.id;
+            const isUnknownSlot = !p.owned && !p.ready && index === 8;
+            const showCheck = p.owned;
+            return (
+              <button
+                type="button"
+                key={p.id}
+                role="option"
+                aria-selected={isSelected}
+                className={`stash-cubby ${isSelected ? 'is-selected' : ''} ${p.owned ? 'is-owned' : p.ready ? 'is-ready' : 'is-locked'} ${isUnknownSlot ? 'is-mystery' : ''}`}
+                onClick={() => setSelected(p.id)}
+                style={{ '--prop-color': rarityOf(p.rarity).color } as CSSProperties}
+              >
+                {showCheck && (
+                  <span className="cubby-check-badge" aria-label="Owned">
+                    <Check size={14} strokeWidth={3} />
+                  </span>
+                )}
+                {!showCheck && p.ready && <span className="cubby-ready-tag">CLAIM!</span>}
+
+                <div className="cubby-art-well">
+                  {isUnknownSlot ? (
+                    <div className="cubby-mystery-silhouette">
+                      <Lock size={34} />
+                    </div>
+                  ) : (
+                    <PropArt id={p.id} priority={index < 4} decorative />
+                  )}
+                </div>
+
+                <span className="cubby-nameplate">
+                  {isUnknownSlot ? '???' : SHORT_PROP_NAMES[p.id] || p.name.toUpperCase()}
+                </span>
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Right Prop Inspector Panel matching bottom-right mockup */}
+        <aside
+          className="stash-inspector-panel"
+          aria-label="Selected prop details"
+          style={{ '--prop-color': rarityOf(prop.rarity).color } as CSSProperties}
+        >
+          <div className="stash-inspector-showcase">
+            <div className="stash-showcase-art">
+              <PropArt id={prop.id} />
+            </div>
+
+            <div className="stash-showcase-title-bar">
+              <h2>{prop.name.toUpperCase()}</h2>
+            </div>
+          </div>
+
+          <div className="stash-inspector-mid">
+            <div className="stash-inspector-copy">
+              <span className={`tcg-rarity-pill rarity-${prop.rarity}`}>
+                {rarityBadgeLabel(prop.rarity)}
+              </span>
+              <p className="stash-prop-quote">“{prop.quote}”</p>
+              <small className="stash-prop-goal">
+                {prop.owned ? 'IN YOUR STASH · REUSABLE' : `UNLOCK: ${prop.goal} (${prop.progress}/${prop.target})`}
+              </small>
+            </div>
+
+            <button
+              type="button"
+              className="stash-equipped-by-card"
+              onClick={() => setPickerOpen(true)}
+              aria-label={`Equipped by ${activeResident.name}. Click to change resident`}
+            >
+              <div className="equipped-mini-portrait">
+                <Portrait card={activeResident} />
+              </div>
+              <small>EQUIPPED BY</small>
+              <b>{activeResident.name.toUpperCase()}</b>
+            </button>
+          </div>
+
+          <div className="stash-inspector-buttons">
+            {!prop.owned && (prop.ready || (prop.id === 'P001' && !save)) ? (
+              <button
+                type="button"
+                className="stash-btn equip"
+                disabled={disabled}
+                onClick={() => void claim(prop.id)}
+              >
+                CLAIM FOR STASH
+              </button>
+            ) : (
+              <button
+                type="button"
+                className="stash-btn equip"
+                disabled={disabled}
+                onClick={() => void equip()}
+              >
+                {equipped === prop.id ? 'UNEQUIP FROM SPECIALS' : 'EQUIP FOR SPECIALS'}
+              </button>
+            )}
+
+            <button
+              type="button"
+              className="stash-btn display"
+              disabled={disabled}
+              onClick={() => void displayInCity()}
+            >
+              <Shield size={16} />
+              <span>
+                {save?.props.cityDisplay === prop.id ? 'DISPLAYED IN CITY ✓' : 'DISPLAY IN CITY'}
+              </span>
+            </button>
+          </div>
+
+          <div className="stash-cosmetic-footer">
+            <div className="stash-cosmetic-text">
+              <b>COSMETIC PROPS</b>
+              <p>
+                Change the look of special attack animations and your city trophy display. No stat
+                changes.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              className="stash-preview-special-btn"
+              onClick={() => setPreviewing(true)}
+            >
+              <Play size={13} fill="currentColor" />
+              <span>PREVIEW SPECIAL</span>
+            </button>
+          </div>
+        </aside>
+      </div>
+
+      {notice && (
+        <div className="toast" role="status">
+          <Sparkles size={18} />
+          {notice}
+        </div>
+      )}
+
+      {pickerOpen && (
+        <Dialog title="CHOOSE RESIDENT FOR THIS PROP" onClose={() => setPickerOpen(false)}>
+          <p>
+            Pick which resident wields <b>{prop.name}</b> during their special attack animation:
+          </p>
+          <div className="stash-resident-picker-grid">
+            {roster.slice(0, 16).map((c) => (
+              <button
+                type="button"
+                key={c.id}
+                className={`stash-resident-choice ${c.id === residentId ? 'selected' : ''}`}
+                onClick={() => {
+                  setResident(c.id);
+                  setPickerOpen(false);
+                }}
+              >
+                <Portrait card={c} />
+                <b>{c.name}</b>
+              </button>
+            ))}
+          </div>
+        </Dialog>
+      )}
+
+      {previewing && (
+        <SpecialCinematic
+          key={`stash-preview:${residentId}:${prop.id}`}
+          playback={previewSpecial(residentId, prop.id)}
+          mode="full"
+          onImpact={() => {}}
+          onComplete={() => setPreviewing(false)}
+        />
+      )}
+
+      {loot && (
+        <PropLootReveal
+          key={loot}
+          id={loot}
+          mode={sceneMode}
+          onComplete={() => setLoot(null)}
+        />
+      )}
+    </section>
+  );
 }

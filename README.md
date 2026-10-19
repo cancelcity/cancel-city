@@ -1,13 +1,13 @@
 # Cancel City — game source
 
-Private source mirror for the game's owner. This snapshot contains saved **Site version 39**, source commit `28573cfb823ffd63cba44aa5abfe573ef41857b2`.
+Playable source mirror for Cancel City. This snapshot contains saved **Site version 40**, source commit `1a22aec76f769d58e2b11ce6b2ac905dde0036fa`.
 
 ## Download the latest uploaded version
 
 - Repository: https://github.com/cancelcity/cancel-city
 - ZIP: https://github.com/cancelcity/cancel-city/archive/refs/heads/main.zip
 
-Sign in to the GitHub account that owns this private repository. The ZIP always reflects the current `main` branch, including subsequent uploaded updates. GitHub does not automatically import changes from the separate Site repository; publishing updates must also synchronize this mirror.
+The ZIP always reflects the current `main` branch, including subsequent uploaded updates. GitHub does not automatically import changes from the separate Site repository; publishing updates must also synchronize this mirror.
 
 The project includes all game code, configuration, tests, text documentation and runtime assets: character portraits, actor sprites, scenery, movies, fonts and audio. The optional original illustration/video production masters under `docs/` remain in the original Site repository; their paths and object hashes are recorded in `docs/omitted-authoring-assets.json`.
 
@@ -32,6 +32,8 @@ See `docs/memetic-pass.md` for the Municipal Brainrot content pass: 18 original 
 See `docs/special-cinematics.md` for the 42 character special cinematics, action artwork, preview theater, playback controls and committed-event timing.
 
 See `docs/city-motion-and-props.md` for the city camera/building animation pass and twelve collectible cosmetic props, resident equipment and city display.
+
+See [Airfryer Gate](docs/airfryer-gate.md) for the first connected city case: three responses, original evidence, a four-statement hearing and persistent consequences.
 
 ## Playable features
 

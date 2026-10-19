@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {airfryerCommandShapes} from '../src/domain/airfryer';
 import {roastCommandShapes} from '../src/domain/roast';
 import {propCommandShapes} from '../src/domain/props';
 import {cityCommandShapes} from '../src/domain/city';
@@ -10,9 +11,10 @@ const id=z.string().min(1).max(100),card=id.refine(v=>Object.hasOwn(CARD_BY_ID,v
 const commandSchema=z.discriminatedUnion('type',[
  z.object({type:z.literal('daily')}),z.object({type:z.literal('open'),sessionId:id}),z.object({type:z.literal('reveal'),count:z.number().int().min(0).max(5)}),z.object({type:z.literal('acknowledge')}),z.object({type:z.literal('fuse'),cardId:card}),z.object({type:z.literal('recycle'),cardId:card}),z.object({type:z.literal('craft'),cardId:card}),z.object({type:z.literal('claim-mission'),missionId:id}),z.object({type:z.literal('finish-onboarding')}),z.object({type:z.literal('battle-tutorial')}),z.object({type:z.literal('preset'),team:z.array(card).length(3),slot:z.number().int().min(0).max(2)}),
  z.object({type:z.literal('settings'),alias:z.string().trim().min(2).max(24).optional(),settings:z.object({soundEnabled:z.boolean().optional(),musicEnabled:z.boolean().optional(),volume:z.number().min(0).max(1).optional(),motion:z.enum(['system','reduced']).optional()})}),
- z.object({type:z.literal('battle-start'),matchId:id,districtId:district,team:z.array(card).length(3),mode:z.enum(['campaign','daily','practice']).optional()}),
- z.object({type:z.literal('battle-act'),matchId:id,step:z.number().int().min(0).max(80),action:z.discriminatedUnion('type',[z.object({type:z.literal('attack')}),z.object({type:z.literal('guard')}),z.object({type:z.literal('ability')}),z.object({type:z.literal('duo'),duoId:z.string().min(1).max(80).optional()}),z.object({type:z.literal('switch'),slot:z.number().int().min(0).max(2)})])}),
- z.object({type:z.literal('battle-enemy'),matchId:id,step:z.number().int().min(0).max(80)}),z.object({type:z.literal('battle-surrender'),matchId:id}),z.object({type:z.literal('battle-leave'),matchId:id}),...cityCommandShapes,...roastCommandShapes,...propCommandShapes
+ z.object({type:z.literal('battle-start'),matchId:id,districtId:district,team:z.array(card).length(3),mode:z.enum(['campaign','daily','practice']).optional(),challengeKey:z.string().min(1).max(200).optional()}),
+ z.object({type:z.literal('battle-act'),matchId:id,step:z.number().int().min(0).max(80),action:z.discriminatedUnion('type',[z.object({type:z.literal('receipt'),combo:z.number().int().min(1).max(4).optional()}),z.object({type:z.literal('attack'),combo:z.number().int().min(1).max(10).optional()}),z.object({type:z.literal('guard'),combo:z.number().int().min(1).max(10).optional()}),z.object({type:z.literal('ability'),combo:z.number().int().min(1).max(10).optional()}),z.object({type:z.literal('duo'),duoId:z.string().min(1).max(80).optional(),combo:z.number().int().min(1).max(10).optional()}),z.object({type:z.literal('switch'),slot:z.number().int().min(0).max(2)})])}),
+ z.object({type:z.literal('battle-enemy'),matchId:id,step:z.number().int().min(0).max(80)}),z.object({type:z.literal('battle-surrender'),matchId:id}),z.object({type:z.literal('battle-leave'),matchId:id}),
+ z.object({type:z.literal('clout-scheme'),scheme:z.enum(['safe','risk','grift'])}),z.object({type:z.literal('timeline-ratio'),threadId:id}),...airfryerCommandShapes,...cityCommandShapes,...roastCommandShapes,...propCommandShapes
 ]);
 const random=()=>{const n=new Uint32Array(1);crypto.getRandomValues(n);return n[0]/4294967296;};
 const json=(body:unknown,status=200)=>Response.json(body,{status,headers:{'Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'same-origin'}});

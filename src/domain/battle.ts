@@ -52,7 +52,7 @@ export type Fighter=z.infer<typeof fighterSchema>;
 export type BattleEvent=z.infer<typeof eventSchema>;
 export type Match=z.infer<typeof matchSchema>;
 export type BattleProgress=z.infer<typeof battleProgressSchema>;
-export type BattleAction={type:'attack'|'ability'|'guard'}|{type:'duo';duoId?:string}|{type:'switch';slot:number};
+export type BattleAction={type:'attack'|'receipt'|'ability'|'guard';combo?:number}|{type:'duo';duoId?:string;combo?:number}|{type:'switch';slot:number};
 export const freshBattle=():BattleProgress=>({active:null,clearedDistrictIds:[],wins:0,losses:0});
 const tunedScale:Record<DistrictId,number>={street:.85,media:.86,corporate:.86,crypto:1.05,'city-hall':1.1,algorithm:1.12};
 const scaleFor=(district:DistrictId,version:number)=>version>=2?tunedScale[district]:districtOf(district).scale;
@@ -79,7 +79,14 @@ export function abilityDescription(card:Card,district:DistrictId='street',side:S
   case 'steal':return `${power+8} base damage. Restore up to 18 composure.`;
  }
 }
-export function crewFor(district:DistrictId,mode:string,key:string|null,rosterVersion=5,snapshot:readonly string[]=[]){if(mode!=='daily'||!key)return [...districtOf(district).crew];const pool=rosterVersion===5&&snapshot.length?[...snapshot]:(rosterVersion===1?BASE_CARDS:rosterVersion===2?[...BASE_CARDS,...WAVE_CARDS]:rosterVersion===3?[...BASE_CARDS,...WAVE_CARDS,...CULTURE_CARDS]:rosterVersion===4?CARDS.filter(c=>c.number<=66):CARDS).map(c=>c.id),seed=rosterVersion>=4?Array.from(key).reduce((n,c)=>Math.imul(n^c.charCodeAt(0),16777619)>>>0,2166136261):Array.from(key).reduce((n,c)=>n+c.charCodeAt(0),0);return [0,1,2].map(i=>pool[(seed+i*7)%pool.length]);}
+export function crewFor(district:DistrictId,mode:string,key:string|null,rosterVersion=5,snapshot:readonly string[]=[]){
+ if(key?.startsWith('rival:')){
+  const parts=key.split(':');
+  const crewIds=parts[2]?.split(',')??[];
+  if(crewIds.length===3&&crewIds.every(id=>Object.hasOwn(CARD_BY_ID,id)))return [...crewIds];
+ }
+ if(mode!=='daily'||!key)return [...districtOf(district).crew];
+ const pool=rosterVersion===5&&snapshot.length?[...snapshot]:(rosterVersion===1?BASE_CARDS:rosterVersion===2?[...BASE_CARDS,...WAVE_CARDS]:rosterVersion===3?[...BASE_CARDS,...WAVE_CARDS,...CULTURE_CARDS]:rosterVersion===4?CARDS.filter(c=>c.number<=66):CARDS).map(c=>c.id),seed=rosterVersion>=4?Array.from(key).reduce((n,c)=>Math.imul(n^c.charCodeAt(0),16777619)>>>0,2166136261):Array.from(key).reduce((n,c)=>n+c.charCodeAt(0),0);return [0,1,2].map(i=>pool[(seed+i*7)%pool.length]);}
 export function dailyChallenge(now:Date){return {districtId:'street' as DistrictId,key:now.toISOString().slice(0,10)};}
 export function squadBonus(team:string[]){const factions=new Set(team.map(id=>CARD_BY_ID[id].faction));return factions.size===1?'chorus':factions.size===3?'coalition':'none';}
 export function createMatch(id:string,districtId:DistrictId,team:string[],options:{version?:1|2|3;mode?:'campaign'|'daily'|'practice';challengeKey?:string|null}={}):Match{
@@ -102,17 +109,19 @@ function settle(m:Match){
 export function takeTurn(current:Match,side:Side,action:BattleAction):Match{
  if(current.phase!==side)throw new Error('Wait for your turn.');
  const m=structuredClone(current),other:Side=side==='player'?'enemy':'player',actorSlot=m[`${side}Active`],targetSlot=m[`${other}Active`],actor=m[side][actorSlot],target=m[other][targetSlot],card=CARD_BY_ID[actor.cardId];
- const event:BattleEvent={step:++m.step,side,kind:action.type==='duo'?'ability':action.type,actor:actorSlot,targetSide:other,target:targetSlot,damage:0,heal:0,knockout:false,title:'',text:'',style:KITS[card.id].style,passive:'',duoId:null,partnerId:null};
- const hit=(power:number,pierce=false)=>{const damage=Math.max(1,Math.round(power*(actor.weakened?.7:1)*(pierce?1:1-target.guard)*(m.rulesVersion>=2&&target.exposed?1.25:1)));actor.weakened=false;target.guard=0;target.exposed=false;event.damage=Math.min(target.hp,damage);target.hp-=event.damage;event.knockout=target.hp===0;};
+ const comboMultiplier=(action.type!=='switch'&&action.combo&&action.combo>1)?(1+(action.combo-1)*.35):1;
+ const event:BattleEvent={step:++m.step,side,kind:action.type==='duo'?'ability':action.type==='receipt'?'attack':action.type,actor:actorSlot,targetSide:other,target:targetSlot,damage:0,heal:0,knockout:false,title:'',text:'',style:KITS[card.id].style,passive:'',duoId:null,partnerId:null};
+ const hit=(power:number,pierce=false)=>{const damage=Math.max(1,Math.round(power*comboMultiplier*(actor.weakened?.7:1)*(pierce?1:1-target.guard)*(m.rulesVersion>=2&&target.exposed?1.25:1)));actor.weakened=false;target.guard=0;target.exposed=false;event.damage=Math.min(target.hp,damage);target.hp-=event.damage;event.knockout=target.hp===0;};
  const heal=(amount:number)=>{const restored=Math.min(amount,maxHp(actor.cardId,m.districtId,side,m.rulesVersion)-actor.hp);event.heal+=restored;actor.hp+=restored;};
  const power=attackPower(actor.cardId,m.districtId,side,m.rulesVersion);
  switch(action.type){
-  case 'attack':hit(power);actor.charge=Math.min(3,actor.charge+1);event.title='CALLED OUT!';break;
-  case 'guard':actor.guard=.6;actor.charge=Math.min(3,actor.charge+1);event.targetSide=side;event.target=actorSlot;event.title='PR SHIELD.';break;
+  case 'attack':hit(power);actor.charge=Math.min(3,actor.charge+1);event.title=comboMultiplier>1?`CALLED OUT! [${action.combo}X COMBO!]`:'CALLED OUT!';if(comboMultiplier>1)event.passive=`COMBO x${action.combo} (+${Math.round((comboMultiplier-1)*100)}% DMG)`;break;
+  case 'receipt':hit(power);actor.charge=Math.min(3,actor.charge+1);if(target.hp>0)target.exposed=true;event.title='RECEIPT ENTERED';event.passive='EXPOSED: NEXT HIT +25%';break;
+  case 'guard':actor.guard=.6;actor.charge=Math.min(3,actor.charge+1);event.targetSide=side;event.target=actorSlot;event.title=action.combo&&action.combo>1?`PR SHIELD [${action.combo}X COMBO!]`:'PR SHIELD.';if(action.combo&&action.combo>1)event.passive=`COMBO x${action.combo} (PR SHIELD)`;break;
   case 'switch':if(!Number.isInteger(action.slot)||action.slot<0||action.slot>2||action.slot===actorSlot||m[side][action.slot].hp===0)throw new Error('Choose a different standing resident.');m[`${side}Active`]=action.slot;event.targetSide=side;event.target=action.slot;event.title='NEW BAD COMPANY.';break;
-  case 'duo':{const duo=availableDuo(m,side,action.duoId);if(!duo)throw new Error('A duo needs 3 active hype, 1 standing partner hype, and an unused combo this fight.');const partner=m[side].find(f=>f.cardId===duo.partnerId)!;actor.charge=0;partner.charge--;m.duoUsed.push(side);hit(power+Math.round(attackPower(partner.cardId,m.districtId,side,m.rulesVersion)*.65)+12);if(target.hp>0)target.weakened=true;event.title=duo.name.toUpperCase();event.duoId=duo.id;event.partnerId=partner.cardId;event.passive='DUO · ONCE PER FIGHT';break;}
+  case 'duo':{const duo=availableDuo(m,side,action.duoId);if(!duo)throw new Error('A duo needs 3 active hype, 1 standing partner hype, and an unused combo this fight.');const partner=m[side].find(f=>f.cardId===duo.partnerId)!;actor.charge=0;partner.charge--;m.duoUsed.push(side);hit(power+Math.round(attackPower(partner.cardId,m.districtId,side,m.rulesVersion)*.65)+12);if(target.hp>0)target.weakened=true;event.title=comboMultiplier>1?`${duo.name.toUpperCase()} [${action.combo}X COMBO!]`:duo.name.toUpperCase();event.duoId=duo.id;event.partnerId=partner.cardId;event.passive=comboMultiplier>1?`DUO · ${action.combo}X COMBO`:'DUO · ONCE PER FIGHT';break;}
   case 'ability':{
-   if(actor.charge<3)throw new Error('Build 3 hype before using an ability.');actor.charge=0;event.title=card.ability.toUpperCase();
+   if(actor.charge<3)throw new Error('Build 3 hype before using an ability.');actor.charge=0;event.title=comboMultiplier>1?`${card.ability.toUpperCase()} [${action.combo}X COMBO!]`:card.ability.toUpperCase();
    if(m.rulesVersion>=2){
     const k=KITS[card.id],extra=card.faction==='crypto-degenerates'&&!actor.passiveUsed&&target.guard>0?8:0;
     if(k.bonus||!k.heal&&!k.teamHeal)hit(power+k.bonus+extra,!!k.pierce);

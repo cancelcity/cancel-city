@@ -18,6 +18,16 @@ afterEach(()=>sqlite.close());
 const req=(path:string,body?:unknown,user='alice',origin='https://city.test')=>new Request(`https://city.test/api/${path}`,{method:body===undefined?'GET':'POST',headers:{...(user?{'oai-authenticated-user-id':user,'oai-authenticated-user-email':`${user}@test.invalid`}:{}),'Content-Type':'application/json',Origin:origin},body:body===undefined?undefined:JSON.stringify(body)});
 const call=async(path:string,body?:unknown,user='alice')=>{const response=await handleApi(req(path,body,user),env);return {status:response.status,data:await response.json() as {save:ReturnType<typeof initialSave>;verified:boolean;players:unknown[]}};};
 describe('authoritative cloud API with real SQLite',()=>{
+ it('persists a complete Airfryer case and atomically replays the final receipt',async()=>{
+  let saved=(await call('start',{})).data.save;
+  const commands=[{type:'city-start'},{type:'airfryer-start'},{type:'airfryer-choose',route:'blame'},{type:'airfryer-argue',move:'evidence',round:0},{type:'airfryer-argue',move:'counter',round:1},{type:'airfryer-argue',move:'divert',round:2}];
+  for(const command of commands){const response=await call('command',{id:crypto.randomUUID(),revision:saved.revision,command});expect(response.status).toBe(200);saved=response.data.save;}
+  const final={id:crypto.randomUUID(),revision:saved.revision,command:{type:'airfryer-argue',move:'apologize',round:3}};
+  const result=await call('command',final),replayed=await call('command',final);
+  expect(result.status).toBe(200);expect(result.data.save.airfryer.outcome).toBe('cleared');expect(replayed.data.save).toEqual(result.data.save);
+  expect((await call('player')).data.save.airfryer).toEqual(result.data.save.airfryer);
+  expect((await call('player',undefined,'bob')).data.save).toBeNull();
+ });
  it('rejects missing identity and cross-origin writes',async()=>{expect((await call('player',undefined,'')).status).toBe(401);expect((await handleApi(req('start',{},'alice','https://evil.test'),env)).status).toBe(403);});
  it('starts a server-owned account and does not expose another player save',async()=>{const start=await call('start',{});expect(start.data.save.playerId).toBe('alice');expect(start.data.verified).toBe(true);expect((await call('player',undefined,'bob')).data.save).toBeNull();});
  it('rolls once when the same request is replayed after a lost response',async()=>{await call('start',{});const command={id:crypto.randomUUID(),revision:0,command:{type:'open',sessionId:'pack'}};const a=await call('command',command),b=await call('command',command);expect(a.status).toBe(200);expect(b.data.save.pendingOpening).toEqual(a.data.save.pendingOpening);expect(b.data.save.packBalance).toBe(2);expect(b.data.save.revision).toBe(1);});

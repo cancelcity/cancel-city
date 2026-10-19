@@ -1,4 +1,5 @@
 import {z} from 'zod';
+import {airfryerSchema,freshAirfryer,applyAirfryerCommand,refineAirfryer,type AirfryerCommand} from './airfryer';
 import {roastSchema,applyRoastCommand,refineRoastSave,type RoastCommand} from './roast';
 import {propsSchema,freshProps,PropCommand,applyPropCommand,recordPropActivity,refineProps,PropRuleError} from './props';
 import {citySchema,CityCommand,applyCityCommand,recordCityActivity,CityRuleError,plotUnlock,refineCityEventRewards} from './city';
@@ -16,9 +17,9 @@ const saveFields={
  lifetimePacksOpened:count,lifetimeCardsPulled:count,lifetimeFusions:count,totalXp:count,pendingOpening:sessionSchema.nullable(),settings:z.object({soundEnabled:z.boolean(),musicEnabled:z.boolean().default(false),volume:z.number().finite().min(0).max(1),motion:z.enum(['system','reduced'])}),
 };
 const activitySchema=z.object({day,week:day,dailyOpened:count,dailyFusions:count,weeklyOpened:count,weeklyDiscoveries:count,weeklyClaims:count.max(7)});
-const careerSchema=z.object({scrap:count.default(0),presets:z.array(z.array(cardId).length(3).refine(ids=>new Set(ids).size===3)).max(3).default([]),mastery:z.record(count).default({}),tutorialSeen:z.boolean().default(false)});
+const careerSchema=z.object({scrap:count.default(0),clout:count.default(0),presets:z.array(z.array(cardId).length(3).refine(ids=>new Set(ids).size===3)).max(3).default([]),mastery:z.record(count).default({}),tutorialSeen:z.boolean().default(false)});
 const freshCareer=()=>careerSchema.parse({});
-const saveObject=z.object({schemaVersion:z.literal(2),...saveFields,activity:activitySchema,onboardingSeen:z.boolean(),battle:battleProgressSchema.default(freshBattle),career:careerSchema.default(freshCareer),city:citySchema.nullable().default(null),props:propsSchema.default(freshProps),roast:roastSchema.nullable().default(null)});
+const saveObject=z.object({schemaVersion:z.literal(2),...saveFields,activity:activitySchema,onboardingSeen:z.boolean(),battle:battleProgressSchema.default(freshBattle),career:careerSchema.default(freshCareer),city:citySchema.nullable().default(null),props:propsSchema.default(freshProps),roast:roastSchema.nullable().default(null),airfryer:airfryerSchema.default(freshAirfryer)});
 const legacyObject=z.object({schemaVersion:z.literal(1),...saveFields});
 function refineSave(s:z.infer<typeof legacyObject>|z.infer<typeof saveObject>,ctx:z.RefinementCtx){
  const bad=(message:string)=>ctx.addIssue({code:z.ZodIssueCode.custom,message});
@@ -29,7 +30,7 @@ function refineSave(s:z.infer<typeof legacyObject>|z.infer<typeof saveObject>,ct
  if(s.lifetimeCardsPulled!==s.lifetimePacksOpened*5)bad('Invalid lifetime pulls');
  if(s.pendingOpening&&s.pendingOpening.pulls.some((p,i)=>p.slot!==i))bad('Invalid reveal order');
 }
-export const saveSchema=saveObject.superRefine((s,ctx)=>{refineSave(s,ctx);refineRoastSave(s,ctx);refineProps(s,ctx);refineCityEventRewards(s,ctx);for(const kind of Object.keys(s.city?.incidents??{}))if(!s.awardedRewardIds.includes(`city-incident:${kind}`))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Incident ending requires reward marker'});for(const id of s.awardedRewardIds)if(id.startsWith('city-incident:')&&!Object.hasOwn(s.city?.incidents??{},id.slice(14)))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Incident reward requires ending'});if(s.city){if(s.city.plots.some((b,i)=>b&&!plotUnlock(s,i).unlocked))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Building occupies a locked plot'});for(const b of s.city.plots)if(b?.residentId&&!LOANERS.includes(b.residentId)&&quantity(s,b.residentId).regular+quantity(s,b.residentId).foil<1)ctx.addIssue({code:z.ZodIssueCode.custom,message:'City resident must be owned'});for(const [id,c] of Object.entries(s.city.contracts))if(c.claimed&&!s.awardedRewardIds.includes(`city-job:${id}`))ctx.addIssue({code:z.ZodIssueCode.custom,message:'City claims and rewards must agree'});}if(s.awardedRewardIds.some(id=>id.startsWith('city-job:')&&!s.city?.contracts[id.slice(9)]?.claimed))ctx.addIssue({code:z.ZodIssueCode.custom,message:'City reward requires a claimed contract'});if(s.battle.clearedDistrictIds.some(id=>!s.awardedRewardIds.includes(`battle:${id}`))||s.awardedRewardIds.some(id=>id.startsWith('battle:')&&!s.battle.clearedDistrictIds.includes(id.slice(7) as DistrictId)))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Battle rewards and clears must agree'});if(s.battle.active?.player.some(f=>!LOANERS.includes(f.cardId)&&quantity(s,f.cardId).regular+quantity(s,f.cardId).foil<1))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Battle squad contains an unowned resident'});if(weekKey(new Date(s.activity.day+'T00:00:00Z'))!==s.activity.week)ctx.addIssue({code:z.ZodIssueCode.custom,message:'Week must start on Monday UTC'});});
+export const saveSchema=saveObject.superRefine((s,ctx)=>{refineSave(s,ctx);refineAirfryer(s,ctx);refineRoastSave(s,ctx);refineProps(s,ctx);refineCityEventRewards(s,ctx);for(const kind of Object.keys(s.city?.incidents??{}))if(!s.awardedRewardIds.includes(`city-incident:${kind}`))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Incident ending requires reward marker'});for(const id of s.awardedRewardIds)if(id.startsWith('city-incident:')&&!Object.hasOwn(s.city?.incidents??{},id.slice(14)))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Incident reward requires ending'});if(s.city){if(s.city.plots.some((b,i)=>b&&!plotUnlock(s,i).unlocked))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Building occupies a locked plot'});for(const b of s.city.plots)if(b?.residentId&&!LOANERS.includes(b.residentId)&&quantity(s,b.residentId).regular+quantity(s,b.residentId).foil<1)ctx.addIssue({code:z.ZodIssueCode.custom,message:'City resident must be owned'});for(const [id,c] of Object.entries(s.city.contracts))if(c.claimed&&!s.awardedRewardIds.includes(`city-job:${id}`))ctx.addIssue({code:z.ZodIssueCode.custom,message:'City claims and rewards must agree'});}if(s.awardedRewardIds.some(id=>id.startsWith('city-job:')&&!s.city?.contracts[id.slice(9)]?.claimed))ctx.addIssue({code:z.ZodIssueCode.custom,message:'City reward requires a claimed contract'});if(s.battle.clearedDistrictIds.some(id=>!s.awardedRewardIds.includes(`battle:${id}`))||s.awardedRewardIds.some(id=>id.startsWith('battle:')&&!s.battle.clearedDistrictIds.includes(id.slice(7) as DistrictId)))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Battle rewards and clears must agree'});if(s.battle.active?.player.some(f=>!LOANERS.includes(f.cardId)&&quantity(s,f.cardId).regular+quantity(s,f.cardId).foil<1))ctx.addIssue({code:z.ZodIssueCode.custom,message:'Battle squad contains an unowned resident'});if(weekKey(new Date(s.activity.day+'T00:00:00Z'))!==s.activity.week)ctx.addIssue({code:z.ZodIssueCode.custom,message:'Week must start on Monday UTC'});});
 export const legacySaveSchema=legacyObject.superRefine(refineSave);
 export type Save=z.infer<typeof saveSchema>;
 export function decodeSave(raw:unknown,now=new Date()):Save{if(raw&&typeof raw==='object'&&'schemaVersion' in raw&&raw.schemaVersion===1){const old=legacySaveSchema.parse(raw);return saveSchema.parse({...old,schemaVersion:2,activity:freshActivity(now),onboardingSeen:true});}if(raw&&typeof raw==='object'&&!('props' in raw)&&'awardedRewardIds' in raw&&Array.isArray(raw.awardedRewardIds)){const props=freshProps();props.ownedIds=raw.awardedRewardIds.filter((id:unknown):id is string=>typeof id==='string'&&id.startsWith('prop:')).map(id=>id.slice(5));return saveSchema.parse({...raw,props});}return saveSchema.parse(raw);}
@@ -38,7 +39,7 @@ export class GameError extends Error {constructor(public code:string,message:str
 export const utcDate=(date:Date)=>date.toISOString().slice(0,10);
 export const dailyEligible=(s:Save,now:Date)=>utcDate(now)>=s.activity.day&&(!s.lastDailyClaimDate||s.lastDailyClaimDate<utcDate(now));
 export const quantity=(s:Save|null,id:string)=>s?.inventory[id]||{regular:0,foil:0};
-export function initialSave(now:Date,id:string):Save{return {schemaVersion:2,revision:0,playerId:id,createdAt:now.toISOString(),updatedAt:now.toISOString(),alias:'LOCAL MENACE',packBalance:BALANCE.welcomePacks,lastDailyClaimDate:null,inventory:{},discoveredCardIds:[],awardedRewardIds:['welcome'],recentCommandIds:[],lifetimePacksOpened:0,lifetimeCardsPulled:0,lifetimeFusions:0,totalXp:0,pendingOpening:null,settings:{soundEnabled:false,musicEnabled:false,volume:.35,motion:'system'},activity:freshActivity(now),onboardingSeen:false,battle:freshBattle(),career:freshCareer(),city:null,props:freshProps(),roast:null};}
+export function initialSave(now:Date,id:string):Save{return {schemaVersion:2,revision:0,playerId:id,createdAt:now.toISOString(),updatedAt:now.toISOString(),alias:'LOCAL MENACE',packBalance:BALANCE.welcomePacks,lastDailyClaimDate:null,inventory:{},discoveredCardIds:[],awardedRewardIds:['welcome'],recentCommandIds:[],lifetimePacksOpened:0,lifetimeCardsPulled:0,lifetimeFusions:0,totalXp:0,pendingOpening:null,settings:{soundEnabled:false,musicEnabled:false,volume:.35,motion:'system'},activity:freshActivity(now),onboardingSeen:false,battle:freshBattle(),career:freshCareer(),city:null,props:freshProps(),roast:null,airfryer:freshAirfryer()};}
 export function validateCatalogue(){
  if(CARDS.length!==SETS.reduce((n,s)=>n+s.count,0)||new Set(CARDS.map(c=>c.id)).size!==CARDS.length||SETS.some(s=>CARDS.filter(c=>setOf(c)===s.id).length!==s.count))throw new Error('Invalid catalogue');
  if(Math.abs(RARITIES.reduce((n,r)=>n+r.weight,0)-1)>1e-10)throw new Error('Invalid weights');
@@ -51,13 +52,14 @@ export function rollPack(random:()=>number):string[]{return Array.from({length:B
  const pool=CARDS.filter(c=>c.rarity===rarity.id),pick=random();if(!Number.isFinite(pick)||pick<0||pick>=1)throw new Error('Invalid card RNG');
  return pool[Math.floor(pick*pool.length)].id;
 });}
-export type Command=RoastCommand|PropCommand|CityCommand|{type:'daily'}|{type:'open';sessionId:string}|{type:'reveal';count:number}|{type:'acknowledge'}|{type:'fuse';cardId:string}|{type:'claim-mission';missionId:string}|{type:'battle-start';matchId:string;districtId:DistrictId;team:string[];mode?:'campaign'|'daily'|'practice'}|{type:'preset';team:string[];slot:number}|{type:'battle-tutorial'}|{type:'recycle';cardId:string}|{type:'craft';cardId:string}|{type:'battle-act';matchId:string;step:number;action:BattleAction}|{type:'battle-enemy';matchId:string;step:number}|{type:'battle-surrender';matchId:string}|{type:'battle-leave';matchId:string}|{type:'finish-onboarding'}|{type:'settings';settings:Partial<Save['settings']>;alias?:string};
+export type Command=AirfryerCommand|RoastCommand|PropCommand|CityCommand|{type:'daily'}|{type:'open';sessionId:string}|{type:'reveal';count:number}|{type:'acknowledge'}|{type:'fuse';cardId:string}|{type:'claim-mission';missionId:string}|{type:'battle-start';matchId:string;districtId:DistrictId;team:string[];mode?:'campaign'|'daily'|'practice';challengeKey?:string}|{type:'preset';team:string[];slot:number}|{type:'battle-tutorial'}|{type:'recycle';cardId:string}|{type:'craft';cardId:string}|{type:'battle-act';matchId:string;step:number;action:BattleAction}|{type:'battle-enemy';matchId:string;step:number}|{type:'battle-surrender';matchId:string}|{type:'battle-leave';matchId:string}|{type:'finish-onboarding'}|{type:'settings';settings:Partial<Save['settings']>;alias?:string}|{type:'clout-scheme';scheme:'safe'|'risk'|'grift'}|{type:'timeline-ratio';threadId:string};
 export function applyCommand(current:Save,command:Command,now:Date,random:()=>number,commandId:string,expectedRevision:number):Save{
  if(current.recentCommandIds.includes(commandId))return current;
  if(current.revision!==expectedRevision)throw new GameError('STALE_REVISION','Your city changed in another tab. Try again.');
  const s=structuredClone(current);refreshActivity(s,now);
  const award=(id:string,packs:number)=>{if(!s.awardedRewardIds.includes(id)){s.awardedRewardIds.push(id);s.packBalance+=packs;return true;}return false;};
  if(command.type.startsWith('city-')){try{applyCityCommand(s,command as CityCommand,now,award);}catch(e){if(e instanceof CityRuleError)throw new GameError(e.code,e.message);throw e;}}else if(command.type.startsWith('prop-')){try{applyPropCommand(s,command as PropCommand);}catch(e){if(e instanceof PropRuleError)throw new GameError(e.code,e.message);throw e;}}else switch(command.type){
+  case 'airfryer-start':case 'airfryer-choose':case 'airfryer-argue':try{applyAirfryerCommand(s,command,now,award);}catch(e){throw new GameError('AIRFRYER_CASE',e instanceof Error?e.message:'This case action is unavailable.');}break;
   case 'roast-start':case 'roast-act':case 'roast-enemy':case 'roast-resolve':case 'roast-surrender':case 'roast-leave':try{applyRoastCommand(s,command,now,award);}catch(e){throw new GameError('INVALID_ROAST_ACTION',e instanceof Error?e.message:'This roast action is unavailable.');}break;
   case 'daily':if(dayKey(now)<s.activity.day)throw new GameError('CLOCK_ROLLBACK','Your device clock moved backwards. Return to the current date to claim timed rewards.');if(!dailyEligible(s,now))throw new GameError('DAILY_ALREADY_CLAIMED','Already collected. Return after the next reset.');s.lastDailyClaimDate=utcDate(now);award(`daily:${utcDate(now)}`,BALANCE.dailyPacks);if(s.activity.week===weekKey(now))s.activity.weeklyClaims++;break;
   case 'open':{
@@ -82,8 +84,8 @@ export function applyCommand(current:Save,command:Command,now:Date,random:()=>nu
    if(s.roast&&s.roast.phase!=='finished')throw new GameError('ROAST_ACTIVE','Finish or surrender Roast Night first.');
    if(s.battle.active&&s.battle.active.phase!=='finished')throw new GameError('BATTLE_ACTIVE','Finish or surrender your saved battle first.');
    if(command.team.some(id=>!LOANERS.includes(id)&&quantity(s,id).regular+quantity(s,id).foil<1))throw new GameError('BATTLE_OWNERSHIP','Use owned residents or the three starter loaners.');
-   const mode=command.mode||'campaign';const index=DISTRICTS.findIndex(d=>d.id===command.districtId);if(mode==='campaign'&&index>0&&!s.battle.clearedDistrictIds.includes(command.districtId)&&!s.battle.clearedDistrictIds.includes(DISTRICTS[index-1].id))throw new GameError('DISTRICT_LOCKED','Clear the preceding district first, or choose practice.');const challenge=dailyChallenge(now);
-   s.battle.active=createMatch(command.matchId,mode==='daily'?challenge.districtId:command.districtId,command.team,{version:3,mode,challengeKey:mode==='daily'?challenge.key:null});break;
+   const mode=command.mode||'campaign';const index=DISTRICTS.findIndex(d=>d.id===command.districtId);if(mode==='campaign'&&index>0&&!command.challengeKey?.startsWith('rival:')&&!s.battle.clearedDistrictIds.includes(command.districtId)&&!s.battle.clearedDistrictIds.includes(DISTRICTS[index-1].id))throw new GameError('DISTRICT_LOCKED','Clear the preceding district first, or choose practice.');const challenge=dailyChallenge(now);
+   s.battle.active=createMatch(command.matchId,mode==='daily'?challenge.districtId:command.districtId,command.team,{version:3,mode,challengeKey:command.challengeKey||(mode==='daily'?challenge.key:null)});break;
   }
   case 'battle-act':case 'battle-enemy':case 'battle-surrender':case 'battle-leave':{
    const match=s.battle.active;
@@ -93,13 +95,36 @@ export function applyCommand(current:Save,command:Command,now:Date,random:()=>nu
    let next;try{next=command.type==='battle-surrender'?surrender(match):command.type==='battle-enemy'?takeTurn(match,'enemy',chooseEnemyAction(match)):takeTurn(match,'player',command.action);}catch(e){throw new GameError('INVALID_BATTLE_ACTION',e instanceof Error?e.message:'This action is unavailable.');}
    if(next.phase==='finished'){
     if(next.winner==='player'){
-     if(next.mode!=='practice')s.battle.wins++;
-     if(next.mode==='campaign'&&award(`battle:${next.districtId}`,1)){s.battle.clearedDistrictIds.push(next.districtId);s.totalXp+=50;next.reward={packs:1,xp:50};}
+     if(next.mode!=='practice'){s.battle.wins++;s.career.clout=(s.career.clout||0)+50;}
+     if(next.mode==='campaign'&&!next.challengeKey?.startsWith('rival:')&&award(`battle:${next.districtId}`,1)){s.battle.clearedDistrictIds.push(next.districtId);s.totalXp+=50;next.reward={packs:1,xp:50};}
 
-     if(next.mode!=='practice'){for(const f of next.player){s.career.mastery[f.cardId]=(s.career.mastery[f.cardId]||0)+1;for(const threshold of [3,10])if(s.career.mastery[f.cardId]>=threshold&&award(`mastery:${f.cardId}:${threshold}`,1)){next.reward.packs++;next.reward.xp+=20;s.totalXp+=20;}}if(next.mode==='daily'&&award(`daily-battle:${next.challengeKey}`,1)){next.reward.packs++;next.reward.xp+=25;s.totalXp+=25;}}
+     if(next.mode!=='practice'){
+      for(const f of next.player){s.career.mastery[f.cardId]=(s.career.mastery[f.cardId]||0)+1;for(const threshold of [3,10])if(s.career.mastery[f.cardId]>=threshold&&award(`mastery:${f.cardId}:${threshold}`,1)){next.reward.packs++;next.reward.xp+=20;s.totalXp+=20;}}
+      if(next.mode==='daily'&&award(`daily-battle:${next.challengeKey}`,1)){next.reward.packs++;next.reward.xp+=25;s.totalXp+=25;}
+      if(next.challengeKey?.startsWith('rival:')){
+       const crewKey=next.enemy.map(f=>f.cardId).sort().join(',');
+       if(award('rival-crew:'+crewKey,1)){s.career.clout+=450;s.totalXp+=35;next.reward.xp+=35;next.reward.packs++;}
+
+      }
+     }
     }else if(next.mode!=='practice')s.battle.losses++;
    }
    s.battle.active=next;break;
+  }
+  case 'clout-scheme':{
+   if(utcDate(now)<s.activity.day)throw new GameError('CLOCK_ROLLBACK','Use the current date for daily schemes.');
+   const schemeReward=`scheme-${command.scheme}:${utcDate(now)}`;
+   if(s.awardedRewardIds.includes(schemeReward))throw new GameError('SCHEME_CLAIMED','This sponsor action is already claimed today.');
+   if(command.scheme!=='risk')award(schemeReward,0);
+   if(command.scheme==='safe'){s.career.clout=(s.career.clout||0)+40;s.totalXp+=10;}
+   else if(command.scheme==='risk'){s.career.clout=(s.career.clout||0)+250;s.totalXp+=35;award(`scheme-risk:${utcDate(now)}`,1);}
+   else if(command.scheme==='grift'){s.career.clout=(s.career.clout||0)+150;s.totalXp+=20;}
+   break;
+  }
+  case 'timeline-ratio':{
+   const rewardId=`ratio:${command.threadId}`;
+   if(award(rewardId,0)){s.career.clout=(s.career.clout||0)+35;s.totalXp+=5;}
+   break;
   }
   case 'battle-tutorial':s.career.tutorialSeen=true;break;
   case 'preset':if(command.slot<0||command.slot>2||!Number.isInteger(command.slot)||command.team.length!==3||new Set(command.team).size!==3||command.team.some(id=>!CARD_BY_ID[id]||(!LOANERS.includes(id)&&quantity(s,id).regular+quantity(s,id).foil<1)))throw new GameError('INVALID_PRESET','Choose three owned residents or loaners.');while(s.career.presets.length<=command.slot)s.career.presets.push([...command.team]);s.career.presets[command.slot]=command.team;break;

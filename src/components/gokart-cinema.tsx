@@ -4,7 +4,7 @@ import {useEffect,useRef,useState,type ReactNode} from 'react';
 import {ArrowLeft,ArrowRight,Expand,Pause,Play,RotateCcw,Volume2,VolumeX} from 'lucide-react';
 import defaultFilm from '../data/gokart-film.json';
 import type {CinemaFilm} from '../data/layered-films';
-import {CityLogo} from './brand';
+import {CityGameHeader,CityGameNavigation} from './game-chrome';
 import {useGame} from '../state/store';
 import {startMusic,stopMusic} from '../services/music';
 import './gokart-cinema.css';
@@ -24,7 +24,7 @@ export function GokartCinema({film=defaultFilm,navigation}:{film?:CinemaFilm;nav
  const jump=(index:number)=>{const shot=film.shots[index];setStill(index);setTime(shot.start);if(!reduced)void play(shot.start);};
  const toggleSound=()=>{const next=!muted;setMuted(next);if(video.current)video.current.muted=next;};
  const fullscreen=async()=>{try{if(screen.current?.requestFullscreen)await screen.current.requestFullscreen();else{const player=video.current as (HTMLVideoElement&{webkitEnterFullscreen?:()=>void})|null;player?.webkitEnterFullscreen?.();}}catch{setError('Fullscreen is unavailable here. You can use the video controls.');}};
- return <div className="gokart-page"><a className="skip-link" href="#gokart-film">Skip to special</a><header className="gokart-header"><Link href="/" aria-label="Cancel City home"><CityLogo small/></Link><Link className="gokart-back" href="/packs/"><ArrowLeft size={16}/>BACK TO GAME</Link></header><main>
+ return <div className="arcade-shell view-cinema"><a className="skip-link" href="#gokart-film">Skip to special</a><CityGameHeader/><main className="arcade-main gokart-page">
   {navigation}
   <div className="gokart-heading"><div><span className="gokart-eyebrow">CANCEL CITY / SPECIAL PREMIERES</span><h1>{film.title.split(':')[0].toUpperCase()}<span>{film.title.split(':').slice(1).join(':').trim().toUpperCase()}</span></h1></div><p>{(film.tagline??'Unlimited power.\nVery limited legroom.').split('\n').map((line,i)=><span key={line}>{i>0&&<br/>}{line}</span>)}</p></div>
   <section id="gokart-film" className="gokart-theater" aria-label={film.title}>
@@ -36,12 +36,12 @@ export function GokartCinema({film=defaultFilm,navigation}:{film?:CinemaFilm;nav
     {reduced&&<img className="gokart-still" src={film.shots[still].thumbnail} width={1280} height={720} alt={film.shots[still].description}/>}
     {!playing&&time===0&&!reduced&&<button className="gokart-start" onClick={()=>void play(0,soundEnabled)} aria-label={`Play ${film.title}`}><span><Play size={30} fill="currentColor"/></span><b>PLAY SPECIAL</b><small>{film.duration.toFixed(1)} SECONDS</small></button>}
    </div>
-   <div className="gokart-toolbar"><div className="gokart-main-controls">{reduced?<button className="gokart-button primary" onClick={()=>setMotionAllowed(true)}><Play size={17}/>ENABLE ANIMATION</button>:<button className="gokart-button primary" onClick={()=>playing?video.current?.pause():void play(time>=film.duration-.1?0:undefined)}>{playing?<Pause size={17}/>:<Play size={17}/>} {playing?'PAUSE':'PLAY'}</button>}<button className="gokart-button" disabled={reduced} onClick={()=>void play(0)} aria-label="Replay special"><RotateCcw size={17}/><span>REPLAY</span></button><button className="gokart-button" aria-pressed={!muted} onClick={toggleSound}>{muted?<VolumeX size={17}/>:<Volume2 size={17}/>}<span>SOUND {muted?'OFF':'ON'}</span></button></div><div className="gokart-secondary-controls"><button className="gokart-button" disabled={reduced} aria-pressed={slow} onClick={()=>{setSlow(!slow);if(video.current)video.current.playbackRate=slow?1:.5;}}>{slow?'½×':'1×'}<span>SPEED</span></button><button className="gokart-button" onClick={()=>void fullscreen()} aria-label="Enter fullscreen"><Expand size={18}/></button></div></div>
+   <div className="gokart-toolbar"><div className="gokart-main-controls">{reduced?<button className="gokart-button primary" onClick={()=>setMotionAllowed(true)}><Play size={17}/>ENABLE ANIMATION</button>:<button className="gokart-button primary" onClick={()=>playing?video.current?.pause():void play(time>=film.duration-.1?0:undefined)}>{playing?<Pause size={17}/>:<Play size={17}/>} {playing?'PAUSE':'PLAY'}</button>}<button className="gokart-button" disabled={reduced} onClick={()=>void play(0)} aria-label="Replay special"><RotateCcw size={17}/><span>REPLAY</span></button><button className="gokart-button" aria-pressed={!muted} onClick={toggleSound}>{muted?<VolumeX size={17}/>:<Volume2 size={17}/>}<span>SOUND {muted?'OFF':'ON'}</span></button></div><div className="gokart-secondary-controls"><button className="gokart-button" disabled={reduced} aria-pressed={slow} onClick={()=>{setSlow(!slow);if(video.current)video.current.playbackRate=slow?1:.5;}}>{slow?'½×':'1×'}<span>SPEED</span></button><button className="gokart-button" onClick={()=>void fullscreen()} aria-label="Enter fullscreen"><Expand size={18}/></button><Link className="gokart-button" href="/battle/"><ArrowLeft size={16}/><span>COURT</span></Link></div></div>
    {error&&<p role="alert" className="gokart-error">{error}</p>}
    <div className="gokart-status"><span>{reduced?'STILL-FRAME MODE':active.title.toUpperCase()}</span><span>PREVIEW / NO CARDS OR CHARGE USED</span></div>
   </section>
   <div className="gokart-chapters" aria-label="Choose a shot">{film.shots.map((shot,index)=><button key={shot.id} onClick={()=>jump(index)} className={(reduced?still===index:active.id===shot.id)?'active':''} aria-pressed={reduced?still===index:active.id===shot.id}><img src={shot.thumbnail} alt="" width={384} height={216} loading="lazy"/><span><i>0{index+1}</i><b>{shot.title}</b></span></button>)}</div>
   <div className="gokart-footer"><p><b>ONE ATTACK. AN ENTIRE INCIDENT.</b><br/>Free previews. No cards or charge used.</p><Link href="/cinema/specials/">MORE SPECIAL PREMIERES <ArrowRight size={17}/></Link></div>
   <details className="gokart-transcript"><summary>Read the scene descriptions</summary><ol>{film.shots.map(shot=><li key={shot.id}><b>{shot.title}.</b> {shot.description}</li>)}</ol></details>
- </main></div>;
+ </main><CityGameNavigation active="battle"/></div>;
 }
