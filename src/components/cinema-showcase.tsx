@@ -1,4 +1,5 @@
 'use client';
+import {TheaterFrame} from './whole-game';
 
 import Image from 'next/image';
 import Link from 'next/link';
@@ -55,7 +56,7 @@ export function CinemaShowcase() {
     if (musicEnabled && !document.hidden) startMusic(musicVolume);
   };
 
-  return <div className="cinema-page">
+  return <TheaterFrame><div className="cinema-page">
     <a className="skip-link" href="#cinema-main">Skip to film</a>
     <header className="cinema-header">
       <Link href="/" aria-label="Cancel City home"><CityLogo small/></Link>
@@ -113,5 +114,5 @@ export function CinemaShowcase() {
         <li>Cancel City. “Everyone is the problem. Pull. Fight. Repeat.”</li>
       </ol></details>
     </main>
-  </div>;
+  </div></TheaterFrame>;
 }

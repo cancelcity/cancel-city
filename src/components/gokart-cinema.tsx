@@ -1,4 +1,5 @@
 'use client';
+import {FamilyNav} from './whole-game';
 import Link from 'next/link';
 import {useEffect,useRef,useState,type ReactNode} from 'react';
 import {ArrowLeft,ArrowRight,Expand,Pause,Play,RotateCcw,Volume2,VolumeX} from 'lucide-react';
@@ -24,7 +25,7 @@ export function GokartCinema({film=defaultFilm,navigation}:{film?:CinemaFilm;nav
  const jump=(index:number)=>{const shot=film.shots[index];setStill(index);setTime(shot.start);if(!reduced)void play(shot.start);};
  const toggleSound=()=>{const next=!muted;setMuted(next);if(video.current)video.current.muted=next;};
  const fullscreen=async()=>{try{if(screen.current?.requestFullscreen)await screen.current.requestFullscreen();else{const player=video.current as (HTMLVideoElement&{webkitEnterFullscreen?:()=>void})|null;player?.webkitEnterFullscreen?.();}}catch{setError('Fullscreen is unavailable here. You can use the video controls.');}};
- return <div className="arcade-shell view-cinema"><a className="skip-link" href="#gokart-film">Skip to special</a><CityGameHeader/><main className="arcade-main gokart-page">
+ return <div className="arcade-shell view-cinema"><a className="skip-link" href="#gokart-film">Skip to special</a><CityGameHeader/><main className="arcade-main gokart-page"><FamilyNav view="cinema"/>
   {navigation}
   <div className="gokart-heading"><div><span className="gokart-eyebrow">CANCEL CITY / SPECIAL PREMIERES</span><h1>{film.title.split(':')[0].toUpperCase()}<span>{film.title.split(':').slice(1).join(':').trim().toUpperCase()}</span></h1></div><p>{(film.tagline??'Unlimited power.\nVery limited legroom.').split('\n').map((line,i)=><span key={line}>{i>0&&<br/>}{line}</span>)}</p></div>
   <section id="gokart-film" className="gokart-theater" aria-label={film.title}>

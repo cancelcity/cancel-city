@@ -1,4 +1,5 @@
 'use client';
+import {FamilyNav,ProfileScreen} from './whole-game';
 import {ReferenceHome} from './reference-home';
 import {ComicHeader,ComicTicker} from './comic-chrome';
 import {PrintedCard} from './printed-card';
@@ -32,7 +33,7 @@ import {CardSpecialPreview} from './special-cinematic';
 import {AnimatedNumber,CITY_EASE,useCityMotion} from './city-motion';
 import {CityGameHeader,CityGameNavigation} from './game-chrome';
 
-type View='roast'|'home'|'packs'|'collection'|'settings'|'battle'|'missions'|'market'|'lore'|'leaderboard'|'admin'|'city'|'stash';
+type View='profile'|'roast'|'home'|'packs'|'collection'|'settings'|'battle'|'missions'|'market'|'lore'|'leaderboard'|'admin'|'city'|'stash';
 
 function Dossier({card,onNotice}:{card:Card;onNotice:(s:string)=>void}){
  const {save,run,busy,error}=useGame();const [foil,setFoil]=useState(false),[confirm,setConfirm]=useState(false),[exporting,setExporting]=useState(false),[forged,setForged]=useState(0);const q=quantity(save,card.id),reduced=useCityMotion();
@@ -57,11 +58,13 @@ export function Game({view}:{view:View}){
 
  const navActive=view==='packs'||view==='collection'||view==='market'||view==='stash'?view:'city';
 
- return <div className={`arcade-shell view-${view} ${view==='collection'||view==='packs'?'reference-page':''}`}>
+ return <div className={`arcade-shell view-${view} reference-page whole-game`}>
   <a href="#main" className="skip-link">Skip to game</a>
   <ComicHeader/>
   {error&&<div className="error-banner" role="alert"><ShieldAlert size={20}/><span>{error}</span><Link href="/settings/">Save recovery</Link><button onClick={clearError} aria-label="Dismiss error"><X size={18}/></button></div>}
   <motion.main id="main" className="arcade-main" key={view} initial={reduced?false:{opacity:0}} animate={{opacity:1}} transition={{duration:reduced?0:.22,ease:CITY_EASE}}>
+   <FamilyNav view={view}/>
+   {view==='profile'&&<ProfileScreen/>}
    {view==='packs'&&<Packs onInspect={setSelected} onOdds={()=>setOdds(true)}/>}
    {view==='market'&&<MarketScreen onInspect={setSelected}/>}
    {view==='stash'&&<StashScreen/>}
@@ -73,7 +76,7 @@ export function Game({view}:{view:View}){
    {view==='missions'&&<MissionsScreen/>}
    {view==='roast'&&<RoastNight/>}
   </motion.main>
-  {view==='collection'||view==='packs'?<ComicTicker/>:<CityGameNavigation active={navActive}/>}
+  <ComicTicker/>
   <AnimatePresence>{notice&&<motion.div key={notice} className="toast" role="status" initial={reduced?false:{opacity:0,y:24,scale:.94}} animate={{opacity:1,y:0,scale:1}} exit={{opacity:0,y:12}} transition={{duration:reduced?0:.25,ease:CITY_EASE}}><Sparkles size={19}/>{notice}</motion.div>}</AnimatePresence>
   <AnimatePresence>{migration&&<Dialog key="migration" title="BRING YOUR CITY WITH YOU." onClose={()=>{}}><p>Your browser has existing progress. Keep it in your cloud account, or start a fresh verified account. Your choice transfers progress inside the game. No files or downloads are required.</p><p>Imported progress stays playable but cannot enter verified rankings. Cloud saves survive device changes when signed in with the same account.</p><div className="dialog-actions"><button className="button magenta" disabled={busy} onClick={()=>void migrate(true)}>KEEP MY PROGRESS</button><button className="button paper" disabled={busy} onClick={()=>void migrate(false)}>START FRESH</button></div></Dialog>}{help&&<Dialog key="help" title="Welcome to the worst city." onClose={closeHelp}><ol className="how-to-play"><li><b>Open your free packs.</b> Each pack draws five residents. Get three welcome packs and claim three more every UTC day.</li><li><b>Reveal and collect.</b> Your results are saved before the animation. Refreshing resumes the same opening.</li><li><b>Turn duplicates into foils.</b> Three regular copies fuse into one cosmetic foil. Inspect a card in Collection to fuse or download it.</li><li><b>Complete city jobs.</b> Daily, weekly and journey goals earn extra packs. Claim completed jobs on the Jobs board.</li></ol><p className="fine-print">Your game saves automatically; continue on another device with the same account. Foils and levels do not change drop rates.</p><button className="button magenta" onClick={closeHelp}>GOT IT. LET ME IN. <ArrowRight size={18}/></button></Dialog>}
   {upcoming&&<Dialog key="upcoming" title={upcoming==='Lore'?'Everyone is the problem.':`${upcoming} comes later.`} onClose={()=>setUpcoming('')}><p>{upcoming==='Lore'?'Welcome to Cancel City. A city of performative outrage, terminally online villains, corporate disasters and terrible financial opinions. Collect the residents. Fuse the duplicates. Nobody is the hero.':'This first release focuses on free pack opening, collecting residents and foil fusion. This feature is planned for a later release.'}</p><button className="button magenta" onClick={()=>setUpcoming('')}>BACK TO THE CITY</button></Dialog>}

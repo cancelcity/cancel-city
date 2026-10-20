@@ -1,6 +1,6 @@
 # Cancel City — game source
 
-Playable source mirror for Cancel City. This snapshot contains saved **Site version 41**, source commit `6d27dc8f6e9b3419a15540f0d0c754c6fec32790`.
+Playable source mirror for Cancel City. This snapshot contains saved **Site version 42**, source commit `50545d0ce35df98bb2e1dab3dfcd134884fe5ea9`.
 
 ## Download the latest uploaded version
 
@@ -22,6 +22,8 @@ The game is a web application. Downloading its source does not copy player accou
 Karen's original motion-comic animation has been restored in battles and previews after the articulated experiment was rejected. `/cinema/karen/` now previews the original special; `/cinema/` retains the original film. The experiment is archived, not part of runtime playback. See `docs/karen-benchmark.md` for its historical notes.
 
 A punk comic collectible card game. Everyone is the problem.
+
+The unified game design uses one navigation and printed-paper interface across Home, City, Cards, Packs, Battle, Market, Events, the Archive, cinema and the Permanent Record (`/profile/`). Cards groups residents, props and crew; Profile groups rankings, settings and save management. Home continues into the neighbourhood, and Airfryer Gate connects Home, City, Events and Court. All existing game artwork and rules are retained.
 
 The Home (`/`), Collection (`/collection/`), Packs (`/packs/`) and Battle (`/battle/`) pages now use the supplied page compositions. The separate playable city remains at `/city/`. Current character identities and real save values are preserved. The October visual revision uses: detailed inked city backdrop, graffiti logo, distressed paper UI, cream card frames and grotesque hand-inked portraits. Existing saves retain stable IDs and upgrade to schema 2 without losing their collections. Rarity labels are Common / Uncommon / Rare / Epic / Mythic; stable rarity IDs and odds are unchanged.
 

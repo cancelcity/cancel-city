@@ -226,7 +226,7 @@ const DRAMA_DECK_CATALOG:readonly DramaDeckCardDef[]=[
 export function CourtBattleScreen(){const params=useSearchParams();return params.get('case')==='airfryer'?<AirfryerHearing/>:<RegularCourtBattleScreen/>;}
 function RegularCourtBattleScreen(){
  const {save,run,enter,busy,error,hydrated}=useGame(),params=useSearchParams(),{guided}=useStarterGuide();
- const [cinematicMode,setCinematicMode]=useCinematicMode(),[gallery,setGallery]=useState(params.get('specials')==='1'),[rules,setRules]=useState(false),[showDocket,setShowDocket]=useState(Boolean(params.get('vs'))&&!params.get('raid')),[team,setTeam]=useState<string[]>(LOANERS),[district,setDistrict]=useState<DistrictId>('street'),[mode,setMode]=useState<CourtMode>('campaign'),[day,setDay]=useState<string|null>(null),suggested=useRef(false);
+ const [cinematicMode,setCinematicMode]=useCinematicMode(),[gallery,setGallery]=useState(params.get('specials')==='1'),[rules,setRules]=useState(false),[showDocket,setShowDocket]=useState(params.get('crew')==='1'||Boolean(params.get('vs'))&&!params.get('raid')),[team,setTeam]=useState<string[]>(LOANERS),[district,setDistrict]=useState<DistrictId>('street'),[mode,setMode]=useState<CourtMode>('campaign'),[day,setDay]=useState<string|null>(null),suggested=useRef(false);
  const isRaid=params.get('raid')==='1';
  const rivalBy=params.get('by');
  const vsParam=params.get('vs');
