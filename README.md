@@ -1,6 +1,6 @@
 # Cancel City — game source
 
-Playable source mirror for Cancel City. This snapshot contains saved **Site version 40**, source commit `1a22aec76f769d58e2b11ce6b2ac905dde0036fa`.
+Playable source mirror for Cancel City. This snapshot contains saved **Site version 41**, source commit `6d27dc8f6e9b3419a15540f0d0c754c6fec32790`.
 
 ## Download the latest uploaded version
 
@@ -23,7 +23,7 @@ Karen's original motion-comic animation has been restored in battles and preview
 
 A punk comic collectible card game. Everyone is the problem.
 
-The October visual revision follows the four attached mockups: detailed inked city backdrop, graffiti logo, distressed paper UI, cream card frames and grotesque hand-inked portraits. Existing saves retain stable IDs and upgrade to schema 2 without losing their collections. Character display names and catalogue stats now follow the reference characters. Rarity labels are Common / Uncommon / Rare / Epic / Mythic; stable rarity IDs and odds are unchanged.
+The Home (`/`), Collection (`/collection/`), Packs (`/packs/`) and Battle (`/battle/`) pages now use the supplied page compositions. The separate playable city remains at `/city/`. Current character identities and real save values are preserved. The October visual revision uses: detailed inked city backdrop, graffiti logo, distressed paper UI, cream card frames and grotesque hand-inked portraits. Existing saves retain stable IDs and upgrade to schema 2 without losing their collections. Rarity labels are Common / Uncommon / Rare / Epic / Mythic; stable rarity IDs and odds are unchanged.
 
 See `docs/roster-expansion.md` for the Cult of Personality expansion and download-free migration update. The agreed city is implemented; see `docs/city-spec.md` for twelve plots, Influence, resident stories and finite missions.
 

@@ -15,7 +15,7 @@ export function CityGameHeader() {
 
   return (
     <header className="city-game-header">
-      <Link href="/city/" className="city-game-logo" aria-label="Cancel City home">
+      <Link href="/" className="city-game-logo" aria-label="Cancel City home">
         <CityLogo small />
       </Link>
 

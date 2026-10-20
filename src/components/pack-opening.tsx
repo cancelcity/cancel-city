@@ -1,4 +1,9 @@
 'use client';
+import Link from 'next/link';
+import {Layers,Library,ShoppingCart,Swords,Ticket,ArrowRight} from 'lucide-react';
+import {PrintedCard} from './printed-card';
+import {PackWrapper} from './brand';
+import {CARDS} from '../data/cards';
 import { AnimatePresence, motion } from 'motion/react';
 import { CSSProperties, useEffect, useState } from 'react';
 import { Check, Gift, Info, Sparkles } from 'lucide-react';
@@ -12,11 +17,11 @@ import { CityLogo } from './brand';
 import { CITY_EASE, useCityMotion } from './city-motion';
 
 const DEMO_PULLS: Pull[] = [
-  { cardId: 'CC063', slot: 0, isNewDiscovery: true, regularQuantityAfter: 1 }, // Infinite Rizz (NEW)
-  { cardId: 'CC064', slot: 1, isNewDiscovery: false, regularQuantityAfter: 2 }, // Big Bald Energy
-  { cardId: 'CC023', slot: 2, isNewDiscovery: true, regularQuantityAfter: 1 }, // Fraudo Baggins
-  { cardId: 'CC002', slot: 3, isNewDiscovery: false, regularQuantityAfter: 2 }, // Light Yagamod
-  { cardId: 'CC001', slot: 4, isNewDiscovery: true, regularQuantityAfter: 1 }, // Yasuo 0/10
+  { cardId: 'CC008', slot: 0, isNewDiscovery: true, regularQuantityAfter: 1 }, // Infinite Rizz (NEW)
+  { cardId: 'CC003', slot: 1, isNewDiscovery: false, regularQuantityAfter: 2 }, // Big Bald Energy
+  { cardId: 'CC030', slot: 2, isNewDiscovery: true, regularQuantityAfter: 1 }, // Fraudo Baggins
+  { cardId: 'CC023', slot: 3, isNewDiscovery: false, regularQuantityAfter: 2 }, // Light Yagamod
+  { cardId: 'CC028', slot: 4, isNewDiscovery: true, regularQuantityAfter: 1 }, // Yasuo 0/10
 ];
 
 function PackCardSlot({
@@ -72,10 +77,8 @@ function PackCardSlot({
           transition={{ duration: reduced ? 0 : 0.62, delay: reduced ? 0 : delay, ease: CITY_EASE }}
         >
           <div className="pack-card-front" aria-hidden={!revealed}>
-            <ResidentCard
+            <PrintedCard
               card={card}
-              compact
-              isNew={pull.isNewDiscovery}
               onClick={revealed && !collecting ? () => onInspect(card) : undefined}
             />
           </div>
@@ -125,7 +128,8 @@ export function Packs({
   const [cascadeFrom, setCascadeFrom] = useState(0);
   const [spotlight, setSpotlight] = useState<Pull | null>(null);
   const [breakingPull, setBreakingPull] = useState<Pull | null>(null);
-  const [demoRevealed, setDemoRevealed] = useState(2);
+  const [demoRevealed, setDemoRevealed] = useState(5);
+  const [batchRemaining,setBatchRemaining]=useState(0);
   const [clock, setClock] = useState<Date | null>(null);
 
   useEffect(() => {
@@ -202,10 +206,6 @@ export function Packs({
       const canOpenNow = hydrated && !busy && !error && (!save || save.packBalance > 0);
       if (canOpenNow) {
         await openAndRevealFirst();
-      } else {
-        const nextIdx = demoRevealed < 5 ? demoRevealed : 1;
-        setDemoRevealed(nextIdx + 1);
-        if (DEMO_PULLS[nextIdx]) triggerBreakingCutIn([DEMO_PULLS[nextIdx]]);
       }
       return;
     }
@@ -250,204 +250,12 @@ export function Packs({
   const revealedCount = session ? session.revealedCount : demoRevealed;
   const allRevealed = !!session && session.revealedCount >= 5;
 
-  return (
-    <section
-      className={`pack-tabletop-stage ${session ? 'in-session' : 'is-preview'} ${tearing ? 'is-tearing' : ''} ${collecting ? 'is-collecting' : ''}`}
-      aria-label="Open Packs tabletop"
-    >
-      <div className="pack-tabletop-backdrop" aria-hidden="true" />
-      <div className="pack-tabletop-vignette" aria-hidden="true" />
-
-      {/* Tabletop ambient props matching the bottom-left mockup */}
-      <div className="pack-prop-soda" aria-hidden="true">
-        <span>PULL</span>
-        <span>POST</span>
-        <span>COPE</span>
-      </div>
-
-      <div className="pack-prop-note" aria-hidden="true">
-        <span>
-          GOOD
-          <br />
-          PULLS
-          <br />
-          BETTER
-          <br />
-          PEOPLE
-        </span>
-        <b>☺</b>
-      </div>
-
-      {/* Top Brush Header */}
-      <header className="pack-header-banner">
-        <div className="pack-brush-title">
-          <h1>OPEN PACKS</h1>
-        </div>
-        <div className="pack-per-sticker">
-          <b>5 RESIDENTS</b>
-          <span>PER PACK</span>
-        </div>
-      </header>
-
-      {/* Main Tabletop Row: Left Foil Pack Wrapper + 5 Cards Fan */}
-      <div className="pack-table-workspace">
-        {/* Left Foil Booster Pack */}
-        <div className="pack-wrapper-column">
-          <button
-            type="button"
-            className={`pack-foil-pouch ${tearing ? 'is-ripping' : ''}`}
-            disabled={!canOpen && !!session && allRevealed}
-            onClick={() => (session ? void reveal(false) : void openAndRevealFirst())}
-            aria-label="Open a Cancel City trading card pack"
-          >
-            <span className="pouch-crimp top" aria-hidden="true" />
-            {tearing && (
-              <span className="pouch-tear-slash" aria-hidden="true">
-                <b>⚡ RRRIP!! ⚡</b>
-              </span>
-            )}
-            <span className="pouch-body">
-              <span className="pouch-splatter" aria-hidden="true" />
-              <CityLogo small priority={false} />
-              <strong className="pouch-sub">TRADING CARDS</strong>
-              <span className="pouch-ribbon">
-                {session ? `${5 - revealedCount} LEFT` : '⚡ RRRIP PACK!'}
-              </span>
-            </span>
-            <span className="pouch-crimp bottom" aria-hidden="true" />
-          </button>
-
-          {canClaimDaily && (
-            <button
-              type="button"
-              className="pack-daily-claim-pill"
-              disabled={busy}
-              onClick={() => void run({ type: 'daily' })}
-            >
-              <Gift size={14} />
-              <span>CLAIM +3 FREE DAILY PACKS</span>
-            </button>
-          )}
-        </div>
-
-        {/* 5-Card Tabletop Spread */}
-        <div className="pack-five-spread">
-          {activePulls.map((pull, i) => (
-            <PackCardSlot
-              key={`${session?.id || 'demo'}-${i}`}
-              pull={pull}
-              index={i}
-              revealed={i < revealedCount}
-              next={i === revealedCount}
-              busy={busy || !!spotlight}
-              collecting={collecting}
-              delay={cascade ? Math.max(0, i - cascadeFrom) * 0.08 : 0}
-              onReveal={() => void reveal(false)}
-              onInspect={onInspect}
-            />
-          ))}
-        </div>
-      </div>
-
-      <AnimatePresence>
-        {breakingPull && !spotlight && (() => {
-          const bCard = CARD_BY_ID[breakingPull.cardId];
-          const bRarity = rarityOf(bCard.rarity);
-          return (
-            <motion.div
-              key={`cutin-${breakingPull.cardId}-${breakingPull.slot}`}
-              className={`breaking-cancel-cutin rarity-${bCard.rarity}`}
-              style={{ '--cutin-color': bRarity.color } as CSSProperties}
-              initial={{ opacity: 0, scale: 0.85, rotate: -6, y: 24 }}
-              animate={{ opacity: 1, scale: 1, rotate: -2.5, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: -20 }}
-              transition={{ duration: 0.28, ease: CITY_EASE }}
-              onClick={() => setBreakingPull(null)}
-              role="status"
-            >
-              <div className="cutin-hazard-tape top" aria-hidden="true">
-                BREAKING CANCEL ALERT ★ BREAKING CANCEL ALERT ★ BREAKING CANCEL ALERT ★
-              </div>
-              <div className="cutin-body">
-                <div className="cutin-speedlines" aria-hidden="true" />
-                <div className="cutin-portrait-wrap">
-                  <img src={bCard.art} alt="" className="cutin-portrait-img" draggable={false} />
-                  <span className="cutin-stamp">
-                    {bCard.rarity === 'public-enemy'
-                      ? '★ PUBLIC ENEMY! ★'
-                      : bCard.rarity === 'uncancelable'
-                        ? '★ UNCANCELABLE! ★'
-                        : '★ NEW RESIDENT! ★'}
-                  </span>
-                </div>
-                <div className="cutin-copy">
-                  <span className="cutin-kicker">
-                    {bRarity.name.toUpperCase()} · {bCard.ability.toUpperCase()}
-                  </span>
-                  <h2>{bCard.name.toUpperCase()}</h2>
-                  <p>“{bCard.quote}”</p>
-                </div>
-              </div>
-              <div className="cutin-hazard-tape bottom" aria-hidden="true">
-                CLICK TO DISMISS ★ ZERO REMORSE ★ MAXIMUM CLOUT ★
-              </div>
-            </motion.div>
-          );
-        })()}
-      </AnimatePresence>
-
-      {spotlight && (
-        <div className="pull-cinema-overlay" role="status">
-          <PackFilm pull={spotlight} onComplete={() => setSpotlight(null)} />
-        </div>
-      )}
-
-      {/* Bottom Controls matching mockup: 2 / 5 REVEALED + REVEAL NEXT + VIEW DROP RATES */}
-      <footer className="pack-bottom-controls">
-        <div className="pack-reveal-center">
-          <div className="pack-revealed-counter">
-            <b>
-              {revealedCount} / 5 REVEALED
-            </b>
-            {session && session.revealedCount > 0 && session.revealedCount < 5 && (
-              <button
-                type="button"
-                className="pack-reveal-all-inline"
-                disabled={busy}
-                onClick={() => void reveal(true)}
-              >
-                (REVEAL ALL)
-              </button>
-            )}
-          </div>
-
-          {allRevealed ? (
-            <button
-              type="button"
-              className="pack-reveal-next-btn collect-mode"
-              disabled={busy || !!spotlight}
-              onClick={() => void collect()}
-            >
-              <Check size={24} />
-              <span>COLLECT ALL 5</span>
-            </button>
-          ) : (
-            <button
-              type="button"
-              className="pack-reveal-next-btn"
-              disabled={busy || !!spotlight}
-              onClick={() => void reveal(false)}
-            >
-              <span>REVEAL NEXT</span>
-            </button>
-          )}
-        </div>
-
-        <button type="button" className="pack-drop-rates-btn" onClick={onOdds}>
-          <Info size={16} />
-          <span>VIEW DROP RATES</span>
-        </button>
-      </footer>
-    </section>
-  );
+  const openNext=async()=>{await openAndRevealFirst();if(useGame.getState().save?.pendingOpening&&batchRemaining>0)setBatchRemaining(n=>n-1);};
+  return <section className={`reference-packs ${session?'in-session':'is-preview'} ${tearing?'is-tearing':''}`} aria-label="Open Packs">
+   <aside className="reference-pack-sidebar"><CityLogo/><span className="tape paper">PACKS</span><nav aria-label="Pack destinations"><Link href="/packs/" className="active"><Layers/>OPEN PACKS</Link><Link href="/collection/"><Library/>COLLECTION</Link><Link href="/market/"><ShoppingCart/>MARKET</Link><Link href="/battle/"><Swords/>BATTLE</Link></nav></aside>
+   <div className="reference-pack-theater"><div className="reference-pack-burst" aria-hidden="true"/><div className="reference-pack-shards" aria-hidden="true">{Array.from({length:20},(_,i)=><i key={i} style={{'--shard':i} as CSSProperties}/>)}</div><div className="reference-pack-fan">{activePulls.map((pull,i)=><PackCardSlot key={`${session?.id||'preview'}-${i}`} pull={pull} index={i} revealed={!session||i<revealedCount} next={!!session&&i===revealedCount} busy={busy||!!spotlight||!session} collecting={collecting} delay={cascade?Math.max(0,i-cascadeFrom)*.08:0} onReveal={()=>void reveal(false)} onInspect={onInspect}/>)}</div><span className="reference-pull-rarity tape pink">{session?`${revealedCount} / 5 REVEALED`:'MYTHIC · CATALOGUE PREVIEW'}</span><button className="reference-pack-wrapper" aria-label={session?'Reveal next resident':'Open one pack'} disabled={session?busy||allRevealed||!!spotlight:!canOpen} onClick={()=>void(session?reveal(false):openNext())}><PackWrapper/></button>{session&&<div className="reference-reveal-actions"><button className="button magenta" disabled={busy||!!spotlight||collecting} onClick={()=>void(allRevealed?collect():reveal(false))}>{allRevealed?'COLLECT ALL 5':'REVEAL NEXT'}<ArrowRight size={18}/></button>{!allRevealed&&<button className="button dark" disabled={busy||!!spotlight} onClick={()=>void reveal(true)}>REVEAL ALL</button>}</div>}</div>
+   <aside className="reference-pack-info"><Link className="pack-poster" href="/city/"><span className="tape yellow">SCANDAL<br/>SEASON</span><p>Bad people.<br/>Good content.<br/><b>AIRFRYER GATE IS OPEN.</b></p><strong>EXPLORE YOUR CITY →</strong></Link><section className="reference-odds"><button onClick={onOdds}><h2>DROP RATES</h2><Info size={19}/></button><dl>{RARITIES.map(r=><div key={r.id} style={{color:r.color}}><dt>{r.name}</dt><dd>{(r.weight*100).toFixed(1)}%</dd></div>)}</dl><small>Same public odds for every pack.</small></section><section className="reference-pack-collection"><h2>YOUR COLLECTION</h2><b><Library size={24}/>{save?.discoveredCardIds.length||0} / {CARDS.length}</b><div className="progress-track"><i style={{width:`${(save?.discoveredCardIds.length||0)/CARDS.length*100}%`}}/></div><Link href="/collection/">VIEW COLLECTION <ArrowRight size={17}/></Link></section></aside>
+   <footer className="reference-pack-purchase"><button className="pack-purchase single" disabled={!canOpen||!!session} onClick={()=>void openNext()}><span className="purchase-wrapper"><PackWrapper/></span><span><b>{batchRemaining?`NEXT PACK · ${batchRemaining} LEFT`:'SINGLE PACK'}</b><small>5 residents · independent draws</small><strong><Ticket/>1</strong></span></button><button className="pack-purchase ten" disabled={!canOpen||!!session||(save?.packBalance??0)<10||batchRemaining>0} onClick={async()=>{await openAndRevealFirst();if(useGame.getState().save?.pendingOpening)setBatchRemaining(9);}}><span className="purchase-wrapper"><PackWrapper/></span><span><b>10-PACK</b><small>Open ten packs, one at a time</small><strong><Ticket/>10</strong></span></button><button className="pack-daily-sticker" disabled={!canClaimDaily||busy} onClick={()=>void run({type:'daily'})}><span>3 FREE<br/>DAILY PACKS!</span><small>{canClaimDaily?'CLAIM YOURS →':!save?'OPEN A PACK TO BEGIN':'NEXT RESET: 00:00 UTC'}</small></button></footer>
+   {spotlight&&<div className="pull-cinema-overlay" role="status"><PackFilm pull={spotlight} onComplete={()=>setSpotlight(null)}/></div>}
+  </section>;
 }
