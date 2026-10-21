@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import {ComicHeader,ComicTicker} from './comic-chrome';
+import {DuelArena,DuelRules} from './duel-arena';
 import {PrintedCard} from './printed-card';
 import {AirfryerHearing} from './airfryer-case';
 import {useSearchParams} from 'next/navigation';
@@ -225,8 +226,10 @@ const DRAMA_DECK_CATALOG:readonly DramaDeckCardDef[]=[
 
 export function CourtBattleScreen(){const params=useSearchParams();return params.get('case')==='airfryer'?<AirfryerHearing/>:<RegularCourtBattleScreen/>;}
 function RegularCourtBattleScreen(){
- const {save,run,enter,busy,error,hydrated}=useGame(),params=useSearchParams(),{guided}=useStarterGuide();
+ const {save,run,enter,busy,error,clearError,hydrated}=useGame(),params=useSearchParams(),{guided}=useStarterGuide();
  const [cinematicMode,setCinematicMode]=useCinematicMode(),[gallery,setGallery]=useState(params.get('specials')==='1'),[rules,setRules]=useState(false),[showDocket,setShowDocket]=useState(params.get('crew')==='1'||Boolean(params.get('vs'))&&!params.get('raid')),[team,setTeam]=useState<string[]>(LOANERS),[district,setDistrict]=useState<DistrictId>('street'),[mode,setMode]=useState<CourtMode>('campaign'),[day,setDay]=useState<string|null>(null),suggested=useRef(false);
+ const [previewId,setPreviewId]=useState('court-preview');
+ useEffect(()=>setPreviewId(crypto.randomUUID()),[]);
  const isRaid=params.get('raid')==='1';
  const rivalBy=params.get('by');
  const vsParam=params.get('vs');
@@ -234,30 +237,35 @@ function RegularCourtBattleScreen(){
  const rivalCrew=vsCards.length===3?vsCards:['CC002','CC006','CC003'];
  const raidChallengeKey=isRaid?`rival:${rivalBy||'CancelMob'}:${rivalCrew.join(',')}:450`:null;
  const match=save?.battle.active,cleared=save?.battle.clearedDistrictIds||[],selectedDistrict=isRaid?'crypto':courtDistrict(district,mode,cleared);
- const previewMatch=match||createMatch('court-preview',selectedDistrict,team.length===3?team:LOANERS,{version:3,mode:mode==='daily'?'campaign':mode,challengeKey:raidChallengeKey});
+ const previewMatch=match||createMatch(previewId,selectedDistrict,team.length===3?team:LOANERS,{version:4,mode:mode==='daily'?'campaign':mode,challengeKey:raidChallengeKey});
+ const clearRoastIfActive=async()=>{const roast=useGame.getState().save?.roast;if(!roast)return;if(roast.phase!=='finished'&&!await run({type:'roast-surrender',matchId:roast.id,step:roast.step}))return;const finished=useGame.getState().save?.roast;if(finished?.phase==='finished')await run({type:'roast-leave',matchId:finished.id,step:finished.step});};
  useEffect(()=>{if(params.get('vs')&&!params.get('raid'))setShowDocket(true);},[params]);
  useEffect(()=>{if(guided&&save&&!match&&!suggested.current){setTeam(starterSquad(save));suggested.current=true;}},[guided,save,match]);
  useEffect(()=>{const update=()=>setDay(new Date().toISOString().slice(0,10));update();const timer=setInterval(update,30000);return()=>clearInterval(timer);},[]);
- const start=async(ids=team,id=selectedDistrict,playMode=mode)=>{if(!save&&!await enter())return;setShowDocket(false);await run({type:'battle-start',matchId:crypto.randomUUID(),districtId:id,team:ids,mode:playMode,challengeKey:raidChallengeKey||undefined});};
- const leave=async()=>{if(!match){setShowDocket(true);return;}setTeam(match.player.map(f=>f.cardId));setDistrict(match.districtId);setMode(match.mode);setShowDocket(true);await run({type:'battle-leave',matchId:match.id});};
+ const start=async(ids=team,id=selectedDistrict,playMode=mode)=>{if(!save&&!await enter())return;setShowDocket(false);await run({type:'battle-start',rulesVersion:4,matchId:crypto.randomUUID(),districtId:id,team:ids,mode:playMode,challengeKey:raidChallengeKey||undefined});};
+ const leave=async()=>{if(!match){setShowDocket(true);return;}setTeam(match.player.map(f=>f.cardId));setDistrict(match.districtId);setMode(match.mode);setShowDocket(true);setPreviewId(crypto.randomUUID());await run({type:'battle-leave',matchId:match.id});};
  const inArena=!showDocket;
  return <div className={`court-page reference-page reference-battle ${inArena?'court-playing':''} ${isRaid?'court-raid-emergency':''}`}><ComicHeader/><div className="court-toolbar"><Link href="/city/" aria-label="Return to the city"><ArrowLeft size={16}/><span>THE CITY</span></Link><div><small>{isRaid?'🚨 5-STAR RAID TRIBUNAL':'SCREENSHOT COURT'}</small><b>{isRaid?'RIVAL CHALLENGE · FIRST-WIN BOUNTY':inArena?'HEARING IN PROGRESS':'DEPARTMENT OF PUBLIC HUMILIATION'}</b></div><span className="court-record">{save?.battle.wins||0} W <i/> {save?.battle.losses||0} L</span><button type="button" onClick={()=>setShowDocket(d=>!d)}><Users size={15}/><span>{showDocket?'BACK TO HEARING':'CASE DOCKET / CREW'}</span></button><button aria-label="Special attack theater" onClick={()=>setGallery(true)}><Film size={16}/><span>SPECIALS</span></button><button aria-label="Battle rules and settings" onClick={()=>setRules(true)}><HelpCircle size={16}/><span>RULES & SETTINGS</span></button></div>
- {error&&<div className="reference-battle-error" role="alert">{error}<Link href="/settings/">SAVE RECOVERY →</Link></div>}<div className="court-content" aria-label="Screenshot Court battle">{inArena?<CourtArena key={`${previewMatch.id}:${previewMatch.player.map(f=>f.cardId).join('-')}:${previewMatch.districtId}`} match={previewMatch} isPreview={!match} isRaid={isRaid} rivalBy={params.get('by')} onAutoStart={async(action)=>{const mid=crypto.randomUUID();if(!save&&!await enter())return;if(await run({type:'battle-start',matchId:mid,districtId:selectedDistrict,team:team.length===3?team:LOANERS,mode:mode==='daily'?'campaign':mode,challengeKey:raidChallengeKey||undefined})){await run({type:'battle-act',matchId:mid,step:0,action});}}} paused={gallery||rules} cinematicMode={cinematicMode} onLeave={()=>void leave()} onRematch={()=>void start(previewMatch.player.map(f=>f.cardId),previewMatch.districtId,previewMatch.mode)}/>:<CourtLobby team={team} roster={CARDS.filter(c=>LOANERS.includes(c.id)||quantity(save,c.id).regular+quantity(save,c.id).foil>0)} district={selectedDistrict} mode={mode} day={day} guided={guided} disabled={busy||!hydrated||!!error} onChoose={id=>setTeam(t=>t.includes(id)?t.filter(c=>c!==id):t.length<3?[...t,id]:t)} onTeam={setTeam} onDistrict={setDistrict} onMode={m=>{setMode(m);setDistrict(courtDistrict(district,m,cleared));}} onStart={()=>void start()}/>}</div>
+ {(error||(save?.roast&&save.roast.phase!=='finished'))&&<div className="reference-battle-error" role="alert" style={{display:'flex',alignItems:'center',justifyContent:'space-between',flexWrap:'wrap',gap:'8px'}}><span>{error||'Active Roast Night match in progress.'}</span><div style={{display:'flex',gap:'8px',alignItems:'center'}}>{save?.roast&&<button type="button" className="button magenta small" onClick={async()=>{await clearRoastIfActive();clearError();}}>ABANDON ROAST NIGHT &amp; UNLOCK FIGHT</button>}<button type="button" className="button paper small" onClick={clearError}>DISMISS</button><Link href="/settings/" className="text-link" style={{fontSize:'12px'}}>SAVE RECOVERY →</Link></div></div>}<div className="court-content" aria-label="Screenshot Court battle">{inArena?<CourtArenaRouter key={`${previewMatch.id}:${previewMatch.player.map(f=>f.cardId).join('-')}:${previewMatch.districtId}`} match={previewMatch} isPreview={!match} isRaid={isRaid} rivalBy={params.get('by')} onAutoStart={async(action)=>{if(previewId==='court-preview')return;const mid=previewId;if(!save&&!await enter())return;if(await run({type:'battle-start',rulesVersion:4,matchId:mid,districtId:selectedDistrict,team:team.length===3?team:LOANERS,mode:mode==='daily'?'campaign':mode,challengeKey:raidChallengeKey||undefined})){await run({type:'battle-act',matchId:mid,step:0,action});}}} paused={gallery||rules} cinematicMode={cinematicMode} onLeave={()=>void leave()} onRematch={()=>void start(previewMatch.player.map(f=>f.cardId),previewMatch.districtId,previewMatch.mode)}/>:<CourtLobby team={team} roster={CARDS.filter(c=>LOANERS.includes(c.id)||quantity(save,c.id).regular+quantity(save,c.id).foil>0)} district={selectedDistrict} mode={mode} day={day} guided={guided} disabled={busy||!hydrated} onChoose={id=>setTeam(t=>t.includes(id)?t.filter(c=>c!==id):t.length<3?[...t,id]:t)} onTeam={setTeam} onDistrict={setDistrict} onMode={m=>{setMode(m);setDistrict(courtDistrict(district,m,cleared));}} onStart={()=>void start()}/>}</div>
  <ComicTicker/>
  {gallery&&<Dialog wide title="THE SPECIAL ATTACK THEATER" onClose={()=>setGallery(false)}><CinematicModeControl mode={cinematicMode} onChange={setCinematicMode}/><SpecialGallery mode={cinematicMode}/></Dialog>}
- {rules&&<Dialog title="COURT PROCEDURE / BAD ADVICE, GOOD RULES" onClose={()=>{setRules(false);if(save&&!save.career.tutorialSeen)void run({type:'battle-tutorial'});}}><CinematicModeControl mode={cinematicMode} onChange={setCinematicMode}/><div className="court-rules"><p>Three residents against three. Reduce the whole opposing crew’s composure to zero. Chain multiple Drama &amp; Receipt cards up to 4 Energy per turn, then unleash your combo!</p><dl><dt>CALL OUT / RECEIPTS</dt><dd>Damage the active opponent and gain 1 hype. The preview includes current guard, exposure and weakness.</dd><dt>SPECIAL</dt><dd>Spend 3 hype on the character’s authored ability. Effects and animation are character-specific.</dd><dt>COMMUNITY NOTE / LAWYER UP</dt><dd>Gain 1 hype and block 60% of the next hit. Shield replaces an existing shield; it does not stack.</dd><dt>TAG IN</dt><dd>Select a standing bench resident or play Call The Manager. This spends your turn. A knockout automatically promotes the next resident.</dd><dt>DUO FINISHER</dt><dd>A matching partner needs to be standing with at least 1 hype. Spend 3 lead hype plus 1 partner hype. Once per side per fight.</dd></dl><p>Three matching factions start with 2 hype; three different factions start with a 35% shield. Each resident also has a once-per-battle faction passive. Foils do not change stats.</p><p>Campaign first clears earn 1 pack + 50 XP; daily first wins earn 1 pack + 25 XP. Mastery can add rewards. Practice earns none. After 40 rounds, standing residents and remaining health decide the verdict; a final tie goes to the city.</p><p>Your cards are never consumed. Combat saves before its animation. Surrender records a loss. Sound and reduced motion are controlled in <Link href="/settings/">Settings</Link>.</p></div></Dialog>}</div>;
+ {rules&&<Dialog title="COURT PROCEDURE / BAD ADVICE, GOOD RULES" onClose={()=>{setRules(false);if(save&&!save.career.tutorialSeen)void run({type:'battle-tutorial'});}}><CinematicModeControl mode={cinematicMode} onChange={setCinematicMode}/><div className="court-rules">{previewMatch.rulesVersion===4?<DuelRules/>:<><p>Three residents against three. Reduce the whole opposing crew’s composure to zero. Chain multiple Drama &amp; Receipt cards up to 4 Energy per turn, then unleash your combo!</p><dl><dt>CALL OUT / RECEIPTS</dt><dd>Damage the active opponent and gain 1 hype. The preview includes current guard, exposure and weakness.</dd><dt>SPECIAL</dt><dd>Spend 3 hype on the character’s authored ability. Effects and animation are character-specific.</dd><dt>COMMUNITY NOTE / LAWYER UP</dt><dd>Gain 1 hype and block 60% of the next hit. Shield replaces an existing shield; it does not stack.</dd><dt>TAG IN</dt><dd>Select a standing bench resident or play Call The Manager. This spends your turn. A knockout automatically promotes the next resident.</dd><dt>DUO FINISHER</dt><dd>A matching partner needs to be standing with at least 1 hype. Spend 3 lead hype plus 1 partner hype. Once per side per fight.</dd></dl><p>Three matching factions start with 2 hype; three different factions start with a 35% shield. Each resident also has a once-per-battle faction passive. Foils do not change stats.</p><p>Campaign first clears earn 1 pack + 50 XP; daily first wins earn 1 pack + 25 XP. Mastery can add rewards. Practice earns none. After 40 rounds, standing residents and remaining health decide the verdict; a final tie goes to the city.</p><p>Your cards are never consumed. Combat saves before its animation. Surrender records a loss. Sound and reduced motion are controlled in <Link href="/settings/">Settings</Link>.</p></>}</div></Dialog>}</div>;
 }
 
+function ygoCardType(def:DramaDeckCardDef):{type:string;badge:string;color:string}{if(def.id==='deck-note'||def.id==='deck-notes-app')return {type:'TRAP',badge:'🛑 COUNTER TRAP',color:'#ff2882'};if(def.kind==='guard')return {type:'TRAP',badge:'🛡️ DEFENSE TRAP',color:'#ff2882'};if(def.kind==='switch')return {type:'SUMMON',badge:'👥 SPECIAL SUMMON',color:'#28e8ff'};if(def.kind==='ability'||def.cost>=3)return {type:'TRIBUTE',badge:'👑 TRIBUTE FINISHER',color:'#ffd700'};if(def.id==='deck-receipt'||def.id==='deck-leaked-dm')return {type:'SPELL',badge:'⚡ QUICK-PLAY SPELL',color:'#00e5a3'};return {type:'SPELL',badge:'📜 SPELL CARD',color:'#00e5a3'};}
 function CourtStageOverlay({match,ready,onSwitch}:{match:Match;ready:boolean;onSwitch:(slot:number)=>void}){
- return <div className="reference-battle-crews">{(['player','enemy'] as const).map(side=><div key={side} className={`reference-crew ${side}`}>{match[side].map((f,i)=>{const c=CARD_BY_ID[f.cardId],active=i===match[`${side}Active`];return <div key={f.cardId} className={`reference-fighter ${active?'active':''} ${!f.hp?'knocked-out':''}`}><PrintedCard card={c} health={{value:f.hp,max:maxHp(f.cardId,match.districtId,side,match.rulesVersion)}}/><div className="reference-fighter-status"><Hype value={f.charge}/>{f.guard>0&&<span title="Guard active"><Shield size={17}/></span>}{f.exposed&&<span title="Exposed"><Skull size={17}/></span>}{side==='player'&&!active&&<button disabled={!ready||!f.hp} onClick={()=>onSwitch(i)}>{f.hp?'TAG IN':'CANCELLED'}</button>}{active&&<b>ACTIVE</b>}</div></div>;})}</div>)}</div>;
+ return <div className="reference-battle-crews">{(['player','enemy'] as const).map(side=><div key={side} className={`reference-crew ${side}`}>{match[side].map((f,i)=>{const c=CARD_BY_ID[f.cardId],active=i===match[`${side}Active`];return <div key={f.cardId} className={`reference-fighter ${active?'active':''} ${!f.hp?'knocked-out':''} ${f.guard>0?'in-defense-stance':'in-attack-stance'}`}><PrintedCard card={c} health={{value:f.hp,max:maxHp(f.cardId,match.districtId,side,match.rulesVersion)}} atk={attackPower(c.id,match.districtId,side,match.rulesVersion)} def={f.guard>0?`${Math.round(f.guard*100)}%`:'0%'} stance={f.guard>0?'defense':'attack'}/><div className="reference-fighter-status"><Hype value={f.charge}/>{f.guard>0&&<span className="fighter-stance-badge def" title="Defense Position (60% Shield)"><Shield size={14}/> DEF</span>}{!f.guard&&active&&<span className="fighter-stance-badge atk" title="Attack Position"><Swords size={14}/> ATK</span>}{f.exposed&&<span title="Exposed"><Skull size={17}/></span>}{side==='player'&&!active&&<button disabled={!ready||!f.hp} onClick={()=>onSwitch(i)}>{f.hp?'TAG IN':'CANCELLED'}</button>}{active&&<b>ACTIVE</b>}</div></div>;})}</div>)}</div>;
 }
+
+function CourtArenaRouter(props:Parameters<typeof CourtArena>[0]){return props.match.rulesVersion===4?<DuelArena {...props}/>:<CourtArena {...props}/>;}
 
 function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematch,cinematicMode,paused}:{match:Match;isPreview?:boolean;isRaid?:boolean;rivalBy?:string|null;onAutoStart?:(action:BattleAction)=>Promise<void>;paused:boolean;onLeave:()=>void;onRematch:()=>void;cinematicMode:CinematicMode}){
  const {run,save,busy,error}=useGame(),reduced=useCityMotion(),[completedStep,setCompletedStep]=useState(match.step),[presented,setPresented]=useState(match),[confirm,setConfirm]=useState(false),[logOpen,setLogOpen]=useState(false),[deckOpen,setDeckOpen]=useState(false),[energy,setEnergy]=useState(4),[playedSlots,setPlayedSlots]=useState<number[]>([]),[queuedAction,setQueuedAction]=useState<BattleAction|null>(null),[comboCount,setComboCount]=useState(0),[customSpeech,setCustomSpeech]=useState<string|null>(null),[customSplat,setCustomSplat]=useState<{label:string;val:string}|null>(null),[handOffset,setHandOffset]=useState(0),[playedNotice,setPlayedNotice]=useState<string|null>(null),actionClock=useRef<{key:string;clock:CinematicClock;cues:Set<string>}|null>(null),[stageReady,setStageReady]=useState(true),[actionFrame,setActionFrame]=useState({step:-1,progress:1,impact:true}),turnFocus=useRef<HTMLDivElement>(null);
- const event=match.events.at(-1),animating=completedStep<match.step,finished=match.phase==='finished',suspended=paused||confirm||logOpen||deckOpen,ready=(stageReady||Boolean(isPreview))&&match.phase==='player'&&!animating&&!busy&&!error&&!suspended;
+ const event=match.events.at(-1),animating=completedStep<match.step,finished=match.phase==='finished',suspended=paused||confirm||logOpen||deckOpen,ready=(stageReady||Boolean(isPreview))&&match.phase==='player'&&!animating&&!busy&&!suspended;
  const cinematic=shouldPlaySpecial(match,completedStep,cinematicMode,suspended)&&event?specialPlayback(match,event,event.side==='player'?save?.props.loadout[match.player[event.actor].cardId]||null:null):null,display=presented.step<=match.step?presented:match;
  const finishPresentation=()=>{setPresented(match);setCompletedStep(match.step);requestAnimationFrame(()=>turnFocus.current?.focus({preventScroll:true}));};
  const fighter=match.player[match.playerActive],card=CARD_BY_ID[fighter.cardId],enemy=match.enemy[match.enemyActive],district=districtOf(match.districtId),duos=availableDuos(match,'player'),attack=forecastAction(match,{type:'attack'}),ability=forecastAction(match,{type:'ability'});
+ const playerHp=display.player.reduce((n,f)=>n+f.hp,0),playerMaxLp=display.player.reduce((n,f)=>n+maxHp(f.cardId,match.districtId,'player',match.rulesVersion),0),enemyHp=display.enemy.reduce((n,f)=>n+f.hp,0),enemyMaxLp=display.enemy.reduce((n,f)=>n+maxHp(f.cardId,match.districtId,'enemy',match.rulesVersion),0);
 
  useEffect(()=>{
   setEnergy(4);
@@ -297,7 +305,7 @@ function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematc
   if(!ready)return;
   if(bannerText)setPlayedNotice(bannerText);
   const actionWithCombo:BattleAction={...finalAction};
-  if(count>0&&actionWithCombo.type!=='switch'){
+  if(count>0&&(actionWithCombo.type==='attack'||actionWithCombo.type==='receipt'||actionWithCombo.type==='ability'||actionWithCombo.type==='guard'||actionWithCombo.type==='duo')){
    actionWithCombo.combo=count;
   }
   if(isPreview&&onAutoStart){void onAutoStart(actionWithCombo);return;}
@@ -374,9 +382,9 @@ function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematc
 
  return <section className="court-arena court-v2-arena">
   <div className={`court-theater court-v2-theater ${isImpactShaking?'is-shaking':''} ${isRaid?'raid-sirens-active':''}`}>
-   <div className="reference-battle-score"><div className="battle-player-label"><Skull/><span><b>{save?.alias||'LOCAL MENACE'}</b><small>Professional Hater</small><meter aria-label="Your crew health" min={0} max={display.player.reduce((n,f)=>n+maxHp(f.cardId,match.districtId,'player',match.rulesVersion),0)} value={display.player.reduce((n,f)=>n+f.hp,0)}/></span></div><div className="battle-turn-label"><strong className="tape yellow">TURN {Math.floor(match.step/2)+1}</strong><b>{isPreview?'CHOOSE YOUR FIRST MOVE':match.phase==='player'?'YOUR MOVE':match.phase==='enemy'?'CITY’S MOVE':'FINAL VERDICT'}</b><small>{district.name} · {match.mode}</small></div><div className="battle-player-label enemy"><Skull/><span><b>{rivalBy||district.name}</b><small>Average Person (Allegedly) · AI</small><meter aria-label="Opponent crew health" min={0} max={display.enemy.reduce((n,f)=>n+maxHp(f.cardId,match.districtId,'enemy',match.rulesVersion),0)} value={display.enemy.reduce((n,f)=>n+f.hp,0)}/></span></div></div>
+   <div className="reference-battle-score"><div className="battle-player-label"><Skull/><span><b>{save?.alias||'LOCAL MENACE'}</b><small>Professional Duelist</small><div className="duel-lp-badge"><span className="lp-label">LP</span><strong className="lp-num">{playerHp}</strong><small>/{playerMaxLp}</small></div><meter aria-label="Your crew health" min={0} max={playerMaxLp} value={playerHp}/></span></div><div className="battle-turn-label"><strong className="tape yellow">TURN {Math.floor(match.step/2)+1}</strong><b>{isPreview?'DECLARE OPENING MOVE':match.phase==='player'?'YOUR BATTLE PHASE':match.phase==='enemy'?'ENEMY BATTLE PHASE':'FINAL VERDICT'}</b><small>{district.name} · {match.mode.toUpperCase()} DUEL</small></div><div className="battle-player-label enemy"><Skull/><span><b>{rivalBy||district.name}</b><small>Opponent Duelist · AI</small><div className="duel-lp-badge"><span className="lp-label">LP</span><strong className="lp-num">{enemyHp}</strong><small>/{enemyMaxLp}</small></div><meter aria-label="Opponent crew health" min={0} max={enemyMaxLp} value={enemyHp}/></span></div></div>
    <CourtStageOverlay match={display} ready={ready} onSwitch={slot=>commitTurn({type:'switch',slot},'BENCH TAG-IN!')}/>
-   {!animating&&!finished&&<div className="battle-center-callout"><Skull/><strong>{comboCount?`${comboCount}× COMBO`:'VS'}</strong><span className="tape paper">{comboCount?'RECEIPTS READY':"PROVE WHO’S WORSE"}</span><small>{comboCount?'PLAY ANOTHER CARD OR END TURN':isPreview?'PLAY A CARD TO START':'THE CITY IS WATCHING'}</small></div>}
+   {!animating&&!finished&&<div className="battle-center-callout"><Skull/><strong>{comboCount?`CHAIN x${comboCount}`:'VS'}</strong><span className="tape paper">{comboCount?'CHAIN READY':"DUEL FOR THE BLOCK"}</span><small>{comboCount?'RESOLVE CHAIN OR PLAY CARD':isPreview?'DECLARE OPENING ACTION':'BATTLE PHASE ACTIVE'}</small></div>}
    {/* Center Stage Spiky Comic Speech Bubble & Giant Jagged RATIOED! Starburst */}
    {!finished&&animating&&actionFrame.impact&&latestEvent&&(
     <div className="court-v2-center-fx" aria-hidden="true">
@@ -384,8 +392,8 @@ function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematc
       <b>{latestEvent.title}</b>
      </div>
      <div key={`ratio-${customSplat?.label||latestEvent?.step||0}`} className={`court-ratio-starburst ${latestEvent?.knockout?'is-ko':''}`}>
-      <strong>{latestEvent.knockout?'CANCELLED!':latestEvent.kind==='guard'?'LAWYERED!':latestEvent.damage?'RATIOED!':'ON RECORD'}</strong>
-      <b>{latestEvent.kind==='guard'?'+60%':latestEvent.damage?`-${latestEvent.damage}`:latestEvent.heal?`+${latestEvent.heal}`:''}</b>
+      <strong>{latestEvent.knockout?'DESTROYED TO GRAVEYARD!':latestEvent.kind==='guard'?'DEFENSE HELD!':latestEvent.damage?'BATTLE DAMAGE!':'ON RECORD'}</strong>
+      <b>{latestEvent.kind==='guard'?'+60% DEF':latestEvent.damage?`-${latestEvent.damage} LP`:latestEvent.heal?`+${latestEvent.heal} LP`:''}</b>
      </div>
     </div>
    )}
@@ -408,7 +416,7 @@ function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematc
       <span key={n} className={`energy-orb ${n<=energy?'lit':'spent'}`}/>
      ))}
     </div>
-    <div className="reference-basic-actions"><button disabled={!ready} onClick={()=>commitTurn({type:'attack'},'CALL OUT')}><Swords/>ATTACK</button><button disabled={!ready||fighter.charge<3} title="Requires 3 hype" onClick={()=>commitTurn({type:'ability'},card.ability)}><Zap/>SKILL</button><button disabled={!ready} onClick={()=>commitTurn({type:'guard'},'GUARD')}><Shield/>DEFEND</button><button disabled={!ready} onClick={()=>setDeckOpen(true)}><Users/>DECK</button></div>
+    <div className="reference-basic-actions"><button disabled={!ready} onClick={()=>commitTurn({type:'attack'},'⚔️ ATK (STRIKE)')}><Swords/>⚔️ ATK</button><button disabled={!ready||fighter.charge<3} title="Requires 3 hype" onClick={()=>commitTurn({type:'ability'},`👑 TRIBUTE: ${card.ability}`)}><Zap/>👑 TRIBUTE</button><button disabled={!ready} onClick={()=>commitTurn({type:'guard'},'🛡️ DEF (STANCE)')}><Shield/>🛡️ DEF</button><button disabled={!ready} onClick={()=>setDeckOpen(true)}><Users/>🃏 EXTRA DECK</button></div>
     <div className="energy-aux-links">
      <button type="button" className="aux-deck-btn" onClick={()=>setDeckOpen(true)}>🃏 DECK ({DRAMA_DECK_CATALOG.length})</button>
      <button type="button" onClick={()=>setLogOpen(true)}>LOG ({match.events.length})</button>
@@ -417,7 +425,7 @@ function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematc
    </div>
 
    <div className="court-fanned-hand" role="group" aria-label="Playable drama and receipt cards">
-    {handCards.map((hc,idx)=>(
+    {handCards.map((hc,idx)=>{const ygo=ygoCardType(currentHandDefs[idx]);return (
      <button
       key={hc.id}
       type="button"
@@ -427,9 +435,9 @@ function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematc
       onClick={hc.onPlay}
      >
       <span className="hand-card-cost" aria-label={`Cost ${hc.cost} energy`}>{hc.cost}</span>
-      <span className="hand-card-building-tag">🏢 {hc.building}</span>
+      <span className="hand-card-ygo-badge" style={{borderColor:ygo.color,color:ygo.color}}>{ygo.badge}</span>
       <span className="hand-card-header">
-       <b>{hc.played?'✓ IN COMBO!':hc.title}</b>
+       <b>{hc.played?'✓ CHAIN LINK':hc.title}</b>
       </span>
       <span className="hand-card-art-box">
        <img src={hc.art} alt="" draggable={false}/>
@@ -439,7 +447,7 @@ function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematc
        <small>{hc.desc}</small>
       </span>
      </button>
-    ))}
+    );})}
    </div>
 
    <div className="court-end-turn-module">
@@ -453,10 +461,10 @@ function CourtArena({match,isPreview,isRaid,rivalBy,onAutoStart,onLeave,onRematc
      disabled={!ready}
      onClick={()=>{
       const finalAct=queuedAction||(fighter.charge>=3?{type:'ability'}:{type:'attack'});
-      commitTurn(finalAct,comboCount>0?`🔥 UNLEASHED ${comboCount}X COMBO TURN!`:'TURN ENDED · RECEIPTS DROPPED!');
+      commitTurn(finalAct,comboCount>0?`🔥 CHAIN RESOLVED (${comboCount} CARDS)!`:'END BATTLE PHASE');
      }}
     >
-     <span>{comboCount>0?`UNLEASH ${comboCount}X`:'END TURN'}</span>
+     <span>{comboCount>0?`CHAIN x${comboCount}`:'END PHASE'}</span>
     </button>
    </div>
   </div>

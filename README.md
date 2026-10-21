@@ -1,6 +1,6 @@
 # Cancel City — game source
 
-Playable source mirror for Cancel City. This snapshot contains saved **Site version 42**, source commit `50545d0ce35df98bb2e1dab3dfcd134884fe5ea9`.
+Playable source mirror for Cancel City. This snapshot contains saved **Site version 43**, source commit `c0c8bd67e6fc5bfdaeff40d1be14bebb93da3783`.
 
 ## Download the latest uploaded version
 
@@ -22,6 +22,8 @@ The game is a web application. Downloading its source does not copy player accou
 Karen's original motion-comic animation has been restored in battles and previews after the articulated experiment was rejected. `/cinema/karen/` now previews the original special; `/cinema/` retains the original film. The experiment is archived, not part of runtime playback. See `docs/karen-benchmark.md` for its historical notes.
 
 A punk comic collectible card game. Everyone is the problem.
+
+New Screenshot Court duels use real star-cost summons, optional tributes, HP/ATK/DEF, independent Life Points, saved spell hands and automatic traps. Existing saved battles retain their original rules. See [the duel rules](docs/duel-rules.md).
 
 The unified game design uses one navigation and printed-paper interface across Home, City, Cards, Packs, Battle, Market, Events, the Archive, cinema and the Permanent Record (`/profile/`). Cards groups residents, props and crew; Profile groups rankings, settings and save management. Home continues into the neighbourhood, and Airfryer Gate connects Home, City, Events and Court. All existing game artwork and rules are retained.
 
