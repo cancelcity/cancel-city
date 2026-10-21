@@ -1,10 +1,10 @@
 {
-  "site_version": 45,
-  "source_commit": "cd40e9084ad08b3e64be7f691d4ee714c9eea788",
+  "site_version": 46,
+  "source_commit": "fc80256c0d59cca8169bc6577a28dab02f781424",
   "site": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "repository": "https://github.com/cancelcity/cancel-city",
-  "runtime_asset_count": 1297,
-  "runtime_asset_bytes": 225773028,
-  "omitted_authoring_binary_count": 1148,
+  "runtime_asset_count": 1309,
+  "runtime_asset_bytes": 229659626,
+  "omitted_authoring_binary_count": 1160,
   "export_scope": "All game source, configuration, tests, text documentation and runtime assets. Large original illustration/video production masters in docs are not part of this playable source export."
 }

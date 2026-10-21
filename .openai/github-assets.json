@@ -1,6 +1,6 @@
 {
-  "source_commit": "cd40e9084ad08b3e64be7f691d4ee714c9eea788",
-  "site_version": 45,
+  "source_commit": "fc80256c0d59cca8169bc6577a28dab02f781424",
+  "site_version": 46,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -7672,10 +7672,22 @@
       "git_blob": "ad8c74217c90dae0b10c5f0483f6a062dc18feee"
     },
     {
+      "path": "public/assets/tactics/apology-illustrated.webp",
+      "size": 285096,
+      "sha256": "480a0eebe9c72e2f9c0e5cb6c19fd62b00aabba602a0533ba6557ee44e389dda",
+      "git_blob": "370838041cb4696ca19721c21ce8d707bff198a6"
+    },
+    {
       "path": "public/assets/tactics/apology.svg",
       "size": 1803,
       "sha256": "cb859909845b46dff007d9ebf9177a8d73f688714c7a1a110493a7f0dfe1c442",
       "git_blob": "23381acb0cd7ce6be506c145aeacc4cee828fdfa"
+    },
+    {
+      "path": "public/assets/tactics/ban-illustrated.webp",
+      "size": 344150,
+      "sha256": "14fd82d591a1d3c2904132e84b99f2e2ca58d9fdcbd1e9a4748ba331b3be4ea8",
+      "git_blob": "5acacf20ef7d858ae4b6b17fc6b0ca9d0cba0275"
     },
     {
       "path": "public/assets/tactics/ban.svg",
@@ -7684,10 +7696,34 @@
       "git_blob": "b7fe60c4e43004dfa5c6ee472683d195dd5384d2"
     },
     {
+      "path": "public/assets/tactics/charity-illustrated.webp",
+      "size": 303148,
+      "sha256": "e00b2da65d6c1612e3004020c8cce9e9820cc114bc15dac2fa9625306f3a37ef",
+      "git_blob": "cd6f585176da135b349b2c7186f24f1e2e5ab47e"
+    },
+    {
       "path": "public/assets/tactics/charity.svg",
       "size": 1756,
       "sha256": "c55b8f50821411292ee6ca4a9ab0d477b202a26e3f3ef674630c4f1008c74cdf",
       "git_blob": "7f0471b47b340f823ba78e305ff4f0f54669f558"
+    },
+    {
+      "path": "public/assets/tactics/grass-illustrated.webp",
+      "size": 298104,
+      "sha256": "3345eab09bc52eb3bcb981ea49be0caaadadb8c419261e270c27e6aa20442f0b",
+      "git_blob": "b4cb5fc9bd28df78659566b159cb897aea7d104b"
+    },
+    {
+      "path": "public/assets/tactics/insurance-illustrated.webp",
+      "size": 337150,
+      "sha256": "f6cd89a2367288e922904797c3eecf6de0d059bfe839a4f2f562878874380381",
+      "git_blob": "678c913b3e534398b55671efb0b5c11466d80db7"
+    },
+    {
+      "path": "public/assets/tactics/lawyer-illustrated.webp",
+      "size": 342688,
+      "sha256": "505cd9a64c4bd76d3ccff96a75b54a080bfc33e6fa544e3d90a4302c91d21896",
+      "git_blob": "d9266ea06a40860658b2224b4df357f03d4f880d"
     },
     {
       "path": "public/assets/tactics/lawyer.svg",
@@ -7696,10 +7732,22 @@
       "git_blob": "775b87fe9f7243ce4e519af79171137f59a5f9aa"
     },
     {
+      "path": "public/assets/tactics/leak-illustrated.webp",
+      "size": 310610,
+      "sha256": "140211be95bf2174129799691f2be3b4982cfcf84364013ff678afd727a5e75f",
+      "git_blob": "da62f9a8d5b6120ef59718084dd1880daa794def"
+    },
+    {
       "path": "public/assets/tactics/leak.svg",
       "size": 1756,
       "sha256": "4bea6f761213fcfea43f9e40d4e292bfe1e5e31ad13fa8ac234afc2df1747d06",
       "git_blob": "14873523d1f07146ee74cb6ec5e9e651013a8b23"
+    },
+    {
+      "path": "public/assets/tactics/note-illustrated.webp",
+      "size": 332784,
+      "sha256": "23afd893dc8d26c9720cf06bf594a70220a3735a1c2e59e0fe56a4052d1e7dd2",
+      "git_blob": "f2a54b5679c06bbf65e140755f446301cd073a4e"
     },
     {
       "path": "public/assets/tactics/note.svg",
@@ -7708,16 +7756,40 @@
       "git_blob": "ba11a041842ecf748a1771cf522f04741d46d21a"
     },
     {
+      "path": "public/assets/tactics/ratio-illustrated.webp",
+      "size": 354664,
+      "sha256": "1bf6ad1accfddfc822f312bac47b6b995ae33ce4b7e78e43b40f1a0bded5795c",
+      "git_blob": "331bdeecce254581b0efae52d979037739f64b25"
+    },
+    {
       "path": "public/assets/tactics/ratio.svg",
       "size": 1559,
       "sha256": "5a227fe400546993920203ec4d69de51a1c3b5ca3ec1dc70e3aef30d74db0f86",
       "git_blob": "3a4a886f9061dc6492c39750feb168212490c30a"
     },
     {
+      "path": "public/assets/tactics/receipt-illustrated.webp",
+      "size": 318568,
+      "sha256": "376e88316a7efb06a6094b872746897dec89dbb10cfa062f8d0aba6038bcde52",
+      "git_blob": "ca7ba1fce18882207dc8c7f9a897673e3864ee7a"
+    },
+    {
       "path": "public/assets/tactics/receipt.svg",
       "size": 1686,
       "sha256": "3ea05cf3e3a3a38cd39b43dab39e6a7e01cffd59d17bc71fa00aedbe2e6e9d76",
       "git_blob": "b30888dbed6a30439e1efb081d05e6b638c47f1d"
+    },
+    {
+      "path": "public/assets/tactics/slop-illustrated.webp",
+      "size": 341534,
+      "sha256": "623da5cc34c7c274714f927eaf09188fd796e10b96d664098c8dc5c6d69be257",
+      "git_blob": "7df246127ba646377049a0c11c011cdfa74cecc5"
+    },
+    {
+      "path": "public/assets/tactics/terms-illustrated.webp",
+      "size": 318102,
+      "sha256": "4b0031df0bcc5b07cecee198c6f47587054637fe19e92057a61a7bb1cf5cfd52",
+      "git_blob": "19c83edda6660140e85f74875219dcf701646b80"
     },
     {
       "path": "public/assets/world/cancel-city.webp",

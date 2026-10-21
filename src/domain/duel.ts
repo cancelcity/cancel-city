@@ -1,7 +1,7 @@
 import {CARD_BY_ID} from '../data/cards';
 import {KITS} from '../data/combat-kit';
 import {attackPower,availableDuo,matchSchema,maxHp,type BattleAction,type BattleEvent,type Match,type Side} from './battle';
-import {duelCard,duelStats,MAX_STARS,TURN_STARS,TACTICAL_STAR_CAP,KNOCKOUT_LP,type DuelCardId} from './duel-rules';
+import {duelCard,duelStats,MAX_STARS,TURN_STARS,TACTICAL_STAR_CAP,KNOCKOUT_LP,type DuelCardId,type DuelTrapId} from './duel-rules';
 
 export function frontline(m:Match,side:Side){const f=m[side][m[`${side}Active`]];return f.summoned&&f.hp>0?f:null;}
 export function summonCost(m:Match,side:Side,slot:number,tributeSlot?:number){
@@ -22,9 +22,11 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
  const spend=(cost:number)=>{if(self.stars<cost)throw new Error(`Requires ${cost} stars.`);self.stars-=cost;};
  const requireActor=()=>{if(!actor)throw new Error('Summon a resident before taking this action.');return actor;};
  const discardTrap=()=>{const trap=opponent.trap!;opponent.trap=null;opponent.discard.push(trap);event.reaction=duelCard(trap).name;};
- const counter=()=>{if(opponent.trap!=='ban')return false;discardTrap();event.text='Cease & Desist cancels the effect. Its costs are still spent.';return true;};
+ const counter=(healing=false,allowBan=true)=>{if(!(allowBan&&opponent.trap==='ban'||healing&&opponent.trap==='terms'))return false;const name=duelCard(opponent.trap!).name;discardTrap();event.text=`${name} cancels the effect. Its costs are still spent.`;return true;};
  const hit=(power:number,pierce=false)=>{
-  const a=requireActor();let damage=power*(a.weakened?.7:1)*(target?.exposed?1.25:1);a.weakened=false;
+  const a=requireActor();
+  if(opponent.trap==='insurance'&&target&&target.hp>0&&target.hp<maxHp(target.cardId,m.districtId,other,4)){const restored=Math.min(16,maxHp(target.cardId,m.districtId,other,4)-target.hp);target.hp+=restored;discardTrap();event.text=`Skill Issue Insurance restores ${restored} HP to ${CARD_BY_ID[target.cardId].name} before this hit.`;}
+  let damage=power*(a.weakened?.7:1)*(target?.exposed?1.25:1);a.weakened=false;
   if(target){if(!pierce){damage=Math.max(1,damage-(target.stance==='defense'?duelStats(target.cardId).defense:0));damage*=1-target.guard;}target.guard=0;target.exposed=false;}
   if(opponent.trap==='note'){discardTrap();damage*=.5;}
   damage=Math.max(1,Math.round(damage));
@@ -58,7 +60,7 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
    if(action.type==='duo'&&!duo)throw new Error('Duo requires 3 lead hype, 1 summoned partner hype and an unused Duo.');
    a.charge=0;a.stance='attack';event.kind='ability';event.title=duo?duo.name.toUpperCase():CARD_BY_ID[a.cardId].ability.toUpperCase();
    if(duo){const partner=m[side].find(f=>f.cardId===duo.partnerId)!;partner.charge--;m.duoUsed.push(side);event.duoId=duo.id;event.partnerId=duo.partnerId;}
-   if(counter())break;
+   if(counter(action.type==='ability'&&!!(KITS[a.cardId].heal||KITS[a.cardId].teamHeal)))break;
    const power=attackPower(a.cardId,m.districtId,side,4);
    if(duo){hit(power+Math.round(attackPower(duo.partnerId,m.districtId,side,4)*.65)+12);if(target?.hp)target.weakened=true;break;}
    const k=KITS[a.cardId],extra=CARD_BY_ID[a.cardId].faction==='crypto-degenerates'&&!a.passiveUsed&&target&&target.guard>0?8:0;
@@ -74,11 +76,15 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
   case 'play':{
    const index=self.hand.indexOf(action.cardId);if(index<0)throw new Error('That card is not in your hand.');
    const card=duelCard(action.cardId);if(card.kind!=='spell'&&self.trap)throw new Error('You already have a set trap.');
-   if(card.kind==='spell')requireActor();spend(card.cost);self.hand.splice(index,1);event.title=card.name.toUpperCase();
-   if(card.kind!=='spell'){self.trap=card.id as 'note'|'ban';event.kind='guard';ownTarget();event.text=`${card.name} set. It triggers automatically when its condition is met.`;break;}
+   if(card.kind==='spell')requireActor();
+   if(card.id==='slop'&&!self.deck.length)throw new Error('Your draw pile is empty. AI Slop Tsunami cannot draw.');
+   if(card.id==='grass'&&actor&&actor.hp===maxHp(actor.cardId,m.districtId,side,4)&&!actor.weakened&&!actor.exposed)throw new Error('Your frontline has full HP and no weakness or exposure to remove.');
+   spend(card.cost);self.hand.splice(index,1);event.title=card.name.toUpperCase();
+   if(card.kind!=='spell'){self.trap=card.id as DuelTrapId;event.kind='guard';ownTarget();event.text=`${card.name} set. It triggers automatically when its condition is met.`;break;}
    self.discard.push(card.id);
    const a=requireActor(),hostile=card.id==='receipt'||card.id==='leak'||card.id==='ratio';
    if(hostile){a.stance='attack';if(counter())break;}
+   if(['apology','charity','grass'].includes(card.id)&&counter(true,false))break;
    const power=attackPower(a.cardId,m.districtId,side,4);
    switch(card.id){
     case 'receipt':hit(power);if(target?.hp)target.exposed=true;break;
@@ -86,13 +92,15 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
     case 'ratio':hit(power-5);if(target?.hp)target.weakened=true;break;
     case 'apology':heal(20);a.charge=Math.min(3,a.charge+1);ownTarget();break;
     case 'lawyer':a.stance='defense';a.guard=.35;event.kind='guard';ownTarget();event.text='Defense stance + a temporary 35% shield for the next hit.';break;
+    case 'slop':{let drawn=0,discarded=0;for(let i=0;i<2;i++){const card=self.deck.shift();if(!card)break;drawn++;if(self.hand.length<5)self.hand.push(card);else{self.discard.push(card);discarded++;}}ownTarget();event.kind='guard';event.text=`AI Slop Tsunami draws ${drawn} card${drawn===1?'':'s'}${discarded?`; ${discarded} over the hand limit discarded`:''}. No empty-pile draw.`;break;}
+    case 'grass':heal(12);a.weakened=false;a.exposed=false;ownTarget();event.kind='guard';event.text=`Touch Grass Injunction restores ${event.heal} HP and clears weakness and exposure.`;break;
     case 'charity':for(const f of m[side])if(f.summoned&&f.hp>0){const before=f.hp;f.hp=Math.min(maxHp(f.cardId,m.districtId,side,4),f.hp+12);event.heal+=f.hp-before;}ownTarget();break;
    }
    break;
   }
  }
  // Preserve authored faction passives without granting them to unsummoned reserves.
- if(actor&&actor.hp>0&&!actor.passiveUsed&&!event.reaction.includes('Cease')){
+ if(actor&&actor.hp>0&&!actor.passiveUsed&&!['Cease & Desist','Terms & Conditions Apply'].includes(event.reaction)){
   const faction=CARD_BY_ID[actor.cardId].faction;let passive='';
   if(faction==='terminally-online'&&action.type==='attack'&&target){target.charge=Math.max(0,target.charge-1);passive='FIRST REPLY −1 HYPE';}
   if(faction==='corporate-hell'&&actor.hp<=maxHp(actor.cardId,m.districtId,side,4)/3){heal(8);passive='EMERGENCY PR +8';}
@@ -102,6 +110,7 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
   if(passive){actor.passiveUsed=true;event.passive=passive;}
  }
  if(!event.text)event.text=`${event.title}: ${event.damage} HP damage, ${event.lpDamage} LP damage${event.heal?`, ${event.heal} HP restored`:''}.${event.knockout?' CANCELLED.':''}`;
+ if(event.reaction==='Skill Issue Insurance')event.text+=` The hit deals ${event.damage} HP damage and ${event.lpDamage} LP damage${event.heal?`; attacker restores ${event.heal} HP`:''}.${event.knockout?' CANCELLED.':''}`;
  if(event.reaction)event.text+=` TRAP: ${event.reaction}.`;if(event.passive)event.text+=` ${event.passive}.`;
  if(tactical&&preparation){if(action.type==='play')self.tacticUsed=true;else self.deploymentUsed=true;event.text+=' Preparation complete; battle action still available.';}
  m.events.push(event);m.phase=tactical&&preparation?side:other;
@@ -183,7 +192,8 @@ function chooseTacticalAction(m:Match,side:Side):BattleAction{
    if(f.hp<=incoming)value-=35;
    if(before&&before.cardId!==f.cardId)value+=(f.hp-before.hp)*.3+(duelStats(f.cardId).attack-duelStats(before.cardId).attack)*.7;
   }
-  if(resources.trap)value+=resources.trap==='ban'&&enemy?.charge===3?28:10;
+  if(resources.trap)value+=resources.trap==='ban'&&enemy?.charge===3||resources.trap==='terms'&&enemy?.charge===3&&!!(KITS[enemy.cardId].heal||KITS[enemy.cardId].teamHeal)?28:resources.trap==='insurance'&&f&&f.hp<maxHp(f.cardId,next.districtId,side,5)?15:10;
+  value+=(resources.hand.length-visible.duel![side].hand.length)*3;
   if(enemy?.exposed)value+=6;if(enemy?.weakened)value+=8;
   return value;
  };

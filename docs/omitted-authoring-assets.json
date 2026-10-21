@@ -4362,6 +4362,66 @@
       "git_blob": "b9a00154398b2e72c999d314eadbfc83f0e0d5f2"
     },
     {
+      "path": "docs/art/tactics/apology-illustrated.png",
+      "size": 3842991,
+      "git_blob": "8d89823c924cd3f4699e3e1e36e13a1ce9d176ad"
+    },
+    {
+      "path": "docs/art/tactics/ban-illustrated.png",
+      "size": 4341660,
+      "git_blob": "55549d94ee021baacf2f694a9a46f2f67df3da50"
+    },
+    {
+      "path": "docs/art/tactics/charity-illustrated.png",
+      "size": 3843719,
+      "git_blob": "683e5809027b3c7f99e1b1d0192dade8920ca842"
+    },
+    {
+      "path": "docs/art/tactics/grass-illustrated.png",
+      "size": 3768124,
+      "git_blob": "e2b0cd4e905a5d1d577ede0ad425e08f46b74d80"
+    },
+    {
+      "path": "docs/art/tactics/insurance-illustrated.png",
+      "size": 4178687,
+      "git_blob": "7ef8cc79611873bd0d356d1817759bcf6002a857"
+    },
+    {
+      "path": "docs/art/tactics/lawyer-illustrated.png",
+      "size": 4330028,
+      "git_blob": "d760c1fdf1c18988011af05c14b1b80e7d081d4c"
+    },
+    {
+      "path": "docs/art/tactics/leak-illustrated.png",
+      "size": 3787065,
+      "git_blob": "2db335c46fe326de023ccdf93dae04660dc05aef"
+    },
+    {
+      "path": "docs/art/tactics/note-illustrated.png",
+      "size": 4155332,
+      "git_blob": "d23381641d98e932b4424fea002e358cf90b9e4c"
+    },
+    {
+      "path": "docs/art/tactics/ratio-illustrated.png",
+      "size": 4431091,
+      "git_blob": "81b1f986f67d3fce8586c73ecc7b9000b56ac4a8"
+    },
+    {
+      "path": "docs/art/tactics/receipt-illustrated.png",
+      "size": 4128367,
+      "git_blob": "32789ebfef10bdaab1f25dfb4ba018b085ce7417"
+    },
+    {
+      "path": "docs/art/tactics/slop-illustrated.png",
+      "size": 4122071,
+      "git_blob": "917a1209ae5abaae3376868dace45898adb783cf"
+    },
+    {
+      "path": "docs/art/tactics/terms-illustrated.png",
+      "size": 4144405,
+      "git_blob": "280086017fa6e20c80f77473e56258bcadb54dfd"
+    },
+    {
       "path": "docs/art/title-logo.png",
       "size": 2243635,
       "git_blob": "d88e5ff20e431742ece5b49570dc90f6ebc95cb5"
