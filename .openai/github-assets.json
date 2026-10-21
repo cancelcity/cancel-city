@@ -1,6 +1,6 @@
 {
-  "source_commit": "8f788740c61b0364fe82cb996e4c15ce93931e22",
-  "site_version": 44,
+  "source_commit": "cd40e9084ad08b3e64be7f691d4ee714c9eea788",
+  "site_version": 45,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -7670,6 +7670,54 @@
       "size": 138418,
       "sha256": "2c7111a6f41fe36107e8e90a8f8f3067a71205f9eda49bd5dacadb201dfc40b8",
       "git_blob": "ad8c74217c90dae0b10c5f0483f6a062dc18feee"
+    },
+    {
+      "path": "public/assets/tactics/apology.svg",
+      "size": 1803,
+      "sha256": "cb859909845b46dff007d9ebf9177a8d73f688714c7a1a110493a7f0dfe1c442",
+      "git_blob": "23381acb0cd7ce6be506c145aeacc4cee828fdfa"
+    },
+    {
+      "path": "public/assets/tactics/ban.svg",
+      "size": 1644,
+      "sha256": "53a44e2dbca5bc88c2b5820c389a6176d4c9e663beb9e2688ceb131e2175235b",
+      "git_blob": "b7fe60c4e43004dfa5c6ee472683d195dd5384d2"
+    },
+    {
+      "path": "public/assets/tactics/charity.svg",
+      "size": 1756,
+      "sha256": "c55b8f50821411292ee6ca4a9ab0d477b202a26e3f3ef674630c4f1008c74cdf",
+      "git_blob": "7f0471b47b340f823ba78e305ff4f0f54669f558"
+    },
+    {
+      "path": "public/assets/tactics/lawyer.svg",
+      "size": 1485,
+      "sha256": "15396c6286f48d3e7840058523e643a8f04d208e42ac00d053f050c671c01823",
+      "git_blob": "775b87fe9f7243ce4e519af79171137f59a5f9aa"
+    },
+    {
+      "path": "public/assets/tactics/leak.svg",
+      "size": 1756,
+      "sha256": "4bea6f761213fcfea43f9e40d4e292bfe1e5e31ad13fa8ac234afc2df1747d06",
+      "git_blob": "14873523d1f07146ee74cb6ec5e9e651013a8b23"
+    },
+    {
+      "path": "public/assets/tactics/note.svg",
+      "size": 1533,
+      "sha256": "2c41fe8938760aea4e5e3fb36247288cb401ce1475b3108eb96122b890a44d4e",
+      "git_blob": "ba11a041842ecf748a1771cf522f04741d46d21a"
+    },
+    {
+      "path": "public/assets/tactics/ratio.svg",
+      "size": 1559,
+      "sha256": "5a227fe400546993920203ec4d69de51a1c3b5ca3ec1dc70e3aef30d74db0f86",
+      "git_blob": "3a4a886f9061dc6492c39750feb168212490c30a"
+    },
+    {
+      "path": "public/assets/tactics/receipt.svg",
+      "size": 1686,
+      "sha256": "3ea05cf3e3a3a38cd39b43dab39e6a7e01cffd59d17bc71fa00aedbe2e6e9d76",
+      "git_blob": "b30888dbed6a30439e1efb081d05e6b638c47f1d"
     },
     {
       "path": "public/assets/world/cancel-city.webp",

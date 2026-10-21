@@ -4,7 +4,7 @@ import {roastCommandShapes} from '../src/domain/roast';
 import {propCommandShapes} from '../src/domain/props';
 import {cityCommandShapes} from '../src/domain/city';
 import {applyCommand,Command,decodeSave,GameError,initialSave} from '../src/domain/game';
-import {duelCardIdSchema} from '../src/domain/duel-rules';
+import {duelCardIdSchema,tacticDeckSchema} from '../src/domain/duel-rules';
 import {DISTRICTS} from '../src/domain/battle';
 import {CARD_BY_ID} from '../src/data/cards';
 export interface Env{DB:D1Database;ASSETS:Fetcher;ADMIN_USER_ID?:string;ADMIN_EMAIL?:string;GAME_PAUSED?:string}
@@ -13,7 +13,7 @@ const commandSchema=z.discriminatedUnion('type',[
  z.object({type:z.literal('battle-upgrade'),matchId:id,newMatchId:id,step:z.number().int().min(0).max(240)}),
  z.object({type:z.literal('daily')}),z.object({type:z.literal('open'),sessionId:id}),z.object({type:z.literal('reveal'),count:z.number().int().min(0).max(5)}),z.object({type:z.literal('acknowledge')}),z.object({type:z.literal('fuse'),cardId:card}),z.object({type:z.literal('recycle'),cardId:card}),z.object({type:z.literal('craft'),cardId:card}),z.object({type:z.literal('claim-mission'),missionId:id}),z.object({type:z.literal('finish-onboarding')}),z.object({type:z.literal('battle-tutorial')}),z.object({type:z.literal('preset'),team:z.array(card).length(3),slot:z.number().int().min(0).max(2)}),
  z.object({type:z.literal('settings'),alias:z.string().trim().min(2).max(24).optional(),settings:z.object({soundEnabled:z.boolean().optional(),musicEnabled:z.boolean().optional(),volume:z.number().min(0).max(1).optional(),motion:z.enum(['system','reduced']).optional()})}),
- z.object({type:z.literal('battle-start'),matchId:id,districtId:district,team:z.array(card).length(3),rulesVersion:z.union([z.literal(4),z.literal(5)]).optional(),mode:z.enum(['campaign','daily','practice']).optional(),challengeKey:z.string().min(1).max(200).optional()}),
+ z.object({type:z.literal('battle-start'),matchId:id,districtId:district,team:z.array(card).length(3),tacticDeck:tacticDeckSchema.optional(),rulesVersion:z.union([z.literal(4),z.literal(5)]).optional(),mode:z.enum(['campaign','daily','practice']).optional(),challengeKey:z.string().min(1).max(200).optional()}),
  z.object({type:z.literal('battle-act'),matchId:id,step:z.number().int().min(0).max(240),action:z.discriminatedUnion('type',[z.object({type:z.literal('summon'),slot:z.number().int().min(0).max(2),tributeSlot:z.number().int().min(0).max(2).optional()}),z.object({type:z.literal('play'),cardId:duelCardIdSchema}),z.object({type:z.literal('pass')}),z.object({type:z.literal('receipt'),combo:z.number().int().min(1).max(4).optional()}),z.object({type:z.literal('attack'),combo:z.number().int().min(1).max(10).optional()}),z.object({type:z.literal('guard'),combo:z.number().int().min(1).max(10).optional()}),z.object({type:z.literal('ability'),combo:z.number().int().min(1).max(10).optional()}),z.object({type:z.literal('duo'),duoId:z.string().min(1).max(80).optional(),combo:z.number().int().min(1).max(10).optional()}),z.object({type:z.literal('switch'),slot:z.number().int().min(0).max(2)})])}),
  z.object({type:z.literal('battle-enemy'),matchId:id,step:z.number().int().min(0).max(240)}),z.object({type:z.literal('battle-surrender'),matchId:id}),z.object({type:z.literal('battle-leave'),matchId:id}),
  z.object({type:z.literal('clout-scheme'),scheme:z.enum(['safe','risk','grift'])}),z.object({type:z.literal('timeline-ratio'),threadId:id}),...airfryerCommandShapes,...cityCommandShapes,...roastCommandShapes,...propCommandShapes

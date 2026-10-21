@@ -3,6 +3,7 @@ import {readFileSync} from 'node:fs';
 import {beforeEach,afterEach,describe,it,expect} from 'vitest';
 import {handleApi,Env} from '../worker/index';
 import {createMatch} from '../src/domain/battle';
+import {DECK_RECIPES,allTactics} from '../src/domain/duel-rules';
 import {initialSave} from '../src/domain/game';
 let sqlite:DatabaseSync,env:Env;
 class Statement{
@@ -42,6 +43,11 @@ describe('operator and maintenance controls',()=>{
  it('pauses new grants while preserving committed reveal recovery',async()=>{await call('start',{});const opening=await call('command',{id:crypto.randomUUID(),revision:0,command:{type:'open',sessionId:'saved'}});env.GAME_PAUSED='true';expect((await call('start',{},'bob')).status).toBe(503);const reveal=await call('command',{id:crypto.randomUUID(),revision:opening.data.save.revision,command:{type:'reveal',count:5}});expect(reveal.status).toBe(200);expect((await call('command',{id:crypto.randomUUID(),revision:reveal.data.save.revision,command:{type:'daily'}})).status).toBe(503);});
  it('deletes player, ranking and owned feedback records',async()=>{await call('start',{});await call('rank',{enabled:true});await call('feedback',{kind:'bug',message:'My city has a test problem.'});expect((await call('reset',{})).status).toBe(200);expect((await call('player')).data.save).toBeNull();expect((await call('leaderboard')).data.players).toEqual([]);expect(sqlite.prepare('SELECT count(*) AS n FROM feedback').get()!.n).toBe(0);});
  it('rejects oversized streaming bodies before parsing',async()=>{const response=await handleApi(req('start',{legacy:'x'.repeat(2000001)}),env);expect(response.status).toBe(413);});
+ it('validates and persists a custom twelve-card tactics deck at the API boundary',async()=>{
+  await call('start',{});const base={type:'battle-start',rulesVersion:5,matchId:'deck-api',districtId:'street',team:['CC001','CC008','CC015']};
+  const invalid=await call('command',{id:crypto.randomUUID(),revision:0,command:{...base,tacticDeck:Array(12).fill('receipt')}});expect(invalid.status).toBe(400);expect((await call('player')).data.save.revision).toBe(0);
+  const deck=[...DECK_RECIPES[2].cards],valid=await call('command',{id:crypto.randomUUID(),revision:0,command:{...base,tacticDeck:deck}});expect(valid.status).toBe(200);expect(allTactics(valid.data.save.battle.active!.duel!.player).sort()).toEqual([...deck].sort());expect((await call('player')).data.save.battle.active).toEqual(valid.data.save.battle.active);
+ });
  it('accepts a deployment and attack in one v5 cloud turn',async()=>{await call('start',{});let response=await call('command',{id:crypto.randomUUID(),revision:0,command:{type:'battle-start',rulesVersion:5,matchId:'tactical-api',districtId:'street',team:['CC001','CC008','CC015']}});expect(response.status).toBe(200);response=await call('command',{id:crypto.randomUUID(),revision:response.data.save.revision,command:{type:'battle-act',matchId:'tactical-api',step:0,action:{type:'summon',slot:1}}});expect(response.status).toBe(200);expect(response.data.save.battle.active?.phase).toBe('player');response=await call('command',{id:crypto.randomUUID(),revision:response.data.save.revision,command:{type:'battle-act',matchId:'tactical-api',step:1,action:{type:'attack'}}});expect(response.status).toBe(200);expect(response.data.save.battle.active?.phase).toBe('enemy');});
  it('persists a v4 summon through the production API and rejects replayed or forged actions',async()=>{
   await call('start',{});

@@ -24,7 +24,7 @@ The eight existing tactic cards retain their printed effects: Receipt exposes, R
 
 A small damaging tactic can bait a trap before a stronger Special. Opponent traps remain face down and forecasts exclude them. The AI plans a full turn from public enemy information rather than scoring a support card as a lost attack.
 
-The twelve-card deck has two copies each of Receipt, Apology, Leaked DMs and Ratio Storm, plus one copy of the other four tactics. Four cards start in hand; the hand limit is five. Excess draws discard the new card. The deck does not recycle: each empty-deck draw costs 5 LP, then 10, 15, etc. The hand header and log explain fatigue. This bounds healing/defense loops. The emergency 40-round verdict counts full turns, not preparation commands.
+Build exactly twelve tactics with at most two copies of each of the eight identities. All eight are free. Balanced, Pressure and Control recipes provide starting points. The Balanced recipe has two copies each of Receipt, Apology, Leaked DMs and Ratio Storm, plus one copy of the other four tactics. The AI keeps that Balanced deck; the player’s selected deck is validated by the production API and snapshotted into the match. In-progress matches and rematches retain their original composition. The deck choice is saved in this browser; the cloud battle itself saves its full card state. Four cards start in hand; the hand limit is five. Excess draws discard the new card. The deck does not recycle: each empty-deck draw costs 5 LP, then 10, 15, etc. The hand header and log explain fatigue. This bounds healing/defense loops. The emergency 40-round verdict counts full turns, not preparation commands.
 
 ## Example opening
 
@@ -42,3 +42,11 @@ Practice is available at `/battle/?practice=1`, in the toolbar and in connection
 The screen explains disconnection and saved Roast Night instead of leaving unexplained disabled controls. An unfinished old battle may explicitly restart under v5 without recording a loss. Only old rules permit this restart, preventing repeated free resets of a current match. Older saves are never automatically surrendered or replaced. Campaign and daily reward/replay handling remain authoritative.
 
 Checks cover preparation limits, same-turn combat, resource refills, knockout LP, fatigue, save recovery, legal AI completion, production API, legacy rules and the actual browser flow. Passing legality checks alone does not establish fun or competitive balance.
+
+## Card identity, roles and learning
+
+Every collectible character is a **fighter**, with summon stars, HP, ATK, DEF and its authored Special. Specials spend hype; they are not spells in the tactics deck. Fighter role labels describe that actual Special: support, healer, defender, disruptor or striker. No role or damage bonus is derived from cosmetic rarity or foil. The focused twelve-fighter practice roster includes each role and is available as loaners only in practice. Campaign still checks ownership and starter-loaner eligibility on the server. Broader roster balance is not claimed by these labels.
+
+Spells have cyan frames and resolve immediately. Traps and counter traps have pink frames, are set face down, and state their exact reaction. Eight new object-based SVG illustrations depict the action rather than borrowing a character portrait. The same definitions, effects, costs and art feed the collection’s Spells & Traps catalogue, crew/deck lobby, hand inspection and read-only match-deck viewer. Existing character portraits and sprites are unchanged.
+
+`/battle/?learn=1` is a resumable, separate five-lesson rehearsal: attack; inspect and cast a spell then attack; set and trigger Community Note by defending; use the fighter’s Special; deploy and attack after a knockout. Every move uses the real battle engine. The instructor uses ordinary attacks and summons. A clearly labelled second scenario begins with the player’s lead knocked out and 80 LP to teach replacement. These training fixtures never enter the account, reward or ranking flow. Exiting, restarting or continuing into full practice is explicit.

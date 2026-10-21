@@ -8,10 +8,10 @@ import {quantity} from '../domain/game';
 import {Portrait} from './card';
 import {ArrowRight,Check,Crown,Flame,Layers,Shield,Skull,Sparkles,Swords,Ticket,Trophy} from 'lucide-react';
 
-export function FamilyNav({view}:{view:string}){
+export function FamilyNav({view,tactics=false}:{view:string;tactics?:boolean}){
  const family=['collection','stash'].includes(view)?'cards':['profile','settings','leaderboard'].includes(view)?'profile':['lore','cinema'].includes(view)?'archive':view==='roast'?'events':null;
- const links=family==='cards'?[['RESIDENTS','/collection/','collection'],['PROPS','/stash/','stash'],['CREW','/battle/?crew=1','crew']]:family==='profile'?[['PROFILE','/profile/','profile'],['RANKINGS','/leaderboard/','leaderboard'],['SETTINGS & SAVE','/settings/','settings']]:family==='archive'?[['THE CITY ARCHIVE','/lore/','lore'],['CINEMA','/cinema/specials/','cinema']]:family==='events'?[['CASES & JOBS','/missions/','missions'],['ROAST NIGHT','/roast/','roast']]:[];
- return links.length?<nav className={`family-nav family-${family}`} aria-label={`${family} sections`}>{links.map(([label,url,key])=><Link key={key} href={url} className={key===view?'active':''} aria-current={key===view?'page':undefined}>{label}</Link>)}</nav>:null;
+ const links=family==='cards'?[['FIGHTERS','/collection/','collection'],['SPELLS & TRAPS','/collection/?type=tactics','tactics'],['PROPS','/stash/','stash'],['CREW','/battle/?crew=1','crew']]:family==='profile'?[['PROFILE','/profile/','profile'],['RANKINGS','/leaderboard/','leaderboard'],['SETTINGS & SAVE','/settings/','settings']]:family==='archive'?[['THE CITY ARCHIVE','/lore/','lore'],['CINEMA','/cinema/specials/','cinema']]:family==='events'?[['CASES & JOBS','/missions/','missions'],['ROAST NIGHT','/roast/','roast']]:[];
+ return links.length?<nav className={`family-nav family-${family}`} aria-label={`${family} sections`}>{links.map(([label,url,key])=><Link key={key} href={url} className={key===(tactics?'tactics':view)?'active':''} aria-current={key===(tactics?'tactics':view)?'page':undefined}>{label}</Link>)}</nav>:null;
 }
 
 export function ProfileScreen(){
