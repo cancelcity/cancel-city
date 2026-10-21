@@ -25,6 +25,8 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
  const counter=(healing=false,allowBan=true)=>{if(!(allowBan&&opponent.trap==='ban'||healing&&opponent.trap==='terms'))return false;const name=duelCard(opponent.trap!).name;discardTrap();event.text=`${name} cancels the effect. Its costs are still spent.`;return true;};
  const hit=(power:number,pierce=false)=>{
   const a=requireActor();
+  if(opponent.trap==='chargeback'&&(action.type==='play'||action.type==='ability'||action.type==='duo')){const before=opponent.stars;opponent.stars=Math.min(tactical?TACTICAL_STAR_CAP:MAX_STARS,opponent.stars+2);discardTrap();event.text=`Chargeback Goblin refunds ${opponent.stars-before} stars before this hit.`;}
+  if(opponent.trap==='screenshot'){a.exposed=true;discardTrap();event.text='Screenshotted in 4K exposes the attacking resident before this hit.';}
   if(opponent.trap==='insurance'&&target&&target.hp>0&&target.hp<maxHp(target.cardId,m.districtId,other,4)){const restored=Math.min(16,maxHp(target.cardId,m.districtId,other,4)-target.hp);target.hp+=restored;discardTrap();event.text=`Skill Issue Insurance restores ${restored} HP to ${CARD_BY_ID[target.cardId].name} before this hit.`;}
   let damage=power*(a.weakened?.7:1)*(target?.exposed?1.25:1);a.weakened=false;
   if(target){if(!pierce){damage=Math.max(1,damage-(target.stance==='defense'?duelStats(target.cardId).defense:0));damage*=1-target.guard;}target.guard=0;target.exposed=false;}
@@ -51,7 +53,9 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
   case 'pass':event.kind='guard';ownTarget();event.title='HOLD THE THREAD';event.text='Pass. Save stars for your next turn.';break;
   case 'attack':case 'receipt':{
    const a=requireActor();if(action.type==='receipt')throw new Error('Play a Receipt from your hand.');
-   a.stance='attack';hit(attackPower(a.cardId,m.districtId,side,4));a.charge=Math.min(3,a.charge+1);event.title=target?'CALLED OUT!':'DIRECT ATTACK!';break;
+   a.stance='attack';event.title=target?'CALLED OUT!':'DIRECT ATTACK!';
+   if(opponent.trap==='404'){discardTrap();event.text='404: Accountability Not Found cancels the ordinary Attack. The attacker gains 1 hype and ends its turn.';}else hit(attackPower(a.cardId,m.districtId,side,4));
+   a.charge=Math.min(3,a.charge+1);break;
   }
   case 'guard':{const a=requireActor();a.stance='defense';a.charge=Math.min(3,a.charge+1);event.kind='guard';ownTarget();event.title='DEFENSE STANCE';event.text=`${CARD_BY_ID[a.cardId].name} blocks ${duelStats(a.cardId).defense} damage on each hit while defending. +1 hype.`;break;}
   case 'ability':case 'duo':{
@@ -79,12 +83,17 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
    if(card.kind==='spell')requireActor();
    if(card.id==='slop'&&!self.deck.length)throw new Error('Your draw pile is empty. AI Slop Tsunami cannot draw.');
    if(card.id==='grass'&&actor&&actor.hp===maxHp(actor.cardId,m.districtId,side,4)&&!actor.weakened&&!actor.exposed)throw new Error('Your frontline has full HP and no weakness or exposure to remove.');
+   if(card.id==='bait'&&(!target||target.charge===0||actor!.charge===3))throw new Error('Stealing hype requires enemy hype and space below your 3-hype cap.');
+   if(card.id==='offshore'&&(actor!.hp<=12||self.stars>=TACTICAL_STAR_CAP))throw new Error('Offshore Account requires more than 12 frontline HP and room for stars.');
+   if(card.id==='rebrand'&&(!target||!actor!.weakened&&!actor!.exposed))throw new Error('Rebrand requires your frontline to have weakness or exposure and a living enemy frontline.');
+   if(card.id==='prayers'&&!m[side].some(f=>f.summoned&&f.hp>0&&f.hp<maxHp(f.cardId,m.districtId,side,4)))throw new Error('Thoughts & Prayers requires a wounded summoned ally.');
+   if(card.id==='doomscroll'&&(actor!.hp<=8||!self.deck.length))throw new Error('Doomscroll Deluxe requires more than 8 frontline HP and a nonempty draw pile.');
    spend(card.cost);self.hand.splice(index,1);event.title=card.name.toUpperCase();
    if(card.kind!=='spell'){self.trap=card.id as DuelTrapId;event.kind='guard';ownTarget();event.text=`${card.name} set. It triggers automatically when its condition is met.`;break;}
    self.discard.push(card.id);
    const a=requireActor(),hostile=card.id==='receipt'||card.id==='leak'||card.id==='ratio';
    if(hostile){a.stance='attack';if(counter())break;}
-   if(['apology','charity','grass'].includes(card.id)&&counter(true,false))break;
+   if(['apology','charity','grass','prayers'].includes(card.id)&&counter(true,false))break;
    const power=attackPower(a.cardId,m.districtId,side,4);
    switch(card.id){
     case 'receipt':hit(power);if(target?.hp)target.exposed=true;break;
@@ -94,13 +103,18 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
     case 'lawyer':a.stance='defense';a.guard=.35;event.kind='guard';ownTarget();event.text='Defense stance + a temporary 35% shield for the next hit.';break;
     case 'slop':{let drawn=0,discarded=0;for(let i=0;i<2;i++){const card=self.deck.shift();if(!card)break;drawn++;if(self.hand.length<5)self.hand.push(card);else{self.discard.push(card);discarded++;}}ownTarget();event.kind='guard';event.text=`AI Slop Tsunami draws ${drawn} card${drawn===1?'':'s'}${discarded?`; ${discarded} over the hand limit discarded`:''}. No empty-pile draw.`;break;}
     case 'grass':heal(12);a.weakened=false;a.exposed=false;ownTarget();event.kind='guard';event.text=`Touch Grass Injunction restores ${event.heal} HP and clears weakness and exposure.`;break;
+    case 'bait':target!.charge--;a.charge++;event.kind='guard';event.text='Engagement Bait steals 1 hype from the enemy frontline.';break;
+    case 'offshore':{a.hp-=12;const before=self.stars;self.stars=Math.min(TACTICAL_STAR_CAP,self.stars+2);ownTarget();event.kind='guard';event.text=`Offshore Account pays 12 frontline HP and gains ${self.stars-before} stars. HP payment ignores shields.`;break;}
+    case 'rebrand':if(a.weakened){target!.weakened=true;a.weakened=false;}if(a.exposed){target!.exposed=true;a.exposed=false;}event.kind='guard';event.text='Rebrand Speedrun moves your frontline’s weakness and exposure onto the enemy frontline.';break;
+    case 'prayers':for(const f of m[side])if(f.summoned&&f.hp>0){const before=f.hp;f.hp=Math.min(maxHp(f.cardId,m.districtId,side,4),f.hp+8);event.heal+=f.hp-before;f.exposed=true;}ownTarget();event.kind='guard';event.text=`Thoughts & Prayers restores ${event.heal} total HP. All surviving summoned allies are now exposed.`;break;
+    case 'doomscroll':a.hp-=8;self.hand.push(self.deck.shift()!);ownTarget();event.kind='guard';event.text='Doomscroll Deluxe pays 8 frontline HP and draws 1 card. HP payment ignores shields.';break;
     case 'charity':for(const f of m[side])if(f.summoned&&f.hp>0){const before=f.hp;f.hp=Math.min(maxHp(f.cardId,m.districtId,side,4),f.hp+12);event.heal+=f.hp-before;}ownTarget();break;
    }
    break;
   }
  }
  // Preserve authored faction passives without granting them to unsummoned reserves.
- if(actor&&actor.hp>0&&!actor.passiveUsed&&!['Cease & Desist','Terms & Conditions Apply'].includes(event.reaction)){
+ if(actor&&actor.hp>0&&!actor.passiveUsed&&!['Cease & Desist','Terms & Conditions Apply','404: Accountability Not Found'].includes(event.reaction)){
   const faction=CARD_BY_ID[actor.cardId].faction;let passive='';
   if(faction==='terminally-online'&&action.type==='attack'&&target){target.charge=Math.max(0,target.charge-1);passive='FIRST REPLY −1 HYPE';}
   if(faction==='corporate-hell'&&actor.hp<=maxHp(actor.cardId,m.districtId,side,4)/3){heal(8);passive='EMERGENCY PR +8';}
@@ -110,7 +124,7 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
   if(passive){actor.passiveUsed=true;event.passive=passive;}
  }
  if(!event.text)event.text=`${event.title}: ${event.damage} HP damage, ${event.lpDamage} LP damage${event.heal?`, ${event.heal} HP restored`:''}.${event.knockout?' CANCELLED.':''}`;
- if(event.reaction==='Skill Issue Insurance')event.text+=` The hit deals ${event.damage} HP damage and ${event.lpDamage} LP damage${event.heal?`; attacker restores ${event.heal} HP`:''}.${event.knockout?' CANCELLED.':''}`;
+ if(['Skill Issue Insurance','Chargeback Goblin','Screenshotted in 4K'].includes(event.reaction))event.text+=` The hit deals ${event.damage} HP damage and ${event.lpDamage} LP damage${event.heal?`; attacker restores ${event.heal} HP`:''}.${event.knockout?' CANCELLED.':''}`;
  if(event.reaction)event.text+=` TRAP: ${event.reaction}.`;if(event.passive)event.text+=` ${event.passive}.`;
  if(tactical&&preparation){if(action.type==='play')self.tacticUsed=true;else self.deploymentUsed=true;event.text+=' Preparation complete; battle action still available.';}
  m.events.push(event);m.phase=tactical&&preparation?side:other;
@@ -183,12 +197,15 @@ function chooseTacticalAction(m:Match,side:Side):BattleAction{
   const f=frontline(next,side),enemy=frontline(next,other),before=frontline(visible,side),resources=next.duel![side];
   let value=(visible.duel![other].lp-next.duel![other].lp)*1.8+(health(visible,other)-health(next,other))*.7+(health(next,side)-health(visible,side))*.65;
   value+=(resources.stars-visible.duel![side].stars)*1.5;
+  value+=(visible.duel![other].stars-next.duel![other].stars)*1.2;
+  value+=((frontline(visible,other)?.charge??0)-(enemy?.charge??0))*4;
   if(!before&&f)value+=65;
   if(f){
    const threat=enemy?attackPower(enemy.cardId,next.districtId,other,5):0;
    const defense=f.stance==='defense'?duelStats(f.cardId).defense:0;
    const incoming=Math.max(1,(threat-defense)*(1-f.guard));
    value+=f.charge*4+f.guard*threat*.8+(f.stance==='defense'?Math.min(defense,threat)*.65:0);
+   if(f.exposed)value-=6;if(f.weakened)value-=8;
    if(f.hp<=incoming)value-=35;
    if(before&&before.cardId!==f.cardId)value+=(f.hp-before.hp)*.3+(duelStats(f.cardId).attack-duelStats(before.cardId).attack)*.7;
   }

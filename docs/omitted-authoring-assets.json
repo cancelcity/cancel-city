@@ -4362,9 +4362,19 @@
       "git_blob": "b9a00154398b2e72c999d314eadbfc83f0e0d5f2"
     },
     {
+      "path": "docs/art/tactics/404-illustrated.png",
+      "size": 4272537,
+      "git_blob": "a8ba322c376bd1dcfcbdda301302fa76772a5de1"
+    },
+    {
       "path": "docs/art/tactics/apology-illustrated.png",
       "size": 3842991,
       "git_blob": "8d89823c924cd3f4699e3e1e36e13a1ce9d176ad"
+    },
+    {
+      "path": "docs/art/tactics/bait-illustrated.png",
+      "size": 4401512,
+      "git_blob": "3f9e7f16b16e4f0ce09f6f034549f1f28ce51854"
     },
     {
       "path": "docs/art/tactics/ban-illustrated.png",
@@ -4372,9 +4382,19 @@
       "git_blob": "55549d94ee021baacf2f694a9a46f2f67df3da50"
     },
     {
+      "path": "docs/art/tactics/chargeback-illustrated.png",
+      "size": 4028482,
+      "git_blob": "30889874fdfa72750b64f950f72b98f25511ffcd"
+    },
+    {
       "path": "docs/art/tactics/charity-illustrated.png",
       "size": 3843719,
       "git_blob": "683e5809027b3c7f99e1b1d0192dade8920ca842"
+    },
+    {
+      "path": "docs/art/tactics/doomscroll-illustrated.png",
+      "size": 4413558,
+      "git_blob": "f49bcc9bb7286288e974f4229fc3d55db77c4045"
     },
     {
       "path": "docs/art/tactics/grass-illustrated.png",
@@ -4402,14 +4422,34 @@
       "git_blob": "d23381641d98e932b4424fea002e358cf90b9e4c"
     },
     {
+      "path": "docs/art/tactics/offshore-illustrated.png",
+      "size": 4359923,
+      "git_blob": "40ee18971356b671b948e6188ac10e1c216f103c"
+    },
+    {
+      "path": "docs/art/tactics/prayers-illustrated.png",
+      "size": 3748696,
+      "git_blob": "94f45eb1182bf348620136ce8a14c69e72a205be"
+    },
+    {
       "path": "docs/art/tactics/ratio-illustrated.png",
       "size": 4431091,
       "git_blob": "81b1f986f67d3fce8586c73ecc7b9000b56ac4a8"
     },
     {
+      "path": "docs/art/tactics/rebrand-illustrated.png",
+      "size": 3735940,
+      "git_blob": "f89aa1abbcd2ab3655772126e1b2cb1d065b856d"
+    },
+    {
       "path": "docs/art/tactics/receipt-illustrated.png",
       "size": 4128367,
       "git_blob": "32789ebfef10bdaab1f25dfb4ba018b085ce7417"
+    },
+    {
+      "path": "docs/art/tactics/screenshot-illustrated.png",
+      "size": 3773772,
+      "git_blob": "3c1f95618fd072f957484dccb0e7a578084433f9"
     },
     {
       "path": "docs/art/tactics/slop-illustrated.png",

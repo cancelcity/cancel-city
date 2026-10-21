@@ -1,6 +1,6 @@
 # Cancel City — game source
 
-Playable source mirror for Cancel City. This snapshot contains saved **Site version 46**, source commit `fc80256c0d59cca8169bc6577a28dab02f781424`.
+Playable source mirror for Cancel City. This snapshot contains saved **Site version 47**, source commit `c0a5cce8638bc0ffaf0a9b060f21c15a793e5b3e`.
 
 ## Download the latest uploaded version
 
@@ -23,7 +23,7 @@ Karen's original motion-comic animation has been restored in battles and preview
 
 A punk comic collectible card game. Everyone is the problem.
 
-Screenshot Court uses a prepare-then-fight turn: one optional deployment, one optional tactic, then a battle action. Leads start deployed, knockouts cost 40 LP, and empty decks cause fatigue. Separate browser-saved practice works without cloud authentication and leaves Roast Night untouched. Existing saved battles retain their original rules. Fighters now show their combat role and HP/ATK/DEF. Eight spells and four traps/counters have dedicated inked-comic illustrations, city themes and separate flavour jokes and their own catalogue at `/collection/?type=tactics`. Build twelve tactics (maximum two copies each), choose three fighters and play. The Slop & Cope recipe includes new draw, cleanse, healing-counter and pre-hit insurance effects. All twelve tactics are free; selection saves in this browser and each cloud match saves its own deck. A separate five-lesson guided rehearsal at `/battle/?learn=1` teaches the real rules, and twelve practice fighters are available as loaners. See [the current duel rules](docs/tactical-duel.md).
+Screenshot Court uses a prepare-then-fight turn: one optional deployment, one optional tactic, then a battle action. Leads start deployed, knockouts cost 40 LP, and empty decks cause fatigue. Separate browser-saved practice works without cloud authentication and leaves Roast Night untouched. Existing saved battles retain their original rules. Fighters now show their combat role and HP/ATK/DEF. Thirteen spells and seven traps/counters have dedicated inked-comic illustrations, city themes, separate flavour jokes and their own catalogue at `/collection/?type=tactics`. Build twelve tactics (maximum two copies each), choose three fighters and play. Slop & Cope covers draw, cleanse, healing counters and insurance. The Consequences Sold Separately recipe adds HP-for-stars and draw costs, hype theft, debuff transfer, risky team healing and three new reactions. The New Drop filter shows all eight new cards. All twenty tactics are free; selection saves in this browser and each cloud match saves its own deck. A separate five-lesson guided rehearsal at `/battle/?learn=1` teaches the real rules, and twelve practice fighters are available as loaners. See [the current duel rules](docs/tactical-duel.md).
 
 The unified game design uses one navigation and printed-paper interface across Home, City, Cards, Packs, Battle, Market, Events, the Archive, cinema and the Permanent Record (`/profile/`). Cards groups residents, props and crew; Profile groups rankings, settings and save management. Home continues into the neighbourhood, and Airfryer Gate connects Home, City, Events and Court. All existing game artwork and rules are retained.
 

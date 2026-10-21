@@ -1,6 +1,6 @@
 {
-  "source_commit": "fc80256c0d59cca8169bc6577a28dab02f781424",
-  "site_version": 46,
+  "source_commit": "c0a5cce8638bc0ffaf0a9b060f21c15a793e5b3e",
+  "site_version": 47,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -7672,6 +7672,12 @@
       "git_blob": "ad8c74217c90dae0b10c5f0483f6a062dc18feee"
     },
     {
+      "path": "public/assets/tactics/404-illustrated.webp",
+      "size": 316866,
+      "sha256": "3e3154f3758caed5d5cefcd94003822a70f16e0435061505f6441ea59a99a5b0",
+      "git_blob": "ccd88e569ef63392d8c707b0346d4841f419f1c5"
+    },
+    {
       "path": "public/assets/tactics/apology-illustrated.webp",
       "size": 285096,
       "sha256": "480a0eebe9c72e2f9c0e5cb6c19fd62b00aabba602a0533ba6557ee44e389dda",
@@ -7682,6 +7688,12 @@
       "size": 1803,
       "sha256": "cb859909845b46dff007d9ebf9177a8d73f688714c7a1a110493a7f0dfe1c442",
       "git_blob": "23381acb0cd7ce6be506c145aeacc4cee828fdfa"
+    },
+    {
+      "path": "public/assets/tactics/bait-illustrated.webp",
+      "size": 348902,
+      "sha256": "d3e6e78392400497dcca8ce0fb5eb45281c8506485e5f6af0d2909a1dc75882f",
+      "git_blob": "18d4c0a9bad4fd2073c959f191900b158b41a35e"
     },
     {
       "path": "public/assets/tactics/ban-illustrated.webp",
@@ -7696,6 +7708,12 @@
       "git_blob": "b7fe60c4e43004dfa5c6ee472683d195dd5384d2"
     },
     {
+      "path": "public/assets/tactics/chargeback-illustrated.webp",
+      "size": 321902,
+      "sha256": "e7da1366d19cd284dc1713c00c2e98b87888d96a756f47059fb21894d8e44794",
+      "git_blob": "d41f1889f191bd971905d546114e9776ded7e889"
+    },
+    {
       "path": "public/assets/tactics/charity-illustrated.webp",
       "size": 303148,
       "sha256": "e00b2da65d6c1612e3004020c8cce9e9820cc114bc15dac2fa9625306f3a37ef",
@@ -7706,6 +7724,12 @@
       "size": 1756,
       "sha256": "c55b8f50821411292ee6ca4a9ab0d477b202a26e3f3ef674630c4f1008c74cdf",
       "git_blob": "7f0471b47b340f823ba78e305ff4f0f54669f558"
+    },
+    {
+      "path": "public/assets/tactics/doomscroll-illustrated.webp",
+      "size": 342668,
+      "sha256": "db47fcb0f946bce71af54099b6b0ac330274099607efad83e3eef646972ec310",
+      "git_blob": "6c2ea9386755b8e05e1b154c2e66f98765599a7a"
     },
     {
       "path": "public/assets/tactics/grass-illustrated.webp",
@@ -7756,6 +7780,18 @@
       "git_blob": "ba11a041842ecf748a1771cf522f04741d46d21a"
     },
     {
+      "path": "public/assets/tactics/offshore-illustrated.webp",
+      "size": 355836,
+      "sha256": "974efd062ff81ddf0bcda9d7084db39406610dc7209cc6f91f889d4cb1a9ff12",
+      "git_blob": "a310f8cc88f64c25dbcb05a73e4a392c1e88e163"
+    },
+    {
+      "path": "public/assets/tactics/prayers-illustrated.webp",
+      "size": 276280,
+      "sha256": "98e47b63e5a60ed57564e5a501df761c3e959289bda23cc6bde3d77efc5a2b4b",
+      "git_blob": "d487e0aced41f778840ad60eed4e0243778e560b"
+    },
+    {
       "path": "public/assets/tactics/ratio-illustrated.webp",
       "size": 354664,
       "sha256": "1bf6ad1accfddfc822f312bac47b6b995ae33ce4b7e78e43b40f1a0bded5795c",
@@ -7768,6 +7804,12 @@
       "git_blob": "3a4a886f9061dc6492c39750feb168212490c30a"
     },
     {
+      "path": "public/assets/tactics/rebrand-illustrated.webp",
+      "size": 290612,
+      "sha256": "80c6932c80d28c105a520fd37204544a3a8a2422862263e45c58da2d3ff23532",
+      "git_blob": "2bfa2b049a376b11fa52f739bf69d618e2cfa009"
+    },
+    {
       "path": "public/assets/tactics/receipt-illustrated.webp",
       "size": 318568,
       "sha256": "376e88316a7efb06a6094b872746897dec89dbb10cfa062f8d0aba6038bcde52",
@@ -7778,6 +7820,12 @@
       "size": 1686,
       "sha256": "3ea05cf3e3a3a38cd39b43dab39e6a7e01cffd59d17bc71fa00aedbe2e6e9d76",
       "git_blob": "b30888dbed6a30439e1efb081d05e6b638c47f1d"
+    },
+    {
+      "path": "public/assets/tactics/screenshot-illustrated.webp",
+      "size": 290806,
+      "sha256": "c23e290d56d96596dd1d93936fe94fa42cf8e246bbd89ccf72c0bcec8f423dcc",
+      "git_blob": "5ec99c5b2096392559b48b5f8831ad8fdaa36931"
     },
     {
       "path": "public/assets/tactics/slop-illustrated.webp",
