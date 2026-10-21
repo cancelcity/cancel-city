@@ -1,4 +1,4 @@
-import {duelStateSchema,freshDuel} from './duel-rules';
+import {duelStateSchema,freshDuel,duelStats,TACTICAL_DECK} from './duel-rules';
 import {takeDuelTurn,chooseDuelAction} from './duel';
 import {z} from 'zod';
 import {DUOS} from '../data/duos';
@@ -22,10 +22,10 @@ const integer=z.number().int().nonnegative().safe();
 const fighterSchema=z.object({cardId:resident,hp:integer.max(200),charge:integer.max(3),guard:z.union([z.literal(0),z.literal(.35),z.literal(.6)]),weakened:z.boolean(),exposed:z.boolean().default(false),passiveUsed:z.boolean().default(false),summoned:z.boolean().default(true),stance:z.enum(['attack','defense']).default('attack')});
 const eventSchema=z.object({step:integer,side:z.enum(['player','enemy']),kind:z.enum(['attack','ability','guard','switch','surrender']),actor:integer.max(2),targetSide:z.enum(['player','enemy']),target:integer.max(2),damage:integer.max(200),heal:integer.max(200),knockout:z.boolean(),title:z.string(),text:z.string(),style:z.string().default('ratio'),passive:z.string().default(''),duoId:z.string().nullable().default(null),partnerId:resident.nullable().default(null),lpDamage:integer.max(200).default(0),reaction:z.string().default('')});
 export const matchSchema=z.object({
- rosterVersion:z.union([z.literal(1),z.literal(2),z.literal(3),z.literal(4),z.literal(5)]).default(1),dailyPoolIds:z.array(resident).max(146).default([]),rulesVersion:z.union([z.literal(1),z.literal(2),z.literal(3),z.literal(4)]),duel:duelStateSchema.nullable().default(null),duoUsed:z.array(z.enum(['player','enemy'])).max(2).default([]),mode:z.enum(['campaign','daily','practice']).default('campaign'),challengeKey:z.string().nullable().default(null),id:z.string().min(1).max(100),districtId:z.enum(['street','media','corporate','crypto','city-hall','algorithm']),
+ rosterVersion:z.union([z.literal(1),z.literal(2),z.literal(3),z.literal(4),z.literal(5)]).default(1),dailyPoolIds:z.array(resident).max(146).default([]),rulesVersion:z.union([z.literal(1),z.literal(2),z.literal(3),z.literal(4),z.literal(5)]),duel:duelStateSchema.nullable().default(null),duoUsed:z.array(z.enum(['player','enemy'])).max(2).default([]),mode:z.enum(['campaign','daily','practice']).default('campaign'),challengeKey:z.string().nullable().default(null),id:z.string().min(1).max(100),districtId:z.enum(['street','media','corporate','crypto','city-hall','algorithm']),
  player:z.array(fighterSchema).length(3),enemy:z.array(fighterSchema).length(3),playerActive:integer.max(2),enemyActive:integer.max(2),
- phase:z.enum(['player','enemy','finished']),step:integer.max(80),winner:z.enum(['player','enemy']).nullable(),reason:z.enum(['knockout','verdict','surrender','lp']).nullable(),
- events:z.array(eventSchema).max(80),reward:z.object({packs:integer.max(8),xp:integer.max(500)}),
+ phase:z.enum(['player','enemy','finished']),step:integer.max(240),winner:z.enum(['player','enemy']).nullable(),reason:z.enum(['knockout','verdict','surrender','lp']).nullable(),
+ events:z.array(eventSchema).max(240),reward:z.object({packs:integer.max(8),xp:integer.max(500)}),
 }).superRefine((m,ctx)=>{
  const bad=(message:string)=>ctx.addIssue({code:z.ZodIssueCode.custom,message});
  for(const side of ['player','enemy'] as const){
@@ -34,15 +34,17 @@ export const matchSchema=z.object({
   if(m.rulesVersion<4&&m.phase!=='finished'&&m[side][m[`${side}Active`]].hp<=0)bad('Active resident is knocked out');
  }
  for(const side of ['player','enemy'] as const){const count=m.events.filter(e=>e.side===side&&e.duoId).length;if(count>1||m.duoUsed.includes(side)!==(count===1))bad('Duo use and event must agree');}
- if(m.rulesVersion===4){
+ if(m.rulesVersion>=4){
   if(!m.duel)bad('Missing duel state');
   else for(const side of ['player','enemy'] as const){
    const d=m.duel[side],cards=[...d.hand,...d.deck,...d.discard,...(d.trap?[d.trap]:[])];
-   if(cards.length!==8||new Set(cards).size!==8||d.hand.length>5)bad('Invalid duel deck');
+   if(m.rulesVersion>=5?cards.length!==12||TACTICAL_DECK.some(id=>cards.filter(c=>c===id).length!==TACTICAL_DECK.filter(c=>c===id).length)||d.hand.length>5:cards.length!==8||new Set(cards).size!==8||d.hand.length>5)bad('Invalid duel deck');
    if(m.phase!=='finished'&&d.lp===0)bad('Unfinished duel has no life points');
+   if(m.rulesVersion>=5&&d.stars>6)bad('Standard duel stars exceed the cap');
    const field=m[side].filter(f=>f.summoned&&f.hp>0);
    if(field.length&&(!m[side][m[`${side}Active`]].summoned||m[side][m[`${side}Active`]].hp<=0))bad('Invalid duel frontline');
   }
+  if(m.rulesVersion>=5&&m.duel&&(m.phase==='player'&&m.duel.turnNumber%2!==1||m.phase==='enemy'&&m.duel.turnNumber%2!==0))bad('Invalid tactical turn');
   if(m.reason==='lp'&&m.duel?.[m.winner==='player'?'enemy':'player'].lp!==0)bad('Life points remain');
  }else if(m.duel)bad('Legacy battle cannot contain duel state');
  if(new Set(m.duoUsed).size!==m.duoUsed.length||m.rulesVersion<3&&m.duoUsed.length)bad('Invalid duo use');
@@ -51,7 +53,7 @@ export const matchSchema=z.object({
  if(m.rosterVersion===5&&m.mode==='daily'&&(m.dailyPoolIds.length<66||new Set(m.dailyPoolIds).size!==m.dailyPoolIds.length))bad('Invalid daily pool snapshot');
  if(m.enemy.some((f,i)=>f.cardId!==crewFor(m.districtId,m.mode,m.challengeKey,m.rosterVersion,m.dailyPoolIds)[i]))bad('Invalid district crew');
  if(m.phase==='finished'?(m.winner===null||m.reason===null):(m.winner!==null||m.reason!==null))bad('Invalid battle outcome');
- if(m.phase==='player'&&m.step%2!==0||m.phase==='enemy'&&m.step%2!==1)bad('Invalid battle turn');
+ if(m.rulesVersion<5&&(m.phase==='player'&&m.step%2!==0||m.phase==='enemy'&&m.step%2!==1))bad('Invalid battle turn');
  if(m.events.length&&m.events.at(-1)!.step!==m.step)bad('Invalid battle event sequence');
  if(m.events.some((e,i)=>e.step>m.step||i>0&&e.step!==m.events[i-1].step+1))bad('Invalid battle event order');
  if(m.phase!=='finished'&&(m.reward.packs||m.reward.xp))bad('Unfinished battle cannot grant rewards');
@@ -102,11 +104,13 @@ export function crewFor(district:DistrictId,mode:string,key:string|null,rosterVe
  const pool=rosterVersion===5&&snapshot.length?[...snapshot]:(rosterVersion===1?BASE_CARDS:rosterVersion===2?[...BASE_CARDS,...WAVE_CARDS]:rosterVersion===3?[...BASE_CARDS,...WAVE_CARDS,...CULTURE_CARDS]:rosterVersion===4?CARDS.filter(c=>c.number<=66):CARDS).map(c=>c.id),seed=rosterVersion>=4?Array.from(key).reduce((n,c)=>Math.imul(n^c.charCodeAt(0),16777619)>>>0,2166136261):Array.from(key).reduce((n,c)=>n+c.charCodeAt(0),0);return [0,1,2].map(i=>pool[(seed+i*7)%pool.length]);}
 export function dailyChallenge(now:Date){return {districtId:'street' as DistrictId,key:now.toISOString().slice(0,10)};}
 export function squadBonus(team:string[]){const factions=new Set(team.map(id=>CARD_BY_ID[id].faction));return factions.size===1?'chorus':factions.size===3?'coalition':'none';}
-export function createMatch(id:string,districtId:DistrictId,team:string[],options:{version?:1|2|3|4;mode?:'campaign'|'daily'|'practice';challengeKey?:string|null}={}):Match{
+export function createMatch(id:string,districtId:DistrictId,team:string[],options:{version?:1|2|3|4|5;mode?:'campaign'|'daily'|'practice';challengeKey?:string|null}={}):Match{
  const district=DISTRICTS.find(d=>d.id===districtId);
  if(!district||team.length!==3||new Set(team).size!==3||team.some(c=>!Object.hasOwn(CARD_BY_ID,c)))throw new Error('Choose three different residents and a valid district.');
- const squad=(ids:readonly string[],side:Side):Fighter[]=>ids.map(cardId=>({cardId,hp:maxHp(cardId,districtId,side,options.version||1),charge:(options.version||1)>=2&&squadBonus([...ids])==='chorus'?2:1,guard:(options.version||1)>=2&&squadBonus([...ids])==='coalition'?.35:0,weakened:false,exposed:false,passiveUsed:false,summoned:options.version!==4,stance:'attack'}));
- return matchSchema.parse({rosterVersion:5,dailyPoolIds:options.mode==='daily'?CARDS.map(c=>c.id):[],rulesVersion:options.version||1,duel:options.version===4?freshDuel(id):null,mode:options.mode||'campaign',challengeKey:options.challengeKey||null,id,districtId,player:squad(team,'player'),enemy:squad(crewFor(districtId,options.mode||'campaign',options.challengeKey||null),'enemy'),playerActive:0,enemyActive:0,phase:'player',step:0,winner:null,reason:null,events:[],reward:{packs:0,xp:0}});
+ const squad=(ids:readonly string[],side:Side):Fighter[]=>ids.map((cardId,slot)=>({cardId,hp:maxHp(cardId,districtId,side,options.version||1),charge:(options.version||1)>=2&&squadBonus([...ids])==='chorus'?2:1,guard:(options.version||1)>=2&&squadBonus([...ids])==='coalition'?.35:0,weakened:false,exposed:false,passiveUsed:false,summoned:(options.version||1)<4||options.version===5&&slot===0,stance:'attack'}));
+ const duel=(options.version||1)>=4?freshDuel(id,options.version===5?5:4):null;
+ if(options.version===5&&duel){duel.player.stars-=duelStats(team[0]).stars;duel.enemy.stars-=duelStats(crewFor(districtId,options.mode||'campaign',options.challengeKey||null)[0]).stars;}
+ return matchSchema.parse({rosterVersion:5,dailyPoolIds:options.mode==='daily'?CARDS.map(c=>c.id):[],rulesVersion:options.version||1,duel,mode:options.mode||'campaign',challengeKey:options.challengeKey||null,id,districtId,player:squad(team,'player'),enemy:squad(crewFor(districtId,options.mode||'campaign',options.challengeKey||null),'enemy'),playerActive:0,enemyActive:0,phase:'player',step:0,winner:null,reason:null,events:[],reward:{packs:0,xp:0}});
 }
 function settle(m:Match){
  for(const side of ['player','enemy'] as const){
@@ -121,7 +125,7 @@ function settle(m:Match){
 }
 export function takeTurn(current:Match,side:Side,action:BattleAction):Match{
  if(current.phase!==side)throw new Error('Wait for your turn.');
- if(current.rulesVersion===4)return takeDuelTurn(current,side,action);
+ if(current.rulesVersion>=4)return takeDuelTurn(current,side,action);
  if(action.type==='summon'||action.type==='play'||action.type==='pass')throw new Error('This saved battle uses the original rules.');
  const m=structuredClone(current),other:Side=side==='player'?'enemy':'player',actorSlot=m[`${side}Active`],targetSlot=m[`${other}Active`],actor=m[side][actorSlot],target=m[other][targetSlot],card=CARD_BY_ID[actor.cardId];
  const comboMultiplier=(action.type!=='switch'&&action.combo&&action.combo>1)?(1+(action.combo-1)*.35):1;
@@ -176,7 +180,7 @@ export function takeTurn(current:Match,side:Side,action:BattleAction):Match{
 }
 export function chooseEnemyAction(m:Match):BattleAction{
  if(m.phase!=='enemy')throw new Error('The city is not acting.');
- if(m.rulesVersion===4)return chooseDuelAction(m,'enemy');
+ if(m.rulesVersion>=4)return chooseDuelAction(m,'enemy');
  if(m.rulesVersion>=2){
   const f=m.enemy[m.enemyActive],choices:BattleAction[]=[{type:'attack'},{type:'guard'},...(f.charge===3?[{type:'ability' as const}]:[]),...(availableDuo(m,'enemy')?[{type:'duo' as const}]:[]),...m.enemy.flatMap((p,i)=>i!==m.enemyActive&&p.hp>0?[{type:'switch' as const,slot:i}]:[])];
   const health=(x:Match,side:Side)=>x[side].reduce((n,p)=>n+p.hp,0);
@@ -192,8 +196,8 @@ export function chooseEnemyAction(m:Match):BattleAction{
 export function surrender(current:Match):Match{
  if(current.phase==='finished')throw new Error('This battle is already over.');
  const m=structuredClone(current);m.phase='finished';m.winner='enemy';m.reason='surrender';m.step++;
- m.events=[...m.events,{step:m.step,side:'player' as const,kind:'surrender' as const,actor:m.playerActive,targetSide:'player' as const,target:m.playerActive,damage:0,heal:0,knockout:false,title:'TACTICAL RETREAT.',text:'Your squad leaves the thread. The city takes the win.',lpDamage:0,reaction:'',style:'curse',passive:'',duoId:null,partnerId:null}].slice(-80);return matchSchema.parse(m);
+ m.events=[...m.events,{step:m.step,side:'player' as const,kind:'surrender' as const,actor:m.playerActive,targetSide:'player' as const,target:m.playerActive,damage:0,heal:0,knockout:false,title:'TACTICAL RETREAT.',text:'Your squad leaves the thread. The city takes the win.',lpDamage:0,reaction:'',style:'curse',passive:'',duoId:null,partnerId:null}].slice(-(m.rulesVersion>=5?240:80));return matchSchema.parse(m);
 }
 
-export function availableDuos(m:Match,side:Side){if(m.rulesVersion<3||m.duoUsed.includes(side))return [];const active=m[side][m[`${side}Active`]];if(active.hp<=0||active.charge<3||m.rulesVersion===4&&!active.summoned)return [];return DUOS.flatMap(duo=>{if(!duo.pair.includes(active.cardId as never))return [];const partnerId=duo.pair.find(id=>id!==active.cardId)!;return m[side].some(f=>f.cardId===partnerId&&f.hp>0&&f.charge>=1&&(m.rulesVersion<4||f.summoned))?[{...duo,partnerId}]:[];});}
+export function availableDuos(m:Match,side:Side){if(m.rulesVersion<3||m.duoUsed.includes(side))return [];const active=m[side][m[`${side}Active`]];if(active.hp<=0||active.charge<3||m.rulesVersion>=4&&!active.summoned)return [];return DUOS.flatMap(duo=>{if(!duo.pair.includes(active.cardId as never))return [];const partnerId=duo.pair.find(id=>id!==active.cardId)!;return m[side].some(f=>f.cardId===partnerId&&f.hp>0&&f.charge>=1&&(m.rulesVersion<4||f.summoned))?[{...duo,partnerId}]:[];});}
 export function availableDuo(m:Match,side:Side,preferredId?:string){const choices=availableDuos(m,side);return (preferredId?choices.find(d=>d.id===preferredId):choices[0])??null;}

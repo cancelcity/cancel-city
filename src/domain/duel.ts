@@ -1,7 +1,7 @@
 import {CARD_BY_ID} from '../data/cards';
 import {KITS} from '../data/combat-kit';
 import {attackPower,availableDuo,matchSchema,maxHp,type BattleAction,type BattleEvent,type Match,type Side} from './battle';
-import {duelCard,duelStats,MAX_STARS,TURN_STARS,type DuelCardId} from './duel-rules';
+import {duelCard,duelStats,MAX_STARS,TURN_STARS,TACTICAL_STAR_CAP,KNOCKOUT_LP,type DuelCardId} from './duel-rules';
 
 export function frontline(m:Match,side:Side){const f=m[side][m[`${side}Active`]];return f.summoned&&f.hp>0?f:null;}
 export function summonCost(m:Match,side:Side,slot:number,tributeSlot?:number){
@@ -12,7 +12,11 @@ export function summonCost(m:Match,side:Side,slot:number,tributeSlot?:number){
 export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
  if(current.phase!==side||!current.duel)throw new Error('Wait for your duel turn.');
  if('combo' in action&&action.combo!==undefined&&action.combo!==1)throw new Error('One committed action per turn.');
+ const tactical=current.rulesVersion>=5,preparation=action.type==='summon'||action.type==='switch'||action.type==='play';
+ if(tactical&&action.type==='summon'&&action.tributeSlot!==undefined)throw new Error('Tributes are not used in standard three-resident duels.');
  const m=structuredClone(current),duel=m.duel!,other:Side=side==='player'?'enemy':'player',self=duel[side],opponent=duel[other];
+ if(tactical&&(action.type==='summon'||action.type==='switch')&&self.deploymentUsed)throw new Error('One deployment or tag-in per turn. You can still play a tactic and fight.');
+ if(tactical&&action.type==='play'&&self.tacticUsed)throw new Error('One spell or trap per turn. Choose your battle action.');
  const actorSlot=m[`${side}Active`],targetSlot=m[`${other}Active`],actor=frontline(m,side),target=frontline(m,other);
  const event:BattleEvent={step:++m.step,side,kind:'attack',actor:actorSlot,targetSide:other,target:targetSlot,damage:0,heal:0,knockout:false,title:'',text:'',style:actor?KITS[actor.cardId].style:'ratio',passive:'',duoId:null,partnerId:null,lpDamage:0,reaction:''};
  const spend=(cost:number)=>{if(self.stars<cost)throw new Error(`Requires ${cost} stars.`);self.stars-=cost;};
@@ -24,7 +28,7 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
   if(target){if(!pierce){damage=Math.max(1,damage-(target.stance==='defense'?duelStats(target.cardId).defense:0));damage*=1-target.guard;}target.guard=0;target.exposed=false;}
   if(opponent.trap==='note'){discardTrap();damage*=.5;}
   damage=Math.max(1,Math.round(damage));
-  if(target){event.damage=Math.min(target.hp,damage);target.hp-=event.damage;event.knockout=target.hp===0;damage-=event.damage;}
+  if(target){event.damage=Math.min(target.hp,damage);target.hp-=event.damage;event.knockout=target.hp===0;damage-=event.damage;if(tactical&&event.knockout)damage+=KNOCKOUT_LP;}
   event.lpDamage=Math.min(opponent.lp,damage);opponent.lp-=event.lpDamage;
  };
  const heal=(amount:number)=>{const a=requireActor(),restored=Math.min(amount,maxHp(a.cardId,m.districtId,side,4)-a.hp);a.hp+=restored;event.heal+=restored;};
@@ -99,30 +103,42 @@ export function takeDuelTurn(current:Match,side:Side,action:BattleAction):Match{
  }
  if(!event.text)event.text=`${event.title}: ${event.damage} HP damage, ${event.lpDamage} LP damage${event.heal?`, ${event.heal} HP restored`:''}.${event.knockout?' CANCELLED.':''}`;
  if(event.reaction)event.text+=` TRAP: ${event.reaction}.`;if(event.passive)event.text+=` ${event.passive}.`;
- m.events.push(event);m.phase=other;
+ if(tactical&&preparation){if(action.type==='play')self.tacticUsed=true;else self.deploymentUsed=true;event.text+=' Preparation complete; battle action still available.';}
+ m.events.push(event);m.phase=tactical&&preparation?side:other;
  for(const s of [other,side]){
   const standing=m[s].findIndex(f=>f.summoned&&f.hp>0);
   if(standing>=0&&!frontline(m,s))m[`${s}Active`]=standing;
+  if(tactical&&m[s].every(f=>f.hp===0))duel[s].lp=0;
   if(duel[s].lp===0||m[s].every(f=>f.hp===0)){m.phase='finished';m.winner=s==='player'?'enemy':'player';m.reason=duel[s].lp===0?'lp':'knockout';break;}
  }
- if(m.phase!=='finished'&&m.step>=80){
+ if(m.phase!=='finished'&&(tactical?(m.step>=240||duel.turnNumber>=80&&!preparation):m.step>=80)){
   const score=(s:Side)=>duel[s].lp+m[s].reduce((n,f)=>n+f.hp/maxHp(f.cardId,m.districtId,s,4),0);
   m.phase='finished';m.winner=score('player')>score('enemy')?'player':'enemy';m.reason='verdict';
  }
- if(m.phase!=='finished'&&m.step>1){
-  const next=duel[other];next.stars=Math.min(MAX_STARS,next.stars+TURN_STARS);
-  if(!next.deck.length&&next.discard.length){next.deck=next.discard;next.discard=[];}
-  if(next.hand.length<5&&next.deck.length)next.hand.push(next.deck.shift()!);
+ if(m.phase!=='finished'&&(!tactical&&m.step>1||tactical&&!preparation)){
+  const next=duel[other],openingReply=tactical&&duel.turnNumber===1;
+  if(!openingReply)next.stars=Math.min(tactical?TACTICAL_STAR_CAP:MAX_STARS,next.stars+TURN_STARS);
+  if(tactical){
+   duel.turnNumber++;next.deploymentUsed=false;next.tacticUsed=false;
+   const drawn=openingReply?undefined:next.deck.shift();
+   if(drawn){if(next.hand.length<5)next.hand.push(drawn);else next.discard.push(drawn);}
+   else if(!openingReply){next.fatigue=Math.min(120,next.fatigue+5);const loss=Math.min(next.lp,next.fatigue);next.lp-=loss;event.text+=` ${other==='player'?'You':'The city'} draw from an empty deck: −${loss} LP fatigue.`;if(next.lp===0){m.phase='finished';m.winner=side;m.reason='lp';}}
+  }else{
+   if(!next.deck.length&&next.discard.length){next.deck=next.discard;next.discard=[];}
+   if(next.hand.length<5&&next.deck.length)next.hand.push(next.deck.shift()!);
+  }
  }
+
  return matchSchema.parse(m);
 }
 
 export function legalDuelActions(m:Match,side:Side):BattleAction[]{
  if(m.phase!==side||!m.duel)return [];
- const candidates:BattleAction[]=[{type:'pass'},{type:'attack'},{type:'guard'},{type:'ability'},...m.duel[side].hand.map(cardId=>({type:'play' as const,cardId})),...m[side].flatMap((_,slot):BattleAction[]=>[{type:'summon',slot},{type:'switch',slot},...m[side].map((_,tributeSlot)=>({type:'summon' as const,slot,tributeSlot}))]),...(availableDuo(m,side)?[{type:'duo' as const}]:[])];
+ const candidates:BattleAction[]=[{type:'pass'},{type:'attack'},{type:'guard'},{type:'ability'},...Array.from(new Set(m.duel[side].hand)).map(cardId=>({type:'play' as const,cardId})),...m[side].flatMap((_,slot):BattleAction[]=>[{type:'summon',slot},{type:'switch',slot},...m[side].map((_,tributeSlot)=>({type:'summon' as const,slot,tributeSlot}))]),...(availableDuo(m,side)?[{type:'duo' as const}]:[])];
  return candidates.filter(action=>{try{takeDuelTurn(m,side,action);return true;}catch{return false;}});
 }
 export function chooseDuelAction(m:Match,side:Side):BattleAction{
+ if(m.rulesVersion>=5)return chooseTacticalAction(m,side);
  const other:Side=side==='player'?'enemy':'player',before=frontline(m,side);
  const hp=(x:Match,s:Side)=>x[s].reduce((n,f)=>n+f.hp,0);
  const score=(action:BattleAction)=>{
@@ -145,4 +161,40 @@ export function forecastDuelAction(m:Match,action:BattleAction){
  const visible=structuredClone(m);
  if(visible.duel?.enemy.trap){visible.duel.enemy.discard.push(visible.duel.enemy.trap);visible.duel.enemy.trap=null;}
  try{return takeDuelTurn(visible,'player',action).events.at(-1)??null;}catch{return null;}
+}
+
+// Compare complete turns, rather than treating a support card as a substitute
+// for attacking. Planning uses only public enemy information.
+function chooseTacticalAction(m:Match,side:Side):BattleAction{
+ const other:Side=side==='player'?'enemy':'player',visible=structuredClone(m);
+ if(visible.duel![other].trap){visible.duel![other].discard.push(visible.duel![other].trap!);visible.duel![other].trap=null;}
+ const health=(x:Match,s:Side)=>x[s].reduce((n,f)=>n+f.hp,0);
+ const score=(next:Match)=>{
+  if(next.winner===side)return 10000;if(next.winner===other)return -10000;
+  const f=frontline(next,side),enemy=frontline(next,other),before=frontline(visible,side),resources=next.duel![side];
+  let value=(visible.duel![other].lp-next.duel![other].lp)*1.8+(health(visible,other)-health(next,other))*.7+(health(next,side)-health(visible,side))*.65;
+  value+=(resources.stars-visible.duel![side].stars)*1.5;
+  if(!before&&f)value+=65;
+  if(f){
+   const threat=enemy?attackPower(enemy.cardId,next.districtId,other,5):0;
+   const defense=f.stance==='defense'?duelStats(f.cardId).defense:0;
+   const incoming=Math.max(1,(threat-defense)*(1-f.guard));
+   value+=f.charge*4+f.guard*threat*.8+(f.stance==='defense'?Math.min(defense,threat)*.65:0);
+   if(f.hp<=incoming)value-=35;
+   if(before&&before.cardId!==f.cardId)value+=(f.hp-before.hp)*.3+(duelStats(f.cardId).attack-duelStats(before.cardId).attack)*.7;
+  }
+  if(resources.trap)value+=resources.trap==='ban'&&enemy?.charge===3?28:10;
+  if(enemy?.exposed)value+=6;if(enemy?.weakened)value+=8;
+  return value;
+ };
+ const search=(state:Match,depth:number):{value:number;action:BattleAction}=>{
+  let best={value:-Infinity,action:{type:'pass'} as BattleAction};
+  for(const action of legalDuelActions(state,side)){
+   const next=takeDuelTurn(state,side,action);
+   const value=next.phase===side&&depth<2?search(next,depth+1).value-.05:score(next);
+   if(value>best.value)best={value,action};
+  }
+  return best;
+ };
+ return search(visible,0).action;
 }

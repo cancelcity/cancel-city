@@ -1,6 +1,6 @@
 # Cancel City — game source
 
-Playable source mirror for Cancel City. This snapshot contains saved **Site version 43**, source commit `c0c8bd67e6fc5bfdaeff40d1be14bebb93da3783`.
+Playable source mirror for Cancel City. This snapshot contains saved **Site version 44**, source commit `8f788740c61b0364fe82cb996e4c15ce93931e22`.
 
 ## Download the latest uploaded version
 
@@ -23,7 +23,7 @@ Karen's original motion-comic animation has been restored in battles and preview
 
 A punk comic collectible card game. Everyone is the problem.
 
-New Screenshot Court duels use real star-cost summons, optional tributes, HP/ATK/DEF, independent Life Points, saved spell hands and automatic traps. Existing saved battles retain their original rules. See [the duel rules](docs/duel-rules.md).
+Screenshot Court uses a prepare-then-fight turn: one optional deployment, one optional tactic, then a battle action. Leads start deployed, knockouts cost 40 LP, and empty decks cause fatigue. Separate browser-saved practice works without cloud authentication and leaves Roast Night untouched. Existing saved battles retain their original rules. See [the current duel rules](docs/tactical-duel.md).
 
 The unified game design uses one navigation and printed-paper interface across Home, City, Cards, Packs, Battle, Market, Events, the Archive, cinema and the Permanent Record (`/profile/`). Cards groups residents, props and crew; Profile groups rankings, settings and save management. Home continues into the neighbourhood, and Airfryer Gate connects Home, City, Events and Court. All existing game artwork and rules are retained.
 
