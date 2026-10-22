@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import {useRouter,useSearchParams} from 'next/navigation';
 import {useEffect,useState} from 'react';
 import {ArrowRight,Check,Gift,Layers,Skull} from 'lucide-react';
 import {missionsFor,readyMissions} from '../domain/progression';
@@ -9,10 +10,13 @@ import {AirfryerCase} from './airfryer-case';
 import {CARD_BY_ID} from '../data/cards';
 import {Portrait} from './card';
 import {useGame} from '../state/store';
-export function MissionShortcut(){const save=useGame(s=>s.save),[now,setNow]=useState(new Date('2000-01-01'));useEffect(()=>{const update=()=>setNow(new Date());queueMicrotask(update);const timer=setInterval(update,30000);return()=>clearInterval(timer);},[]);const ready=readyMissions(save,now).length+(save?cityJobs(save).filter(j=>j.state&&!j.state.claimed&&j.state.progress>=j.target&&j.available).length:0);return <Link href="/missions/" className="mission-shortcut"><Gift size={23}/><span>CITY JOBS<small>{ready?`${ready} REWARDS READY`:'COMPLETE JOBS. EARN FREE PACKS.'}</small></span><ArrowRight size={22}/>{ready>0&&<b>{ready}</b>}</Link>;}
+export function MissionShortcut(){const save=useGame(s=>s.save),[now,setNow]=useState(new Date('2000-01-01'));useEffect(()=>{const update=()=>setNow(new Date());queueMicrotask(update);const timer=setInterval(update,30000);return()=>clearInterval(timer);},[]);const readyJobs=readyMissions(save,now),cityReady=save?cityJobs(save).filter(j=>j.state&&!j.state.claimed&&j.state.progress>=j.target&&j.available):[],ready=readyJobs.length+cityReady.length,destination=readyJobs[0]?.kind||(cityReady.length?'neighbourhood':'daily');return <Link href={`/missions/?tab=${destination}`} className="mission-shortcut"><Gift size={23}/><span>CITY JOBS<small>{ready?`${ready} REWARDS READY`:'COMPLETE JOBS. EARN FREE PACKS.'}</small></span><ArrowRight size={22}/>{ready>0&&<b>{ready}</b>}</Link>;}
 export function MissionsScreen(){
  const {save,busy,enter,run,hydrated,error}=useGame();
- const [now,setNow]=useState<Date|null>(null),[tab,setTab]=useState<'cases'|'daily'|'weekly'|'journey'|'neighbourhood'>('cases'),[message,setMessage]=useState('');
+ const params=useSearchParams(),router=useRouter();
+ const tab=(['cases','daily','weekly','journey','neighbourhood'] as const).find(value=>value===params.get('tab'))||'cases';
+ const setTab=(value:typeof tab)=>router.replace(`/missions/?tab=${value}`,{scroll:false});
+ const [now,setNow]=useState<Date|null>(null),[message,setMessage]=useState('');
  useEffect(()=>{setNow(new Date());const t=setInterval(()=>setNow(new Date()),30000);return()=>clearInterval(t);},[]);
  const jobs=missionsFor(save,now||new Date('2000-01-01'));
  const claim=async(id:string,packs:number)=>{if(await run({type:'claim-mission',missionId:id}))setMessage(`REWARD COLLECTED. +${packs} FREE ${packs===1?'PACK':'PACKS'}.`);};

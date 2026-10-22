@@ -2,7 +2,7 @@
 import { useRouter, useSearchParams } from 'next/navigation';
 import { CSSProperties, useEffect, useMemo, useState } from 'react';
 import { Check, Lock, Play, Shield, Sparkles } from 'lucide-react';
-import { CARDS, CARD_BY_ID, rarityOf } from '../data/cards';
+import { CARDS, CARD_BY_ID, factionOf, rarityOf } from '../data/cards';
 import { PROPS, PROP_BY_ID } from '../data/props';
 import { LOANERS } from '../domain/battle';
 import { quantity } from '../domain/game';
@@ -57,6 +57,7 @@ export function StashScreen() {
   const [notice, setNotice] = useState('');
   const [loot, setLoot] = useState<string | null>(null);
   const [pickerOpen, setPickerOpen] = useState(false);
+  const [residentQuery, setResidentQuery] = useState('');
   const [previewing, setPreviewing] = useState(false);
 
   const rows = propsFor(save);
@@ -77,6 +78,7 @@ export function StashScreen() {
     return ownedOrLoaner.length ? ownedOrLoaner : CARDS.slice(0, 12);
   }, [save]);
 
+  const filteredRoster = roster.filter(c => `${c.name} ${c.id} ${factionOf(c.faction).name}`.toLowerCase().includes(residentQuery.trim().toLowerCase()));
   const residentId = roster.some((c) => c.id === resident) ? resident : roster[0]?.id || 'CC001';
   const activeResident = CARD_BY_ID[residentId] || CARD_BY_ID.CC001;
   const equipped = save?.props.loadout[residentId] || null;
@@ -233,7 +235,7 @@ export function StashScreen() {
             <button
               type="button"
               className="stash-equipped-by-card"
-              onClick={() => setPickerOpen(true)}
+              onClick={() => { setResidentQuery(''); setPickerOpen(true); }}
               aria-label={`Equipped by ${activeResident.name}. Click to change resident`}
             >
               <div className="equipped-mini-portrait">
@@ -311,8 +313,10 @@ export function StashScreen() {
           <p>
             Pick which resident wields <b>{prop.name}</b> during their special attack animation:
           </p>
+          <label className="search-box"><span>FIND RESIDENT</span><input aria-label="Search eligible residents" placeholder="Name, card number or faction…" value={residentQuery} onChange={e=>setResidentQuery(e.target.value)}/></label>
+          <p>{filteredRoster.length} / {roster.length} owned residents and free loaners. Props change appearance, not stats.</p>
           <div className="stash-resident-picker-grid">
-            {roster.slice(0, 16).map((c) => (
+            {filteredRoster.map((c) => (
               <button
                 type="button"
                 key={c.id}
@@ -327,6 +331,7 @@ export function StashScreen() {
               </button>
             ))}
           </div>
+          {!filteredRoster.length&&<p>No eligible residents match. Try another name or clear the search.</p>}
         </Dialog>
       )}
 

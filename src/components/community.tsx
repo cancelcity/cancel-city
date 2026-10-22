@@ -1,5 +1,5 @@
 'use client';
-import {useEffect,useMemo,useState} from 'react';
+import {useEffect,useState} from 'react';
 import {api,useGame} from '../state/store';
 
 const MUNICIPAL_HALL_OF_SHAME:{alias:string;xp:number;wins:number}[]=[
@@ -13,23 +13,29 @@ const MUNICIPAL_HALL_OF_SHAME:{alias:string;xp:number;wins:number}[]=[
  {alias:'AirfryerEvangelist',xp:420,wins:4},
 ];
 
+type PublicScore={alias:string;xp:number;wins:number};
 export function LeaderboardScreen(){
- const {save,verified,mode,publicRank}=useGame(),[rows,setRows]=useState<{alias:string;xp:number;wins:number}[]>([]),[error,setError]=useState(''),[busy,setBusy]=useState(false);
+ const {save,verified,mode,publicRank}=useGame();
+ const [rows,setRows]=useState<PublicScore[]>([]),[error,setError]=useState(''),[busy,setBusy]=useState(false),[loading,setLoading]=useState(true),[refresh,setRefresh]=useState(0);
  useEffect(()=>{
   let active=true;
-  if(mode==='local'){setRows(MUNICIPAL_HALL_OF_SHAME);return;}
-  void api('leaderboard').then(p=>{if(active)setRows(p.players?.length?p.players:MUNICIPAL_HALL_OF_SHAME);}).catch(()=>{if(active){setRows(MUNICIPAL_HALL_OF_SHAME);setError('');}});
+  if(mode==='loading'){setLoading(true);return;}
+  if(mode!=='cloud'){setRows([]);setLoading(false);return;}
+  setLoading(true);setError('');
+  void api('leaderboard').then(payload=>{if(active)setRows(payload.players||[]);}).catch(e=>{if(active){setRows([]);setError(e instanceof Error?e.message:'Rankings are unavailable. Please retry.');}}).finally(()=>{if(active)setLoading(false);});
   return()=>{active=false;};
- },[mode]);
- const enabled=publicRank;
- const toggle=async()=>{setBusy(true);try{await api('rank',{enabled:!enabled});useGame.setState({publicRank:!enabled});const p=await api('leaderboard');setRows(p.players?.length?p.players:MUNICIPAL_HALL_OF_SHAME);}catch(e){setError(e instanceof Error?e.message:'Could not update ranking.');}finally{setBusy(false);}};
- const displayRows=useMemo(()=>{
-  const base=rows.length?rows:MUNICIPAL_HALL_OF_SHAME;
-  if(!save)return base;
-  const playerAlias=save.alias||'YOU (LOCAL MENACE)';
-  const withoutSelf=base.filter(r=>r.alias!==playerAlias);
-  return [...withoutSelf,{alias:`${playerAlias} ★ YOU`,xp:save.totalXp||0,wins:save.battle.wins||0}].sort((a,b)=>b.xp-a.xp||b.wins-a.wins);
- },[rows,save]);
- return <div className="leaderboard-page"><span className="tape yellow">THE CITY IS WATCHING</span><h1>PUBLIC<br/>MENACES.</h1><p>Municipal Hall of Shame &amp; verified cloud accounts. Ranked by earned XP, then campaign and daily wins. Participation is optional; only your alias and scores appear.</p>{save&&<div className="exchange-wallet"><span>{verified?'Your account is eligible for verified rankings.':'Local & imported progress is ranked against the Municipal Hall of Shame.'}</span><button className="button dark" disabled={!verified||mode!=='cloud'||busy} onClick={()=>void toggle()}>{enabled?'LEAVE RANKINGS':'JOIN RANKINGS'}</button></div>}{error&&<p role="alert">{error}</p>}<table className="rank-table"><thead><tr><th>RANK</th><th>ALIAS</th><th>XP</th><th>WINS</th></tr></thead><tbody>{displayRows.map((p,i)=><tr key={i} className={p.alias.endsWith('★ YOU')?'is-you':''}><td>#{i+1}</td><td>{p.alias}</td><td>{p.xp.toLocaleString('en-US')}</td><td>{p.wins}</td></tr>)}</tbody></table></div>;
+ },[mode,refresh]);
+ const toggle=async()=>{
+  setBusy(true);setError('');
+  try{await api('rank',{enabled:!publicRank});useGame.setState({publicRank:!publicRank});setRefresh(value=>value+1);}
+  catch(e){setError(e instanceof Error?e.message:'Could not update ranking participation.');}
+  finally{setBusy(false);}
+ };
+ return <div className="leaderboard-page"><span className="tape yellow">THE CITY IS WATCHING</span><h1>PUBLIC<br/>MENACES.</h1><p>Verified accounts that chose to join. Ranked by earned XP, then scored battle wins. Only an opted-in player’s alias and scores appear in the public list.</p>
+  {save&&<section className="exchange-wallet" aria-label="Your ranking participation"><span>{verified?publicRank?'PUBLIC PARTICIPATION: ON. You can leave at any time.':'PUBLIC PARTICIPATION: OFF. Your score is private.':'Local and imported progress cannot join verified rankings.'}</span><button className="button dark" disabled={!verified||mode!=='cloud'||busy||loading} onClick={()=>void toggle()}>{busy?'SAVING…':publicRank?'LEAVE RANKINGS':'JOIN RANKINGS'}</button></section>}
+  {save&&<aside className="paper-panel" aria-label="Your private score"><b>YOUR SCORE / PRIVATE COMPARISON</b><p>{save.alias}: {save.totalXp.toLocaleString('en-US')} XP · {save.battle.wins} scored wins.</p><small>This card is shown only to you. It does not assign a public rank or add you to the list.</small></aside>}
+  {loading?<p role="status">LOADING PUBLIC RANKINGS…</p>:mode!=='cloud'?<p role="status">Connect your account to view public rankings. Local scores stay on this device.</p>:error?<div role="alert"><p>{error}</p><button className="button paper" disabled={busy} onClick={()=>setRefresh(value=>value+1)}>RETRY RANKINGS</button></div>:!rows.length?<p role="status">No public scores yet. Joining rankings is optional.</p>:<table className="rank-table"><caption>LIVE PUBLIC RANKINGS · VERIFIED, OPTED-IN ACCOUNTS</caption><thead><tr><th>RANK</th><th>ALIAS</th><th>XP</th><th>WINS</th></tr></thead><tbody>{rows.map((score,index)=><tr key={`${score.alias}:${index}`}><td>#{index+1}</td><td>{score.alias}</td><td>{score.xp.toLocaleString('en-US')}</td><td>{score.wins}</td></tr>)}</tbody></table>}
+  <details className="paper-panel"><summary>FICTIONAL HALL OF SHAME / FOR FUN</summary><p>These are authored fictional characters, not player accounts. Their scores are separate from public rankings.</p><table className="rank-table"><thead><tr><th>CHARACTER</th><th>FICTIONAL XP</th><th>FICTIONAL WINS</th></tr></thead><tbody>{MUNICIPAL_HALL_OF_SHAME.map(score=><tr key={score.alias}><td>{score.alias}</td><td>{score.xp.toLocaleString('en-US')}</td><td>{score.wins}</td></tr>)}</tbody></table></details>
+ </div>;
 }
 export function FeedbackForm(){const [message,setMessage]=useState(''),[status,setStatus]=useState(''),[busy,setBusy]=useState(false);return <section className="settings-panel"><h2>Report a city problem</h2><p>Share a bug or suggestion. Avoid personal information. Reports are stored for the site operator.</p><textarea aria-label="Feedback" maxLength={2000} value={message} onChange={e=>setMessage(e.target.value)} placeholder="What happened? What did you expect?"/><button className="button acid" disabled={busy||message.trim().length<10} onClick={async()=>{setBusy(true);try{const p=await api('feedback',{kind:'feedback',message});setStatus(`Received. Reference: ${p.reference}`);setMessage('');}catch(e){setStatus(e instanceof Error?e.message:'Report unavailable.');}finally{setBusy(false);}}}>SEND FEEDBACK</button><p role="status">{status}</p></section>;}

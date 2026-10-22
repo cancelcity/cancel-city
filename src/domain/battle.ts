@@ -83,7 +83,7 @@ export const ABILITIES:Record<FactionId,{type:'drain'|'heal'|'shield'|'weaken'|'
 };
 export const abilityOf=(card:Card)=>ABILITIES[card.faction];
 export function abilityDescription(card:Card,district:DistrictId='street',side:Side='player',version=2){
- if(version>=2){const k=KITS[card.id],power=attackPower(card.id,district,side,version);return [(k.bonus||!k.heal&&!k.teamHeal)?`${power+k.bonus} base damage`:'',k.heal?`restore ${k.heal} composure`:'',k.teamHeal?`heal each teammate ${k.teamHeal}`:'',k.shield?`guard ${k.shield*100}%`:'',k.drain?`remove ${k.drain} hype`:'',k.weaken?'weaken next hit 30%':'',k.expose?'expose: next incoming hit +25%':'',k.pierce?'ignore guard':'',k.recharge?`refund ${k.recharge} hype`:'',k.cleanse?'clear weakness and exposure':''].filter(Boolean).join(' · ')+'.';}
+ if(version>=2){const k=KITS[card.id],power=attackPower(card.id,district,side,version);return [(k.bonus||!k.heal&&!k.teamHeal)?`${power+k.bonus} base damage`:'',k.heal?`restore ${k.heal} ${version>=4?'HP':'composure'}`:'',k.teamHeal?version>=4?`restore ${k.teamHeal} HP to each summoned teammate`:`heal each teammate ${k.teamHeal}`:'',k.shield?version>=4?`block ${k.shield*100}% of the next hit`:`guard ${k.shield*100}%`:'',k.drain?`remove ${k.drain} hype`:'',k.weaken?'weaken next hit 30%':'',k.expose?'expose: next incoming hit +25%':'',k.pierce?version>=4?'ignore DEF and temporary shields':'ignore guard':'',k.recharge?`refund ${k.recharge} hype`:'',k.cleanse?'clear weakness and exposure':''].filter(Boolean).join(' · ')+'.';}
  const power=attackPower(card.id,district,side,version);
  switch(abilityOf(card).type){
   case 'drain':return `${power+12} base damage. Remove 1 enemy hype.`;

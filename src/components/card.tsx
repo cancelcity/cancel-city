@@ -82,11 +82,7 @@ export function useCardCustomization(cardId: string) {
 }
 
 export function rarityBadgeLabel(rarity: Card['rarity']): string {
-  if (rarity === 'public-enemy') return 'LEGENDARY';
-  if (rarity === 'uncancelable') return 'EPIC';
-  if (rarity === 'public-menace') return 'RARE';
-  if (rarity === 'problematic') return 'RARE';
-  return 'COMMON';
+  return rarityOf(rarity).name.toUpperCase();
 }
 
 export function Portrait({
@@ -179,7 +175,7 @@ export function ResidentCard({
         />
         {foil && <span className="foil-stamp">✦ HOLO FOIL ✦</span>}
         {ascended && !locked && (
-          <span className="tcg-ascended-stamp" aria-hidden="true">👑 PUBLIC ENEMY III</span>
+          <span className="tcg-ascended-stamp" aria-hidden="true">👑 CROWN BADGE</span>
         )}
         {sticker && !locked && (
           <span

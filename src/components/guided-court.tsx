@@ -12,7 +12,7 @@ export function GuidedCourt({paused,cinematicMode,onExit,onPractice}:{paused:boo
  const [state,setState]=useState(()=>({match:trainingMatch('training-preview'),lesson:'attack' as TrainingLesson})),[ready,setReady]=useState(false),[error,setError]=useState(''),current=useRef(state);
  const update=(next:typeof state)=>{current.current=next;setState(next);};
  useEffect(()=>{let next={match:trainingMatch(crypto.randomUUID()),lesson:'attack' as TrainingLesson};try{const raw=localStorage.getItem(TRAINING_KEY);if(raw){const parsed=trainingSchema.safeParse(JSON.parse(raw));if(parsed.success&&parsed.data.match.mode==='practice'&&parsed.data.match.rulesVersion===5)next=parsed.data;}}catch{}update(next);setReady(true);},[]);
- useEffect(()=>{if(ready)try{localStorage.setItem(TRAINING_KEY,JSON.stringify(state));}catch{}},[state,ready]);
+ useEffect(()=>{if(ready)try{localStorage.setItem(TRAINING_KEY,JSON.stringify(state));window.dispatchEvent(new Event('cancel-city.training-progress'));}catch{}},[state,ready]);
  const {match,lesson}=state,info=TRAINING_LESSONS[lesson],checkpoint=lesson==='replacement-ready'||lesson==='done';
  const commit=async(action?:BattleAction)=>{if(!ready||current.current.match.step!==match.step||current.current.match.id!==match.id)return false;try{const next=action?applyTrainingMove(match,lesson,action):{match:takeTurn(match,'enemy',trainerAction(match)),lesson};update(next);setError('');return true;}catch(e){setError(e instanceof Error?e.message:'Try the highlighted action.');return false;}};
  const restart=()=>{update({match:trainingMatch(crypto.randomUUID()),lesson:'attack'});setError('');};

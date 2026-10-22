@@ -1,5 +1,8 @@
 import {FACTIONS,BASE_CARDS,WAVE_CARDS,CULTURE_CARDS,NEW_SET_REWARDS} from '../data/cards';
 import type {Save} from './game';
+export const XP_PER_LEVEL=1000;
+export const levelForXp=(xp:number)=>1+Math.floor(Math.max(0,Math.trunc(xp))/XP_PER_LEVEL);
+export function levelProgress(xp:number){const value=Math.max(0,Math.trunc(xp));return {level:levelForXp(value),current:value%XP_PER_LEVEL,required:XP_PER_LEVEL,percent:value%XP_PER_LEVEL/XP_PER_LEVEL*100};}
 export const dayKey=(now:Date)=>now.toISOString().slice(0,10);
 export function weekKey(now:Date){const date=new Date(now);date.setUTCDate(date.getUTCDate()-((date.getUTCDay()+6)%7));return dayKey(date);}
 export const freshActivity=(now:Date)=>({day:dayKey(now),week:weekKey(now),dailyOpened:0,dailyFusions:0,weeklyOpened:0,weeklyDiscoveries:0,weeklyClaims:0});
@@ -24,7 +27,7 @@ export function missionsFor(save:Save|null,now:Date):Mission[]{
   row('discover-ten','A terrible circle','Discover ten residents.','journey',10,save?.discoveredCardIds.length||0,2),
   row('discover-twenty','The usual suspects','Discover twenty residents.','journey',20,save?.discoveredCardIds.length||0,3),
   row('first-foil','Polished disaster','Create your first foil.','journey',1,save?.lifetimeFusions||0,1),
-  row('level-five','Local celebrity','Reach cosmetic level five.','journey',5,1+Math.floor((save?.totalXp||0)/100),2),
+  row('level-five','Local celebrity','Reach cosmetic level five (4,000 total XP).','journey',5,levelForXp(save?.totalXp||0),2),
   row('first-five','Five bad decisions','Open five packs. Reward granted automatically.','journey',5,save?.lifetimePacksOpened||0,1,0,'first-five',true),
   ...FACTIONS.map(f=>row(`faction:${f.id}`,`${f.name} · City Intake`,'Discover this original faction. Reward granted automatically.','journey',5,BASE_CARDS.filter(c=>c.faction===f.id&&save?.discoveredCardIds.includes(c.id)).length,1,0,`faction:${f.id}`,true)),
   ...FACTIONS.map(f=>row(`wave-two:${f.id}`,`${f.name} · Cult of Personality`,'Discover both new faction residents. Reward granted automatically.','journey',2,WAVE_CARDS.filter(c=>c.faction===f.id&&save?.discoveredCardIds.includes(c.id)).length,1,0,`wave-two:${f.id}`,true)),

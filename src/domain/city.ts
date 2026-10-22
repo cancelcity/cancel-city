@@ -1,5 +1,5 @@
 import {z} from 'zod';
-import {CITY_EVENT_BY_ID} from '../data/city-events';
+import {CITY_EVENTS,CITY_EVENT_BY_ID} from '../data/city-events';
 import {CARD_BY_ID} from '../data/cards';
 import {BuildingKind,buildingOf,CITY_BALANCE,CONTRACTS,CONTRACT_BY_ID} from '../data/city';
 import {LOANERS} from './battle';
@@ -37,6 +37,18 @@ export function plotUnlock(save:Save,index:number):{unlocked:boolean;requirement
 export function matched(building:CityBuilding){return !!building.residentId&&CARD_BY_ID[building.residentId].faction===buildingOf(building.kind).faction;}
 export function influenceRate(building:CityBuilding){return building.residentId?15+building.level*10+15+(matched(building)?10:0):0;}
 export function cityProduction(city:City){return Math.min(CITY_BALANCE.dailyCap,city.plots.reduce((n,b)=>n+(b?influenceRate(b):0),0));}
+/** Production is collected city-wide, so an upgrade may hit the daily cap. */
+export function cityUpgradePreview(city:City,index:number){
+ const building=city.plots[index];if(!building||building.level===3)return null;
+ const level=(building.level+1) as 2|3,upgraded={...building,level};
+ const incomeBefore=cityProduction(city),incomeAfter=cityProduction({...city,plots:city.plots.map((b,i)=>i===index?upgraded:b)});
+ return {level,cost:CITY_BALANCE.upgradeCosts[level],incomeBefore,incomeAfter,incomeGain:incomeAfter-incomeBefore,buildingBefore:influenceRate(building),buildingAfter:influenceRate(upgraded),capped:incomeAfter===CITY_BALANCE.dailyCap};
+}
+/** An unfinished incident stays actionable even after its five-minute atmosphere ends. */
+export function nextStreetBeef(city:City|null){
+ if(city?.activeEvent&&!Object.hasOwn(city.eventEndings,city.activeEvent.eventId))return CITY_EVENT_BY_ID[city.activeEvent.eventId];
+ return CITY_EVENTS.find(event=>!city||!Object.hasOwn(city.eventEndings,event.id))||null;
+}
 export function cityCanCollect(city:City,now:Date){const day=now.toISOString().slice(0,10);return day>=city.startedAt.slice(0,10)&&(!city.lastProductionDay||city.lastProductionDay<day)&&cityProduction(city)>0;}
 export function chapterHosts(city:City,kind:BuildingKind,tier:1|2|3){return city.plots.filter((b):b is CityBuilding=>!!b&&b.kind===kind&&b.level>=tier&&matched(b));}
 export const claimedCityJobs=(city:City)=>Object.values(city.contracts).filter(c=>c.claimed).length;

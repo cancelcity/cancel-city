@@ -15,6 +15,7 @@ import { PackFilm } from './pack-film';
 import { ResidentCard } from './card';
 import { CityLogo } from './brand';
 import { CITY_EASE, useCityMotion } from './city-motion';
+import {useStarterGuide} from './starter-guide';
 
 const DEMO_PULLS: Pull[] = [
   { cardId: 'CC008', slot: 0, isNewDiscovery: true, regularQuantityAfter: 1 }, // Infinite Rizz (NEW)
@@ -122,6 +123,8 @@ export function Packs({
 }) {
   const { save, run, enter, busy, error, hydrated } = useGame();
   const reduced = useCityMotion();
+  const {journey}=useStarterGuide();
+  const [justCollected,setJustCollected]=useState(false);
   const [presentation, setPresentation] = useState<'ready' | 'tear' | 'collect'>('ready');
   const [collected, setCollected] = useState<Save['pendingOpening']>(null);
   const [cascade, setCascade] = useState(false);
@@ -184,6 +187,7 @@ export function Packs({
   const openAndRevealFirst = async () => {
     if (presentation !== 'ready' || busy) return;
     if (!save && !(await enter())) return;
+    setJustCollected(false);
     if (!reduced) setPresentation('tear');
     const preferences = useGame.getState().save?.settings;
     if (preferences?.soundEnabled) playReveal(3, preferences.volume, 'riot');
@@ -237,6 +241,7 @@ export function Packs({
     if (!session || busy || collecting || spotlight) return;
     const snapshot = session;
     if (await run({ type: 'acknowledge' })) {
+      setJustCollected(true);
       if (!reduced) {
         setCollected(snapshot);
         setPresentation('collect');
@@ -253,9 +258,10 @@ export function Packs({
   const openNext=async()=>{await openAndRevealFirst();if(useGame.getState().save?.pendingOpening&&batchRemaining>0)setBatchRemaining(n=>n-1);};
   return <section className={`reference-packs ${session?'in-session':'is-preview'} ${tearing?'is-tearing':''}`} aria-label="Open Packs">
    <aside className="reference-pack-sidebar"><CityLogo/><span className="tape paper">PACKS</span><nav aria-label="Pack destinations"><Link href="/packs/" className="active"><Layers/>OPEN PACKS</Link><Link href="/collection/"><Library/>COLLECTION</Link><Link href="/market/"><ShoppingCart/>MARKET</Link><Link href="/battle/"><Swords/>BATTLE</Link></nav></aside>
-   <div className="reference-pack-theater"><div className="reference-pack-burst" aria-hidden="true"/><div className="reference-pack-shards" aria-hidden="true">{Array.from({length:20},(_,i)=><i key={i} style={{'--shard':i} as CSSProperties}/>)}</div><div className="reference-pack-fan">{activePulls.map((pull,i)=><PackCardSlot key={`${session?.id||'preview'}-${i}`} pull={pull} index={i} revealed={!session||i<revealedCount} next={!!session&&i===revealedCount} busy={busy||!!spotlight||!session} collecting={collecting} delay={cascade?Math.max(0,i-cascadeFrom)*.08:0} onReveal={()=>void reveal(false)} onInspect={onInspect}/>)}</div><span className="reference-pull-rarity tape pink">{session?`${revealedCount} / 5 REVEALED`:'MYTHIC · CATALOGUE PREVIEW'}</span><button className="reference-pack-wrapper" aria-label={session?'Reveal next resident':'Open one pack'} disabled={session?busy||allRevealed||!!spotlight:!canOpen} onClick={()=>void(session?reveal(false):openNext())}><PackWrapper/></button>{session&&<div className="reference-reveal-actions"><button className="button magenta" disabled={busy||!!spotlight||collecting} onClick={()=>void(allRevealed?collect():reveal(false))}>{allRevealed?'COLLECT ALL 5':'REVEAL NEXT'}<ArrowRight size={18}/></button>{!allRevealed&&<button className="button dark" disabled={busy||!!spotlight} onClick={()=>void reveal(true)}>REVEAL ALL</button>}</div>}</div>
+   <div className="reference-pack-theater"><div className="reference-pack-burst" aria-hidden="true"/><div className="reference-pack-shards" aria-hidden="true">{Array.from({length:20},(_,i)=><i key={i} style={{'--shard':i} as CSSProperties}/>)}</div><div className="reference-pack-fan">{activePulls.map((pull,i)=><PackCardSlot key={`${session?.id||'preview'}-${i}`} pull={pull} index={i} revealed={!session||i<revealedCount} next={!!session&&i===revealedCount} busy={busy||!!spotlight||!session} collecting={collecting} delay={cascade?Math.max(0,i-cascadeFrom)*.08:0} onReveal={()=>void reveal(false)} onInspect={onInspect}/>)}</div><span className="reference-pull-rarity tape pink">{session?`${revealedCount} / 5 REVEALED`:'CATALOGUE PREVIEW / NOT YOUR PULLS'}</span><button className="reference-pack-wrapper" aria-label={session?'Reveal next resident':'Open one pack'} disabled={session?busy||allRevealed||!!spotlight:!canOpen} onClick={()=>void(session?reveal(false):openNext())}><PackWrapper/></button>{session&&<div className="reference-reveal-actions"><button className="button magenta" disabled={busy||!!spotlight||collecting} onClick={()=>void(allRevealed?collect():reveal(false))}>{allRevealed?'COLLECT ALL 5':'REVEAL NEXT'}<ArrowRight size={18}/></button>{!allRevealed&&<button className="button dark" disabled={busy||!!spotlight} onClick={()=>void reveal(true)}>REVEAL ALL</button>}</div>}</div>
    <aside className="reference-pack-info"><Link className="pack-poster" href="/city/"><span className="tape yellow">SCANDAL<br/>SEASON</span><p>Bad people.<br/>Good content.<br/><b>AIRFRYER GATE IS OPEN.</b></p><strong>EXPLORE YOUR CITY →</strong></Link><section className="reference-odds"><button onClick={onOdds}><h2>DROP RATES</h2><Info size={19}/></button><dl>{RARITIES.map(r=><div key={r.id} style={{color:r.color}}><dt>{r.name}</dt><dd>{(r.weight*100).toFixed(1)}%</dd></div>)}</dl><small>Same public odds for every pack.</small></section><section className="reference-pack-collection"><h2>YOUR COLLECTION</h2><b><Library size={24}/>{save?.discoveredCardIds.length||0} / {CARDS.length}</b><div className="progress-track"><i style={{width:`${(save?.discoveredCardIds.length||0)/CARDS.length*100}%`}}/></div><Link href="/collection/">VIEW COLLECTION <ArrowRight size={17}/></Link></section></aside>
    <footer className="reference-pack-purchase"><button className="pack-purchase single" disabled={!canOpen||!!session} onClick={()=>void openNext()}><span className="purchase-wrapper"><PackWrapper/></span><span><b>{batchRemaining?`NEXT PACK · ${batchRemaining} LEFT`:'SINGLE PACK'}</b><small>5 residents · independent draws</small><strong><Ticket/>1</strong></span></button><button className="pack-purchase ten" disabled={!canOpen||!!session||(save?.packBalance??0)<10||batchRemaining>0} onClick={async()=>{await openAndRevealFirst();if(useGame.getState().save?.pendingOpening)setBatchRemaining(9);}}><span className="purchase-wrapper"><PackWrapper/></span><span><b>10-PACK</b><small>Open ten packs, one at a time</small><strong><Ticket/>10</strong></span></button><button className="pack-daily-sticker" disabled={!canClaimDaily||busy} onClick={()=>void run({type:'daily'})}><span>3 FREE<br/>DAILY PACKS!</span><small>{canClaimDaily?'CLAIM YOURS →':!save?'OPEN A PACK TO BEGIN':'NEXT RESET: 00:00 UTC'}</small></button></footer>
+   {justCollected&&!session&&<section className="pack-next-step" aria-label="Your next step"><div><span className="tape yellow">ALL FIVE CHARACTERS SAVED</span><h2>{journey.title}</h2><p>{journey.description}</p></div><Link className="button magenta" href={journey.href}>{journey.action}<ArrowRight size={18}/></Link><Link className="text-link" href="/collection/">VIEW MY CHARACTERS →</Link><button className="text-link" onClick={()=>setJustCollected(false)}>KEEP OPENING PACKS</button></section>}
    {spotlight&&<div className="pull-cinema-overlay" role="status"><PackFilm pull={spotlight} onComplete={()=>setSpotlight(null)}/></div>}
   </section>;
 }

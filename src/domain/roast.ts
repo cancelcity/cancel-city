@@ -5,6 +5,8 @@ import type {Save} from './game';
 import {LOANERS} from './battle';
 import {roastExchange,ROAST_VOICES,type RoastTone} from '../data/roast-script';
 export const ROAST_OPPONENTS=[{cardId:'CC001',hp:96,name:'RAGE BAIT',rule:'Repeating yourself feeds his ego.',intro:'I HAVE ALREADY WON THIS ARGUMENT IN MY HEAD.',gag:'THE CROWD ASKED HIM TO TOUCH THE STAGE GRASS.'},{cardId:'CC026',hp:120,name:'MANAGER ENERGY',rule:'An angry audience strengthens her complaints.',intro:'I WOULD LIKE TO SPEAK TO THE ORGANISER OF HUMILIATION.',gag:'HER COMPLAINT HAS BEEN ESCALATED TO THE VENDING MACHINE.'},{cardId:'CC031',hp:138,name:'PROVE YOU ARE FUNNY',rule:'Keep the crowd on side to crack the final gate.',intro:'SELECT EVERY SQUARE CONTAINING A DECENT PUNCHLINE.',gag:'THE ROBOT FAILED ITS OWN VIBE CHECK.'}] as const;
+export const ROAST_MOVE_LIMIT=36;
+export const roastMovesLeft=(r:Roast)=>Math.max(0,(r.version===2?ROAST_MOVE_LIMIT:60)-r.turn);
 export const ROAST_PROPS=[{id:'bonk',art:'/assets/props/P001.webp',name:'THE BONK STICK',effect:'18 damage. Cancel the next enemy turn.',quote:'The silence is now physical.'},{id:'copium',art:'/assets/props/P003.webp',name:'EMERGENCY COPIUM',effect:'Heal 24. Absorb the next hit, then burst for 14 damage.',quote:'The excuses have reached critical pressure.'},{id:'megaphone',art:'/assets/props/P004.webp',name:'APOLOGY MEGAPHONE',effect:'Win 30 crowd points. Expose the opponent for 2 hits.',quote:'I am sorry you are so loud.'}] as const;
 const count=z.number().int().nonnegative(),cardId=z.string().refine(id=>Object.hasOwn(CARD_BY_ID,id));
 const propId=z.enum(['bonk','copium','megaphone']);
@@ -94,6 +96,19 @@ export function roastSpecialPreview(r:Roast){
  const collision=r.crowd>=35&&damage>=25&&damage<r.enemyHp&&!r.collisions.includes(r.round)?Math.min(10,r.enemyHp-damage):0;
  const effects=[kit.heal?`Heal up to ${kit.heal}.`:'',kit.teamHeal?`Heal every standing ally up to ${kit.teamHeal}.`:'',kit.shield||kit.cleanse?'Block 60% of the next hit.':'',kit.weaken?'Cut the next hit by 45%.':'',kit.expose?'Expose the opponent for two hits.':'',kit.recharge?`Refund ${kit.recharge} hype.`:''].filter(Boolean);
  return {damage:damage+collision,collision,effect:effects.join(' ')||'A hard hit. No recovery.'};
+}
+
+/** Forecast the full exchange through the same reducer used to save real moves. */
+export function roastActionForecast(r:Roast,action:RoastAction){
+ if(r.version!==2||r.phase!=='player')return null;
+ try{
+  const now=new Date(r.createdAt),afterMove=advanceRoastPractice(r,{type:'roast-act',matchId:r.id,step:r.step,action},now);
+  const move=afterMove.events.at(-1)!;
+  const result=afterMove.phase==='enemy'?advanceRoastPractice(afterMove,{type:'roast-enemy',matchId:r.id,step:afterMove.step},now):afterMove;
+  const response=result.step>afterMove.step?result.events.at(-1):undefined;
+  const burst=response?.side==='enemy'?(result.round>afterMove.round?afterMove.enemyHp:Math.max(0,afterMove.enemyHp-result.enemyHp)):0;
+  return {damage:move.damage+burst,incoming:response?.side==='enemy'?response.damage:0,hype:afterMove.team[r.active].hype-r.team[r.active].hype,crowd:result.crowd-r.crowd,heal:move.heal,interrupted:response?.kind==='interrupt',knockout:!!response?.knockout,actCleared:result.round>r.round,won:result.winner==='player',lost:result.winner==='enemy',timeout:result.reason==='timeout'};
+ }catch{return null;}
 }
 
 /** Browser-local rehearsal: pure reducer, no Save, wallet, inventory, reward callback or network. */
@@ -198,7 +213,7 @@ export function advanceRoastPractice(current:Roast,command:RoastCommand,now:Date
    }
   }
   if(r.team[r.active].hp===0&&r.team.some(f=>f.hp>0))r.active=r.team.findIndex(f=>f.hp>0);
-  if(r.turn>=36&&r.phase!=='finished'){r.phase='finished';r.winner='enemy';r.reason='timeout';e.text+=' Last orders. You had the mic for long enough.';}
+   if(r.turn>=ROAST_MOVE_LIMIT&&r.phase!=='finished'){r.phase='finished';r.winner='enemy';r.reason='timeout';e.text+=' Last orders. You had the mic for long enough.';}
  }
  if(r.phase==='finished'){
   const voice=ROAST_VOICES[enemyId];

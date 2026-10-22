@@ -9,7 +9,7 @@ import {useEffect,useRef,useState} from 'react';
 import {ArrowRight,ArrowUpCircle,Crown,Flame,HelpCircle,Home,Radio,Sparkles,Swords,Ticket,UserPlus,Users} from 'lucide-react';
 import {useGame} from '../state/store';
 import {dailyEligible,type Command} from '../domain/game';
-import {cityCanCollect,cityProduction,influenceRate} from '../domain/city';
+import {cityCanCollect,cityProduction,influenceRate,nextStreetBeef} from '../domain/city';
 import {buildingOf,CITY_BALANCE} from '../data/city';
 import {CARD_BY_ID} from '../data/cards';
 import {CITY_EVENTS,CITY_EVENT_BY_ID} from '../data/city-events';
@@ -54,7 +54,7 @@ const RIVAL_BLOCKS=[
 
 export function CityScreen(){
  const {save,enter,run,busy,error,hydrated,mode}=useGame(),router=useRouter(),params=useSearchParams(),reduced=useCityMotion(),[sceneMode,setSceneMode]=useCinematicMode('cancel-city.city-cinematics.v1');
- const [inspectorOpen,setInspectorOpen]=useState(false),[selected,setSelected]=useState('plot-0'),[paused,setPaused]=useState(false),[manager,setManager]=useState<{plot:number;tab:'plot'|'stories'|'jobs'}|null>(params.get('tab')==='jobs'||params.get('tab')==='stories'?{plot:0,tab:params.get('tab') as 'jobs'|'stories'}:null),[drama,setDrama]=useState(false),[help,setHelp]=useState(false),[beefOpen,setBeefOpen]=useState(false),[beefVerdict,setBeefVerdict]=useState<string|null>(null),[raidOpen,setRaidOpen]=useState(false),[lootBursts,setLootBursts]=useState<{id:number;label:string;tone:'acid'|'pink'|'cyan'}[]>([]),[notice,setNotice]=useState(''),[clock,setClock]=useState<Date|null>(null),[departing,setDeparting]=useState<string|null>(null),timer=useRef<ReturnType<typeof setTimeout>|null>(null);
+ const [inspectorOpen,setInspectorOpen]=useState(false),[selected,setSelected]=useState('plot-0'),[paused,setPaused]=useState(false),[manager,setManager]=useState<{plot:number;tab:'plot'|'stories'|'jobs'}|null>(params.get('tab')==='jobs'||params.get('tab')==='stories'?{plot:0,tab:params.get('tab') as 'jobs'|'stories'}:null),[drama,setDrama]=useState(false),[help,setHelp]=useState(false),[beefOpen,setBeefOpen]=useState(false),[beefVerdict,setBeefVerdict]=useState<string|null>(null),[resolvedBeefId,setResolvedBeefId]=useState<string|null>(null),[raidOpen,setRaidOpen]=useState(false),[lootBursts,setLootBursts]=useState<{id:number;label:string;tone:'acid'|'pink'|'cyan'}[]>([]),[notice,setNotice]=useState(''),[clock,setClock]=useState<Date|null>(null),[departing,setDeparting]=useState<string|null>(null),timer=useRef<ReturnType<typeof setTimeout>|null>(null);
  useEffect(()=>{setClock(new Date());const t=setInterval(()=>setClock(new Date()),30000);return()=>{clearInterval(t);if(timer.current)clearTimeout(timer.current);};},[]);
  useEffect(()=>{if(!notice)return;const t=setTimeout(()=>setNotice(''),4600);return()=>clearTimeout(t);},[notice]);
  const spawnLoot=(label:string,tone:'acid'|'pink'|'cyan'='acid')=>{
@@ -78,18 +78,18 @@ export function CityScreen(){
   manage('plot');
  };
  const door=(e:React.MouseEvent<HTMLAnchorElement>,id:string,href:string)=>{if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();if(departing)return;setDeparting(id);timer.current=setTimeout(()=>router.push(href),reduced?0:330);};
- const activeEvent=city?.activeEvent&&clock&&Date.parse(city.activeEvent.endsAt)>clock.getTime()?CITY_EVENT_BY_ID[city.activeEvent.eventId]:null;
- const nextBeefEvent=activeEvent||CITY_EVENTS.find(e=>!city?.eventEndings||!Object.hasOwn(city.eventEndings,e.id))||CITY_EVENTS[0];
+ const upcomingBeefEvent=nextStreetBeef(city);
+ const nextBeefEvent=beefVerdict&&resolvedBeefId?CITY_EVENT_BY_ID[resolvedBeefId]:upcomingBeefEvent;
  const resolveStreetBeef=async(choice:0|1|2)=>{
   if(!city){await found();return;}
-  const ev=nextBeefEvent;
+  const ev=upcomingBeefEvent;if(!ev)return;
   if(city.activeEvent?.eventId!==ev.id&&!await run({type:'city-event-start',eventId:ev.id}))return;
   const ok=await run({type:'city-event-choice',eventId:ev.id,choice});
   if(!ok)return;
   const rewardLabel=choice===0?'+1 FREE PACK 🎟':choice===1?'+25 INFLUENCE 👑':'+6 SCRAP ⚙';
   const rewardTone=choice===0?'pink':choice===1?'acid':'cyan';
   spawnLoot(rewardLabel,rewardTone);
-  setBeefVerdict(ev.endings[choice]);
+  setResolvedBeefId(ev.id);setBeefVerdict(ev.endings[choice]);
   if(ok)setNotice(`STREET BEEF SETTLED: ${rewardLabel}`);
  };
  const runSafeHustle=async()=>{if(!save&&!await enter())return;await mutate({type:'clout-scheme',scheme:'safe'},'SPONSORED POST SAVED. +40 CLOUT.',{label:'+40 CLOUT',tone:'acid'});};
@@ -122,7 +122,7 @@ export function CityScreen(){
 
  return <div className="reference-page whole-game whole-city" data-departing={!!departing}>
   <ComicHeader/>
-  <NeighbourhoodStage selected={selected} onSelect={setSelected} onManage={manage} onFound={()=>void found()} onCollect={()=>void collect()} onUpgrade={()=>void upgradeAction()} canCollect={canCollect} income={income} onDrama={()=>setDrama(true)} onBeef={()=>{setBeefOpen(true);setBeefVerdict(null);}} onRaid={()=>setRaidOpen(true)} onHelp={()=>setHelp(true)} onHustle={()=>void runSafeHustle()}/>
+  <NeighbourhoodStage selected={selected} onSelect={setSelected} onManage={manage} onFound={()=>void found()} onCollect={()=>void collect()} onUpgrade={()=>void upgradeAction()} canCollect={canCollect} income={income} onDrama={()=>setDrama(true)} onBeef={()=>{setBeefOpen(true);setBeefVerdict(null);setResolvedBeefId(null);}} onRaid={()=>setRaidOpen(true)} onHelp={()=>setHelp(true)} onHustle={()=>void runSafeHustle()}/>
   <ComicTicker/>
   {/* RIVAL BLOCK TURF RAID MODAL */}
   {raidOpen&&(
@@ -190,7 +190,7 @@ export function CityScreen(){
        <p>{beefVerdict}</p>
        <div className="city-beef-verdict-actions">
         <button type="button" className="block-action acid" onClick={()=>setBeefVerdict(null)}>
-         <span>NEXT STREET BEEF ⚡</span>
+         <span>{upcomingBeefEvent?'NEXT STREET BEEF ⚡':'BLOCK CLEARED →'}</span>
         </button>
         <button type="button" className="block-action paper" onClick={()=>setBeefOpen(false)}>
          <span>BACK TO THE BLOCK</span>
@@ -220,6 +220,7 @@ export function CityScreen(){
     </div>
    </Dialog>
   )}
+  {beefOpen&&!nextBeefEvent&&<Dialog title="STREET BEEF / BLOCK CLEARED" onClose={()=>setBeefOpen(false)}><h2>ALL {CITY_EVENTS.length} INCIDENTS SETTLED.</h2><p>Your endings and rewards are saved. Revisit Street Drama to read your choices and replay their atmosphere; replays do not award more loot.</p><button className="button paper" onClick={()=>{setBeefOpen(false);setDrama(true);}}>OPEN STREET DRAMA <ArrowRight size={17}/></button></Dialog>}
   {manager&&<Dialog title="YOUR BLOCK / MUNICIPAL RECORDS" onClose={()=>setManager(null)} wide><CityManagement initialPlot={manager.plot} initialTab={manager.tab} sceneMode={sceneMode} setSceneMode={setSceneMode}/></Dialog>}
   {drama&&<Dialog title="STREET DRAMA / EVERYONE IS THE PROBLEM" onClose={()=>setDrama(false)} wide><CityEventBoard/><CityIncidents/></Dialog>}
   {help&&<Dialog title="WELCOME TO THE WORST BLOCK." onClose={()=>setHelp(false)}><ol className="how-to-play"><li><b>Found your block.</b> A free tower, starter resident and 200 Influence.</li><li><b>Accept the tower’s job.</b> Open two packs, then claim a pack, Influence and XP here.</li><li><b>Give residents an address.</b> Use the Block directory to assign residents, build, move, rename and upgrade. Matching factions unlock stories.</li><li><b>Collect once per UTC day.</b> Influence funds construction and upgrades. Residents stay available for battles.</li><li><b>The city is your hub.</b> Court, Packs, Collection, Market and Prop Stash are one stop away. Drag or swipe the scene; use the camera buttons to zoom.</li></ol><button className="block-action pink" onClick={()=>setHelp(false)}>LET’S MAKE THIS WORSE <ArrowRight size={17}/></button></Dialog>}
