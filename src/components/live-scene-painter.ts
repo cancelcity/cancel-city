@@ -48,7 +48,7 @@ function actorAssets(id:string){return [...(ACTORS[id]?.poses.map(p=>p.src)??[SP
 export function liveSceneAssets(scene:LiveScene):string[]{
  let urls:string[]=[CITY,LOGO];
  if(scene.kind==='special')urls.push(...actorAssets(scene.playback.cardId),...actorAssets(scene.playback.targetId),...(scene.playback.partnerId?actorAssets(scene.playback.partnerId):[]),...(scene.playback.cardId==='CC026'?[CARD_BY_ID.CC002.art]:[]),...(scene.playback.propId?[PROP_BY_ID[scene.playback.propId].art]:[]));
- else if(scene.kind==='roast'){for(const id of new Set([...scene.roast.team.map(f=>f.cardId),...ROAST_OPPONENTS.map(f=>f.cardId),'CC007','CC028','CC074','CC068','CC043','CC083','CC015','CC008']))urls.push(...actorAssets(id));urls.push(...ROAST_PROPS.map(p=>p.art));}
+ else if(scene.kind==='roast'){for(const id of new Set([...scene.roast.team.map(f=>f.cardId),...ROAST_OPPONENTS.map(f=>f.cardId),'CC007','CC028','CC074','CC068','CC043','CC083','CC015','CC008']))urls.push(...actorAssets(id));urls.push('/assets/roast/venue-v2.webp',...ROAST_PROPS.map(p=>p.art));}
  else if(scene.kind==='battle'){urls.push('/assets/world/screenshot-court.webp');for(const id of new Set([...scene.match.player,...scene.match.enemy].map(f=>f.cardId)))urls.push(...actorAssets(id));}
  else if(scene.kind==='pack'){}
  else if(scene.kind==='pull')urls.push(...actorAssets(scene.cardId),...actorAssets('CC007'));

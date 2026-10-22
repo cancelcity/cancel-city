@@ -1,6 +1,6 @@
 # Cancel City — game source
 
-Playable source mirror for Cancel City. This snapshot contains saved **Site version 47**, source commit `c0a5cce8638bc0ffaf0a9b060f21c15a793e5b3e`.
+Playable source mirror for Cancel City. This snapshot contains saved **Site version 48**, source commit `c16a465bbc8aeba3f8afb158e77335aae6c297a7`.
 
 ## Download the latest uploaded version
 
@@ -22,6 +22,8 @@ The game is a web application. Downloading its source does not copy player accou
 Karen's original motion-comic animation has been restored in battles and previews after the articulated experiment was rejected. `/cinema/karen/` now previews the original special; `/cinema/` retains the original film. The experiment is archived, not part of runtime playback. See `docs/karen-benchmark.md` for its historical notes.
 
 A punk comic collectible card game. Everyone is the problem.
+
+Roast Night now stages a detailed inked basement show with 18 authored exchanges and 54 actual reply choices. Jab, bait and deadpan have distinct tactical effects, visible enemy intentions and truthful previews; support Specials trade damage for recovery. Independent browser-saved practice works without signing in, while account shows retain first-clear rewards and old saved shows keep their original rules. See [Roast Night](docs/roast-night.md).
 
 Screenshot Court uses a prepare-then-fight turn: one optional deployment, one optional tactic, then a battle action. Leads start deployed, knockouts cost 40 LP, and empty decks cause fatigue. Separate browser-saved practice works without cloud authentication and leaves Roast Night untouched. Existing saved battles retain their original rules. Fighters now show their combat role and HP/ATK/DEF. Thirteen spells and seven traps/counters have dedicated inked-comic illustrations, city themes, separate flavour jokes and their own catalogue at `/collection/?type=tactics`. Build twelve tactics (maximum two copies each), choose three fighters and play. Slop & Cope covers draw, cleanse, healing counters and insurance. The Consequences Sold Separately recipe adds HP-for-stars and draw costs, hype theft, debuff transfer, risky team healing and three new reactions. The New Drop filter shows all eight new cards. All twenty tactics are free; selection saves in this browser and each cloud match saves its own deck. A separate five-lesson guided rehearsal at `/battle/?learn=1` teaches the real rules, and twelve practice fighters are available as loaners. See [the current duel rules](docs/tactical-duel.md).
 

@@ -8,8 +8,43 @@ function shape(c:CanvasRenderingContext2D,pts:number[][],fill:string,stroke=INK)
 function box(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,color:string){c.fillStyle=color;c.fillRect(x,y,w,h);c.strokeStyle=INK;c.lineWidth=4;c.strokeRect(x,y,w,h);}
 function mic(c:CanvasRenderingContext2D,x:number,y:number,angle=0){c.save();c.translate(x,y);c.rotate(angle);c.strokeStyle='#bcb7bb';c.lineWidth=6;c.beginPath();c.moveTo(0,-105);c.lineTo(0,0);c.moveTo(-35,15);c.lineTo(0,0);c.lineTo(35,15);c.stroke();c.fillStyle=INK;c.fillRect(-13,-133,26,43);c.strokeStyle=PAPER;c.lineWidth=2;c.strokeRect(-13,-133,26,43);c.restore();}
 function snack(c:CanvasRenderingContext2D,d:MemeDraw,x:number,y:number,a=0){c.save();c.translate(x,y);c.rotate(a);box(c,-88,-174,176,277,PINK);box(c,-70,-155,99,178,INK);for(let j=0;j<6;j++)box(c,-61+j%2*43,-143+Math.floor(j/2)*49,27,38,j%2?ACID:BLUE);box(c,46,-142,20,91,PAPER);box(c,-58,43,119,26,INK);d.text('SNACKS / NO REFUNDS',0,91,13,INK,0,164);c.restore();}
+function paintClub(c:CanvasRenderingContext2D,s:RoastScene,d:MemeDraw){
+ const r=s.roast,e=s.event,p=s.reduced?1:clamp(s.progress),animating=!!e&&p<1,round=animating&&p<.68?e.round:r.round;
+ const enemy=ROAST_OPPONENTS[round].cardId,actor=e?.side==='player'&&animating?e.actorId:r.team[r.active].cardId;
+ const t=(s.time??0)/1000,impact=!!e&&p>=.5&&e.round===round,win=r.winner==='player';
+ d.image('/assets/roast/venue-v2.webp',640,360,1280,720);
+ const shade=c.createLinearGradient(0,0,0,720);shade.addColorStop(0,'#08060999');shade.addColorStop(.2,'#08060900');shade.addColorStop(.76,'#08060900');shade.addColorStop(1,'#08060977');c.fillStyle=shade;c.fillRect(0,0,1280,720);
+ let ax=350,tx=924,ap=0,tp=0,aa=0,ta=0,af=510,tf=512;
+ const bob=s.reduced?0:Math.sin(t*1.7)*2;
+ if(animating){
+  const q=Math.sin(clamp((p-.1)/.75)*Math.PI);
+  if(e.side==='player'){
+   ap=e.tone==='deadpan'?0:e.kind==='guard'||e.kind==='copium'?1:p<.45?1:2;tp=impact&&e.damage>0?4:0;
+   if(e.kind==='attack'||e.kind==='reply'&&e.tone!=='deadpan'||e.kind==='special'||e.kind==='bonk'){ax+=q*48;tx+=impact?q*25:0;ta=impact?q*4:0;}
+   if(e.kind==='switch'){ax=235+ease(p)*115;ap=0;}
+   if(e.kind==='bonk')d.image('/assets/props/P001.webp',575+ease(p)*100,360-q*60,165,undefined,-35+ease(p)*65);
+   if(e.kind==='copium')d.image('/assets/props/P003.webp',494,420,160,undefined,q*5);
+   if(e.kind==='megaphone')d.image('/assets/props/P004.webp',490,315,165,undefined,-18);
+  }else{tp=p<.5?1:2;ap=impact&&e.damage>0?4:1;aa=impact?q*-3:0;ax-=impact?q*18:0;}
+  if(e.collision&&impact){ta=16*ease((p-.5)/.5);tx+=44*ease((p-.5)/.5);d.dust(tx,398,clamp((p-.5)*2),PINK);d.weapon('paper',1050-(p-.5)*330,300-Math.sin(p*Math.PI)*90,.35,p*130,ACID,'BILL');}
+ }
+ if(r.phase==='finished'){ap=win?3:5;tp=win?5:3;}
+ c.save();c.fillStyle='#08060877';for(const x of [ax,tx]){c.beginPath();c.ellipse(x,514,94,14,0,0,Math.PI*2);c.fill();}c.restore();
+ mic(c,635,510,-.04+(animating&&e?.collision?ease(p)*-.7:0));
+ d.actor(actor,ap,ax,af+bob,352,aa);d.actor(enemy,tp,tx,tf-bob,352,ta);
+ if(r.copium)d.image('/assets/props/P003.webp',210,462,79,undefined,-7);
+ d.tag(`ACT ${round+1} / 3 · ${ROAST_OPPONENTS[round].name}`,640,42,PAPER,-1,730);
+ if(impact&&e&&(!s.finale||p<.8)){
+  if(e.damage)d.tag(`−${e.damage} HP`,e.side==='player'?1020:245,259,PINK,e.side==='player'?5:-5,205);
+  if(e.heal)d.tag(`+${e.heal} HP`,246,195,BLUE,-3,205);
+  if(e.collision)d.tag('THE WHOLE ROOM SAW THAT.',640,567,ACID,-2,620);
+ }
+ if(s.finale){d.tag(win?'LAST WORD: YOURS.':'THE BOUNCER HAS HEARD ENOUGH.',640,163,win?ACID:PINK,-3,760);}
+ else d.tag(r.crowd>=35?'THE ROOM IS YOURS.':r.crowd<=-20?'YOU’RE LOSING THE ROOM.':'MAKE THEM PICK A SIDE.',640,657,r.crowd>=35?ACID:r.crowd<=-20?PINK:PAPER,-1,650);
+}
 export function paintRoast(c:CanvasRenderingContext2D,s:RoastScene,d:MemeDraw){
- const r=s.roast,e=s.event,p=s.reduced?1:clamp(s.progress),q=ease(clamp((p-.28)/.38)),impact=p>=.68,finale=!!s.finale,win=r.winner==='player',round=e?.round??r.round,enemy=ROAST_OPPONENTS[round].cardId,actor=e?.side==='player'?e.actorId:r.team[r.active].cardId,t=(s.time??0)/1000,cheer=r.crowd>=25,boo=r.crowd<=-25;
+ if(s.roast.version===2){paintClub(c,s,d);return;}
+ const r=s.roast,e=s.event,p=s.reduced?1:clamp(s.progress),q=ease(clamp((p-.28)/.38)),impact=p>=.68,finale=!!s.finale,win=r.winner==='player',round=e&&p<.68?e.round:r.round,enemy=ROAST_OPPONENTS[round].cardId,actor=e?.side==='player'?e.actorId:r.team[r.active].cardId,t=(s.time??0)/1000,cheer=r.crowd>=25,boo=r.crowd<=-25;
  d.background(0,.74,1.12);box(c,85,123,1110,515,'#28232e');box(c,122,146,1036,456,'#23192b');
  for(let j=0;j<14;j++){const x=94+j*85;shape(c,[[x,118],[x+79,118],[x+74,182],[x+12,174]],j%2?'#962559':'#731b45');}
  shape(c,[[89,151],[245,151],[199,592],[91,633]],'#862050');shape(c,[[1191,151],[1035,151],[1081,592],[1191,633]],'#862050');

@@ -1,6 +1,6 @@
 {
-  "source_commit": "c0a5cce8638bc0ffaf0a9b060f21c15a793e5b3e",
-  "site_version": 47,
+  "source_commit": "c16a465bbc8aeba3f8afb158e77335aae6c297a7",
+  "site_version": 48,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -6680,6 +6680,12 @@
       "size": 343618,
       "sha256": "4383399846bce97022d5bacdad4fc057f09658adf41585fd652f14a89e482dcc",
       "git_blob": "19f8373dc27db61af0a8264c1676f15405ed5cd7"
+    },
+    {
+      "path": "public/assets/roast/venue-v2.webp",
+      "size": 606712,
+      "sha256": "9d1310da907ed2bb08bf1d65f23b59dade61ba37b7146f0b447c24ea74458b9d",
+      "git_blob": "3071aade5f75a773341d9ffc8d0a5f048aaa2d32"
     },
     {
       "path": "public/assets/roster-b2/CC003-small.webp",

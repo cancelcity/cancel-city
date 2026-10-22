@@ -5,6 +5,8 @@ import {handleApi,Env} from '../worker/index';
 import {createMatch} from '../src/domain/battle';
 import {DECK_RECIPES,allTactics} from '../src/domain/duel-rules';
 import {initialSave} from '../src/domain/game';
+import {roastReplyPreview,roastV2Intent} from '../src/domain/roast';
+import {roastExchange} from '../src/data/roast-script';
 let sqlite:DatabaseSync,env:Env;
 class Statement{
  values:(string|number|null)[]=[];
@@ -91,6 +93,34 @@ describe('Culture Collision cloud commands',()=>{
 });
 
 describe('Roast Night cloud commands',()=>{
+ it('persists authored v2 replies through a complete show and grants its final reward once',async()=>{
+  const initial=(await call('start',{})).data.save;
+  const started=await call('command',{id:crypto.randomUUID(),revision:initial.revision,command:{type:'roast-start',version:2,matchId:'roast-v2-api',team:['CC001','CC008','CC015'],mode:'steady'}});
+  expect(started.status).toBe(200);let s=started.data.save;
+  expect(s.roast!.version).toBe(2);
+  const opening=s.roast!,exchange=roastExchange(opening.round,opening.turn,opening.id),preview=roastReplyPreview(opening,'bait');
+  const reply=await call('command',{id:crypto.randomUUID(),revision:s.revision,command:{type:'roast-act',matchId:opening.id,step:opening.step,action:{type:'reply',tone:'bait'}}});
+  expect(reply.status).toBe(200);s=reply.data.save;
+  expect(s.roast!.events.at(-1)).toMatchObject({kind:'reply',tone:'bait',setup:exchange.setup,reply:exchange.responses.find(response=>response.id==='bait')!.line,damage:preview.damage});
+  expect((await call('player')).data.save.roast).toEqual(s.roast);
+  const stale=await call('command',{id:crypto.randomUUID(),revision:s.revision,command:{type:'roast-act',matchId:opening.id,step:opening.step,action:{type:'reply',tone:'jab'}}});
+  expect(stale.status).toBe(409);expect((await call('player')).data.save).toEqual(s);
+  let lastInput:unknown=null;
+  for(let i=0;i<80&&s.roast!.phase!=='finished';i++){
+   const r=s.roast!,intent=roastV2Intent(r).kind;
+   const action=r.team[r.active].hype===3?{type:'special'}:{type:'reply',tone:intent==='rant'?'bait':intent==='heckle'?'jab':'deadpan'};
+   const command=r.phase==='player'?{type:'roast-act',matchId:r.id,step:r.step,action}:{type:'roast-enemy',matchId:r.id,step:r.step};
+   lastInput={id:crypto.randomUUID(),revision:s.revision,command};
+   const next=await call('command',lastInput);expect(next.status).toBe(200);s=next.data.save;
+   expect(s.roast!.pending).toBeNull();
+  }
+  expect(s.roast).toMatchObject({version:2,round:2,phase:'finished',winner:'player',rewarded:true});
+  expect(s.packBalance).toBe(initial.packBalance+1);expect(s.totalXp).toBe(initial.totalXp+60);
+  expect(s.awardedRewardIds.filter(id=>id==='encounter:roast-night')).toHaveLength(1);expect(s.battle.wins).toBe(initial.battle.wins);
+  const replay=await call('command',lastInput);expect(replay.status).toBe(200);expect(replay.data.save).toEqual(s);
+  const duplicate=await call('command',{id:crypto.randomUUID(),revision:s.revision,command:{type:'roast-act',matchId:s.roast!.id,step:s.roast!.step,action:{type:'reply',tone:'jab'}}});
+  expect(duplicate.status).toBe(409);expect((await call('player')).data.save).toEqual(s);
+ });
  it('persists a whole three-act show and deduplicates the final reward through the API',async()=>{await call('start',{});let s=(await call('command',{id:crypto.randomUUID(),revision:0,command:{type:'roast-start',matchId:'roast-api',team:['CC001','CC008','CC015'],mode:'steady'}})).data.save;let lastInput:unknown=null;for(let i=0;i<100&&s.roast!.phase!=='finished';i++){const r=s.roast!,command=r.phase==='player'?{type:'roast-act',matchId:r.id,step:r.step,action:{type:r.team[r.active].hype===3?'special':'attack'}}:r.phase==='enemy'?{type:'roast-enemy',matchId:r.id,step:r.step}:{type:'roast-resolve',matchId:r.id,step:r.step,input:'tap'};lastInput={id:crypto.randomUUID(),revision:s.revision,command};const next=await call('command',lastInput);expect(next.status).toBe(200);s=next.data.save;}expect(s.roast!.winner).toBe('player');expect(s.packBalance).toBe(4);expect(s.totalXp).toBe(60);expect(s.battle.wins).toBe(0);const retry=await call('command',lastInput);expect(retry.status).toBe(200);expect(retry.data.save).toEqual(s);expect((await call('player')).data.save.roast).toEqual(s.roast);});
  it('rejects invalid cast, prop and stale beat requests without changing the saved show',async()=>{await call('start',{});const started=await call('command',{id:crypto.randomUUID(),revision:0,command:{type:'roast-start',matchId:'guarded',team:['CC001','CC008','CC015'],mode:'timed'}});expect(started.status).toBe(200);const s=started.data.save;for(const command of [{type:'roast-act',matchId:'guarded',step:0,action:{type:'prop',propId:'constructor'}},{type:'roast-start',matchId:'bad',team:['CC001','CC001','CC015'],mode:'timed'},{type:'roast-act',matchId:'guarded',step:99,action:{type:'attack'}}])expect((await call('command',{id:crypto.randomUUID(),revision:s.revision,command})).status).toBeGreaterThanOrEqual(400);expect((await call('player')).data.save).toEqual(s);});
  it('accepts only server-computed outcomes rather than client damage or grade',async()=>{await call('start',{});let s=(await call('command',{id:crypto.randomUUID(),revision:0,command:{type:'roast-start',matchId:'timing-api',team:['CC001','CC008','CC015'],mode:'timed'}})).data.save;for(const command of [{type:'roast-act',matchId:'timing-api',step:0,action:{type:'attack'}},{type:'roast-enemy',matchId:'timing-api',step:1},{type:'roast-resolve',matchId:'timing-api',step:2,input:'skip',grade:'perfect',damage:9999,now:'2099-01-01T00:00:00Z'}]){const result=await call('command',{id:crypto.randomUUID(),revision:s.revision,command});expect(result.status).toBe(200);s=result.data.save;}expect(s.roast!.events.at(-1)!.grade).toBe('good');expect(s.roast!.events.at(-1)!.damage).toBeLessThan(30);expect(s.packBalance).toBe(3);});
