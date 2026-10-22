@@ -12,6 +12,31 @@
       "git_blob": "53a36c14019256f6e479ffe2c84c831d1230a70b"
     },
     {
+      "path": "docs/art/city-v2/street-backdrop.png",
+      "size": 3907581,
+      "git_blob": "53068da30cd8e66dd410cc840e1bab2546c8378f"
+    },
+    {
+      "path": "docs/art/city-v2/zone-kfc.png",
+      "size": 3679969,
+      "git_blob": "ef06d345e06aacfc5897174256e726b69aebf2d8"
+    },
+    {
+      "path": "docs/art/city-v2/zone-oil-manor.png",
+      "size": 3816502,
+      "git_blob": "e4be56c40f5991199d78e0d378379f3e959fd343"
+    },
+    {
+      "path": "docs/art/city-v2/zone-red-flag-house.png",
+      "size": 3765431,
+      "git_blob": "700094086e80627376b0dfabcfbd975c1b916d98"
+    },
+    {
+      "path": "docs/art/city-v2/zone-yacht-club.png",
+      "size": 3774777,
+      "git_blob": "3098759a0831cabc7b0adf50a4d7ff7b98f614b7"
+    },
+    {
       "path": "docs/art/city/afterparty-l1.png",
       "size": 2061368,
       "git_blob": "176d5646c630f84264a13d68fe9a218644386ab5"

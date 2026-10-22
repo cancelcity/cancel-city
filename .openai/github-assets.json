@@ -1,6 +1,6 @@
 {
-  "source_commit": "edcc3572b81a94db34e90ff66d1db1ef18ef4eaa",
-  "site_version": 49,
+  "source_commit": "70ca1e73f974b69a07cd7a3e62f1bf9fd40a2039",
+  "site_version": 50,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -3896,6 +3896,36 @@
       "size": 309366,
       "sha256": "8bda6df882f0ffd19d31b2033eae883a190611d40bdbddc817379713ec8805d7",
       "git_blob": "8d93e5b8f840a26d3198641084d174dd81aca029"
+    },
+    {
+      "path": "public/assets/city-v2/street-backdrop.webp",
+      "size": 744028,
+      "sha256": "d4050b2dd317f5c1181d9d15b45542293692288046bd18d2f3405329fa43752f",
+      "git_blob": "db5f7c063c5ca45f01a1aca4b4da09af6955499a"
+    },
+    {
+      "path": "public/assets/city-v2/zone-kfc.webp",
+      "size": 727132,
+      "sha256": "319da2a78f3c0c1f7bf8db59852d70074e37d68b00e256698e01d7cb22d5ed46",
+      "git_blob": "9f4a64e0c6f30be9c3befbccab2d37692f754c06"
+    },
+    {
+      "path": "public/assets/city-v2/zone-oil-manor.webp",
+      "size": 743172,
+      "sha256": "ed6e9fad2bc83e3e01184b1c67be8342c76a2cecd6f8001ed7243875d2d5d225",
+      "git_blob": "551c9c2994e3ae6c78c53a3ac86edf0f802155c0"
+    },
+    {
+      "path": "public/assets/city-v2/zone-red-flag-house.webp",
+      "size": 730972,
+      "sha256": "85910790c4d0c358f445c340d993bec0094d6e59521b7e9c4f5042d2b1f9fcce",
+      "git_blob": "843a8ee60aeb104145202b8b12fdaa1a2d7d74ec"
+    },
+    {
+      "path": "public/assets/city-v2/zone-yacht-club.webp",
+      "size": 758388,
+      "sha256": "152e8b5627816371532f7c9533d209a5b85d00f2303d347c6ac679c966c8079c",
+      "git_blob": "2fd383f974ac11c50b70c6129ea8263594827b94"
     },
     {
       "path": "public/assets/city/afterparty-l1.webp",

@@ -70,12 +70,7 @@ export function CityScreen(){
  const collect=async()=>{
   if(!city){await found();return;}
   if(canCollect){await mutate({type:'city-collect'},`+${income} INFLUENCE. TODAY’S PICKUP IS SAVED.`,{label:`+${income} INFLUENCE 👑`,tone:'acid'});return;}
-  if(plot===1&&!building&&city.influence>=buildingOf('afterparty').cost){
-   await mutate({type:'city-build',plot:1,kind:'afterparty'},'AIRFRYER PALACE OPENED. ASSIGN A RESIDENT TO COOK.',{label:'BUILT AIRFRYER PALACE ⚡',tone:'pink'});
-   return;
-  }
-  setNotice('Production is collected once per UTC day.');
-  manage('plot');
+  setNotice(income===0?'Assign a resident to start daily production.':'Today’s Influence was already collected. Next pickup: 00:00 UTC.');
  };
  const door=(e:React.MouseEvent<HTMLAnchorElement>,id:string,href:string)=>{if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();if(departing)return;setDeparting(id);timer.current=setTimeout(()=>router.push(href),reduced?0:330);};
  const upcomingBeefEvent=nextStreetBeef(city);
@@ -99,14 +94,7 @@ export function CityScreen(){
  const hourlyRate=building?influenceRate(building):0;
  const upgradeAction=async()=>{
   if(!city){await found();return;}
-  if(!building){
-   if(plot===1&&city.influence>=buildingOf('afterparty').cost){
-    await mutate({type:'city-build',plot:1,kind:'afterparty'},'AIRFRYER PALACE LEASED.',{label:'NEW LEASE SIGNED ⚡',tone:'pink'});
-    return;
-   }
-   manage('plot');
-   return;
-  }
+  if(!building){manage('plot');return;}
   if(building.level<3){
    const cost=CITY_BALANCE.upgradeCosts[(building.level+1) as 2|3];
    if(city.influence>=cost){
@@ -223,7 +211,7 @@ export function CityScreen(){
   {beefOpen&&!nextBeefEvent&&<Dialog title="STREET BEEF / BLOCK CLEARED" onClose={()=>setBeefOpen(false)}><h2>ALL {CITY_EVENTS.length} INCIDENTS SETTLED.</h2><p>Your endings and rewards are saved. Revisit Street Drama to read your choices and replay their atmosphere; replays do not award more loot.</p><button className="button paper" onClick={()=>{setBeefOpen(false);setDrama(true);}}>OPEN STREET DRAMA <ArrowRight size={17}/></button></Dialog>}
   {manager&&<Dialog title="YOUR BLOCK / MUNICIPAL RECORDS" onClose={()=>setManager(null)} wide><CityManagement initialPlot={manager.plot} initialTab={manager.tab} sceneMode={sceneMode} setSceneMode={setSceneMode}/></Dialog>}
   {drama&&<Dialog title="STREET DRAMA / EVERYONE IS THE PROBLEM" onClose={()=>setDrama(false)} wide><CityEventBoard/><CityIncidents/></Dialog>}
-  {help&&<Dialog title="WELCOME TO THE WORST BLOCK." onClose={()=>setHelp(false)}><ol className="how-to-play"><li><b>Found your block.</b> A free tower, starter resident and 200 Influence.</li><li><b>Accept the tower’s job.</b> Open two packs, then claim a pack, Influence and XP here.</li><li><b>Give residents an address.</b> Use the Block directory to assign residents, build, move, rename and upgrade. Matching factions unlock stories.</li><li><b>Collect once per UTC day.</b> Influence funds construction and upgrades. Residents stay available for battles.</li><li><b>The city is your hub.</b> Court, Packs, Collection, Market and Prop Stash are one stop away. Drag or swipe the scene; use the camera buttons to zoom.</li></ol><button className="block-action pink" onClick={()=>setHelp(false)}>LET’S MAKE THIS WORSE <ArrowRight size={17}/></button></Dialog>}
+  {help&&<Dialog title="WELCOME TO THE WORST BLOCK." onClose={()=>setHelp(false)}><ol className="how-to-play"><li><b>Found your block.</b> A free tower, starter resident and 200 Influence.</li><li><b>Accept the tower’s job.</b> Open two packs, then claim a pack, Influence and XP here.</li><li><b>Give residents an address.</b> Select an address, then use its bottom property dock to build, assign residents, read chapters and upgrade. Matching factions unlock stories. Advanced Records keeps moving and renaming available.</li><li><b>Collect once per UTC day.</b> Influence funds construction and upgrades. Residents stay available for battles.</li><li><b>The city is your hub.</b> Court, Packs, Collection, Market and Prop Stash are one stop away. Use the twelve address buttons to switch between the two streets. The district tabs lead to the Yacht Club, Baby Oil Manor, Red Flag Brothel and Kancel Fried Chicken. Each venue saves one ending and reward; replaying is story-only.</li></ol><button className="block-action pink" onClick={()=>setHelp(false)}>LET’S MAKE THIS WORSE <ArrowRight size={17}/></button></Dialog>}
   {notice&&<div className="toast" role="status"><Sparkles size={18}/>{notice}</div>}
  </div>;
 }
