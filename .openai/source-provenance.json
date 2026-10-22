@@ -1,6 +1,6 @@
 {
-  "site_version": 50,
-  "source_commit": "70ca1e73f974b69a07cd7a3e62f1bf9fd40a2039",
+  "site_version": 51,
+  "source_commit": "c9374c97586369a2ef79ffde84d240b643c072e9",
   "site": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "repository": "https://github.com/cancelcity/cancel-city",
   "runtime_asset_count": 1323,

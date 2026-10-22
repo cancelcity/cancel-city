@@ -4,16 +4,9 @@ import Link from 'next/link';
 import {useRef,useState,type CSSProperties} from 'react';
 import {ArrowLeft,ArrowUpRight,Check,Eye,LoaderCircle,LockKeyhole,MapPin,RotateCcw,Ticket,Trash2,Zap} from 'lucide-react';
 import {CARD_BY_ID} from '../data/cards';
-import {CITY_ZONE_BY_ID,type CityZoneId,type CityZoneReward} from '../data/city-zones';
+import {CITY_ZONES,CITY_ZONE_BY_ID,type CityZoneId,type CityZoneReward} from '../data/city-zones';
 import {useGame} from '../state/store';
 import {Portrait} from './card';
-
-const NEXT_STOP:Record<CityZoneId,{href:string;label:string;note:string}>={
- 'yacht-club':{href:'/battle/?practice=1',label:'TAKE IT TO COURT',note:'A separate practice battle. No account rewards.'},
- 'oil-manor':{href:'/roast/',label:'TAKE THE MIC AT ROAST NIGHT',note:'Three more egos in the basement club.'},
- 'red-flag-house':{href:'/collection/',label:'MEET THE REST OF THE PROBLEM',note:'Browse the residents in your collection.'},
- kfc:{href:'/packs/',label:'HEAD TO OPEN PACKS',note:'One pack ticket opens five resident cards.'},
-};
 
 function ZoneRewards({reward,muted=false}:{reward:CityZoneReward;muted?:boolean}){
  return <span className={`city-zone-rewards ${muted?'is-story-only':''}`}>
@@ -23,16 +16,19 @@ function ZoneRewards({reward,muted=false}:{reward:CityZoneReward;muted?:boolean}
  </span>;
 }
 
-export function CityZonePanel({zoneId,onBack}:{zoneId:CityZoneId;onBack:()=>void}){
- return <CityZoneStory key={zoneId} zoneId={zoneId} onBack={onBack}/>;
+export function CityZonePanel({zoneId,onBack,onVisit}:{zoneId:CityZoneId;onBack:()=>void;onVisit:(zone:CityZoneId)=>void}){
+ return <CityZoneStory key={zoneId} zoneId={zoneId} onBack={onBack} onVisit={onVisit}/>;
 }
 
-function CityZoneStory({zoneId,onBack}:{zoneId:CityZoneId;onBack:()=>void}){
+function CityZoneStory({zoneId,onBack,onVisit}:{zoneId:CityZoneId;onBack:()=>void;onVisit:(zone:CityZoneId)=>void}){
  const {save,run,busy,error,hydrated,mode,migration,clearError}=useGame();
  const [reading,setReading]=useState<number|null>(null),[claiming,setClaiming]=useState<number|null>(null),[notice,setNotice]=useState('');
  const claimLock=useRef(false);
  const zone=CITY_ZONE_BY_ID[zoneId],city=save?.city,chosen=city?.zoneEndings[zoneId],resolved=chosen!==undefined;
- const host=zone.hostCardId?CARD_BY_ID[zone.hostCardId]:undefined,next=NEXT_STOP[zoneId];
+ const host=zone.hostCardId?CARD_BY_ID[zone.hostCardId]:undefined;
+ const savedEnding=resolved?zone.choices[chosen]:null;
+ const unvisited=CITY_ZONES.filter(other=>other.id!==zoneId&&city?.zoneEndings[other.id]===undefined),visited=CITY_ZONES.filter(other=>city?.zoneEndings[other.id]!==undefined).length;
+ const rewardStep=savedEnding?.reward.packs?{href:'/packs/',label:'OPEN PACKS',note:'Your saved ending awarded a pack ticket. Spend tickets in Packs to add residents to your collection.'}:savedEnding?.reward.scrap?{href:'/market/',label:'VISIT THE TRASH MARKET',note:'Your saved ending awarded Trash. Save it toward a resident recipe, or recycle spare cards to earn more.'}:savedEnding?{href:null,label:'USE INFLUENCE ON YOUR BLOCK',note:'Your saved ending awarded Influence. Use it to build properties or upgrade your block.'}:null;
  const connected=hydrated&&(mode==='cloud'||mode==='local')&&!error&&!migration;
  const canChoose=connected&&!!city&&!busy&&!resolved;
  const viewed=resolved?(reading??chosen):null,ending=viewed!==null?zone.choices[viewed]:null,alternate=resolved&&viewed!==chosen;
@@ -65,7 +61,13 @@ function CityZoneStory({zoneId,onBack}:{zoneId:CityZoneId;onBack:()=>void}){
    <div className="city-zone-choice-heading"><h2>{resolved?'READ THE OTHER ENDINGS':'HOW DO YOU HANDLE THIS PRICK?'}</h2><span>{resolved?'STORY REPLAY / NO MORE REWARDS':'CHOOSE ONE / REWARD SAVES IMMEDIATELY'}</span></div>
    <ol className="city-zone-choices">{zone.choices.map((choice,index)=><li key={choice.label}><button className={`city-zone-choice ${chosen===index?'is-chosen':''} ${viewed===index?'is-reading':''}`} disabled={!resolved&&!canChoose} aria-pressed={resolved?viewed===index:undefined} onClick={()=>resolved?setReading(index):void choose(index)}><span className="city-zone-choice-number">{chosen===index?<Check size={18} aria-hidden="true"/>:String(index+1).padStart(2,'0')}</span><span className="city-zone-choice-body"><strong>{choice.label}</strong><ZoneRewards reward={choice.reward} muted={resolved&&chosen!==index}/>{resolved&&<em>{chosen===index?'YOUR SAVED ENDING / COLLECTED':'READ ONLY / NO REWARD'}</em>}</span>{claiming===index?<LoaderCircle className="city-zone-saving" size={18} aria-label="Saving your choice"/>:resolved?<Eye size={17} aria-hidden="true"/>:<ArrowUpRight size={19} aria-hidden="true"/>}</button></li>)}</ol>
    <p className="city-zone-fine-print">{resolved?'Your first choice is final. Replays only change the story shown here.':'One saved ending per venue. No entry fee. No countdown. Other endings remain readable after you choose.'}</p>
-   {resolved&&<footer className="city-zone-next"><Link href={next.href}>{next.label}<ArrowUpRight size={16} aria-hidden="true"/></Link><small>{next.note}</small><button onClick={onBack}><ArrowLeft size={13} aria-hidden="true"/>BACK TO THE BLOCK</button></footer>}
+   {resolved&&rewardStep&&<footer className="city-zone-next">
+    <span className="city-zone-next-label">PUT YOUR SAVED REWARD TO WORK</span>
+    {rewardStep.href?<Link className="city-zone-reward-action" href={rewardStep.href}>{rewardStep.label}<ArrowUpRight size={16} aria-hidden="true"/></Link>:<button className="city-zone-reward-action" onClick={onBack}>{rewardStep.label}<ArrowUpRight size={16} aria-hidden="true"/></button>}
+    <small>{rewardStep.note}</small>
+    <div className="city-zone-tour"><span>{visited} / {CITY_ZONES.length} ENDINGS SAVED</span>{unvisited.length?<button onClick={()=>onVisit(unvisited[0].id)}>NEXT UNVISITED: {unvisited[0].name}<ArrowUpRight size={15} aria-hidden="true"/></button>:<b>EVERY VENUE VISITED. YOUR CHOICES ARE SAVED.</b>}</div>
+    <button onClick={onBack}><ArrowLeft size={13} aria-hidden="true"/>BACK TO THE BLOCK</button>
+   </footer>}
   </div>
  </section>;
 }

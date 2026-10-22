@@ -17,6 +17,12 @@ Venues are separate fixed locations, not extra buildable kinds. District URLs us
 
 Old City saves default `zoneEndings` to `{}`. Each saved outcome must have its `city-zone:<id>` reward receipt and vice versa. Existing plots, story contracts, Influence, daily production, saves and rewards are retained. New reward markers cannot be forged by UI arguments.
 
+## District guide and next actions
+
+The illustrated guide below the property dock exposes all four venues, their saved ending and a total visit count. District tabs mark saved endings. After a visit, the primary action follows the actual saved reward: Packs for tickets, the block for Influence, and the Trash Market for Trash. Previewing an alternate ending does not change that action or earn rewards. A next-unvisited shortcut continues the tour, without adding a completion bonus.
+
+The block objective prioritizes claimable rewards, then accepted available jobs, then new available jobs. Unfinished jobs on existing buildings remain visible when an upgrade or matching resident is missing. Paused chapter jobs explain the missing host requirement before offering an activity link. Street paging resets the property dock, and district navigation returns the City scroll area to the top.
+
 ## Artwork
 
 Five backgrounds generated with the built-in imagegen tool and art-directed against the approved mockup. Original PNG masters live in the Site source under `docs/art/city-v2/`; optimized WebP runtime assets live under `public/assets/city-v2/`. Raw masters are optional authoring material, recorded in the playable mirror's omitted-assets manifest. Existing runtime art is retained.

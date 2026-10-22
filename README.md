@@ -1,6 +1,6 @@
 # Cancel City — game source
 
-Playable source mirror for Cancel City. This snapshot contains saved **Site version 50**, source commit `70ca1e73f974b69a07cd7a3e62f1bf9fd40a2039`.
+Playable source mirror for Cancel City. This snapshot contains saved **Site version 51**, source commit `c9374c97586369a2ef79ffde84d240b643c072e9`.
 
 ## Download the latest uploaded version
 
