@@ -27,5 +27,9 @@ import './city-zones.css';
 import './city-districts.css';
 import './cloutside-corner.css';
 import './liability-hills-scene.css';
+import './city-map-viewport.css';
+import './city-atlas-life.css';
+import './city-atlas-venue.css';
+import './city-atlas.css';
 export const metadata:Metadata={title:'Cancel City — Everyone is the problem',description:`Collect the worst of humanity. A free punk cartoon card game. Open packs, collect ${CARDS.length} residents, fuse cursed foils and build your worst neighbourhood. Internet folklore, original shitposts and terminally online satire.`,icons:{icon:'/favicon.svg'}};
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><Bootstrap>{children}</Bootstrap></body></html>;}

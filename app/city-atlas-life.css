@@ -1,0 +1,5 @@
+.city-atlas-life{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;z-index:1}
+.city-atlas-lamp{opacity:.1;filter:drop-shadow(0 0 4px #ffd365);animation:atlas-lamplight 8s ease-in-out infinite}
+.city-atlas-life[data-paused=true] .city-atlas-lamp{animation-play-state:paused}
+@keyframes atlas-lamplight{0%,15%,40%,100%{opacity:.08}22%,30%{opacity:.32}70%{opacity:.13}}
+@media(prefers-reduced-motion:reduce){.city-atlas-lamp{animation:none;opacity:.1}}

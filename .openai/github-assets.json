@@ -1,6 +1,6 @@
 {
-  "source_commit": "6547e87f67bb21cf6084dc18e36313115a3997c5",
-  "site_version": 54,
+  "source_commit": "5d461344e35ecab8cdf9fa89fe6de27b6008c67c",
+  "site_version": 55,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -3998,6 +3998,24 @@
       "size": 756890,
       "sha256": "c615e0acac9ddbb224ab73d81073e682c0da5e05320fee883f2588b383a7b78f",
       "git_blob": "02ace40c215be2520e7d69bb9a35a39d5860ab49"
+    },
+    {
+      "path": "public/assets/city-v6/city-overview.webp",
+      "size": 927936,
+      "sha256": "47aa606af5ff15fef4d12d883fe82d5a86a26b3b87bf29de6f91c4eb4d760182",
+      "git_blob": "d4bb8fcb84d2a9a34418f3addd1f25dafaec98e6"
+    },
+    {
+      "path": "public/assets/city-v6/overtime-downtown.webp",
+      "size": 864302,
+      "sha256": "4803bec59eb24ef66e074e4f9e5b9570f80d9adf9b97890c273af780d1664f20",
+      "git_blob": "b132a6f7aae645b6494345f0140663a222573bf8"
+    },
+    {
+      "path": "public/assets/city-v6/rug-street-404.webp",
+      "size": 884328,
+      "sha256": "2e9af16e9440efc81aae5b4a8a7918cdd37f56557ce8f82cd35b07c094be3fcb",
+      "git_blob": "1ff1d20435a42a02dff55f558a5f96b212fea651"
     },
     {
       "path": "public/assets/city/afterparty-l1.webp",

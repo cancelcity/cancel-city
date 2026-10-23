@@ -1,0 +1,31 @@
+.city-atlas-venue{--atlas-venue-accent:#ffd35e;position:absolute;z-index:35;left:20px;bottom:20px;width:min(430px,calc(100% - 40px));max-height:calc(100% - 110px);overflow:auto;color:#f7efce;background:#11110f var(--grain);border:2px solid #d5c89b;border-radius:8px;box-shadow:0 6px 0 #000,0 12px 34px #0009;isolation:isolate;text-align:left;scrollbar-width:thin;scrollbar-color:#a99b6e #181714}
+.city-atlas-venue:before{content:'';pointer-events:none;position:absolute;inset:0;z-index:-1;background:linear-gradient(155deg,#ffffff07,transparent 40%,#f6da8b08);border:1px solid #fff2;border-radius:5px}
+.city-atlas-venue-close{position:absolute;right:5px;top:5px;z-index:3;display:grid;place-items:center;width:29px;height:29px;background:#111d;color:#f7efce;border:0;border-radius:3px;cursor:pointer}
+.city-atlas-venue-close:hover{color:#ff2e9f;background:#080808}
+.city-atlas-venue-main{display:flex;gap:12px;padding:10px 30px 9px 10px}
+.city-atlas-venue-art{position:relative;flex:0 0 107px;min-height:132px;overflow:hidden;border:1px solid #c6b57b;background-color:#25211a;background-repeat:no-repeat;border-radius:4px}
+.city-atlas-venue-host{position:absolute;left:5px;bottom:5px;display:block;width:46px;height:46px;overflow:hidden;border:2px solid var(--atlas-venue-accent);border-radius:50%;background:#161313;box-shadow:0 2px 7px #000}
+.city-atlas-venue-host .reference-portrait{width:100%;height:100%;border:0;border-radius:0}
+.city-atlas-venue-host img{width:100%;height:100%;object-fit:cover}
+.city-atlas-venue-copy{min-width:0;flex:1;display:flex;flex-direction:column;align-items:flex-start}
+.city-atlas-venue-address{font-family:CityCondensed,var(--display);font-size:10px;font-weight:700;letter-spacing:1.5px;line-height:1.3;text-transform:uppercase;color:var(--atlas-venue-accent);margin-bottom:4px}
+.city-atlas-venue h2{display:flex;align-items:center;gap:6px;margin:0 0 4px;font-family:CityCondensed,var(--display);font-size:22px;font-weight:800;line-height:1.02;text-transform:uppercase;text-wrap:balance}
+.city-atlas-venue h2 svg{flex-shrink:0;color:var(--atlas-venue-accent);align-self:flex-start}
+.city-atlas-venue-purpose{margin:0 0 9px;font-family:CityCondensed,var(--display);font-size:11px;line-height:1.2;letter-spacing:.6px;color:#e7deba}
+.city-atlas-venue-enter{display:flex;justify-content:center;align-items:center;gap:8px;min-height:38px;width:100%;padding:7px 12px;background:#ff009b;color:#080609!important;border:0;border-radius:3px;text-decoration:none!important;font-family:CityCondensed,var(--display);font-size:16px;font-weight:900;line-height:1;letter-spacing:.3px;text-align:center;cursor:pointer;box-shadow:0 3px 0 #780047}
+.city-atlas-venue-enter:hover{background:#ff4fbb;transform:translateY(-1px)}
+.city-atlas-venue-more{display:flex;align-items:center;justify-content:center;gap:4px;width:100%;margin-top:10px;padding:2px;background:none;border:0;color:#ccbf99;font-family:CityCondensed,var(--display);font-size:10px;letter-spacing:.8px;cursor:pointer}
+.city-atlas-venue-more:hover{color:#fff3ce}
+.city-atlas-venue-detail{padding:12px 14px 15px;border-top:1px solid #7a704c88;background:#07070666}
+.city-atlas-venue-detail>p{margin:0;color:#e3dac3;font-size:13px;line-height:1.5}
+.city-atlas-venue-detail blockquote{margin:12px 0;padding:0 0 0 10px;border-left:3px solid var(--atlas-venue-accent);font-size:14px;font-weight:700;line-height:1.4;color:#fff3cb}
+.city-atlas-venue-cast{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:14px}
+.city-atlas-venue-resident{display:flex;align-items:center;gap:7px;min-width:0;padding:5px;border:1px solid #5f594333;border-radius:3px;background:#ffffff05;color:#eee5ca!important;text-decoration:none!important}
+.city-atlas-venue-resident:hover{border-color:var(--atlas-venue-accent);background:#ffffff0a}
+.city-atlas-venue-resident .reference-portrait{width:34px;height:34px;flex:0 0 34px;overflow:hidden;border:1px solid #81795e;border-radius:4px}
+.city-atlas-venue-resident img{width:100%;height:100%;object-fit:cover}
+.city-atlas-venue-resident>span{font-size:10px;line-height:1.25;font-weight:700}
+.city-atlas-venue-story-note{display:block;margin-top:12px;padding-top:9px;border-top:1px dashed #6b6348;color:#aaa18b;font-size:10px;line-height:1.5}
+.city-atlas-venue :is(a,button):focus-visible{outline:3px solid #dfff00;outline-offset:3px}
+@media(max-width:650px){.city-atlas-venue{left:10px;bottom:12px;width:calc(100% - 74px);max-width:430px;max-height:calc(100% - 100px)}.city-atlas-venue-main{gap:9px;padding:8px 26px 8px 8px}.city-atlas-venue-art{flex-basis:74px;min-height:120px}.city-atlas-venue h2{font-size:18px}.city-atlas-venue-purpose{font-size:10px}.city-atlas-venue-enter{font-size:13px;min-height:36px;padding:7px}.city-atlas-venue-address{font-size:9px}.city-atlas-venue-cast{grid-template-columns:1fr}.city-atlas-venue-detail{padding:10px}.city-atlas-venue-detail>p{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.city-atlas-venue-enter:hover{transform:none}}
