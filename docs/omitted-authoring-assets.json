@@ -47,6 +47,41 @@
       "git_blob": "342e40170488f217fda131e3b9aec20d33e5fa2d"
     },
     {
+      "path": "docs/art/city-v4/corner-counter.png",
+      "size": 995265,
+      "git_blob": "76a86f59cbc927f1670c72c1a0f2225763801644"
+    },
+    {
+      "path": "docs/art/city-v4/corner-exterior.png",
+      "size": 3673241,
+      "git_blob": "e5b095e67e935623ca64905d48b6df6a80fd175d"
+    },
+    {
+      "path": "docs/art/city-v4/corner-foreground.png",
+      "size": 638410,
+      "git_blob": "83f70f43b0b1c7bde78eb6e2af161b8e7e8a91d8"
+    },
+    {
+      "path": "docs/art/city-v4/corner-interior.png",
+      "size": 3724502,
+      "git_blob": "0e5ae2d0174ac578bbf091b525d68678964db84b"
+    },
+    {
+      "path": "docs/art/city-v4/dealer-atlas.png",
+      "size": 2045120,
+      "git_blob": "608e37230ac4ef905c464b53c9c06abde4291182"
+    },
+    {
+      "path": "docs/art/city-v4/detective-atlas.png",
+      "size": 1469713,
+      "git_blob": "428db074328cfd5259d837fcd879fba7ec77dd61"
+    },
+    {
+      "path": "docs/art/city-v4/overlord-atlas.png",
+      "size": 2854472,
+      "git_blob": "406821d27020d5f660e7188b1e6dcf11694e50f0"
+    },
+    {
       "path": "docs/art/city/afterparty-l1.png",
       "size": 2061368,
       "git_blob": "176d5646c630f84264a13d68fe9a218644386ab5"

@@ -15,11 +15,11 @@ export interface CityDistrict {
 // Coordinates are percentages of each district's illustrated map. Every venue belongs to one district.
 export const CITY_DISTRICTS=[
  {
-  id:'cloutside',name:'Cloutside',kicker:'THE BLOCK / FOUR SPECIALIST BUILDINGS',
+  id:'cloutside',name:'Cloutside',kicker:'THE BLOCK / FIVE SPECIALIST BUILDINGS',
   tagline:'EVERYBODY’S LOCAL. THE PRICES AREN’T.',
-  intro:'The barbershop debate has outlasted three haircuts. Across the road, a reseller is charging rent money for trainers and the label wants a cut of your fucking ringtone. Four doors, four very different ways to get overcharged.',
-  art:'/assets/city-v3/district-cloutside.webp',color:'#f5bb48',
-  buildings:[{id:'fade-court',x:25,y:29},{id:'sole-custody',x:74,y:30},{id:'kfc',x:25,y:71},{id:'360-records',x:75,y:71}],
+  intro:'The dispensary has a very loyal police inspector. Outside, the Plug is losing customers to a receipt printer. Up the block, the barber is still arguing, the reseller still wants rent money and the label still owns your ringtone. Five doors. Somebody’s always getting taken for a ride.',
+  art:'/assets/city-v4/corner-exterior.webp',color:'#f5bb48',
+  buildings:[{id:'probable-cause',x:50,y:45},{id:'fade-court',x:25,y:29},{id:'sole-custody',x:74,y:30},{id:'kfc',x:25,y:71},{id:'360-records',x:75,y:71}],
  },
  {
   id:'liability-hills',name:'Liability Hills',kicker:'GATED EXCESS / FIVE SPECIALIST BUILDINGS',

@@ -1,6 +1,6 @@
 {
-  "source_commit": "29bcde6b4dbcbad2419e90381b3f536359a83d23",
-  "site_version": 52,
+  "source_commit": "5c35b59b21d56932cb13ffa0e990f588ecc9ef6d",
+  "site_version": 53,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -3938,6 +3938,48 @@
       "size": 789758,
       "sha256": "8f2f156a491c6e7afb86ba400bdfda87f009213031e0b7f7cca43e64f5cc41d8",
       "git_blob": "5d1d6289599e785db86708688bb88615dc02d0d6"
+    },
+    {
+      "path": "public/assets/city-v4/corner-counter.webp",
+      "size": 191604,
+      "sha256": "986701c0c8c1c8b611e1d76d01a0a090746d7eda8bd02cb5b6502a03526beed4",
+      "git_blob": "344319aa2aad191106b19b622d3d72c46a0856c3"
+    },
+    {
+      "path": "public/assets/city-v4/corner-exterior.webp",
+      "size": 729986,
+      "sha256": "4b7cb796a7eebd11e93adb5be0fa83ea7f8fee72f3874188ae19b1fcb859a4fe",
+      "git_blob": "fa75219df61fa6fbb7d2cbfc365f73b1063eabc6"
+    },
+    {
+      "path": "public/assets/city-v4/corner-foreground.webp",
+      "size": 147458,
+      "sha256": "ac8301f4ca546c11e29edc9e098d524c1af715f81d1b0890ffa2f2e278cd3215",
+      "git_blob": "74de1ccac6bcb6a8f0223d3398e5caf4aae12b1c"
+    },
+    {
+      "path": "public/assets/city-v4/corner-interior.webp",
+      "size": 732752,
+      "sha256": "ab02ec4ef0dd5e705fa6e73d90b7c3cb1f1b412dfa743f2ba829d9f4260b6f88",
+      "git_blob": "74521333bca297a0205553bb25e401f7903465d8"
+    },
+    {
+      "path": "public/assets/city-v4/dealer-atlas.webp",
+      "size": 417262,
+      "sha256": "fea9ed09e7bbdf7024163f939a7572c3569fe2058901d00ef66dfd99a3ef570c",
+      "git_blob": "3b3c9bd6cce04db7eb54ebaf0d2ec262f0671f9c"
+    },
+    {
+      "path": "public/assets/city-v4/detective-atlas.webp",
+      "size": 324178,
+      "sha256": "7937c0a51e58190195becea56ddd0a5591338a774b42f05359cf02ffb4118649",
+      "git_blob": "8afae321aeb5331ddf7090a8f05a104622ee61e3"
+    },
+    {
+      "path": "public/assets/city-v4/overlord-atlas.webp",
+      "size": 659820,
+      "sha256": "7c840fcdcd4de8d9e33ccf3888657b1c443b096d696ae91060aea041dc3a87d1",
+      "git_blob": "300b427921f4563ca1208c1f7f6f2cd74999f27c"
     },
     {
       "path": "public/assets/city/afterparty-l1.webp",

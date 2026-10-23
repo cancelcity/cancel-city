@@ -13,10 +13,10 @@ const founded=()=>run(initialSave(now,'landmarks'),{type:'city-start'});
 describe('specialist city buildings and saved landmark endings',()=>{
  it('groups every specialist building into exactly one district without changing construction recipes',()=>{
   expect(CITY_DISTRICTS.map(district=>district.id)).toEqual(['cloutside','liability-hills']);
-  expect(CITY_DISTRICT_BY_ID.cloutside.buildings).toHaveLength(4);
+  expect(CITY_DISTRICT_BY_ID.cloutside.buildings).toHaveLength(5);
   expect(CITY_DISTRICT_BY_ID['liability-hills'].buildings).toHaveLength(5);
   const members=CITY_DISTRICTS.flatMap(district=>district.buildings.map(building=>building.id));
-  expect(new Set(members).size).toBe(9);
+  expect(new Set(members).size).toBe(10);
   expect([...members].sort()).toEqual(CITY_ZONES.map(building=>building.id).sort());
   for(const district of CITY_DISTRICTS)for(const pin of district.buildings){
    expect(districtForBuilding(pin.id)).toBe(district);
@@ -51,7 +51,7 @@ describe('specialist city buildings and saved landmark endings',()=>{
 
  it('persists each landmark choice with its authored reward and never rewards a retry or changed ending twice',()=>{
   for(const zone of CITY_ZONES)for(const choice of [0,1,2] as const){
-   const before=founded(),id=`once-${sequence++}`,command:Command={type:'city-zone-choice',zoneId:zone.id,choice};
+   const before=zone.id==='probable-cause'?run(run(founded(),{type:'city-corner-clue',clueId:'receipt'}),{type:'city-corner-clue',clueId:'statement'}):founded(),id=`once-${sequence++}`,command:Command={type:'city-zone-choice',zoneId:zone.id,choice};
    const save=run(before,command,id),reward=CITY_ZONE_BY_ID[zone.id].choices[choice].reward;
    expect(save.city!.zoneEndings[zone.id]).toBe(choice);
    expect(save.packBalance-before.packBalance).toBe(reward.packs||0);

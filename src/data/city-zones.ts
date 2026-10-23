@@ -21,6 +21,17 @@ export interface CityZone {
 // Districts group these specialist buildings; the player's twelve construction plots are separate.
 export const CITY_ZONES=[
  {
+  id:'probable-cause',name:'Probable Cause Dispensary',districtId:'cloutside',district:'CLOUTSIDE / THE LOYALTY INSPECTION',specialty:'Dispensary / The loyalty inspection',
+  tagline:'FOUR INSPECTIONS. FIVE STAMPS GETS A MUFFIN.',hostCardId:'CC054',
+  art:'/assets/city-v4/corner-exterior.webp',color:'#bded69',
+  intro:'420 Overlord runs the shop without leaving his smoke throne. Gandalf works the corner outside. L Ratio is on his fourth “surprise inspection” today, and the till has just printed his loyalty balance. Find the receipt inside, then hear the Plug’s side outside.',
+  choices:[
+   {label:'EXPOSE THE COP’S LOYALTY CARD',outcome:'You pin the receipt beside the detective’s full loyalty card. L Ratio calls it a breach of confidentiality. The queue counts his stamps out loud. Overlord makes him INSPECTOR OF THE MONTH and hands you a collector pack. The detective asks whether the muffin is still valid.',reward:{packs:1}},
+   {label:'REVOKE THE “INSPECTION” DISCOUNT',outcome:'You cross OFFICIAL BUSINESS off the discount board. L Ratio reaches for his badge. Overlord points at the card reader. He reaches for his wallet instead. The owner pays you 25 Influence for closing the loophole. Next inspection: apparently not today.',reward:{influence:25}},
+   {label:'MAKE THE PLUG HONOUR HIS FLYER',outcome:'Gandalf’s flyer says FREE GIFT, NO PURCHASE. He insists there is small print. You hold it up: there isn’t. He puts out a box of free novelty stickers while you remove the misleading metal sign. Worth 8 Trash. L Ratio joins the queue and insists he is off duty.',reward:{scrap:8}},
+  ],
+ },
+ {
   id:'yacht-club',name:'Gobstein Yacht Club',districtId:'liability-hills',district:'LIABILITY HILLS / PRIVATE HARBOUR',specialty:'VIP harbour & outrageous bar tabs',
   tagline:'THE BOAT IS OFFSHORE. THE RECEIPTS ARE NOT.',hostCardId:'CC056',
   art:'/assets/city-v2/zone-yacht-club.webp',color:'#e3c56c',

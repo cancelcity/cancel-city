@@ -1,6 +1,7 @@
 import {z} from 'zod';
 import {CITY_EVENTS,CITY_EVENT_BY_ID} from '../data/city-events';
 import {CITY_ZONE_BY_ID,type CityZoneId} from '../data/city-zones';
+import type {CornerClueId} from '../data/cloutside-corner';
 import {CARD_BY_ID} from '../data/cards';
 import {BuildingKind,buildingOf,CITY_BALANCE,CONTRACTS,CONTRACT_BY_ID} from '../data/city';
 import {LOANERS} from './battle';
@@ -9,15 +10,18 @@ const count=z.number().int().nonnegative().safe();
 const resident=z.string().refine(id=>Object.hasOwn(CARD_BY_ID,id),'Unknown city resident');
 const eventId=z.string().refine(id=>Object.hasOwn(CITY_EVENT_BY_ID,id),'Unknown city event');
 const eventChoice=z.union([z.literal(0),z.literal(1),z.literal(2)]);
-const zoneId=z.enum(['yacht-club','oil-manor','red-flag-house','kfc','fade-court','sole-custody','360-records','oscar-studios','moonwalk-museum']);
+const zoneId=z.enum(['yacht-club','oil-manor','red-flag-house','kfc','fade-court','sole-custody','360-records','oscar-studios','moonwalk-museum','probable-cause']);
+const cornerClueId=z.enum(['receipt','statement']);
 export const buildingKindSchema=z.enum(['feed','pr','summit','civic','rocket','afterparty']);
 const date=z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(v=>!Number.isNaN(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v);
 const buildingSchema=z.object({kind:buildingKindSchema,level:z.union([z.literal(1),z.literal(2),z.literal(3)]),residentId:resident.nullable()});
-export const citySchema=z.object({version:z.literal(1),startedAt:z.string().datetime(),influence:count,lastProductionDay:date.nullable(),lifetimeGenerated:count,plots:z.array(buildingSchema.nullable()).length(12),contracts:z.record(z.string().refine(id=>Object.hasOwn(CONTRACT_BY_ID,id)),z.object({startedAt:z.string().datetime(),progress:count.max(5),claimed:z.boolean()})),epilogues:z.array(buildingKindSchema).max(6),tutorialSeen:z.boolean(),unlockedThemes:z.array(z.enum(['afterhours','riot','gold'])).min(1).max(3).default(['afterhours']),theme:z.enum(['afterhours','riot','gold']),incidents:z.record(buildingKindSchema,z.union([z.literal(0),z.literal(1)])).default({}),eventEndings:z.record(eventId,eventChoice).default({}),zoneEndings:z.record(zoneId,eventChoice).default({}),activeEvent:z.object({eventId,startedAt:z.string().datetime(),endsAt:z.string().datetime()}).nullable().default(null),signs:z.record(z.string().regex(/^(?:[0-9]|1[01])$/),z.string().min(1).max(24)).default({})}).superRefine((city,ctx)=>{
+export const citySchema=z.object({version:z.literal(1),startedAt:z.string().datetime(),influence:count,lastProductionDay:date.nullable(),lifetimeGenerated:count,plots:z.array(buildingSchema.nullable()).length(12),contracts:z.record(z.string().refine(id=>Object.hasOwn(CONTRACT_BY_ID,id)),z.object({startedAt:z.string().datetime(),progress:count.max(5),claimed:z.boolean()})),epilogues:z.array(buildingKindSchema).max(6),tutorialSeen:z.boolean(),unlockedThemes:z.array(z.enum(['afterhours','riot','gold'])).min(1).max(3).default(['afterhours']),theme:z.enum(['afterhours','riot','gold']),incidents:z.record(buildingKindSchema,z.union([z.literal(0),z.literal(1)])).default({}),eventEndings:z.record(eventId,eventChoice).default({}),zoneEndings:z.record(zoneId,eventChoice).default({}),cornerClues:z.array(cornerClueId).max(2).default([]),activeEvent:z.object({eventId,startedAt:z.string().datetime(),endsAt:z.string().datetime()}).nullable().default(null),signs:z.record(z.string().regex(/^(?:[0-9]|1[01])$/),z.string().min(1).max(24)).default({})}).superRefine((city,ctx)=>{
  const bad=(message:string)=>ctx.addIssue({code:z.ZodIssueCode.custom,message});
  const residents=city.plots.flatMap(b=>b?.residentId?[b.residentId]:[]);if(new Set(residents).size!==residents.length)bad('A resident can occupy only one building');
  if(new Set(city.unlockedThemes).size!==city.unlockedThemes.length||!city.unlockedThemes.includes(city.theme))bad('Invalid city theme unlock');
  if(new Set(city.epilogues).size!==city.epilogues.length)bad('Duplicate city epilogue');
+ if(new Set(city.cornerClues).size!==city.cornerClues.length)bad('Duplicate corner clue');
+ if(Object.hasOwn(city.zoneEndings,'probable-cause')&&city.cornerClues.length!==2)bad('The loyalty inspection ending requires both clues');
  for(const [id,contract] of Object.entries(city.contracts)){const definition=CONTRACT_BY_ID[id];if(!definition)continue;if(contract.progress>definition.target||contract.claimed&&contract.progress<definition.target)bad('Invalid city contract progress');if(definition.tier===2&&!city.contracts[`${definition.kind}:1`]?.claimed)bad('Second chapter requires first chapter reward');}
  for(const kind of city.epilogues)if(!city.contracts[`${kind}:2`]?.claimed)bad('Epilogue requires second chapter reward');
  if(city.activeEvent&&(Date.parse(city.activeEvent.endsAt)-Date.parse(city.activeEvent.startedAt)!==300000))bad('City event atmosphere must last five minutes');
@@ -26,11 +30,11 @@ export const citySchema=z.object({version:z.literal(1),startedAt:z.string().date
 });
 export type City=z.infer<typeof citySchema>;
 export type CityBuilding=NonNullable<City['plots'][number]>;
-export type CityCommand={type:'city-zone-choice';zoneId:CityZoneId;choice:0|1|2}|{type:'city-event-start';eventId:string}|{type:'city-event-choice';eventId:string;choice:0|1|2}|{type:'city-sign';plot:number;text:string|null}|{type:'city-incident';kind:BuildingKind;choice:0|1}|{type:'city-start'}|{type:'city-build';plot:number;kind:BuildingKind}|{type:'city-upgrade';plot:number}|{type:'city-assign';plot:number;residentId:string|null}|{type:'city-move';from:number;to:number}|{type:'city-collect'}|{type:'city-accept';contractId:string}|{type:'city-claim';contractId:string}|{type:'city-epilogue';kind:BuildingKind}|{type:'city-tutorial'}|{type:'city-theme';theme:City['theme']};
+export type CityCommand={type:'city-corner-clue';clueId:CornerClueId}|{type:'city-zone-choice';zoneId:CityZoneId;choice:0|1|2}|{type:'city-event-start';eventId:string}|{type:'city-event-choice';eventId:string;choice:0|1|2}|{type:'city-sign';plot:number;text:string|null}|{type:'city-incident';kind:BuildingKind;choice:0|1}|{type:'city-start'}|{type:'city-build';plot:number;kind:BuildingKind}|{type:'city-upgrade';plot:number}|{type:'city-assign';plot:number;residentId:string|null}|{type:'city-move';from:number;to:number}|{type:'city-collect'}|{type:'city-accept';contractId:string}|{type:'city-claim';contractId:string}|{type:'city-epilogue';kind:BuildingKind}|{type:'city-tutorial'}|{type:'city-theme';theme:City['theme']};
 const plot=z.number().int().min(0).max(11);
-export const cityCommandShapes=[z.object({type:z.literal('city-zone-choice'),zoneId,choice:eventChoice}),z.object({type:z.literal('city-event-start'),eventId}),z.object({type:z.literal('city-event-choice'),eventId,choice:eventChoice}),z.object({type:z.literal('city-sign'),plot,text:z.string().trim().min(1).max(24).nullable()}),z.object({type:z.literal('city-incident'),kind:buildingKindSchema,choice:z.union([z.literal(0),z.literal(1)])}),z.object({type:z.literal('city-start')}),z.object({type:z.literal('city-build'),plot,kind:buildingKindSchema}),z.object({type:z.literal('city-upgrade'),plot}),z.object({type:z.literal('city-assign'),plot,residentId:resident.nullable()}),z.object({type:z.literal('city-move'),from:plot,to:plot}),z.object({type:z.literal('city-collect')}),z.object({type:z.literal('city-accept'),contractId:z.string().refine(id=>Object.hasOwn(CONTRACT_BY_ID,id))}),z.object({type:z.literal('city-claim'),contractId:z.string().refine(id=>Object.hasOwn(CONTRACT_BY_ID,id))}),z.object({type:z.literal('city-epilogue'),kind:buildingKindSchema}),z.object({type:z.literal('city-tutorial')}),z.object({type:z.literal('city-theme'),theme:z.enum(['afterhours','riot','gold'])})] as const;
+export const cityCommandShapes=[z.object({type:z.literal('city-corner-clue'),clueId:cornerClueId}),z.object({type:z.literal('city-zone-choice'),zoneId,choice:eventChoice}),z.object({type:z.literal('city-event-start'),eventId}),z.object({type:z.literal('city-event-choice'),eventId,choice:eventChoice}),z.object({type:z.literal('city-sign'),plot,text:z.string().trim().min(1).max(24).nullable()}),z.object({type:z.literal('city-incident'),kind:buildingKindSchema,choice:z.union([z.literal(0),z.literal(1)])}),z.object({type:z.literal('city-start')}),z.object({type:z.literal('city-build'),plot,kind:buildingKindSchema}),z.object({type:z.literal('city-upgrade'),plot}),z.object({type:z.literal('city-assign'),plot,residentId:resident.nullable()}),z.object({type:z.literal('city-move'),from:plot,to:plot}),z.object({type:z.literal('city-collect')}),z.object({type:z.literal('city-accept'),contractId:z.string().refine(id=>Object.hasOwn(CONTRACT_BY_ID,id))}),z.object({type:z.literal('city-claim'),contractId:z.string().refine(id=>Object.hasOwn(CONTRACT_BY_ID,id))}),z.object({type:z.literal('city-epilogue'),kind:buildingKindSchema}),z.object({type:z.literal('city-tutorial')}),z.object({type:z.literal('city-theme'),theme:z.enum(['afterhours','riot','gold'])})] as const;
 export class CityRuleError extends Error{constructor(public code:string,message:string){super(message);}}
-export const freshCity=(now:Date):City=>({version:1,startedAt:now.toISOString(),influence:CITY_BALANCE.welcomeInfluence,lastProductionDay:null,lifetimeGenerated:0,plots:[{kind:'feed',level:1,residentId:'CC001'},...Array.from({length:11},()=>null)],contracts:{},epilogues:[],tutorialSeen:false,unlockedThemes:['afterhours'],theme:'afterhours',incidents:{},eventEndings:{},zoneEndings:{},activeEvent:null,signs:{}});
+export const freshCity=(now:Date):City=>({version:1,startedAt:now.toISOString(),influence:CITY_BALANCE.welcomeInfluence,lastProductionDay:null,lifetimeGenerated:0,plots:[{kind:'feed',level:1,residentId:'CC001'},...Array.from({length:11},()=>null)],contracts:{},epilogues:[],tutorialSeen:false,unlockedThemes:['afterhours'],theme:'afterhours',incidents:{},eventEndings:{},zoneEndings:{},cornerClues:[],activeEvent:null,signs:{}});
 export function plotUnlock(save:Save,index:number):{unlocked:boolean;requirement:string}{
  if(!Number.isInteger(index)||index<0||index>11)return {unlocked:false,requirement:'Unknown plot'};
  if(index<6)return {unlocked:true,requirement:'Starter district'};
@@ -63,10 +67,16 @@ export function applyCityCommand(s:Save,command:CityCommand,now:Date,award:(id:s
  if(command.type==='city-start'){if(s.city)throw new CityRuleError('CITY_ALREADY_STARTED','Your neighbourhood is already founded.');s.city=freshCity(now);return;}
  const city=requireCity(s);if(now.toISOString().slice(0,10)<city.startedAt.slice(0,10)||city.lastProductionDay&&now.toISOString().slice(0,10)<city.lastProductionDay)throw new CityRuleError('CITY_CLOCK_ROLLBACK','Timed city actions require the current date.');
  switch(command.type){
+  case 'city-corner-clue':{
+   if(!['receipt','statement'].includes(command.clueId))throw new CityRuleError('CITY_CORNER_CLUE_UNKNOWN','Choose the receipt or the Plug’s statement.');
+   if(!city.cornerClues.includes(command.clueId))city.cornerClues.push(command.clueId);
+   break;
+  }
   case 'city-zone-choice':{
    if(!Object.hasOwn(CITY_ZONE_BY_ID,command.zoneId))throw new CityRuleError('CITY_ZONE_UNKNOWN','Choose a specialist building in a city district.');
    if(Object.hasOwn(city.zoneEndings,command.zoneId))throw new CityRuleError('CITY_ZONE_RESOLVED','This landmark ending is already saved. Read it again without claiming another reward.');
    if(![0,1,2].includes(command.choice))throw new CityRuleError('CITY_ZONE_CHOICE','Choose one of the three landmark endings.');
+   if(command.zoneId==='probable-cause'&&(!city.cornerClues.includes('receipt')||!city.cornerClues.includes('statement')))throw new CityRuleError('CITY_CORNER_CLUES_MISSING','Read the receipt inside and hear the Plug’s statement outside first.');
    const reward=CITY_ZONE_BY_ID[command.zoneId].choices[command.choice].reward;
    if(award(`city-zone:${command.zoneId}`,reward.packs||0)){
     city.influence+=reward.influence||0;s.career.scrap+=reward.scrap||0;city.zoneEndings[command.zoneId]=command.choice;
