@@ -1,6 +1,6 @@
 {
-  "source_commit": "c9374c97586369a2ef79ffde84d240b643c072e9",
-  "site_version": 51,
+  "source_commit": "29bcde6b4dbcbad2419e90381b3f536359a83d23",
+  "site_version": 52,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -3926,6 +3926,18 @@
       "size": 758388,
       "sha256": "152e8b5627816371532f7c9533d209a5b85d00f2303d347c6ac679c966c8079c",
       "git_blob": "2fd383f974ac11c50b70c6129ea8263594827b94"
+    },
+    {
+      "path": "public/assets/city-v3/district-cloutside.webp",
+      "size": 829076,
+      "sha256": "c5166618034417566dcf80cf200d0e659bb89f68d83b5999708f542eded9f7a4",
+      "git_blob": "f07ef55647688d7392eb48eb7b9fe7e82edf6908"
+    },
+    {
+      "path": "public/assets/city-v3/district-liability-hills.webp",
+      "size": 789758,
+      "sha256": "8f2f156a491c6e7afb86ba400bdfda87f009213031e0b7f7cca43e64f5cc41d8",
+      "git_blob": "5d1d6289599e785db86708688bb88615dc02d0d6"
     },
     {
       "path": "public/assets/city/afterparty-l1.webp",

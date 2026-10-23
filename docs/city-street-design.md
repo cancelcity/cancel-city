@@ -1,32 +1,26 @@
-# City streetfront and fixed landmarks
+# City, districts and specialist buildings
 
-The City uses a painted 2D street background with separate existing transparent building sprites. Every displayed property is read from the same twelve saved plots; art is never substituted for owned progression. Six addresses are visible at once, with all twelve available in the address ribbon. Selection drives one inline property dock for building, assignment, chapters, job acceptance/claims and true capped upgrade previews. Advanced Records retains the old move/rename/archive tools.
+The City hierarchy is **City → district → building**. Your owned twelve plots remain a separate construction block, with the same levels, residents, daily production, faction stories and inline property dock. District maps are authored neighbourhoods with distinct businesses; visiting them does not add or replace a construction recipe.
 
-The approved streetfront mockup is the art direction. The shipped composition adapts to available viewport space and actual occupied properties. Existing resident portraits, building levels and actor sprites are preserved.
+| District | Specialist buildings |
+| --- | --- |
+| Cloutside | Fade Court, Sole Custody, Kancel Fried Chicken, 360 Deal Records |
+| Liability Hills | Oscar Goblin Studios, Baby Oil Manor, The Red Flag Brothel, Gobstein Yacht Club, Moonwalk Museum |
 
-## New fixed destinations
+Each district has its own illustrated map, numbered HTML entrances and a complete accessible street directory. The illustration stays uncropped so map coordinates remain aligned on desktop and mobile. District cards list their buildings; tab progress counts saved building endings. Building pages show the full breadcrumb and return to their parent district. The next-unvisited action stays inside that district.
 
-| Destination | Purpose | Save behavior |
-| --- | --- | --- |
-| Gobstein Yacht Club | VIP corruption, unpaid invoices and receipts | One authored choice and reward |
-| Baby Oil Manor | Bulk delivery, slippery supply chains and excess | One authored choice and reward |
-| The Red Flag Brothel | Adults-only venue, bad customers and worse excuses | One authored choice and reward |
-| Kancel Fried Chicken | Corporate fast-food parody and fictional employee misery | One authored choice and reward |
+Cloutside satirizes sneaker prices, barbershop punditry, exploitative record deals and a fast-food franchise. Liability Hills satirizes celebrity excess, publicists, trophies and corrupt VIP entitlement. Existing Oscar Goblin, Jeffrey Gobstein and Baby Oil Supplier portraits retain their character identities. Moonwalk Museum is an original memorabilia business, with glove auctions, staged exhibits and endlessly postponed comeback merchandise.
 
-Venues are separate fixed locations, not extra buildable kinds. District URLs use `?zone=yacht-club`, `oil-manor`, `red-flag-house` and `kfc`. All are accessible for reading. Choosing requires a founded City and writable save. Choices are validated on the shared game API and applied by the same reducer for account/local play. Once chosen, alternate outcomes are clearly labelled story-only and grant no further loot.
+## Routes and saved progress
 
-Old City saves default `zoneEndings` to `{}`. Each saved outcome must have its `city-zone:<id>` reward receipt and vice versa. Existing plots, story contracts, Influence, daily production, saves and rewards are retained. New reward markers cannot be forged by UI arguments.
+District routes are `/city/?zone=cloutside` and `?zone=liability-hills`. A building adds its stable ID, for example `?zone=cloutside&building=kfc`. Legacy links such as `?zone=kfc` and `?zone=yacht-club` still open the same building with its correct parent district. Browser Back and direct reload retain the hierarchy.
 
-## District guide and next actions
+The old `city.zoneEndings` field and `city-zone:<building-id>` receipts are retained for compatibility. All four old IDs and their rewards stay unchanged. Five new buildings add three authored choices each. Every building pays once; alternate endings are read-only. District entry is free and gives no reward. Claiming requires a founded City and writable save. The shared reducer validates authored rewards and two-way ending/receipt integrity. No database migration is required.
 
-The illustrated guide below the property dock exposes all four venues, their saved ending and a total visit count. District tabs mark saved endings. After a visit, the primary action follows the actual saved reward: Packs for tickets, the block for Influence, and the Trash Market for Trash. Previewing an alternate ending does not change that action or earn rewards. A next-unvisited shortcut continues the tour, without adding a completion bonus.
+Reward actions follow the saved outcome: Packs for tickets, your owned block for Influence, and the Trash Market for Trash. Alternate previews do not change that action. District navigation scrolls back to the map header; property paging resets the dock. The block objective retains upgrade/matching-host recovery for paused chapter jobs.
 
-The block objective prioritizes claimable rewards, then accepted available jobs, then new available jobs. Unfinished jobs on existing buildings remain visible when an upgrade or matching resident is missing. Paused chapter jobs explain the missing host requirement before offering an activity link. Street paging resets the property dock, and district navigation returns the City scroll area to the top.
+## Art and validation
 
-## Artwork
+Two district maps were generated using the built-in imagegen tool. Prompts and final asset paths are in `docs/design/city-district-art-prompts.md`. Runtime WebPs live under `public/assets/city-v3/`; raw PNG masters stay in the full Site source under `docs/art/city-v3/` and are listed in the playable mirror's omitted authoring-assets manifest. Existing City art is preserved.
 
-Five backgrounds generated with the built-in imagegen tool and art-directed against the approved mockup. Original PNG masters live in the Site source under `docs/art/city-v2/`; optimized WebP runtime assets live under `public/assets/city-v2/`. Raw masters are optional authoring material, recorded in the playable mirror's omitted-assets manifest. Existing runtime art is retained.
-
-## Focused validation
-
-39 City checks passed, covering known/invalid zone choices, finite rewards/replays, forged receipts and backward-compatible saves, together with existing City/world rules. TypeScript passes. Browser review covers property selection, inline building/assignment, saved venue choice and alternative read-only outcome, URL persistence and mobile layout. Production build and asset verification are performed for the saved release.
+Focused City tests cover all nine buildings, their twenty-seven choices, one-time rewards, legacy saves, district membership, invalid commands and reward receipt integrity. Production build, representative browser play and the runtime-asset workflow verify the saved release.

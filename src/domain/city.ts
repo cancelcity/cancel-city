@@ -9,7 +9,7 @@ const count=z.number().int().nonnegative().safe();
 const resident=z.string().refine(id=>Object.hasOwn(CARD_BY_ID,id),'Unknown city resident');
 const eventId=z.string().refine(id=>Object.hasOwn(CITY_EVENT_BY_ID,id),'Unknown city event');
 const eventChoice=z.union([z.literal(0),z.literal(1),z.literal(2)]);
-const zoneId=z.enum(['yacht-club','oil-manor','red-flag-house','kfc']);
+const zoneId=z.enum(['yacht-club','oil-manor','red-flag-house','kfc','fade-court','sole-custody','360-records','oscar-studios','moonwalk-museum']);
 export const buildingKindSchema=z.enum(['feed','pr','summit','civic','rocket','afterparty']);
 const date=z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(v=>!Number.isNaN(Date.parse(v))&&new Date(v).toISOString().slice(0,10)===v);
 const buildingSchema=z.object({kind:buildingKindSchema,level:z.union([z.literal(1),z.literal(2),z.literal(3)]),residentId:resident.nullable()});
@@ -64,7 +64,7 @@ export function applyCityCommand(s:Save,command:CityCommand,now:Date,award:(id:s
  const city=requireCity(s);if(now.toISOString().slice(0,10)<city.startedAt.slice(0,10)||city.lastProductionDay&&now.toISOString().slice(0,10)<city.lastProductionDay)throw new CityRuleError('CITY_CLOCK_ROLLBACK','Timed city actions require the current date.');
  switch(command.type){
   case 'city-zone-choice':{
-   if(!Object.hasOwn(CITY_ZONE_BY_ID,command.zoneId))throw new CityRuleError('CITY_ZONE_UNKNOWN','Choose one of the four city landmarks.');
+   if(!Object.hasOwn(CITY_ZONE_BY_ID,command.zoneId))throw new CityRuleError('CITY_ZONE_UNKNOWN','Choose a specialist building in a city district.');
    if(Object.hasOwn(city.zoneEndings,command.zoneId))throw new CityRuleError('CITY_ZONE_RESOLVED','This landmark ending is already saved. Read it again without claiming another reward.');
    if(![0,1,2].includes(command.choice))throw new CityRuleError('CITY_ZONE_CHOICE','Choose one of the three landmark endings.');
    const reward=CITY_ZONE_BY_ID[command.zoneId].choices[command.choice].reward;
