@@ -82,6 +82,21 @@
       "git_blob": "406821d27020d5f660e7188b1e6dcf11694e50f0"
     },
     {
+      "path": "docs/art/city-v5/hills-office-counter.png",
+      "size": 1164950,
+      "git_blob": "331fd1d0e80346c3e126c62230fa6237b159beab"
+    },
+    {
+      "path": "docs/art/city-v5/hills-office.png",
+      "size": 3082414,
+      "git_blob": "79cb9bf2cfef861e9ac05752e17d684f36078817"
+    },
+    {
+      "path": "docs/art/city-v5/hills-waterfront.png",
+      "size": 3728756,
+      "git_blob": "a7043f25f56d0e8e38fca739ce5f68a99a58ffd3"
+    },
+    {
       "path": "docs/art/city/afterparty-l1.png",
       "size": 2061368,
       "git_blob": "176d5646c630f84264a13d68fe9a218644386ab5"

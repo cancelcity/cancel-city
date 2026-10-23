@@ -1,0 +1,107 @@
+.liability-hills-scene{--corner-acid:#edce85;--corner-pink:#be8edd;background:#171620;color:#f2e9d8}
+.liability-hills-scene .corner-header{background:var(--grain),#191620;border-color:#b99b6940}
+.liability-hills-scene .corner-location h1{color:#ecd39a;letter-spacing:.3px}
+.liability-hills-scene .corner-location>span{color:#b9aabb;border-color:#a890b052}
+.liability-hills-scene .corner-controls button{background:#292433;color:#d5c6d5;border-color:#88708c60}
+.liability-hills-scene .corner-controls button[aria-pressed=true]{color:#f1d99d;border-color:#dbb86488;background:#44394a}
+.liability-hills-scene button:focus-visible,.liability-hills-scene a:focus-visible{outline-color:#f3ce83}
+.hills-viewport{background:#362c4c}
+.hills-evening-light{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,#bd6f8a08 20%,#3d23420a 65%,#18152a20);mix-blend-mode:soft-light}
+.hills-water-shimmer{position:absolute;left:0;top:89%;width:100%;height:11%;pointer-events:none;opacity:.18;background:repeating-linear-gradient(174deg,transparent 0 12px,#e0b78b20 13px,#e0b78b85 14px,transparent 16px 26px);mask-image:linear-gradient(180deg,transparent,#000 22%,#000);animation:hills-water 8s ease-in-out infinite}
+.hills-yacht-light{position:absolute;left:82%;top:51%;width:18%;height:25%;pointer-events:none;background:radial-gradient(ellipse at 58% 24%,#f2c45a25,transparent 38%),linear-gradient(100deg,transparent 43%,#e9bb6c0b 49%,transparent 56%);mix-blend-mode:screen;animation:hills-yacht-lamp 17s ease-in-out infinite}
+.hills-palm-shadow{position:absolute;left:2%;top:74%;width:33%;height:13%;pointer-events:none;opacity:.16;background:linear-gradient(151deg,transparent 35%,#100b23 36%,transparent 37%),linear-gradient(136deg,transparent 43%,#100b23 44%,transparent 45%),linear-gradient(126deg,transparent 52%,#100b23 53%,transparent 54%);filter:blur(3px);transform-origin:0 50%;animation:hills-palm 13s ease-in-out infinite}
+.liability-hills-scene .corner-scene-caption{background:#231c30d9;color:#e7d8c5;border-color:#c3a58033}
+.liability-hills-scene .corner-open-dot{background:#e5bc6f;box-shadow:0 0 8px #d8a755}
+.liability-hills-scene .corner-scene-caption>span:not(.corner-open-dot){color:#a493a7}
+.liability-hills-scene .hills-office-door{left:9.5%;top:42%;width:13%;height:28%;border-radius:2px}
+.liability-hills-scene .hills-office-door>span{color:#fae5b4;border-color:#e4c1768c;background:#30233de8;bottom:5%}
+.liability-hills-scene .hills-office-door:hover{border-color:#eecb7b60;background:#ebbf6d10}
+.liability-hills-scene .hills-office-door:hover>span{background:#e6cc96;color:#2b2031}
+.hills-building-hotspot,.hills-yacht-gate{position:absolute;z-index:3;background:transparent;border:1px solid transparent;border-radius:2px;cursor:pointer}
+.hills-building-hotspot>span,.hills-yacht-gate>span{display:flex;align-items:center;gap:5px;position:absolute;left:50%;bottom:0;transform:translate(-50%,5px);padding:6px 8px;background:#30233df2;border:1px solid #e4c1768c;color:#fae5b4;font:11px/1.1 var(--display,Arial,sans-serif);white-space:nowrap;opacity:0;transition:opacity .15s,transform .15s;pointer-events:none}
+.hills-building-hotspot:hover,.hills-yacht-gate:hover{border-color:#eecb7b55;background:#ebbf6d0a}
+.hills-building-hotspot:hover>span,.hills-building-hotspot:focus-visible>span,.hills-yacht-gate:hover>span,.hills-yacht-gate:focus-visible>span{opacity:1;transform:translate(-50%,0)}
+.hills-yacht-gate{left:69%;top:50%;width:10%;height:17%}
+.hills-building-hotspot:nth-of-type(5)>span{left:auto;right:0;transform:translateY(5px)}
+.hills-building-hotspot:nth-of-type(5):hover>span,.hills-building-hotspot:nth-of-type(5):focus-visible>span{transform:translateY(0)}
+.hills-aftermath-sign{position:absolute;left:29.5%;top:49.5%;width:10.5%;min-height:12%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:8px 9px;background:var(--grain),#e5d1a5;color:#39273e;border:2px solid #503744;box-shadow:3px 4px #160f2b66;transform:rotate(-1deg);z-index:4;text-align:center}
+.hills-aftermath-sign small{font:clamp(5px,.5vw,8px)/1.2 var(--mono,monospace);letter-spacing:.4px}
+.hills-aftermath-sign b{font:clamp(12px,1.4vw,22px)/1.05 var(--display,Arial,sans-serif)}
+.hills-aftermath-sign.ending-0{background-color:#e8c4b7}
+.hills-aftermath-sign.ending-1{background-color:#ded1a0}
+.hills-aftermath-sign.ending-2{background-color:#d9c5df}
+.liability-hills-scene .hills-invoice-hotspot{left:61%;top:66%;width:12%;height:18%;color:#f8d98f;z-index:8}
+.liability-hills-scene .hills-invoice-hotspot>span:last-child{background:#2c2238ee;border-color:#e7c478a6;color:#f7dfad}
+.liability-hills-scene .hills-invoice-hotspot.is-found>span:last-child{background:#ead7a5;color:#3c2d3a}
+.liability-hills-scene .corner-hotspot-ring{border-color:#f1d18c}
+.hills-actor-image{display:block;width:100%;height:100%;object-fit:contain;pointer-events:none;user-select:none;filter:drop-shadow(1px 3px 2px #19172b70);transform-origin:50% 91%;animation:hills-idle 6s ease-in-out infinite}
+.hills-actor-oscar .hills-actor-image{animation-delay:-2s}
+.hills-actor-supplier .hills-actor-image{animation:hills-heavy-bottle 7s ease-in-out infinite;animation-delay:-3s}
+.hills-actor.is-speaking .hills-actor-image{filter:drop-shadow(1px 3px 2px #19172b70) brightness(1.025)}
+.hills-actor:hover .hills-actor-image,.hills-actor:focus-visible .hills-actor-image{filter:drop-shadow(1px 3px 2px #19172b70) drop-shadow(0 0 3px #e4c07f75)}
+.liability-hills-scene .corner-actor-shadow{background:#17122580;filter:blur(5px);bottom:7%;height:5%}
+.liability-hills-scene .corner-actor.is-focused:after{background:#e7c985;box-shadow:0 0 7px #edc07770;bottom:6.5%}
+.liability-hills-scene .corner-actor-name{background:#251e31eb;border-color:#bc9b6b55;color:#f0debb;top:95%}
+.hills-actor.is-stumbling .hills-actor-image{animation:hills-stumble .75s ease-out both}
+.liability-hills-scene[data-scene=office] .hills-actor-owner{z-index:5}
+.liability-hills-scene[data-scene=office] .corner-actor-name{top:16%;left:51%}
+.liability-hills-scene[data-scene=office] .corner-actor.is-focused:after{display:none}
+.hills-office-counter{filter:none}
+.liability-hills-scene .corner-exit{background:#30273beF;color:#ecd6a4;border-color:#b99d6c;box-shadow:2px 3px #16102199}
+.liability-hills-scene .corner-camera-tabs{background:#241c30e8;border-color:#b99c6d40}
+.liability-hills-scene .corner-camera-tabs button{color:#c7b8cb}
+.liability-hills-scene .corner-camera-tabs button[aria-pressed=true]{background:#e5cf9b;color:#33223d}
+.liability-hills-scene .corner-play-dock{background:var(--grain),#e5d8c7;border-color:#18131f}
+.liability-hills-scene .corner-dialogue-head>span{color:#67495e}
+.liability-hills-scene .speaker-oscar .corner-dialogue-head>span{color:#7d642d}
+.liability-hills-scene .speaker-supplier .corner-dialogue-head>span{color:#8b493e}
+.liability-hills-scene .corner-dialogue-head>small{color:#887280}
+.liability-hills-scene .corner-dialogue>p{color:#352635}
+.liability-hills-scene .corner-solid-button{background:#49374b;color:#f5e2b8;border-color:#30233a;box-shadow:2px 2px #3b244d38}
+.liability-hills-scene .corner-solid-button:hover{background:#654964}
+.liability-hills-scene .corner-cast-actions>button{color:#57405c;background:#ded0ce;border-color:#977e9255}
+.liability-hills-scene .corner-cast-actions>button:hover{background:#d6bed3}
+.liability-hills-scene .corner-cast-actions>.corner-listen{background:none;color:#877285}
+.liability-hills-scene .corner-case{background:#d9cbd0;border-color:#8e73894a}
+.liability-hills-scene .corner-case-title{color:#796079}
+.liability-hills-scene .corner-case>p{color:#513b56}
+.liability-hills-scene .corner-evidence button{background:#dfd3d7;color:#9b8298;border-color:#a58da2}
+.liability-hills-scene .corner-evidence button.is-found{background:#eee0c1;color:#775f34;border-color:#b79a63}
+.liability-hills-scene .corner-evidence button.is-archive{background:#dfd2de;color:#7b5e7c;border-color:#a38aa4}
+.hills-evidence-label{display:grid;gap:3px;font:inherit;font-weight:700;text-align:left}
+.hills-evidence-label small{font:6px/1 var(--mono,monospace);letter-spacing:1px;color:#9b779b}
+.hills-archive-badge{font:7px/1.2 var(--mono,monospace);color:#947395;background:#e0cfdf;padding:4px 5px}
+.liability-hills-scene .corner-empty-evidence{border-color:#a38b9c}
+.liability-hills-scene .corner-objective-action{background:#513c57;color:#f2dfb6;border-color:#38283e}
+.liability-hills-scene .corner-objective-action:hover{background:#6b4e6a}
+.liability-hills-scene .corner-clue-detail{background:#f0e5d0;border-color:#b69a62;color:#766073}
+.liability-hills-scene .corner-clue-detail b{color:#694d61}
+.liability-hills-scene .corner-save-gate{background:#3c3043;color:#dac9df;border-color:#ac8eb340}
+.liability-hills-scene .corner-save-gate>svg{color:#e0c59a}
+.liability-hills-scene .corner-save-gate button{background:#e3cfa3;color:#413047}
+.liability-hills-scene .corner-audio-note{background:#29212f;color:#b5a6bc}
+.liability-hills-scene .corner-resolution{background:var(--grain),#e5d8c7;color:#453046;border-color:#55405b}
+.liability-hills-scene .corner-resolution-heading span{color:#907083}
+.liability-hills-scene .corner-ending-choices button{background:#f1e5d3;color:#513951;border-color:#a0869d;box-shadow:2px 3px #5d436026}
+.liability-hills-scene .corner-ending-choices button:enabled:hover{background:#eed9e8}
+.liability-hills-scene .corner-ending-choices button:disabled{background:#d9cbd0;color:#9c8298;border-color:#b49cad}
+.liability-hills-scene .corner-ending-choices button.is-saved{background:#ead9b0;border-color:#ad8c50}
+.liability-hills-scene .corner-choice-number{color:#b394af}
+.liability-hills-scene .corner-reward>span{color:#99743b}
+.liability-hills-scene .corner-saved-story>p{color:#765f73}
+.liability-hills-scene .corner-resolution.is-alternate{background-color:#e1cddb}
+.liability-hills-scene .corner-reward-route{border-color:#a38a9755}
+.liability-hills-scene .corner-reward-route>a,.liability-hills-scene .corner-reward-route>button:not(.corner-quiet-button){background:#513c57;color:#f3dfb6}
+.liability-hills-scene .corner-addresses{background:var(--grain),#211b29;border-color:#a383a145}
+.liability-hills-scene .corner-addresses>span{color:#b099b8}
+.liability-hills-scene .corner-addresses button{background:#32273b;color:#dfcfe0;border-color:#9c7b9c60}
+.liability-hills-scene .corner-addresses small{color:#b895b5}
+.liability-hills-scene .corner-addresses button:hover{background:#4b3753;border-color:#c79dc4}
+@keyframes hills-water{0%,100%{transform:translateX(0) scaleY(1);opacity:.14}50%{transform:translateX(6px) scaleY(1.04);opacity:.23}}
+@keyframes hills-yacht-lamp{0%,100%{opacity:.65;transform:translateX(0)}50%{opacity:1;transform:translateX(1.5%)}}
+@keyframes hills-palm{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(1deg)}}
+@keyframes hills-idle{0%,100%{transform:translateY(0) scaleY(1)}50%{transform:translateY(-1px) scaleY(1.004)}}
+@keyframes hills-heavy-bottle{0%,100%{transform:rotate(0)}50%{transform:rotate(-.35deg)}}
+@keyframes hills-stumble{0%{transform:rotate(0) translateX(0)}35%{transform:rotate(2deg) translateX(3px)}70%{transform:rotate(-1deg) translateX(-1px)}100%{transform:rotate(0) translateX(0)}}
+@media(max-width:1000px){.liability-hills-scene .corner-location>span{max-width:110px;font-size:7px}.liability-hills-scene .corner-location h1{font-size:26px}.hills-aftermath-sign{padding:6px 7px}}
+@media(max-width:700px){.liability-hills-scene .corner-location{gap:6px;flex-wrap:nowrap}.liability-hills-scene .corner-location h1{font-size:22px;max-width:130px;line-height:.95}.liability-hills-scene .corner-location>button{font-size:11px}.liability-hills-scene .corner-location>svg{width:9px;flex:none}.liability-hills-scene .corner-controls{gap:3px}.liability-hills-scene .corner-controls button{padding:8px 6px;min-width:31px}.liability-hills-scene .corner-controls button>span{font-size:6px}.liability-hills-scene .corner-scene-caption{font-size:6.5px;max-width:calc(100% - 20px);gap:5px}.liability-hills-scene .corner-cast-actions>.corner-listen{font-size:7px}.hills-aftermath-sign b{font-size:14px}.hills-aftermath-sign small{font-size:5px}.liability-hills-scene .corner-evidence{min-width:96px}.liability-hills-scene .corner-camera-tabs button{padding:9px 12px}.liability-hills-scene .corner-dialogue-head>small{max-width:44%}.liability-hills-scene .corner-objective-action{font-size:13px}}

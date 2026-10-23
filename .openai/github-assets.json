@@ -1,6 +1,6 @@
 {
-  "source_commit": "5c35b59b21d56932cb13ffa0e990f588ecc9ef6d",
-  "site_version": 53,
+  "source_commit": "6547e87f67bb21cf6084dc18e36313115a3997c5",
+  "site_version": 54,
   "base_url": "https://cancel-city-gacha.wiryant4.chatgpt.site",
   "files": [
     {
@@ -3980,6 +3980,24 @@
       "size": 659820,
       "sha256": "7c840fcdcd4de8d9e33ccf3888657b1c443b096d696ae91060aea041dc3a87d1",
       "git_blob": "300b427921f4563ca1208c1f7f6f2cd74999f27c"
+    },
+    {
+      "path": "public/assets/city-v5/hills-office-counter.webp",
+      "size": 216434,
+      "sha256": "51fa4002f05fdc667e9530fe0b1cafb25c8513d236862971275d02c6c28e5f81",
+      "git_blob": "00aac9f31559be5769e125a9326cf3e137113544"
+    },
+    {
+      "path": "public/assets/city-v5/hills-office.webp",
+      "size": 556474,
+      "sha256": "0c62ae75ca50b0f0e74bf1b220e94abe7132bfae9f3eed876a43ef83e21f9d7b",
+      "git_blob": "054a3417cce8c066c43b957af751e155a51dbc46"
+    },
+    {
+      "path": "public/assets/city-v5/hills-waterfront.webp",
+      "size": 756890,
+      "sha256": "c615e0acac9ddbb224ab73d81073e682c0da5e05320fee883f2588b383a7b78f",
+      "git_blob": "02ace40c215be2520e7d69bb9a35a39d5860ab49"
     },
     {
       "path": "public/assets/city/afterparty-l1.webp",

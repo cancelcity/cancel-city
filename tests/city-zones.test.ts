@@ -9,6 +9,7 @@ import {applyCommand,initialSave,decodeSave,saveSchema,type Save,type Command} f
 const now=new Date('2026-10-22T12:00:00Z');let sequence=0;
 const run=(save:Save,command:Command,id=`zone-${sequence++}`)=>applyCommand(save,command,now,()=>0,id,save.revision);
 const founded=()=>run(initialSave(now,'landmarks'),{type:'city-start'});
+const readyFor=(zoneId:CityZoneId)=>zoneId==='probable-cause'?run(run(founded(),{type:'city-corner-clue',clueId:'receipt'}),{type:'city-corner-clue',clueId:'statement'}):zoneId==='yacht-club'?run(run(founded(),{type:'city-harbour-clue',clueId:'invoice'}),{type:'city-harbour-clue',clueId:'guest-list'}):founded();
 
 describe('specialist city buildings and saved landmark endings',()=>{
  it('groups every specialist building into exactly one district without changing construction recipes',()=>{
@@ -38,7 +39,7 @@ describe('specialist city buildings and saved landmark endings',()=>{
  });
 
  it('preserves pre-district venue endings and receipts while leaving the five new buildings unclaimed',()=>{
-  let before=founded();
+  let before=readyFor('yacht-club');
   for(const zoneId of ['yacht-club','oil-manor','red-flag-house','kfc'] as const)before=run(before,{type:'city-zone-choice',zoneId,choice:1});
   const next=decodeSave(JSON.parse(JSON.stringify(before)),now);
   expect(next).toEqual(before);
@@ -51,7 +52,7 @@ describe('specialist city buildings and saved landmark endings',()=>{
 
  it('persists each landmark choice with its authored reward and never rewards a retry or changed ending twice',()=>{
   for(const zone of CITY_ZONES)for(const choice of [0,1,2] as const){
-   const before=zone.id==='probable-cause'?run(run(founded(),{type:'city-corner-clue',clueId:'receipt'}),{type:'city-corner-clue',clueId:'statement'}):founded(),id=`once-${sequence++}`,command:Command={type:'city-zone-choice',zoneId:zone.id,choice};
+   const before=readyFor(zone.id),id=`once-${sequence++}`,command:Command={type:'city-zone-choice',zoneId:zone.id,choice};
    const save=run(before,command,id),reward=CITY_ZONE_BY_ID[zone.id].choices[choice].reward;
    expect(save.city!.zoneEndings[zone.id]).toBe(choice);
    expect(save.packBalance-before.packBalance).toBe(reward.packs||0);

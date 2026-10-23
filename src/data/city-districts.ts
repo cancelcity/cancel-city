@@ -24,8 +24,8 @@ export const CITY_DISTRICTS=[
  {
   id:'liability-hills',name:'Liability Hills',kicker:'GATED EXCESS / FIVE SPECIALIST BUILDINGS',
   tagline:'THE GATES ARE HIGHER THAN THEIR STANDARDS.',
-  intro:'Yachts, oil deliveries, trophy egos and a museum charging admission to a comeback that still hasn’t happened. Every address here has a publicist. None of them answers a straight fucking question.',
-  art:'/assets/city-v3/district-liability-hills.webp',color:'#d4a6ff',
+  intro:'Gobstein’s charity gala has a bar tab, an unpaid dock invoice and no actual charity. Oscar has donated his presence. The supplier has brought five hundred bottles to the wrong event. Read the harbour office invoice, then ask Oscar for the guest list. Four more questionable addresses are up the hill.',
+  art:'/assets/city-v5/hills-waterfront.webp',color:'#d4a6ff',
   buildings:[{id:'oscar-studios',x:23,y:26},{id:'oil-manor',x:75,y:26},{id:'red-flag-house',x:50,y:50},{id:'yacht-club',x:23,y:74},{id:'moonwalk-museum',x:75,y:74}],
  },
 ] as const satisfies readonly CityDistrict[];
