@@ -13,6 +13,8 @@ The project includes all game code, configuration, tests, text documentation and
 
 The `Sync game assets` workflow verifies the exact runtime files from `.openai/github-assets.json` and commits them to `main`. Download after that workflow succeeds. The normal ZIP then contains the assets directly; no separate download is needed.
 
+The publication service returned `https://cancel-city-gacha.tokieth.chatgpt.site` for version 56. The mirror's provenance, asset manifest and restoration helper use this verified origin; this export-specific adjustment does not change the saved game source or runtime assets.
+
 The game is a web application. Downloading its source does not copy player accounts or hosted database contents. Development and hosting instructions from the original project follow below.
 
 ---

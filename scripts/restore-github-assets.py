@@ -11,7 +11,7 @@ import urllib.request
 def restore(root: Path):
     manifest = json.loads((root / '.openai/github-assets.json').read_text())
     base = manifest['base_url'].rstrip('/')
-    if base != 'https://cancel-city-gacha.wiryant4.chatgpt.site':
+    if base not in {'https://cancel-city-gacha.wiryant4.chatgpt.site', 'https://cancel-city-gacha.tokieth.chatgpt.site'}:
         raise ValueError('Unexpected asset origin')
 
     def one(item):
