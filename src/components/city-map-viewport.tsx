@@ -2,6 +2,7 @@
 
 import {useCallback,useEffect,useId,useRef,useState,type CSSProperties,type KeyboardEvent,type PointerEvent,type ReactNode} from 'react';
 import {Minus,Plus,Scan} from 'lucide-react';
+import {cityZoomLimit} from '../domain/city-map-camera';
 
 export type CityMapFocus={x:number;y:number;zoom:number};
 type Box={width:number;height:number};
@@ -12,8 +13,8 @@ type Pinch={distance:number;zoom:number;world:Point};
 const HOME:CityMapFocus={x:50,y:50,zoom:1};
 const clamp=(value:number,min:number,max:number)=>Math.min(max,Math.max(min,value));
 const worldSize=(box:Box)=>{const width=Math.max(box.width,box.height*16/9);return {width,height:width*9/16};};
-const constrain=(focus:CityMapFocus,box:Box):CityMapFocus=>{
- const zoom=clamp(focus.zoom,1,3),world=worldSize(box);
+const constrain=(focus:CityMapFocus,box:Box,maxZoom:number):CityMapFocus=>{
+ const zoom=clamp(focus.zoom,1,maxZoom),world=worldSize(box);
  if(!world.width||!world.height)return {...focus,zoom};
  const marginX=box.width/(world.width*zoom)*50,marginY=box.height/(world.height*zoom)*50;
  return {x:clamp(focus.x,marginX,100-marginX),y:clamp(focus.y,marginY,100-marginY),zoom};
@@ -24,14 +25,16 @@ const interactive=(target:EventTarget|null)=>target instanceof Element&&!!target
 export function CityMapViewport({art,label,children,initialFocus,sceneKey,onMapClick,className='',paused=false}:{art:string;label:string;children:ReactNode;initialFocus?:CityMapFocus;sceneKey:string;onMapClick?:()=>void;className?:string;paused?:boolean}){
  const viewport=useRef<HTMLDivElement>(null),boxRef=useRef<Box>({width:0,height:0}),cameraRef=useRef<CityMapFocus>(initialFocus||HOME),pointers=useRef(new Map<number,Point>()),drag=useRef<Drag|null>(null),pinch=useRef<Pinch|null>(null),suppressClick=useRef(false);
  const [box,setBox]=useState<Box>({width:0,height:0}),[camera,setCamera]=useState<CityMapFocus>(initialFocus||HOME),[moving,setMoving]=useState(false),[used,setUsed]=useState(false),[loadedArt,setLoadedArt]=useState('');
- const instructions=useId(),home=useRef(initialFocus||HOME);
+ const instructions=useId(),home=useRef(initialFocus||HOME),resolution=useRef({width:1672,dpr:1}),limitRef=useRef(1);
+ const [zoomLimit,setZoomLimit]=useState(1);
+ const updateLimit=useCallback(()=>{const limit=cityZoomLimit(resolution.current.width,worldSize(boxRef.current).width,resolution.current.dpr);limitRef.current=limit;setZoomLimit(limit);},[]);
  home.current=initialFocus||HOME;
- const moveCamera=useCallback((next:CityMapFocus)=>{const safe=constrain(next,boxRef.current);cameraRef.current=safe;setCamera(safe);},[]);
+ const moveCamera=useCallback((next:CityMapFocus)=>{const safe=constrain(next,boxRef.current,limitRef.current);cameraRef.current=safe;setCamera(safe);},[]);
  const markUsed=useCallback(()=>setUsed(true),[]);
  const zoomAt=useCallback((client:Point,nextZoom:number)=>{
   const rect=viewport.current?.getBoundingClientRect(),size=boxRef.current,current=cameraRef.current;
   if(!rect||!size.width)return;
-  const world=worldSize(size),point={x:client.x-rect.left,y:client.y-rect.top},zoom=clamp(nextZoom,1,3);
+  const world=worldSize(size),point={x:client.x-rect.left,y:client.y-rect.top},zoom=clamp(nextZoom,1,limitRef.current);
   const worldX=current.x/100*world.width+(point.x-size.width/2)/current.zoom,worldY=current.y/100*world.height+(point.y-size.height/2)/current.zoom;
   moveCamera({x:(worldX-(point.x-size.width/2)/zoom)/world.width*100,y:(worldY-(point.y-size.height/2)/zoom)/world.height*100,zoom});
  },[moveCamera]);
@@ -41,9 +44,9 @@ export function CityMapViewport({art,label,children,initialFocus,sceneKey,onMapC
 
  useEffect(()=>{
   const element=viewport.current;if(!element)return;
-  const measure=()=>{const rect=element.getBoundingClientRect(),next={width:rect.width,height:rect.height};boxRef.current=next;setBox(next);moveCamera(cameraRef.current);};
+  const measure=()=>{const rect=element.getBoundingClientRect(),next={width:rect.width,height:rect.height};boxRef.current=next;resolution.current.dpr=window.devicePixelRatio||1;updateLimit();setBox(next);moveCamera(cameraRef.current);};
   measure();const observer=new ResizeObserver(measure);observer.observe(element);return ()=>observer.disconnect();
- },[moveCamera]);
+ },[moveCamera,updateLimit]);
  useEffect(()=>{pointers.current.clear();drag.current=null;pinch.current=null;suppressClick.current=false;setMoving(false);moveCamera(home.current);},[sceneKey,moveCamera]);
  useEffect(()=>{
   const element=viewport.current;if(!element)return;
@@ -78,7 +81,7 @@ export function CityMapViewport({art,label,children,initialFocus,sceneKey,onMapC
   const point={x:event.clientX,y:event.clientY};pointers.current.set(event.pointerId,point);
   if(pointers.current.size>1&&pinch.current){
    const [a,b]=Array.from(pointers.current.values()),rect=viewport.current?.getBoundingClientRect(),size=boxRef.current,world=worldSize(size),gesture=pinch.current;if(!rect)return;
-   const middle={x:(a.x+b.x)/2-rect.left,y:(a.y+b.y)/2-rect.top},zoom=clamp(gesture.zoom*Math.hypot(a.x-b.x,a.y-b.y)/gesture.distance,1,3);
+   const middle={x:(a.x+b.x)/2-rect.left,y:(a.y+b.y)/2-rect.top},zoom=clamp(gesture.zoom*Math.hypot(a.x-b.x,a.y-b.y)/gesture.distance,1,limitRef.current);
    moveCamera({x:(gesture.world.x-(middle.x-size.width/2)/zoom)/world.width*100,y:(gesture.world.y-(middle.y-size.height/2)/zoom)/world.height*100,zoom});
    if(event.cancelable)event.preventDefault();return;
   }
@@ -101,16 +104,16 @@ export function CityMapViewport({art,label,children,initialFocus,sceneKey,onMapC
   else return;
   event.preventDefault();
  };
- const world=worldSize(box),style={width:world.width||'100%',height:world.height||'100%',transform:`translate3d(${box.width/2-camera.x/100*world.width*camera.zoom}px,${box.height/2-camera.y/100*world.height*camera.zoom}px,0) scale(${camera.zoom})`} as CSSProperties;
+ const world=worldSize(box),style={width:world.width?world.width*camera.zoom:'100%',height:world.height?world.height*camera.zoom:'100%',left:Math.round(box.width/2-camera.x/100*world.width*camera.zoom),top:Math.round(box.height/2-camera.y/100*world.height*camera.zoom)} as CSSProperties;
  return <div ref={viewport} className={`city-map-viewport ${moving?'is-moving':''} ${used?'has-explored':''} ${paused?'is-paused':''} ${loadedArt===art?'is-loaded':''} ${className}`} role="region" aria-label={label} aria-describedby={instructions} tabIndex={0} onPointerDown={startPointer} onPointerMove={movePointer} onPointerUp={event=>finishPointer(event.pointerId)} onPointerCancel={event=>finishPointer(event.pointerId)} onKeyDown={onKeyDown} onClickCapture={event=>{if(event.target instanceof Element&&event.target.closest('[data-city-map-control]'))return;if(suppressClick.current){event.preventDefault();event.stopPropagation();suppressClick.current=false;}}} onClick={event=>{if(!interactive(event.target))onMapClick?.();}}>
   <p id={instructions} className="city-map-sr-only">Drag to explore the city. Scroll or pinch to zoom. With the map focused, use arrow keys to pan, plus and minus to zoom, and zero to reset. Select a building to visit.</p>
   <div className="city-map-world" style={style}>
-   <img className="city-map-world-art" src={art} alt="" draggable={false} decoding="async" fetchPriority="high" onLoad={()=>setLoadedArt(art)}/>
+   <img className="city-map-world-art" src={art} alt="" draggable={false} decoding="async" fetchPriority="high" onLoad={event=>{resolution.current.width=event.currentTarget.naturalWidth;updateLimit();moveCamera(cameraRef.current);setLoadedArt(art);}}/>
    <div className="city-map-world-content">{children}</div>
   </div>
   <div className="city-map-explore-hint" aria-hidden="true"><span>DRAG TO EXPLORE</span><i>·</i><span>SCROLL TO ZOOM</span></div>
   <div className="city-map-controls" role="group" aria-label="Map navigation" data-city-map-control>
-   <button type="button" onClick={()=>zoomCentre(1.25)} disabled={camera.zoom>=2.999} aria-label="Zoom in" title="Zoom in (+)"><Plus size={25} strokeWidth={2.5}/></button>
+   <button type="button" onClick={()=>zoomCentre(1.25)} disabled={camera.zoom>=zoomLimit-.001} aria-label="Zoom in" title={camera.zoom>=zoomLimit-.001?"Maximum detail for this display":"Zoom in (+)"}><Plus size={25} strokeWidth={2.5}/></button>
    <button type="button" onClick={()=>zoomCentre(.8)} disabled={camera.zoom<=1.001} aria-label="Zoom out" title="Zoom out (−)"><Minus size={25} strokeWidth={2.5}/></button>
    <button type="button" className="city-map-reset" onClick={reset} aria-label="Reset city map" title="Reset map (0)"><Scan size={19} strokeWidth={2}/></button>
    <span className="city-map-zoom-readout" aria-hidden="true">{Math.round(camera.zoom*100)}%</span>

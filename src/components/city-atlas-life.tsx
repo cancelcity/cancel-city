@@ -2,11 +2,15 @@
 import {useEffect,useRef} from 'react';
 import {useCityMotion} from './city-motion';
 
-type Scene='overview'|'overtime'|'rug404';
+type Scene='overview'|'overtime-downtown'|'rug-street'|'404-quarter'|'cloutside'|'liability-hills'|'doom-county';
 const ROUTES:Record<Scene,{van:string;courier:string;size:number;lamps:number[][]}>={
  overview:{van:'M 460 687 L 576 764 L 692 841 L 801 917',courier:'M 650 814 L 726 859 L 773 877',size:35,lamps:[[618,551],[884,596],[1073,635],[395,651],[1319,605],[1494,744]]},
- overtime:{van:'M 731 549 L 864 620 L 1020 708 L 1179 805 L 1358 921',courier:'M 966 609 L 1040 650 L 1133 710',size:59,lamps:[[879,505],[603,321],[151,766],[1128,625],[1390,895]]},
- rug404:{van:'M 873 443 L 972 502 L 1088 572',courier:'M 1389 520 L 1461 560 L 1545 606',size:48,lamps:[[923,468],[1093,530],[640,748],[1130,739],[1471,626]]},
+ 'overtime-downtown':{van:'M 887 686 L 996 740 L 1111 797 L 1224 852',courier:'M 1073 700 L 1145 741 L 1210 781',size:48,lamps:[[634,312],[1128,625],[1390,895],[816,776]]},
+ 'rug-street':{van:'M 1110 468 L 1190 508 L 1274 550',courier:'M 507 838 L 573 806 L 630 787',size:37,lamps:[[526,570],[775,486],[1240,550],[1430,823]]},
+ '404-quarter':{van:'M 158 638 L 237 674 L 298 696',courier:'M 1128 641 L 1193 671 L 1255 696',size:36,lamps:[[438,500],[940,452],[1290,703]]},
+ cloutside:{van:'M 816 664 L 916 708 L 1015 754',courier:'M 871 646 L 943 675 L 1026 710',size:38,lamps:[[532,425],[765,453],[1284,470],[935,761]]},
+ 'liability-hills':{van:'M 1008 366 Q 1110 395 1224 457 L 1280 478',courier:'M 1145 680 L 1202 702 L 1255 722',size:32,lamps:[[640,306],[1118,329],[1265,457],[642,868]]},
+ 'doom-county':{van:'M 112 857 L 220 902 L 298 937',courier:'M 580 435 L 650 467 L 719 493',size:38,lamps:[[540,402],[1150,430],[1290,505],[453,815]]},
 };
 
 /** Ambient routines share the scenery's coordinates and never consume input or game rewards. */

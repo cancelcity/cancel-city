@@ -15,9 +15,9 @@
 .city-atlas-toolbar>.city-atlas-icon-button{min-width:37px;padding:7px;color:#d9cbb4}.city-atlas-icon-button[aria-pressed=true]{background:#e3ff00;color:#151015}
 .city-atlas-district-hotspot,.city-atlas-building-hotspot{position:absolute;display:block;z-index:2;border:2px solid transparent;border-radius:8px;background:transparent;color:#eee4ca;cursor:pointer;touch-action:none;padding:0;-webkit-tap-highlight-color:transparent}
 .city-atlas-district-hotspot>span,.city-atlas-building-hotspot>span{position:absolute;left:50%;bottom:2%;transform:translate(-50%,0);display:flex;align-items:center;gap:5px;white-space:nowrap;background:var(--grain),#151015f0;border:1px solid #9c8a71;padding:6px 9px;color:#f3e6cd;font:17px/1 CityCondensed,var(--display);text-transform:uppercase;box-shadow:2px 3px #090709;opacity:0;pointer-events:none}
-.city-atlas-district-hotspot:hover,.city-atlas-district-hotspot:focus-visible{border:2px dashed var(--district-color,#ff169e);background:#ff169e08}.city-atlas-district-hotspot:hover>span,.city-atlas-district-hotspot:focus-visible>span{opacity:1}
+.city-atlas-district-hotspot:hover,.city-atlas-district-hotspot:focus-visible{border-color:transparent;background:transparent}.city-atlas-district-hotspot:hover>span,.city-atlas-district-hotspot:focus-visible>span{opacity:1}
 .city-atlas-building-hotspot{transform:translate(-50%,-50%)}
-.city-atlas-building-hotspot:hover,.city-atlas-building-hotspot:focus-visible,.city-atlas-building-hotspot.is-selected{border:2px dashed #e2ff00;background:#f0ff000b}.city-atlas-building-hotspot:hover>span,.city-atlas-building-hotspot:focus-visible>span,.city-atlas-building-hotspot.is-selected>span{opacity:1}
+.city-atlas-building-hotspot:hover,.city-atlas-building-hotspot:focus-visible,.city-atlas-building-hotspot.is-selected{border-color:transparent;background:transparent}.city-atlas-building-hotspot:hover>span,.city-atlas-building-hotspot:focus-visible>span,.city-atlas-building-hotspot.is-selected>span{opacity:1}
 .city-atlas-building-hotspot>span{font-size:13px;padding:4px 6px;border-color:#d9ed5e;bottom:1px}.city-atlas-building-hotspot.is-selected{z-index:3}
 .city-atlas-building-card{position:absolute;z-index:13;left:18px;bottom:23px;width:min(340px,calc(100% - 36px));padding:15px 16px 12px;background:var(--grain),#eee4cb;color:#171215;border:3px solid #100c0e;box-shadow:4px 5px #080709;transform:rotate(-.5deg)}
 .city-atlas-card-address{display:flex;align-items:center;gap:4px;max-width:92%;font:11px/1.2 CityCondensed,var(--display);text-transform:uppercase;letter-spacing:.2px;color:#725341}
@@ -44,7 +44,7 @@
 /* The painted central neighbourhood opens the real saved block. */
 .city-atlas-block-hotspot{position:absolute;z-index:1;display:block;border:2px solid transparent;border-radius:8px;background:transparent;color:#eee4ca;padding:0;touch-action:none;-webkit-tap-highlight-color:transparent}
 .city-atlas-block-hotspot>span{position:absolute;left:50%;bottom:10%;transform:translateX(-50%);display:flex;align-items:center;gap:6px;background:var(--grain),#151015f0;border:1px solid #d5c89b;padding:6px 9px;white-space:nowrap;font:17px/1 CityCondensed,var(--display);box-shadow:2px 3px #090709;opacity:0;pointer-events:none}
-.city-atlas-block-hotspot:hover,.city-atlas-block-hotspot:focus-visible{border:2px dashed #ff169e;background:#ff169e08}.city-atlas-block-hotspot:hover>span,.city-atlas-block-hotspot:focus-visible>span{opacity:1}
+.city-atlas-block-hotspot:hover,.city-atlas-block-hotspot:focus-visible{border-color:transparent;background:radial-gradient(ellipse,#ff169e14,transparent 70%)}.city-atlas-block-hotspot:hover>span,.city-atlas-block-hotspot:focus-visible>span{opacity:1}
 .city-atlas-block-card{position:absolute;z-index:35;left:20px;bottom:20px;display:flex;gap:13px;width:min(360px,calc(100% - 40px));padding:12px 31px 12px 12px;border:2px solid #d5c89b;border-radius:7px;background:var(--grain),#131113;color:#f1e4c8;box-shadow:0 5px #050405,0 10px 25px #0007;text-align:left}
 .city-atlas-block-card-close{position:absolute;right:4px;top:4px;display:grid;place-items:center;width:27px;height:27px;background:transparent;border:0;color:#d4c5a5}
 .city-atlas-block-card-art{flex:0 0 94px;display:grid;place-items:center;min-height:121px;overflow:hidden;border:1px solid #78694a;border-radius:3px;background:var(--grain),#292328;color:#a18c5c}.city-atlas-block-card-art>img{display:block;width:100%;height:120px;object-fit:contain;filter:drop-shadow(2px 4px 1px #0008)}
@@ -64,3 +64,20 @@
  .city-atlas-toolbar>.city-atlas-icon-button{grid-column:4;grid-row:2;padding:3px;min-width:0}
  .city-atlas-toolbar>.city-atlas-icon-button:last-child{grid-column:5;grid-row:2}
 }
+
+/* Scene lighting replaces editor-like selection boxes. Text is native-size HTML. */
+.city-atlas-light{position:absolute;inset:0;background-size:100% 100%;filter:brightness(1.24) saturate(1.08);transition:opacity .2s;pointer-events:none!important;z-index:0}
+.city-atlas-district-hotspot,.city-atlas-building-hotspot,.city-atlas-block-hotspot{border:0;border-radius:0;outline:none}
+.city-atlas-shell :is(.city-atlas-district-hotspot,.city-atlas-building-hotspot,.city-atlas-block-hotspot):focus-visible{outline:none}
+.city-atlas-shell :is(.city-atlas-district-hotspot,.city-atlas-building-hotspot,.city-atlas-block-hotspot):focus-visible>span{outline:2px solid #fff1b9;outline-offset:4px}
+.city-atlas-building-hotspot>span{bottom:12%;font-size:15px;max-width:240px;white-space:normal;text-align:left;display:block;padding:9px 12px;border:1px solid #dac391;border-radius:3px;box-shadow:0 5px 18px #000a;transition:opacity .16s,translate .16s;translate:0 5px}
+.city-atlas-building-hotspot>span b{display:block;white-space:nowrap;font-weight:400}
+.city-atlas-building-hotspot>span small{display:flex;align-items:center;gap:7px;color:#ff75bd;font:10px/1.25 Arial,sans-serif;letter-spacing:.3px;margin-top:5px}
+.city-atlas-building-hotspot:hover>span,.city-atlas-building-hotspot:focus-visible>span,.city-atlas-building-hotspot.is-selected>span{translate:0 0}
+.city-atlas-building-hotspot:hover,.city-atlas-building-hotspot:focus-visible{z-index:5}
+.city-atlas-door{position:absolute;left:50%;bottom:9%;width:7px;height:7px;transform:translateX(-50%) rotate(45deg);background:#ffeac0;border:1px solid #4b381b;box-shadow:0 0 0 3px #130d1380,0 0 12px #ffd67b;transition:opacity .2s,background .2s;pointer-events:none}
+.city-atlas-building-hotspot:hover .city-atlas-door,.city-atlas-building-hotspot.is-selected .city-atlas-door{background:#ff169e;box-shadow:0 0 0 3px #130d1380,0 0 16px #ff169e}
+.city-map-viewport.is-moving .city-atlas-building-hotspot>span{opacity:0}
+.city-atlas-map-caption{max-width:calc(100% - 100px);padding:12px 16px;border-left:2px solid #e7c984;background:linear-gradient(90deg,#100b12eb,#100b1299 75%,transparent);transform:none}
+.city-atlas-map-caption>span{font-size:30px;letter-spacing:.8px}.city-atlas-map-caption>p{padding:0;background:none;color:#e5d0ac;margin:7px 0 0;font-size:11px;letter-spacing:.7px}
+@media(max-width:700px){.city-atlas-map-caption{padding:9px 12px}.city-atlas-map-caption>span{font-size:24px}.city-atlas-map-caption>p{font-size:9px}.city-atlas-building-hotspot>span{font-size:13px;max-width:205px;padding:7px 9px}.city-atlas-building-hotspot>span b{white-space:normal}}

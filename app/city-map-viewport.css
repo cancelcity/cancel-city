@@ -1,7 +1,7 @@
 .city-map-viewport{position:relative;isolation:isolate;width:100%;height:100%;min-height:340px;overflow:hidden;background:#17111e;touch-action:none;overscroll-behavior:contain;cursor:grab;outline:0;user-select:none;-webkit-user-select:none;-webkit-tap-highlight-color:transparent}
 .city-map-viewport:focus-visible{box-shadow:inset 0 0 0 3px #fff0c9;z-index:1}
 .city-map-viewport.is-moving,.city-map-viewport.is-moving *{cursor:grabbing!important}
-.city-map-world{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform;backface-visibility:hidden}
+.city-map-world{position:absolute;left:0;top:0;contain:layout style}
 .city-map-world-art{position:absolute;display:block;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none;max-width:none;-webkit-user-drag:none}
 .city-map-world-content{position:absolute;inset:0;pointer-events:none}
 .city-map-world-content>*,.city-map-world-content button,.city-map-world-content a{pointer-events:auto}
