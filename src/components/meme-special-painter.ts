@@ -23,7 +23,18 @@ export interface MemeDraw {
 }
 const INK='#111016',PAPER='#f2e8cb',PINK='#ff269e',ACID='#deff00',BLUE='#31d7ff';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));const ease=(n:number)=>1-(1-clamp(n))**3;
-function rect(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,fill:string,stroke=INK,lw=4){c.fillStyle=fill;c.fillRect(x,y,w,h);if(stroke){c.strokeStyle=stroke;c.lineWidth=lw;c.strokeRect(x,y,w,h);}}
+function rect(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,fill:string,stroke=INK,lw=4){
+ c.fillStyle=fill;c.fillRect(x,y,w,h);
+ if(stroke&&w>=24&&h>=18){
+  c.save();c.beginPath();c.rect(x,y,w,h);c.clip();
+  c.fillStyle='rgba(255,244,210,.20)';c.fillRect(x,y,w,Math.min(5,h*.16));
+  c.fillStyle='rgba(17,16,22,.18)';c.fillRect(x,y+h-Math.min(5,h*.16),w,Math.min(5,h*.16));
+  c.strokeStyle='rgba(17,16,22,.11)';c.lineWidth=1.5;
+  for(let d=-h;d<w+h;d+=18){c.beginPath();c.moveTo(x+d,y);c.lineTo(x+d-h*.55,y+h);c.stroke();}
+  c.restore();
+ }
+ if(stroke){c.strokeStyle=stroke;c.lineWidth=lw;c.strokeRect(x,y,w,h);}
+}
 function line(c:CanvasRenderingContext2D,pts:number[][],color:string,width=4){c.beginPath();pts.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.lineWidth=width;c.strokeStyle=color;c.stroke();}
 function panel(c:CanvasRenderingContext2D,d:MemeDraw,x:number,y:number,w:number,h:number,title:string,color=BLUE,angle=0){c.save();c.translate(x,y);c.rotate(angle*Math.PI/180);rect(c,7,9,w,h,'#08080999','');rect(c,0,0,w,h,PAPER);rect(c,0,0,w,35,color);d.text(title,w/2-14,18,17,INK,0,w-55);d.text('×',w-18,17,26,INK);c.restore();}
 function chat(c:CanvasRenderingContext2D,d:MemeDraw,lines:readonly string[],x=645,y=452,w=584){rect(c,x,y,w,157,INK,PAPER,3);d.tag('NPC COMMENT SECTION',x+w/2,y+1,ACID,-2,w-30);lines.forEach((s,i)=>d.text(s,x+w/2,y+49+i*35,19,i%2?PAPER:BLUE,0,w-28));}

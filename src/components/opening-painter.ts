@@ -4,7 +4,19 @@ import {openingFor} from '../data/openings';
 import {CARD_BY_ID,rarityOf} from '../data/cards';
 const INK='#111016',PAPER='#f2e8cb',PINK='#ff269e',ACID='#deff00',BLUE='#31d7ff';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n)),ease=(n:number)=>1-(1-clamp(n))**3;
-function box(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,color:string){c.fillStyle=color;c.fillRect(x,y,w,h);c.strokeStyle=INK;c.lineWidth=5;c.strokeRect(x,y,w,h);}
+function box(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,color:string){
+ if(w>=36&&h>=22&&w<1100&&!color.startsWith('#000')){c.fillStyle='rgba(11,8,16,.42)';c.fillRect(x+5,y+6,w,h);}
+ c.fillStyle=color;c.fillRect(x,y,w,h);
+ if(w>=24&&h>=18&&!color.startsWith('#000')){
+  c.save();c.beginPath();c.rect(x,y,w,h);c.clip();
+  c.fillStyle='rgba(255,244,210,.20)';c.fillRect(x,y,w,Math.min(5,h*.16));
+  c.fillStyle='rgba(17,16,22,.18)';c.fillRect(x,y+h-Math.min(5,h*.16),w,Math.min(5,h*.16));
+  c.strokeStyle='rgba(17,16,22,.11)';c.lineWidth=1.5;
+  for(let d=-h;d<w+h;d+=18){c.beginPath();c.moveTo(x+d,y);c.lineTo(x+d-h*.55,y+h);c.stroke();}
+  c.restore();
+ }
+ c.strokeStyle=INK;c.lineWidth=5;c.strokeRect(x,y,w,h);
+}
 function oval(c:CanvasRenderingContext2D,x:number,y:number,rx:number,ry:number,color:string){c.beginPath();c.ellipse(x,y,rx,ry,0,0,Math.PI*2);c.fillStyle=color;c.fill();c.strokeStyle=INK;c.lineWidth=4;c.stroke();}
 export const openingBeat=(p:number,reduced=false)=>reduced?'result':p<.24?'setup':p<.62?'delivery':p<.83?'reveal':'result';
 export function paintOpening(c:CanvasRenderingContext2D,s:PullScene,d:MemeDraw){

@@ -1,11 +1,11 @@
 'use client';
 import Link from 'next/link';
-import {Layers,Library,ShoppingCart,Swords,Ticket,ArrowRight} from 'lucide-react';
+import {Layers,Library,ShoppingCart,Swords,Ticket,ArrowRight,Zap} from 'lucide-react';
 import {PrintedCard} from './printed-card';
 import {PackWrapper} from './brand';
 import {CARDS} from '../data/cards';
 import { AnimatePresence, motion } from 'motion/react';
-import { CSSProperties, useEffect, useState } from 'react';
+import { CSSProperties, useEffect, useRef, useState } from 'react';
 import { Check, Gift, Info, Sparkles } from 'lucide-react';
 import { Card, CARD_BY_ID, RARITIES, rarityOf } from '../data/cards';
 import { dailyEligible, Pull, Save } from '../domain/game';
@@ -24,6 +24,192 @@ const DEMO_PULLS: Pull[] = [
   { cardId: 'CC023', slot: 3, isNewDiscovery: false, regularQuantityAfter: 2 }, // Light Yagamod
   { cardId: 'CC028', slot: 4, isNewDiscovery: true, regularQuantityAfter: 1 }, // Yasuo 0/10
 ];
+
+const SLOT_COORDS = [
+  { x: 125, y: 410 },
+  { x: 255, y: 295 },
+  { x: 560, y: 250 },
+  { x: 845, y: 310 },
+  { x: 985, y: 445 },
+];
+
+function PackStageVfxCanvas({
+  tearing,
+  revealedCount,
+  activePulls,
+  inSession,
+  reduced,
+}: {
+  tearing: boolean;
+  revealedCount: number;
+  activePulls: Pull[];
+  inSession: boolean;
+  reduced: boolean;
+}) {
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const tearStartRef = useRef<number>(-9999);
+  const flipBurstsRef = useRef<{ slot: number; startAt: number; color: string }[]>([]);
+  const prevRevealedRef = useRef<number>(revealedCount);
+
+  useEffect(() => {
+    if (reduced) {
+      tearStartRef.current = -9999;
+    } else if (tearing) {
+      tearStartRef.current = performance.now();
+    }
+  }, [tearing, reduced]);
+
+  useEffect(() => {
+    if (!inSession || reduced) {
+      prevRevealedRef.current = inSession ? revealedCount : 0;
+      flipBurstsRef.current = [];
+      return;
+    }
+    const prev = prevRevealedRef.current;
+    if (revealedCount > prev) {
+      const now = performance.now();
+      for (let i = prev; i < revealedCount; i++) {
+        const pull = activePulls[i];
+        if (!pull) continue;
+        const card = CARD_BY_ID[pull.cardId];
+        if (card.rarity !== 'public-enemy' && card.rarity !== 'uncancelable' && !pull.isNewDiscovery) continue;
+        const color = rarityOf(card.rarity).color;
+        flipBurstsRef.current.push({ slot: i, startAt: now + (i - prev) * 75, color });
+      }
+      flipBurstsRef.current = flipBurstsRef.current.slice(-10);
+    }
+    prevRevealedRef.current = revealedCount;
+  }, [revealedCount, inSession, activePulls, reduced]);
+
+  useEffect(() => {
+    if (reduced) return;
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let raf = 0;
+    const clear = () => ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const hasEffects = (now: number) =>
+      (now >= tearStartRef.current && now - tearStartRef.current <= 680) ||
+      flipBurstsRef.current.some((burst) => now - burst.startAt < 650);
+    const render = (now: number) => {
+      raf = 0;
+      clear();
+      if (document.hidden) return;
+
+      // 3. Booster Pack Foil-Tear Lightning & Confetti Fountain
+      const tearElapsed = (now - tearStartRef.current) / 680;
+      if (tearElapsed >= 0 && tearElapsed <= 1) {
+        const p = Math.min(1, tearElapsed);
+        const easeOut = 1 - (1 - p) ** 3;
+        ctx.save();
+        // Expanding shockwaves from pack center
+        ctx.globalAlpha = 1 - p;
+        ctx.beginPath();
+        ctx.ellipse(555, 510, 50 + easeOut * 380, 28 + easeOut * 210, -0.1, 0, Math.PI * 2);
+        ctx.strokeStyle = '#e5ff00';
+        ctx.lineWidth = 8 * (1 - p);
+        ctx.stroke();
+
+
+        // Jagged foil rip lightning line across booster top
+        if (p < 0.55) {
+          ctx.beginPath();
+          for (let seg = 0; seg <= 14; seg++) {
+            const lx = 340 + seg * 31;
+            const ly = 470 + (seg % 2 === 0 ? -14 : 14) * Math.sin(p * 25 + seg);
+            if (seg === 0) ctx.moveTo(lx, ly);
+            else ctx.lineTo(lx, ly);
+          }
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 6;
+          ctx.stroke();
+          ctx.strokeStyle = '#31d7ff';
+          ctx.lineWidth = 3;
+          ctx.stroke();
+        }
+
+        // 14 foil shards
+        for (let k = 0; k < 14; k++) {
+          const a = -Math.PI * 0.92 + (k / 13) * Math.PI * 0.84 + Math.sin(k * 3) * 0.15;
+          const speed = 150 + (k % 5) * 75;
+          const fx = 555 + Math.cos(a) * speed * easeOut;
+          const fy = 520 + Math.sin(a) * speed * easeOut + 190 * p * p;
+          ctx.save();
+          ctx.translate(fx, fy);
+          ctx.rotate(p * 12 + k);
+          ctx.fillStyle = k % 3 === 0 ? '#e5ff00' : k % 2 === 0 ? '#ff169e' : '#31d7ff';
+          ctx.strokeStyle = '#111016';
+          ctx.lineWidth = 2;
+          ctx.fillRect(-7, -4, 14, 8);
+          ctx.strokeRect(-7, -4, 14, 8);
+          ctx.restore();
+        }
+        ctx.restore();
+      }
+
+      // 4. Localized Card-Flip Starbursts when revealing slots
+      flipBurstsRef.current = flipBurstsRef.current.filter((b) => now - b.startAt < 650);
+      for (const burst of flipBurstsRef.current) {
+        if (now < burst.startAt) continue;
+        const bp = Math.min(1, (now - burst.startAt) / 650);
+        const be = 1 - (1 - bp) ** 3;
+        const pos = SLOT_COORDS[burst.slot] ?? SLOT_COORDS[2];
+        ctx.save();
+        ctx.globalAlpha = 1 - bp;
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, 30 + be * 145, 0, Math.PI * 2);
+        ctx.strokeStyle = burst.color;
+        ctx.lineWidth = 6 * (1 - bp);
+        ctx.stroke();
+
+        for (let j = 0; j < 14; j++) {
+          const ang = (j * Math.PI * 2) / 14 + bp * 1.4;
+          const r1 = 24 + be * 65;
+          const r2 = 45 + be * 135;
+          ctx.beginPath();
+          ctx.moveTo(pos.x + Math.cos(ang) * r1, pos.y + Math.sin(ang) * r1);
+          ctx.lineTo(pos.x + Math.cos(ang) * r2, pos.y + Math.sin(ang) * r2);
+          ctx.strokeStyle = j % 2 === 0 ? '#e5ff00' : burst.color;
+          ctx.lineWidth = 3.5;
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      if (hasEffects(now)) raf = requestAnimationFrame(render);
+    };
+
+    const resume = () => {
+      cancelAnimationFrame(raf);
+      raf = 0;
+      if (!document.hidden && hasEffects(performance.now())) {
+        raf = requestAnimationFrame(render);
+      } else {
+        clear();
+      }
+    };
+    document.addEventListener('visibilitychange', resume);
+    resume();
+    return () => {
+      cancelAnimationFrame(raf);
+      document.removeEventListener('visibilitychange', resume);
+      clear();
+    };
+  }, [reduced, activePulls, inSession, revealedCount, tearing]);
+
+  if (reduced) return null;
+  return (
+    <canvas
+      ref={canvasRef}
+      width={1100}
+      height={680}
+      className="pack-stage-vfx-canvas"
+      aria-hidden="true"
+    />
+  );
+}
 
 function PackCardSlot({
   pull,
@@ -53,7 +239,7 @@ function PackCardSlot({
 
   return (
     <div
-      className={`pack-table-slot slot-${index} ${revealed ? 'is-revealed' : 'is-hidden'} ${rare && revealed ? 'rare-pull' : ''}`}
+      className={`pack-table-slot slot-${index} ${revealed ? 'is-revealed' : 'is-hidden'} ${rare && revealed ? 'rare-pull' : ''} ${pull.isNewDiscovery && revealed ? 'new-discovery-pull' : ''}`}
       style={{ '--rarity': rarity.color } as CSSProperties}
     >
       <motion.div
@@ -74,7 +260,9 @@ function PackCardSlot({
           className={`flip-surface ${revealed ? 'is-face-up' : 'is-face-down'}`}
           data-reduced={reduced}
           initial={false}
-          animate={{ rotateY: reduced ? 0 : revealed ? 0 : 180 }}
+          animate={{
+            rotateY: reduced ? 0 : revealed ? 0 : 180,
+          }}
           transition={{ duration: reduced ? 0 : 0.62, delay: reduced ? 0 : delay, ease: CITY_EASE }}
         >
           <div className="pack-card-front" aria-hidden={!revealed}>
@@ -147,7 +335,7 @@ export function Packs({
     if (presentation !== 'tear') return;
     const timer = setTimeout(() => {
       setPresentation('ready');
-    }, reduced ? 0 : 520);
+    }, reduced ? 0 : 680);
     return () => clearTimeout(timer);
   }, [presentation, reduced]);
 
@@ -155,7 +343,7 @@ export function Packs({
     if (!breakingPull) return;
     const timer = setTimeout(() => {
       setBreakingPull(null);
-    }, reduced ? 0 : 2100);
+    }, reduced ? 0 : 2400);
     return () => clearTimeout(timer);
   }, [breakingPull, reduced]);
 
@@ -254,11 +442,40 @@ export function Packs({
   const activePulls = session ? session.pulls : DEMO_PULLS;
   const revealedCount = session ? session.revealedCount : demoRevealed;
   const allRevealed = !!session && session.revealedCount >= 5;
+  const breakingCard = breakingPull ? CARD_BY_ID[breakingPull.cardId] : null;
+  const breakingRarity = breakingCard ? rarityOf(breakingCard.rarity) : null;
 
   const openNext=async()=>{await openAndRevealFirst();if(useGame.getState().save?.pendingOpening&&batchRemaining>0)setBatchRemaining(n=>n-1);};
   return <section className={`reference-packs ${session?'in-session':'is-preview'} ${tearing?'is-tearing':''}`} aria-label="Open Packs">
    <aside className="reference-pack-sidebar"><CityLogo/><span className="tape paper">PACKS</span><nav aria-label="Pack destinations"><Link href="/packs/" className="active"><Layers/>OPEN PACKS</Link><Link href="/collection/"><Library/>COLLECTION</Link><Link href="/market/"><ShoppingCart/>MARKET</Link><Link href="/battle/"><Swords/>BATTLE</Link></nav></aside>
-   <div className="reference-pack-theater"><div className="reference-pack-burst" aria-hidden="true"/><div className="reference-pack-shards" aria-hidden="true">{Array.from({length:20},(_,i)=><i key={i} style={{'--shard':i} as CSSProperties}/>)}</div><div className="reference-pack-fan">{activePulls.map((pull,i)=><PackCardSlot key={`${session?.id||'preview'}-${i}`} pull={pull} index={i} revealed={!session||i<revealedCount} next={!!session&&i===revealedCount} busy={busy||!!spotlight||!session} collecting={collecting} delay={cascade?Math.max(0,i-cascadeFrom)*.08:0} onReveal={()=>void reveal(false)} onInspect={onInspect}/>)}</div><span className="reference-pull-rarity tape pink">{session?`${revealedCount} / 5 REVEALED`:'CATALOGUE PREVIEW / NOT YOUR PULLS'}</span><button className="reference-pack-wrapper" aria-label={session?'Reveal next resident':'Open one pack'} disabled={session?busy||allRevealed||!!spotlight:!canOpen} onClick={()=>void(session?reveal(false):openNext())}><PackWrapper/></button>{session&&<div className="reference-reveal-actions"><button className="button magenta" disabled={busy||!!spotlight||collecting} onClick={()=>void(allRevealed?collect():reveal(false))}>{allRevealed?'COLLECT ALL 5':'REVEAL NEXT'}<ArrowRight size={18}/></button>{!allRevealed&&<button className="button dark" disabled={busy||!!spotlight} onClick={()=>void reveal(true)}>REVEAL ALL</button>}</div>}</div>
+   <div className="reference-pack-theater">
+    <div className="reference-pack-burst" aria-hidden="true"/>
+    <PackStageVfxCanvas tearing={tearing} revealedCount={revealedCount} activePulls={activePulls} inSession={!!session} reduced={reduced}/>
+    <div className="reference-pack-shards" aria-hidden="true">{Array.from({length:20},(_,i)=><i key={i} style={{'--shard':i} as CSSProperties}/>)}</div>
+    <div className="reference-pack-fan">{activePulls.map((pull,i)=><PackCardSlot key={`${session?.id||'preview'}-${i}`} pull={pull} index={i} revealed={!session||i<revealedCount} next={!!session&&i===revealedCount} busy={busy||!!spotlight||!session} collecting={collecting} delay={cascade?Math.max(0,i-cascadeFrom)*.08:0} onReveal={()=>void reveal(false)} onInspect={onInspect}/>)}</div>
+    <span className="reference-pull-rarity tape pink">{session?`${revealedCount} / 5 REVEALED`:'CATALOGUE PREVIEW / NOT YOUR PULLS'}</span>
+    <AnimatePresence>
+     {breakingPull&&breakingCard&&breakingRarity&&(
+      <motion.button
+       type="button"
+       key={`${breakingPull.cardId}-${breakingPull.slot}`}
+       className="pack-breaking-cutin"
+       style={{'--cutin-color':breakingRarity.color} as CSSProperties}
+       initial={{opacity:0,y:-28,scale:0.86,rotate:-3}}
+       animate={{opacity:1,y:0,scale:1,rotate:-1.5}}
+       exit={{opacity:0,y:-18,scale:0.92}}
+       transition={{duration:0.28,ease:CITY_EASE}}
+       onClick={()=>{setBreakingPull(null);onInspect(breakingCard);}}
+      >
+       <span className="pack-cutin-badge"><Zap size={14}/>{breakingCard.rarity==='public-enemy'?'PUBLIC ENEMY PULL!':breakingCard.rarity==='uncancelable'?'UNCANCELABLE PULL!':'NEW RESIDENT UNLOCKED!'}</span>
+       <strong>{breakingCard.name.toUpperCase()}</strong>
+       <small>{breakingRarity.name.toUpperCase()} · {breakingCard.ability.toUpperCase()}</small>
+      </motion.button>
+     )}
+    </AnimatePresence>
+    <button className="reference-pack-wrapper" aria-label={session?'Reveal next resident':'Open one pack'} disabled={session?busy||allRevealed||!!spotlight:!canOpen} onClick={()=>void(session?reveal(false):openNext())}><PackWrapper/></button>
+    {session&&<div className="reference-reveal-actions"><button className="button magenta" disabled={busy||!!spotlight||collecting} onClick={()=>void(allRevealed?collect():reveal(false))}>{allRevealed?'COLLECT ALL 5':'REVEAL NEXT'}<ArrowRight size={18}/></button>{!allRevealed&&<button className="button dark" disabled={busy||!!spotlight} onClick={()=>void reveal(true)}>REVEAL ALL</button>}</div>}
+   </div>
    <aside className="reference-pack-info"><Link className="pack-poster" href="/city/"><span className="tape yellow">SCANDAL<br/>SEASON</span><p>Bad people.<br/>Good content.<br/><b>AIRFRYER GATE IS OPEN.</b></p><strong>EXPLORE YOUR CITY →</strong></Link><section className="reference-odds"><button onClick={onOdds}><h2>DROP RATES</h2><Info size={19}/></button><dl>{RARITIES.map(r=><div key={r.id} style={{color:r.color}}><dt>{r.name}</dt><dd>{(r.weight*100).toFixed(1)}%</dd></div>)}</dl><small>Same public odds for every pack.</small></section><section className="reference-pack-collection"><h2>YOUR COLLECTION</h2><b><Library size={24}/>{save?.discoveredCardIds.length||0} / {CARDS.length}</b><div className="progress-track"><i style={{width:`${(save?.discoveredCardIds.length||0)/CARDS.length*100}%`}}/></div><Link href="/collection/">VIEW COLLECTION <ArrowRight size={17}/></Link></section></aside>
    <footer className="reference-pack-purchase"><button className="pack-purchase single" disabled={!canOpen||!!session} onClick={()=>void openNext()}><span className="purchase-wrapper"><PackWrapper/></span><span><b>{batchRemaining?`NEXT PACK · ${batchRemaining} LEFT`:'SINGLE PACK'}</b><small>5 residents · independent draws</small><strong><Ticket/>1</strong></span></button><button className="pack-purchase ten" disabled={!canOpen||!!session||(save?.packBalance??0)<10||batchRemaining>0} onClick={async()=>{await openAndRevealFirst();if(useGame.getState().save?.pendingOpening)setBatchRemaining(9);}}><span className="purchase-wrapper"><PackWrapper/></span><span><b>10-PACK</b><small>Open ten packs, one at a time</small><strong><Ticket/>10</strong></span></button><button className="pack-daily-sticker" disabled={!canClaimDaily||busy} onClick={()=>void run({type:'daily'})}><span>3 FREE<br/>DAILY PACKS!</span><small>{canClaimDaily?'CLAIM YOURS →':!save?'OPEN A PACK TO BEGIN':'NEXT RESET: 00:00 UTC'}</small></button></footer>
    {justCollected&&!session&&<section className="pack-next-step" aria-label="Your next step"><div><span className="tape yellow">ALL FIVE CHARACTERS SAVED</span><h2>{journey.title}</h2><p>{journey.description}</p></div><Link className="button magenta" href={journey.href}>{journey.action}<ArrowRight size={18}/></Link><Link className="text-link" href="/collection/">VIEW MY CHARACTERS →</Link><button className="text-link" onClick={()=>setJustCollected(false)}>KEEP OPENING PACKS</button></section>}

@@ -1,4 +1,4 @@
-import {duelStateSchema,freshDuel,duelStats,tacticDeckSchema,type DuelCardId} from './duel-rules';
+import {duelStateSchema,freshDuel,duelStats,tacticDeckSchema,districtTacticDeck,type DuelCardId} from './duel-rules';
 import {takeDuelTurn,chooseDuelAction} from './duel';
 import {z} from 'zod';
 import {DUOS} from '../data/duos';
@@ -108,7 +108,7 @@ export function createMatch(id:string,districtId:DistrictId,team:string[],option
  const district=DISTRICTS.find(d=>d.id===districtId);
  if(!district||team.length!==3||new Set(team).size!==3||team.some(c=>!Object.hasOwn(CARD_BY_ID,c)))throw new Error('Choose three different residents and a valid district.');
  const squad=(ids:readonly string[],side:Side):Fighter[]=>ids.map((cardId,slot)=>({cardId,hp:maxHp(cardId,districtId,side,options.version||1),charge:(options.version||1)>=2&&squadBonus([...ids])==='chorus'?2:1,guard:(options.version||1)>=2&&squadBonus([...ids])==='coalition'?.35:0,weakened:false,exposed:false,passiveUsed:false,summoned:(options.version||1)<4||options.version===5&&slot===0,stance:'attack'}));
- const duel=(options.version||1)>=4?freshDuel(id,options.version===5?5:4,options.tacticDeck):null;
+ const duel=(options.version||1)>=4?freshDuel(id,options.version===5?5:4,options.tacticDeck,districtTacticDeck(districtId,options.challengeKey)):null;
  if(options.version===5&&duel){duel.player.stars-=duelStats(team[0]).stars;duel.enemy.stars-=duelStats(crewFor(districtId,options.mode||'campaign',options.challengeKey||null)[0]).stars;}
  return matchSchema.parse({rosterVersion:5,dailyPoolIds:options.mode==='daily'?CARDS.map(c=>c.id):[],rulesVersion:options.version||1,duel,mode:options.mode||'campaign',challengeKey:options.challengeKey||null,id,districtId,player:squad(team,'player'),enemy:squad(crewFor(districtId,options.mode||'campaign',options.challengeKey||null),'enemy'),playerActive:0,enemyActive:0,phase:'player',step:0,winner:null,reason:null,events:[],reward:{packs:0,xp:0}});
 }

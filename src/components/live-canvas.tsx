@@ -24,8 +24,12 @@ export function LiveCanvas({scene,paused=false,idle=false,onReady,className=''}:
  useLayoutEffect(()=>{const el=canvas.current,ctx=el?.getContext('2d');if(ctx&&el)paintLiveScene(ctx,images,scene,el.width,el.height);},[scene,ready]);
  useEffect(()=>{
   if(!idle||paused||scene.reduced||!ready)return;
-  let request=0,last=0;
-  const tick=(now:number)=>{if(!document.hidden&&now-last>65){const el=canvas.current,ctx=el?.getContext('2d');if(el&&ctx)paintLiveScene(ctx,images,{...current.current,time:now},el.width,el.height);last=now;}request=requestAnimationFrame(tick);};request=requestAnimationFrame(tick);return()=>cancelAnimationFrame(request);
+  // Ambient acting needs fewer paints; action scenes still redraw on every scene update.
+  let timer=0;
+  const tick=()=>{timer=0;if(document.hidden)return;const el=canvas.current,ctx=el?.getContext('2d');if(el&&ctx)paintLiveScene(ctx,images,{...current.current,time:performance.now()},el.width,el.height);timer=window.setTimeout(tick,1000/30);};
+  const resume=()=>{window.clearTimeout(timer);timer=0;if(!document.hidden)timer=window.setTimeout(tick,1000/30);};
+  document.addEventListener('visibilitychange',resume);resume();
+  return()=>{window.clearTimeout(timer);document.removeEventListener('visibilitychange',resume);};
  },[idle,paused,scene.reduced,ready]);
  return <canvas ref={canvas} width={1600} height={900} className={`live-scene-canvas ${className}`} aria-hidden="true"/>;
 }

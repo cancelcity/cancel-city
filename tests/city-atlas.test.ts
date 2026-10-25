@@ -3,6 +3,7 @@ import {fileURLToPath} from 'node:url';
 import {describe,expect,it} from 'vitest';
 import {CARD_BY_ID,FACTIONS} from '../src/data/cards';
 import {CITY_ATLAS_BUILDINGS,CITY_ATLAS_DISTRICTS,CITY_ATLAS_DISTRICT_BY_ID} from '../src/data/city-atlas';
+import {CITY_SCENE_ATMOSPHERE} from '../src/components/city-atlas-life';
 import {CITY_ZONES} from '../src/data/city-zones';
 
 describe('city atlas destinations',()=>{
@@ -70,6 +71,9 @@ describe('city atlas destinations',()=>{
    expect(x).toBeGreaterThanOrEqual(0);expect(x+width).toBeLessThanOrEqual(100);
    expect(y).toBeGreaterThanOrEqual(0);expect(y+height).toBeLessThanOrEqual(100);
    expect(district.focus.zoom).toBeGreaterThanOrEqual(1);
+   expect(CITY_SCENE_ATMOSPHERE[district.id].vibe).toContain('LIVE');
+   expect(CITY_SCENE_ATMOSPHERE[district.id].weather.length).toBeGreaterThan(3);
   }
+  expect(CITY_SCENE_ATMOSPHERE.overview.vibe).toContain('LIVE');
  });
 });

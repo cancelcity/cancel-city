@@ -5,7 +5,19 @@ import {CARD_BY_ID} from '../data/cards';
 import {PROP_BY_ID} from '../data/props';
 const INK='#111016',PAPER='#f2e8cb',PINK='#ff269e',ACID='#deff00',BLUE='#31d7ff';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n)),ease=(n:number)=>1-(1-clamp(n))**3;
-function rect(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,fill:string){c.fillStyle=fill;c.fillRect(x,y,w,h);c.strokeStyle=INK;c.lineWidth=5;c.strokeRect(x,y,w,h);}
+function rect(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,fill:string){
+ if(w>=36&&h>=22&&w<1100&&!fill.startsWith('#000')){c.fillStyle='rgba(11,8,16,.42)';c.fillRect(x+5,y+6,w,h);}
+ c.fillStyle=fill;c.fillRect(x,y,w,h);
+ if(w>=24&&h>=18&&!fill.startsWith('#000')){
+  c.save();c.beginPath();c.rect(x,y,w,h);c.clip();
+  c.fillStyle='rgba(255,244,210,.20)';c.fillRect(x,y,w,Math.min(5,h*.16));
+  c.fillStyle='rgba(17,16,22,.18)';c.fillRect(x,y+h-Math.min(5,h*.16),w,Math.min(5,h*.16));
+  c.strokeStyle='rgba(17,16,22,.11)';c.lineWidth=1.5;
+  for(let d=-h;d<w+h;d+=18){c.beginPath();c.moveTo(x+d,y);c.lineTo(x+d-h*.55,y+h);c.stroke();}
+  c.restore();
+ }
+ c.strokeStyle=INK;c.lineWidth=5;c.strokeRect(x,y,w,h);
+}
 function oval(c:CanvasRenderingContext2D,x:number,y:number,rx:number,ry:number,fill:string){c.beginPath();c.ellipse(x,y,rx,ry,0,0,Math.PI*2);c.fillStyle=fill;c.fill();c.strokeStyle=INK;c.lineWidth=4;c.stroke();}
 function path(c:CanvasRenderingContext2D,pts:number[][],fill:string){c.beginPath();pts.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.closePath();c.fillStyle=fill;c.fill();c.strokeStyle=INK;c.lineWidth=4;c.stroke();}
 function panel(c:CanvasRenderingContext2D,d:MemeDraw,x:number,y:number,w:number,h:number,title:string,color:string){rect(c,x+8,y+10,w,h,'#0008');rect(c,x,y,w,h,PAPER);rect(c,x,y,w,34,color);d.text(title,x+w/2,y+17,18,INK,0,w-40);}
@@ -55,9 +67,8 @@ export const megaBeat=(p:number,reduced=false)=>reduced?'gag':p<.18?'cold-open':
 export function paintMegaSpecial(c:CanvasRenderingContext2D,s:SpecialScene,d:MemeDraw){
  const a=s.playback,dir=MEGA_SCENES[a.cardId];if(!dir||!CARD_BY_ID[a.cardId]||a.duoId)return false;
  const p=s.reduced?1:clamp(s.progress),beat=megaBeat(p,s.reduced),launch=ease((p-.46)/.2275),hit=clamp((p-.6875)/.1725),m=dir.motif;
- // South Park-style paper-cutout waddle hop & tilt
- const hop=s.reduced?0:Math.abs(Math.sin(p*38))*16;
- const tilt=s.reduced?0:Math.sin(p*38)*5.5;
+ const hop=0;
+ const tilt=0;
  const equippedProp=a.propId?PROP_BY_ID[a.propId]:null;
 
  d.background(p,.6,1.12+p*.13);d.tag(`${CARD_BY_ID[a.cardId].name.toUpperCase()} / ${beat.toUpperCase()}`,770,61,ACID,-2,875);
@@ -99,7 +110,7 @@ export function paintMegaSpecial(c:CanvasRenderingContext2D,s:SpecialScene,d:Mem
   else if(m==='queue'||m==='march'){for(let i=0;i<5;i++)d.actor(a.cardId,2,520+launch*470-i*104,675-hop,270,tilt,.75);d.tag(m==='queue'?'PLEASE RETURN TO THE BACK':'MUSHROOM MAJORITY',831,177,PAPER,2,725);}
   else if(m==='zoom'){const zoom=[.46,.54,.62].filter(q=>p>=q).length;d.image(CARD_BY_ID[a.cardId].art,344,382,450+zoom*145,450+zoom*145,0);d.text(`DRAMATIC ZOOM ${zoom}`,914,533,59,ACID,-5,577);if(hit)d.dust(1021,391,hit,dir.accent);}
   else if(m==='fire'||m==='fog'||m==='stink'){for(let i=0;i<12;i++){const x=480+i*57,y=535-Math.sin(i*2+p*8)*95;oval(c,x,y,45+launch*25,72,m==='fire'?'#ff883388':m==='stink'?'#7fb849aa':'#bac7c1aa');}prop(c,d,m,715+launch*252,361,launch,dir.accent,m==='fire'?'CUP: SAFE':'EVACUATE');}
-  else if(m==='dance'||m==='rope'||m==='eras'){for(let i=0;i<8;i++)d.weapon('paper',550+i*67,210+(p*700+i*48)%320,.5,(i-3)*12,dir.accent,m==='dance'?'PAYSLIP':'VIP');d.actor(a.cardId,Math.floor(p*22)%2?1:2,395,683-hop,538,Math.sin(p*20)*7);prop(c,d,m,785+launch*180,370,launch,dir.accent,m.toUpperCase());}
+  else if(m==='dance'||m==='rope'||m==='eras'){for(let i=0;i<8;i++)d.weapon('paper',550+i*67,210+(p*700+i*48)%320,.5,(i-3)*12,dir.accent,m==='dance'?'PAYSLIP':'VIP');d.actor(a.cardId,Math.floor(p*6)%2?1:2,395,683,538,0);prop(c,d,m,785+launch*180,370,launch,dir.accent,m.toUpperCase());}
   else if(m==='clip'){prop(c,d,m,418+launch*629,371,launch,dir.accent,'CONSEQUENCES');if(hit)d.wrap(targetX,targetY,hit);}
   else if(['windows','emotes','decoys','slop','adjectives','folders','replyall','intro','leadership','patch'].includes(m)){for(let i=0;i<7;i++)prop(c,d,m,500+launch*(322+i*42),222+i*48,.3+launch*.35,dir.accent,m==='slop'?'SPARE ELBOW':m==='intro'?`INTRO ${i+1}`:m==='adjectives'?['ULTRA','EPIC','FINAL','FINAL','CINEMATIC','AGAIN','FINAL'][i]:m==='emotes'?'MERGE LEFT':m==='decoys'?'LOGIN AGAIN':`FORM ${i+1}`);}
   else if(m==='deadpan'){d.actor(a.cardId,0,330,680,500,0);if(hit){d.rays(ACID,1050,377);d.actor(a.cardId,0,330,680,500,0);d.dust(1048,391,hit,PINK);}d.text('FAIRLY BAD OUTCOME',899,595,59,PAPER,-4,675);}

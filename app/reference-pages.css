@@ -183,3 +183,228 @@ body{display:flex;flex-direction:column;min-height:100dvh;height:100dvh}body>.re
 @media(min-width:701px) and (max-height:800px){.duel-special-summary{display:none}body:has(.duel-training-banner)>.global-starter-progress{display:none}.court-page:has(.duel-training-banner)>.comic-ticker{display:none}.court-page:has(.duel-training-banner) .duel-log{display:none}.court-page:has(.duel-training-banner) .duel-controls{grid-template-columns:38% minmax(0,1fr)}.court-page:has(.duel-training-banner) .duel-resident h3{font-size:14px;white-space:normal;line-height:1.1;min-height:29px}}
 
 @media(min-width:1000px) and (max-height:980px){.roast-page-playing .roast-goal{grid-column:1/-1;grid-row:1;position:sticky;top:0;z-index:6;background:#17111bf5;flex-direction:row;align-items:center}.roast-page-playing .roast-scoreboard{grid-row:2}.roast-page-playing .roast-performance-grid,.roast-page-playing .roast-response-section{grid-row:3}.roast-page-playing .roast-goal>span{font-size:10px}.roast-page-playing .roast-goal strong{font-size:11px}}
+
+/* Mobile Friction Fixes: Duel Arena, Touch Targets, LP Badges, Hand Cards */
+@media(max-width:650px){
+ .reference-basic-actions{grid-template-columns:repeat(4,1fr)!important;gap:4px!important}
+ .reference-basic-actions>button:first-child{font-size:12px!important;flex-direction:column!important}
+ .reference-basic-actions>button{font-size:11px!important;min-height:44px!important;padding:4px 2px!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:2px!important;text-align:center!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+ .reference-basic-actions svg{width:16px!important;height:16px!important}
+ .reference-fighter .printed-yugioh-stats{padding:1px 2px!important;margin:1px 1px 0!important;font-size:9px!important}
+ .reference-fighter .card-stance-pill{font-size:8px!important;padding:1px 3px!important;letter-spacing:0!important}
+ .reference-fighter .printed-defense-overlay span{font-size:9px!important;padding:2px 4px!important}
+ .reference-battle .tcg-hand-card{padding:3px 2px!important}
+ .reference-battle .hand-card-ygo-badge{font-size:8px!important;padding:1px 2px!important;margin:1px 0!important;letter-spacing:0!important}
+ .reference-battle .hand-card-header b{font-size:10px!important}
+ .reference-battle .hand-card-desc{height:50px!important;min-height:50px!important;max-height:50px!important;padding:2px!important}
+ .reference-battle .hand-card-desc small{font-size:8.5px!important;line-height:1.15!important}
+}
+
+@media(max-width:500px){
+ .battle-player-label{width:36%!important;padding:4px 5px!important}
+ .battle-turn-label{flex:1!important;min-width:0!important}
+ .battle-turn-label .tape{font-size:20px!important;padding:2px 6px!important}
+ .battle-turn-label>b{font-size:10px!important;max-width:none!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+ .duel-lp-badge{padding:1px 4px!important;gap:2px!important;margin:1px 0!important}
+ .duel-lp-badge .lp-label{font-size:10px!important}
+ .duel-lp-badge .lp-num{font-size:15px!important}
+ .duel-lp-badge small{font-size:9px!important}
+}
+
+/* Studio-Grade Tactical Duel Animations, 60fps Impact Canvas, 3D Trap Flip & Court Verdict Receipt */
+.duel-field{position:relative}
+.duel-impact-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none!important;z-index:26}
+.duel-stage-shake{animation:duel-stage-jolt .36s cubic-bezier(.36,.07,.19,.97)}
+.duel-resident{position:relative;transition:transform .2s cubic-bezier(.16,1,.3,1),filter .2s}
+.duel-resident.is-special-ready{box-shadow:0 0 0 2px #deff00,0 0 22px #ff169e99!important;animation:duel-special-aura 1.8s ease-in-out infinite}
+.duel-special-ready-badge{position:absolute;top:-10px;right:6px;z-index:15;padding:3px 8px;background:#deff00;color:#09080a;border:2px solid #09080a;box-shadow:2px 3px #09080a;font:900 11px/1 CityCondensed,var(--display);letter-spacing:.5px;transform:rotate(3deg);pointer-events:none;animation:duel-badge-bob 1.2s ease-in-out infinite}
+.duel-main-actions>button.is-special-ready-btn{border-color:#deff00!important;box-shadow:0 0 16px #deff0066,inset 0 0 10px #ff169e55!important}
+.duel-resident.is-duel-striking{z-index:12;animation:duel-card-lunge .48s cubic-bezier(.16,1,.3,1)}
+.duel-crew.enemy .duel-resident.is-duel-striking{animation-name:duel-card-lunge-enemy}
+.duel-resident.is-duel-hit{z-index:11;animation:duel-card-hit-shake .46s ease-out}
+.duel-resident.is-duel-healed{z-index:11;animation:duel-card-heal-pulse .65s ease-out}
+.duel-resident.is-duel-summoned{z-index:11;animation:duel-card-summon-drop .42s cubic-bezier(.16,1,.3,1)}
+.duel-floating-splat{position:absolute;left:50%;top:36%;transform:translate(-50%,-50%) rotate(-6deg);z-index:18;pointer-events:none;padding:6px 12px;border:3px solid #09080a;box-shadow:4px 5px #09080a;text-align:center;font-family:CityCondensed,var(--display);white-space:nowrap;animation:duel-splat-pop .95s cubic-bezier(.16,1,.3,1) forwards}
+.duel-floating-splat.dmg{background:#e5ff00;color:#09080a}
+.duel-floating-splat.ko{background:#ff169e;color:#09080a;border-color:#e5ff00;box-shadow:0 0 18px #ff169e,4px 5px #09080a}
+.duel-floating-splat.heal{background:#28ffb3;color:#09080a}
+.duel-floating-splat b{display:block;font-size:clamp(18px,2vw,28px);line-height:1}
+.duel-floating-splat small{display:block;font-size:13px;background:#09080a;color:#ff57b0;padding:1px 5px;margin-top:3px}
+.battle-player-label.is-lp-hit{border-color:#ff169e!important;box-shadow:0 0 22px #ff169e99,5px 5px #090909!important;animation:duel-card-hit-shake .42s ease-out}
+.duel-lp-delta{display:inline-block;margin-left:8px;padding:1px 6px;background:#ff169e;color:#09080a;font:15px/1 CityCondensed,var(--display);transform:rotate(-4deg);animation:duel-splat-pop .9s ease-out forwards}
+.duel-trap-zone.is-armed{border-color:#ff169e!important;background:linear-gradient(90deg,#2a1024,#190e1c)!important;box-shadow:inset 0 0 12px #ff169e44;animation:duel-trap-armed 2.2s ease-in-out infinite}
+.duel-center.is-pulsing>strong{animation:duel-center-pop .38s cubic-bezier(.16,1,.3,1)}
+.duel-trap-splash{position:absolute;inset:0;z-index:45;display:grid;place-items:center;background:radial-gradient(circle at 50% 50%,#29091ee6,#09070cd9 72%);backdrop-filter:blur(2px);cursor:pointer;animation:duel-splash-fade .22s ease-out}
+.duel-trap-3d-stage{perspective:1100px;width:min(540px,92vw)}
+.duel-trap-3d-flipper{position:relative;transform-style:preserve-3d;animation:duel-trap-3d-flip .68s cubic-bezier(.16,1,.3,1) forwards}
+.duel-trap-face-back{position:absolute;inset:0;backface-visibility:hidden;transform:rotateY(180deg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:repeating-linear-gradient(-45deg,#18111d 0 14px,#26152c 14px 28px);border:4px solid #deff00;box-shadow:0 0 30px #ff169e;color:#deff00;font:900 22px/1 CityCondensed,var(--display)}
+.duel-trap-face-back>b{font-size:34px;color:#ff169e;text-shadow:2px 2px #09080a}
+.duel-trap-splash-card{backface-visibility:hidden;width:100%;padding:16px 18px;background:var(--grain),#eee4ca;color:#110d13;border:4px solid #09080a;box-shadow:0 0 0 3px #ff169e,0 18px 45px #000d;transform:rotate(-1.5deg)}
+.duel-trap-splash-card>.tape{display:inline-block;font:22px/1 CityCondensed,var(--display);padding:5px 12px;margin-bottom:10px;background:#ff169e;color:#09080a;border:2px solid #09080a;transform:rotate(-2deg)}
+.duel-trap-splash-body{display:grid;grid-template-columns:130px minmax(0,1fr);gap:14px;align-items:center}
+.duel-trap-splash-body>.tactic-art{height:130px;border:3px solid #09080a;box-shadow:3px 4px #09080a}
+.duel-trap-splash-body h3{font:32px/.95 CityCondensed,var(--display);margin:0 0 6px;text-transform:uppercase;color:#09080a}
+.duel-trap-splash-body p{font:700 13px/1.4 Arial,sans-serif;margin:0 0 6px;color:#221820}
+.duel-trap-splash-body em{display:block;font:italic 12px/1.35 Georgia,serif;color:#6e214c}
+.duel-verdict-receipt{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.duel-verdict-stamp{font:15px/1 CityCondensed,var(--display);padding:3px 9px;border:2px solid #09080a;transform:rotate(-2deg);background:#e5ff00;color:#09080a}
+.duel-verdict-stamp.lost{background:#ff169e;color:#09080a}
+.duel-verdict-meta{font:12px/1.2 CityCondensed,var(--display);color:#d7cbb4;letter-spacing:.6px}
+.duel-result-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px;margin-top:6px}
+.duel-result-actions .duel-share-x,.duel-result-actions .duel-copy-challenge{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+@keyframes duel-stage-jolt{0%,100%{transform:translate(0,0)}20%{transform:translate(-5px,3px)}45%{transform:translate(5px,-3px)}70%{transform:translate(-3px,2px)}}
+@keyframes duel-card-lunge{0%{transform:translate(0,0) scale(1)}35%{transform:translate(18px,-10px) scale(1.06) rotate(2deg);filter:drop-shadow(0 0 14px #e5ff00)}100%{transform:translate(0,0) scale(1)}}
+@keyframes duel-card-lunge-enemy{0%{transform:translate(0,0) scale(1)}35%{transform:translate(-18px,10px) scale(1.06) rotate(-2deg);filter:drop-shadow(0 0 14px #ff169e)}100%{transform:translate(0,0) scale(1)}}
+@keyframes duel-card-hit-shake{0%,100%{transform:translate(0,0);filter:none}20%{transform:translate(-8px,3px) rotate(-3deg);filter:brightness(1.5) sepia(1) hue-rotate(-50deg)}45%{transform:translate(7px,-3px) rotate(3deg)}75%{transform:translate(-4px,1px)}}
+@keyframes duel-card-heal-pulse{0%{transform:scale(1);filter:none}40%{transform:scale(1.04);filter:drop-shadow(0 0 16px #28ffb3) brightness(1.18)}100%{transform:scale(1);filter:none}}
+@keyframes duel-card-summon-drop{0%{opacity:.3;transform:translateY(-22px) scale(.9)}65%{transform:translateY(3px) scale(1.03);filter:drop-shadow(0 0 14px #35e0db)}100%{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes duel-splat-pop{0%{opacity:0;transform:translate(-50%,-20%) scale(.5) rotate(-12deg)}22%{opacity:1;transform:translate(-50%,-55%) scale(1.12) rotate(-5deg)}78%{opacity:1;transform:translate(-50%,-75%) scale(1) rotate(-5deg)}100%{opacity:0;transform:translate(-50%,-95%) scale(.92) rotate(-5deg)}}
+@keyframes duel-trap-3d-flip{0%{transform:rotateY(180deg) scale(.78)}55%{transform:rotateY(-8deg) scale(1.04)}100%{transform:rotateY(0deg) scale(1)}}
+@keyframes duel-special-aura{0%,100%{box-shadow:0 0 0 2px #deff00,0 0 14px #ff169e66}50%{box-shadow:0 0 0 3px #ff169e,0 0 26px #deff00aa}}
+@keyframes duel-badge-bob{0%,100%{transform:translateY(0) rotate(3deg)}50%{transform:translateY(-3px) rotate(3deg) scale(1.05)}}
+@keyframes duel-trap-armed{0%,100%{box-shadow:inset 0 0 8px #ff169e33}50%{box-shadow:inset 0 0 18px #ff169e88,0 0 10px #ff169e55}}
+@keyframes duel-center-pop{0%{transform:scale(.82)}55%{transform:scale(1.12)}100%{transform:scale(1)}}
+@keyframes duel-splash-fade{from{opacity:0}to{opacity:1}}
+@media(max-width:650px){
+ .duel-trap-splash-body{grid-template-columns:90px minmax(0,1fr);gap:10px}
+ .duel-trap-splash-body>.tactic-art{height:90px}
+ .duel-trap-splash-body h3{font-size:24px}
+}
+@media(prefers-reduced-motion:reduce){
+ .duel-stage-shake,.duel-resident.is-special-ready,.duel-special-ready-badge,.duel-resident.is-duel-striking,.duel-resident.is-duel-hit,.duel-resident.is-duel-healed,.duel-resident.is-duel-summoned,.duel-floating-splat,.duel-trap-3d-flipper,.duel-trap-zone.is-armed,.duel-center.is-pulsing>strong{animation:none!important}
+}
+
+/* Studio Pack Opening Stage VFX Canvas, Breaking Pull Cut-In & 3D Foil Polish */
+.pack-stage-vfx-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none!important;z-index:1}
+.reference-packs.is-tearing .reference-pack-wrapper{animation:pack-wrapper-rip .52s cubic-bezier(.16,1,.3,1)}
+.pack-card-back.next{box-shadow:0 0 0 3px #e5ff00,4px 6px 0 #080808!important}
+.pack-table-slot:has(.pack-card-back.next) .pack-card-arrival{translate:0 -8px;transition:translate .28s cubic-bezier(.16,1,.3,1)}
+.pack-table-slot.rare-pull .printed-card{box-shadow:0 0 0 3px var(--rarity,#ff169e),0 0 18px color-mix(in srgb,var(--rarity,#ff169e) 55%,transparent),4px 7px #080808!important}
+.pack-table-slot.new-discovery-pull .printed-card{box-shadow:0 0 0 2px #e5ff00,4px 7px #080808}
+.pack-table-slot.rare-pull .printed-art:after{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent 18%,rgba(255,255,255,.45) 34%,rgba(255,38,158,.24) 48%,rgba(49,215,255,.28) 62%,transparent 78%);background-size:250% 100%;background-position:200% 0;animation:pack-foil-shimmer 1.1s cubic-bezier(.22,1,.36,1) .55s 1 forwards;pointer-events:none;mix-blend-mode:screen}
+.pack-breaking-cutin{position:absolute;top:7%;left:50%;transform:translateX(-50%) rotate(-1.5deg);z-index:22;display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 20px 10px;background:var(--grain),#111016f5;color:#eee4ca;border:3px solid var(--cutin-color,#e5ff00);outline:3px solid #09080a;box-shadow:6px 7px 0 #09080a;font-family:CityCondensed,var(--display);cursor:pointer;text-align:center;min-width:260px}
+.pack-cutin-badge{display:inline-flex;align-items:center;gap:5px;padding:2px 9px;background:var(--cutin-color,#e5ff00);color:#09080a;font:900 13px/1.1 CityCondensed,var(--display);letter-spacing:.6px;transform:rotate(-2deg)}
+.pack-breaking-cutin>strong{font:900 clamp(22px,2.4vw,36px)/.95 CityCondensed,var(--display);color:#fff;text-shadow:2px 2px #09080a;letter-spacing:.5px}
+.pack-breaking-cutin>small{font:700 12px/1.1 CityCondensed,var(--display);color:#e5ff00;letter-spacing:.5px}
+@keyframes pack-next-pulse{0%,100%{transform:translateY(0) scale(1);filter:brightness(1)}50%{transform:translateY(-6px) scale(1.035);filter:brightness(1.14)}}
+@keyframes pack-wrapper-rip{0%{transform:rotate(5deg) scale(1)}30%{transform:rotate(-6deg) scale(1.14,0.92)}65%{transform:rotate(8deg) scale(0.94,1.08) translateY(-14px)}100%{transform:rotate(5deg) scale(1)}}
+@keyframes pack-foil-shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* Emil Kowalski Motion Engineering & Studio Taste Layer */
+:root{
+ --ease-out-expo:cubic-bezier(.16,1,.3,1);
+ --ease-out-quint:cubic-bezier(.22,1,.36,1);
+ --ease-spring:cubic-bezier(.34,1.56,.64,1);
+ --ease-exit:cubic-bezier(.4,0,1,1);
+}
+/* 1. Zero-Jitter Tabular Numerals on all counters, wallets, stats & percentages */
+.comic-currency b,.comic-profile small,.dossier-stats b,.printed-power,.printed-yugioh-stats,.printed-health b,.printed-copies,.album-progress b,.album-progress strong,.reference-odds dd,.duel-lp-badge .lp-num,.energy-readout,.save-stat b,.odds-list b{
+ font-variant-numeric:tabular-nums;
+}
+/* 2. Universal Tactile Press (:active) & Spring-Damped Hover Physics */
+.button,.reference-action,.pack-purchase,.pack-daily-sticker,.collection-tabs button,.duel-main-actions>button,.comic-currency,.comic-profile,.reference-pack-sidebar nav>a,.sticker-pill-btn,.ascend-toggle-btn{
+ transition:transform .18s var(--ease-out-quint),box-shadow .18s var(--ease-out-quint),filter .18s var(--ease-out-quint),background-color .15s ease;
+}
+.button:hover:not(:disabled){
+ transform:translateY(-1px);
+ box-shadow:3px 4px 0 #000;
+}
+.button:active:not(:disabled){
+ transform:translateY(1px) scale(.965)!important;
+ box-shadow:1px 1px 0 #000!important;
+ transition-duration:.075s!important;
+}
+.reference-action:active,.pack-purchase:active:not(:disabled),.pack-daily-sticker:active:not(:disabled),.collection-tabs button:active:not(:disabled),.duel-main-actions>button:active:not(:disabled),.comic-currency:active,.comic-profile:active,.reference-pack-sidebar nav>a:active{
+ transform:translateY(1px) scale(.968)!important;
+ transition-duration:.075s!important;
+}
+.comic-currency:hover,.comic-profile:hover{
+ transform:translateY(-1px);
+}
+/* 3.Choreographed Stagger Cascade on Home Actions & Featured Grid */
+.reference-home-actions>.reference-action{
+ animation:emil-stagger-in .34s var(--ease-out-expo) backwards;
+ animation-delay:calc(var(--stagger-index,0) * 42ms);
+}
+.reference-featured-grid>div,.reference-featured-grid>div>.featured-card-link{
+ display:block;
+ height:100%;
+ min-width:0;
+ min-height:0;
+}
+/* 4. 3D Physical Card Tilt & Moving Specular Glare on PrintedCard */
+.printed-card{
+ --rx:0deg;
+ --ry:0deg;
+ --glare-x:50%;
+ --glare-y:50%;
+ --glare-opacity:0;
+ transform:perspective(850px) rotateX(var(--rx)) rotateY(var(--ry));
+ transition:transform .22s var(--ease-out-quint),box-shadow .22s var(--ease-out-quint),filter .22s var(--ease-out-quint);
+}
+button.printed-card:hover,a .printed-card:hover{
+ transform:perspective(900px) translateY(-4px) rotateX(var(--rx)) rotateY(var(--ry));
+ box-shadow:inset 0 0 0 2px #8c806b,5px 8px 0 #060606;
+ z-index:4;
+}
+button.printed-card:active:not(:disabled),a:active .printed-card{
+ transform:perspective(850px) translateY(1px) scale(.972)!important;
+ box-shadow:inset 0 0 0 2px #8c806b,2px 2px 0 #060606!important;
+ transition-duration:.075s!important;
+}
+.printed-art::before{
+ content:'';
+ position:absolute;
+ inset:0;
+ z-index:2;
+ pointer-events:none;
+ opacity:var(--glare-opacity,0);
+ background:radial-gradient(circle at var(--glare-x,50%) var(--glare-y,50%),rgba(255,255,255,.18) 0%,transparent 55%);
+ mix-blend-mode:overlay;
+ transition:opacity .2s var(--ease-out-quint);
+}
+/* 5. Asymmetric Enter / Exit Timing on Modals & Dialogs */
+.game-dialog[open]{
+ animation:emil-dialog-enter .25s var(--ease-out-expo) forwards;
+}
+.game-dialog[data-exiting="true"]{
+ animation:emil-dialog-exit .15s var(--ease-exit) forwards;
+}
+.game-dialog[open]::backdrop{
+ animation:duel-splash-fade .2s var(--ease-out-quint) forwards;
+}
+@keyframes emil-stagger-in{
+ from{opacity:0;transform:translateY(10px) scale(.96)}
+ to{opacity:1}
+}
+@keyframes emil-dialog-enter{
+ from{opacity:0;transform:translateY(10px) scale(.96);filter:blur(2px)}
+ to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}
+}
+@keyframes emil-dialog-exit{
+ from{opacity:1;transform:translateY(0) scale(1)}
+ to{opacity:0;transform:translateY(4px) scale(.975)}
+}
+/* Grid thumbnails stay flat: tilt is reserved for cards you are focused on. */
+.printed-card.compact,button.printed-card.compact:hover{transform:translateY(0)}
+button.printed-card.compact:hover{transform:translateY(-3px)}
+.printed-card.compact .printed-art::before{display:none}
+@media(prefers-reduced-motion:reduce){
+ .reference-home-actions>.reference-action,.game-dialog[open],.game-dialog[data-exiting="true"]{animation:none!important}
+ .printed-card,button.printed-card:hover,a .printed-card:hover{transform:none!important;transition:none!important}
+ .printed-art::before{display:none!important}
+}
+
+
+
+
+/* Readable controls take precedence over decorative motion. */
+.reference-home-actions .reference-action{min-width:0;overflow:hidden;flex-shrink:0;text-align:left}.reference-home-actions .reference-action>svg{flex:0 0 28px;width:28px}.reference-home-actions .reference-action>span{flex:1;min-width:0}.reference-home-actions .reference-action.primary b{font-size:clamp(25px,2.6vw,44px);line-height:1;white-space:nowrap}.reference-home-actions .reference-action small{line-height:1.15;font-size:clamp(10px,.9vw,14px);overflow-wrap:anywhere}.reference-action .home-next-description{position:static;display:none}.reference-action>em{flex:none}.reference-home-actions .reference-action:not(:first-child){overflow:visible}
+.duel-share-options{font:12px var(--mono);padding:10px}.duel-share-options>summary{cursor:pointer;color:#cabcaa}.duel-share-options[open]{flex-basis:100%}.duel-share-options .button{margin:8px}
+/* Only the operating system or the player can opt out of these transforms. */
+html[data-motion=reduced] .printed-card,html[data-motion=reduced] button.printed-card:hover,html[data-motion=reduced] a .printed-card:hover{transform:none!important}html[data-motion=reduced] .printed-art::before{display:none!important}
+@media(hover:none){.printed-card,button.printed-card:hover,a .printed-card:hover{transform:none}.printed-art::before{display:none}}
+@media(max-width:650px){.reference-home-actions .reference-action.primary b{font-size:30px}.reference-home-actions .reference-action{min-height:64px}.duel-result-actions>.button{width:100%}}
+
+/* Tactics reactions explain the event without covering the fight or intercepting input. */
+.duel-trap-splash{inset:auto;top:10px;left:50%;transform:translateX(-50%);width:min(460px,90%);background:none;backdrop-filter:none;pointer-events:none}.duel-trap-3d-stage{width:100%}.duel-trap-splash-card{padding:10px 12px;box-shadow:0 0 0 2px #ff169e,0 8px 22px #000b}.duel-trap-splash-body{grid-template-columns:74px minmax(0,1fr);gap:10px}.duel-trap-splash-body>.tactic-art{height:74px}.duel-trap-splash-body h3{font-size:24px}.duel-trap-splash-body em{display:none}.duel-resident.is-special-ready,.duel-special-ready-badge,.duel-trap-zone.is-armed{animation:none}.duel-trap-3d-flipper{animation-duration:.35s}

@@ -72,7 +72,7 @@ function LiveSpecialCinematic({playback,mode='full',onImpact,onComplete,initialM
   const tick=(now:number)=>{
    if(done.current)return;const next=clock.current.tick(now-last,document.hidden);last=now;
    if(next.emitImpact&&!hit.current){hit.current=true;callbacks.current.onImpact?.();}
-   if(now-renderAt>=40||next.frame.complete){setFrame(next.frame);renderAt=now;}
+   if(now-renderAt>=16||next.frame.complete){setFrame(next.frame);renderAt=now;}
    if(next.emitComplete){done.current=true;for(const stop of sounds.current)stop();callbacks.current.onComplete();return;}
    request=requestAnimationFrame(tick);
   };

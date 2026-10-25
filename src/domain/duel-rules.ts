@@ -46,16 +46,30 @@ export const DECK_RECIPES=[
  {id:'slop-cycle',name:'Slop & cope',description:'Cycle your deck, cleanse debuffs and deny enemy healing.',cards:['slop','slop','grass','insurance','terms','note','ban','lawyer','apology','receipt','leak','ratio'] as DuelCardId[]},
  {id:'consequences',name:'Consequences sold separately',description:'HP buys tempo. Steal hype, transfer debuffs and punish enemy attacks.',cards:['bait','offshore','rebrand','prayers','doomscroll','404','chargeback','screenshot','receipt','leak','grass','apology'] as DuelCardId[]},
 ] as const;
+export type DeckRecipeId=typeof DECK_RECIPES[number]['id'];
+export const DISTRICT_RECIPE_BY_ID:Record<string,DeckRecipeId>={street:'balanced',media:'pressure',corporate:'control',crypto:'consequences','city-hall':'control',algorithm:'slop-cycle'};
+export function districtRecipe(districtId?:string,challengeKey?:string|null){
+ const rivalRecipe=challengeKey?.startsWith('rival:')?challengeKey.split(':')[4]:undefined;
+ const targetId=rivalRecipe&&DECK_RECIPES.some(r=>r.id===rivalRecipe)?rivalRecipe:(DISTRICT_RECIPE_BY_ID[districtId||'street']||'balanced');
+ return DECK_RECIPES.find(r=>r.id===targetId)||DECK_RECIPES[0];
+}
+export function districtTacticDeck(districtId?:string,challengeKey?:string|null):DuelCardId[]{return [...districtRecipe(districtId,challengeKey).cards];}
+export function detectDeckRecipe(cards:readonly DuelCardId[]){
+ const sorted=[...cards].sort().join(',');
+ const exact=DECK_RECIPES.find(r=>[...r.cards].sort().join(',')===sorted);
+ if(exact)return exact;
+ return [...DECK_RECIPES].sort((a,b)=>b.cards.filter(c=>cards.includes(c)).length-a.cards.filter(c=>cards.includes(c)).length)[0];
+}
 export const allTactics=(side:DuelState['player']):DuelCardId[]=>[...side.hand,...side.deck,...side.discard,...(side.trap?[side.trap]:[])];
 const pile=z.array(duelCardIdSchema).max(12);
 const duelist=z.object({lp:z.number().int().min(0).max(DUEL_LP),stars:z.number().int().min(0).max(MAX_STARS),hand:pile,deck:pile,discard:pile,trap:z.enum(['note','ban','terms','insurance','404','chargeback','screenshot']).nullable(),deploymentUsed:z.boolean().default(false),tacticUsed:z.boolean().default(false),fatigue:z.number().int().min(0).max(120).default(0)});
 export const duelStateSchema=z.object({player:duelist,enemy:duelist,turnNumber:z.number().int().min(1).max(81).default(1)});
 export type DuelState=z.infer<typeof duelStateSchema>;
 export const duelCard=(id:DuelCardId)=>DUEL_CARDS.find(c=>c.id===id)!;
-export function freshDuel(id:string,version:4|5=4,playerDeck?:DuelCardId[]):DuelState{
+export function freshDuel(id:string,version:4|5=4,playerDeck?:DuelCardId[],enemyDeck?:DuelCardId[]):DuelState{
  const make=(side:string)=>{
   let seed=Array.from(id+side).reduce((n,c)=>Math.imul(n^c.charCodeAt(0),16777619)>>>0,2166136261);
-  const deck:DuelCardId[]=version===5?[...tacticDeckSchema.parse(side==='player'&&playerDeck?playerDeck:TACTICAL_DECK)]:[...LEGACY_DUEL_CARD_IDS];
+  const deck:DuelCardId[]=version===5?[...tacticDeckSchema.parse(side==='player'?playerDeck||TACTICAL_DECK:enemyDeck||TACTICAL_DECK)]:[...LEGACY_DUEL_CARD_IDS];
   for(let i=deck.length-1;i>0;i--){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const j=seed%(i+1);[deck[i],deck[j]]=[deck[j],deck[i]];}
   return {lp:DUEL_LP,stars:STARTING_STARS,hand:deck.splice(0,4),deck,discard:[] as DuelCardId[],trap:null,deploymentUsed:false,tacticUsed:false,fatigue:0};
  };

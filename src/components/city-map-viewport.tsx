@@ -3,6 +3,7 @@
 import {useCallback,useEffect,useId,useRef,useState,type CSSProperties,type KeyboardEvent,type PointerEvent,type ReactNode} from 'react';
 import {Minus,Plus,Scan} from 'lucide-react';
 import {cityZoomLimit} from '../domain/city-map-camera';
+import {useCityMotion} from './city-motion';
 
 export type CityMapFocus={x:number;y:number;zoom:number};
 type Box={width:number;height:number};
@@ -23,31 +24,57 @@ const interactive=(target:EventTarget|null)=>target instanceof Element&&!!target
 
 /** Children use absolute left/top percentages in the illustrated 16:9 world. */
 export function CityMapViewport({art,label,children,initialFocus,sceneKey,onMapClick,className='',paused=false}:{art:string;label:string;children:ReactNode;initialFocus?:CityMapFocus;sceneKey:string;onMapClick?:()=>void;className?:string;paused?:boolean}){
+ const reduced=useCityMotion(),motion=useRef({paused,reduced});
+ useEffect(()=>{motion.current={paused,reduced};},[paused,reduced]);
  const viewport=useRef<HTMLDivElement>(null),boxRef=useRef<Box>({width:0,height:0}),cameraRef=useRef<CityMapFocus>(initialFocus||HOME),pointers=useRef(new Map<number,Point>()),drag=useRef<Drag|null>(null),pinch=useRef<Pinch|null>(null),suppressClick=useRef(false);
  const [box,setBox]=useState<Box>({width:0,height:0}),[camera,setCamera]=useState<CityMapFocus>(initialFocus||HOME),[moving,setMoving]=useState(false),[used,setUsed]=useState(false),[loadedArt,setLoadedArt]=useState('');
- const instructions=useId(),home=useRef(initialFocus||HOME),resolution=useRef({width:1672,dpr:1}),limitRef=useRef(1);
+ const instructions=useId(),home=useRef(initialFocus||HOME),resolution=useRef({width:1672,dpr:1}),limitRef=useRef(1),glideRef=useRef(0),prevArtRef=useRef(art);
  const [zoomLimit,setZoomLimit]=useState(1);
  const updateLimit=useCallback(()=>{const limit=cityZoomLimit(resolution.current.width,worldSize(boxRef.current).width,resolution.current.dpr);limitRef.current=limit;setZoomLimit(limit);},[]);
- home.current=initialFocus||HOME;
- const moveCamera=useCallback((next:CityMapFocus)=>{const safe=constrain(next,boxRef.current,limitRef.current);cameraRef.current=safe;setCamera(safe);},[]);
+ useEffect(()=>{home.current=initialFocus||HOME;},[initialFocus]);
+ const stopGlide=useCallback(()=>{if(glideRef.current){cancelAnimationFrame(glideRef.current);glideRef.current=0;}},[]);
+ const moveCamera=useCallback((next:CityMapFocus)=>{stopGlide();const safe=constrain(next,boxRef.current,limitRef.current);cameraRef.current=safe;setCamera(safe);},[stopGlide]);
+ const glideCamera=useCallback((next:CityMapFocus)=>{
+  stopGlide();
+  const safe=constrain(next,boxRef.current,limitRef.current),from=cameraRef.current;
+  if(motion.current.paused||motion.current.reduced||!boxRef.current.width||(Math.abs(safe.x-from.x)<0.05&&Math.abs(safe.y-from.y)<0.05&&Math.abs(safe.zoom-from.zoom)<0.005)){
+   cameraRef.current=safe;setCamera(safe);return;
+  }
+  const start=performance.now(),dur=320;
+  const tick=(now:number)=>{
+   const p=clamp((now-start)/dur,0,1),e=1-(1-p)**3;
+   const step=constrain({x:from.x+(safe.x-from.x)*e,y:from.y+(safe.y-from.y)*e,zoom:from.zoom+(safe.zoom-from.zoom)*e},boxRef.current,limitRef.current);
+   cameraRef.current=step;setCamera(step);
+   if(p<1)glideRef.current=requestAnimationFrame(tick);
+   else glideRef.current=0;
+  };
+  glideRef.current=requestAnimationFrame(tick);
+ },[stopGlide]);
+ useEffect(()=>()=>stopGlide(),[stopGlide]);
+ useEffect(()=>{if(paused||reduced)stopGlide();},[paused,reduced,stopGlide]);
  const markUsed=useCallback(()=>setUsed(true),[]);
- const zoomAt=useCallback((client:Point,nextZoom:number)=>{
+ const zoomAt=useCallback((client:Point,nextZoom:number,smooth=false)=>{
   const rect=viewport.current?.getBoundingClientRect(),size=boxRef.current,current=cameraRef.current;
   if(!rect||!size.width)return;
   const world=worldSize(size),point={x:client.x-rect.left,y:client.y-rect.top},zoom=clamp(nextZoom,1,limitRef.current);
   const worldX=current.x/100*world.width+(point.x-size.width/2)/current.zoom,worldY=current.y/100*world.height+(point.y-size.height/2)/current.zoom;
-  moveCamera({x:(worldX-(point.x-size.width/2)/zoom)/world.width*100,y:(worldY-(point.y-size.height/2)/zoom)/world.height*100,zoom});
- },[moveCamera]);
- const zoomCentre=useCallback((factor:number)=>{const rect=viewport.current?.getBoundingClientRect();if(rect){markUsed();zoomAt({x:rect.left+rect.width/2,y:rect.top+rect.height/2},cameraRef.current.zoom*factor);}},[markUsed,zoomAt]);
+  const target={x:(worldX-(point.x-size.width/2)/zoom)/world.width*100,y:(worldY-(point.y-size.height/2)/zoom)/world.height*100,zoom};
+  if(smooth)glideCamera(target);else moveCamera(target);
+ },[glideCamera,moveCamera]);
+ const zoomCentre=useCallback((factor:number)=>{const rect=viewport.current?.getBoundingClientRect();if(rect){markUsed();zoomAt({x:rect.left+rect.width/2,y:rect.top+rect.height/2},cameraRef.current.zoom*factor,true);}},[markUsed,zoomAt]);
  const panBy=useCallback((x:number,y:number)=>{const world=worldSize(boxRef.current),current=cameraRef.current;if(!world.width)return;moveCamera({x:current.x-x/(world.width*current.zoom)*100,y:current.y-y/(world.height*current.zoom)*100,zoom:current.zoom});},[moveCamera]);
- const reset=useCallback(()=>{moveCamera(home.current);markUsed();},[markUsed,moveCamera]);
+ const reset=useCallback(()=>{glideCamera(home.current);markUsed();},[glideCamera,markUsed]);
 
  useEffect(()=>{
   const element=viewport.current;if(!element)return;
   const measure=()=>{const rect=element.getBoundingClientRect(),next={width:rect.width,height:rect.height};boxRef.current=next;resolution.current.dpr=window.devicePixelRatio||1;updateLimit();setBox(next);moveCamera(cameraRef.current);};
   measure();const observer=new ResizeObserver(measure);observer.observe(element);return ()=>observer.disconnect();
  },[moveCamera,updateLimit]);
- useEffect(()=>{pointers.current.clear();drag.current=null;pinch.current=null;suppressClick.current=false;setMoving(false);moveCamera(home.current);},[sceneKey,moveCamera]);
+ useEffect(()=>{
+  pointers.current.clear();drag.current=null;pinch.current=null;suppressClick.current=false;setMoving(false);
+  const sameArt=prevArtRef.current===art;prevArtRef.current=art;
+  if(sameArt)glideCamera(home.current);else moveCamera(home.current);
+ },[sceneKey,art,glideCamera,moveCamera]);
  useEffect(()=>{
   const element=viewport.current;if(!element)return;
   const wheel=(event:WheelEvent)=>{if(event.target instanceof Element&&event.target.closest('[data-city-map-control]'))return;event.preventDefault();markUsed();const delta=event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?boxRef.current.height:1);zoomAt({x:event.clientX,y:event.clientY},cameraRef.current.zoom*Math.exp(-clamp(delta,-300,300)*.0018));};
@@ -64,6 +91,7 @@ export function CityMapViewport({art,label,children,initialFocus,sceneKey,onMapC
 
  const startPointer=(event:PointerEvent<HTMLDivElement>)=>{
   if((event.pointerType==='mouse'&&event.button!==0)||(event.target instanceof Element&&event.target.closest('[data-city-map-control]')))return;
+  stopGlide();
   const point={x:event.clientX,y:event.clientY};
   if(!pointers.current.size)suppressClick.current=false;
   pointers.current.set(event.pointerId,point);

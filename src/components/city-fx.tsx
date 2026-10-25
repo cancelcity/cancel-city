@@ -66,7 +66,7 @@ function ScenePresentation({title,mode,timing,onComplete,children,assets,accent=
  useEffect(()=>{
   clock.current.configure(mode,reduced);let request=0,last=performance.now(),renderAt=-100;
   const visibility=()=>{last=performance.now();setHidden(document.hidden);if(document.hidden)for(const stop of sounds.current)stop();};visibility();document.addEventListener('visibilitychange',visibility);
-  const tick=(now:number)=>{if(done.current)return;const next=clock.current.tick(now-last,document.hidden||loading);last=now;if(now-renderAt>40||next.frame.complete){setFrame(next.frame);renderAt=now;}if(next.emitComplete){done.current=true;for(const stop of sounds.current)stop();callback.current();return;}request=requestAnimationFrame(tick);};request=requestAnimationFrame(tick);
+  const tick=(now:number)=>{if(done.current)return;const next=clock.current.tick(now-last,document.hidden||loading);last=now;if(now-renderAt>=16||next.frame.complete){setFrame(next.frame);renderAt=now;}if(next.emitComplete){done.current=true;for(const stop of sounds.current)stop();callback.current();return;}request=requestAnimationFrame(tick);};request=requestAnimationFrame(tick);
   return()=>{cancelAnimationFrame(request);document.removeEventListener('visibilitychange',visibility);};
  },[mode,reduced,loading]);
  useEffect(()=>{const cue=frame.phase==='entrance'?'entrance':frame.phase==='launch'?'launch':frame.phase==='impact'||reduced?'impact':null;if(!settings?.soundEnabled||hidden||loading)return;if(cue&&!cues.current.has(cue)){cues.current.add(cue);sounds.current.push(specialCue(cue,'office',settings.volume));}},[frame.phase,settings?.soundEnabled,settings?.volume,hidden,reduced,loading]);

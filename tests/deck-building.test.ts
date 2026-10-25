@@ -1,5 +1,5 @@
 import {describe,expect,it} from 'vitest';
-import {DECK_RECIPES,TACTICAL_DECK,allTactics,tacticDeckSchema} from '../src/domain/duel-rules';
+import {DECK_RECIPES,TACTICAL_DECK,allTactics,tacticDeckSchema,districtRecipe,districtTacticDeck,detectDeckRecipe} from '../src/domain/duel-rules';
 import {createMatch,LOANERS,matchSchema,takeTurn,type BattleAction} from '../src/domain/battle';
 import {applyCommand,initialSave} from '../src/domain/game';
 import {trainingMatch,applyTrainingMove,trainerAction,type TrainingLesson} from '../src/domain/duel-training';
@@ -20,6 +20,22 @@ describe('build and play a tactics deck',()=>{
   expect(()=>createMatch('bad','street',LOANERS,{version:5,tacticDeck:Array(12).fill('receipt')})).toThrow();
  });
  it('keeps original fixed-deck saves valid',()=>{expect(matchSchema.safeParse(createMatch('old','street',LOANERS,{version:5})).success).toBe(true);expect(matchSchema.safeParse(createMatch('legacy','street',LOANERS,{version:4})).success).toBe(true);});
+ it('equips each district boss and rival challenge with its thematic tactics recipe',()=>{
+  expect(districtRecipe('street').id).toBe('balanced');
+  expect(districtRecipe('media').id).toBe('pressure');
+  expect(districtRecipe('corporate').id).toBe('control');
+  expect(districtRecipe('crypto').id).toBe('consequences');
+  expect(districtRecipe('city-hall').id).toBe('control');
+  expect(districtRecipe('algorithm').id).toBe('slop-cycle');
+  for(const d of ['street','media','corporate','crypto','city-hall','algorithm'] as const){
+   const m=createMatch(`district-${d}`,d,LOANERS,{version:5});
+   expect(allTactics(m.duel!.enemy).sort()).toEqual([...districtTacticDeck(d)].sort());
+   expect(matchSchema.safeParse(m).success).toBe(true);
+  }
+  const rival=createMatch('rival-deck','street',LOANERS,{version:5,challengeKey:'rival:Tester:CC001,CC006,CC023:450:consequences'});
+  expect(allTactics(rival.duel!.enemy).sort()).toEqual([...DECK_RECIPES[4].cards].sort());
+  for(const r of DECK_RECIPES)expect(detectDeckRecipe(r.cards).id).toBe(r.id);
+ });
 });
 describe('guided real-rule rehearsal',()=>{
  it('teaches attack, spell plus attack, a reacting trap and Special without a dead end',()=>{

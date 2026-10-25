@@ -4,7 +4,19 @@ import {FIRST_ROSTER_BY_ID} from '../data/first-roster-batch';
 const INK='#111016',PAPER='#f2e8cb',BLUE='#31d7ff',PINK='#ff269e',ACID='#deff00';
 const clamp=(n:number)=>Math.max(0,Math.min(1,n));
 const ease=(n:number)=>1-(1-clamp(n))**3;
-function box(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,color:string,stroke=INK){c.fillStyle=color;c.fillRect(x,y,w,h);if(stroke){c.strokeStyle=stroke;c.lineWidth=5;c.strokeRect(x,y,w,h);}}
+function box(c:CanvasRenderingContext2D,x:number,y:number,w:number,h:number,color:string,stroke=INK){
+ if(stroke&&w>=36&&h>=22&&w<1100){c.fillStyle='rgba(11,8,16,.42)';c.fillRect(x+5,y+6,w,h);}
+ c.fillStyle=color;c.fillRect(x,y,w,h);
+ if(stroke&&w>=24&&h>=18){
+  c.save();c.beginPath();c.rect(x,y,w,h);c.clip();
+  c.fillStyle='rgba(255,244,210,.20)';c.fillRect(x,y,w,Math.min(5,h*.16));
+  c.fillStyle='rgba(17,16,22,.18)';c.fillRect(x,y+h-Math.min(5,h*.16),w,Math.min(5,h*.16));
+  c.strokeStyle='rgba(17,16,22,.11)';c.lineWidth=1.5;
+  for(let d=-h;d<w+h;d+=18){c.beginPath();c.moveTo(x+d,y);c.lineTo(x+d-h*.55,y+h);c.stroke();}
+  c.restore();
+ }
+ if(stroke){c.strokeStyle=stroke;c.lineWidth=5;c.strokeRect(x,y,w,h);}
+}
 function line(c:CanvasRenderingContext2D,points:number[][],color:string,width=5){c.beginPath();points.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.strokeStyle=color;c.lineWidth=width;c.lineCap='round';c.stroke();}
 function oval(c:CanvasRenderingContext2D,x:number,y:number,rx:number,ry:number,color:string){c.beginPath();c.ellipse(x,y,rx,ry,0,0,Math.PI*2);c.fillStyle=color;c.fill();c.strokeStyle=INK;c.lineWidth=4;c.stroke();}
 function sheet(c:CanvasRenderingContext2D,d:MemeDraw,x:number,y:number,w:number,h:number,label:string,angle=0){c.save();c.translate(x,y);c.rotate(angle*Math.PI/180);box(c,-w/2,-h/2,w,h,PAPER);d.text(label,0,0,22,INK,0,w-20);c.restore();}
