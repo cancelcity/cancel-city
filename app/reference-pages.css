@@ -408,3 +408,6 @@ html[data-motion=reduced] .printed-card,html[data-motion=reduced] button.printed
 
 /* Tactics reactions explain the event without covering the fight or intercepting input. */
 .duel-trap-splash{inset:auto;top:10px;left:50%;transform:translateX(-50%);width:min(460px,90%);background:none;backdrop-filter:none;pointer-events:none}.duel-trap-3d-stage{width:100%}.duel-trap-splash-card{padding:10px 12px;box-shadow:0 0 0 2px #ff169e,0 8px 22px #000b}.duel-trap-splash-body{grid-template-columns:74px minmax(0,1fr);gap:10px}.duel-trap-splash-body>.tactic-art{height:74px}.duel-trap-splash-body h3{font-size:24px}.duel-trap-splash-body em{display:none}.duel-resident.is-special-ready,.duel-special-ready-badge,.duel-trap-zone.is-armed{animation:none}.duel-trap-3d-flipper{animation-duration:.35s}
+
+/* Short desktop windows scroll the illustrated stage instead of flattening portraits. */
+@media(min-width:701px) and (max-height:850px){body:has(.reference-home){height:auto;overflow-y:auto}.reference-home.reference-page{height:820px;min-height:820px;flex:0 0 auto}}

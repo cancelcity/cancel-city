@@ -13,3 +13,5 @@ Gemini's visual effects and district tactics are retained. Idle pack effects sto
 Verification focuses on save compatibility, first-win to collected-pack to saved-squad progression, tactical rules and deck construction, followed by production compilation and representative desktop/mobile browser checks. This is an implementation check, not evidence of a completed independent human beta.
 
 Browser validation completed the existing first pack, five lessons, a full campaign victory, post-win pack acknowledgment, a replacement comparison and Squad 1 save. Home was checked at desktop and 390 px mobile viewport with no horizontal overflow. City zoom/pan coordinates stayed identical when pause was toggled.
+
+Short desktop windows use a scrollable home stage with a minimum height so featured fighter portraits retain their intended proportions.
