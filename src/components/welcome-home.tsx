@@ -18,5 +18,5 @@ export function WelcomeHome(){
  const explore=()=>{arrival.finish();router.replace('/',{scroll:false});};
  const continueToPack=()=>{arrival.finish();router.push('/packs/?welcome=1');};
  if(!visible)return <ReferenceHome/>;
- return <FirstClash key={challenge||'welcome'} initialChallenge={challenge} onBegin={arrival.begin} onContinue={continueToPack} onExplore={explore} renderShare={result=><ClashShare result={result} challengeUrl="https://cancel-city-gacha.tokieth.chatgpt.site/"/>}/>;
+ return <FirstClash key={challenge||'welcome'} initialChallenge={challenge} packAction={save?.pendingOpening?'resume':save?.lifetimePacksOpened?'browse':'first'} onBegin={arrival.begin} onContinue={continueToPack} onExplore={explore} renderShare={result=><ClashShare result={result} challengeUrl="https://cancel-city-gacha.tokieth.chatgpt.site/"/>}/>;
 }

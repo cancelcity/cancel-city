@@ -1,0 +1,6 @@
+participant,report_id,device_browser,new_or_returning,first_click,play_seconds,reply_seconds,verdict_understood,pack_collected,second_activity_without_help,assistance_given,stop_reason,exact_quote,return_intent,priority_issue
+P1,,,,,,,,,,,,,,
+P2,,,,,,,,,,,,,,
+P3,,,,,,,,,,,,,,
+P4,,,,,,,,,,,,,,
+P5,,,,,,,,,,,,,,

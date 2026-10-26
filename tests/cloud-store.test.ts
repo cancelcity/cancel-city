@@ -46,6 +46,13 @@ describe('public guest saves',()=>{
   useGame.getState().hydrate();await vi.waitFor(()=>expect(useGame.getState().hydrated).toBe(true));await useGame.getState().enter();await useGame.getState().run({type:'open',sessionId:'unfinished'});await useGame.getState().run({type:'reveal',count:2});
   const saved=JSON.parse(storage.get(GUEST_KEY)!);vi.resetModules();const next=await import('../src/state/store');next.useGame.getState().hydrate();await vi.waitFor(()=>expect(next.useGame.getState().hydrated).toBe(true));expect(next.useGame.getState().save?.pendingOpening).toEqual(saved.pendingOpening);expect(next.useGame.getState().save?.packBalance).toBe(2);
  });
+ it('leaves a finished hosted guest battle while preserving the hydrated save and loss record',async()=>{
+  const {useGame,GUEST_KEY}=await import('../src/state/store');const now=new Date();let save=initialSave(now,'hosted-guest');
+  save=applyCommand(save,{type:'battle-start',rulesVersion:5,matchId:'first-case',districtId:'street',team:['CC001','CC008','CC015'],mode:'campaign'},now,()=>0,'start-case',save.revision);
+  save=applyCommand(save,{type:'battle-surrender',matchId:'first-case'},now,()=>0,'end-case',save.revision);expect(save.battle.active?.phase).toBe('finished');storage.set(GUEST_KEY,JSON.stringify(save));
+  const fetchMock=vi.fn().mockImplementation(async()=>anonymous());vi.stubGlobal('fetch',fetchMock);useGame.getState().hydrate();await vi.waitFor(()=>expect(useGame.getState().hydrated).toBe(true));
+  expect(await useGame.getState().run({type:'battle-leave',matchId:'first-case'})).toBe(true);expect(useGame.getState()).toMatchObject({guest:true,mode:'local',hydrated:true,error:null});expect(useGame.getState().save?.battle.active).toBeNull();expect(useGame.getState().save?.battle.losses).toBe(1);expect(JSON.parse(storage.get(GUEST_KEY)!).battle.active).toBeNull();expect(fetchMock).toHaveBeenCalledTimes(1);
+ });
  it('makes quota failures visible without pretending a pack was saved',async()=>{
   const {useGame,GUEST_KEY}=await import('../src/state/store');vi.stubGlobal('fetch',vi.fn().mockImplementation(async()=>anonymous()));
   useGame.getState().hydrate();await vi.waitFor(()=>expect(useGame.getState().hydrated).toBe(true));await useGame.getState().enter();const original=storage.get(GUEST_KEY);
