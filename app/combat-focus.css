@@ -1,0 +1,320 @@
+/* The active fighters and the three battle decisions lead the mobile court. */
+.duel-residents { display: contents; }
+.duel-reserve-toggle,
+.duel-tactics-toggle,
+.duel-log-toggle { display: none; }
+.duel-empty-frontline,
+.duel-reserve-summary { display: none; }
+.duel-more-options { margin-top: 9px; }
+.duel-more-options > summary {
+  padding: 8px 2px;
+  color: #e6ff00;
+  cursor: pointer;
+  font: 15px CityCondensed, sans-serif;
+}
+.duel-log-content > div { max-height: 205px; overflow: auto; }
+.duel-tactics-content > header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
+  margin-bottom: 8px;
+  font: 22px CityCondensed, sans-serif;
+  color: #e6ff00;
+}
+.duel-tactics-content > header small { font-size: 12px; color: #c2b6a2; }
+
+@media (min-width: 701px) {
+  .duel-tactics-content { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+  .duel-tactics-content > header { flex-shrink: 0; }
+  .duel-tactics-content .duel-hand { flex: 1; min-height: 0; }
+}
+
+@media (max-width: 700px) {
+  .duel-arena.combat-focus {
+    display: block;
+    height: auto;
+    min-height: 0;
+    padding: 6px 10px 12px;
+    overflow: visible;
+  }
+
+  .duel-arena.combat-focus .duel-score-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 4px;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+  }
+  .duel-arena.combat-focus .duel-score-row .battle-player-label {
+    width: auto;
+    height: 48px !important;
+    min-height: 0;
+    padding: 3px 7px;
+    gap: 5px;
+    transform: none;
+  }
+  .duel-arena.combat-focus .duel-score-row .battle-player-label.enemy { order: 0; }
+  .duel-arena.combat-focus .battle-player-label > svg,
+  .duel-arena.combat-focus .battle-player-label > span > small { display: none; }
+  .duel-arena.combat-focus .duel-score-row .battle-player-label b {
+    display: block;
+    max-width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 1;
+  }
+  .duel-arena.combat-focus .duel-score-row .duel-lp { font-size: 22px; line-height: 1; }
+  .duel-arena.combat-focus .duel-lp small { font-size: 11px !important; }
+  .duel-arena.combat-focus .battle-player-label meter { height: 5px; margin-top: 2px; }
+  .duel-arena.combat-focus .duel-star-score { gap: 2px; flex-basis: auto !important; font-size: 19px; }
+  .duel-arena.combat-focus .duel-star-score svg { width: 13px; height: 13px; }
+  .duel-arena.combat-focus .duel-turn {
+    position: static;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 0;
+    min-height: 19px;
+    transform: none;
+  }
+  .duel-arena.combat-focus .duel-turn > .tape { font-size: 14px; transform: none; padding: 1px 5px; }
+  .duel-arena.combat-focus .duel-turn > strong { font-size: 16px; padding: 0; }
+  .duel-arena.combat-focus .duel-turn > small { display: none; }
+  .duel-arena.combat-focus .duel-turn-steps {
+    height: auto;
+    margin: 4px 0 5px;
+    gap: 4px;
+  }
+  .duel-arena.combat-focus .duel-turn-steps li {
+    display: block;
+    min-height: 24px;
+    padding: 3px 5px;
+    text-align: center;
+  }
+  .duel-arena.combat-focus .duel-turn-steps b { font-size: 14px; line-height: 1; }
+  .duel-arena.combat-focus .duel-turn-steps span { display: none; }
+
+  .duel-arena.combat-focus .duel-field {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 5px;
+    height: auto;
+    min-height: 0;
+    margin: 0 0 6px;
+    align-items: start;
+  }
+  .duel-arena.combat-focus .duel-crew,
+  .duel-arena.combat-focus .duel-crew.player,
+  .duel-arena.combat-focus .duel-crew.enemy {
+    grid-column: auto;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-height: 0;
+  }
+  .duel-arena.combat-focus .duel-crew.player { grid-column: 1; }
+  .duel-arena.combat-focus .duel-crew.enemy { grid-column: 2; }
+  .duel-arena.combat-focus .duel-resident { transform: none; }
+  .duel-arena.combat-focus .duel-resident.active { order: 0; }
+  .duel-arena.combat-focus .duel-resident.inactive { order: 2; }
+  .duel-arena.combat-focus .duel-resident.cancelled { display: none; }
+  .duel-arena.combat-focus .duel-crew[data-reserves-open="false"] .duel-resident.inactive { display: none; }
+  .duel-arena.combat-focus .duel-resident .printed-card {
+    flex: none;
+    width: 100%;
+    height: 155px !important;
+    min-height: 0 !important;
+    aspect-ratio: auto;
+    padding: 3px;
+    border-width: 3px;
+  }
+  .duel-arena.combat-focus .duel-resident .printed-card header {
+    min-height: 26px;
+    padding: 0 2px 2px;
+    gap: 3px;
+  }
+  .duel-arena.combat-focus .duel-resident .printed-card h3 {
+    min-height: 0;
+    white-space: normal;
+    font-size: 15px;
+    line-height: 1;
+  }
+  .duel-arena.combat-focus .duel-resident .printed-art { min-height: 0; }
+  .duel-arena.combat-focus .duel-resident .printed-type { font-size: 8px; padding: 2px 3px; }
+  .duel-arena.combat-focus .duel-resident .printed-power { width: 25px; height: 25px; font-size: 17px !important; left: -5px; bottom: -5px; }
+  .duel-arena.combat-focus .duel-resident .printed-rarity { display: none; }
+  .duel-arena.combat-focus .duel-resident .printed-health { height: 13px; flex: 0 0 13px; margin: 3px 3px 0; }
+  .duel-arena.combat-focus .duel-resident .printed-health b { font-size: 11px; }
+  .duel-arena.combat-focus .duel-resident .printed-yugioh-stats { margin: 2px 0 0; padding: 3px; font-size: 11px; }
+  .duel-arena.combat-focus .duel-resident .printed-copy { display: none; }
+  .duel-arena.combat-focus .duel-resident-status { min-height: 20px; padding: 2px; gap: 3px; font-size: 11px; }
+  .duel-arena.combat-focus .duel-resident-status small { font-size: 9px; }
+  .duel-arena.combat-focus .duel-resident.inactive {
+    display: grid;
+    grid-template-columns: 57px minmax(0, 1fr);
+    gap: 2px 5px;
+    padding: 4px;
+    background: #171319;
+    border: 1px solid #8a8170;
+  }
+  .duel-arena.combat-focus .duel-resident.inactive .printed-card {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    width: 57px;
+    height: 108px !important;
+    padding: 2px;
+    border-width: 2px;
+    box-shadow: none;
+  }
+  .duel-arena.combat-focus .duel-resident.inactive .printed-card > header,
+  .duel-arena.combat-focus .duel-resident.inactive .printed-type,
+  .duel-arena.combat-focus .duel-resident.inactive .printed-power,
+  .duel-arena.combat-focus .duel-resident.inactive .printed-yugioh-stats { display: none; }
+  .duel-arena.combat-focus .duel-resident.inactive .duel-reserve-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    min-width: 0;
+  }
+  .duel-arena.combat-focus .duel-reserve-summary b { font: 14px/1 CityCondensed, sans-serif; }
+  .duel-arena.combat-focus .duel-reserve-summary span { font: 10px/1.3 CityCondensed, sans-serif; }
+  .duel-arena.combat-focus .duel-resident.inactive .duel-resident-status {
+    justify-content: flex-start;
+    padding: 2px 0;
+    font-size: 10px;
+  }
+  .duel-arena.combat-focus .duel-resident.inactive > .duel-summon,
+  .duel-arena.combat-focus .duel-resident.inactive > .duel-resident-actions { grid-column: 2; }
+  .duel-arena.combat-focus .duel-resident-actions:empty { display: none; }
+  .duel-arena.combat-focus .duel-resident button:not(.printed-card) { height: auto; min-height: 38px; padding: 5px 3px; font-size: 12px; }
+  .duel-arena.combat-focus .duel-reserve-toggle,
+  .duel-arena.combat-focus .duel-tactics-toggle,
+  .duel-arena.combat-focus .duel-log-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    min-height: 38px;
+    padding: 7px;
+    background: #161319;
+    color: #f2e8cb;
+    border: 1px solid #8a8170;
+    font: 14px CityCondensed, sans-serif;
+    text-align: left;
+    cursor: pointer;
+  }
+  .duel-arena.combat-focus .duel-reserve-toggle { order: 1; min-height: 32px; padding: 4px; font-size: 12px; }
+  .duel-arena.combat-focus .duel-reserve-toggle > span,
+  .duel-arena.combat-focus .duel-tactics-toggle > span,
+  .duel-arena.combat-focus .duel-log-toggle > span { color: #e6ff00; white-space: nowrap; }
+  .duel-arena.combat-focus .duel-reserve-toggle:disabled { cursor: default; opacity: 1; }
+  .duel-arena.combat-focus .duel-empty-frontline {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    height: 100px;
+    padding: 12px;
+    border: 2px dashed #ff169e;
+    background: #0d0c0ce8;
+    text-align: center;
+    font: 18px CityCondensed, sans-serif;
+  }
+  .duel-arena.combat-focus .duel-empty-frontline span { font: 12px/1.3 sans-serif; }
+  .duel-arena.combat-focus .duel-trap-zone { order: 3; min-height: 21px; padding: 3px; font-size: 10px; }
+  .duel-arena.combat-focus .duel-trap-zone small { font-size: 10px; line-height: 1.2; margin-top: 3px; }
+  .duel-arena.combat-focus .duel-center {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    min-height: 20px;
+    gap: 5px;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .duel-arena.combat-focus .duel-center > svg,
+  .duel-arena.combat-focus .duel-center > .tape { display: none; }
+  .duel-arena.combat-focus .duel-center > strong { font-size: 19px; overflow-wrap: anywhere; }
+  .duel-arena.combat-focus .duel-center > small { font-size: 14px; padding: 2px 5px; }
+  .duel-arena.combat-focus .duel-special-ready-badge { top: 26px; font-size: 10px; padding: 3px; }
+
+  .duel-arena.combat-focus .duel-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: auto !important;
+    min-height: 0;
+  }
+  .duel-arena.combat-focus .duel-command-panel {
+    position: sticky;
+    bottom: 6px;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    align-items: center;
+    gap: 4px 8px;
+    padding: 6px;
+    overflow: visible;
+    background: #100d12;
+    border: 2px solid #aa9e85;
+    box-shadow: 0 3px 0 #000, 0 -4px 15px #0006;
+  }
+  .duel-arena.combat-focus .duel-resource { padding: 0; gap: 3px; border: 0; }
+  .duel-arena.combat-focus .duel-resource > svg { width: 16px; height: 16px; }
+  .duel-arena.combat-focus .duel-resource > b { font-size: 20px; white-space: nowrap; }
+  .duel-arena.combat-focus .duel-resource > span { font-size: 10px; }
+  .duel-arena.combat-focus .duel-resource small { display: none; }
+  .duel-arena.combat-focus .duel-guidance { margin: 0; min-height: 0; font: 10px/1.3 sans-serif; text-align: right; }
+  .duel-arena.combat-focus .duel-main-actions { grid-column: 1 / -1; grid-template-columns: 1fr 1fr 1.15fr; gap: 5px; }
+  .duel-arena.combat-focus .duel-main-actions > button { height: 70px; min-height: 70px; padding: 4px 2px; gap: 2px; justify-content: center; }
+  .duel-arena.combat-focus .duel-main-actions svg { width: 16px; height: 16px; flex: 0 0 16px; }
+  .duel-arena.combat-focus .duel-main-actions b { font-size: 17px; line-height: 1; white-space: nowrap; }
+  .duel-arena.combat-focus .duel-main-actions small { font-size: 9px; line-height: 1.1; }
+  .duel-arena.combat-focus .duel-more-options { grid-column: 1 / -1; margin: 0; }
+  .duel-arena.combat-focus .duel-more-options > summary { min-height: 28px; padding: 5px 2px; font-size: 13px; }
+  .duel-arena.combat-focus .duel-more-options[open] { max-height: 40dvh; overflow: auto; }
+  .duel-arena.combat-focus .duel-special-summary { margin: 5px 0 8px; }
+  .duel-arena.combat-focus .duel-aux { gap: 5px; }
+  .duel-arena.combat-focus .duel-aux button { min-height: 40px; }
+  .duel-arena.combat-focus .duel-preview { margin-bottom: 3px; }
+
+  .duel-arena.combat-focus .duel-hand-panel,
+  .duel-arena.combat-focus .duel-log { display: block; height: auto !important; padding: 0; border-width: 1px; box-shadow: none; }
+  .duel-arena.combat-focus .duel-tactics-toggle { border: 0; }
+  .duel-arena.combat-focus .duel-tactics-toggle:disabled { opacity: 1; cursor: default; }
+  .duel-arena.combat-focus .duel-tactics-toggle b { font-weight: normal; }
+  .duel-arena.combat-focus .duel-tactics-toggle b > span { font-size: 12px; color: #bfb5a6; }
+  .duel-arena.combat-focus .duel-tactics-content { padding: 7px; }
+  .duel-arena.combat-focus .duel-hand-panel[data-mobile-open="false"] .duel-tactics-content,
+  .duel-arena.combat-focus .duel-log[data-mobile-open="false"] .duel-log-content { display: none; }
+  .duel-arena.combat-focus .duel-tactics-content > header { font-size: 16px; align-items: center; gap: 6px; }
+  .duel-arena.combat-focus .duel-tactics-content > header > b { display: none; }
+  .duel-arena.combat-focus .duel-tactics-content > header small { font-size: 10px; }
+  .duel-arena.combat-focus .duel-view-deck { min-height: 34px; padding: 5px; }
+  .duel-arena.combat-focus .duel-hand { gap: 7px; padding: 3px 2px 8px; }
+  .duel-arena.combat-focus .duel-hand-card { flex: 0 0 112px; min-width: 112px; }
+  .duel-arena.combat-focus .duel-hand-card > header { min-height: 39px; font-size: 14px; }
+  .duel-arena.combat-focus .duel-hand-card .tactic-art { height: 58px; min-height: 0; }
+  .duel-arena.combat-focus .duel-hand-card p { font-size: 11px; line-height: 1.3; }
+  .duel-arena.combat-focus .duel-hand-card > small { font-size: 11px; }
+  .duel-arena.combat-focus .duel-tactic-detail { position: static; padding: 7px; gap: 7px; }
+  .duel-arena.combat-focus .duel-tactic-detail b { font-size: 18px; }
+  .duel-arena.combat-focus .duel-tactic-detail p { font-size: 12px; }
+  .duel-arena.combat-focus .duel-tactic-detail > button { min-height: 42px; }
+  .duel-arena.combat-focus .duel-log > h2 { display: none; }
+  .duel-arena.combat-focus .duel-log-toggle { border: 0; }
+  .duel-arena.combat-focus .duel-log-content { display: block; padding: 7px; max-height: none; overflow: visible; }
+  .duel-arena.combat-focus .duel-log-content > div { display: block; max-height: 210px; overflow: auto; }
+  .duel-arena.combat-focus .duel-log p { min-width: 0; font-size: 12px; }
+  .duel-arena.combat-focus .duel-opponent-note { margin: 10px 0 0; font-size: 10px; line-height: 1.4; }
+}
