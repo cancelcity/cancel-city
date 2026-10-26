@@ -1,5 +1,10 @@
 import {DISTRICTS,takeTurn,type BattleAction,type BattleEvent,type DistrictId,type Match,type Side} from './battle';
 export type CourtMode='campaign'|'daily'|'practice';
+export function courtQuery(query:Pick<URLSearchParams,'get'>){
+ const district=DISTRICTS.find(d=>d.id===query.get('district'))?.id;
+ const mode=(['campaign','daily','practice'] as const).find(m=>m===query.get('mode'));
+ return {district,mode};
+}
 export function courtUnlocked(id:DistrictId,mode:CourtMode,cleared:readonly DistrictId[]=[]){
  if(mode==='daily')return id==='street';
  if(mode==='practice')return true;

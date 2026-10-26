@@ -15,7 +15,7 @@ import {ArrowLeft,ArrowRight,Crown,Flag,Film,HelpCircle,RotateCcw,Shield,Skull,S
 import {CARD_BY_ID,CARDS} from '../data/cards';
 import {quantity} from '../domain/game';
 import {abilityDescription,attackPower,availableDuos,createMatch,districtOf,LOANERS,maxHp,type BattleAction,type DistrictId,type Match,type Side} from '../domain/battle';
-import {courtDistrict,forecastAction,type CourtMode} from '../domain/court';
+import {courtDistrict,courtQuery,forecastAction,type CourtMode} from '../domain/court';
 import {CinematicClock,shouldPlaySpecial,specialPlayback,type CinematicMode} from '../domain/cinematic';
 import {actionTiming} from '../domain/action-presentation';
 import {starterSquad} from '../domain/starter-journey';
@@ -232,13 +232,13 @@ const DRAMA_DECK_CATALOG:readonly DramaDeckCardDef[]=[
 export function CourtBattleScreen(){const params=useSearchParams();return params.get('case')==='airfryer'?<AirfryerHearing/>:<RegularCourtBattleScreen/>;}
 function RegularCourtBattleScreen(){
  const {save,run,enter,busy,error,clearError,hydrated,mode:saveMode}=useGame(),params=useSearchParams(),router=useRouter(),{guided}=useStarterGuide();
- const [cinematicMode,setCinematicMode]=useCinematicMode(),[gallery,setGallery]=useState(params.get('specials')==='1'),[rules,setRules]=useState(false),[showDocket,setShowDocket]=useState(params.get('crew')==='1'||params.get('practice')!=='1'),[team,setTeam]=useState<string[]>(LOANERS),[district,setDistrict]=useState<DistrictId>('street'),[mode,setMode]=useState<CourtMode>('campaign'),[day,setDay]=useState<string|null>(null),suggested=useRef(false);
+ const [cinematicMode,setCinematicMode]=useCinematicMode(),[gallery,setGallery]=useState(params.get('specials')==='1'),[rules,setRules]=useState(false),[showDocket,setShowDocket]=useState(params.get('crew')==='1'||params.get('practice')!=='1'),[team,setTeam]=useState<string[]>(LOANERS),[district,setDistrict]=useState<DistrictId>(()=>courtQuery(params).district||'street'),[mode,setMode]=useState<CourtMode>(()=>courtQuery(params).mode||'campaign'),[day,setDay]=useState<string|null>(null),suggested=useRef(false);
  const [practiceOpen,setPracticeOpen]=useState(params.get('practice')==='1'),[practiceFresh,setPracticeFresh]=useState(false),[practiceTake,setPracticeTake]=useState(0);
  const [tacticDeck,setTacticDeck,deckLoaded]=useTacticDeck(),[deckOpen,setDeckOpen]=useState(params.get('deck')==='1'),[learnOpen,setLearnOpen]=useState(params.get('learn')==='1');
  const deckValid=tacticDeckSchema.safeParse(tacticDeck).success;
  const queryKey=params.toString(),syncedQuery=useRef(queryKey);
- useEffect(()=>{if(syncedQuery.current===queryKey)return;syncedQuery.current=queryKey;const query=new URLSearchParams(queryKey);setLearnOpen(query.get('learn')==='1');setPracticeOpen(query.get('practice')==='1');if(query.get('practice')==='1')setPracticeFresh(false);setShowDocket(query.get('crew')==='1'||query.get('learn')!=='1'&&query.get('practice')!=='1'&&!useGame.getState().save?.battle.active);},[queryKey]);
- const syncView=(view:'crew'|'learn'|'practice'|'battle')=>{const query=new URLSearchParams(params.toString());for(const key of ['crew','learn','practice'])query.delete(key);if(view!=='battle')query.set(view,'1');syncedQuery.current=query.toString();router.replace(`/battle/${query.size?`?${query.toString()}`:''}`,{scroll:false});};
+ useEffect(()=>{if(syncedQuery.current===queryKey)return;syncedQuery.current=queryKey;const query=new URLSearchParams(queryKey),selection=courtQuery(query);if(selection.district)setDistrict(selection.district);if(selection.mode)setMode(selection.mode);setLearnOpen(query.get('learn')==='1');setPracticeOpen(query.get('practice')==='1');if(query.get('practice')==='1')setPracticeFresh(false);setShowDocket(query.get('crew')==='1'||query.get('learn')!=='1'&&query.get('practice')!=='1'&&!useGame.getState().save?.battle.active);},[queryKey]);
+ const syncView=(view:'crew'|'learn'|'practice'|'battle')=>{const query=new URLSearchParams(params.toString());for(const key of ['crew','learn','practice','district','mode'])query.delete(key);if(view!=='battle')query.set(view,'1');syncedQuery.current=query.toString();router.replace(`/battle/${query.size?`?${query.toString()}`:''}`,{scroll:false});};
  const [previewId,setPreviewId]=useState('court-preview');
  useEffect(()=>setPreviewId(crypto.randomUUID()),[]);
  const isRaid=params.get('raid')==='1';

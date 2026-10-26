@@ -21,7 +21,7 @@ export function useStarterGuide(){
  useEffect(()=>preference.load(),[preference.load]);
  useEffect(()=>{const update=()=>setProgress(readPracticeProgress());update();window.addEventListener('storage',update);window.addEventListener('cancel-city.training-progress',update);window.addEventListener('cancel-city.practice-progress',update);window.addEventListener('focus',update);return()=>{window.removeEventListener('storage',update);window.removeEventListener('cancel-city.training-progress',update);window.removeEventListener('cancel-city.practice-progress',update);window.removeEventListener('focus',update);};},[]);
  const completed=starterComplete(save);
- return {guided:!preference.hidden&&!completed,completed,journey:starterJourney(save,progress),hide:()=>preference.change(true),restore:()=>preference.change(false)};
+ return {guided:!preference.hidden&&!completed,completed,progress,journey:starterJourney(save,progress),hide:()=>preference.change(true),restore:()=>preference.change(false)};
 }
 export function StarterProgress({view}:{view:string}){
  const {guided,journey,hide}=useStarterGuide();

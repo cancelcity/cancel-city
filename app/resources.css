@@ -1,0 +1,23 @@
+.resource-guide{position:relative;border:1px solid #75664e;background:#11100fee;color:#eee4ca;font:12px/1.5 var(--mono);text-align:left}
+.resource-guide>summary{padding:10px 12px;cursor:pointer;font:17px/1.2 CityCondensed;color:#e5ff00;list-style-position:inside}
+.resource-guide>summary:focus-visible{outline:2px solid #ff169e;outline-offset:2px}
+.resource-guide dl{display:grid;gap:10px;padding:0 12px 12px;margin:0}
+.resource-guide dl>div{display:grid;gap:2px}
+.resource-guide dt{font-weight:700;color:#e5ff00}
+.resource-guide dd{margin:0;font:11px/1.5 var(--mono)}
+.reference-pack-info>.resource-guide{z-index:10}
+.reference-pack-info>.resource-guide[open]{position:absolute;right:1.5%;top:2%;width:clamp(240px,24%,360px);max-height:94%;overflow:auto;box-shadow:0 10px 28px #000b}
+.pack-opening-receipt{border:2px solid #ac9871;background:var(--grain),#eee4ca;color:#17130e;padding:12px;font:12px/1.5 var(--mono)}
+.pack-opening-receipt>small{display:block;font:15px/1.1 CityCondensed;letter-spacing:.05em}
+.pack-opening-receipt>h2{margin:6px 0;font:28px/1 CityCondensed}
+.pack-opening-receipt>strong{display:block;font:21px/1.3 CityCondensed}
+.pack-opening-receipt>p{font:11px/1.5 var(--mono);margin:5px 0 0}
+.pack-opening-receipt .pack-bonus-rewards{border-top:1px solid #817257;padding-top:7px;margin-top:9px}
+.pack-bonus-rewards>b{font:15px/1.3 CityCondensed}
+.pack-bonus-rewards>ul{padding:0;margin:4px 0 0;list-style:none}
+.pack-bonus-rewards li{font:10px/1.5 var(--mono);margin-top:3px}
+.reference-pack-purchase .pack-purchase strong{gap:5px}
+.reference-pack-purchase .pack-purchase strong>span{font:14px/1 CityCondensed}
+.game-help .resource-guide{margin-top:12px;padding:0}
+.game-help .resource-guide dl{grid-template-columns:1fr}
+@media(max-width:700px){.reference-pack-info>.resource-guide,.reference-pack-info>.pack-opening-receipt{grid-column:1/-1}.reference-pack-info>.resource-guide[open]{position:relative;inset:auto;width:auto;max-height:none}.pack-opening-receipt{padding:12px}.pack-opening-receipt>h2{font-size:26px}.pack-bonus-rewards li{font-size:11px}}
