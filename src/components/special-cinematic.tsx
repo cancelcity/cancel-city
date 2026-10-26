@@ -28,6 +28,8 @@ import {useCityMotion} from './city-motion';
 import {filmForPlayback,LAYERED_FILMS} from '../data/layered-films';
 import {PresentationGate} from '../domain/presentation-gate';
 import {FilmSpecial} from './film-special';
+import {gobsteinCueCrossings,gobsteinFrame,isGobsteinSolo} from '../domain/gobstein-direction';
+import {playGobsteinCue} from '../services/gobstein-audio';
 
 const MODE_KEY='cancel-city.cinematic-mode.v1';
 export function useCinematicMode(storageKey=MODE_KEY){
@@ -79,6 +81,7 @@ function LiveSpecialCinematic({playback,mode='full',onImpact,onComplete,initialM
   request=requestAnimationFrame(tick);return()=>{cancelAnimationFrame(request);document.removeEventListener('visibilitychange',visibility);};
  },[asset,mode,reduced]);
  useEffect(()=>{
+  if(isGobsteinSolo(playback))return;
   if((FIRST_ROSTER_BY_ID[playback.cardId]||SECOND_ROSTER_BY_ID[playback.cardId])&&!playback.duoId)return;
   const gamerPause=playback.cardId==='CC001'&&!playback.duoId&&frame.progress>=.39&&frame.progress<.50;
   const cue=gamerPause?null:frame.phase==='entrance'||frame.phase==='windup'?'windup':frame.phase==='launch'?'launch':frame.phase==='impact'||reduced?'impact':frame.phase==='verdict'?'gag':null;
@@ -88,18 +91,20 @@ function LiveSpecialCinematic({playback,mode='full',onImpact,onComplete,initialM
  useEffect(()=>{
   const previous=memeProgress.current;memeProgress.current=frame.progress;
   if(reduced||playback.duoId||asset==='loading'||muted||hidden||!settings?.soundEnabled)return;
+  if(isGobsteinSolo(playback)){for(const cue of gobsteinCueCrossings(playback,previous,frame.progress))if(!cues.current.has(cue.key)){cues.current.add(cue.key);sounds.current.push(playGobsteinCue(cue.cue,settings.volume));}return;}
   if(SECOND_ROSTER_BY_ID[playback.cardId]){for(const cue of secondRosterCues(playback.cardId,frame.progress))if(cue.at>previous&&!cues.current.has(cue.key)){cues.current.add(cue.key);sounds.current.push(signatureCue(cue.frequencies.map((frequency,i)=>({frequency,delay:i*.065,duration:cue.duration,waveform:cue.waveform})),settings.volume));}return;}
   if(FIRST_ROSTER_BY_ID[playback.cardId]){for(const cue of firstRosterCues(playback.cardId,frame.progress))if(cue.at>previous&&!cues.current.has(cue.key)){cues.current.add(cue.key);sounds.current.push(signatureCue(cue.frequencies.map((frequency,i)=>({frequency,delay:i*.065,duration:cue.duration,waveform:cue.waveform})),settings.volume));}return;}
   for(const cue of memeCues(playback.cardId,frame.progress))if(cue.at>previous&&!cues.current.has('meme:'+cue.key)){cues.current.add('meme:'+cue.key);if(cue.cue==='disconnect')stopSound();sounds.current.push(memeCue(cue.cue,settings.volume));}
  },[frame.progress,playback.cardId,playback.duoId,reduced,asset,muted,hidden,settings?.soundEnabled,settings?.volume]);
  const paused=hidden||asset==='loading';
+ const gobstein=gobsteinFrame(playback,frame.progress,reduced);
  const result=playback.preview?'CINEMATIC PREVIEW':playback.knockout?'CANCELLED':direction.impact;
  return createPortal(<dialog ref={dialog} className="special-cinematic" data-phase={frame.phase} data-reduced={reduced} data-paused={paused} aria-label={`${actor.name}: ${playback.title}${playback.preview?', preview':''}`} onCancel={e=>{e.preventDefault();finish();}} style={{'--special-accent':direction.accent,'--cinema-duration':`${duration}ms`} as CSSProperties}>
   <div className="cinema-controls"><span><Film size={16}/>{playback.preview?'SPECIAL PREVIEW':playback.side==='player'?'YOUR SPECIAL ATTACK':'ENEMY SPECIAL ATTACK'}</span><div>{settings?.soundEnabled?<button onClick={()=>{setMuted(v=>!v);stopSound();}} aria-pressed={muted} aria-label={muted?'Unmute this cinematic':'Mute this cinematic'}>{muted?<VolumeX size={18}/>:<Volume2 size={18}/>}</button>:<span className="cinema-sound-off"><VolumeX size={16}/>SOUND OFF</span>}<button className="cinema-skip" autoFocus onClick={finish}><SkipForward size={18}/>SKIP</button></div></div>
   <div className="live-special-screen">
    <LiveCanvas scene={{kind:'special',playback,progress:frame.progress,reduced}} paused={paused}/>
    {asset==='loading'&&<span className="live-scene-loading">SETTING THE SCENE…</span>}
-   {frame.impact&&!playback.preview&&<div className="live-special-result">{result} · {specialOutcome(playback)}{playback.passive?` · ${playback.passive}`:''}</div>}
+   {frame.impact&&!playback.preview&&(!gobstein||gobstein.showResult)&&<div className="live-special-result">{result} · {specialOutcome(playback)}{playback.passive?` · ${playback.passive}`:''}</div>}
   </div>
   <div className="cinema-bottom"><span>{asset==='loading'?'LOADING THE SET':hidden?'PAUSED':reduced?'REDUCED MOTION':mode==='quick'?'QUICK CINEMATIC':'CANCEL CITY / LIVE COMIC'}</span><div className="cinema-progress" aria-hidden="true"><i style={{width:`${frame.progress*100}%`}}/></div><span>ESC TO SKIP</span></div>
   <p className="sr-only" role="status">{playback.preview?`Preview of ${actor.name}'s ${actor.ability}. ${abilityDescription(actor)}`:`${actor.name} uses ${playback.title}.${playback.damage?` ${playback.damage} damage.`:''}${playback.heal?` ${playback.heal} composure restored.`:''}${playback.knockout?' Opponent cancelled.':''}`}</p>

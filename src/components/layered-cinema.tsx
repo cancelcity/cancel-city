@@ -13,6 +13,7 @@ export function LayeredCinema(){
  const film=LAYERED_FILMS.find(f=>f.slug===selected)??LAYERED_FILMS[0];
  return <GokartCinema film={film} navigation={<section className="layered-selection" aria-label="Choose a cinematic special">
   <div className="layered-selection-heading"><b>{LAYERED_FILMS.length} NEW INCIDENTS.</b><Link href="/cinema/gokart/">GOKART · ORIGINAL PREMIERE <ArrowRight size={15}/></Link></div>
+  <Link className="button paper" href="/cinema/gobstein/">GOBSTEIN · TECHNICAL DIFFICULTIES <ArrowRight size={15}/></Link>
   <label className="layered-picker">WATCH A SPECIAL<select value={selected} onChange={e=>choose(e.target.value)}>{[...LAYERED_FILMS].sort((a,b)=>a.title.localeCompare(b.title)).map(f=><option key={f.slug} value={f.slug}>{f.title}</option>)}</select></label>
   <div className="layered-film-grid">{LAYERED_FILMS.map(f=><button key={f.slug} aria-pressed={selected===f.slug} className={selected===f.slug?'selected':''} onClick={()=>choose(f.slug)}><img src={f.shots[2].thumbnail} width={384} height={216} alt="" loading="lazy"/><span><b>{f.title.split(':')[0]}</b><small><Play size={12}/>{f.duration.toFixed(1)} SEC · {f.title.split(':').slice(1).join(':')}</small></span></button>)}</div>
  </section>}/>;

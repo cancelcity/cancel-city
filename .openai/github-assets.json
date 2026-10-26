@@ -1,6 +1,6 @@
 {
-  "source_commit": "fd2eed3bdbda1b1405b23c51949c491dc7f58bf8",
-  "site_version": 61,
+  "source_commit": "63bb03f0ae62fc802d30f9ecb5973c6dfef64c6d",
+  "site_version": 62,
   "base_url": "https://cancel-city-gacha.tokieth.chatgpt.site",
   "files": [
     {
@@ -8068,6 +8068,12 @@
       "sha256": "c805f9436dbc268644c1d9584f01a601a653e028e08fd74b9b949f6cf8304d88",
       "git_blob": "538ee272366e7b7c7c00e1151f6fa61671ba601b",
       "source_path": "public/assets/actors/city-mono.ttf"
+    },
+    {
+      "path": "public/assets/specials/gobstein-technical-difficulties-v1.webp",
+      "size": 608760,
+      "sha256": "fa1ba4d5552d8ab06f2f2e1a061f768904e59d9455e771ece1cd4fbedae1b077",
+      "git_blob": "26ec7b8baee2159ceb565e37fd5dedb6789567b7"
     }
   ]
 }

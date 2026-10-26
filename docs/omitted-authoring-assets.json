@@ -5975,6 +5975,11 @@
       "path": "docs/production/paused-assets/touch-grass-final-boss/originals/ending.png",
       "size": 2649969,
       "git_blob": "789690602773861a84baff611a091ef9d8a49b22"
+    },
+    {
+      "path": "docs/art/gobstein-technical-difficulties/security-room-original.png",
+      "size": 3616627,
+      "git_blob": "80657b67ffd0daf33283d638cc606ce430f2bc4d"
     }
   ]
 }

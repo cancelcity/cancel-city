@@ -2,6 +2,8 @@
 import {paintMemeSpecial} from './meme-special-painter';
 import {paintFirstRoster} from './first-roster-painter';
 import {paintSecondRoster} from './second-roster-painter';
+import {paintGobsteinSpecial,GOBSTEIN_ROOM} from './gobstein-special-painter';
+import {isGobsteinSolo} from '../domain/gobstein-direction';
 import type {MemeDraw} from './meme-special-painter';
 import {paintRoast,type RoastScene} from './roast-painter';
 import {ROAST_OPPONENTS,ROAST_PROPS} from '../domain/roast';
@@ -47,6 +49,7 @@ export function specialOutcome(playback:SpecialPlayback){return [playback.damage
 function actorAssets(id:string){return [...(ACTORS[id]?.poses.map(p=>p.src)??[SPECIAL_ART(id)]),CARD_BY_ID[id].art];}
 export function liveSceneAssets(scene:LiveScene):string[]{
  let urls:string[]=[CITY,LOGO];
+ if(scene.kind==='special'&&isGobsteinSolo(scene.playback))urls.push(GOBSTEIN_ROOM);
  if(scene.kind==='special')urls.push(...actorAssets(scene.playback.cardId),...actorAssets(scene.playback.targetId),...(scene.playback.partnerId?actorAssets(scene.playback.partnerId):[]),...(scene.playback.cardId==='CC026'?[CARD_BY_ID.CC002.art]:[]),...(scene.playback.propId?[PROP_BY_ID[scene.playback.propId].art]:[]));
  else if(scene.kind==='roast'){for(const id of new Set([...scene.roast.team.map(f=>f.cardId),...ROAST_OPPONENTS.map(f=>f.cardId),'CC007','CC028','CC074','CC068','CC043','CC083','CC015','CC008']))urls.push(...actorAssets(id));urls.push('/assets/roast/venue-v2.webp',...ROAST_PROPS.map(p=>p.art));}
  else if(scene.kind==='battle'){urls.push('/assets/world/screenshot-court.webp');for(const id of new Set([...scene.match.player,...scene.match.enemy].map(f=>f.cardId)))urls.push(...actorAssets(id));}
@@ -201,6 +204,7 @@ function paintSpecial(c:CanvasRenderingContext2D,images:SceneImages,s:SpecialSce
  const draw:MemeDraw={
   background:(q,dark,zoom)=>backdrop(c,images,q,dark,zoom),actor:(id,pose,x,floor,height,angle,opacity,mirror)=>resident(c,images,id,pose,x,floor,height,angle,opacity,mirror),dossier:(id,x,y,w,angle)=>dossier(c,images,id,x,y,w,angle),weapon:(f,x,y,scale,angle,accent,word)=>weapon(c,f,x,y,scale,angle,accent,word),text:(value,x,y,size,color,angle,max)=>text(c,value,x,y,size,color,angle,max),tag:(value,x,y,color,angle,max)=>tag(c,value,x,y,color,angle,max),bubble:(value,x,y,w)=>bubble(c,value,x,y,w),rays:(color,x,y,light)=>rays(c,color,x,y,light),dust:(x,y,q,color)=>dust(c,x,y,q,color),receipt:(q,time)=>receiptRibbon(c,q,time),wrap:(x,y,q)=>wrapTarget(c,x,y,q),image:(src,x,y,w,h,angle)=>image(c,images,src,x,y,w,h,angle),result:specialOutcome,
  };
+ if(paintGobsteinSpecial(c,s,draw))return;
  if(paintSecondRoster(c,s,draw)||paintFirstRoster(c,s,draw)||paintMemeSpecial(c,s,draw)){if(a.propId)image(c,images,PROP_BY_ID[a.propId].art,470,567,126,undefined,-13);grain(c,seed%50+Math.floor(p*12));return;}
  if(p<.23){backdrop(c,images,p,.32,1.12+p*.28);resident(c,images,a.cardId,0,355,702,535,-3);tag(c,d.location,880,90,PAPER,3,670);text(c,CARD_BY_ID[a.cardId].name.toUpperCase(),873,246,86,d.accent,-4,685);tag(c,duo?.setup??d.setup,885,407,ACID,2,640);bubble(c,d.quote,873,552,630);}
  else if(p<.46){const u=(p-.23)/.23;rays(c,d.accent,370,330);resident(c,images,a.cardId,1,350,716,605,-4);weapon(c,family,900,327,1.8+u*.42,-8+u*9,d.accent,d.prop);tag(c,duo?.setup??d.setup,845,88,PAPER,3,640);text(c,duo?.name.toUpperCase()??d.attack,857,566,61,PAPER,-3,680);}
@@ -269,7 +273,7 @@ export function hitStopProgress(p:number){
  return FREEZE_AT+(p-IMPACT-HOLD)*(1-FREEZE_AT)/(1-IMPACT-HOLD);
 }
 function directed(scene:LiveScene,paint:(s:LiveScene)=>void,c:CanvasRenderingContext2D){
- if(scene.kind!=='special'||scene.reduced){paint(scene);return;}
+ if(scene.kind!=='special'||scene.reduced||isGobsteinSolo(scene.playback)){paint(scene);return;}
  const p=clamp(scene.progress),after=p-IMPACT-HOLD;
  let dx=0,dy=0;
  if(after>=0&&after<SHAKE){const u=after/SHAKE,decay=(1-u)**2;dx=Math.sin(u*44)*9*decay;dy=Math.cos(u*57)*5*decay;}
