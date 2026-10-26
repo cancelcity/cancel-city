@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import {useRouter,useSearchParams} from 'next/navigation';
 import {Layers,Library,ShoppingCart,Swords,Ticket,ArrowRight,Zap} from 'lucide-react';
 import {PrintedCard} from './printed-card';
 import {PackWrapper} from './brand';
@@ -318,7 +319,8 @@ export function Packs({
   onInspect: (card: Card) => void;
   onOdds: () => void;
 }) {
-  const { save, run, enter, busy, error, hydrated } = useGame();
+  const { save, run, enter, busy, error, hydrated, migration } = useGame();
+  const params=useSearchParams(),router=useRouter(),welcomeAttempt=useRef(false);
   const reduced = useCityMotion();
   const {journey}=useStarterGuide();
   const [justCollected,setJustCollected]=useState(false);
@@ -401,6 +403,15 @@ export function Packs({
       if (preferences?.soundEnabled) playReveal(1, preferences.volume);
     }
   };
+
+  useEffect(()=>{
+    if(params.get('welcome')!=='1'||!hydrated||busy||error||migration||welcomeAttempt.current)return;
+    welcomeAttempt.current=true;
+    // The intro's explicit "open" click authorizes exactly one first pack.
+    // Returning players and unfinished packs are never charged by this URL.
+    router.replace('/packs/',{scroll:false});
+    if(!save?.pendingOpening&&!save?.lifetimePacksOpened)void openAndRevealFirst();
+  },[params,router,hydrated,busy,error,migration,save?.pendingOpening,save?.lifetimePacksOpened]);
 
   const reveal = async (all = false) => {
     if (busy || collecting || spotlight) return;
